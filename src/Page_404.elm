@@ -5,6 +5,7 @@ import Widgets
 
 import Browser.Navigation as Navigation
 import Element as UI
+import Element.Border as UI_Border
 
 type alias Model = 
     { header_query : String
@@ -34,6 +35,6 @@ view model =
         , UI.height UI.fill
         ]
         [ Widgets.header model.header_query Msg_HeaderQueryChanged Msg_HeaderSearch
-        , UI.image [ UI.centerX, UI.centerY ] { src = "/images/404.png", description = "404 Page not Found" }
+        , UI.image [ UI.centerX, UI.centerY, UI_Border.rounded 20, UI.clip ] { src = "/images/404.png", description = "404 Page not Found" }
         ]
     )

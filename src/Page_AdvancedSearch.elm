@@ -1,4 +1,4 @@
-module Page_AdvancedSearch exposing (main)
+module Page_AdvancedSearch exposing (Model, Msg, init, update, view)
 
 import Card exposing (CardType(..))
 import Fontawesome
@@ -6,20 +6,10 @@ import Query exposing (Comparison(..))
 import Widgets
 import Widgets.Combo
 
-import Browser
-import Browser.Navigation
+import Browser.Navigation as Navigation
 import Element as UI exposing (px)
 import Element.Input as UI_Input
 import Card exposing (CardType)
-
-main : Program () Model Msg
-main =
-    Browser.document
-        { init = \() -> (init, Cmd.none)
-        , view = view >> Widgets.layout
-        , update = update
-        , subscriptions = \_ -> Sub.none
-        }
 
 type SearchComparison = SearchComparison_Exact | SearchComparison_AtLeast | SearchComparison_AtMost
 
@@ -127,13 +117,13 @@ init =
     , combo = Nothing
     }
 
-update : Msg -> Model -> (Model, Cmd Msg)
-update msg model = case msg of
+update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
+update key msg model = case msg of
     Msg_Noop -> (model, Cmd.none)
     Msg_HeaderQueryChanged new_query -> ({ model | header_query = new_query }, Cmd.none)
-    Msg_HeaderSearch -> (model, Browser.Navigation.load (Query.search_url { query = model.header_query, sort = [], page = 0 }))
+    Msg_HeaderSearch -> (model, Navigation.pushUrl key (Query.search_url { query = model.header_query, sort = [], page = 0 }))
     Msg_ModelChanged new_model -> (new_model, Cmd.none)
-    Msg_Search -> (model, Browser.Navigation.load (Query.search_url { query = make_advanced_search_query model, sort = [], page = 0 }))
+    Msg_Search -> (model, Navigation.pushUrl key (Query.search_url { query = make_advanced_search_query model, sort = [], page = 0 }))
     Msg_Combo combo_msg -> (Widgets.Combo.update (\c -> { model | combo = c }) combo_msg, Cmd.none)
 
 view : Model -> (String, UI.Element Msg)
@@ -338,7 +328,9 @@ comparison_to_string cmp = case cmp of
 make_advanced_search_query : Model -> String
 make_advanced_search_query model =
     let
-        string_part name str = if str == "" then Nothing else str |> Query.split_words_quoted |> List.map (\s -> name ++ ":" ++ s) |> String.join " " |> Just
+        string_part name str = if str == "" 
+            then Nothing 
+            else str |> Query.split_words_quoted |> List.map (\s -> name ++ ":" ++ quote_token_with_spaces s) |> String.join " " |> Just
         house_comparison_str = case model.house_comparison of
             SearchComparison_Exact -> "="
             SearchComparison_AtLeast -> ">="
@@ -401,3 +393,8 @@ make_advanced_search_query model =
             ]
     in
         parts |> List.filterMap identity |> String.join " "
+
+quote_token_with_spaces : String -> String
+quote_token_with_spaces token = if String.contains " " token
+    then "\"" ++ token ++ "\""
+    else token

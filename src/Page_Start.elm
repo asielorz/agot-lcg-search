@@ -1,20 +1,10 @@
-module Page_Start exposing (main)
+module Page_Start exposing (Model, Msg, init, update, view)
 
 import Query
 import Widgets
 
-import Browser
-import Browser.Navigation
+import Browser.Navigation as Navigation
 import Element as UI
-
-main : Program () Model Msg
-main =
-    Browser.document
-        { init = \() -> (init, Cmd.none)
-        , view = view >> Widgets.layout
-        , update = update
-        , subscriptions = \_ -> Sub.none
-        }
 
 type alias Model = 
     { query : String
@@ -27,10 +17,10 @@ type Msg
 init : Model
 init = { query = "" }
 
-update : Msg -> Model -> (Model, Cmd Msg)
-update msg model = case msg of
+update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
+update key msg model = case msg of
     Msg_QueryChanged new_query -> ({ model | query = new_query }, Cmd.none)
-    Msg_Search -> (model, Browser.Navigation.load (Query.search_url { query = model.query, sort = [], page = 0 }))
+    Msg_Search -> (model, Navigation.pushUrl key (Query.search_url { query = model.query, sort = [], page = 0 }))
 
 view : Model -> (String, UI.Element Msg)
 view model = 

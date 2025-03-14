@@ -28,10 +28,12 @@ init : Maybe String -> Model
 init query = 
     let
         parsed = Query.parse query
+        all_cards_found = Query.search parsed.query parsed.sort all_cards |> Result.withDefault []
+        (plots, cards) = List.partition (\c -> c.card_type == CardType_Plot ) all_cards_found
     in
         { last_searched_query = parsed.query
         , new_query_buffer = parsed.query
-        , cards = Query.search parsed.query parsed.sort all_cards |> Result.withDefault []
+        , cards = cards ++ plots -- Move all plots to the end
         , sort = parsed.sort
         , page = parsed.page
         }
@@ -42,21 +44,27 @@ update key msg model = case msg of
     Msg_Search -> (model, Navigation.pushUrl key <| Query.search_url { query = model.new_query_buffer, sort = model.sort, page = 0 })
 
 view : Model -> (String, UI.Element Msg)
-view model = 
-    ( model.last_searched_query ++ " - A Game of Thrones LCG card search"
-    , UI.column 
-        [ UI.centerX
-        , UI.spacing 20 
-        , UI.width UI.fill
-        , UI.paddingEach { top = 0, left = 0, right = 0, bottom = 20 }
-        ]
-        [ Widgets.header model.new_query_buffer Msg_QueryChange Msg_Search
-        , number_of_results_line model
-        , navigation_buttons model
-        , view_results <| cards_in_current_page model
-        , navigation_buttons model
-        ]
-    )
+view model =
+    let
+        (cards, plots) = cards_in_current_page model
+    in
+        ( model.last_searched_query ++ " - A Game of Thrones LCG card search"
+        , UI.column 
+            [ UI.centerX
+            , UI.spacing 20 
+            , UI.width UI.fill
+            , UI.paddingEach { top = 0, left = 0, right = 0, bottom = 20 }
+            ]
+            (List.filterMap identity 
+                [ Just <| Widgets.header model.new_query_buffer Msg_QueryChange Msg_Search
+                , Just <| number_of_results_line model
+                , Just <| navigation_buttons model
+                , view_results cards
+                , view_results plots
+                , Just <| navigation_buttons model
+                ]
+            )
+        )
 
 number_of_results_line : Model -> UI.Element Msg
 number_of_results_line model = UI.el
@@ -74,8 +82,8 @@ number_of_results_text model =
     in
         String.fromInt first ++ " - " ++ String.fromInt last ++ " of " ++ String.fromInt total ++ " cards"
 
-view_results : List Card -> UI.Element msg
-view_results cards = UI.wrappedRow 
+view_results : List Card -> Maybe (UI.Element msg)
+view_results cards = Just <| UI.wrappedRow 
     [ UI.spacingXY 6 9
     , UI.width <| UI.maximum 1000 UI.fill
     , UI.centerX
@@ -86,19 +94,13 @@ view_card : Card -> UI.Element msg
 view_card card = 
     let
         image = if card.card_type == CardType_Plot
-            then UI.el 
-                [ UI.height (px 350)
-                , UI.width (px 245) 
+            then UI.image 
+                [ UI.height (px 227)
+                , UI.width (px 325) 
                 ] 
-                <| UI.image 
-                    [ UI.height (px 245)
-                    , UI.width (px 350)
-                    , UI.rotate <| degrees -90
-                    , UI.moveLeft 52, UI.moveDown 52
-                    ] 
-                    { src = card.image_url
-                    , description = card.name 
-                    }
+                { src = card.image_url
+                , description = card.name
+                }
             else UI.image 
                 [ UI.height (px 350)
                 , UI.width (px 245) 
@@ -124,10 +126,11 @@ navigation_buttons model =
             , Widgets.conditional_link_button (model.page /= last) ">>|" (Query.search_url { query = model.last_searched_query, sort = model.sort, page = last })
             ]
 
-cards_in_current_page : Model -> List Card
+cards_in_current_page : Model -> (List Card, List Card)
 cards_in_current_page model = model.cards
     |> List.drop (cards_per_page * model.page)
     |> List.take cards_per_page
+    |> List.partition (\c -> c.card_type /= CardType_Plot)
 
 page_count : Model -> Int
 page_count model = List.length model.cards // cards_per_page + 1

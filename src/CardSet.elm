@@ -90,7 +90,7 @@ type Set
     | Set_SecretsAndSchemes
     | Set_ADeadlyGame
     | Set_TheValemen
-    | Set_ATimeOfWolves
+    | Set_ATimeForWolves
     | Set_HouseOfTalons
     | Set_TheBlueIsCalling
 
@@ -137,7 +137,7 @@ set_data =
     , { set = Set_ASwordInTheDarkness, index = 27, code_name = "asitd", full_name = "A Sword in the Darkness" }
     , { set = Set_TheWildlingHorde, index = 28, code_name = "twh", full_name = "The Wildling Horde" }
     , { set = Set_AKingInTheNorth, index = 29, code_name = "akitn", full_name = "A King in the North" }
-    , { set = Set_ReturnOfTheOthers, index = 30, code_name = "", full_name = "Return of the Others" }
+    , { set = Set_ReturnOfTheOthers, index = 30, code_name = "roto", full_name = "Return of the Others" }
 
     , { set = Set_IllyriosGift, index = 31, code_name = "ig", full_name = "Illyrio's Gift" }
     , { set = Set_RitualsOfRhllor, index = 32, code_name = "ror", full_name = "Rituals of R'hllor" }
@@ -191,7 +191,7 @@ set_data =
     , { set = Set_SecretsAndSchemes, index = 73, code_name = "sasc", full_name = "Secrets and Schemes" }
     , { set = Set_ADeadlyGame, index = 74, code_name = "adg", full_name = "A Deadly Game" }
     , { set = Set_TheValemen, index = 75, code_name = "tv", full_name = "The Valemen" }
-    , { set = Set_ATimeOfWolves, index = 76, code_name = "atow", full_name = "A Time of Wolves" }
+    , { set = Set_ATimeForWolves, index = 76, code_name = "atow", full_name = "A Time for Wolves" }
     , { set = Set_HouseOfTalons, index = 77, code_name = "hot", full_name = "House of Talons" }
     , { set = Set_TheBlueIsCalling, index = 78, code_name = "tbic", full_name = "The Blue is Calling" }
     ]
@@ -252,7 +252,7 @@ sets_in_cycle cycle = case cycle of
     Cycle_ASongOfTheSea -> [ Set_ReachOfTheKraken, Set_TheGrandFleet, Set_ThePiratesOfLys, Set_ATurnOfTheTide, Set_TheCaptainsCommand, Set_AJourneysEnd ]
     Cycle_Kingsroad -> [ Set_TheBannersGather, Set_FireAndIce, Set_TheKingsguard, Set_TheHornThatWakes, Set_ForgottenFellowship, Set_AHiddenAgenda ]
     Cycle_ConquestAndDefiance -> [ Set_SpoilsOfWar, Set_TheChampionsPurse, Set_FireMadeFlesh, Set_AncestralHome, Set_ThePrizeOfTheNorth, Set_ADireMessage]
-    Cycle_Wardens -> [ Set_SecretsAndSchemes, Set_ADeadlyGame, Set_TheValemen, Set_ATimeOfWolves, Set_HouseOfTalons, Set_TheBlueIsCalling ]
+    Cycle_Wardens -> [ Set_SecretsAndSchemes, Set_ADeadlyGame, Set_TheValemen, Set_ATimeForWolves, Set_HouseOfTalons, Set_TheBlueIsCalling ]
 
 first_set_in_cycle : Cycle -> Set
 first_set_in_cycle cycle = sets_in_cycle cycle |> List.head |> Maybe.withDefault Set_Core

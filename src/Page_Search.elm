@@ -98,18 +98,18 @@ view_card card =
                 [ UI.height (px 227)
                 , UI.width (px 325) 
                 ] 
-                { src = card.image_url
+                { src = Card.image_url card
                 , description = card.name
                 }
             else UI.image 
                 [ UI.height (px 350)
                 , UI.width (px 245) 
                 ] 
-                { src = card.image_url
+                { src = Card.image_url card
                 , description = card.name
                 }
     in
-        UI.link [] { label = image, url = "/card?id=" ++ Card.card_id card }
+        UI.link [] { label = image, url = Card.page_url card }
 
 navigation_buttons : Model -> UI.Element msg
 navigation_buttons model = 

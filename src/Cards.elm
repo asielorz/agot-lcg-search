@@ -5,7 +5,7 @@ import CardSet exposing (..)
 
 all_cards : List Card
 all_cards =
-    [ { image_url = "/images/cards/AE_22.jpg"
+    [ { id = "acoa_22"
       , name = "Areo Hotah"
       , card_type = CardType_Character
       , set = Set_AncientEnemies
@@ -26,7 +26,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_31.jpg"
+    , { id = "acoa_31"
       , name = "Bear Island"
       , card_type = CardType_Location
       , set = Set_AncientEnemies
@@ -47,7 +47,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_40.jpg"
+    , { id = "acoa_40"
       , name = "Bringers of Law"
       , card_type = CardType_Character
       , set = Set_AncientEnemies
@@ -68,7 +68,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_23.jpg"
+    , { id = "acoa_23"
       , name = "Die for Your King!"
       , card_type = CardType_Event
       , set = Set_AncientEnemies
@@ -89,7 +89,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_38.jpg"
+    , { id = "acoa_38"
       , name = "Dragon Bite"
       , card_type = CardType_Attachment
       , set = Set_AncientEnemies
@@ -110,7 +110,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_37.jpg"
+    , { id = "acoa_37"
       , name = "Dragon Thief"
       , card_type = CardType_Character
       , set = Set_AncientEnemies
@@ -131,7 +131,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_35.jpg"
+    , { id = "acoa_35"
       , name = "Drowned Prophet"
       , card_type = CardType_Character
       , set = Set_AncientEnemies
@@ -152,7 +152,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_39.jpg"
+    , { id = "acoa_39"
       , name = "Field Spikes"
       , card_type = CardType_Location
       , set = Set_AncientEnemies
@@ -173,7 +173,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_29.jpg"
+    , { id = "acoa_29"
       , name = "Fury of the Dragon"
       , card_type = CardType_Plot
       , set = Set_AncientEnemies
@@ -194,7 +194,7 @@ all_cards =
       , initiative = Just 7
       , claim = Just 1
       }
-    , { image_url = "/images/cards/AE_28.jpg"
+    , { id = "acoa_28"
       , name = "Fury of the Kraken"
       , card_type = CardType_Plot
       , set = Set_AncientEnemies
@@ -215,7 +215,7 @@ all_cards =
       , initiative = Just 7
       , claim = Just 1
       }
-    , { image_url = "/images/cards/AE_26.jpg"
+    , { id = "acoa_26"
       , name = "Fury of the Lion"
       , card_type = CardType_Plot
       , set = Set_AncientEnemies
@@ -236,7 +236,7 @@ all_cards =
       , initiative = Just 7
       , claim = Just 1
       }
-    , { image_url = "/images/cards/AE_27.jpg"
+    , { id = "acoa_27"
       , name = "Fury of the Stag"
       , card_type = CardType_Plot
       , set = Set_AncientEnemies
@@ -257,7 +257,7 @@ all_cards =
       , initiative = Just 7
       , claim = Just 1
       }
-    , { image_url = "/images/cards/AE_30.jpg"
+    , { id = "acoa_30"
       , name = "Fury of the Sun"
       , card_type = CardType_Plot
       , set = Set_AncientEnemies
@@ -278,7 +278,7 @@ all_cards =
       , initiative = Just 7
       , claim = Just 1
       }
-    , { image_url = "/images/cards/AE_25.jpg"
+    , { id = "acoa_25"
       , name = "Fury of the Wolf"
       , card_type = CardType_Plot
       , set = Set_AncientEnemies
@@ -299,7 +299,7 @@ all_cards =
       , initiative = Just 7
       , claim = Just 1
       }
-    , { image_url = "/images/cards/AE_34.jpg"
+    , { id = "acoa_34"
       , name = "King's Champion"
       , card_type = CardType_Character
       , set = Set_AncientEnemies
@@ -320,7 +320,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_24.jpg"
+    , { id = "acoa_24"
       , name = "Questioned Claim"
       , card_type = CardType_Event
       , set = Set_AncientEnemies
@@ -341,7 +341,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_36.jpg"
+    , { id = "acoa_36"
       , name = "Salt Wife"
       , card_type = CardType_Character
       , set = Set_AncientEnemies
@@ -362,7 +362,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_21.jpg"
+    , { id = "acoa_21"
       , name = "Ten Towers"
       , card_type = CardType_Location
       , set = Set_AncientEnemies
@@ -383,7 +383,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_33.jpg"
+    , { id = "acoa_33"
       , name = "Toll Gate"
       , card_type = CardType_Location
       , set = Set_AncientEnemies
@@ -404,7 +404,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AE_32.jpg"
+    , { id = "acoa_32"
       , name = "Turncloak Mercenaries"
       , card_type = CardType_Character
       , set = Set_AncientEnemies
@@ -425,7 +425,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_59.jpg"
+    , { id = "acoa_59"
       , name = "Dragon Chaser"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -446,7 +446,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_41.jpg"
+    , { id = "acoa_41"
       , name = "Feral Pack"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -467,7 +467,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_53.jpg"
+    , { id = "acoa_53"
       , name = "Fiery Followers"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -488,7 +488,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_42.jpg"
+    , { id = "acoa_42"
       , name = "First Mate"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -509,7 +509,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_56.jpg"
+    , { id = "acoa_56"
       , name = "Herald of the East"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -530,7 +530,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_55.jpg"
+    , { id = "acoa_55"
       , name = "Herald of the Sea"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -551,7 +551,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_54.jpg"
+    , { id = "acoa_54"
       , name = "Herald of the Stag"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -572,7 +572,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_57.jpg"
+    , { id = "acoa_57"
       , name = "Herald of the Sun"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -593,7 +593,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_43.jpg"
+    , { id = "acoa_43"
       , name = "Jaqen H'ghar"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -614,7 +614,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_52.jpg"
+    , { id = "acoa_52"
       , name = "Lion Herald"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -635,7 +635,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_58.jpg"
+    , { id = "acoa_58"
       , name = "Royal Guard"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -656,7 +656,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_48.jpg"
+    , { id = "acoa_48"
       , name = "To Be a Dragon"
       , card_type = CardType_Event
       , set = Set_SacredBonds
@@ -677,7 +677,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_47.jpg"
+    , { id = "acoa_47"
       , name = "To Be a Kraken"
       , card_type = CardType_Event
       , set = Set_SacredBonds
@@ -698,7 +698,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_45.jpg"
+    , { id = "acoa_45"
       , name = "To Be a Lion"
       , card_type = CardType_Event
       , set = Set_SacredBonds
@@ -719,7 +719,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_46.jpg"
+    , { id = "acoa_46"
       , name = "To Be a Stag"
       , card_type = CardType_Event
       , set = Set_SacredBonds
@@ -740,7 +740,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_50.jpg"
+    , { id = "acoa_50"
       , name = "To Be a Viper"
       , card_type = CardType_Event
       , set = Set_SacredBonds
@@ -761,7 +761,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_44.jpg"
+    , { id = "acoa_44"
       , name = "To Be a Wolf"
       , card_type = CardType_Event
       , set = Set_SacredBonds
@@ -782,7 +782,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_49.jpg"
+    , { id = "acoa_49"
       , name = "Too Proud to Bow"
       , card_type = CardType_Event
       , set = Set_SacredBonds
@@ -803,7 +803,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_60.jpg"
+    , { id = "acoa_60"
       , name = "Vendor of Venoms"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -824,7 +824,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SB_51.jpg"
+    , { id = "acoa_51"
       , name = "Wolf Herald"
       , card_type = CardType_Character
       , set = Set_SacredBonds
@@ -845,7 +845,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_4.jpg"
+    , { id = "asots_4"
       , name = "Apostle of The Drowned God"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -866,7 +866,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_12.jpg"
+    , { id = "asots_12"
       , name = "Areo Hotah"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -887,7 +887,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_18.jpg"
+    , { id = "asots_18"
       , name = "Black Sails"
       , card_type = CardType_Agenda
       , set = Set_ReachOfTheKraken
@@ -908,7 +908,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_2.jpg"
+    , { id = "asots_2"
       , name = "Blackwater Bay Veteran"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -929,7 +929,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_15.jpg"
+    , { id = "asots_15"
       , name = "Captain Groleo"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -950,7 +950,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_20.jpg"
+    , { id = "asots_20"
       , name = "Crossing the Ruby Ford"
       , card_type = CardType_Plot
       , set = Set_ReachOfTheKraken
@@ -971,7 +971,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/RotK_8.jpg"
+    , { id = "asots_8"
       , name = "Fleet from Lys"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -992,7 +992,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_5.jpg"
+    , { id = "asots_5"
       , name = "Fleet from Pyke"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -1013,7 +1013,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_3.jpg"
+    , { id = "asots_3"
       , name = "Fleet from The Arbor"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -1034,7 +1034,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_16.jpg"
+    , { id = "asots_16"
       , name = "Fleet from Volantis"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -1055,7 +1055,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_11.jpg"
+    , { id = "asots_11"
       , name = "Fleet from Wolf's Den"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -1076,7 +1076,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_13.jpg"
+    , { id = "asots_13"
       , name = "Lady Nym's Guard"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -1097,7 +1097,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_7.jpg"
+    , { id = "asots_7"
       , name = "Lady Olenna's Guard"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -1118,7 +1118,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_1.jpg"
+    , { id = "asots_1"
       , name = "Little Bird"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -1139,7 +1139,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_9.jpg"
+    , { id = "asots_9"
       , name = "Melisandre's Scheme"
       , card_type = CardType_Plot
       , set = Set_ReachOfTheKraken
@@ -1160,7 +1160,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 1
       }
-    , { image_url = "/images/cards/RotK_14.jpg"
+    , { id = "asots_14"
       , name = "Missandei"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -1181,7 +1181,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_19.jpg"
+    , { id = "asots_19"
       , name = "Naval Reinforcements"
       , card_type = CardType_Plot
       , set = Set_ReachOfTheKraken
@@ -1202,7 +1202,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/RotK_17.jpg"
+    , { id = "asots_17"
       , name = "Summer Sea Corsair"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -1223,7 +1223,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_6.jpg"
+    , { id = "asots_6"
       , name = "Victarion Greyjoy"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -1244,7 +1244,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotK_10.jpg"
+    , { id = "asots_10"
       , name = "Wyman Manderly"
       , card_type = CardType_Character
       , set = Set_ReachOfTheKraken
@@ -1265,7 +1265,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_117.jpg"
+    , { id = "ator_117"
       , name = "Beguiled Bodyguard"
       , card_type = CardType_Event
       , set = Set_ScatteredArmies
@@ -1286,7 +1286,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_102.jpg"
+    , { id = "ator_102"
       , name = "Depleted Host"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1307,7 +1307,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_112.jpg"
+    , { id = "ator_112"
       , name = "Desert Exiles"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1328,7 +1328,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_101.jpg"
+    , { id = "ator_101"
       , name = "Desperate Looters"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1349,7 +1349,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_111.jpg"
+    , { id = "ator_111"
       , name = "Destitute Horde"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1370,7 +1370,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_107.jpg"
+    , { id = "ator_107"
       , name = "Exhausted Horsemen"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1391,7 +1391,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_113.jpg"
+    , { id = "ator_113"
       , name = "Men With No King"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1412,7 +1412,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_115.jpg"
+    , { id = "ator_115"
       , name = "Missing Recruit"
       , card_type = CardType_Event
       , set = Set_ScatteredArmies
@@ -1433,7 +1433,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_103.jpg"
+    , { id = "ator_103"
       , name = "Northern Cavalry Flank"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1454,7 +1454,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_104.jpg"
+    , { id = "ator_104"
       , name = "Northern Infantry"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1475,7 +1475,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_110.jpg"
+    , { id = "ator_110"
       , name = "Pirates of Orkmont"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1496,7 +1496,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_114.jpg"
+    , { id = "ator_114"
       , name = "Retreat and Regroup"
       , card_type = CardType_Event
       , set = Set_ScatteredArmies
@@ -1517,7 +1517,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_116.jpg"
+    , { id = "ator_116"
       , name = "Spy in Their Midst"
       , card_type = CardType_Event
       , set = Set_ScatteredArmies
@@ -1538,7 +1538,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_108.jpg"
+    , { id = "ator_108"
       , name = "Stormland Scavengers"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1559,7 +1559,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_120.jpg"
+    , { id = "ator_120"
       , name = "Summer Encampment"
       , card_type = CardType_Location
       , set = Set_ScatteredArmies
@@ -1580,7 +1580,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_119.jpg"
+    , { id = "ator_119"
       , name = "Summer Reserves"
       , card_type = CardType_Event
       , set = Set_ScatteredArmies
@@ -1601,7 +1601,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_106.jpg"
+    , { id = "ator_106"
       , name = "Tommen Baratheon"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1622,7 +1622,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_105.jpg"
+    , { id = "ator_105"
       , name = "Weary Swordsmen"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1643,7 +1643,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_109.jpg"
+    , { id = "ator_109"
       , name = "Weathered Crew"
       , card_type = CardType_Character
       , set = Set_ScatteredArmies
@@ -1664,7 +1664,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SA_118.jpg"
+    , { id = "ator_118"
       , name = "Winter Reserves"
       , card_type = CardType_Event
       , set = Set_ScatteredArmies
@@ -1685,7 +1685,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_50.jpg"
+    , { id = "bwb_50"
       , name = "Black Amethysts"
       , card_type = CardType_Attachment
       , set = Set_MountainsOfTheMoon
@@ -1706,7 +1706,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_53.jpg"
+    , { id = "bwb_53"
       , name = "Blood-Crazed Screamer"
       , card_type = CardType_Character
       , set = Set_MountainsOfTheMoon
@@ -1727,7 +1727,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_52.jpg"
+    , { id = "bwb_52"
       , name = "Driftwood Crown"
       , card_type = CardType_Attachment
       , set = Set_MountainsOfTheMoon
@@ -1748,7 +1748,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_47.jpg"
+    , { id = "bwb_47"
       , name = "Hidden Vale Pass"
       , card_type = CardType_Location
       , set = Set_MountainsOfTheMoon
@@ -1769,7 +1769,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_42.jpg"
+    , { id = "bwb_42"
       , name = "Imposter!"
       , card_type = CardType_Attachment
       , set = Set_MountainsOfTheMoon
@@ -1790,7 +1790,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_51.jpg"
+    , { id = "bwb_51"
       , name = "Island Smuggler"
       , card_type = CardType_Character
       , set = Set_MountainsOfTheMoon
@@ -1811,7 +1811,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_59.jpg"
+    , { id = "bwb_59"
       , name = "Knights of the Hollow Hill"
       , card_type = CardType_Agenda
       , set = Set_MountainsOfTheMoon
@@ -1832,7 +1832,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_58.jpg"
+    , { id = "bwb_58"
       , name = "Lady Stoneheart"
       , card_type = CardType_Character
       , set = Set_MountainsOfTheMoon
@@ -1853,7 +1853,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_57.jpg"
+    , { id = "bwb_57"
       , name = "Lem Lemoncloak"
       , card_type = CardType_Character
       , set = Set_MountainsOfTheMoon
@@ -1874,7 +1874,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_55.jpg"
+    , { id = "bwb_55"
       , name = "Lost Spearman"
       , card_type = CardType_Character
       , set = Set_MountainsOfTheMoon
@@ -1895,7 +1895,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_56.jpg"
+    , { id = "bwb_56"
       , name = "Patience"
       , card_type = CardType_Event
       , set = Set_MountainsOfTheMoon
@@ -1916,7 +1916,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_41.jpg"
+    , { id = "bwb_41"
       , name = "Reek"
       , card_type = CardType_Character
       , set = Set_MountainsOfTheMoon
@@ -1937,7 +1937,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_48.jpg"
+    , { id = "bwb_48"
       , name = "Rise of the Mountain Clans"
       , card_type = CardType_Event
       , set = Set_MountainsOfTheMoon
@@ -1958,7 +1958,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_49.jpg"
+    , { id = "bwb_49"
       , name = "Ser Eldon Estermont"
       , card_type = CardType_Character
       , set = Set_MountainsOfTheMoon
@@ -1979,7 +1979,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_60.jpg"
+    , { id = "bwb_60"
       , name = "Stoic Resolve"
       , card_type = CardType_Plot
       , set = Set_MountainsOfTheMoon
@@ -2000,7 +2000,7 @@ all_cards =
       , initiative = Just 6
       , claim = Just 1
       }
-    , { image_url = "/images/cards/MotM_44.jpg"
+    , { id = "bwb_44"
       , name = "The Burned Men"
       , card_type = CardType_Character
       , set = Set_MountainsOfTheMoon
@@ -2021,7 +2021,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_43.jpg"
+    , { id = "bwb_43"
       , name = "Timett Son of Timett"
       , card_type = CardType_Character
       , set = Set_MountainsOfTheMoon
@@ -2042,7 +2042,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_45.jpg"
+    , { id = "bwb_45"
       , name = "Tyrion's Enforcers"
       , card_type = CardType_Character
       , set = Set_MountainsOfTheMoon
@@ -2063,7 +2063,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_46.jpg"
+    , { id = "bwb_46"
       , name = "Vale Scavenger"
       , card_type = CardType_Attachment
       , set = Set_MountainsOfTheMoon
@@ -2084,7 +2084,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotM_54.jpg"
+    , { id = "bwb_54"
       , name = "Wedding Feast"
       , card_type = CardType_Event
       , set = Set_MountainsOfTheMoon
@@ -2105,7 +2105,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_76.jpg"
+    , { id = "cad_76"
       , name = "Daenerys Targaryen"
       , card_type = CardType_Character
       , set = Set_AncestralHome
@@ -2126,7 +2126,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_80.jpg"
+    , { id = "cad_80"
       , name = "Dark Wings, Dark Words"
       , card_type = CardType_Agenda
       , set = Set_AncestralHome
@@ -2147,7 +2147,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_70.jpg"
+    , { id = "cad_70"
       , name = "Dorne Loyalist"
       , card_type = CardType_Character
       , set = Set_AncestralHome
@@ -2168,7 +2168,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_64.jpg"
+    , { id = "cad_64"
       , name = "Great Wyk"
       , card_type = CardType_Location
       , set = Set_AncestralHome
@@ -2189,7 +2189,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_78.jpg"
+    , { id = "cad_78"
       , name = "Harrenhal"
       , card_type = CardType_Location
       , set = Set_AncestralHome
@@ -2210,7 +2210,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_75.jpg"
+    , { id = "cad_75"
       , name = "Horselord"
       , card_type = CardType_Character
       , set = Set_AncestralHome
@@ -2231,7 +2231,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_72.jpg"
+    , { id = "cad_72"
       , name = "Hoster Tully"
       , card_type = CardType_Character
       , set = Set_AncestralHome
@@ -2252,7 +2252,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_77.jpg"
+    , { id = "cad_77"
       , name = "Khal"
       , card_type = CardType_Attachment
       , set = Set_AncestralHome
@@ -2273,7 +2273,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_65.jpg"
+    , { id = "cad_65"
       , name = "King of the Isles"
       , card_type = CardType_Attachment
       , set = Set_AncestralHome
@@ -2294,7 +2294,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_62.jpg"
+    , { id = "cad_62"
       , name = "Lyseni Captain"
       , card_type = CardType_Character
       , set = Set_AncestralHome
@@ -2315,7 +2315,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_71.jpg"
+    , { id = "cad_71"
       , name = "Prince of Dorne"
       , card_type = CardType_Attachment
       , set = Set_AncestralHome
@@ -2336,7 +2336,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_61.jpg"
+    , { id = "cad_61"
       , name = "Renly Baratheon"
       , card_type = CardType_Character
       , set = Set_AncestralHome
@@ -2357,7 +2357,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_66.jpg"
+    , { id = "cad_66"
       , name = "Set Sail"
       , card_type = CardType_Event
       , set = Set_AncestralHome
@@ -2378,7 +2378,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_73.jpg"
+    , { id = "cad_73"
       , name = "The Blackfish"
       , card_type = CardType_Character
       , set = Set_AncestralHome
@@ -2399,7 +2399,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_79.jpg"
+    , { id = "cad_79"
       , name = "The Brave Companions"
       , card_type = CardType_Attachment
       , set = Set_AncestralHome
@@ -2420,7 +2420,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_68.jpg"
+    , { id = "cad_68"
       , name = "The Westerlands"
       , card_type = CardType_Location
       , set = Set_AncestralHome
@@ -2441,7 +2441,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_67.jpg"
+    , { id = "cad_67"
       , name = "Tyrion Lannister"
       , card_type = CardType_Character
       , set = Set_AncestralHome
@@ -2462,7 +2462,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_74.jpg"
+    , { id = "cad_74"
       , name = "Warden of the North"
       , card_type = CardType_Attachment
       , set = Set_AncestralHome
@@ -2483,7 +2483,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_63.jpg"
+    , { id = "cad_63"
       , name = "Warden of the South"
       , card_type = CardType_Attachment
       , set = Set_AncestralHome
@@ -2504,7 +2504,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Ancestral Home_69.jpg"
+    , { id = "cad_69"
       , name = "Warden of the West"
       , card_type = CardType_Attachment
       , set = Set_AncestralHome
@@ -2525,7 +2525,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_166.jpg"
+    , { id = "core_166"
       , name = "A Lannister Pays His Debts"
       , card_type = CardType_Event
       , set = Set_Core
@@ -2546,7 +2546,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_102.jpg"
+    , { id = "core_102"
       , name = "Aegon's Blade"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -2567,7 +2567,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_95.jpg"
+    , { id = "core_95"
       , name = "Aegon's Garden"
       , card_type = CardType_Location
       , set = Set_Core
@@ -2588,7 +2588,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_85.jpg"
+    , { id = "core_85"
       , name = "Army of the Faithful"
       , card_type = CardType_Character
       , set = Set_Core
@@ -2609,7 +2609,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_7.jpg"
+    , { id = "core_7"
       , name = "Arya Stark"
       , card_type = CardType_Character
       , set = Set_Core
@@ -2630,7 +2630,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_87.jpg"
+    , { id = "core_87"
       , name = "Bastard of Robert"
       , card_type = CardType_Character
       , set = Set_Core
@@ -2651,7 +2651,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_135.jpg"
+    , { id = "core_135"
       , name = "Benjen Stark"
       , card_type = CardType_Character
       , set = Set_Core
@@ -2672,7 +2672,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_193.jpg"
+    , { id = "core_193"
       , name = "Blockade"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -2693,7 +2693,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_100.jpg"
+    , { id = "core_100"
       , name = "Blood of the Dragon"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -2714,7 +2714,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_150.jpg"
+    , { id = "core_150"
       , name = "Bodyguard"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -2735,7 +2735,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_104.jpg"
+    , { id = "core_104"
       , name = "Bones of a Child"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -2756,7 +2756,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_13.jpg"
+    , { id = "core_13"
       , name = "Bran Stark"
       , card_type = CardType_Character
       , set = Set_Core
@@ -2777,7 +2777,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_159.jpg"
+    , { id = "core_159"
       , name = "Bran the Builder's Legacy"
       , card_type = CardType_Event
       , set = Set_Core
@@ -2798,7 +2798,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_76.jpg"
+    , { id = "core_76"
       , name = "Brienne of Tarth"
       , card_type = CardType_Character
       , set = Set_Core
@@ -2819,7 +2819,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_44.jpg"
+    , { id = "core_44"
       , name = "Bronn"
       , card_type = CardType_Character
       , set = Set_Core
@@ -2840,7 +2840,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_118.jpg"
+    , { id = "core_118"
       , name = "Brown Ben Plumm"
       , card_type = CardType_Character
       , set = Set_Core
@@ -2861,7 +2861,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_195.jpg"
+    , { id = "core_195"
       , name = "Building Season"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -2882,7 +2882,7 @@ all_cards =
       , initiative = Just 1
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_164.jpg"
+    , { id = "core_164"
       , name = "Call Their Bluff"
       , card_type = CardType_Event
       , set = Set_Core
@@ -2903,7 +2903,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_198.jpg"
+    , { id = "core_198"
       , name = "Calm Over Westeros"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -2924,7 +2924,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_105.jpg"
+    , { id = "core_105"
       , name = "Captain Groleo"
       , card_type = CardType_Character
       , set = Set_Core
@@ -2945,7 +2945,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_6.jpg"
+    , { id = "core_6"
       , name = "Catelyn Stark"
       , card_type = CardType_Character
       , set = Set_Core
@@ -2966,7 +2966,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_39.jpg"
+    , { id = "core_39"
       , name = "Cersei Lannister"
       , card_type = CardType_Character
       , set = Set_Core
@@ -2987,7 +2987,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_50.jpg"
+    , { id = "core_50"
       , name = "Cersei's Attendant"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3008,7 +3008,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_43.jpg"
+    , { id = "core_43"
       , name = "Chella, Daughter of Cheyk"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3029,7 +3029,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_202.jpg"
+    , { id = "core_202"
       , name = "Condemned by the Realm"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -3050,7 +3050,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_203.jpg"
+    , { id = "core_203"
       , name = "Counting Favors"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -3071,7 +3071,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_138.jpg"
+    , { id = "core_138"
       , name = "Crossroads"
       , card_type = CardType_Location
       , set = Set_Core
@@ -3092,7 +3092,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_114.jpg"
+    , { id = "core_114"
       , name = "Daario Naharis"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3113,7 +3113,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_106.jpg"
+    , { id = "core_106"
       , name = "Daenerys Targaryen"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3134,7 +3134,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_173.jpg"
+    , { id = "core_173"
       , name = "Dance With Dragons"
       , card_type = CardType_Event
       , set = Set_Core
@@ -3155,7 +3155,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_121.jpg"
+    , { id = "core_121"
       , name = "Dany's Handmaiden"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3176,7 +3176,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_80.jpg"
+    , { id = "core_80"
       , name = "Devan Seaworth"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3197,7 +3197,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_19.jpg"
+    , { id = "core_19"
       , name = "Direwolf Pup"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3218,7 +3218,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_177.jpg"
+    , { id = "core_177"
       , name = "Distinct Mastery"
       , card_type = CardType_Event
       , set = Set_Core
@@ -3239,7 +3239,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_155.jpg"
+    , { id = "core_155"
       , name = "Distraction"
       , card_type = CardType_Event
       , set = Set_Core
@@ -3260,7 +3260,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_119.jpg"
+    , { id = "core_119"
       , name = "Dothraki Honor Guard"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3281,7 +3281,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_91.jpg"
+    , { id = "core_91"
       , name = "Dragonstone Port"
       , card_type = CardType_Location
       , set = Set_Core
@@ -3302,7 +3302,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_111.jpg"
+    , { id = "core_111"
       , name = "Drogon"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3323,7 +3323,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_188.jpg"
+    , { id = "core_188"
       , name = "Drunken Allegations"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -3344,7 +3344,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_127.jpg"
+    , { id = "core_127"
       , name = "Eastern Fiefdoms"
       , card_type = CardType_Location
       , set = Set_Core
@@ -3365,7 +3365,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_5.jpg"
+    , { id = "core_5"
       , name = "Eddard Stark"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3386,7 +3386,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_79.jpg"
+    , { id = "core_79"
       , name = "Edric Storm"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3407,7 +3407,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_48.jpg"
+    , { id = "core_48"
       , name = "Enemy Informer"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3428,7 +3428,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_103.jpg"
+    , { id = "core_103"
       , name = "Flame-Kissed"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -3449,7 +3449,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_187.jpg"
+    , { id = "core_187"
       , name = "Fleeing to the Wall"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -3470,7 +3470,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_174.jpg"
+    , { id = "core_174"
       , name = "Forever Burning"
       , card_type = CardType_Event
       , set = Set_Core
@@ -3491,7 +3491,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_137.jpg"
+    , { id = "core_137"
       , name = "Ghost"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3512,7 +3512,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_35.jpg"
+    , { id = "core_35"
       , name = "Gilded Plate"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -3533,7 +3533,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_32.jpg"
+    , { id = "core_32"
       , name = "Godswood"
       , card_type = CardType_Location
       , set = Set_Core
@@ -3554,7 +3554,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_57.jpg"
+    , { id = "core_57"
       , name = "Golden Tooth Mines"
       , card_type = CardType_Location
       , set = Set_Core
@@ -3575,7 +3575,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_185.jpg"
+    , { id = "core_185"
       , name = "Good for the Gander"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -3596,7 +3596,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_45.jpg"
+    , { id = "core_45"
       , name = "Grand Maester Pycelle"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3617,7 +3617,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_98.jpg"
+    , { id = "core_98"
       , name = "Great Hall"
       , card_type = CardType_Location
       , set = Set_Core
@@ -3638,7 +3638,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_29.jpg"
+    , { id = "core_29"
       , name = "Great Keep"
       , card_type = CardType_Location
       , set = Set_Core
@@ -3659,7 +3659,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_133.jpg"
+    , { id = "core_133"
       , name = "Great Pyramid"
       , card_type = CardType_Location
       , set = Set_Core
@@ -3680,7 +3680,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_10.jpg"
+    , { id = "core_10"
       , name = "Greatjon Umber"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3701,7 +3701,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_14.jpg"
+    , { id = "core_14"
       , name = "Grey Wind"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3722,7 +3722,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_160.jpg"
+    , { id = "core_160"
       , name = "Guilty!"
       , card_type = CardType_Event
       , set = Set_Core
@@ -3743,7 +3743,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_34.jpg"
+    , { id = "core_34"
       , name = "Gutter Rat's Cunning"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -3764,7 +3764,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_64.jpg"
+    , { id = "core_64"
       , name = "Hall of Heroes"
       , card_type = CardType_Location
       , set = Set_Core
@@ -3785,7 +3785,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_192.jpg"
+    , { id = "core_192"
       , name = "Hear Me Roar"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -3806,7 +3806,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_208.jpg"
+    , { id = "core_208"
       , name = "Herding the Masses"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -3827,7 +3827,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 2
       }
-    , { image_url = "/images/cards/Core_83.jpg"
+    , { id = "core_83"
       , name = "Highgarden Honor Guard"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3848,7 +3848,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_12.jpg"
+    , { id = "core_12"
       , name = "Hodor"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3869,7 +3869,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_197.jpg"
+    , { id = "core_197"
       , name = "Holding the Trident"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -3890,7 +3890,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_89.jpg"
+    , { id = "core_89"
       , name = "Host of Storm's End"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3911,7 +3911,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_21.jpg"
+    , { id = "core_21"
       , name = "House Tully Recruiter"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3932,7 +3932,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_88.jpg"
+    , { id = "core_88"
       , name = "House Tyrell Guard"
       , card_type = CardType_Character
       , set = Set_Core
@@ -3953,7 +3953,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_161.jpg"
+    , { id = "core_161"
       , name = "I Never Bet Against My Family"
       , card_type = CardType_Event
       , set = Set_Core
@@ -3974,7 +3974,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_165.jpg"
+    , { id = "core_165"
       , name = "I'm You Writ Small"
       , card_type = CardType_Event
       , set = Set_Core
@@ -3995,7 +3995,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_1.jpg"
+    , { id = "core_1"
       , name = "Ice"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -4016,7 +4016,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_125.jpg"
+    , { id = "core_125"
       , name = "Illyrio's Man"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4037,7 +4037,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_163.jpg"
+    , { id = "core_163"
       , name = "Insidious Ways"
       , card_type = CardType_Event
       , set = Set_Core
@@ -4058,7 +4058,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_117.jpg"
+    , { id = "core_117"
       , name = "Jhogo"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4079,7 +4079,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_36.jpg"
+    , { id = "core_36"
       , name = "Joffrey Baratheon"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4100,7 +4100,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_136.jpg"
+    , { id = "core_136"
       , name = "Jon Snow"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4121,7 +4121,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_20.jpg"
+    , { id = "core_20"
       , name = "Kennel Master"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4142,7 +4142,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_107.jpg"
+    , { id = "core_107"
       , name = "Khal Drogo"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4163,7 +4163,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_130.jpg"
+    , { id = "core_130"
       , name = "Khal Drogo's Tent"
       , card_type = CardType_Location
       , set = Set_Core
@@ -4184,7 +4184,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_94.jpg"
+    , { id = "core_94"
       , name = "King Robert's Chambers"
       , card_type = CardType_Location
       , set = Set_Core
@@ -4205,7 +4205,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_157.jpg"
+    , { id = "core_157"
       , name = "Kings in the North"
       , card_type = CardType_Event
       , set = Set_Core
@@ -4226,7 +4226,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_147.jpg"
+    , { id = "core_147"
       , name = "Knight of Flowers"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4247,7 +4247,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_81.jpg"
+    , { id = "core_81"
       , name = "Knight of the Rainwood"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4268,7 +4268,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_18.jpg"
+    , { id = "core_18"
       , name = "Knight of the Tumblestone"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4289,7 +4289,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_15.jpg"
+    , { id = "core_15"
       , name = "Lady"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4310,7 +4310,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_180.jpg"
+    , { id = "core_180"
       , name = "Lady Daenerys's Chambers"
       , card_type = CardType_Location
       , set = Set_Core
@@ -4331,7 +4331,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_55.jpg"
+    , { id = "core_55"
       , name = "Lannisport"
       , card_type = CardType_Location
       , set = Set_Core
@@ -4352,7 +4352,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_56.jpg"
+    , { id = "core_56"
       , name = "Lannisport Brothel"
       , card_type = CardType_Location
       , set = Set_Core
@@ -4373,7 +4373,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_54.jpg"
+    , { id = "core_54"
       , name = "Lannisport Honor Guard"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4394,7 +4394,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_52.jpg"
+    , { id = "core_52"
       , name = "Lannisport Steward"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4415,7 +4415,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_53.jpg"
+    , { id = "core_53"
       , name = "Lannisport Weaponsmith"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4436,7 +4436,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_158.jpg"
+    , { id = "core_158"
       , name = "Lethal Counterattack"
       , card_type = CardType_Event
       , set = Set_Core
@@ -4457,7 +4457,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_68.jpg"
+    , { id = "core_68"
       , name = "Lightbringer"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -4478,7 +4478,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_141.jpg"
+    , { id = "core_141"
       , name = "Littlefinger"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4499,7 +4499,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_28.jpg"
+    , { id = "core_28"
       , name = "Lord Eddard's Chambers"
       , card_type = CardType_Location
       , set = Set_Core
@@ -4520,7 +4520,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_170.jpg"
+    , { id = "core_170"
       , name = "Lords of the Narrow Sea"
       , card_type = CardType_Event
       , set = Set_Core
@@ -4541,7 +4541,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_140.jpg"
+    , { id = "core_140"
       , name = "Lordship"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -4562,7 +4562,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_51.jpg"
+    , { id = "core_51"
       , name = "Lurkers at Harrenhal"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4583,7 +4583,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_205.jpg"
+    , { id = "core_205"
       , name = "Mad King's Legacy"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -4604,7 +4604,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_151.jpg"
+    , { id = "core_151"
       , name = "Maester Aemon"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4625,7 +4625,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_77.jpg"
+    , { id = "core_77"
       , name = "Maester Cressen"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4646,7 +4646,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_152.jpg"
+    , { id = "core_152"
       , name = "Magister Illyrio"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4667,7 +4667,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_74.jpg"
+    , { id = "core_74"
       , name = "Melisandre"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4688,7 +4688,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_145.jpg"
+    , { id = "core_145"
       , name = "Milk of the Poppy"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -4709,7 +4709,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_67.jpg"
+    , { id = "core_67"
       , name = "Motley"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -4730,7 +4730,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_168.jpg"
+    , { id = "core_168"
       , name = "Muster"
       , card_type = CardType_Event
       , set = Set_Core
@@ -4751,7 +4751,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_189.jpg"
+    , { id = "core_189"
       , name = "Mutual Blackmail"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -4772,7 +4772,7 @@ all_cards =
       , initiative = Just 1
       , claim = Just 2
       }
-    , { image_url = "/images/cards/Core_182.jpg"
+    , { id = "core_182"
       , name = "Mutual Cause"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -4793,7 +4793,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 2
       }
-    , { image_url = "/images/cards/Core_196.jpg"
+    , { id = "core_196"
       , name = "Mutual Enemies"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -4814,7 +4814,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 2
       }
-    , { image_url = "/images/cards/Core_33.jpg"
+    , { id = "core_33"
       , name = "Narrow Sea"
       , card_type = CardType_Location
       , set = Set_Core
@@ -4835,7 +4835,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_207.jpg"
+    , { id = "core_207"
       , name = "Noose and Swordpoint"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -4856,7 +4856,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_26.jpg"
+    , { id = "core_26"
       , name = "Northern Fiefdoms"
       , card_type = CardType_Location
       , set = Set_Core
@@ -4877,7 +4877,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_2.jpg"
+    , { id = "core_2"
       , name = "Nymeria"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -4898,7 +4898,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_84.jpg"
+    , { id = "core_84"
       , name = "Old Red Priest"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4919,7 +4919,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_124.jpg"
+    , { id = "core_124"
       , name = "Pentoshi Guildmaster"
       , card_type = CardType_Character
       , set = Set_Core
@@ -4940,7 +4940,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_190.jpg"
+    , { id = "core_190"
       , name = "Planning Ahead"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -4961,7 +4961,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_101.jpg"
+    , { id = "core_101"
       , name = "Poisoned Wine"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -4982,7 +4982,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_204.jpg"
+    , { id = "core_204"
       , name = "Power and Wealth"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -5003,7 +5003,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_169.jpg"
+    , { id = "core_169"
       , name = "Prosperity and Plenty"
       , card_type = CardType_Event
       , set = Set_Core
@@ -5024,7 +5024,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_123.jpg"
+    , { id = "core_123"
       , name = "Qartheen Fanatic"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5045,7 +5045,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_115.jpg"
+    , { id = "core_115"
       , name = "Quaithe of the Shadow"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5066,7 +5066,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_60.jpg"
+    , { id = "core_60"
       , name = "Queen Cersei's Chambers"
       , card_type = CardType_Location
       , set = Set_Core
@@ -5087,7 +5087,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_49.jpg"
+    , { id = "core_49"
       , name = "Qyburn's Informers"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5108,7 +5108,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_46.jpg"
+    , { id = "core_46"
       , name = "Raff the Sweetling"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5129,7 +5129,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_184.jpg"
+    , { id = "core_184"
       , name = "Rains of Autumn"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -5150,7 +5150,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_73.jpg"
+    , { id = "core_73"
       , name = "Renly Baratheon"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5171,7 +5171,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_86.jpg"
+    , { id = "core_86"
       , name = "Renly's Courtier"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5192,7 +5192,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_171.jpg"
+    , { id = "core_171"
       , name = "Retreat"
       , card_type = CardType_Event
       , set = Set_Core
@@ -5213,7 +5213,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_109.jpg"
+    , { id = "core_109"
       , name = "Rhaegal"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5234,7 +5234,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_8.jpg"
+    , { id = "core_8"
       , name = "Robb Stark"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5255,7 +5255,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_71.jpg"
+    , { id = "core_71"
       , name = "Robert Baratheon"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5276,7 +5276,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_206.jpg"
+    , { id = "core_206"
       , name = "Rule by Decree"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -5297,7 +5297,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_9.jpg"
+    , { id = "core_9"
       , name = "Sansa Stark"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5318,7 +5318,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_175.jpg"
+    , { id = "core_175"
       , name = "Seductive Promise"
       , card_type = CardType_Event
       , set = Set_Core
@@ -5339,7 +5339,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_70.jpg"
+    , { id = "core_70"
       , name = "Selyse Baratheon"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5360,7 +5360,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_78.jpg"
+    , { id = "core_78"
       , name = "Ser Axel Florent"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5381,7 +5381,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_146.jpg"
+    , { id = "core_146"
       , name = "Ser Barristan Selmy"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5402,7 +5402,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_75.jpg"
+    , { id = "core_75"
       , name = "Ser Davos Seaworth"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5423,7 +5423,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_41.jpg"
+    , { id = "core_41"
       , name = "Ser Ilyn Payne"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5444,7 +5444,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_47.jpg"
+    , { id = "core_47"
       , name = "Ser Jacelyn Bywater"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5465,7 +5465,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_37.jpg"
+    , { id = "core_37"
       , name = "Ser Jaime Lannister"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5486,7 +5486,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_4.jpg"
+    , { id = "core_4"
       , name = "Ser Rodrik Cassel"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5507,7 +5507,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_66.jpg"
+    , { id = "core_66"
       , name = "Shadow's Blessing"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -5528,7 +5528,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_144.jpg"
+    , { id = "core_144"
       , name = "Shadowblack Lane"
       , card_type = CardType_Location
       , set = Set_Core
@@ -5549,7 +5549,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_178.jpg"
+    , { id = "core_178"
       , name = "Shae"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5570,7 +5570,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_11.jpg"
+    , { id = "core_11"
       , name = "Shaggydog"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5591,7 +5591,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_199.jpg"
+    , { id = "core_199"
       , name = "Snowed Under"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -5612,7 +5612,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_72.jpg"
+    , { id = "core_72"
       , name = "Stannis Baratheon"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5633,7 +5633,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_82.jpg"
+    , { id = "core_82"
       , name = "Stannis's Northern Cavalry"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5654,7 +5654,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_69.jpg"
+    , { id = "core_69"
       , name = "Stinking Drunk"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -5675,7 +5675,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_92.jpg"
+    , { id = "core_92"
       , name = "Stormlands Fiefdoms"
       , card_type = CardType_Location
       , set = Set_Core
@@ -5696,7 +5696,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_149.jpg"
+    , { id = "core_149"
       , name = "Street of Sisters"
       , card_type = CardType_Location
       , set = Set_Core
@@ -5717,7 +5717,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_139.jpg"
+    , { id = "core_139"
       , name = "Street of Steel"
       , card_type = CardType_Location
       , set = Set_Core
@@ -5738,7 +5738,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_113.jpg"
+    , { id = "core_113"
       , name = "Strong Belwas"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5759,7 +5759,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_3.jpg"
+    , { id = "core_3"
       , name = "Summer"
       , card_type = CardType_Attachment
       , set = Set_Core
@@ -5780,7 +5780,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_134.jpg"
+    , { id = "core_134"
       , name = "Summer Sea"
       , card_type = CardType_Location
       , set = Set_Core
@@ -5801,7 +5801,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_181.jpg"
+    , { id = "core_181"
       , name = "Summoning Season"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -5822,7 +5822,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_65.jpg"
+    , { id = "core_65"
       , name = "Sunset Sea"
       , card_type = CardType_Location
       , set = Set_Core
@@ -5843,7 +5843,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_172.jpg"
+    , { id = "core_172"
       , name = "Support of the Kingdom"
       , card_type = CardType_Event
       , set = Set_Core
@@ -5864,7 +5864,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_131.jpg"
+    , { id = "core_131"
       , name = "Temple of the Graces"
       , card_type = CardType_Location
       , set = Set_Core
@@ -5885,7 +5885,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_61.jpg"
+    , { id = "core_61"
       , name = "The Goldroad"
       , card_type = CardType_Location
       , set = Set_Core
@@ -5906,7 +5906,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_42.jpg"
+    , { id = "core_42"
       , name = "The Hound"
       , card_type = CardType_Character
       , set = Set_Core
@@ -5927,7 +5927,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_162.jpg"
+    , { id = "core_162"
       , name = "The Lion's Will"
       , card_type = CardType_Event
       , set = Set_Core
@@ -5948,7 +5948,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_200.jpg"
+    , { id = "core_200"
       , name = "The Power of Arms"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -5969,7 +5969,7 @@ all_cards =
       , initiative = Just 1
       , claim = Just 2
       }
-    , { image_url = "/images/cards/Core_194.jpg"
+    , { id = "core_194"
       , name = "The Power of Blood"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -5990,7 +5990,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_120.jpg"
+    , { id = "core_120"
       , name = "The Titan's Bastard"
       , card_type = CardType_Character
       , set = Set_Core
@@ -6011,7 +6011,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_186.jpg"
+    , { id = "core_186"
       , name = "Tourney for the Hand"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -6032,7 +6032,7 @@ all_cards =
       , initiative = Just 6
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_22.jpg"
+    , { id = "core_22"
       , name = "Trident Reinforcements"
       , card_type = CardType_Character
       , set = Set_Core
@@ -6053,7 +6053,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_38.jpg"
+    , { id = "core_38"
       , name = "Tyrion Lannister"
       , card_type = CardType_Character
       , set = Set_Core
@@ -6074,7 +6074,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_40.jpg"
+    , { id = "core_40"
       , name = "Tywin Lannister"
       , card_type = CardType_Character
       , set = Set_Core
@@ -6095,7 +6095,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_183.jpg"
+    , { id = "core_183"
       , name = "Uneasy Truce"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -6116,7 +6116,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_201.jpg"
+    , { id = "core_201"
       , name = "Valar Morghulis"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -6137,7 +6137,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 0
       }
-    , { image_url = "/images/cards/Core_142.jpg"
+    , { id = "core_142"
       , name = "Varys"
       , card_type = CardType_Character
       , set = Set_Core
@@ -6158,7 +6158,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_112.jpg"
+    , { id = "core_112"
       , name = "Viserion"
       , card_type = CardType_Character
       , set = Set_Core
@@ -6179,7 +6179,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_108.jpg"
+    , { id = "core_108"
       , name = "Viserys Targaryen"
       , card_type = CardType_Character
       , set = Set_Core
@@ -6200,7 +6200,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_16.jpg"
+    , { id = "core_16"
       , name = "War Host of the North"
       , card_type = CardType_Character
       , set = Set_Core
@@ -6221,7 +6221,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_122.jpg"
+    , { id = "core_122"
       , name = "Warlock's Servitors"
       , card_type = CardType_Character
       , set = Set_Core
@@ -6242,7 +6242,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_58.jpg"
+    , { id = "core_58"
       , name = "Western Fiefdoms"
       , card_type = CardType_Location
       , set = Set_Core
@@ -6263,7 +6263,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_176.jpg"
+    , { id = "core_176"
       , name = "Westeros Bleeds"
       , card_type = CardType_Event
       , set = Set_Core
@@ -6284,7 +6284,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_191.jpg"
+    , { id = "core_191"
       , name = "Wildfire Assault"
       , card_type = CardType_Plot
       , set = Set_Core
@@ -6305,7 +6305,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Core_156.jpg"
+    , { id = "core_156"
       , name = "Winter is Coming"
       , card_type = CardType_Event
       , set = Set_Core
@@ -6326,7 +6326,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_25.jpg"
+    , { id = "core_25"
       , name = "Winterfell Castle"
       , card_type = CardType_Location
       , set = Set_Core
@@ -6347,7 +6347,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_17.jpg"
+    , { id = "core_17"
       , name = "Winterfell Honor Guard"
       , card_type = CardType_Character
       , set = Set_Core
@@ -6368,7 +6368,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_24.jpg"
+    , { id = "core_24"
       , name = "Winterfell Kennels"
       , card_type = CardType_Location
       , set = Set_Core
@@ -6389,7 +6389,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_23.jpg"
+    , { id = "core_23"
       , name = "Winterfell Reserves"
       , card_type = CardType_Character
       , set = Set_Core
@@ -6410,7 +6410,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_116.jpg"
+    , { id = "core_116"
       , name = "Xaro Xoan Daxos"
       , card_type = CardType_Character
       , set = Set_Core
@@ -6431,7 +6431,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_126.jpg"
+    , { id = "core_126"
       , name = "Xaro's Home"
       , card_type = CardType_Location
       , set = Set_Core
@@ -6452,7 +6452,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Core_167.jpg"
+    , { id = "core_167"
       , name = "You've Killed the Wrong Dwarf!"
       , card_type = CardType_Event
       , set = Set_Core
@@ -6473,7 +6473,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_12.jpg"
+    , { id = "dotn_12"
       , name = "A Gentle Prison"
       , card_type = CardType_Event
       , set = Set_WolvesOfTheNorth
@@ -6494,7 +6494,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_8.jpg"
+    , { id = "dotn_8"
       , name = "Ahead of the Tide"
       , card_type = CardType_Event
       , set = Set_WolvesOfTheNorth
@@ -6515,7 +6515,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_15.jpg"
+    , { id = "dotn_15"
       , name = "Castle Black"
       , card_type = CardType_Location
       , set = Set_WolvesOfTheNorth
@@ -6536,7 +6536,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_17.jpg"
+    , { id = "dotn_17"
       , name = "Craster"
       , card_type = CardType_Character
       , set = Set_WolvesOfTheNorth
@@ -6557,7 +6557,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_7.jpg"
+    , { id = "dotn_7"
       , name = "Drowned Fanatic"
       , card_type = CardType_Character
       , set = Set_WolvesOfTheNorth
@@ -6578,7 +6578,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_3.jpg"
+    , { id = "dotn_3"
       , name = "Janos Slynt"
       , card_type = CardType_Character
       , set = Set_WolvesOfTheNorth
@@ -6599,7 +6599,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_9.jpg"
+    , { id = "dotn_9"
       , name = "Khal Drogo"
       , card_type = CardType_Character
       , set = Set_WolvesOfTheNorth
@@ -6620,7 +6620,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_5.jpg"
+    , { id = "dotn_5"
       , name = "Loyal Guard"
       , card_type = CardType_Character
       , set = Set_WolvesOfTheNorth
@@ -6641,7 +6641,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_11.jpg"
+    , { id = "dotn_11"
       , name = "Palace Spy"
       , card_type = CardType_Character
       , set = Set_WolvesOfTheNorth
@@ -6662,7 +6662,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_4.jpg"
+    , { id = "dotn_4"
       , name = "Pickpocket"
       , card_type = CardType_Attachment
       , set = Set_WolvesOfTheNorth
@@ -6683,7 +6683,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_13.jpg"
+    , { id = "dotn_13"
       , name = "Ranger of the Watch"
       , card_type = CardType_Character
       , set = Set_WolvesOfTheNorth
@@ -6704,7 +6704,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_6.jpg"
+    , { id = "dotn_6"
       , name = "Seat of Power"
       , card_type = CardType_Location
       , set = Set_WolvesOfTheNorth
@@ -6725,7 +6725,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_14.jpg"
+    , { id = "dotn_14"
       , name = "Septon Cellador"
       , card_type = CardType_Character
       , set = Set_WolvesOfTheNorth
@@ -6746,7 +6746,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_16.jpg"
+    , { id = "dotn_16"
       , name = "Skinchanger"
       , card_type = CardType_Character
       , set = Set_WolvesOfTheNorth
@@ -6767,7 +6767,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_10.jpg"
+    , { id = "dotn_10"
       , name = "The Dragon's Blood"
       , card_type = CardType_Attachment
       , set = Set_WolvesOfTheNorth
@@ -6788,7 +6788,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_19.jpg"
+    , { id = "dotn_19"
       , name = "The Rangers"
       , card_type = CardType_Agenda
       , set = Set_WolvesOfTheNorth
@@ -6809,7 +6809,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_18.jpg"
+    , { id = "dotn_18"
       , name = "Wildling Mead"
       , card_type = CardType_Attachment
       , set = Set_WolvesOfTheNorth
@@ -6830,7 +6830,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_2.jpg"
+    , { id = "dotn_2"
       , name = "Winter Cache"
       , card_type = CardType_Attachment
       , set = Set_WolvesOfTheNorth
@@ -6851,7 +6851,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WotN_20.jpg"
+    , { id = "dotn_20"
       , name = "Winter Festival"
       , card_type = CardType_Plot
       , set = Set_WolvesOfTheNorth
@@ -6872,7 +6872,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/WotN_1.jpg"
+    , { id = "dotn_1"
       , name = "Wolves of the North"
       , card_type = CardType_Character
       , set = Set_WolvesOfTheNorth
@@ -6893,7 +6893,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_6.jpg"
+    , { id = "kotse_6"
       , name = "Aeron Damphair"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -6914,7 +6914,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_24.jpg"
+    , { id = "kotse_24"
       , name = "Aeron's Chambers"
       , card_type = CardType_Location
       , set = Set_KingsOfTheSea
@@ -6935,7 +6935,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_48.jpg"
+    , { id = "kotse_48"
       , name = "After the Mummer's Ford"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheSea
@@ -6956,7 +6956,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/KotS_53.jpg"
+    , { id = "kotse_53"
       , name = "An Empty Throne"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheSea
@@ -6977,7 +6977,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/KotS_2.jpg"
+    , { id = "kotse_2"
       , name = "Asha Greyjoy"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -6998,7 +6998,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_17.jpg"
+    , { id = "kotse_17"
       , name = "Assault of the Kraken"
       , card_type = CardType_Event
       , set = Set_KingsOfTheSea
@@ -7019,7 +7019,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_41.jpg"
+    , { id = "kotse_41"
       , name = "Assertion of Might"
       , card_type = CardType_Event
       , set = Set_KingsOfTheSea
@@ -7040,7 +7040,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_1.jpg"
+    , { id = "kotse_1"
       , name = "Balon Greyjoy"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7061,7 +7061,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_30.jpg"
+    , { id = "kotse_30"
       , name = "Bay of Ice"
       , card_type = CardType_Location
       , set = Set_KingsOfTheSea
@@ -7082,7 +7082,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_26.jpg"
+    , { id = "kotse_26"
       , name = "Bloody Keep"
       , card_type = CardType_Location
       , set = Set_KingsOfTheSea
@@ -7103,7 +7103,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_39.jpg"
+    , { id = "kotse_39"
       , name = "Confession"
       , card_type = CardType_Event
       , set = Set_KingsOfTheSea
@@ -7124,7 +7124,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_14.jpg"
+    , { id = "kotse_14"
       , name = "Dagmer Cleftjaw"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7145,7 +7145,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_13.jpg"
+    , { id = "kotse_13"
       , name = "Drowned Disciple"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7166,7 +7166,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_12.jpg"
+    , { id = "kotse_12"
       , name = "Drumbeater"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7187,7 +7187,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_4.jpg"
+    , { id = "kotse_4"
       , name = "Euron Crow's Eye"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7208,7 +7208,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_31.jpg"
+    , { id = "kotse_31"
       , name = "Gatehouse"
       , card_type = CardType_Location
       , set = Set_KingsOfTheSea
@@ -7229,7 +7229,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_47.jpg"
+    , { id = "kotse_47"
       , name = "Godswood Attendant"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7250,7 +7250,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_23.jpg"
+    , { id = "kotse_23"
       , name = "Iron Island Fiefdoms"
       , card_type = CardType_Location
       , set = Set_KingsOfTheSea
@@ -7271,7 +7271,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_46.jpg"
+    , { id = "kotse_46"
       , name = "Jack of all Trades"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7292,7 +7292,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_34.jpg"
+    , { id = "kotse_34"
       , name = "Joffrey Baratheon"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7313,7 +7313,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_32.jpg"
+    , { id = "kotse_32"
       , name = "Kingdom of Shadows"
       , card_type = CardType_Location
       , set = Set_KingsOfTheSea
@@ -7334,7 +7334,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_18.jpg"
+    , { id = "kotse_18"
       , name = "Kingsmoot"
       , card_type = CardType_Event
       , set = Set_KingsOfTheSea
@@ -7355,7 +7355,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_28.jpg"
+    , { id = "kotse_28"
       , name = "Longship Iron Victory"
       , card_type = CardType_Location
       , set = Set_KingsOfTheSea
@@ -7376,7 +7376,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_7.jpg"
+    , { id = "kotse_7"
       , name = "Maester Wendamyr"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7397,7 +7397,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_37.jpg"
+    , { id = "kotse_37"
       , name = "Myrcella Lannister"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7418,7 +7418,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_11.jpg"
+    , { id = "kotse_11"
       , name = "Priest of the Drowned God"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7439,7 +7439,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_45.jpg"
+    , { id = "kotse_45"
       , name = "Randyl Tarly"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7460,7 +7460,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_54.jpg"
+    , { id = "kotse_54"
       , name = "Rise of the Kraken"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheSea
@@ -7481,7 +7481,7 @@ all_cards =
       , initiative = Just 8
       , claim = Just 2
       }
-    , { image_url = "/images/cards/KotS_20.jpg"
+    , { id = "kotse_20"
       , name = "Risen from the Sea"
       , card_type = CardType_Event
       , set = Set_KingsOfTheSea
@@ -7502,7 +7502,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_33.jpg"
+    , { id = "kotse_33"
       , name = "Robb Stark"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7523,7 +7523,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_35.jpg"
+    , { id = "kotse_35"
       , name = "Robert Baratheon"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7544,7 +7544,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_29.jpg"
+    , { id = "kotse_29"
       , name = "Scouting Vessel"
       , card_type = CardType_Location
       , set = Set_KingsOfTheSea
@@ -7565,7 +7565,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_16.jpg"
+    , { id = "kotse_16"
       , name = "Scurvy Cutthroat"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7586,7 +7586,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_9.jpg"
+    , { id = "kotse_9"
       , name = "Sea Raiders"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7607,7 +7607,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_40.jpg"
+    , { id = "kotse_40"
       , name = "Seafarer's Bow"
       , card_type = CardType_Attachment
       , set = Set_KingsOfTheSea
@@ -7628,7 +7628,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_19.jpg"
+    , { id = "kotse_19"
       , name = "Seasick"
       , card_type = CardType_Event
       , set = Set_KingsOfTheSea
@@ -7649,7 +7649,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_43.jpg"
+    , { id = "kotse_43"
       , name = "Shadowcat"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7670,7 +7670,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_42.jpg"
+    , { id = "kotse_42"
       , name = "Shivering Sea"
       , card_type = CardType_Location
       , set = Set_KingsOfTheSea
@@ -7691,7 +7691,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_49.jpg"
+    , { id = "kotse_49"
       , name = "Siege of Riverrun"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheSea
@@ -7712,7 +7712,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 2
       }
-    , { image_url = "/images/cards/KotS_44.jpg"
+    , { id = "kotse_44"
       , name = "Silent Sisters"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7733,7 +7733,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_52.jpg"
+    , { id = "kotse_52"
       , name = "Stay of Execution"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheSea
@@ -7754,7 +7754,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/KotS_10.jpg"
+    , { id = "kotse_10"
       , name = "Stowaway"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7775,7 +7775,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_25.jpg"
+    , { id = "kotse_25"
       , name = "Sunset Sea"
       , card_type = CardType_Location
       , set = Set_KingsOfTheSea
@@ -7796,7 +7796,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_21.jpg"
+    , { id = "kotse_21"
       , name = "Support of Harlaw"
       , card_type = CardType_Attachment
       , set = Set_KingsOfTheSea
@@ -7817,7 +7817,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_15.jpg"
+    , { id = "kotse_15"
       , name = "Ten Towers Honor Guard"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7838,7 +7838,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_50.jpg"
+    , { id = "kotse_50"
       , name = "The Breaking of Oaths"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheSea
@@ -7859,7 +7859,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/KotS_27.jpg"
+    , { id = "kotse_27"
       , name = "The Iron Mines"
       , card_type = CardType_Location
       , set = Set_KingsOfTheSea
@@ -7880,7 +7880,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_38.jpg"
+    , { id = "kotse_38"
       , name = "The Price of War"
       , card_type = CardType_Event
       , set = Set_KingsOfTheSea
@@ -7901,7 +7901,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_51.jpg"
+    , { id = "kotse_51"
       , name = "The Promise of Victory"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheSea
@@ -7922,7 +7922,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/KotS_3.jpg"
+    , { id = "kotse_3"
       , name = "Theon Greyjoy"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7943,7 +7943,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_22.jpg"
+    , { id = "kotse_22"
       , name = "Veteran Marauder"
       , card_type = CardType_Attachment
       , set = Set_KingsOfTheSea
@@ -7964,7 +7964,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_5.jpg"
+    , { id = "kotse_5"
       , name = "Victarion Greyjoy"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -7985,7 +7985,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_36.jpg"
+    , { id = "kotse_36"
       , name = "Viserys Targaryen"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -8006,7 +8006,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotS_8.jpg"
+    , { id = "kotse_8"
       , name = "Wex Pyke"
       , card_type = CardType_Character
       , set = Set_KingsOfTheSea
@@ -8027,7 +8027,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_22.jpg"
+    , { id = "kotst_22"
       , name = "Accepted Destiny"
       , card_type = CardType_Attachment
       , set = Set_KingsOfTheStorm
@@ -8048,7 +8048,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_52.jpg"
+    , { id = "kotst_52"
       , name = "Assault on King's Landing"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheStorm
@@ -8069,7 +8069,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/KotStorm_14.jpg"
+    , { id = "kotst_14"
       , name = "Asshai Initiate"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8090,7 +8090,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_19.jpg"
+    , { id = "kotst_19"
       , name = "Bastard in Hiding"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8111,7 +8111,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_13.jpg"
+    , { id = "kotst_13"
       , name = "Bearer of the Light"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8132,7 +8132,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_35.jpg"
+    , { id = "kotst_35"
       , name = "Bound by Blood"
       , card_type = CardType_Event
       , set = Set_KingsOfTheStorm
@@ -8153,7 +8153,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_23.jpg"
+    , { id = "kotst_23"
       , name = "Crown of Azor Ahai"
       , card_type = CardType_Attachment
       , set = Set_KingsOfTheStorm
@@ -8174,7 +8174,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_37.jpg"
+    , { id = "kotst_37"
       , name = "Dark Prophecy"
       , card_type = CardType_Event
       , set = Set_KingsOfTheStorm
@@ -8195,7 +8195,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_36.jpg"
+    , { id = "kotst_36"
       , name = "Direct Assault"
       , card_type = CardType_Event
       , set = Set_KingsOfTheStorm
@@ -8216,7 +8216,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_42.jpg"
+    , { id = "kotst_42"
       , name = "Fanatical Follower"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8237,7 +8237,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_54.jpg"
+    , { id = "kotst_54"
       , name = "Feast or Famine"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheStorm
@@ -8258,7 +8258,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 2
       }
-    , { image_url = "/images/cards/KotStorm_50.jpg"
+    , { id = "kotst_50"
       , name = "Forgotten Plans"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheStorm
@@ -8279,7 +8279,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/KotStorm_27.jpg"
+    , { id = "kotst_27"
       , name = "Great Hall"
       , card_type = CardType_Location
       , set = Set_KingsOfTheStorm
@@ -8300,7 +8300,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_34.jpg"
+    , { id = "kotst_34"
       , name = "Heart of the Stag"
       , card_type = CardType_Event
       , set = Set_KingsOfTheStorm
@@ -8321,7 +8321,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_40.jpg"
+    , { id = "kotst_40"
       , name = "Hedge Knight"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8342,7 +8342,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_20.jpg"
+    , { id = "kotst_20"
       , name = "Herald of Storm's End"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8363,7 +8363,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_26.jpg"
+    , { id = "kotst_26"
       , name = "King Robert's Chambers"
       , card_type = CardType_Location
       , set = Set_KingsOfTheStorm
@@ -8384,7 +8384,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_46.jpg"
+    , { id = "kotst_46"
       , name = "King's Pavillion"
       , card_type = CardType_Location
       , set = Set_KingsOfTheStorm
@@ -8405,7 +8405,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_43.jpg"
+    , { id = "kotst_43"
       , name = "Knighted"
       , card_type = CardType_Attachment
       , set = Set_KingsOfTheStorm
@@ -8426,7 +8426,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_39.jpg"
+    , { id = "kotst_39"
       , name = "Knights of the Realm"
       , card_type = CardType_Agenda
       , set = Set_KingsOfTheStorm
@@ -8447,7 +8447,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_15.jpg"
+    , { id = "kotst_15"
       , name = "Knights of the Storm"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8468,7 +8468,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_55.jpg"
+    , { id = "kotst_55"
       , name = "Lineage and Legacy"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheStorm
@@ -8489,7 +8489,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/KotStorm_17.jpg"
+    , { id = "kotst_17"
       , name = "Lost Captain"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8510,7 +8510,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_9.jpg"
+    , { id = "kotst_9"
       , name = "Maester Pylos"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8531,7 +8531,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_10.jpg"
+    , { id = "kotst_10"
       , name = "Marya Seaworth"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8552,7 +8552,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_48.jpg"
+    , { id = "kotst_48"
       , name = "Narrow Escape"
       , card_type = CardType_Event
       , set = Set_KingsOfTheStorm
@@ -8573,7 +8573,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_29.jpg"
+    , { id = "kotst_29"
       , name = "Narrow Sea"
       , card_type = CardType_Location
       , set = Set_KingsOfTheStorm
@@ -8594,7 +8594,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_33.jpg"
+    , { id = "kotst_33"
       , name = "Obey the King"
       , card_type = CardType_Event
       , set = Set_KingsOfTheStorm
@@ -8615,7 +8615,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_30.jpg"
+    , { id = "kotst_30"
       , name = "Pyre of the False Gods"
       , card_type = CardType_Location
       , set = Set_KingsOfTheStorm
@@ -8636,7 +8636,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_53.jpg"
+    , { id = "kotst_53"
       , name = "Regroup"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheStorm
@@ -8657,7 +8657,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 2
       }
-    , { image_url = "/images/cards/KotStorm_2.jpg"
+    , { id = "kotst_2"
       , name = "Renly Baratheon"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8678,7 +8678,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_1.jpg"
+    , { id = "kotst_1"
       , name = "Robert Baratheon"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8699,7 +8699,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_21.jpg"
+    , { id = "kotst_21"
       , name = "Ruby of R'hllor"
       , card_type = CardType_Attachment
       , set = Set_KingsOfTheStorm
@@ -8720,7 +8720,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_25.jpg"
+    , { id = "kotst_25"
       , name = "Salla's Escort Ship"
       , card_type = CardType_Location
       , set = Set_KingsOfTheStorm
@@ -8741,7 +8741,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_7.jpg"
+    , { id = "kotst_7"
       , name = "Salladhor Saan"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8762,7 +8762,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_38.jpg"
+    , { id = "kotst_38"
       , name = "See who is Stronger"
       , card_type = CardType_Event
       , set = Set_KingsOfTheStorm
@@ -8783,7 +8783,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_8.jpg"
+    , { id = "kotst_8"
       , name = "Ser Cortnay Penrose"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8804,7 +8804,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_4.jpg"
+    , { id = "kotst_4"
       , name = "Ser Emmon Cuy"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8825,7 +8825,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_5.jpg"
+    , { id = "kotst_5"
       , name = "Ser Guyard Morrigen"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8846,7 +8846,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_6.jpg"
+    , { id = "kotst_6"
       , name = "Ser Parmen Crane"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8867,7 +8867,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_41.jpg"
+    , { id = "kotst_41"
       , name = "Ser Preston Greenfield"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8888,7 +8888,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_12.jpg"
+    , { id = "kotst_12"
       , name = "Sister of Truth"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8909,7 +8909,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_31.jpg"
+    , { id = "kotst_31"
       , name = "Smuggler's Cove"
       , card_type = CardType_Location
       , set = Set_KingsOfTheStorm
@@ -8930,7 +8930,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_3.jpg"
+    , { id = "kotst_3"
       , name = "Stannis Baratheon"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8951,7 +8951,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_16.jpg"
+    , { id = "kotst_16"
       , name = "Stannis's Cavalry"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -8972,7 +8972,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_32.jpg"
+    , { id = "kotst_32"
       , name = "Storm's End"
       , card_type = CardType_Location
       , set = Set_KingsOfTheStorm
@@ -8993,7 +8993,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_28.jpg"
+    , { id = "kotst_28"
       , name = "Stormlands Fiefdoms"
       , card_type = CardType_Location
       , set = Set_KingsOfTheStorm
@@ -9014,7 +9014,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_47.jpg"
+    , { id = "kotst_47"
       , name = "Superior Claim"
       , card_type = CardType_Event
       , set = Set_KingsOfTheStorm
@@ -9035,7 +9035,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_49.jpg"
+    , { id = "kotst_49"
       , name = "The King's Law"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheStorm
@@ -9056,7 +9056,7 @@ all_cards =
       , initiative = Just 9
       , claim = Just 1
       }
-    , { image_url = "/images/cards/KotStorm_51.jpg"
+    , { id = "kotst_51"
       , name = "The Power of Faith"
       , card_type = CardType_Plot
       , set = Set_KingsOfTheStorm
@@ -9077,7 +9077,7 @@ all_cards =
       , initiative = Just 6
       , claim = Just 1
       }
-    , { image_url = "/images/cards/KotStorm_44.jpg"
+    , { id = "kotst_44"
       , name = "The Roseroad"
       , card_type = CardType_Location
       , set = Set_KingsOfTheStorm
@@ -9098,7 +9098,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_45.jpg"
+    , { id = "kotst_45"
       , name = "The Searoad"
       , card_type = CardType_Location
       , set = Set_KingsOfTheStorm
@@ -9119,7 +9119,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_24.jpg"
+    , { id = "kotst_24"
       , name = "The Stormlands"
       , card_type = CardType_Location
       , set = Set_KingsOfTheStorm
@@ -9140,7 +9140,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_18.jpg"
+    , { id = "kotst_18"
       , name = "Vanguard Lancer"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -9161,7 +9161,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/KotStorm_11.jpg"
+    , { id = "kotst_11"
       , name = "Veteran Knight"
       , card_type = CardType_Character
       , set = Set_KingsOfTheStorm
@@ -9182,7 +9182,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_47.jpg"
+    , { id = "kr_47"
       , name = "Arianne Martell"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9203,7 +9203,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_43.jpg"
+    , { id = "kr_43"
       , name = "Greydon Goodbrother"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9224,7 +9224,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_52.jpg"
+    , { id = "kr_52"
       , name = "Harpy's Scourge"
       , card_type = CardType_Attachment
       , set = Set_TheKingsguard
@@ -9245,7 +9245,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_44.jpg"
+    , { id = "kr_44"
       , name = "Longship Grey Ghost"
       , card_type = CardType_Location
       , set = Set_TheKingsguard
@@ -9266,7 +9266,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_42.jpg"
+    , { id = "kr_42"
       , name = "Melisandre"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9287,7 +9287,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_50.jpg"
+    , { id = "kr_50"
       , name = "Moat Cailin"
       , card_type = CardType_Location
       , set = Set_TheKingsguard
@@ -9308,7 +9308,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_60.jpg"
+    , { id = "kr_60"
       , name = "On My Oath"
       , card_type = CardType_Plot
       , set = Set_TheKingsguard
@@ -9329,7 +9329,7 @@ all_cards =
       , initiative = Just 7
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TK_48.jpg"
+    , { id = "kr_48"
       , name = "Palestone Sword Guard"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9350,7 +9350,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_58.jpg"
+    , { id = "kr_58"
       , name = "Ser Arys Oakheart"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9371,7 +9371,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_53.jpg"
+    , { id = "kr_53"
       , name = "Ser Barristan Selmy"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9392,7 +9392,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_59.jpg"
+    , { id = "kr_59"
       , name = "Ser Boros Blount"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9413,7 +9413,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_54.jpg"
+    , { id = "kr_54"
       , name = "Ser Jaime Lannister"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9434,7 +9434,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_51.jpg"
+    , { id = "kr_51"
       , name = "Ser Jorah Mormont"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9455,7 +9455,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_56.jpg"
+    , { id = "kr_56"
       , name = "Ser Mandon Moore"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9476,7 +9476,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_55.jpg"
+    , { id = "kr_55"
       , name = "Ser Meryn Trant"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9497,7 +9497,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_57.jpg"
+    , { id = "kr_57"
       , name = "Ser Preston Greenfield"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9518,7 +9518,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_41.jpg"
+    , { id = "kr_41"
       , name = "Shadow Killer"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9539,7 +9539,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_46.jpg"
+    , { id = "kr_46"
       , name = "The Hound"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9560,7 +9560,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_45.jpg"
+    , { id = "kr_45"
       , name = "Tywin Lannister"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9581,7 +9581,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TK_49.jpg"
+    , { id = "kr_49"
       , name = "Umber Champion"
       , card_type = CardType_Character
       , set = Set_TheKingsguard
@@ -9602,7 +9602,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_50.jpg"
+    , { id = "lotr_50"
       , name = "All the Gold in Casterly Rock"
       , card_type = CardType_Plot
       , set = Set_LionsOfTheRock
@@ -9623,7 +9623,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/LotR_44.jpg"
+    , { id = "lotr_44"
       , name = "Arrogant Contender"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -9644,7 +9644,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_39.jpg"
+    , { id = "lotr_39"
       , name = "Bastard"
       , card_type = CardType_Attachment
       , set = Set_LionsOfTheRock
@@ -9665,7 +9665,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_51.jpg"
+    , { id = "lotr_51"
       , name = "Breaking and Entering"
       , card_type = CardType_Plot
       , set = Set_LionsOfTheRock
@@ -9686,7 +9686,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 2
       }
-    , { image_url = "/images/cards/LotR_80.jpg"
+    , { id = "lotr_80"
       , name = "Bronn"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -9707,7 +9707,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_17.jpg"
+    , { id = "lotr_17"
       , name = "Bronn's Hireling"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -9728,7 +9728,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_43.jpg"
+    , { id = "lotr_43"
       , name = "Brothel Guard"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -9749,7 +9749,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_24.jpg"
+    , { id = "lotr_24"
       , name = "Casterly Rock"
       , card_type = CardType_Location
       , set = Set_LionsOfTheRock
@@ -9770,7 +9770,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_6.jpg"
+    , { id = "lotr_6"
       , name = "Cersei Lannister"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -9791,7 +9791,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_27.jpg"
+    , { id = "lotr_27"
       , name = "Coin Mint"
       , card_type = CardType_Location
       , set = Set_LionsOfTheRock
@@ -9812,7 +9812,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_19.jpg"
+    , { id = "lotr_19"
       , name = "Crawn Son of Calor"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -9833,7 +9833,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_28.jpg"
+    , { id = "lotr_28"
       , name = "Darkened Hallways"
       , card_type = CardType_Location
       , set = Set_LionsOfTheRock
@@ -9854,7 +9854,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_34.jpg"
+    , { id = "lotr_34"
       , name = "Double Bluff"
       , card_type = CardType_Event
       , set = Set_LionsOfTheRock
@@ -9875,7 +9875,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_15.jpg"
+    , { id = "lotr_15"
       , name = "Doubting Septa"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -9896,7 +9896,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_54.jpg"
+    , { id = "lotr_54"
       , name = "Edict of the Rock"
       , card_type = CardType_Plot
       , set = Set_LionsOfTheRock
@@ -9917,7 +9917,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 1
       }
-    , { image_url = "/images/cards/LotR_38.jpg"
+    , { id = "lotr_38"
       , name = "Feuding Clanswoman"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -9938,7 +9938,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_49.jpg"
+    , { id = "lotr_49"
       , name = "Frey Hospitality"
       , card_type = CardType_Plot
       , set = Set_LionsOfTheRock
@@ -9959,7 +9959,7 @@ all_cards =
       , initiative = Just 6
       , claim = Just 1
       }
-    , { image_url = "/images/cards/LotR_53.jpg"
+    , { id = "lotr_53"
       , name = "Game of Thrones"
       , card_type = CardType_Plot
       , set = Set_LionsOfTheRock
@@ -9980,7 +9980,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/LotR_37.jpg"
+    , { id = "lotr_37"
       , name = "High Septon"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10001,7 +10001,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_3.jpg"
+    , { id = "lotr_3"
       , name = "Increased Levy"
       , card_type = CardType_Attachment
       , set = Set_LionsOfTheRock
@@ -10022,7 +10022,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_35.jpg"
+    , { id = "lotr_35"
       , name = "Infamous!"
       , card_type = CardType_Event
       , set = Set_LionsOfTheRock
@@ -10043,7 +10043,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_4.jpg"
+    , { id = "lotr_4"
       , name = "Joffrey Baratheon"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10064,7 +10064,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_22.jpg"
+    , { id = "lotr_22"
       , name = "Lannisport Moneylender"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10085,7 +10085,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_30.jpg"
+    , { id = "lotr_30"
       , name = "Lannisport Treasury"
       , card_type = CardType_Location
       , set = Set_LionsOfTheRock
@@ -10106,7 +10106,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_16.jpg"
+    , { id = "lotr_16"
       , name = "Lord Tyrion's Host"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10127,7 +10127,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_13.jpg"
+    , { id = "lotr_13"
       , name = "Myrcella Lannister"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10148,7 +10148,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_26.jpg"
+    , { id = "lotr_26"
       , name = "Queen Cersei's Chambers"
       , card_type = CardType_Location
       , set = Set_LionsOfTheRock
@@ -10169,7 +10169,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_47.jpg"
+    , { id = "lotr_47"
       , name = "Rich Lands and a Keep"
       , card_type = CardType_Attachment
       , set = Set_LionsOfTheRock
@@ -10190,7 +10190,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_14.jpg"
+    , { id = "lotr_14"
       , name = "Ser Addam Marbrand"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10211,7 +10211,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_11.jpg"
+    , { id = "lotr_11"
       , name = "Ser Amory Lorch"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10232,7 +10232,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_21.jpg"
+    , { id = "lotr_21"
       , name = "Ser Amory's Poachers"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10253,7 +10253,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_10.jpg"
+    , { id = "lotr_10"
       , name = "Ser Gregor Clegane"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10274,7 +10274,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_18.jpg"
+    , { id = "lotr_18"
       , name = "Ser Gregor's Band"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10295,7 +10295,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_5.jpg"
+    , { id = "lotr_5"
       , name = "Ser Jaime Lannister"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10316,7 +10316,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_12.jpg"
+    , { id = "lotr_12"
       , name = "Ser Kevan Lannister"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10337,7 +10337,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_55.jpg"
+    , { id = "lotr_55"
       , name = "Shadows and Spiders"
       , card_type = CardType_Plot
       , set = Set_LionsOfTheRock
@@ -10358,7 +10358,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/LotR_46.jpg"
+    , { id = "lotr_46"
       , name = "Shield Islands Dromon"
       , card_type = CardType_Location
       , set = Set_LionsOfTheRock
@@ -10379,7 +10379,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_45.jpg"
+    , { id = "lotr_45"
       , name = "Split Loyalties"
       , card_type = CardType_Event
       , set = Set_LionsOfTheRock
@@ -10400,7 +10400,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_40.jpg"
+    , { id = "lotr_40"
       , name = "Street of Silk"
       , card_type = CardType_Location
       , set = Set_LionsOfTheRock
@@ -10421,7 +10421,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_25.jpg"
+    , { id = "lotr_25"
       , name = "Sunset Sea"
       , card_type = CardType_Location
       , set = Set_LionsOfTheRock
@@ -10442,7 +10442,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_42.jpg"
+    , { id = "lotr_42"
       , name = "Terminal Schemes"
       , card_type = CardType_Event
       , set = Set_LionsOfTheRock
@@ -10463,7 +10463,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_52.jpg"
+    , { id = "lotr_52"
       , name = "The Art of Seduction"
       , card_type = CardType_Plot
       , set = Set_LionsOfTheRock
@@ -10484,7 +10484,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 1
       }
-    , { image_url = "/images/cards/LotR_29.jpg"
+    , { id = "lotr_29"
       , name = "The Goldroad"
       , card_type = CardType_Location
       , set = Set_LionsOfTheRock
@@ -10505,7 +10505,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_23.jpg"
+    , { id = "lotr_23"
       , name = "The Inn at the Crossroads"
       , card_type = CardType_Location
       , set = Set_LionsOfTheRock
@@ -10526,7 +10526,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_31.jpg"
+    , { id = "lotr_31"
       , name = "The Iron Throne"
       , card_type = CardType_Location
       , set = Set_LionsOfTheRock
@@ -10547,7 +10547,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_32.jpg"
+    , { id = "lotr_32"
       , name = "The Lion's Cunning"
       , card_type = CardType_Event
       , set = Set_LionsOfTheRock
@@ -10568,7 +10568,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_41.jpg"
+    , { id = "lotr_41"
       , name = "The Only Game that Matters"
       , card_type = CardType_Event
       , set = Set_LionsOfTheRock
@@ -10589,7 +10589,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_48.jpg"
+    , { id = "lotr_48"
       , name = "The Power Behind the Throne"
       , card_type = CardType_Agenda
       , set = Set_LionsOfTheRock
@@ -10610,7 +10610,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_33.jpg"
+    , { id = "lotr_33"
       , name = "The Wealth of the Rock"
       , card_type = CardType_Event
       , set = Set_LionsOfTheRock
@@ -10631,7 +10631,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_20.jpg"
+    , { id = "lotr_20"
       , name = "Tribes of the Vale"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10652,7 +10652,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_7.jpg"
+    , { id = "lotr_7"
       , name = "Tyrion Lannister"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10673,7 +10673,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_9.jpg"
+    , { id = "lotr_9"
       , name = "Tywin Lannister"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10694,7 +10694,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_2.jpg"
+    , { id = "lotr_2"
       , name = "Vat of Wildfire"
       , card_type = CardType_Attachment
       , set = Set_LionsOfTheRock
@@ -10715,7 +10715,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_36.jpg"
+    , { id = "lotr_36"
       , name = "Warrior's Sons"
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
@@ -10736,7 +10736,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LotR_1.jpg"
+    , { id = "lotr_1"
       , name = "Widow's Wail"
       , card_type = CardType_Attachment
       , set = Set_LionsOfTheRock
@@ -10757,7 +10757,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_38.jpg"
+    , { id = "low_38"
       , name = "At Night They Howl"
       , card_type = CardType_Event
       , set = Set_LordsOfWinter
@@ -10778,7 +10778,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_43.jpg"
+    , { id = "low_43"
       , name = "Bowl of Brown"
       , card_type = CardType_Attachment
       , set = Set_LordsOfWinter
@@ -10799,7 +10799,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_10.jpg"
+    , { id = "low_10"
       , name = "Bran Stark"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -10820,7 +10820,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_51.jpg"
+    , { id = "low_51"
       , name = "Calm Before the Storm"
       , card_type = CardType_Plot
       , set = Set_LordsOfWinter
@@ -10841,7 +10841,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 1
       }
-    , { image_url = "/images/cards/LoW_7.jpg"
+    , { id = "low_7"
       , name = "Catelyn Stark"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -10862,7 +10862,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_1.jpg"
+    , { id = "low_1"
       , name = "Crown of Winter"
       , card_type = CardType_Attachment
       , set = Set_LordsOfWinter
@@ -10883,7 +10883,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_11.jpg"
+    , { id = "low_11"
       , name = "Deepwood Mercenary"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -10904,7 +10904,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_47.jpg"
+    , { id = "low_47"
       , name = "Die by the Sword"
       , card_type = CardType_Event
       , set = Set_LordsOfWinter
@@ -10925,7 +10925,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_6.jpg"
+    , { id = "low_6"
       , name = "Eddard Stark"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -10946,7 +10946,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_19.jpg"
+    , { id = "low_19"
       , name = "Edmure's Host"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -10967,7 +10967,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_37.jpg"
+    , { id = "low_37"
       , name = "Endless Endurance"
       , card_type = CardType_Event
       , set = Set_LordsOfWinter
@@ -10988,7 +10988,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_54.jpg"
+    , { id = "low_54"
       , name = "Family, Duty, Honor"
       , card_type = CardType_Plot
       , set = Set_LordsOfWinter
@@ -11009,7 +11009,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/LoW_36.jpg"
+    , { id = "low_36"
       , name = "Fear Cuts Deeper than Swords"
       , card_type = CardType_Event
       , set = Set_LordsOfWinter
@@ -11030,7 +11030,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_50.jpg"
+    , { id = "low_50"
       , name = "Fortified Position"
       , card_type = CardType_Plot
       , set = Set_LordsOfWinter
@@ -11051,7 +11051,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/LoW_26.jpg"
+    , { id = "low_26"
       , name = "Frozen Outpost"
       , card_type = CardType_Location
       , set = Set_LordsOfWinter
@@ -11072,7 +11072,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_4.jpg"
+    , { id = "low_4"
       , name = "Frozen Solid"
       , card_type = CardType_Attachment
       , set = Set_LordsOfWinter
@@ -11093,7 +11093,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_29.jpg"
+    , { id = "low_29"
       , name = "Godswood"
       , card_type = CardType_Location
       , set = Set_LordsOfWinter
@@ -11114,7 +11114,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_30.jpg"
+    , { id = "low_30"
       , name = "Great Keep"
       , card_type = CardType_Location
       , set = Set_LordsOfWinter
@@ -11135,7 +11135,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_2.jpg"
+    , { id = "low_2"
       , name = "Grey Wind"
       , card_type = CardType_Attachment
       , set = Set_LordsOfWinter
@@ -11156,7 +11156,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_18.jpg"
+    , { id = "low_18"
       , name = "Guard at Riverrun"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11177,7 +11177,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_15.jpg"
+    , { id = "low_15"
       , name = "Host of the Bear"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11198,7 +11198,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_21.jpg"
+    , { id = "low_21"
       , name = "Hoster Tully"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11219,7 +11219,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_12.jpg"
+    , { id = "low_12"
       , name = "House Tully Septon"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11240,7 +11240,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_5.jpg"
+    , { id = "low_5"
       , name = "Jojen Reed"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11261,7 +11261,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_16.jpg"
+    , { id = "low_16"
       , name = "King Robb's Companions"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11282,7 +11282,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_17.jpg"
+    , { id = "low_17"
       , name = "Knight of the Red Fork"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11303,7 +11303,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_28.jpg"
+    , { id = "low_28"
       , name = "Lord Eddard's Chambers"
       , card_type = CardType_Location
       , set = Set_LordsOfWinter
@@ -11324,7 +11324,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_41.jpg"
+    , { id = "low_41"
       , name = "Mance's Men"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11345,7 +11345,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_49.jpg"
+    , { id = "low_49"
       , name = "Marched to the Wall"
       , card_type = CardType_Plot
       , set = Set_LordsOfWinter
@@ -11366,7 +11366,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/LoW_25.jpg"
+    , { id = "low_25"
       , name = "Mole Town Brothel"
       , card_type = CardType_Location
       , set = Set_LordsOfWinter
@@ -11387,7 +11387,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_32.jpg"
+    , { id = "low_32"
       , name = "Narrow Sea"
       , card_type = CardType_Location
       , set = Set_LordsOfWinter
@@ -11408,7 +11408,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_46.jpg"
+    , { id = "low_46"
       , name = "Nightmares"
       , card_type = CardType_Event
       , set = Set_LordsOfWinter
@@ -11429,7 +11429,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_31.jpg"
+    , { id = "low_31"
       , name = "Northern Fiefdoms"
       , card_type = CardType_Location
       , set = Set_LordsOfWinter
@@ -11450,7 +11450,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_40.jpg"
+    , { id = "low_40"
       , name = "Qhorin Halfhand"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11471,7 +11471,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_55.jpg"
+    , { id = "low_55"
       , name = "Respect of the Old Gods"
       , card_type = CardType_Plot
       , set = Set_LordsOfWinter
@@ -11492,7 +11492,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 2
       }
-    , { image_url = "/images/cards/LoW_24.jpg"
+    , { id = "low_24"
       , name = "Riverrun"
       , card_type = CardType_Location
       , set = Set_LordsOfWinter
@@ -11513,7 +11513,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_13.jpg"
+    , { id = "low_13"
       , name = "Riverrun Messenger"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11534,7 +11534,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_8.jpg"
+    , { id = "low_8"
       , name = "Robb Stark"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11555,7 +11555,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_42.jpg"
+    , { id = "low_42"
       , name = "Rorge"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11576,7 +11576,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_33.jpg"
+    , { id = "low_33"
       , name = "Routing the Charge"
       , card_type = CardType_Event
       , set = Set_LordsOfWinter
@@ -11597,7 +11597,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_20.jpg"
+    , { id = "low_20"
       , name = "Ser Edmure Tully"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11618,7 +11618,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_3.jpg"
+    , { id = "low_3"
       , name = "Shaggydog"
       , card_type = CardType_Attachment
       , set = Set_LordsOfWinter
@@ -11639,7 +11639,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_53.jpg"
+    , { id = "low_53"
       , name = "Storm of Swords"
       , card_type = CardType_Plot
       , set = Set_LordsOfWinter
@@ -11660,7 +11660,7 @@ all_cards =
       , initiative = Just 6
       , claim = Just 1
       }
-    , { image_url = "/images/cards/LoW_45.jpg"
+    , { id = "low_45"
       , name = "Street of Steel"
       , card_type = CardType_Location
       , set = Set_LordsOfWinter
@@ -11681,7 +11681,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_9.jpg"
+    , { id = "low_9"
       , name = "Summer"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11702,7 +11702,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_52.jpg"
+    , { id = "low_52"
       , name = "Take Them by Surprise"
       , card_type = CardType_Plot
       , set = Set_LordsOfWinter
@@ -11723,7 +11723,7 @@ all_cards =
       , initiative = Just 11
       , claim = Just 1
       }
-    , { image_url = "/images/cards/LoW_22.jpg"
+    , { id = "low_22"
       , name = "The Blackfish"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11744,7 +11744,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_48.jpg"
+    , { id = "low_48"
       , name = "The Siege of Winterfell"
       , card_type = CardType_Agenda
       , set = Set_LordsOfWinter
@@ -11765,7 +11765,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_34.jpg"
+    , { id = "low_34"
       , name = "They Shall Not Cross"
       , card_type = CardType_Event
       , set = Set_LordsOfWinter
@@ -11786,7 +11786,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_44.jpg"
+    , { id = "low_44"
       , name = "Training Grounds"
       , card_type = CardType_Location
       , set = Set_LordsOfWinter
@@ -11807,7 +11807,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_39.jpg"
+    , { id = "low_39"
       , name = "Treaty with the North"
       , card_type = CardType_Agenda
       , set = Set_LordsOfWinter
@@ -11828,7 +11828,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_23.jpg"
+    , { id = "low_23"
       , name = "Winterfell"
       , card_type = CardType_Location
       , set = Set_LordsOfWinter
@@ -11849,7 +11849,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_35.jpg"
+    , { id = "low_35"
       , name = "Wolf Dreams"
       , card_type = CardType_Event
       , set = Set_LordsOfWinter
@@ -11870,7 +11870,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_14.jpg"
+    , { id = "low_14"
       , name = "Wolf Pack"
       , card_type = CardType_Character
       , set = Set_LordsOfWinter
@@ -11891,7 +11891,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/LoW_27.jpg"
+    , { id = "low_27"
       , name = "Wolfswood"
       , card_type = CardType_Location
       , set = Set_LordsOfWinter
@@ -11912,7 +11912,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_53.jpg"
+    , { id = "pots_53"
       , name = "A Pinch of Powder"
       , card_type = CardType_Attachment
       , set = Set_PrincesOfTheSun
@@ -11933,7 +11933,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_59.jpg"
+    , { id = "pots_59"
       , name = "Alliance"
       , card_type = CardType_Plot
       , set = Set_PrincesOfTheSun
@@ -11954,7 +11954,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/PotS_5.jpg"
+    , { id = "pots_5"
       , name = "Areo Hotah"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -11975,7 +11975,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_2.jpg"
+    , { id = "pots_2"
       , name = "Arianne Martell"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -11996,7 +11996,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_58.jpg"
+    , { id = "pots_58"
       , name = "Attack from the Sea"
       , card_type = CardType_Plot
       , set = Set_PrincesOfTheSun
@@ -12017,7 +12017,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/PotS_54.jpg"
+    , { id = "pots_54"
       , name = "Battle of Oxcross"
       , card_type = CardType_Plot
       , set = Set_PrincesOfTheSun
@@ -12038,7 +12038,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/PotS_20.jpg"
+    , { id = "pots_20"
       , name = "Blood for Blood"
       , card_type = CardType_Event
       , set = Set_PrincesOfTheSun
@@ -12059,7 +12059,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_37.jpg"
+    , { id = "pots_37"
       , name = "Brienne of Tarth"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12080,7 +12080,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_45.jpg"
+    , { id = "pots_45"
       , name = "Court Advisor"
       , card_type = CardType_Attachment
       , set = Set_PrincesOfTheSun
@@ -12101,7 +12101,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_4.jpg"
+    , { id = "pots_4"
       , name = "Darkstar"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12122,7 +12122,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_48.jpg"
+    , { id = "pots_48"
       , name = "Denys Mallister"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12143,7 +12143,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_3.jpg"
+    , { id = "pots_3"
       , name = "Doran Martell"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12164,7 +12164,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_31.jpg"
+    , { id = "pots_31"
       , name = "Dorne"
       , card_type = CardType_Location
       , set = Set_PrincesOfTheSun
@@ -12185,7 +12185,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_26.jpg"
+    , { id = "pots_26"
       , name = "Dornish Fiefdoms"
       , card_type = CardType_Location
       , set = Set_PrincesOfTheSun
@@ -12206,7 +12206,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_7.jpg"
+    , { id = "pots_7"
       , name = "Ellaria Sand"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12227,7 +12227,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_44.jpg"
+    , { id = "pots_44"
       , name = "Formal Petition"
       , card_type = CardType_Attachment
       , set = Set_PrincesOfTheSun
@@ -12248,7 +12248,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_52.jpg"
+    , { id = "pots_52"
       , name = "Former Champion"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12269,7 +12269,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_8.jpg"
+    , { id = "pots_8"
       , name = "Harmen Uller"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12290,7 +12290,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_21.jpg"
+    , { id = "pots_21"
       , name = "He Calls It Thinking"
       , card_type = CardType_Event
       , set = Set_PrincesOfTheSun
@@ -12311,7 +12311,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_11.jpg"
+    , { id = "pots_11"
       , name = "House Dayne Knight"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12332,7 +12332,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_17.jpg"
+    , { id = "pots_17"
       , name = "House Dayne Reserves"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12353,7 +12353,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_14.jpg"
+    , { id = "pots_14"
       , name = "House Dayne Skirmisher"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12374,7 +12374,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_10.jpg"
+    , { id = "pots_10"
       , name = "House Messenger"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12395,7 +12395,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_36.jpg"
+    , { id = "pots_36"
       , name = "Joffrey Baratheon"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12416,7 +12416,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_50.jpg"
+    , { id = "pots_50"
       , name = "Kingsguard Squire"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12437,7 +12437,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_55.jpg"
+    , { id = "pots_55"
       , name = "Let My Porridge Fly"
       , card_type = CardType_Plot
       , set = Set_PrincesOfTheSun
@@ -12458,7 +12458,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/PotS_19.jpg"
+    , { id = "pots_19"
       , name = "Locked Away"
       , card_type = CardType_Attachment
       , set = Set_PrincesOfTheSun
@@ -12479,7 +12479,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_27.jpg"
+    , { id = "pots_27"
       , name = "Lord Doran's Chambers"
       , card_type = CardType_Location
       , set = Set_PrincesOfTheSun
@@ -12500,7 +12500,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_13.jpg"
+    , { id = "pots_13"
       , name = "Lord Edric's Knight"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12521,7 +12521,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_49.jpg"
+    , { id = "pots_49"
       , name = "Mag the Mighty"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12542,7 +12542,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_42.jpg"
+    , { id = "pots_42"
       , name = "Make an Example"
       , card_type = CardType_Event
       , set = Set_PrincesOfTheSun
@@ -12563,7 +12563,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_15.jpg"
+    , { id = "pots_15"
       , name = "Orphan of the Greenblood"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12584,7 +12584,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_29.jpg"
+    , { id = "pots_29"
       , name = "Palace Fountains"
       , card_type = CardType_Location
       , set = Set_PrincesOfTheSun
@@ -12605,7 +12605,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_12.jpg"
+    , { id = "pots_12"
       , name = "Paramour"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12626,7 +12626,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_40.jpg"
+    , { id = "pots_40"
       , name = "Parting Blow"
       , card_type = CardType_Event
       , set = Set_PrincesOfTheSun
@@ -12647,7 +12647,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_25.jpg"
+    , { id = "pots_25"
       , name = "Red Vengeance"
       , card_type = CardType_Event
       , set = Set_PrincesOfTheSun
@@ -12668,7 +12668,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_47.jpg"
+    , { id = "pots_47"
       , name = "Rusted Sword"
       , card_type = CardType_Attachment
       , set = Set_PrincesOfTheSun
@@ -12689,7 +12689,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_6.jpg"
+    , { id = "pots_6"
       , name = "Sarella Sand"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12710,7 +12710,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_24.jpg"
+    , { id = "pots_24"
       , name = "Scheming on the Sand"
       , card_type = CardType_Event
       , set = Set_PrincesOfTheSun
@@ -12731,7 +12731,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_9.jpg"
+    , { id = "pots_9"
       , name = "Ser Arys Oakheart"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12752,7 +12752,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_39.jpg"
+    , { id = "pots_39"
       , name = "Ser Jorah Mormont"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12773,7 +12773,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_23.jpg"
+    , { id = "pots_23"
       , name = "Someone Always Tells"
       , card_type = CardType_Event
       , set = Set_PrincesOfTheSun
@@ -12794,7 +12794,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_28.jpg"
+    , { id = "pots_28"
       , name = "Summer Sea"
       , card_type = CardType_Location
       , set = Set_PrincesOfTheSun
@@ -12815,7 +12815,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_18.jpg"
+    , { id = "pots_18"
       , name = "Taste for Blood"
       , card_type = CardType_Attachment
       , set = Set_PrincesOfTheSun
@@ -12836,7 +12836,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_46.jpg"
+    , { id = "pots_46"
       , name = "The Art of Diplomacy"
       , card_type = CardType_Attachment
       , set = Set_PrincesOfTheSun
@@ -12857,7 +12857,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_43.jpg"
+    , { id = "pots_43"
       , name = "The Dragon's Tail"
       , card_type = CardType_Event
       , set = Set_PrincesOfTheSun
@@ -12878,7 +12878,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_35.jpg"
+    , { id = "pots_35"
       , name = "The Hound"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12899,7 +12899,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_32.jpg"
+    , { id = "pots_32"
       , name = "The Old Palace"
       , card_type = CardType_Location
       , set = Set_PrincesOfTheSun
@@ -12920,7 +12920,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_22.jpg"
+    , { id = "pots_22"
       , name = "The Prince's Wrath"
       , card_type = CardType_Event
       , set = Set_PrincesOfTheSun
@@ -12941,7 +12941,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_1.jpg"
+    , { id = "pots_1"
       , name = "The Red Viper"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -12962,7 +12962,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_57.jpg"
+    , { id = "pots_57"
       , name = "The Red Wedding"
       , card_type = CardType_Plot
       , set = Set_PrincesOfTheSun
@@ -12983,7 +12983,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/PotS_33.jpg"
+    , { id = "pots_33"
       , name = "The Spear Tower"
       , card_type = CardType_Location
       , set = Set_PrincesOfTheSun
@@ -13004,7 +13004,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_16.jpg"
+    , { id = "pots_16"
       , name = "The Viper's Bannermen"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -13025,7 +13025,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_38.jpg"
+    , { id = "pots_38"
       , name = "Theon Greyjoy"
       , card_type = CardType_Character
       , set = Set_PrincesOfTheSun
@@ -13046,7 +13046,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_56.jpg"
+    , { id = "pots_56"
       , name = "Threat from the North"
       , card_type = CardType_Plot
       , set = Set_PrincesOfTheSun
@@ -13067,7 +13067,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/PotS_60.jpg"
+    , { id = "pots_60"
       , name = "To the Spears!"
       , card_type = CardType_Plot
       , set = Set_PrincesOfTheSun
@@ -13088,7 +13088,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/PotS_34.jpg"
+    , { id = "pots_34"
       , name = "Tower of the Sun"
       , card_type = CardType_Location
       , set = Set_PrincesOfTheSun
@@ -13109,7 +13109,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_41.jpg"
+    , { id = "pots_41"
       , name = "Wars Are Won with Quills"
       , card_type = CardType_Event
       , set = Set_PrincesOfTheSun
@@ -13130,7 +13130,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_30.jpg"
+    , { id = "pots_30"
       , name = "Water Garden"
       , card_type = CardType_Location
       , set = Set_PrincesOfTheSun
@@ -13151,7 +13151,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/PotS_51.jpg"
+    , { id = "pots_51"
       , name = "When I Woke..."
       , card_type = CardType_Event
       , set = Set_PrincesOfTheSun
@@ -13172,7 +13172,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_39.jpg"
+    , { id = "qod_39"
       , name = "Advisor to the Crown"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13193,7 +13193,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_47.jpg"
+    , { id = "qod_47"
       , name = "Alliance"
       , card_type = CardType_Agenda
       , set = Set_QueenOfDragons
@@ -13214,7 +13214,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_36.jpg"
+    , { id = "qod_36"
       , name = "Ambush from the Plains"
       , card_type = CardType_Event
       , set = Set_QueenOfDragons
@@ -13235,7 +13235,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_28.jpg"
+    , { id = "qod_28"
       , name = "Astapor"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -13256,7 +13256,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_18.jpg"
+    , { id = "qod_18"
       , name = "Black Hatchling"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13277,7 +13277,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_3.jpg"
+    , { id = "qod_3"
       , name = "Bloodrider's Arakh"
       , card_type = CardType_Attachment
       , set = Set_QueenOfDragons
@@ -13298,7 +13298,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_13.jpg"
+    , { id = "qod_13"
       , name = "Blue-Lipped Warlock"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13319,7 +13319,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_49.jpg"
+    , { id = "qod_49"
       , name = "Burning Bridges"
       , card_type = CardType_Plot
       , set = Set_QueenOfDragons
@@ -13340,7 +13340,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/QoD_6.jpg"
+    , { id = "qod_6"
       , name = "Crown of Meereen"
       , card_type = CardType_Attachment
       , set = Set_QueenOfDragons
@@ -13361,7 +13361,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_22.jpg"
+    , { id = "qod_22"
       , name = "Daenerys Targaryen"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13382,7 +13382,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_44.jpg"
+    , { id = "qod_44"
       , name = "Dissension"
       , card_type = CardType_Event
       , set = Set_QueenOfDragons
@@ -13403,7 +13403,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_2.jpg"
+    , { id = "qod_2"
       , name = "Dragon Fear"
       , card_type = CardType_Attachment
       , set = Set_QueenOfDragons
@@ -13424,7 +13424,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_23.jpg"
+    , { id = "qod_23"
       , name = "Drogon"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13445,7 +13445,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_34.jpg"
+    , { id = "qod_34"
       , name = "Eastern Fiefdoms"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -13466,7 +13466,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_45.jpg"
+    , { id = "qod_45"
       , name = "Favorable Ground"
       , card_type = CardType_Event
       , set = Set_QueenOfDragons
@@ -13487,7 +13487,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_37.jpg"
+    , { id = "qod_37"
       , name = "Field of Fire"
       , card_type = CardType_Event
       , set = Set_QueenOfDragons
@@ -13508,7 +13508,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_51.jpg"
+    , { id = "qod_51"
       , name = "Focused Offense"
       , card_type = CardType_Plot
       , set = Set_QueenOfDragons
@@ -13529,7 +13529,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 3
       }
-    , { image_url = "/images/cards/QoD_35.jpg"
+    , { id = "qod_35"
       , name = "Great Pyramid"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -13550,7 +13550,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_19.jpg"
+    , { id = "qod_19"
       , name = "Green Hatchling"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13571,7 +13571,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_10.jpg"
+    , { id = "qod_10"
       , name = "Grey Worm"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13592,7 +13592,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_48.jpg"
+    , { id = "qod_48"
       , name = "Heir to the Iron Throne"
       , card_type = CardType_Agenda
       , set = Set_QueenOfDragons
@@ -13613,7 +13613,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_41.jpg"
+    , { id = "qod_41"
       , name = "High Ground"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -13634,7 +13634,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_8.jpg"
+    , { id = "qod_8"
       , name = "Hired Swords"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13655,7 +13655,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_15.jpg"
+    , { id = "qod_15"
       , name = "Horseback Archers"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13676,7 +13676,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_40.jpg"
+    , { id = "qod_40"
       , name = "Initiate of the Citadel"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13697,7 +13697,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_11.jpg"
+    , { id = "qod_11"
       , name = "Jorah's Cohorts"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13718,7 +13718,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_21.jpg"
+    , { id = "qod_21"
       , name = "Khal Drogo"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13739,7 +13739,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_33.jpg"
+    , { id = "qod_33"
       , name = "Khal Drogo's Tent"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -13760,7 +13760,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_16.jpg"
+    , { id = "qod_16"
       , name = "Killer of the Wounded"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13781,7 +13781,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_42.jpg"
+    , { id = "qod_42"
       , name = "Kingsroad Fiefdom"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -13802,7 +13802,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_53.jpg"
+    , { id = "qod_53"
       , name = "Loyalty Money Can Buy"
       , card_type = CardType_Plot
       , set = Set_QueenOfDragons
@@ -13823,7 +13823,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/QoD_38.jpg"
+    , { id = "qod_38"
       , name = "Maegi's Promise"
       , card_type = CardType_Event
       , set = Set_QueenOfDragons
@@ -13844,7 +13844,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_29.jpg"
+    , { id = "qod_29"
       , name = "Meereen"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -13865,7 +13865,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_54.jpg"
+    , { id = "qod_54"
       , name = "Muster the Realm!"
       , card_type = CardType_Plot
       , set = Set_QueenOfDragons
@@ -13886,7 +13886,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 1
       }
-    , { image_url = "/images/cards/QoD_31.jpg"
+    , { id = "qod_31"
       , name = "Myrish Villa"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -13907,7 +13907,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_46.jpg"
+    , { id = "qod_46"
       , name = "Paper Shield"
       , card_type = CardType_Event
       , set = Set_QueenOfDragons
@@ -13928,7 +13928,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_9.jpg"
+    , { id = "qod_9"
       , name = "Pike Phalanx"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13949,7 +13949,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_30.jpg"
+    , { id = "qod_30"
       , name = "Plaza of Pride"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -13970,7 +13970,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_17.jpg"
+    , { id = "qod_17"
       , name = "Pyat Pree"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -13991,7 +13991,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_26.jpg"
+    , { id = "qod_26"
       , name = "Qarth"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -14012,7 +14012,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_24.jpg"
+    , { id = "qod_24"
       , name = "Rhaegal"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -14033,7 +14033,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_43.jpg"
+    , { id = "qod_43"
       , name = "River Row"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -14054,7 +14054,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_4.jpg"
+    , { id = "qod_4"
       , name = "Shade of the Evening"
       , card_type = CardType_Attachment
       , set = Set_QueenOfDragons
@@ -14075,7 +14075,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_52.jpg"
+    , { id = "qod_52"
       , name = "Spending the Winter Stores"
       , card_type = CardType_Plot
       , set = Set_QueenOfDragons
@@ -14096,7 +14096,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/QoD_32.jpg"
+    , { id = "qod_32"
       , name = "Summer Sea"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -14117,7 +14117,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_5.jpg"
+    , { id = "qod_5"
       , name = "Sun Stroke"
       , card_type = CardType_Attachment
       , set = Set_QueenOfDragons
@@ -14138,7 +14138,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_55.jpg"
+    , { id = "qod_55"
       , name = "Threat from the East"
       , card_type = CardType_Plot
       , set = Set_QueenOfDragons
@@ -14159,7 +14159,7 @@ all_cards =
       , initiative = Just 6
       , claim = Just 1
       }
-    , { image_url = "/images/cards/QoD_12.jpg"
+    , { id = "qod_12"
       , name = "Thundering Calvary"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -14180,7 +14180,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_7.jpg"
+    , { id = "qod_7"
       , name = "True-Queen's Harbinger"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -14201,7 +14201,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_1.jpg"
+    , { id = "qod_1"
       , name = "Unburnt"
       , card_type = CardType_Attachment
       , set = Set_QueenOfDragons
@@ -14222,7 +14222,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_25.jpg"
+    , { id = "qod_25"
       , name = "Viserion"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -14243,7 +14243,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_14.jpg"
+    , { id = "qod_14"
       , name = "Warlock of Qarth"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -14264,7 +14264,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_50.jpg"
+    , { id = "qod_50"
       , name = "Waste Their Time"
       , card_type = CardType_Plot
       , set = Set_QueenOfDragons
@@ -14285,7 +14285,7 @@ all_cards =
       , initiative = Just 1
       , claim = Just 1
       }
-    , { image_url = "/images/cards/QoD_20.jpg"
+    , { id = "qod_20"
       , name = "White Hatchling"
       , card_type = CardType_Character
       , set = Set_QueenOfDragons
@@ -14306,7 +14306,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/QoD_27.jpg"
+    , { id = "qod_27"
       , name = "Yunkai"
       , card_type = CardType_Location
       , set = Set_QueenOfDragons
@@ -14327,7 +14327,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_55.jpg"
+    , { id = "soo_55"
       , name = "Archmaester Ebrose"
       , card_type = CardType_Character
       , set = Set_CalledByTheConclave
@@ -14348,7 +14348,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_50.jpg"
+    , { id = "soo_50"
       , name = "Called to Arms"
       , card_type = CardType_Event
       , set = Set_CalledByTheConclave
@@ -14369,7 +14369,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_56.jpg"
+    , { id = "soo_56"
       , name = "Citadel Custom"
       , card_type = CardType_Event
       , set = Set_CalledByTheConclave
@@ -14390,7 +14390,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_46.jpg"
+    , { id = "soo_46"
       , name = "Conflict of Interest"
       , card_type = CardType_Event
       , set = Set_CalledByTheConclave
@@ -14411,7 +14411,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_52.jpg"
+    , { id = "soo_52"
       , name = "Dragon Lore"
       , card_type = CardType_Attachment
       , set = Set_CalledByTheConclave
@@ -14432,7 +14432,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_60.jpg"
+    , { id = "soo_60"
       , name = "Dry Season"
       , card_type = CardType_Plot
       , set = Set_CalledByTheConclave
@@ -14453,7 +14453,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 2
       }
-    , { image_url = "/images/cards/CbtC_41.jpg"
+    , { id = "soo_41"
       , name = "Galbart Glover"
       , card_type = CardType_Character
       , set = Set_CalledByTheConclave
@@ -14474,7 +14474,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_53.jpg"
+    , { id = "soo_53"
       , name = "Hellholt Engineer"
       , card_type = CardType_Character
       , set = Set_CalledByTheConclave
@@ -14495,7 +14495,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_42.jpg"
+    , { id = "soo_42"
       , name = "Karhold Rookery"
       , card_type = CardType_Location
       , set = Set_CalledByTheConclave
@@ -14516,7 +14516,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_43.jpg"
+    , { id = "soo_43"
       , name = "Lady Genna"
       , card_type = CardType_Character
       , set = Set_CalledByTheConclave
@@ -14537,7 +14537,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_59.jpg"
+    , { id = "soo_59"
       , name = "Lead Link"
       , card_type = CardType_Attachment
       , set = Set_CalledByTheConclave
@@ -14558,7 +14558,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_49.jpg"
+    , { id = "soo_49"
       , name = "Longship Black Wind"
       , card_type = CardType_Location
       , set = Set_CalledByTheConclave
@@ -14579,7 +14579,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_45.jpg"
+    , { id = "soo_45"
       , name = "Maester Lomys"
       , card_type = CardType_Character
       , set = Set_CalledByTheConclave
@@ -14600,7 +14600,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_48.jpg"
+    , { id = "soo_48"
       , name = "Maester Murenmure"
       , card_type = CardType_Character
       , set = Set_CalledByTheConclave
@@ -14621,7 +14621,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_51.jpg"
+    , { id = "soo_51"
       , name = "Magister Illyrio"
       , card_type = CardType_Character
       , set = Set_CalledByTheConclave
@@ -14642,7 +14642,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_54.jpg"
+    , { id = "soo_54"
       , name = "Snakeskin Veil"
       , card_type = CardType_Attachment
       , set = Set_CalledByTheConclave
@@ -14663,7 +14663,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_57.jpg"
+    , { id = "soo_57"
       , name = "The Conclave"
       , card_type = CardType_Character
       , set = Set_CalledByTheConclave
@@ -14684,7 +14684,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_58.jpg"
+    , { id = "soo_58"
       , name = "Tin Link"
       , card_type = CardType_Attachment
       , set = Set_CalledByTheConclave
@@ -14705,7 +14705,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_47.jpg"
+    , { id = "soo_47"
       , name = "Tower Library"
       , card_type = CardType_Location
       , set = Set_CalledByTheConclave
@@ -14726,7 +14726,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CbtC_44.jpg"
+    , { id = "soo_44"
       , name = "Without His Beard"
       , card_type = CardType_Event
       , set = Set_CalledByTheConclave
@@ -14747,7 +14747,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_67.jpg"
+    , { id = "soo_67"
       , name = "Baelor Blacktyde"
       , card_type = CardType_Character
       , set = Set_TheIlseOfRavens
@@ -14768,7 +14768,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_79.jpg"
+    , { id = "soo_79"
       , name = "Gold Link"
       , card_type = CardType_Attachment
       , set = Set_TheIlseOfRavens
@@ -14789,7 +14789,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_61.jpg"
+    , { id = "soo_61"
       , name = "Guardian Wolf"
       , card_type = CardType_Character
       , set = Set_TheIlseOfRavens
@@ -14810,7 +14810,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_72.jpg"
+    , { id = "soo_72"
       , name = "Informed Acolyte"
       , card_type = CardType_Character
       , set = Set_TheIlseOfRavens
@@ -14831,7 +14831,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_69.jpg"
+    , { id = "soo_69"
       , name = "Linked Advisor"
       , card_type = CardType_Character
       , set = Set_TheIlseOfRavens
@@ -14852,7 +14852,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_66.jpg"
+    , { id = "soo_66"
       , name = "Litany of Light"
       , card_type = CardType_Event
       , set = Set_TheIlseOfRavens
@@ -14873,7 +14873,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_77.jpg"
+    , { id = "soo_77"
       , name = "Old Intrigues"
       , card_type = CardType_Event
       , set = Set_TheIlseOfRavens
@@ -14894,7 +14894,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_75.jpg"
+    , { id = "soo_75"
       , name = "Oldtown Raven"
       , card_type = CardType_Character
       , set = Set_TheIlseOfRavens
@@ -14915,7 +14915,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_80.jpg"
+    , { id = "soo_80"
       , name = "Outwit"
       , card_type = CardType_Plot
       , set = Set_TheIlseOfRavens
@@ -14936,7 +14936,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TIoR_70.jpg"
+    , { id = "soo_70"
       , name = "Plaza of Purification"
       , card_type = CardType_Location
       , set = Set_TheIlseOfRavens
@@ -14957,7 +14957,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_71.jpg"
+    , { id = "soo_71"
       , name = "Royal Favor"
       , card_type = CardType_Event
       , set = Set_TheIlseOfRavens
@@ -14978,7 +14978,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_64.jpg"
+    , { id = "soo_64"
       , name = "Spidercraft"
       , card_type = CardType_Attachment
       , set = Set_TheIlseOfRavens
@@ -14999,7 +14999,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_78.jpg"
+    , { id = "soo_78"
       , name = "Steel Link"
       , card_type = CardType_Attachment
       , set = Set_TheIlseOfRavens
@@ -15020,7 +15020,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_65.jpg"
+    , { id = "soo_65"
       , name = "Stormlands Bastard"
       , card_type = CardType_Character
       , set = Set_TheIlseOfRavens
@@ -15041,7 +15041,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_73.jpg"
+    , { id = "soo_73"
       , name = "Streets of Hellholt"
       , card_type = CardType_Location
       , set = Set_TheIlseOfRavens
@@ -15062,7 +15062,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_76.jpg"
+    , { id = "soo_76"
       , name = "The Isle of Ravens"
       , card_type = CardType_Location
       , set = Set_TheIlseOfRavens
@@ -15083,7 +15083,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_74.jpg"
+    , { id = "soo_74"
       , name = "The Prince's Plans"
       , card_type = CardType_Event
       , set = Set_TheIlseOfRavens
@@ -15104,7 +15104,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_63.jpg"
+    , { id = "soo_63"
       , name = "The Regent's Spy"
       , card_type = CardType_Character
       , set = Set_TheIlseOfRavens
@@ -15125,7 +15125,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_62.jpg"
+    , { id = "soo_62"
       , name = "The Weasel's Way"
       , card_type = CardType_Event
       , set = Set_TheIlseOfRavens
@@ -15146,7 +15146,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TIoR_68.jpg"
+    , { id = "soo_68"
       , name = "Training Vessel"
       , card_type = CardType_Location
       , set = Set_TheIlseOfRavens
@@ -15167,7 +15167,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_87.jpg"
+    , { id = "acoa_87"
       , name = "Battle of Ruby Ford"
       , card_type = CardType_Event
       , set = Set_BattleOfRubyFord
@@ -15188,7 +15188,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_93.jpg"
+    , { id = "acoa_93"
       , name = "Castellan of the Rock"
       , card_type = CardType_Character
       , set = Set_BattleOfRubyFord
@@ -15209,7 +15209,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_88.jpg"
+    , { id = "acoa_88"
       , name = "Desperate Tactics"
       , card_type = CardType_Event
       , set = Set_BattleOfRubyFord
@@ -15230,7 +15230,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_94.jpg"
+    , { id = "acoa_94"
       , name = "Devious Intentions"
       , card_type = CardType_Attachment
       , set = Set_BattleOfRubyFord
@@ -15251,7 +15251,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_98.jpg"
+    , { id = "acoa_98"
       , name = "Disgruntled Mercenary"
       , card_type = CardType_Character
       , set = Set_BattleOfRubyFord
@@ -15272,7 +15272,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_86.jpg"
+    , { id = "acoa_86"
       , name = "Herald of the King"
       , card_type = CardType_Character
       , set = Set_BattleOfRubyFord
@@ -15293,7 +15293,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_92.jpg"
+    , { id = "acoa_92"
       , name = "House Umber Berserkers"
       , card_type = CardType_Character
       , set = Set_BattleOfRubyFord
@@ -15314,7 +15314,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_95.jpg"
+    , { id = "acoa_95"
       , name = "Hunting Spear"
       , card_type = CardType_Attachment
       , set = Set_BattleOfRubyFord
@@ -15335,7 +15335,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_89.jpg"
+    , { id = "acoa_89"
       , name = "Lie for Your King!"
       , card_type = CardType_Event
       , set = Set_BattleOfRubyFord
@@ -15356,7 +15356,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_97.jpg"
+    , { id = "acoa_97"
       , name = "Martial Law"
       , card_type = CardType_Attachment
       , set = Set_BattleOfRubyFord
@@ -15377,7 +15377,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_91.jpg"
+    , { id = "acoa_91"
       , name = "Midnight Sentry"
       , card_type = CardType_Character
       , set = Set_BattleOfRubyFord
@@ -15398,7 +15398,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_96.jpg"
+    , { id = "acoa_96"
       , name = "Mustering Yard"
       , card_type = CardType_Location
       , set = Set_BattleOfRubyFord
@@ -15419,7 +15419,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_99.jpg"
+    , { id = "acoa_99"
       , name = "Observation Point"
       , card_type = CardType_Location
       , set = Set_BattleOfRubyFord
@@ -15440,7 +15440,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_81.jpg"
+    , { id = "acoa_81"
       , name = "Old Nan"
       , card_type = CardType_Character
       , set = Set_BattleOfRubyFord
@@ -15461,7 +15461,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_85.jpg"
+    , { id = "acoa_85"
       , name = "Overzealous Scout"
       , card_type = CardType_Character
       , set = Set_BattleOfRubyFord
@@ -15482,7 +15482,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_82.jpg"
+    , { id = "acoa_82"
       , name = "Rhaegar Targaryen"
       , card_type = CardType_Character
       , set = Set_BattleOfRubyFord
@@ -15503,7 +15503,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_84.jpg"
+    , { id = "acoa_84"
       , name = "Rhaegar's Harp"
       , card_type = CardType_Attachment
       , set = Set_BattleOfRubyFord
@@ -15524,7 +15524,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_83.jpg"
+    , { id = "acoa_83"
       , name = "Scorched Earth"
       , card_type = CardType_Location
       , set = Set_BattleOfRubyFord
@@ -15545,7 +15545,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_90.jpg"
+    , { id = "acoa_90"
       , name = "Starve for Your King!"
       , card_type = CardType_Event
       , set = Set_BattleOfRubyFord
@@ -15566,7 +15566,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BoRF_100.jpg"
+    , { id = "acoa_100"
       , name = "War Scorpion"
       , card_type = CardType_Attachment
       , set = Set_BattleOfRubyFord
@@ -15587,7 +15587,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_117.jpg"
+    , { id = "acoa_117"
       , name = "Ascetic Follower"
       , card_type = CardType_Character
       , set = Set_CallingTheBanners
@@ -15608,7 +15608,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_118.jpg"
+    , { id = "acoa_118"
       , name = "Banner for the Dragon"
       , card_type = CardType_Character
       , set = Set_CallingTheBanners
@@ -15629,7 +15629,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_116.jpg"
+    , { id = "acoa_116"
       , name = "Banner for the Kraken"
       , card_type = CardType_Character
       , set = Set_CallingTheBanners
@@ -15650,7 +15650,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_111.jpg"
+    , { id = "acoa_111"
       , name = "Banner for the North"
       , card_type = CardType_Character
       , set = Set_CallingTheBanners
@@ -15671,7 +15671,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_119.jpg"
+    , { id = "acoa_119"
       , name = "Banner for the South"
       , card_type = CardType_Character
       , set = Set_CallingTheBanners
@@ -15692,7 +15692,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_114.jpg"
+    , { id = "acoa_114"
       , name = "Banner for the Storm"
       , card_type = CardType_Character
       , set = Set_CallingTheBanners
@@ -15713,7 +15713,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_112.jpg"
+    , { id = "acoa_112"
       , name = "Campfire Lights"
       , card_type = CardType_Attachment
       , set = Set_CallingTheBanners
@@ -15734,7 +15734,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_107.jpg"
+    , { id = "acoa_107"
       , name = "Compelled by the Crown"
       , card_type = CardType_Event
       , set = Set_CallingTheBanners
@@ -15755,7 +15755,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_105.jpg"
+    , { id = "acoa_105"
       , name = "Compelled by the North"
       , card_type = CardType_Event
       , set = Set_CallingTheBanners
@@ -15776,7 +15776,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_109.jpg"
+    , { id = "acoa_109"
       , name = "Compelled by the Queen"
       , card_type = CardType_Event
       , set = Set_CallingTheBanners
@@ -15797,7 +15797,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_106.jpg"
+    , { id = "acoa_106"
       , name = "Compelled by the Rock"
       , card_type = CardType_Event
       , set = Set_CallingTheBanners
@@ -15818,7 +15818,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_108.jpg"
+    , { id = "acoa_108"
       , name = "Compelled by the Sea"
       , card_type = CardType_Event
       , set = Set_CallingTheBanners
@@ -15839,7 +15839,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_110.jpg"
+    , { id = "acoa_110"
       , name = "Compelled by the Sun"
       , card_type = CardType_Event
       , set = Set_CallingTheBanners
@@ -15860,7 +15860,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_104.jpg"
+    , { id = "acoa_104"
       , name = "Fishwhiskers"
       , card_type = CardType_Character
       , set = Set_CallingTheBanners
@@ -15881,7 +15881,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_120.jpg"
+    , { id = "acoa_120"
       , name = "For Family and Honor"
       , card_type = CardType_Event
       , set = Set_CallingTheBanners
@@ -15902,7 +15902,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_102.jpg"
+    , { id = "acoa_102"
       , name = "Gates of Winterfell"
       , card_type = CardType_Location
       , set = Set_CallingTheBanners
@@ -15923,7 +15923,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_101.jpg"
+    , { id = "acoa_101"
       , name = "Jory Cassel"
       , card_type = CardType_Character
       , set = Set_CallingTheBanners
@@ -15944,7 +15944,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_113.jpg"
+    , { id = "acoa_113"
       , name = "Practical Believer"
       , card_type = CardType_Character
       , set = Set_CallingTheBanners
@@ -15965,7 +15965,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_103.jpg"
+    , { id = "acoa_103"
       , name = "Ser Lancel Lannister"
       , card_type = CardType_Character
       , set = Set_CallingTheBanners
@@ -15986,7 +15986,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CtB_115.jpg"
+    , { id = "acoa_115"
       , name = "Zealous Collector"
       , card_type = CardType_Character
       , set = Set_CallingTheBanners
@@ -16007,7 +16007,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_63.jpg"
+    , { id = "acoa_63"
       , name = "Arstan Whitebeard"
       , card_type = CardType_Character
       , set = Set_EpicBattles
@@ -16028,7 +16028,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_74.jpg"
+    , { id = "acoa_74"
       , name = "Besieged Shipyard"
       , card_type = CardType_Location
       , set = Set_EpicBattles
@@ -16049,7 +16049,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_73.jpg"
+    , { id = "acoa_73"
       , name = "Claw Isle"
       , card_type = CardType_Location
       , set = Set_EpicBattles
@@ -16070,7 +16070,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_61.jpg"
+    , { id = "acoa_61"
       , name = "Dacey Mormont"
       , card_type = CardType_Character
       , set = Set_EpicBattles
@@ -16091,7 +16091,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_71.jpg"
+    , { id = "acoa_71"
       , name = "Highgarden Cavaliers"
       , card_type = CardType_Character
       , set = Set_EpicBattles
@@ -16112,7 +16112,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_72.jpg"
+    , { id = "acoa_72"
       , name = "Hornvale"
       , card_type = CardType_Location
       , set = Set_EpicBattles
@@ -16133,7 +16133,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_77.jpg"
+    , { id = "acoa_77"
       , name = "Norvos"
       , card_type = CardType_Location
       , set = Set_EpicBattles
@@ -16154,7 +16154,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_76.jpg"
+    , { id = "acoa_76"
       , name = "Pentos"
       , card_type = CardType_Location
       , set = Set_EpicBattles
@@ -16175,7 +16175,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_62.jpg"
+    , { id = "acoa_62"
       , name = "Salladhor Saan"
       , card_type = CardType_Character
       , set = Set_EpicBattles
@@ -16196,7 +16196,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_75.jpg"
+    , { id = "acoa_75"
       , name = "Stormcrows"
       , card_type = CardType_Character
       , set = Set_EpicBattles
@@ -16217,7 +16217,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_64.jpg"
+    , { id = "acoa_64"
       , name = "The Bastard of Godsgrace"
       , card_type = CardType_Character
       , set = Set_EpicBattles
@@ -16238,7 +16238,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_67.jpg"
+    , { id = "acoa_67"
       , name = "The Battle at the Wall"
       , card_type = CardType_Event
       , set = Set_EpicBattles
@@ -16259,7 +16259,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_69.jpg"
+    , { id = "acoa_69"
       , name = "The Battle of Astapor"
       , card_type = CardType_Event
       , set = Set_EpicBattles
@@ -16280,7 +16280,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_68.jpg"
+    , { id = "acoa_68"
       , name = "The Battle of Deepwood Motte"
       , card_type = CardType_Event
       , set = Set_EpicBattles
@@ -16301,7 +16301,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_66.jpg"
+    , { id = "acoa_66"
       , name = "The Battle of the Blackwater"
       , card_type = CardType_Event
       , set = Set_EpicBattles
@@ -16322,7 +16322,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_65.jpg"
+    , { id = "acoa_65"
       , name = "The Battle of the Whispering Wood"
       , card_type = CardType_Event
       , set = Set_EpicBattles
@@ -16343,7 +16343,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_78.jpg"
+    , { id = "acoa_78"
       , name = "The Gift"
       , card_type = CardType_Location
       , set = Set_EpicBattles
@@ -16364,7 +16364,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_79.jpg"
+    , { id = "acoa_79"
       , name = "The Land Beyond the Wall"
       , card_type = CardType_Location
       , set = Set_EpicBattles
@@ -16385,7 +16385,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_80.jpg"
+    , { id = "acoa_80"
       , name = "The Neck"
       , card_type = CardType_Location
       , set = Set_EpicBattles
@@ -16406,7 +16406,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/EB_70.jpg"
+    , { id = "acoa_70"
       , name = "The Viper's Revenge"
       , card_type = CardType_Event
       , set = Set_EpicBattles
@@ -16427,7 +16427,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_19.jpg"
+    , { id = "acoa_19"
       , name = "Besiegers of Dorne"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16448,7 +16448,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_20.jpg"
+    , { id = "acoa_20"
       , name = "Dornish Chariot"
       , card_type = CardType_Attachment
       , set = Set_TheWarOfTheFiveKings
@@ -16469,7 +16469,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_18.jpg"
+    , { id = "acoa_18"
       , name = "Flaming-Pitch Tower"
       , card_type = CardType_Location
       , set = Set_TheWarOfTheFiveKings
@@ -16490,7 +16490,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_14.jpg"
+    , { id = "acoa_14"
       , name = "House Florent Scouts"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16511,7 +16511,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_12.jpg"
+    , { id = "acoa_12"
       , name = "Icy Catapult"
       , card_type = CardType_Attachment
       , set = Set_TheWarOfTheFiveKings
@@ -16532,7 +16532,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_2.jpg"
+    , { id = "acoa_2"
       , name = "Jhalabar Xho"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16553,7 +16553,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_10.jpg"
+    , { id = "acoa_10"
       , name = "Kill for Your King!"
       , card_type = CardType_Event
       , set = Set_TheWarOfTheFiveKings
@@ -16574,7 +16574,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_5.jpg"
+    , { id = "acoa_5"
       , name = "King Balon's Host"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16595,7 +16595,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_3.jpg"
+    , { id = "acoa_3"
       , name = "King Joffrey's Guard"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16616,7 +16616,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_1.jpg"
+    , { id = "acoa_1"
       , name = "King Robb's Host"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16637,7 +16637,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_4.jpg"
+    , { id = "acoa_4"
       , name = "King Robert's Host"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16658,7 +16658,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_6.jpg"
+    , { id = "acoa_6"
       , name = "Longship \"Foamdrinker\""
       , card_type = CardType_Location
       , set = Set_TheWarOfTheFiveKings
@@ -16679,7 +16679,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_8.jpg"
+    , { id = "acoa_8"
       , name = "Maester of War"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16700,7 +16700,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_13.jpg"
+    , { id = "acoa_13"
       , name = "Pyromancer's Cache"
       , card_type = CardType_Attachment
       , set = Set_TheWarOfTheFiveKings
@@ -16721,7 +16721,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_7.jpg"
+    , { id = "acoa_7"
       , name = "Queen Daenerys's Horde"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16742,7 +16742,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_9.jpg"
+    , { id = "acoa_9"
       , name = "Queen Myrcella's Guard"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16763,7 +16763,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_17.jpg"
+    , { id = "acoa_17"
       , name = "Queen's Knight"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16784,7 +16784,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_16.jpg"
+    , { id = "acoa_16"
       , name = "Seawater Scalawags"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16805,7 +16805,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_15.jpg"
+    , { id = "acoa_15"
       , name = "The Fox's Teeth"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16826,7 +16826,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWot5K_11.jpg"
+    , { id = "acoa_11"
       , name = "Vanguard Scouts"
       , card_type = CardType_Character
       , set = Set_TheWarOfTheFiveKings
@@ -16847,7 +16847,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_105.jpg"
+    , { id = "asots_105"
       , name = "Arms of the Kraken"
       , card_type = CardType_Event
       , set = Set_AJourneysEnd
@@ -16868,7 +16868,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_118.jpg"
+    , { id = "asots_118"
       , name = "Blessed by the Maiden"
       , card_type = CardType_Event
       , set = Set_AJourneysEnd
@@ -16889,7 +16889,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_111.jpg"
+    , { id = "asots_111"
       , name = "Call of the Three-Eyed Crow"
       , card_type = CardType_Event
       , set = Set_AJourneysEnd
@@ -16910,7 +16910,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_116.jpg"
+    , { id = "asots_116"
       , name = "Cape Wrath"
       , card_type = CardType_Location
       , set = Set_AJourneysEnd
@@ -16931,7 +16931,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_113.jpg"
+    , { id = "asots_113"
       , name = "Choosing the Spear"
       , card_type = CardType_Event
       , set = Set_AJourneysEnd
@@ -16952,7 +16952,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_120.jpg"
+    , { id = "asots_120"
       , name = "Favored by the Warrior"
       , card_type = CardType_Event
       , set = Set_AJourneysEnd
@@ -16973,7 +16973,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_108.jpg"
+    , { id = "asots_108"
       , name = "Fury"
       , card_type = CardType_Location
       , set = Set_AJourneysEnd
@@ -16994,7 +16994,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_109.jpg"
+    , { id = "asots_109"
       , name = "House Manderly Escort"
       , card_type = CardType_Character
       , set = Set_AJourneysEnd
@@ -17015,7 +17015,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_107.jpg"
+    , { id = "asots_107"
       , name = "Huntress"
       , card_type = CardType_Location
       , set = Set_AJourneysEnd
@@ -17036,7 +17036,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_101.jpg"
+    , { id = "asots_101"
       , name = "King's Landing Dromon"
       , card_type = CardType_Location
       , set = Set_AJourneysEnd
@@ -17057,7 +17057,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_104.jpg"
+    , { id = "asots_104"
       , name = "Longship Nightflyer"
       , card_type = CardType_Location
       , set = Set_AJourneysEnd
@@ -17078,7 +17078,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_102.jpg"
+    , { id = "asots_102"
       , name = "Qarl the Maid"
       , card_type = CardType_Character
       , set = Set_AJourneysEnd
@@ -17099,7 +17099,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_115.jpg"
+    , { id = "asots_115"
       , name = "Randyll Tarly"
       , card_type = CardType_Character
       , set = Set_AJourneysEnd
@@ -17120,7 +17120,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_106.jpg"
+    , { id = "asots_106"
       , name = "Shores of the Mander"
       , card_type = CardType_Location
       , set = Set_AJourneysEnd
@@ -17141,7 +17141,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_112.jpg"
+    , { id = "asots_112"
       , name = "Starfall Skirmisher"
       , card_type = CardType_Character
       , set = Set_AJourneysEnd
@@ -17162,7 +17162,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_119.jpg"
+    , { id = "asots_119"
       , name = "Supported by the Smith"
       , card_type = CardType_Event
       , set = Set_AJourneysEnd
@@ -17183,7 +17183,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_103.jpg"
+    , { id = "asots_103"
       , name = "Ten Towers Longship"
       , card_type = CardType_Location
       , set = Set_AJourneysEnd
@@ -17204,7 +17204,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_117.jpg"
+    , { id = "asots_117"
       , name = "The Tattered Prince"
       , card_type = CardType_Character
       , set = Set_AJourneysEnd
@@ -17225,7 +17225,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_110.jpg"
+    , { id = "asots_110"
       , name = "Trident Guard"
       , card_type = CardType_Character
       , set = Set_AJourneysEnd
@@ -17246,7 +17246,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AJE_114.jpg"
+    , { id = "asots_114"
       , name = "Venomous Manticore"
       , card_type = CardType_Character
       , set = Set_AJourneysEnd
@@ -17267,7 +17267,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_66.jpg"
+    , { id = "asots_66"
       , name = "Blackcrown Knights"
       , card_type = CardType_Character
       , set = Set_ATurnOfTheTide
@@ -17288,7 +17288,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_79.jpg"
+    , { id = "asots_79"
       , name = "Blackwater Rush"
       , card_type = CardType_Location
       , set = Set_ATurnOfTheTide
@@ -17309,7 +17309,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_78.jpg"
+    , { id = "asots_78"
       , name = "Blazewater Bay"
       , card_type = CardType_Location
       , set = Set_ATurnOfTheTide
@@ -17330,7 +17330,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_75.jpg"
+    , { id = "asots_75"
       , name = "Braided Screamers"
       , card_type = CardType_Character
       , set = Set_ATurnOfTheTide
@@ -17351,7 +17351,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_67.jpg"
+    , { id = "asots_67"
       , name = "Dale Seaworth"
       , card_type = CardType_Character
       , set = Set_ATurnOfTheTide
@@ -17372,7 +17372,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_64.jpg"
+    , { id = "asots_64"
       , name = "Deepwood Motte"
       , card_type = CardType_Location
       , set = Set_ATurnOfTheTide
@@ -17393,7 +17393,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_74.jpg"
+    , { id = "asots_74"
       , name = "Dothraki Outrider"
       , card_type = CardType_Character
       , set = Set_ATurnOfTheTide
@@ -17414,7 +17414,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_72.jpg"
+    , { id = "asots_72"
       , name = "Greenblood Vessel"
       , card_type = CardType_Location
       , set = Set_ATurnOfTheTide
@@ -17435,7 +17435,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_71.jpg"
+    , { id = "asots_71"
       , name = "Host of the Boneway"
       , card_type = CardType_Character
       , set = Set_ATurnOfTheTide
@@ -17456,7 +17456,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_61.jpg"
+    , { id = "asots_61"
       , name = "House Clegane Brigands"
       , card_type = CardType_Character
       , set = Set_ATurnOfTheTide
@@ -17477,7 +17477,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_80.jpg"
+    , { id = "asots_80"
       , name = "King's Landing Coup"
       , card_type = CardType_Plot
       , set = Set_ATurnOfTheTide
@@ -17498,7 +17498,7 @@ all_cards =
       , initiative = Just 8
       , claim = Just 1
       }
-    , { image_url = "/images/cards/AToTT_77.jpg"
+    , { id = "asots_77"
       , name = "Margaery Tyrell"
       , card_type = CardType_Character
       , set = Set_ATurnOfTheTide
@@ -17519,7 +17519,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_70.jpg"
+    , { id = "asots_70"
       , name = "Passing the Wall"
       , card_type = CardType_Event
       , set = Set_ATurnOfTheTide
@@ -17540,7 +17540,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_76.jpg"
+    , { id = "asots_76"
       , name = "Port at Slaver's Bay"
       , card_type = CardType_Location
       , set = Set_ATurnOfTheTide
@@ -17561,7 +17561,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_63.jpg"
+    , { id = "asots_63"
       , name = "Raiders of Orkmont"
       , card_type = CardType_Character
       , set = Set_ATurnOfTheTide
@@ -17582,7 +17582,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_69.jpg"
+    , { id = "asots_69"
       , name = "Riders of Karhold"
       , card_type = CardType_Character
       , set = Set_ATurnOfTheTide
@@ -17603,7 +17603,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_65.jpg"
+    , { id = "asots_65"
       , name = "Seized"
       , card_type = CardType_Attachment
       , set = Set_ATurnOfTheTide
@@ -17624,7 +17624,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_68.jpg"
+    , { id = "asots_68"
       , name = "Shores of the Blackwater"
       , card_type = CardType_Location
       , set = Set_ATurnOfTheTide
@@ -17645,7 +17645,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_73.jpg"
+    , { id = "asots_73"
       , name = "Shores of the Summer Sea"
       , card_type = CardType_Location
       , set = Set_ATurnOfTheTide
@@ -17666,7 +17666,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToTT_62.jpg"
+    , { id = "asots_62"
       , name = "Sitting the Iron Throne"
       , card_type = CardType_Event
       , set = Set_ATurnOfTheTide
@@ -17687,7 +17687,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_96.jpg"
+    , { id = "asots_96"
       , name = "Anointed by the Mother"
       , card_type = CardType_Event
       , set = Set_TheCaptainsCommand
@@ -17708,7 +17708,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_81.jpg"
+    , { id = "asots_81"
       , name = "Arbor Guardsman"
       , card_type = CardType_Character
       , set = Set_TheCaptainsCommand
@@ -17729,7 +17729,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_100.jpg"
+    , { id = "asots_100"
       , name = "Aurane Waters"
       , card_type = CardType_Character
       , set = Set_TheCaptainsCommand
@@ -17750,7 +17750,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_93.jpg"
+    , { id = "asots_93"
       , name = "Blood Magic Ritual"
       , card_type = CardType_Attachment
       , set = Set_TheCaptainsCommand
@@ -17771,7 +17771,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_95.jpg"
+    , { id = "asots_95"
       , name = "Dagger Lake Galley"
       , card_type = CardType_Location
       , set = Set_TheCaptainsCommand
@@ -17792,7 +17792,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_99.jpg"
+    , { id = "asots_99"
       , name = "Desperate Measures"
       , card_type = CardType_Event
       , set = Set_TheCaptainsCommand
@@ -17813,7 +17813,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_94.jpg"
+    , { id = "asots_94"
       , name = "Guided by Quaithe"
       , card_type = CardType_Event
       , set = Set_TheCaptainsCommand
@@ -17834,7 +17834,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_83.jpg"
+    , { id = "asots_83"
       , name = "Iron Fleet Scout"
       , card_type = CardType_Location
       , set = Set_TheCaptainsCommand
@@ -17855,7 +17855,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_82.jpg"
+    , { id = "asots_82"
       , name = "Iron Islands Brigand"
       , card_type = CardType_Character
       , set = Set_TheCaptainsCommand
@@ -17876,7 +17876,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_97.jpg"
+    , { id = "asots_97"
       , name = "Judged by the Father"
       , card_type = CardType_Event
       , set = Set_TheCaptainsCommand
@@ -17897,7 +17897,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_85.jpg"
+    , { id = "asots_85"
       , name = "Khorane Sathmantes"
       , card_type = CardType_Character
       , set = Set_TheCaptainsCommand
@@ -17918,7 +17918,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_84.jpg"
+    , { id = "asots_84"
       , name = "Lyseni Pirate"
       , card_type = CardType_Character
       , set = Set_TheCaptainsCommand
@@ -17939,7 +17939,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_88.jpg"
+    , { id = "asots_88"
       , name = "Manderly's Scheme"
       , card_type = CardType_Plot
       , set = Set_TheCaptainsCommand
@@ -17960,7 +17960,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TCC_98.jpg"
+    , { id = "asots_98"
       , name = "Nurtured by the Crone"
       , card_type = CardType_Event
       , set = Set_TheCaptainsCommand
@@ -17981,7 +17981,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_89.jpg"
+    , { id = "asots_89"
       , name = "Planky Town Orphan"
       , card_type = CardType_Character
       , set = Set_TheCaptainsCommand
@@ -18002,7 +18002,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_90.jpg"
+    , { id = "asots_90"
       , name = "Salty Dornishman"
       , card_type = CardType_Character
       , set = Set_TheCaptainsCommand
@@ -18023,7 +18023,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_91.jpg"
+    , { id = "asots_91"
       , name = "Ser Cletus Yronwood"
       , card_type = CardType_Character
       , set = Set_TheCaptainsCommand
@@ -18044,7 +18044,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_92.jpg"
+    , { id = "asots_92"
       , name = "Ser Rolly Duckfield"
       , card_type = CardType_Character
       , set = Set_TheCaptainsCommand
@@ -18065,7 +18065,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_87.jpg"
+    , { id = "asots_87"
       , name = "White Harbor"
       , card_type = CardType_Location
       , set = Set_TheCaptainsCommand
@@ -18086,7 +18086,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCC_86.jpg"
+    , { id = "asots_86"
       , name = "Wylla Manderly"
       , card_type = CardType_Character
       , set = Set_TheCaptainsCommand
@@ -18107,7 +18107,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_22.jpg"
+    , { id = "asots_22"
       , name = "Arbor Queen"
       , card_type = CardType_Location
       , set = Set_TheGrandFleet
@@ -18128,7 +18128,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_39.jpg"
+    , { id = "asots_39"
       , name = "Battle for the Shield Islands"
       , card_type = CardType_Event
       , set = Set_TheGrandFleet
@@ -18149,7 +18149,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_29.jpg"
+    , { id = "asots_29"
       , name = "Black Betha"
       , card_type = CardType_Location
       , set = Set_TheGrandFleet
@@ -18170,7 +18170,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_35.jpg"
+    , { id = "asots_35"
       , name = "Doran's Scheme"
       , card_type = CardType_Plot
       , set = Set_TheGrandFleet
@@ -18191,7 +18191,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TGF_24.jpg"
+    , { id = "asots_24"
       , name = "Ironborn Marauder"
       , card_type = CardType_Character
       , set = Set_TheGrandFleet
@@ -18212,7 +18212,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_23.jpg"
+    , { id = "asots_23"
       , name = "Lionstar"
       , card_type = CardType_Location
       , set = Set_TheGrandFleet
@@ -18233,7 +18233,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_26.jpg"
+    , { id = "asots_26"
       , name = "Longship Golden Storm"
       , card_type = CardType_Location
       , set = Set_TheGrandFleet
@@ -18254,7 +18254,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_34.jpg"
+    , { id = "asots_34"
       , name = "Meadowlark"
       , card_type = CardType_Location
       , set = Set_TheGrandFleet
@@ -18275,7 +18275,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_40.jpg"
+    , { id = "asots_40"
       , name = "Naval Superiority"
       , card_type = CardType_Plot
       , set = Set_TheGrandFleet
@@ -18296,7 +18296,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TGF_30.jpg"
+    , { id = "asots_30"
       , name = "Northern Sailor"
       , card_type = CardType_Character
       , set = Set_TheGrandFleet
@@ -18317,7 +18317,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_21.jpg"
+    , { id = "asots_21"
       , name = "Paxter Redwyne"
       , card_type = CardType_Character
       , set = Set_TheGrandFleet
@@ -18338,7 +18338,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_36.jpg"
+    , { id = "asots_36"
       , name = "Pentoshi Deckhand"
       , card_type = CardType_Character
       , set = Set_TheGrandFleet
@@ -18359,7 +18359,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_33.jpg"
+    , { id = "asots_33"
       , name = "Quentyn Martell"
       , card_type = CardType_Character
       , set = Set_TheGrandFleet
@@ -18380,7 +18380,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_27.jpg"
+    , { id = "asots_27"
       , name = "River Runner"
       , card_type = CardType_Character
       , set = Set_TheGrandFleet
@@ -18401,7 +18401,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_38.jpg"
+    , { id = "asots_38"
       , name = "Selmy's Scheme"
       , card_type = CardType_Plot
       , set = Set_TheGrandFleet
@@ -18422,7 +18422,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TGF_28.jpg"
+    , { id = "asots_28"
       , name = "Ser Davos Seaworth"
       , card_type = CardType_Character
       , set = Set_TheGrandFleet
@@ -18443,7 +18443,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_25.jpg"
+    , { id = "asots_25"
       , name = "The Reader"
       , card_type = CardType_Character
       , set = Set_TheGrandFleet
@@ -18464,7 +18464,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_37.jpg"
+    , { id = "asots_37"
       , name = "Vhagar"
       , card_type = CardType_Location
       , set = Set_TheGrandFleet
@@ -18485,7 +18485,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_31.jpg"
+    , { id = "asots_31"
       , name = "White Harbor Captain"
       , card_type = CardType_Character
       , set = Set_TheGrandFleet
@@ -18506,7 +18506,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGF_32.jpg"
+    , { id = "asots_32"
       , name = "White Harbor Dromon"
       , card_type = CardType_Location
       , set = Set_TheGrandFleet
@@ -18527,7 +18527,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_44.jpg"
+    , { id = "asots_44"
       , name = "Andrik the Unsmiling"
       , card_type = CardType_Character
       , set = Set_ThePiratesOfLys
@@ -18548,7 +18548,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_56.jpg"
+    , { id = "asots_56"
       , name = "Balerion"
       , card_type = CardType_Location
       , set = Set_ThePiratesOfLys
@@ -18569,7 +18569,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_43.jpg"
+    , { id = "asots_43"
       , name = "Cersei's Scheme"
       , card_type = CardType_Plot
       , set = Set_ThePiratesOfLys
@@ -18590,7 +18590,7 @@ all_cards =
       , initiative = Just 6
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TPoL_57.jpg"
+    , { id = "asots_57"
       , name = "Fire and Blood"
       , card_type = CardType_Event
       , set = Set_ThePiratesOfLys
@@ -18611,7 +18611,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_53.jpg"
+    , { id = "asots_53"
       , name = "Hellholt Docks"
       , card_type = CardType_Location
       , set = Set_ThePiratesOfLys
@@ -18632,7 +18632,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_55.jpg"
+    , { id = "asots_55"
       , name = "House Targaryen Loyalist"
       , card_type = CardType_Character
       , set = Set_ThePiratesOfLys
@@ -18653,7 +18653,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_50.jpg"
+    , { id = "asots_50"
       , name = "Moreo Tumitis"
       , card_type = CardType_Character
       , set = Set_ThePiratesOfLys
@@ -18674,7 +18674,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_59.jpg"
+    , { id = "asots_59"
       , name = "Negotiations at the Great Sept"
       , card_type = CardType_Plot
       , set = Set_ThePiratesOfLys
@@ -18695,7 +18695,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 2
       }
-    , { image_url = "/images/cards/TPoL_48.jpg"
+    , { id = "asots_48"
       , name = "Oakenshield Port"
       , card_type = CardType_Location
       , set = Set_ThePiratesOfLys
@@ -18716,7 +18716,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_49.jpg"
+    , { id = "asots_49"
       , name = "Ours is the Fury"
       , card_type = CardType_Event
       , set = Set_ThePiratesOfLys
@@ -18737,7 +18737,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_47.jpg"
+    , { id = "asots_47"
       , name = "Salladhor Saan"
       , card_type = CardType_Character
       , set = Set_ThePiratesOfLys
@@ -18758,7 +18758,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_41.jpg"
+    , { id = "asots_41"
       , name = "Ser Lancel Lannister"
       , card_type = CardType_Character
       , set = Set_ThePiratesOfLys
@@ -18779,7 +18779,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_51.jpg"
+    , { id = "asots_51"
       , name = "Swamps of the Neck"
       , card_type = CardType_Location
       , set = Set_ThePiratesOfLys
@@ -18800,7 +18800,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_42.jpg"
+    , { id = "asots_42"
       , name = "The Bear and the Maiden Fair"
       , card_type = CardType_Event
       , set = Set_ThePiratesOfLys
@@ -18821,7 +18821,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_60.jpg"
+    , { id = "asots_60"
       , name = "The Long Voyage"
       , card_type = CardType_Agenda
       , set = Set_ThePiratesOfLys
@@ -18842,7 +18842,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_52.jpg"
+    , { id = "asots_52"
       , name = "Titan's Daughter"
       , card_type = CardType_Location
       , set = Set_ThePiratesOfLys
@@ -18863,7 +18863,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_58.jpg"
+    , { id = "asots_58"
       , name = "Torrhen's Square"
       , card_type = CardType_Plot
       , set = Set_ThePiratesOfLys
@@ -18884,7 +18884,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TPoL_54.jpg"
+    , { id = "asots_54"
       , name = "Unbowed, Unbent, Unbroken"
       , card_type = CardType_Event
       , set = Set_ThePiratesOfLys
@@ -18905,7 +18905,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TPoL_46.jpg"
+    , { id = "asots_46"
       , name = "Victarion's Scheme"
       , card_type = CardType_Plot
       , set = Set_ThePiratesOfLys
@@ -18926,7 +18926,7 @@ all_cards =
       , initiative = Just 7
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TPoL_45.jpg"
+    , { id = "asots_45"
       , name = "We Do Not Sow"
       , card_type = CardType_Event
       , set = Set_ThePiratesOfLys
@@ -18947,7 +18947,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_120.jpg"
+    , { id = "atoc_120"
       , name = "Across the Summer Sea"
       , card_type = CardType_Plot
       , set = Set_APoisonedSpear
@@ -18968,7 +18968,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 0
       }
-    , { image_url = "/images/cards/APS_104.jpg"
+    , { id = "atoc_104"
       , name = "Andal Charger"
       , card_type = CardType_Attachment
       , set = Set_APoisonedSpear
@@ -18989,7 +18989,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_112.jpg"
+    , { id = "atoc_112"
       , name = "Dothraki Stallion"
       , card_type = CardType_Attachment
       , set = Set_APoisonedSpear
@@ -19010,7 +19010,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_105.jpg"
+    , { id = "atoc_105"
       , name = "Dragonstone Convert"
       , card_type = CardType_Character
       , set = Set_APoisonedSpear
@@ -19031,7 +19031,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_108.jpg"
+    , { id = "atoc_108"
       , name = "Drowned Crewman"
       , card_type = CardType_Character
       , set = Set_APoisonedSpear
@@ -19052,7 +19052,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_116.jpg"
+    , { id = "atoc_116"
       , name = "Heavy Taxes"
       , card_type = CardType_Attachment
       , set = Set_APoisonedSpear
@@ -19073,7 +19073,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_106.jpg"
+    , { id = "atoc_106"
       , name = "Highgarden Destrier"
       , card_type = CardType_Attachment
       , set = Set_APoisonedSpear
@@ -19094,7 +19094,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_103.jpg"
+    , { id = "atoc_103"
       , name = "House Clegane Outlaw"
       , card_type = CardType_Character
       , set = Set_APoisonedSpear
@@ -19115,7 +19115,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_109.jpg"
+    , { id = "atoc_109"
       , name = "Isle Garron"
       , card_type = CardType_Attachment
       , set = Set_APoisonedSpear
@@ -19136,7 +19136,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_118.jpg"
+    , { id = "atoc_118"
       , name = "Isle of Faces"
       , card_type = CardType_Location
       , set = Set_APoisonedSpear
@@ -19157,7 +19157,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_102.jpg"
+    , { id = "atoc_102"
       , name = "Northern Courser"
       , card_type = CardType_Attachment
       , set = Set_APoisonedSpear
@@ -19178,7 +19178,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_115.jpg"
+    , { id = "atoc_115"
       , name = "Poisoned Spear"
       , card_type = CardType_Attachment
       , set = Set_APoisonedSpear
@@ -19199,7 +19199,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_114.jpg"
+    , { id = "atoc_114"
       , name = "Rhoynish Steed"
       , card_type = CardType_Attachment
       , set = Set_APoisonedSpear
@@ -19220,7 +19220,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_117.jpg"
+    , { id = "atoc_117"
       , name = "Seal of the Crown"
       , card_type = CardType_Attachment
       , set = Set_APoisonedSpear
@@ -19241,7 +19241,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_101.jpg"
+    , { id = "atoc_101"
       , name = "Ser Kyle Condon"
       , card_type = CardType_Character
       , set = Set_APoisonedSpear
@@ -19262,7 +19262,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_110.jpg"
+    , { id = "atoc_110"
       , name = "Sorrowful Man"
       , card_type = CardType_Character
       , set = Set_APoisonedSpear
@@ -19283,7 +19283,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_113.jpg"
+    , { id = "atoc_113"
       , name = "The Red Viper"
       , card_type = CardType_Character
       , set = Set_APoisonedSpear
@@ -19304,7 +19304,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_107.jpg"
+    , { id = "atoc_107"
       , name = "The Sparr"
       , card_type = CardType_Character
       , set = Set_APoisonedSpear
@@ -19325,7 +19325,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_111.jpg"
+    , { id = "atoc_111"
       , name = "True Queen's Loyalist"
       , card_type = CardType_Attachment
       , set = Set_APoisonedSpear
@@ -19346,7 +19346,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/APS_119.jpg"
+    , { id = "atoc_119"
       , name = "Twist of Fate"
       , card_type = CardType_Plot
       , set = Set_APoisonedSpear
@@ -19367,7 +19367,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 2
       }
-    , { image_url = "/images/cards/ODG_48.jpg"
+    , { id = "atoc_48"
       , name = "Alannys Greyjoy"
       , card_type = CardType_Character
       , set = Set_OnDangerousGrounds
@@ -19388,7 +19388,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_60.jpg"
+    , { id = "atoc_60"
       , name = "Called to Court"
       , card_type = CardType_Plot
       , set = Set_OnDangerousGrounds
@@ -19409,7 +19409,7 @@ all_cards =
       , initiative = Just 7
       , claim = Just 1
       }
-    , { image_url = "/images/cards/ODG_58.jpg"
+    , { id = "atoc_58"
       , name = "Champion's Favour"
       , card_type = CardType_Attachment
       , set = Set_OnDangerousGrounds
@@ -19430,7 +19430,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_46.jpg"
+    , { id = "atoc_46"
       , name = "Enemy to the Crown"
       , card_type = CardType_Attachment
       , set = Set_OnDangerousGrounds
@@ -19451,7 +19451,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_47.jpg"
+    , { id = "atoc_47"
       , name = "Fiery Kiss"
       , card_type = CardType_Event
       , set = Set_OnDangerousGrounds
@@ -19472,7 +19472,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_42.jpg"
+    , { id = "atoc_42"
       , name = "Harrenhal"
       , card_type = CardType_Location
       , set = Set_OnDangerousGrounds
@@ -19493,7 +19493,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_57.jpg"
+    , { id = "atoc_57"
       , name = "Jalabhar Xho"
       , card_type = CardType_Character
       , set = Set_OnDangerousGrounds
@@ -19514,7 +19514,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_44.jpg"
+    , { id = "atoc_44"
       , name = "Lannisport Tourney Grounds"
       , card_type = CardType_Location
       , set = Set_OnDangerousGrounds
@@ -19535,7 +19535,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_56.jpg"
+    , { id = "atoc_56"
       , name = "Lyanna Stark"
       , card_type = CardType_Character
       , set = Set_OnDangerousGrounds
@@ -19556,7 +19556,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_53.jpg"
+    , { id = "atoc_53"
       , name = "Maiden of Poisons"
       , card_type = CardType_Character
       , set = Set_OnDangerousGrounds
@@ -19577,7 +19577,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_51.jpg"
+    , { id = "atoc_51"
       , name = "Meereen Tourney Grounds"
       , card_type = CardType_Location
       , set = Set_OnDangerousGrounds
@@ -19598,7 +19598,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_43.jpg"
+    , { id = "atoc_43"
       , name = "Myrcella Lannister"
       , card_type = CardType_Character
       , set = Set_OnDangerousGrounds
@@ -19619,7 +19619,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_49.jpg"
+    , { id = "atoc_49"
       , name = "Nagga's Hill"
       , card_type = CardType_Location
       , set = Set_OnDangerousGrounds
@@ -19640,7 +19640,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_52.jpg"
+    , { id = "atoc_52"
       , name = "Ride Them Down"
       , card_type = CardType_Event
       , set = Set_OnDangerousGrounds
@@ -19661,7 +19661,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_45.jpg"
+    , { id = "atoc_45"
       , name = "Shyra Errol"
       , card_type = CardType_Character
       , set = Set_OnDangerousGrounds
@@ -19682,7 +19682,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_54.jpg"
+    , { id = "atoc_54"
       , name = "Sunspear Tourney Grounds"
       , card_type = CardType_Location
       , set = Set_OnDangerousGrounds
@@ -19703,7 +19703,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_59.jpg"
+    , { id = "atoc_59"
       , name = "The First Snow of Winter"
       , card_type = CardType_Plot
       , set = Set_OnDangerousGrounds
@@ -19724,7 +19724,7 @@ all_cards =
       , initiative = Just 1
       , claim = Just 1
       }
-    , { image_url = "/images/cards/ODG_50.jpg"
+    , { id = "atoc_50"
       , name = "The Iron Price"
       , card_type = CardType_Attachment
       , set = Set_OnDangerousGrounds
@@ -19745,7 +19745,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_55.jpg"
+    , { id = "atoc_55"
       , name = "The Scourge"
       , card_type = CardType_Location
       , set = Set_OnDangerousGrounds
@@ -19766,7 +19766,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ODG_41.jpg"
+    , { id = "atoc_41"
       , name = "Winterfell Practice Yard"
       , card_type = CardType_Location
       , set = Set_OnDangerousGrounds
@@ -19787,7 +19787,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_38.jpg"
+    , { id = "atoc_38"
       , name = "A Champion Arises"
       , card_type = CardType_Event
       , set = Set_TheGrandMelee
@@ -19808,7 +19808,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_26.jpg"
+    , { id = "atoc_26"
       , name = "Bought and Paid For"
       , card_type = CardType_Event
       , set = Set_TheGrandMelee
@@ -19829,7 +19829,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_30.jpg"
+    , { id = "atoc_30"
       , name = "Captain of the Iron Fleet"
       , card_type = CardType_Attachment
       , set = Set_TheGrandMelee
@@ -19850,7 +19850,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_34.jpg"
+    , { id = "atoc_34"
       , name = "Doran Martell"
       , card_type = CardType_Character
       , set = Set_TheGrandMelee
@@ -19871,7 +19871,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_22.jpg"
+    , { id = "atoc_22"
       , name = "Dreadfort Outrider"
       , card_type = CardType_Character
       , set = Set_TheGrandMelee
@@ -19892,7 +19892,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_29.jpg"
+    , { id = "atoc_29"
       , name = "Euron Crow's Eye"
       , card_type = CardType_Character
       , set = Set_TheGrandMelee
@@ -19913,7 +19913,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_39.jpg"
+    , { id = "atoc_39"
       , name = "Flea Bottom"
       , card_type = CardType_Location
       , set = Set_TheGrandMelee
@@ -19934,7 +19934,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_23.jpg"
+    , { id = "atoc_23"
       , name = "In the Name of the King"
       , card_type = CardType_Attachment
       , set = Set_TheGrandMelee
@@ -19955,7 +19955,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_32.jpg"
+    , { id = "atoc_32"
       , name = "Khaleesi's Faithful"
       , card_type = CardType_Character
       , set = Set_TheGrandMelee
@@ -19976,7 +19976,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_37.jpg"
+    , { id = "atoc_37"
       , name = "Old Bear's Crow"
       , card_type = CardType_Character
       , set = Set_TheGrandMelee
@@ -19997,7 +19997,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_33.jpg"
+    , { id = "atoc_33"
       , name = "Overwhelming Numbers"
       , card_type = CardType_Event
       , set = Set_TheGrandMelee
@@ -20018,7 +20018,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_31.jpg"
+    , { id = "atoc_31"
       , name = "Raiding the Reach"
       , card_type = CardType_Event
       , set = Set_TheGrandMelee
@@ -20039,7 +20039,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_27.jpg"
+    , { id = "atoc_27"
       , name = "Robert Baratheon"
       , card_type = CardType_Character
       , set = Set_TheGrandMelee
@@ -20060,7 +20060,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_40.jpg"
+    , { id = "atoc_40"
       , name = "The Grand Melee"
       , card_type = CardType_Plot
       , set = Set_TheGrandMelee
@@ -20081,7 +20081,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 2
       }
-    , { image_url = "/images/cards/TGM_21.jpg"
+    , { id = "atoc_21"
       , name = "The Smalljon"
       , card_type = CardType_Character
       , set = Set_TheGrandMelee
@@ -20102,7 +20102,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_35.jpg"
+    , { id = "atoc_35"
       , name = "The Vaith"
       , card_type = CardType_Location
       , set = Set_TheGrandMelee
@@ -20123,7 +20123,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_36.jpg"
+    , { id = "atoc_36"
       , name = "Thoros of Myr"
       , card_type = CardType_Character
       , set = Set_TheGrandMelee
@@ -20144,7 +20144,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_24.jpg"
+    , { id = "atoc_24"
       , name = "Varys"
       , card_type = CardType_Character
       , set = Set_TheGrandMelee
@@ -20165,7 +20165,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_28.jpg"
+    , { id = "atoc_28"
       , name = "Warhammer"
       , card_type = CardType_Attachment
       , set = Set_TheGrandMelee
@@ -20186,7 +20186,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TGM_25.jpg"
+    , { id = "atoc_25"
       , name = "Whisper Campaign"
       , card_type = CardType_Attachment
       , set = Set_TheGrandMelee
@@ -20207,7 +20207,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_14.jpg"
+    , { id = "atoc_14"
       , name = "A Nest of Vipers"
       , card_type = CardType_Event
       , set = Set_TourneyForTheHand
@@ -20228,7 +20228,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_1.jpg"
+    , { id = "atoc_1"
       , name = "Arya Stark"
       , card_type = CardType_Character
       , set = Set_TourneyForTheHand
@@ -20249,7 +20249,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_12.jpg"
+    , { id = "atoc_12"
       , name = "Darkstar"
       , card_type = CardType_Character
       , set = Set_TourneyForTheHand
@@ -20270,7 +20270,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_13.jpg"
+    , { id = "atoc_13"
       , name = "Dorea Sand"
       , card_type = CardType_Character
       , set = Set_TourneyForTheHand
@@ -20291,7 +20291,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_11.jpg"
+    , { id = "atoc_11"
       , name = "Dragon Support"
       , card_type = CardType_Event
       , set = Set_TourneyForTheHand
@@ -20312,7 +20312,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_18.jpg"
+    , { id = "atoc_18"
       , name = "Free Man"
       , card_type = CardType_Character
       , set = Set_TourneyForTheHand
@@ -20333,7 +20333,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_15.jpg"
+    , { id = "atoc_15"
       , name = "Highgarden"
       , card_type = CardType_Location
       , set = Set_TourneyForTheHand
@@ -20354,7 +20354,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_6.jpg"
+    , { id = "atoc_6"
       , name = "Highgarden Squire"
       , card_type = CardType_Character
       , set = Set_TourneyForTheHand
@@ -20375,7 +20375,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_20.jpg"
+    , { id = "atoc_20"
       , name = "Into the Lists"
       , card_type = CardType_Plot
       , set = Set_TourneyForTheHand
@@ -20396,7 +20396,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TftH_5.jpg"
+    , { id = "atoc_5"
       , name = "Knight of Flowers"
       , card_type = CardType_Character
       , set = Set_TourneyForTheHand
@@ -20417,7 +20417,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_2.jpg"
+    , { id = "atoc_2"
       , name = "Meera Reed"
       , card_type = CardType_Character
       , set = Set_TourneyForTheHand
@@ -20438,7 +20438,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_16.jpg"
+    , { id = "atoc_16"
       , name = "Newly Made Lord"
       , card_type = CardType_Character
       , set = Set_TourneyForTheHand
@@ -20459,7 +20459,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_9.jpg"
+    , { id = "atoc_9"
       , name = "Nightfall"
       , card_type = CardType_Attachment
       , set = Set_TourneyForTheHand
@@ -20480,7 +20480,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_10.jpg"
+    , { id = "atoc_10"
       , name = "Ser Barristan Selmy"
       , card_type = CardType_Character
       , set = Set_TourneyForTheHand
@@ -20501,7 +20501,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_4.jpg"
+    , { id = "atoc_4"
       , name = "Ser Jaime Lannister"
       , card_type = CardType_Character
       , set = Set_TourneyForTheHand
@@ -20522,7 +20522,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_17.jpg"
+    , { id = "atoc_17"
       , name = "Shadow Tower Knight"
       , card_type = CardType_Character
       , set = Set_TourneyForTheHand
@@ -20543,7 +20543,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_7.jpg"
+    , { id = "atoc_7"
       , name = "Storm's End Tourney Grounds"
       , card_type = CardType_Location
       , set = Set_TourneyForTheHand
@@ -20564,7 +20564,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_8.jpg"
+    , { id = "atoc_8"
       , name = "The Knight"
       , card_type = CardType_Character
       , set = Set_TourneyForTheHand
@@ -20585,7 +20585,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_3.jpg"
+    , { id = "atoc_3"
       , name = "The Last River"
       , card_type = CardType_Location
       , set = Set_TourneyForTheHand
@@ -20606,7 +20606,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftH_19.jpg"
+    , { id = "atoc_19"
       , name = "Tourney Lance"
       , card_type = CardType_Attachment
       , set = Set_TourneyForTheHand
@@ -20627,7 +20627,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_97.jpg"
+    , { id = "atoc_97"
       , name = "A United Cause"
       , card_type = CardType_Event
       , set = Set_TrialByCombat
@@ -20648,7 +20648,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_94.jpg"
+    , { id = "atoc_94"
       , name = "Blood Debt"
       , card_type = CardType_Attachment
       , set = Set_TrialByCombat
@@ -20669,7 +20669,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_96.jpg"
+    , { id = "atoc_96"
       , name = "Condemned"
       , card_type = CardType_Attachment
       , set = Set_TrialByCombat
@@ -20690,7 +20690,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_87.jpg"
+    , { id = "atoc_87"
       , name = "Corpse Lake"
       , card_type = CardType_Location
       , set = Set_TrialByCombat
@@ -20711,7 +20711,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_86.jpg"
+    , { id = "atoc_86"
       , name = "Cotter Pyke"
       , card_type = CardType_Character
       , set = Set_TrialByCombat
@@ -20732,7 +20732,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_92.jpg"
+    , { id = "atoc_92"
       , name = "Dagos Manwoody"
       , card_type = CardType_Character
       , set = Set_TrialByCombat
@@ -20753,7 +20753,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_84.jpg"
+    , { id = "atoc_84"
       , name = "Davos's Confidant"
       , card_type = CardType_Character
       , set = Set_TrialByCombat
@@ -20774,7 +20774,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_89.jpg"
+    , { id = "atoc_89"
       , name = "Dragon Knight"
       , card_type = CardType_Character
       , set = Set_TrialByCombat
@@ -20795,7 +20795,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_98.jpg"
+    , { id = "atoc_98"
       , name = "Enemy of My Enemy"
       , card_type = CardType_Event
       , set = Set_TrialByCombat
@@ -20816,7 +20816,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_90.jpg"
+    , { id = "atoc_90"
       , name = "Exiled Knight"
       , card_type = CardType_Character
       , set = Set_TrialByCombat
@@ -20837,7 +20837,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_95.jpg"
+    , { id = "atoc_95"
       , name = "First Ranger"
       , card_type = CardType_Attachment
       , set = Set_TrialByCombat
@@ -20858,7 +20858,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_100.jpg"
+    , { id = "atoc_100"
       , name = "I Fight to Win"
       , card_type = CardType_Plot
       , set = Set_TrialByCombat
@@ -20879,7 +20879,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TBC_81.jpg"
+    , { id = "atoc_81"
       , name = "Knight of Harrenhal"
       , card_type = CardType_Character
       , set = Set_TrialByCombat
@@ -20900,7 +20900,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_91.jpg"
+    , { id = "atoc_91"
       , name = "Meraxes"
       , card_type = CardType_Location
       , set = Set_TrialByCombat
@@ -20921,7 +20921,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_88.jpg"
+    , { id = "atoc_88"
       , name = "Nighttime Raid"
       , card_type = CardType_Event
       , set = Set_TrialByCombat
@@ -20942,7 +20942,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_82.jpg"
+    , { id = "atoc_82"
       , name = "No Quarter"
       , card_type = CardType_Event
       , set = Set_TrialByCombat
@@ -20963,7 +20963,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_83.jpg"
+    , { id = "atoc_83"
       , name = "Queen's Guard"
       , card_type = CardType_Character
       , set = Set_TrialByCombat
@@ -20984,7 +20984,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_99.jpg"
+    , { id = "atoc_99"
       , name = "Secret Alliance"
       , card_type = CardType_Event
       , set = Set_TrialByCombat
@@ -21005,7 +21005,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_93.jpg"
+    , { id = "atoc_93"
       , name = "The Brimstone"
       , card_type = CardType_Location
       , set = Set_TrialByCombat
@@ -21026,7 +21026,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBC_85.jpg"
+    , { id = "atoc_85"
       , name = "The Painted Table"
       , card_type = CardType_Location
       , set = Set_TrialByCombat
@@ -21047,7 +21047,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_65.jpg"
+    , { id = "atoc_65"
       , name = "A House Divided"
       , card_type = CardType_Event
       , set = Set_WhereLoyaltyLies
@@ -21068,7 +21068,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_74.jpg"
+    , { id = "atoc_74"
       , name = "Arianne's Conspirators"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21089,7 +21089,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_70.jpg"
+    , { id = "atoc_70"
       , name = "Asha Greyjoy"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21110,7 +21110,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_73.jpg"
+    , { id = "atoc_73"
       , name = "Daario Naharis"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21131,7 +21131,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_71.jpg"
+    , { id = "atoc_71"
       , name = "Finger Dance"
       , card_type = CardType_Event
       , set = Set_WhereLoyaltyLies
@@ -21152,7 +21152,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_77.jpg"
+    , { id = "atoc_77"
       , name = "Ghost of High Heart"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21173,7 +21173,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_61.jpg"
+    , { id = "atoc_61"
       , name = "Greatjon Umber"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21194,7 +21194,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_66.jpg"
+    , { id = "atoc_66"
       , name = "Oath of Fealty"
       , card_type = CardType_Event
       , set = Set_WhereLoyaltyLies
@@ -21215,7 +21215,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_78.jpg"
+    , { id = "atoc_78"
       , name = "Ocean Road"
       , card_type = CardType_Location
       , set = Set_WhereLoyaltyLies
@@ -21236,7 +21236,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_75.jpg"
+    , { id = "atoc_75"
       , name = "Quentyn's Guard"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21257,7 +21257,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_62.jpg"
+    , { id = "atoc_62"
       , name = "Rickard Karstark"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21278,7 +21278,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_79.jpg"
+    , { id = "atoc_79"
       , name = "Satin"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21299,7 +21299,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_68.jpg"
+    , { id = "atoc_68"
       , name = "Ser Axell Florent"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21320,7 +21320,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_67.jpg"
+    , { id = "atoc_67"
       , name = "Ser Davos Seaworth"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21341,7 +21341,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_63.jpg"
+    , { id = "atoc_63"
       , name = "Ser Gregor Clegane"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21362,7 +21362,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_72.jpg"
+    , { id = "atoc_72"
       , name = "Ser Jorah Mormont"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21383,7 +21383,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_64.jpg"
+    , { id = "atoc_64"
       , name = "The Hound"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21404,7 +21404,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_69.jpg"
+    , { id = "atoc_69"
       , name = "Theon Greyjoy"
       , card_type = CardType_Character
       , set = Set_WhereLoyaltyLies
@@ -21425,7 +21425,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_76.jpg"
+    , { id = "atoc_76"
       , name = "Words Are Like Arrows"
       , card_type = CardType_Event
       , set = Set_WhereLoyaltyLies
@@ -21446,7 +21446,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/WLL_80.jpg"
+    , { id = "atoc_80"
       , name = "You Swore an Oath"
       , card_type = CardType_Plot
       , set = Set_WhereLoyaltyLies
@@ -21467,7 +21467,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/ACoS_57.jpg"
+    , { id = "ator_57"
       , name = "A Game of Cyvasse"
       , card_type = CardType_Event
       , set = Set_AChangeOfSeasons
@@ -21488,7 +21488,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_59.jpg"
+    , { id = "ator_59"
       , name = "A Time for Ravens"
       , card_type = CardType_Plot
       , set = Set_AChangeOfSeasons
@@ -21509,7 +21509,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 1
       }
-    , { image_url = "/images/cards/ACoS_43.jpg"
+    , { id = "ator_43"
       , name = "Burning Sword"
       , card_type = CardType_Attachment
       , set = Set_AChangeOfSeasons
@@ -21530,7 +21530,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_45.jpg"
+    , { id = "ator_45"
       , name = "Demon's Dance"
       , card_type = CardType_Attachment
       , set = Set_AChangeOfSeasons
@@ -21551,7 +21551,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_58.jpg"
+    , { id = "ator_58"
       , name = "Den of the Wolf"
       , card_type = CardType_Location
       , set = Set_AChangeOfSeasons
@@ -21572,7 +21572,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_56.jpg"
+    , { id = "ator_56"
       , name = "Dragon Attack"
       , card_type = CardType_Event
       , set = Set_AChangeOfSeasons
@@ -21593,7 +21593,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_49.jpg"
+    , { id = "ator_49"
       , name = "Maester Aemon"
       , card_type = CardType_Character
       , set = Set_AChangeOfSeasons
@@ -21614,7 +21614,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_52.jpg"
+    , { id = "ator_52"
       , name = "Secret Hideout"
       , card_type = CardType_Event
       , set = Set_AChangeOfSeasons
@@ -21635,7 +21635,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_46.jpg"
+    , { id = "ator_46"
       , name = "Shadow Stalker"
       , card_type = CardType_Character
       , set = Set_AChangeOfSeasons
@@ -21656,7 +21656,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_50.jpg"
+    , { id = "ator_50"
       , name = "Southron Scavengers"
       , card_type = CardType_Character
       , set = Set_AChangeOfSeasons
@@ -21677,7 +21677,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_42.jpg"
+    , { id = "ator_42"
       , name = "Taxed Dry"
       , card_type = CardType_Attachment
       , set = Set_AChangeOfSeasons
@@ -21698,7 +21698,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_53.jpg"
+    , { id = "ator_53"
       , name = "The Lion's Law"
       , card_type = CardType_Event
       , set = Set_AChangeOfSeasons
@@ -21719,7 +21719,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_44.jpg"
+    , { id = "ator_44"
       , name = "The Long Summer"
       , card_type = CardType_Attachment
       , set = Set_AChangeOfSeasons
@@ -21740,7 +21740,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_41.jpg"
+    , { id = "ator_41"
       , name = "The Long Winter"
       , card_type = CardType_Attachment
       , set = Set_AChangeOfSeasons
@@ -21761,7 +21761,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_48.jpg"
+    , { id = "ator_48"
       , name = "Theon Greyjoy"
       , card_type = CardType_Character
       , set = Set_AChangeOfSeasons
@@ -21782,7 +21782,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_55.jpg"
+    , { id = "ator_55"
       , name = "Thuggish Tactics"
       , card_type = CardType_Event
       , set = Set_AChangeOfSeasons
@@ -21803,7 +21803,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_60.jpg"
+    , { id = "ator_60"
       , name = "Unconventional Warfare"
       , card_type = CardType_Plot
       , set = Set_AChangeOfSeasons
@@ -21824,7 +21824,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/ACoS_54.jpg"
+    , { id = "ator_54"
       , name = "Vigilant Stag"
       , card_type = CardType_Event
       , set = Set_AChangeOfSeasons
@@ -21845,7 +21845,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_51.jpg"
+    , { id = "ator_51"
       , name = "Walder Frey"
       , card_type = CardType_Character
       , set = Set_AChangeOfSeasons
@@ -21866,7 +21866,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ACoS_47.jpg"
+    , { id = "ator_47"
       , name = "Wintertime Marauders"
       , card_type = CardType_Character
       , set = Set_AChangeOfSeasons
@@ -21887,7 +21887,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_20.jpg"
+    , { id = "ator_20"
       , name = "A Song of Summer"
       , card_type = CardType_Plot
       , set = Set_ASongOfSummer
@@ -21908,7 +21908,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/ASoS_2.jpg"
+    , { id = "ator_2"
       , name = "Black Raven"
       , card_type = CardType_Attachment
       , set = Set_ASongOfSummer
@@ -21929,7 +21929,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_16.jpg"
+    , { id = "ator_16"
       , name = "Carrion Bird"
       , card_type = CardType_Character
       , set = Set_ASongOfSummer
@@ -21950,7 +21950,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_5.jpg"
+    , { id = "ator_5"
       , name = "Dragon Sight"
       , card_type = CardType_Attachment
       , set = Set_ASongOfSummer
@@ -21971,7 +21971,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_11.jpg"
+    , { id = "ator_11"
       , name = "Fairweather Followers"
       , card_type = CardType_Character
       , set = Set_ASongOfSummer
@@ -21992,7 +21992,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_4.jpg"
+    , { id = "ator_4"
       , name = "Fishing Net"
       , card_type = CardType_Attachment
       , set = Set_ASongOfSummer
@@ -22013,7 +22013,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_6.jpg"
+    , { id = "ator_6"
       , name = "Jeyne Westerling"
       , card_type = CardType_Character
       , set = Set_ASongOfSummer
@@ -22034,7 +22034,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_1.jpg"
+    , { id = "ator_1"
       , name = "Kings of Summer"
       , card_type = CardType_Agenda
       , set = Set_ASongOfSummer
@@ -22055,7 +22055,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_15.jpg"
+    , { id = "ator_15"
       , name = "Knights of the Sun"
       , card_type = CardType_Character
       , set = Set_ASongOfSummer
@@ -22076,7 +22076,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_17.jpg"
+    , { id = "ator_17"
       , name = "Lion's Gate"
       , card_type = CardType_Location
       , set = Set_ASongOfSummer
@@ -22097,7 +22097,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_14.jpg"
+    , { id = "ator_14"
       , name = "Maester of the Sun"
       , card_type = CardType_Character
       , set = Set_ASongOfSummer
@@ -22118,7 +22118,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_19.jpg"
+    , { id = "ator_19"
       , name = "Open Market"
       , card_type = CardType_Location
       , set = Set_ASongOfSummer
@@ -22139,7 +22139,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_7.jpg"
+    , { id = "ator_7"
       , name = "Priestess of the Pyre"
       , card_type = CardType_Character
       , set = Set_ASongOfSummer
@@ -22160,7 +22160,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_12.jpg"
+    , { id = "ator_12"
       , name = "Red Warlock"
       , card_type = CardType_Character
       , set = Set_ASongOfSummer
@@ -22181,7 +22181,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_10.jpg"
+    , { id = "ator_10"
       , name = "Scavengers of the Sea"
       , card_type = CardType_Character
       , set = Set_ASongOfSummer
@@ -22202,7 +22202,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_8.jpg"
+    , { id = "ator_8"
       , name = "Selyse Baratheon"
       , card_type = CardType_Character
       , set = Set_ASongOfSummer
@@ -22223,7 +22223,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_13.jpg"
+    , { id = "ator_13"
       , name = "Starfall Bannerman"
       , card_type = CardType_Character
       , set = Set_ASongOfSummer
@@ -22244,7 +22244,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_18.jpg"
+    , { id = "ator_18"
       , name = "Summer Port"
       , card_type = CardType_Location
       , set = Set_ASongOfSummer
@@ -22265,7 +22265,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_3.jpg"
+    , { id = "ator_3"
       , name = "Summer Tax"
       , card_type = CardType_Attachment
       , set = Set_ASongOfSummer
@@ -22286,7 +22286,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoS_9.jpg"
+    , { id = "ator_9"
       , name = "Summer's Champion"
       , card_type = CardType_Character
       , set = Set_ASongOfSummer
@@ -22307,7 +22307,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_89.jpg"
+    , { id = "ator_89"
       , name = "Alannys Greyjoy"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22328,7 +22328,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_87.jpg"
+    , { id = "ator_87"
       , name = "Arena Knight"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22349,7 +22349,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_96.jpg"
+    , { id = "ator_96"
       , name = "Bandit of Summer"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22370,7 +22370,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_94.jpg"
+    , { id = "ator_94"
       , name = "Bandit of Winter"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22391,7 +22391,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_83.jpg"
+    , { id = "ator_83"
       , name = "Bolton Refugee"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22412,7 +22412,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_84.jpg"
+    , { id = "ator_84"
       , name = "Cat o' the Canals"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22433,7 +22433,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_91.jpg"
+    , { id = "ator_91"
       , name = "Dragonstone Scavenger"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22454,7 +22454,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_98.jpg"
+    , { id = "ator_98"
       , name = "Gilly"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22475,7 +22475,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_82.jpg"
+    , { id = "ator_82"
       , name = "Head of a Dwarf"
       , card_type = CardType_Attachment
       , set = Set_RefugeesOfWar
@@ -22496,7 +22496,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_86.jpg"
+    , { id = "ator_86"
       , name = "Highgarden Refugee"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22517,7 +22517,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_88.jpg"
+    , { id = "ator_88"
       , name = "Island Refugee"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22538,7 +22538,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_85.jpg"
+    , { id = "ator_85"
       , name = "Mountain Refugee"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22559,7 +22559,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_81.jpg"
+    , { id = "ator_81"
       , name = "Needle"
       , card_type = CardType_Attachment
       , set = Set_RefugeesOfWar
@@ -22580,7 +22580,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_93.jpg"
+    , { id = "ator_93"
       , name = "Pit Viper"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22601,7 +22601,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_92.jpg"
+    , { id = "ator_92"
       , name = "Refugee of the Citadel"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22622,7 +22622,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_90.jpg"
+    , { id = "ator_90"
       , name = "Refugee of the Plains"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22643,7 +22643,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_95.jpg"
+    , { id = "ator_95"
       , name = "River Bandit"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22664,7 +22664,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_100.jpg"
+    , { id = "ator_100"
       , name = "The Tides of War"
       , card_type = CardType_Plot
       , set = Set_RefugeesOfWar
@@ -22685,7 +22685,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/RoW_97.jpg"
+    , { id = "ator_97"
       , name = "Vale Refugee"
       , card_type = CardType_Character
       , set = Set_RefugeesOfWar
@@ -22706,7 +22706,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoW_99.jpg"
+    , { id = "ator_99"
       , name = "War of Five Kings"
       , card_type = CardType_Event
       , set = Set_RefugeesOfWar
@@ -22727,7 +22727,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_69.jpg"
+    , { id = "ator_69"
       , name = "At the Point of a Blade"
       , card_type = CardType_Event
       , set = Set_TheRavensSong
@@ -22748,7 +22748,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_61.jpg"
+    , { id = "ator_61"
       , name = "Dawn"
       , card_type = CardType_Attachment
       , set = Set_TheRavensSong
@@ -22769,7 +22769,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_79.jpg"
+    , { id = "ator_79"
       , name = "Desolate Passage"
       , card_type = CardType_Plot
       , set = Set_TheRavensSong
@@ -22790,7 +22790,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TRS_72.jpg"
+    , { id = "ator_72"
       , name = "Dragonstone Rookery"
       , card_type = CardType_Location
       , set = Set_TheRavensSong
@@ -22811,7 +22811,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_67.jpg"
+    , { id = "ator_67"
       , name = "Fights No Sword Can Win"
       , card_type = CardType_Event
       , set = Set_TheRavensSong
@@ -22832,7 +22832,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_63.jpg"
+    , { id = "ator_63"
       , name = "Grand Maester Pycelle"
       , card_type = CardType_Character
       , set = Set_TheRavensSong
@@ -22853,7 +22853,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_77.jpg"
+    , { id = "ator_77"
       , name = "Heart of the Kingdom"
       , card_type = CardType_Location
       , set = Set_TheRavensSong
@@ -22874,7 +22874,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_73.jpg"
+    , { id = "ator_73"
       , name = "Island Rookery"
       , card_type = CardType_Location
       , set = Set_TheRavensSong
@@ -22895,7 +22895,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_65.jpg"
+    , { id = "ator_65"
       , name = "Kraznys mo Nakloz"
       , card_type = CardType_Character
       , set = Set_TheRavensSong
@@ -22916,7 +22916,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_71.jpg"
+    , { id = "ator_71"
       , name = "Lannisport Rookery"
       , card_type = CardType_Location
       , set = Set_TheRavensSong
@@ -22937,7 +22937,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_62.jpg"
+    , { id = "ator_62"
       , name = "Northern Scavengers"
       , card_type = CardType_Character
       , set = Set_TheRavensSong
@@ -22958,7 +22958,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_74.jpg"
+    , { id = "ator_74"
       , name = "Qartheen Rookery"
       , card_type = CardType_Location
       , set = Set_TheRavensSong
@@ -22979,7 +22979,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_64.jpg"
+    , { id = "ator_64"
       , name = "Renly Baratheon"
       , card_type = CardType_Character
       , set = Set_TheRavensSong
@@ -23000,7 +23000,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_75.jpg"
+    , { id = "ator_75"
       , name = "Rookery of Sunspear"
       , card_type = CardType_Location
       , set = Set_TheRavensSong
@@ -23021,7 +23021,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_66.jpg"
+    , { id = "ator_66"
       , name = "Samwell Tarly"
       , card_type = CardType_Character
       , set = Set_TheRavensSong
@@ -23042,7 +23042,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_68.jpg"
+    , { id = "ator_68"
       , name = "The Raven's Message"
       , card_type = CardType_Event
       , set = Set_TheRavensSong
@@ -23063,7 +23063,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_80.jpg"
+    , { id = "ator_80"
       , name = "The Raven's Song"
       , card_type = CardType_Plot
       , set = Set_TheRavensSong
@@ -23084,7 +23084,7 @@ all_cards =
       , initiative = Just 1
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TRS_78.jpg"
+    , { id = "ator_78"
       , name = "The Tower of Joy"
       , card_type = CardType_Location
       , set = Set_TheRavensSong
@@ -23105,7 +23105,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_76.jpg"
+    , { id = "ator_76"
       , name = "Vale Rookery"
       , card_type = CardType_Location
       , set = Set_TheRavensSong
@@ -23126,7 +23126,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TRS_70.jpg"
+    , { id = "ator_70"
       , name = "Winterfell Rookery"
       , card_type = CardType_Location
       , set = Set_TheRavensSong
@@ -23147,7 +23147,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_35.jpg"
+    , { id = "ator_35"
       , name = "Carrion Bird"
       , card_type = CardType_Character
       , set = Set_TheWindsOfWinter
@@ -23168,7 +23168,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_38.jpg"
+    , { id = "ator_38"
       , name = "Frozen Sea"
       , card_type = CardType_Location
       , set = Set_TheWindsOfWinter
@@ -23189,7 +23189,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_29.jpg"
+    , { id = "ator_29"
       , name = "Ice Fisherman"
       , card_type = CardType_Character
       , set = Set_TheWindsOfWinter
@@ -23210,7 +23210,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_28.jpg"
+    , { id = "ator_28"
       , name = "Janos Slynt"
       , card_type = CardType_Character
       , set = Set_TheWindsOfWinter
@@ -23231,7 +23231,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_21.jpg"
+    , { id = "ator_21"
       , name = "Kings of Winter"
       , card_type = CardType_Agenda
       , set = Set_TheWindsOfWinter
@@ -23252,7 +23252,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_26.jpg"
+    , { id = "ator_26"
       , name = "Maester Vyman"
       , card_type = CardType_Character
       , set = Set_TheWindsOfWinter
@@ -23273,7 +23273,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_33.jpg"
+    , { id = "ator_33"
       , name = "Mance Rayder"
       , card_type = CardType_Character
       , set = Set_TheWindsOfWinter
@@ -23294,7 +23294,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_36.jpg"
+    , { id = "ator_36"
       , name = "Northern Cave"
       , card_type = CardType_Location
       , set = Set_TheWindsOfWinter
@@ -23315,7 +23315,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_31.jpg"
+    , { id = "ator_31"
       , name = "Obara Sand"
       , card_type = CardType_Character
       , set = Set_TheWindsOfWinter
@@ -23336,7 +23336,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_25.jpg"
+    , { id = "ator_25"
       , name = "Ranger of Winter"
       , card_type = CardType_Character
       , set = Set_TheWindsOfWinter
@@ -23357,7 +23357,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_27.jpg"
+    , { id = "ator_27"
       , name = "Scavengers of King's Landing"
       , card_type = CardType_Character
       , set = Set_TheWindsOfWinter
@@ -23378,7 +23378,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_34.jpg"
+    , { id = "ator_34"
       , name = "Ser Arthur Dayne"
       , card_type = CardType_Character
       , set = Set_TheWindsOfWinter
@@ -23399,7 +23399,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_22.jpg"
+    , { id = "ator_22"
       , name = "Son of a King"
       , card_type = CardType_Attachment
       , set = Set_TheWindsOfWinter
@@ -23420,7 +23420,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_37.jpg"
+    , { id = "ator_37"
       , name = "The Wall"
       , card_type = CardType_Location
       , set = Set_TheWindsOfWinter
@@ -23441,7 +23441,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_40.jpg"
+    , { id = "ator_40"
       , name = "The Winds of Winter"
       , card_type = CardType_Plot
       , set = Set_TheWindsOfWinter
@@ -23462,7 +23462,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 2
       }
-    , { image_url = "/images/cards/TWoW_32.jpg"
+    , { id = "ator_32"
       , name = "Underhanded Assassin"
       , card_type = CardType_Character
       , set = Set_TheWindsOfWinter
@@ -23483,7 +23483,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_30.jpg"
+    , { id = "ator_30"
       , name = "Valyrian Spirit"
       , card_type = CardType_Character
       , set = Set_TheWindsOfWinter
@@ -23504,7 +23504,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_23.jpg"
+    , { id = "ator_23"
       , name = "War Horn"
       , card_type = CardType_Attachment
       , set = Set_TheWindsOfWinter
@@ -23525,7 +23525,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_24.jpg"
+    , { id = "ator_24"
       , name = "White Raven"
       , card_type = CardType_Attachment
       , set = Set_TheWindsOfWinter
@@ -23546,7 +23546,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWoW_39.jpg"
+    , { id = "ator_39"
       , name = "Winter Armada"
       , card_type = CardType_Location
       , set = Set_TheWindsOfWinter
@@ -23567,7 +23567,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_69.jpg"
+    , { id = "btns_69"
       , name = "Captured Cog"
       , card_type = CardType_Location
       , set = Set_AHarshMistress
@@ -23588,7 +23588,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_74.jpg"
+    , { id = "btns_74"
       , name = "Dragon Egg"
       , card_type = CardType_Attachment
       , set = Set_AHarshMistress
@@ -23609,7 +23609,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_67.jpg"
+    , { id = "btns_67"
       , name = "Ghost of Winterfell"
       , card_type = CardType_Character
       , set = Set_AHarshMistress
@@ -23630,7 +23630,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_75.jpg"
+    , { id = "btns_75"
       , name = "Great Pyramid of Meereen"
       , card_type = CardType_Location
       , set = Set_AHarshMistress
@@ -23651,7 +23651,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_62.jpg"
+    , { id = "btns_62"
       , name = "Hall of Dragons"
       , card_type = CardType_Location
       , set = Set_AHarshMistress
@@ -23672,7 +23672,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_68.jpg"
+    , { id = "btns_68"
       , name = "Longship Red Jester"
       , card_type = CardType_Location
       , set = Set_AHarshMistress
@@ -23693,7 +23693,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_61.jpg"
+    , { id = "btns_61"
       , name = "Maege Mormont"
       , card_type = CardType_Character
       , set = Set_AHarshMistress
@@ -23714,7 +23714,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_70.jpg"
+    , { id = "btns_70"
       , name = "Maester Myles"
       , card_type = CardType_Character
       , set = Set_AHarshMistress
@@ -23735,7 +23735,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_80.jpg"
+    , { id = "btns_80"
       , name = "Men of Duty"
       , card_type = CardType_Plot
       , set = Set_AHarshMistress
@@ -23756,7 +23756,7 @@ all_cards =
       , initiative = Just 7
       , claim = Just 1
       }
-    , { image_url = "/images/cards/AHM_79.jpg"
+    , { id = "btns_79"
       , name = "Men of Honor"
       , card_type = CardType_Plot
       , set = Set_AHarshMistress
@@ -23777,7 +23777,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/AHM_78.jpg"
+    , { id = "btns_78"
       , name = "Much and More"
       , card_type = CardType_Event
       , set = Set_AHarshMistress
@@ -23798,7 +23798,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_76.jpg"
+    , { id = "btns_76"
       , name = "Myr"
       , card_type = CardType_Location
       , set = Set_AHarshMistress
@@ -23819,7 +23819,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_64.jpg"
+    , { id = "btns_64"
       , name = "Pentoshi Manor"
       , card_type = CardType_Location
       , set = Set_AHarshMistress
@@ -23840,7 +23840,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_71.jpg"
+    , { id = "btns_71"
       , name = "Rhoynar Emissary"
       , card_type = CardType_Character
       , set = Set_AHarshMistress
@@ -23861,7 +23861,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_73.jpg"
+    , { id = "btns_73"
       , name = "The Golden Company"
       , card_type = CardType_Character
       , set = Set_AHarshMistress
@@ -23882,7 +23882,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_66.jpg"
+    , { id = "btns_66"
       , name = "The Nightfort"
       , card_type = CardType_Location
       , set = Set_AHarshMistress
@@ -23903,7 +23903,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_72.jpg"
+    , { id = "btns_72"
       , name = "The Windblown"
       , card_type = CardType_Character
       , set = Set_AHarshMistress
@@ -23924,7 +23924,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_77.jpg"
+    , { id = "btns_77"
       , name = "Tyrosh"
       , card_type = CardType_Location
       , set = Set_AHarshMistress
@@ -23945,7 +23945,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_63.jpg"
+    , { id = "btns_63"
       , name = "Volantis Inn"
       , card_type = CardType_Location
       , set = Set_AHarshMistress
@@ -23966,7 +23966,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHM_65.jpg"
+    , { id = "btns_65"
       , name = "Watcher of the Nightfire"
       , card_type = CardType_Character
       , set = Set_AHarshMistress
@@ -23987,7 +23987,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_114.jpg"
+    , { id = "btns_114"
       , name = "Deceit"
       , card_type = CardType_Event
       , set = Set_ARollOfTheDice
@@ -24008,7 +24008,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_117.jpg"
+    , { id = "btns_117"
       , name = "Dragonbone Bow"
       , card_type = CardType_Attachment
       , set = Set_ARollOfTheDice
@@ -24029,7 +24029,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_110.jpg"
+    , { id = "btns_110"
       , name = "Flood Waters"
       , card_type = CardType_Event
       , set = Set_ARollOfTheDice
@@ -24050,7 +24050,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_107.jpg"
+    , { id = "btns_107"
       , name = "Glamor of Fire"
       , card_type = CardType_Event
       , set = Set_ARollOfTheDice
@@ -24071,7 +24071,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_112.jpg"
+    , { id = "btns_112"
       , name = "Greenblood Merchant"
       , card_type = CardType_Character
       , set = Set_ARollOfTheDice
@@ -24092,7 +24092,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_119.jpg"
+    , { id = "btns_119"
       , name = "House of Dreams"
       , card_type = CardType_Agenda
       , set = Set_ARollOfTheDice
@@ -24113,7 +24113,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_120.jpg"
+    , { id = "btns_120"
       , name = "Lead by Example"
       , card_type = CardType_Plot
       , set = Set_ARollOfTheDice
@@ -24134,7 +24134,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/ARotD_118.jpg"
+    , { id = "btns_118"
       , name = "Little and Less"
       , card_type = CardType_Event
       , set = Set_ARollOfTheDice
@@ -24155,7 +24155,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_116.jpg"
+    , { id = "btns_116"
       , name = "Meereenese Fighting Pit"
       , card_type = CardType_Location
       , set = Set_ARollOfTheDice
@@ -24176,7 +24176,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_111.jpg"
+    , { id = "btns_111"
       , name = "Old Bill Bone"
       , card_type = CardType_Character
       , set = Set_ARollOfTheDice
@@ -24197,7 +24197,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_108.jpg"
+    , { id = "btns_108"
       , name = "Outfitted for War"
       , card_type = CardType_Attachment
       , set = Set_ARollOfTheDice
@@ -24218,7 +24218,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_113.jpg"
+    , { id = "btns_113"
       , name = "Outthought"
       , card_type = CardType_Attachment
       , set = Set_ARollOfTheDice
@@ -24239,7 +24239,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_102.jpg"
+    , { id = "btns_102"
       , name = "Ramsay's Hunting Dogs"
       , card_type = CardType_Attachment
       , set = Set_ARollOfTheDice
@@ -24260,7 +24260,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_103.jpg"
+    , { id = "btns_103"
       , name = "Rhymes with Meek"
       , card_type = CardType_Event
       , set = Set_ARollOfTheDice
@@ -24281,7 +24281,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_109.jpg"
+    , { id = "btns_109"
       , name = "Sacrificed to Two Gods"
       , card_type = CardType_Event
       , set = Set_ARollOfTheDice
@@ -24302,7 +24302,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_106.jpg"
+    , { id = "btns_106"
       , name = "Snowed In"
       , card_type = CardType_Event
       , set = Set_ARollOfTheDice
@@ -24323,7 +24323,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_101.jpg"
+    , { id = "btns_101"
       , name = "The Bastard's Boys"
       , card_type = CardType_Character
       , set = Set_ARollOfTheDice
@@ -24344,7 +24344,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_115.jpg"
+    , { id = "btns_115"
       , name = "The Brazen Beasts"
       , card_type = CardType_Character
       , set = Set_ARollOfTheDice
@@ -24365,7 +24365,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_105.jpg"
+    , { id = "btns_105"
       , name = "The Second Sons"
       , card_type = CardType_Character
       , set = Set_ARollOfTheDice
@@ -24386,7 +24386,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ARotD_104.jpg"
+    , { id = "btns_104"
       , name = "Walk of Shame"
       , card_type = CardType_Event
       , set = Set_ARollOfTheDice
@@ -24407,7 +24407,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_59.jpg"
+    , { id = "btns_59"
       , name = "A City Besieged"
       , card_type = CardType_Plot
       , set = Set_ChasingDragons
@@ -24428,7 +24428,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/CD_42.jpg"
+    , { id = "btns_42"
       , name = "Abel's Washerwoman"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24449,7 +24449,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_55.jpg"
+    , { id = "btns_55"
       , name = "Archmaester Marwyn"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24470,7 +24470,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_41.jpg"
+    , { id = "btns_41"
       , name = "Follower of the Many-Faced God"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24491,7 +24491,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_47.jpg"
+    , { id = "btns_47"
       , name = "Follower of Two Gods"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24512,7 +24512,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_57.jpg"
+    , { id = "btns_57"
       , name = "Griff"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24533,7 +24533,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_49.jpg"
+    , { id = "btns_49"
       , name = "Iron Fleet Captain"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24554,7 +24554,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_51.jpg"
+    , { id = "btns_51"
       , name = "Longship Grief"
       , card_type = CardType_Location
       , set = Set_ChasingDragons
@@ -24575,7 +24575,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_60.jpg"
+    , { id = "btns_60"
       , name = "Manning the City Walls"
       , card_type = CardType_Plot
       , set = Set_ChasingDragons
@@ -24596,7 +24596,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 2
       }
-    , { image_url = "/images/cards/CD_58.jpg"
+    , { id = "btns_58"
       , name = "Pentos"
       , card_type = CardType_Location
       , set = Set_ChasingDragons
@@ -24617,7 +24617,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_44.jpg"
+    , { id = "btns_44"
       , name = "Selhorys Customs Officer"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24638,7 +24638,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_56.jpg"
+    , { id = "btns_56"
       , name = "Sellsword Deserter"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24659,7 +24659,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_52.jpg"
+    , { id = "btns_52"
       , name = "Ser Archibald Yronwood"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24680,7 +24680,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_53.jpg"
+    , { id = "btns_53"
       , name = "Ser Gerris Drinkwater"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24701,7 +24701,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_46.jpg"
+    , { id = "btns_46"
       , name = "The Red Queen's Faithful"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24722,7 +24722,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_48.jpg"
+    , { id = "btns_48"
       , name = "Thrall"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24743,7 +24743,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_50.jpg"
+    , { id = "btns_50"
       , name = "Victarion's Reavers"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24764,7 +24764,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_54.jpg"
+    , { id = "btns_54"
       , name = "Watchful Servant"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24785,7 +24785,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_45.jpg"
+    , { id = "btns_45"
       , name = "Wildling Bard"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24806,7 +24806,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CD_43.jpg"
+    , { id = "btns_43"
       , name = "Yezzan's Grotesquerie"
       , card_type = CardType_Character
       , set = Set_ChasingDragons
@@ -24827,7 +24827,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/tHoBaW_81.jpg"
+    , { id = "btns_81"
       , name = "Arya Stark"
       , card_type = CardType_Character
       , set = Set_TheHouseOfBlackAndWhite
@@ -24848,7 +24848,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_89.jpg"
+    , { id = "btns_89"
       , name = "Banner Bearer"
       , card_type = CardType_Attachment
       , set = Set_TheHouseOfBlackAndWhite
@@ -24869,7 +24869,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_95.jpg"
+    , { id = "btns_95"
       , name = "Company of the Cat"
       , card_type = CardType_Character
       , set = Set_TheHouseOfBlackAndWhite
@@ -24890,7 +24890,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_91.jpg"
+    , { id = "btns_91"
       , name = "Cowed"
       , card_type = CardType_Attachment
       , set = Set_TheHouseOfBlackAndWhite
@@ -24911,7 +24911,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_85.jpg"
+    , { id = "btns_85"
       , name = "Dockside Brothel"
       , card_type = CardType_Location
       , set = Set_TheHouseOfBlackAndWhite
@@ -24932,7 +24932,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_86.jpg"
+    , { id = "btns_86"
       , name = "Dragonbone Dagger"
       , card_type = CardType_Attachment
       , set = Set_TheHouseOfBlackAndWhite
@@ -24953,7 +24953,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_87.jpg"
+    , { id = "btns_87"
       , name = "Enslaved"
       , card_type = CardType_Attachment
       , set = Set_TheHouseOfBlackAndWhite
@@ -24974,7 +24974,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_98.jpg"
+    , { id = "btns_98"
       , name = "Execution"
       , card_type = CardType_Event
       , set = Set_TheHouseOfBlackAndWhite
@@ -24995,7 +24995,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_90.jpg"
+    , { id = "btns_90"
       , name = "Freed Galley"
       , card_type = CardType_Location
       , set = Set_TheHouseOfBlackAndWhite
@@ -25016,7 +25016,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/tHoBaW_97.jpg"
+    , { id = "btns_97"
       , name = "Greyscale"
       , card_type = CardType_Attachment
       , set = Set_TheHouseOfBlackAndWhite
@@ -25037,7 +25037,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_84.jpg"
+    , { id = "btns_84"
       , name = "I Am No One"
       , card_type = CardType_Event
       , set = Set_TheHouseOfBlackAndWhite
@@ -25058,7 +25058,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_94.jpg"
+    , { id = "btns_94"
       , name = "Lhorulu"
       , card_type = CardType_Location
       , set = Set_TheHouseOfBlackAndWhite
@@ -25079,7 +25079,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_96.jpg"
+    , { id = "btns_96"
       , name = "Long Lances"
       , card_type = CardType_Character
       , set = Set_TheHouseOfBlackAndWhite
@@ -25100,7 +25100,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_99.jpg"
+    , { id = "btns_99"
       , name = "Men of Pride"
       , card_type = CardType_Plot
       , set = Set_TheHouseOfBlackAndWhite
@@ -25121,7 +25121,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 2
       }
-    , { image_url = "/images/cards/THoBaW_88.jpg"
+    , { id = "btns_88"
       , name = "Northern Encampment"
       , card_type = CardType_Location
       , set = Set_TheHouseOfBlackAndWhite
@@ -25142,7 +25142,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_92.jpg"
+    , { id = "btns_92"
       , name = "Noyne"
       , card_type = CardType_Location
       , set = Set_TheHouseOfBlackAndWhite
@@ -25163,7 +25163,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_83.jpg"
+    , { id = "btns_83"
       , name = "Poisoned Coin"
       , card_type = CardType_Attachment
       , set = Set_TheHouseOfBlackAndWhite
@@ -25184,7 +25184,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_93.jpg"
+    , { id = "btns_93"
       , name = "Qhoyne"
       , card_type = CardType_Location
       , set = Set_TheHouseOfBlackAndWhite
@@ -25205,7 +25205,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/tHoBaW_82.jpg"
+    , { id = "btns_82"
       , name = "The House of Black and White"
       , card_type = CardType_Location
       , set = Set_TheHouseOfBlackAndWhite
@@ -25226,7 +25226,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THoBaW_100.jpg"
+    , { id = "btns_100"
       , name = "The Pale Mare"
       , card_type = CardType_Plot
       , set = Set_TheHouseOfBlackAndWhite
@@ -25247,7 +25247,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/VD_40.jpg"
+    , { id = "btns_40"
       , name = "Before the Black Walls"
       , card_type = CardType_Plot
       , set = Set_ValarDohaeris
@@ -25268,7 +25268,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 1
       }
-    , { image_url = "/images/cards/VD_35.jpg"
+    , { id = "btns_35"
       , name = "Braavos"
       , card_type = CardType_Location
       , set = Set_ValarDohaeris
@@ -25289,7 +25289,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_22.jpg"
+    , { id = "btns_22"
       , name = "Bran Stark"
       , card_type = CardType_Character
       , set = Set_ValarDohaeris
@@ -25310,7 +25310,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_23.jpg"
+    , { id = "btns_23"
       , name = "Castle Battlements"
       , card_type = CardType_Attachment
       , set = Set_ValarDohaeris
@@ -25331,7 +25331,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_21.jpg"
+    , { id = "btns_21"
       , name = "Damon Dance-For-Me"
       , card_type = CardType_Character
       , set = Set_ValarDohaeris
@@ -25352,7 +25352,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_27.jpg"
+    , { id = "btns_27"
       , name = "Dragonstone Bannerman"
       , card_type = CardType_Character
       , set = Set_ValarDohaeris
@@ -25373,7 +25373,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_25.jpg"
+    , { id = "btns_25"
       , name = "Merchant's Widow"
       , card_type = CardType_Character
       , set = Set_ValarDohaeris
@@ -25394,7 +25394,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_29.jpg"
+    , { id = "btns_29"
       , name = "Moqorro"
       , card_type = CardType_Character
       , set = Set_ValarDohaeris
@@ -25415,7 +25415,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_36.jpg"
+    , { id = "btns_36"
       , name = "Norvos"
       , card_type = CardType_Location
       , set = Set_ValarDohaeris
@@ -25436,7 +25436,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_39.jpg"
+    , { id = "btns_39"
       , name = "On Dagger Lake"
       , card_type = CardType_Plot
       , set = Set_ValarDohaeris
@@ -25457,7 +25457,7 @@ all_cards =
       , initiative = Just 6
       , claim = Just 1
       }
-    , { image_url = "/images/cards/VD_24.jpg"
+    , { id = "btns_24"
       , name = "Penny"
       , card_type = CardType_Character
       , set = Set_ValarDohaeris
@@ -25478,7 +25478,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_37.jpg"
+    , { id = "btns_37"
       , name = "Pulled from the Rhoyne"
       , card_type = CardType_Plot
       , set = Set_ValarDohaeris
@@ -25499,7 +25499,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/VD_30.jpg"
+    , { id = "btns_30"
       , name = "Quentyn Martell"
       , card_type = CardType_Character
       , set = Set_ValarDohaeris
@@ -25520,7 +25520,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_32.jpg"
+    , { id = "btns_32"
       , name = "Recruitment"
       , card_type = CardType_Event
       , set = Set_ValarDohaeris
@@ -25541,7 +25541,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_26.jpg"
+    , { id = "btns_26"
       , name = "Shireen Baratheon"
       , card_type = CardType_Character
       , set = Set_ValarDohaeris
@@ -25562,7 +25562,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_31.jpg"
+    , { id = "btns_31"
       , name = "Spiteful Bastard"
       , card_type = CardType_Character
       , set = Set_ValarDohaeris
@@ -25583,7 +25583,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_34.jpg"
+    , { id = "btns_34"
       , name = "Strong Belwas"
       , card_type = CardType_Character
       , set = Set_ValarDohaeris
@@ -25604,7 +25604,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_38.jpg"
+    , { id = "btns_38"
       , name = "Under the Bridge of Dream"
       , card_type = CardType_Plot
       , set = Set_ValarDohaeris
@@ -25625,7 +25625,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/VD_28.jpg"
+    , { id = "btns_28"
       , name = "Victarion Greyjoy"
       , card_type = CardType_Character
       , set = Set_ValarDohaeris
@@ -25646,7 +25646,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VD_33.jpg"
+    , { id = "btns_33"
       , name = "Young Griff"
       , card_type = CardType_Character
       , set = Set_ValarDohaeris
@@ -25667,7 +25667,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_18.jpg"
+    , { id = "btns_18"
       , name = "Above the Sorrows"
       , card_type = CardType_Plot
       , set = Set_ValarMorghulis
@@ -25688,7 +25688,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 2
       }
-    , { image_url = "/images/cards/VM_10.jpg"
+    , { id = "btns_10"
       , name = "Aeron Damphair"
       , card_type = CardType_Character
       , set = Set_ValarMorghulis
@@ -25709,7 +25709,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_20.jpg"
+    , { id = "btns_20"
       , name = "At the Palace of Sorrows"
       , card_type = CardType_Plot
       , set = Set_ValarMorghulis
@@ -25730,7 +25730,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/VM_6.jpg"
+    , { id = "btns_6"
       , name = "Futile Gestures"
       , card_type = CardType_Event
       , set = Set_ValarMorghulis
@@ -25751,7 +25751,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_14.jpg"
+    , { id = "btns_14"
       , name = "Harried by Dragons"
       , card_type = CardType_Attachment
       , set = Set_ValarMorghulis
@@ -25772,7 +25772,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_4.jpg"
+    , { id = "btns_4"
       , name = "Hugor Hill"
       , card_type = CardType_Character
       , set = Set_ValarMorghulis
@@ -25793,7 +25793,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_15.jpg"
+    , { id = "btns_15"
       , name = "Incinerate"
       , card_type = CardType_Event
       , set = Set_ValarMorghulis
@@ -25814,7 +25814,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_11.jpg"
+    , { id = "btns_11"
       , name = "Maester Kerwin"
       , card_type = CardType_Character
       , set = Set_ValarMorghulis
@@ -25835,7 +25835,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_16.jpg"
+    , { id = "btns_16"
       , name = "Magister Illyrio"
       , card_type = CardType_Character
       , set = Set_ValarMorghulis
@@ -25856,7 +25856,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_13.jpg"
+    , { id = "btns_13"
       , name = "Playing the Part"
       , card_type = CardType_Event
       , set = Set_ValarMorghulis
@@ -25877,7 +25877,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_4.jpg"
+    , { id = "btns_4"
       , name = "Ser Kevan Lannister"
       , card_type = CardType_Character
       , set = Set_ValarMorghulis
@@ -25898,7 +25898,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_19.jpg"
+    , { id = "btns_19"
       , name = "Shores of Ny Sar"
       , card_type = CardType_Plot
       , set = Set_ValarMorghulis
@@ -25919,7 +25919,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/VM_7.jpg"
+    , { id = "btns_7"
       , name = "Stannis Baratheon"
       , card_type = CardType_Character
       , set = Set_ValarMorghulis
@@ -25940,7 +25940,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_8.jpg"
+    , { id = "btns_8"
       , name = "The Bastard of Nightsong"
       , card_type = CardType_Character
       , set = Set_ValarMorghulis
@@ -25961,7 +25961,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_1.jpg"
+    , { id = "btns_1"
       , name = "The Kindly Man"
       , card_type = CardType_Character
       , set = Set_ValarMorghulis
@@ -25982,7 +25982,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_12.jpg"
+    , { id = "btns_12"
       , name = "Thirst-for-Vengeance"
       , card_type = CardType_Attachment
       , set = Set_ValarMorghulis
@@ -26003,7 +26003,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_2.jpg"
+    , { id = "btns_2"
       , name = "Turncloak"
       , card_type = CardType_Attachment
       , set = Set_ValarMorghulis
@@ -26024,7 +26024,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_17.jpg"
+    , { id = "btns_17"
       , name = "Volantis"
       , card_type = CardType_Location
       , set = Set_ValarMorghulis
@@ -26045,7 +26045,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_3.jpg"
+    , { id = "btns_3"
       , name = "Ward"
       , card_type = CardType_Event
       , set = Set_ValarMorghulis
@@ -26066,7 +26066,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/VM_9.jpg"
+    , { id = "btns_9"
       , name = "Willas Tyrell"
       , card_type = CardType_Character
       , set = Set_ValarMorghulis
@@ -26087,7 +26087,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_68.jpg"
+    , { id = "bwb_68"
       , name = "Cragorn"
       , card_type = CardType_Character
       , set = Set_ASongOfSilence
@@ -26108,7 +26108,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_67.jpg"
+    , { id = "bwb_67"
       , name = "Euron Crow's Eye"
       , card_type = CardType_Character
       , set = Set_ASongOfSilence
@@ -26129,7 +26129,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_69.jpg"
+    , { id = "bwb_69"
       , name = "Euron's Mongrel"
       , card_type = CardType_Character
       , set = Set_ASongOfSilence
@@ -26150,7 +26150,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_78.jpg"
+    , { id = "bwb_78"
       , name = "Hollow Hill"
       , card_type = CardType_Location
       , set = Set_ASongOfSilence
@@ -26171,7 +26171,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_70.jpg"
+    , { id = "bwb_70"
       , name = "Horn of Dragons"
       , card_type = CardType_Attachment
       , set = Set_ASongOfSilence
@@ -26192,7 +26192,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_73.jpg"
+    , { id = "bwb_73"
       , name = "Horseback Hunters"
       , card_type = CardType_Character
       , set = Set_ASongOfSilence
@@ -26213,7 +26213,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_64.jpg"
+    , { id = "bwb_64"
       , name = "Ill-Begotten Spoils"
       , card_type = CardType_Attachment
       , set = Set_ASongOfSilence
@@ -26234,7 +26234,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_62.jpg"
+    , { id = "bwb_62"
       , name = "In Ramsay's Name"
       , card_type = CardType_Event
       , set = Set_ASongOfSilence
@@ -26255,7 +26255,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_71.jpg"
+    , { id = "bwb_71"
       , name = "Longship Silence"
       , card_type = CardType_Location
       , set = Set_ASongOfSilence
@@ -26276,7 +26276,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_66.jpg"
+    , { id = "bwb_66"
       , name = "Massey's Hook"
       , card_type = CardType_Location
       , set = Set_ASongOfSilence
@@ -26297,7 +26297,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_76.jpg"
+    , { id = "bwb_76"
       , name = "Poisoned Knife"
       , card_type = CardType_Attachment
       , set = Set_ASongOfSilence
@@ -26318,7 +26318,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_80.jpg"
+    , { id = "bwb_80"
       , name = "Retaliation!"
       , card_type = CardType_Plot
       , set = Set_ASongOfSilence
@@ -26339,7 +26339,7 @@ all_cards =
       , initiative = Just 8
       , claim = Just 2
       }
-    , { image_url = "/images/cards/ASoSilence_72.jpg"
+    , { id = "bwb_72"
       , name = "River Raid"
       , card_type = CardType_Event
       , set = Set_ASongOfSilence
@@ -26360,7 +26360,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_75.jpg"
+    , { id = "bwb_75"
       , name = "Silent Assassin"
       , card_type = CardType_Character
       , set = Set_ASongOfSilence
@@ -26381,7 +26381,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_63.jpg"
+    , { id = "bwb_63"
       , name = "Son of the Mist"
       , card_type = CardType_Character
       , set = Set_ASongOfSilence
@@ -26402,7 +26402,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_61.jpg"
+    , { id = "bwb_61"
       , name = "Steelshanks' Reserves"
       , card_type = CardType_Character
       , set = Set_ASongOfSilence
@@ -26423,7 +26423,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_65.jpg"
+    , { id = "bwb_65"
       , name = "Stormlands Smuggler"
       , card_type = CardType_Character
       , set = Set_ASongOfSilence
@@ -26444,7 +26444,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_77.jpg"
+    , { id = "bwb_77"
       , name = "The Mad Huntsman"
       , card_type = CardType_Character
       , set = Set_ASongOfSilence
@@ -26465,7 +26465,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_74.jpg"
+    , { id = "bwb_74"
       , name = "The Womb of the World"
       , card_type = CardType_Location
       , set = Set_ASongOfSilence
@@ -26486,7 +26486,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASoSilence_79.jpg"
+    , { id = "bwb_79"
       , name = "Whispers from the Hill"
       , card_type = CardType_Event
       , set = Set_ASongOfSilence
@@ -26507,7 +26507,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_117.jpg"
+    , { id = "bwb_117"
       , name = "Anguy the Archer"
       , card_type = CardType_Character
       , set = Set_DreadfortBetrayal
@@ -26528,7 +26528,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_114.jpg"
+    , { id = "bwb_114"
       , name = "Black Hatchling"
       , card_type = CardType_Character
       , set = Set_DreadfortBetrayal
@@ -26549,7 +26549,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_104.jpg"
+    , { id = "bwb_104"
       , name = "Bloody Scourge"
       , card_type = CardType_Attachment
       , set = Set_DreadfortBetrayal
@@ -26570,7 +26570,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_103.jpg"
+    , { id = "bwb_103"
       , name = "Bolton Loyalist"
       , card_type = CardType_Character
       , set = Set_DreadfortBetrayal
@@ -26591,7 +26591,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_110.jpg"
+    , { id = "bwb_110"
       , name = "Bound by the Light"
       , card_type = CardType_Attachment
       , set = Set_DreadfortBetrayal
@@ -26612,7 +26612,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_113.jpg"
+    , { id = "bwb_113"
       , name = "Dothraki Handmaiden"
       , card_type = CardType_Character
       , set = Set_DreadfortBetrayal
@@ -26633,7 +26633,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_111.jpg"
+    , { id = "bwb_111"
       , name = "Euron's Enforcers"
       , card_type = CardType_Character
       , set = Set_DreadfortBetrayal
@@ -26654,7 +26654,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_119.jpg"
+    , { id = "bwb_119"
       , name = "Flaming Sword"
       , card_type = CardType_Attachment
       , set = Set_DreadfortBetrayal
@@ -26675,7 +26675,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_109.jpg"
+    , { id = "bwb_109"
       , name = "Knight of Summerhall"
       , card_type = CardType_Character
       , set = Set_DreadfortBetrayal
@@ -26696,7 +26696,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_108.jpg"
+    , { id = "bwb_108"
       , name = "Mountain Camp"
       , card_type = CardType_Location
       , set = Set_DreadfortBetrayal
@@ -26717,7 +26717,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_116.jpg"
+    , { id = "bwb_116"
       , name = "No Use For Grief"
       , card_type = CardType_Event
       , set = Set_DreadfortBetrayal
@@ -26738,7 +26738,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_115.jpg"
+    , { id = "bwb_115"
       , name = "Obella Sand"
       , card_type = CardType_Character
       , set = Set_DreadfortBetrayal
@@ -26759,7 +26759,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_120.jpg"
+    , { id = "bwb_120"
       , name = "Relentless Persecution"
       , card_type = CardType_Plot
       , set = Set_DreadfortBetrayal
@@ -26780,7 +26780,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/DB_101.jpg"
+    , { id = "bwb_101"
       , name = "Roose Bolton"
       , card_type = CardType_Character
       , set = Set_DreadfortBetrayal
@@ -26801,7 +26801,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_107.jpg"
+    , { id = "bwb_107"
       , name = "Shagga Son of Dolf"
       , card_type = CardType_Character
       , set = Set_DreadfortBetrayal
@@ -26822,7 +26822,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_118.jpg"
+    , { id = "bwb_118"
       , name = "Stoney Sept"
       , card_type = CardType_Location
       , set = Set_DreadfortBetrayal
@@ -26843,7 +26843,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_106.jpg"
+    , { id = "bwb_106"
       , name = "Terror in the Dungeons"
       , card_type = CardType_Event
       , set = Set_DreadfortBetrayal
@@ -26864,7 +26864,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_105.jpg"
+    , { id = "bwb_105"
       , name = "The Dreadfort"
       , card_type = CardType_Location
       , set = Set_DreadfortBetrayal
@@ -26885,7 +26885,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_102.jpg"
+    , { id = "bwb_102"
       , name = "The Flayed Men"
       , card_type = CardType_Character
       , set = Set_DreadfortBetrayal
@@ -26906,7 +26906,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/DB_112.jpg"
+    , { id = "bwb_112"
       , name = "We Take Westeros!"
       , card_type = CardType_Event
       , set = Set_DreadfortBetrayal
@@ -26927,7 +26927,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_17.jpg"
+    , { id = "bwb_17"
       , name = "Beric Dondarrion"
       , card_type = CardType_Character
       , set = Set_IllyriosGift
@@ -26948,7 +26948,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_11.jpg"
+    , { id = "bwb_11"
       , name = "Bitter Crone"
       , card_type = CardType_Character
       , set = Set_IllyriosGift
@@ -26969,7 +26969,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_14.jpg"
+    , { id = "bwb_14"
       , name = "Deadly Khalasar"
       , card_type = CardType_Event
       , set = Set_IllyriosGift
@@ -26990,7 +26990,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_10.jpg"
+    , { id = "bwb_10"
       , name = "Drogo's Horde"
       , card_type = CardType_Character
       , set = Set_IllyriosGift
@@ -27011,7 +27011,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_2.jpg"
+    , { id = "bwb_2"
       , name = "Dubious Loyalties"
       , card_type = CardType_Attachment
       , set = Set_IllyriosGift
@@ -27032,7 +27032,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_15.jpg"
+    , { id = "bwb_15"
       , name = "Edric Dayne"
       , card_type = CardType_Character
       , set = Set_IllyriosGift
@@ -27053,7 +27053,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_4.jpg"
+    , { id = "bwb_4"
       , name = "Fog of War"
       , card_type = CardType_Event
       , set = Set_IllyriosGift
@@ -27074,7 +27074,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_19.jpg"
+    , { id = "bwb_19"
       , name = "Ill Tidings"
       , card_type = CardType_Event
       , set = Set_IllyriosGift
@@ -27095,7 +27095,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_7.jpg"
+    , { id = "bwb_7"
       , name = "Motley Crewman"
       , card_type = CardType_Character
       , set = Set_IllyriosGift
@@ -27116,7 +27116,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_18.jpg"
+    , { id = "bwb_18"
       , name = "Neutral Faction"
       , card_type = CardType_Character
       , set = Set_IllyriosGift
@@ -27137,7 +27137,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_8.jpg"
+    , { id = "bwb_8"
       , name = "Ours for the Taking"
       , card_type = CardType_Event
       , set = Set_IllyriosGift
@@ -27158,7 +27158,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_3.jpg"
+    , { id = "bwb_3"
       , name = "Painted Dogs"
       , card_type = CardType_Character
       , set = Set_IllyriosGift
@@ -27179,7 +27179,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_9.jpg"
+    , { id = "bwb_9"
       , name = "Rakharo"
       , card_type = CardType_Character
       , set = Set_IllyriosGift
@@ -27200,7 +27200,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_12.jpg"
+    , { id = "bwb_12"
       , name = "Rakharo's Arakh"
       , card_type = CardType_Attachment
       , set = Set_IllyriosGift
@@ -27221,7 +27221,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_5.jpg"
+    , { id = "bwb_5"
       , name = "Robert's Loyalists"
       , card_type = CardType_Character
       , set = Set_IllyriosGift
@@ -27242,7 +27242,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_16.jpg"
+    , { id = "bwb_16"
       , name = "Southron Vessel"
       , card_type = CardType_Location
       , set = Set_IllyriosGift
@@ -27263,7 +27263,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_1.jpg"
+    , { id = "bwb_1"
       , name = "The Bastard of Bolton"
       , card_type = CardType_Character
       , set = Set_IllyriosGift
@@ -27284,7 +27284,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_6.jpg"
+    , { id = "bwb_6"
       , name = "The King's Ground"
       , card_type = CardType_Attachment
       , set = Set_IllyriosGift
@@ -27305,7 +27305,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/IG_20.jpg"
+    , { id = "bwb_20"
       , name = "The Prince That Was Promised"
       , card_type = CardType_Plot
       , set = Set_IllyriosGift
@@ -27326,7 +27326,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/IG_13.jpg"
+    , { id = "bwb_13"
       , name = "Vaes Dothrak"
       , card_type = CardType_Location
       , set = Set_IllyriosGift
@@ -27347,7 +27347,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_95.jpg"
+    , { id = "bwb_95"
       , name = "Alchemist's Shop"
       , card_type = CardType_Location
       , set = Set_OfSnakesAndSand
@@ -27368,7 +27368,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_93.jpg"
+    , { id = "bwb_93"
       , name = "Bastard Daughter"
       , card_type = CardType_Character
       , set = Set_OfSnakesAndSand
@@ -27389,7 +27389,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_94.jpg"
+    , { id = "bwb_94"
       , name = "Blood of the Viper"
       , card_type = CardType_Attachment
       , set = Set_OfSnakesAndSand
@@ -27410,7 +27410,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_87.jpg"
+    , { id = "bwb_87"
       , name = "Bloodthirsty Crew"
       , card_type = CardType_Character
       , set = Set_OfSnakesAndSand
@@ -27431,7 +27431,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_100.jpg"
+    , { id = "bwb_100"
       , name = "Bungled Orders"
       , card_type = CardType_Plot
       , set = Set_OfSnakesAndSand
@@ -27452,7 +27452,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/OSaS_99.jpg"
+    , { id = "bwb_99"
       , name = "Gossip and Lies"
       , card_type = CardType_Event
       , set = Set_OfSnakesAndSand
@@ -27473,7 +27473,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_96.jpg"
+    , { id = "bwb_96"
       , name = "His Viper Eyes"
       , card_type = CardType_Event
       , set = Set_OfSnakesAndSand
@@ -27494,7 +27494,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_97.jpg"
+    , { id = "bwb_97"
       , name = "Jack-be-Lucky"
       , card_type = CardType_Character
       , set = Set_OfSnakesAndSand
@@ -27515,7 +27515,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_89.jpg"
+    , { id = "bwb_89"
       , name = "Jhogo"
       , card_type = CardType_Character
       , set = Set_OfSnakesAndSand
@@ -27536,7 +27536,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_90.jpg"
+    , { id = "bwb_90"
       , name = "Jhogo's Whip"
       , card_type = CardType_Attachment
       , set = Set_OfSnakesAndSand
@@ -27557,7 +27557,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_86.jpg"
+    , { id = "bwb_86"
       , name = "King Robert's Debt"
       , card_type = CardType_Event
       , set = Set_OfSnakesAndSand
@@ -27578,7 +27578,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_92.jpg"
+    , { id = "bwb_92"
       , name = "Nymeria Sand"
       , card_type = CardType_Character
       , set = Set_OfSnakesAndSand
@@ -27599,7 +27599,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_98.jpg"
+    , { id = "bwb_98"
       , name = "Orphaned Recruit"
       , card_type = CardType_Character
       , set = Set_OfSnakesAndSand
@@ -27620,7 +27620,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_88.jpg"
+    , { id = "bwb_88"
       , name = "Refurbished Hulk"
       , card_type = CardType_Location
       , set = Set_OfSnakesAndSand
@@ -27641,7 +27641,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_85.jpg"
+    , { id = "bwb_85"
       , name = "Shadow Enchantress"
       , card_type = CardType_Character
       , set = Set_OfSnakesAndSand
@@ -27662,7 +27662,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_81.jpg"
+    , { id = "bwb_81"
       , name = "Steelshanks Walton"
       , card_type = CardType_Character
       , set = Set_OfSnakesAndSand
@@ -27683,7 +27683,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_82.jpg"
+    , { id = "bwb_82"
       , name = "The Weeping Water"
       , card_type = CardType_Location
       , set = Set_OfSnakesAndSand
@@ -27704,7 +27704,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_83.jpg"
+    , { id = "bwb_83"
       , name = "Tribeless Vagabond"
       , card_type = CardType_Character
       , set = Set_OfSnakesAndSand
@@ -27725,7 +27725,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_91.jpg"
+    , { id = "bwb_91"
       , name = "Tyene Sand"
       , card_type = CardType_Character
       , set = Set_OfSnakesAndSand
@@ -27746,7 +27746,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/OSaS_84.jpg"
+    , { id = "bwb_84"
       , name = "Tyrion's Thug"
       , card_type = CardType_Attachment
       , set = Set_OfSnakesAndSand
@@ -27767,7 +27767,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_22.jpg"
+    , { id = "bwb_22"
       , name = "Abandoned Fort"
       , card_type = CardType_Location
       , set = Set_RitualsOfRhllor
@@ -27788,7 +27788,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_33.jpg"
+    , { id = "bwb_33"
       , name = "Aggo"
       , card_type = CardType_Character
       , set = Set_RitualsOfRhllor
@@ -27809,7 +27809,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_34.jpg"
+    , { id = "bwb_34"
       , name = "Aggo's Bow"
       , card_type = CardType_Attachment
       , set = Set_RitualsOfRhllor
@@ -27830,7 +27830,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_29.jpg"
+    , { id = "bwb_29"
       , name = "Altar of Fire"
       , card_type = CardType_Location
       , set = Set_RitualsOfRhllor
@@ -27851,7 +27851,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_31.jpg"
+    , { id = "bwb_31"
       , name = "Ambitious Oarsman"
       , card_type = CardType_Character
       , set = Set_RitualsOfRhllor
@@ -27872,7 +27872,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_23.jpg"
+    , { id = "bwb_23"
       , name = "Campfire Mime"
       , card_type = CardType_Character
       , set = Set_RitualsOfRhllor
@@ -27893,7 +27893,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_36.jpg"
+    , { id = "bwb_36"
       , name = "Fallen and Reborn"
       , card_type = CardType_Event
       , set = Set_RitualsOfRhllor
@@ -27914,7 +27914,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_28.jpg"
+    , { id = "bwb_28"
       , name = "Fanatic"
       , card_type = CardType_Attachment
       , set = Set_RitualsOfRhllor
@@ -27935,7 +27935,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_27.jpg"
+    , { id = "bwb_27"
       , name = "Intolerant Priest"
       , card_type = CardType_Character
       , set = Set_RitualsOfRhllor
@@ -27956,7 +27956,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_30.jpg"
+    , { id = "bwb_30"
       , name = "Lord of Light, Protect Us"
       , card_type = CardType_Event
       , set = Set_RitualsOfRhllor
@@ -27977,7 +27977,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_40.jpg"
+    , { id = "bwb_40"
       , name = "Many Powers Long Asleep"
       , card_type = CardType_Plot
       , set = Set_RitualsOfRhllor
@@ -27998,7 +27998,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/RoR_25.jpg"
+    , { id = "bwb_25"
       , name = "Melisandre"
       , card_type = CardType_Character
       , set = Set_RitualsOfRhllor
@@ -28019,7 +28019,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_24.jpg"
+    , { id = "bwb_24"
       , name = "Mountain Tactics"
       , card_type = CardType_Event
       , set = Set_RitualsOfRhllor
@@ -28040,7 +28040,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_32.jpg"
+    , { id = "bwb_32"
       , name = "River Blockade"
       , card_type = CardType_Location
       , set = Set_RitualsOfRhllor
@@ -28061,7 +28061,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_35.jpg"
+    , { id = "bwb_35"
       , name = "Starfall Merchant"
       , card_type = CardType_Character
       , set = Set_RitualsOfRhllor
@@ -28082,7 +28082,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_21.jpg"
+    , { id = "bwb_21"
       , name = "The Bastard's Elite"
       , card_type = CardType_Character
       , set = Set_RitualsOfRhllor
@@ -28103,7 +28103,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_39.jpg"
+    , { id = "bwb_39"
       , name = "The Brotherhood Without Banners"
       , card_type = CardType_Agenda
       , set = Set_RitualsOfRhllor
@@ -28124,7 +28124,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_37.jpg"
+    , { id = "bwb_37"
       , name = "Thoros of Myr"
       , card_type = CardType_Character
       , set = Set_RitualsOfRhllor
@@ -28145,7 +28145,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_38.jpg"
+    , { id = "bwb_38"
       , name = "Tom Sevenstrings"
       , card_type = CardType_Character
       , set = Set_RitualsOfRhllor
@@ -28166,7 +28166,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RoR_26.jpg"
+    , { id = "bwb_26"
       , name = "Wicked Seductress"
       , card_type = CardType_Character
       , set = Set_RitualsOfRhllor
@@ -28187,7 +28187,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_119.jpg"
+    , { id = "cad_119"
       , name = "A Task for the King"
       , card_type = CardType_Plot
       , set = Set_ADireMessage
@@ -28208,7 +28208,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/A Dire Message_118.jpg"
+    , { id = "cad_118"
       , name = "A Task in the East"
       , card_type = CardType_Plot
       , set = Set_ADireMessage
@@ -28229,7 +28229,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/A Dire Message_111.jpg"
+    , { id = "cad_111"
       , name = "Blackwood Elite"
       , card_type = CardType_Character
       , set = Set_ADireMessage
@@ -28250,7 +28250,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_114.jpg"
+    , { id = "cad_114"
       , name = "By Sword or By Guile"
       , card_type = CardType_Event
       , set = Set_ADireMessage
@@ -28271,7 +28271,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_113.jpg"
+    , { id = "cad_113"
       , name = "Dragon Ambassador"
       , card_type = CardType_Character
       , set = Set_ADireMessage
@@ -28292,7 +28292,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_102.jpg"
+    , { id = "cad_102"
       , name = "Flame and Shadow"
       , card_type = CardType_Event
       , set = Set_ADireMessage
@@ -28313,7 +28313,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_109.jpg"
+    , { id = "cad_109"
       , name = "Locked in a Cell"
       , card_type = CardType_Event
       , set = Set_ADireMessage
@@ -28334,7 +28334,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_112.jpg"
+    , { id = "cad_112"
       , name = "Mad King Aerys"
       , card_type = CardType_Character
       , set = Set_ADireMessage
@@ -28355,7 +28355,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_110.jpg"
+    , { id = "cad_110"
       , name = "Northern Clansman"
       , card_type = CardType_Character
       , set = Set_ADireMessage
@@ -28376,7 +28376,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_104.jpg"
+    , { id = "cad_104"
       , name = "Orkwood Captain"
       , card_type = CardType_Character
       , set = Set_ADireMessage
@@ -28397,7 +28397,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_103.jpg"
+    , { id = "cad_103"
       , name = "Raider from Orkwood"
       , card_type = CardType_Character
       , set = Set_ADireMessage
@@ -28418,7 +28418,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_101.jpg"
+    , { id = "cad_101"
       , name = "Robert Baratheon"
       , card_type = CardType_Character
       , set = Set_ADireMessage
@@ -28439,7 +28439,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_116.jpg"
+    , { id = "cad_116"
       , name = "Sellsail Galley"
       , card_type = CardType_Location
       , set = Set_ADireMessage
@@ -28460,7 +28460,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_106.jpg"
+    , { id = "cad_106"
       , name = "Ser Balon Swann"
       , card_type = CardType_Character
       , set = Set_ADireMessage
@@ -28481,7 +28481,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_105.jpg"
+    , { id = "cad_105"
       , name = "Ten Towers"
       , card_type = CardType_Location
       , set = Set_ADireMessage
@@ -28502,7 +28502,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_108.jpg"
+    , { id = "cad_108"
       , name = "The Boneway"
       , card_type = CardType_Location
       , set = Set_ADireMessage
@@ -28523,7 +28523,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_115.jpg"
+    , { id = "cad_115"
       , name = "The Iron Throne"
       , card_type = CardType_Location
       , set = Set_ADireMessage
@@ -28544,7 +28544,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Dire Message_120.jpg"
+    , { id = "cad_120"
       , name = "The Turncloak's Task"
       , card_type = CardType_Plot
       , set = Set_ADireMessage
@@ -28565,7 +28565,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/A Dire Message_117.jpg"
+    , { id = "cad_117"
       , name = "They Lay with Lions"
       , card_type = CardType_Plot
       , set = Set_ADireMessage
@@ -28586,7 +28586,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 1
       }
-    , { image_url = "/images/cards/A Dire Message_107.jpg"
+    , { id = "cad_107"
       , name = "Wheels within Wheels"
       , card_type = CardType_Event
       , set = Set_ADireMessage
@@ -28607,7 +28607,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_54.jpg"
+    , { id = "cad_54"
       , name = "Blackfyre"
       , card_type = CardType_Attachment
       , set = Set_FireMadeFlesh
@@ -28628,7 +28628,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_59.jpg"
+    , { id = "cad_59"
       , name = "Calling the Banners"
       , card_type = CardType_Event
       , set = Set_FireMadeFlesh
@@ -28649,7 +28649,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_60.jpg"
+    , { id = "cad_60"
       , name = "Common Cause"
       , card_type = CardType_Plot
       , set = Set_FireMadeFlesh
@@ -28670,7 +28670,7 @@ all_cards =
       , initiative = Just 1
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_55.jpg"
+    , { id = "cad_55"
       , name = "Fire Made Flesh"
       , card_type = CardType_Event
       , set = Set_FireMadeFlesh
@@ -28691,7 +28691,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_42.jpg"
+    , { id = "cad_42"
       , name = "Heartsbane"
       , card_type = CardType_Attachment
       , set = Set_FireMadeFlesh
@@ -28712,7 +28712,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_56.jpg"
+    , { id = "cad_56"
       , name = "House Bannerman"
       , card_type = CardType_Character
       , set = Set_FireMadeFlesh
@@ -28733,7 +28733,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_53.jpg"
+    , { id = "cad_53"
       , name = "Ice"
       , card_type = CardType_Attachment
       , set = Set_FireMadeFlesh
@@ -28754,7 +28754,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_44.jpg"
+    , { id = "cad_44"
       , name = "Iron Islands Marines"
       , card_type = CardType_Location
       , set = Set_FireMadeFlesh
@@ -28775,7 +28775,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_41.jpg"
+    , { id = "cad_41"
       , name = "Knight of the North"
       , card_type = CardType_Character
       , set = Set_FireMadeFlesh
@@ -28796,7 +28796,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_45.jpg"
+    , { id = "cad_45"
       , name = "Longship Iron Victory"
       , card_type = CardType_Location
       , set = Set_FireMadeFlesh
@@ -28817,7 +28817,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_43.jpg"
+    , { id = "cad_43"
       , name = "Orkmont Reaver"
       , card_type = CardType_Character
       , set = Set_FireMadeFlesh
@@ -28838,7 +28838,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_46.jpg"
+    , { id = "cad_46"
       , name = "Podrick Payne"
       , card_type = CardType_Character
       , set = Set_FireMadeFlesh
@@ -28859,7 +28859,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_57.jpg"
+    , { id = "cad_57"
       , name = "Septon Utt"
       , card_type = CardType_Character
       , set = Set_FireMadeFlesh
@@ -28880,7 +28880,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_49.jpg"
+    , { id = "cad_49"
       , name = "The Bastard of Godsgrace"
       , card_type = CardType_Character
       , set = Set_FireMadeFlesh
@@ -28901,7 +28901,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_52.jpg"
+    , { id = "cad_52"
       , name = "The Children's Tower"
       , card_type = CardType_Location
       , set = Set_FireMadeFlesh
@@ -28922,7 +28922,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_51.jpg"
+    , { id = "cad_51"
       , name = "The Drunkard's Tower"
       , card_type = CardType_Location
       , set = Set_FireMadeFlesh
@@ -28943,7 +28943,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_47.jpg"
+    , { id = "cad_47"
       , name = "The Mander"
       , card_type = CardType_Location
       , set = Set_FireMadeFlesh
@@ -28964,7 +28964,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_50.jpg"
+    , { id = "cad_50"
       , name = "The Stepstones"
       , card_type = CardType_Location
       , set = Set_FireMadeFlesh
@@ -28985,7 +28985,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_48.jpg"
+    , { id = "cad_48"
       , name = "There Are No Men Like Me"
       , card_type = CardType_Event
       , set = Set_FireMadeFlesh
@@ -29006,7 +29006,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Fire Made Flesh_58.jpg"
+    , { id = "cad_58"
       , name = "Zollo"
       , card_type = CardType_Character
       , set = Set_FireMadeFlesh
@@ -29027,7 +29027,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_15.jpg"
+    , { id = "cad_15"
       , name = "Aegon Targaryen"
       , card_type = CardType_Character
       , set = Set_SpoilsOfWar
@@ -29048,7 +29048,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_4.jpg"
+    , { id = "cad_4"
       , name = "Bitterbridge"
       , card_type = CardType_Location
       , set = Set_SpoilsOfWar
@@ -29069,7 +29069,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_13.jpg"
+    , { id = "cad_13"
       , name = "Catelyn Stark"
       , card_type = CardType_Character
       , set = Set_SpoilsOfWar
@@ -29090,7 +29090,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_1.jpg"
+    , { id = "cad_1"
       , name = "Conquest"
       , card_type = CardType_Agenda
       , set = Set_SpoilsOfWar
@@ -29111,7 +29111,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_20.jpg"
+    , { id = "cad_20"
       , name = "Crossing the Mummer's Ford"
       , card_type = CardType_Plot
       , set = Set_SpoilsOfWar
@@ -29132,7 +29132,7 @@ all_cards =
       , initiative = Just 1
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Sow_2.jpg"
+    , { id = "cad_2"
       , name = "Defiance"
       , card_type = CardType_Agenda
       , set = Set_SpoilsOfWar
@@ -29153,7 +29153,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_10.jpg"
+    , { id = "cad_10"
       , name = "Doran Martell"
       , card_type = CardType_Character
       , set = Set_SpoilsOfWar
@@ -29174,7 +29174,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_6.jpg"
+    , { id = "cad_6"
       , name = "Enraged Crewman"
       , card_type = CardType_Character
       , set = Set_SpoilsOfWar
@@ -29195,7 +29195,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_8.jpg"
+    , { id = "cad_8"
       , name = "Frey Armsmen"
       , card_type = CardType_Character
       , set = Set_SpoilsOfWar
@@ -29216,7 +29216,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_16.jpg"
+    , { id = "cad_16"
       , name = "Lysono Maar"
       , card_type = CardType_Character
       , set = Set_SpoilsOfWar
@@ -29237,7 +29237,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_5.jpg"
+    , { id = "cad_5"
       , name = "Right of Conquest"
       , card_type = CardType_Event
       , set = Set_SpoilsOfWar
@@ -29258,7 +29258,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_3.jpg"
+    , { id = "cad_3"
       , name = "Seasoned Smuggler"
       , card_type = CardType_Character
       , set = Set_SpoilsOfWar
@@ -29279,7 +29279,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_19.jpg"
+    , { id = "cad_19"
       , name = "Seizing the Prize"
       , card_type = CardType_Plot
       , set = Set_SpoilsOfWar
@@ -29300,7 +29300,7 @@ all_cards =
       , initiative = Just 10
       , claim = Just 1
       }
-    , { image_url = "/images/cards/SoW_14.jpg"
+    , { id = "cad_14"
       , name = "Show of Force"
       , card_type = CardType_Event
       , set = Set_SpoilsOfWar
@@ -29321,7 +29321,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_11.jpg"
+    , { id = "cad_11"
       , name = "Spy from Starfall"
       , card_type = CardType_Character
       , set = Set_SpoilsOfWar
@@ -29342,7 +29342,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_7.jpg"
+    , { id = "cad_7"
       , name = "The Reaver's Song"
       , card_type = CardType_Event
       , set = Set_SpoilsOfWar
@@ -29363,7 +29363,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_17.jpg"
+    , { id = "cad_17"
       , name = "Theon Greyjoy"
       , card_type = CardType_Character
       , set = Set_SpoilsOfWar
@@ -29384,7 +29384,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_9.jpg"
+    , { id = "cad_9"
       , name = "Traitor"
       , card_type = CardType_Attachment
       , set = Set_SpoilsOfWar
@@ -29405,7 +29405,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_18.jpg"
+    , { id = "cad_18"
       , name = "Tycho Nestoris"
       , card_type = CardType_Character
       , set = Set_SpoilsOfWar
@@ -29426,7 +29426,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SoW_12.jpg"
+    , { id = "cad_12"
       , name = "You Murdered Her Children"
       , card_type = CardType_Event
       , set = Set_SpoilsOfWar
@@ -29447,7 +29447,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_23.jpg"
+    , { id = "cad_23"
       , name = "A Taste of Glory"
       , card_type = CardType_Event
       , set = Set_TheChampionsPurse
@@ -29468,7 +29468,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_30.jpg"
+    , { id = "cad_30"
       , name = "Blood Orange Grove"
       , card_type = CardType_Location
       , set = Set_TheChampionsPurse
@@ -29489,7 +29489,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_28.jpg"
+    , { id = "cad_28"
       , name = "Counterplot"
       , card_type = CardType_Event
       , set = Set_TheChampionsPurse
@@ -29510,7 +29510,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_31.jpg"
+    , { id = "cad_31"
       , name = "Desert Raider"
       , card_type = CardType_Character
       , set = Set_TheChampionsPurse
@@ -29531,7 +29531,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_25.jpg"
+    , { id = "cad_25"
       , name = "Every Captain is a King"
       , card_type = CardType_Event
       , set = Set_TheChampionsPurse
@@ -29552,7 +29552,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_27.jpg"
+    , { id = "cad_27"
       , name = "Frey Emissary"
       , card_type = CardType_Character
       , set = Set_TheChampionsPurse
@@ -29573,7 +29573,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_21.jpg"
+    , { id = "cad_21"
       , name = "Knight of the Songs"
       , card_type = CardType_Character
       , set = Set_TheChampionsPurse
@@ -29594,7 +29594,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_34.jpg"
+    , { id = "cad_34"
       , name = "Needle"
       , card_type = CardType_Attachment
       , set = Set_TheChampionsPurse
@@ -29615,7 +29615,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_35.jpg"
+    , { id = "cad_35"
       , name = "Rhoyne Poleman"
       , card_type = CardType_Character
       , set = Set_TheChampionsPurse
@@ -29636,7 +29636,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_22.jpg"
+    , { id = "cad_22"
       , name = "Rider from Storm's End"
       , card_type = CardType_Character
       , set = Set_TheChampionsPurse
@@ -29657,7 +29657,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_32.jpg"
+    , { id = "cad_32"
       , name = "Ser Edmure Tully"
       , card_type = CardType_Character
       , set = Set_TheChampionsPurse
@@ -29678,7 +29678,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_26.jpg"
+    , { id = "cad_26"
       , name = "Ser Robert Strong"
       , card_type = CardType_Character
       , set = Set_TheChampionsPurse
@@ -29699,7 +29699,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_38.jpg"
+    , { id = "cad_38"
       , name = "Shagwell"
       , card_type = CardType_Character
       , set = Set_TheChampionsPurse
@@ -29720,7 +29720,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_29.jpg"
+    , { id = "cad_29"
       , name = "Summer Sea Scout"
       , card_type = CardType_Character
       , set = Set_TheChampionsPurse
@@ -29741,7 +29741,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_33.jpg"
+    , { id = "cad_33"
       , name = "The Gatehouse Tower"
       , card_type = CardType_Location
       , set = Set_TheChampionsPurse
@@ -29762,7 +29762,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_40.jpg"
+    , { id = "cad_40"
       , name = "The Lost Message"
       , card_type = CardType_Plot
       , set = Set_TheChampionsPurse
@@ -29783,7 +29783,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TCP_37.jpg"
+    , { id = "cad_37"
       , name = "Tokar"
       , card_type = CardType_Attachment
       , set = Set_TheChampionsPurse
@@ -29804,7 +29804,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_39.jpg"
+    , { id = "cad_39"
       , name = "Vargo Hoat"
       , card_type = CardType_Character
       , set = Set_TheChampionsPurse
@@ -29825,7 +29825,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_36.jpg"
+    , { id = "cad_36"
       , name = "Viserys Targaryen"
       , card_type = CardType_Character
       , set = Set_TheChampionsPurse
@@ -29846,7 +29846,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TCP_24.jpg"
+    , { id = "cad_24"
       , name = "Wex Pyke"
       , card_type = CardType_Character
       , set = Set_TheChampionsPurse
@@ -29867,7 +29867,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_87.jpg"
+    , { id = "cad_87"
       , name = "Ashemark Councilor"
       , card_type = CardType_Character
       , set = Set_ThePrizeOfTheNorth
@@ -29888,7 +29888,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_94.jpg"
+    , { id = "cad_94"
       , name = "Black Dragon Egg"
       , card_type = CardType_Attachment
       , set = Set_ThePrizeOfTheNorth
@@ -29909,7 +29909,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_81.jpg"
+    , { id = "cad_81"
       , name = "Defenders of the Wall"
       , card_type = CardType_Character
       , set = Set_ThePrizeOfTheNorth
@@ -29930,7 +29930,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_82.jpg"
+    , { id = "cad_82"
       , name = "Deserted Castle"
       , card_type = CardType_Location
       , set = Set_ThePrizeOfTheNorth
@@ -29951,7 +29951,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_91.jpg"
+    , { id = "cad_91"
       , name = "Elia Sand"
       , card_type = CardType_Character
       , set = Set_ThePrizeOfTheNorth
@@ -29972,7 +29972,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_85.jpg"
+    , { id = "cad_85"
       , name = "Farwynd Explorer"
       , card_type = CardType_Location
       , set = Set_ThePrizeOfTheNorth
@@ -29993,7 +29993,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_96.jpg"
+    , { id = "cad_96"
       , name = "Green Dragon Egg"
       , card_type = CardType_Attachment
       , set = Set_ThePrizeOfTheNorth
@@ -30014,7 +30014,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_93.jpg"
+    , { id = "cad_93"
       , name = "Hand of the King"
       , card_type = CardType_Attachment
       , set = Set_ThePrizeOfTheNorth
@@ -30035,7 +30035,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_99.jpg"
+    , { id = "cad_99"
       , name = "Heads on Pikes"
       , card_type = CardType_Event
       , set = Set_ThePrizeOfTheNorth
@@ -30056,7 +30056,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_89.jpg"
+    , { id = "cad_89"
       , name = "House Dayne Escort"
       , card_type = CardType_Character
       , set = Set_ThePrizeOfTheNorth
@@ -30077,7 +30077,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_97.jpg"
+    , { id = "cad_97"
       , name = "In the Hands of the Qohorik"
       , card_type = CardType_Event
       , set = Set_ThePrizeOfTheNorth
@@ -30098,7 +30098,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_84.jpg"
+    , { id = "cad_84"
       , name = "Lonely Light Envoy"
       , card_type = CardType_Character
       , set = Set_ThePrizeOfTheNorth
@@ -30119,7 +30119,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_86.jpg"
+    , { id = "cad_86"
       , name = "Longship Iron Wind"
       , card_type = CardType_Location
       , set = Set_ThePrizeOfTheNorth
@@ -30140,7 +30140,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_88.jpg"
+    , { id = "cad_88"
       , name = "Marbrand Outrider"
       , card_type = CardType_Character
       , set = Set_ThePrizeOfTheNorth
@@ -30161,7 +30161,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_92.jpg"
+    , { id = "cad_92"
       , name = "Riverlands Hunter"
       , card_type = CardType_Character
       , set = Set_ThePrizeOfTheNorth
@@ -30182,7 +30182,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_98.jpg"
+    , { id = "cad_98"
       , name = "Royal Decree"
       , card_type = CardType_Event
       , set = Set_ThePrizeOfTheNorth
@@ -30203,7 +30203,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_90.jpg"
+    , { id = "cad_90"
       , name = "Seneschal Ricasso"
       , card_type = CardType_Character
       , set = Set_ThePrizeOfTheNorth
@@ -30224,7 +30224,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_100.jpg"
+    , { id = "cad_100"
       , name = "The Aftermath"
       , card_type = CardType_Plot
       , set = Set_ThePrizeOfTheNorth
@@ -30245,7 +30245,7 @@ all_cards =
       , initiative = Just 7
       , claim = Just 1
       }
-    , { image_url = "/images/cards/The Prize of the North_83.jpg"
+    , { id = "cad_83"
       , name = "The Wall"
       , card_type = CardType_Location
       , set = Set_ThePrizeOfTheNorth
@@ -30266,7 +30266,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Prize of the North_96.jpg"
+    , { id = "cad_96"
       , name = "White Dragon Egg"
       , card_type = CardType_Attachment
       , set = Set_ThePrizeOfTheNorth
@@ -30287,7 +30287,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_98.jpg"
+    , { id = "dotn_98"
       , name = "Climbing Spikes"
       , card_type = CardType_Attachment
       , set = Set_AKingInTheNorth
@@ -30308,7 +30308,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_82.jpg"
+    , { id = "dotn_82"
       , name = "Deep Freeze"
       , card_type = CardType_Attachment
       , set = Set_AKingInTheNorth
@@ -30329,7 +30329,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_93.jpg"
+    , { id = "dotn_93"
       , name = "Defenders of the North"
       , card_type = CardType_Character
       , set = Set_AKingInTheNorth
@@ -30350,7 +30350,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_91.jpg"
+    , { id = "dotn_91"
       , name = "Formal Escort"
       , card_type = CardType_Character
       , set = Set_AKingInTheNorth
@@ -30371,7 +30371,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_84.jpg"
+    , { id = "dotn_84"
       , name = "Golden Tooth Vaults"
       , card_type = CardType_Location
       , set = Set_AKingInTheNorth
@@ -30392,7 +30392,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_81.jpg"
+    , { id = "dotn_81"
       , name = "Osha"
       , card_type = CardType_Character
       , set = Set_AKingInTheNorth
@@ -30413,7 +30413,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_86.jpg"
+    , { id = "dotn_86"
       , name = "R'hllor's Blessing"
       , card_type = CardType_Attachment
       , set = Set_AKingInTheNorth
@@ -30434,7 +30434,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_87.jpg"
+    , { id = "dotn_87"
       , name = "Raiding Fleet"
       , card_type = CardType_Character
       , set = Set_AKingInTheNorth
@@ -30455,7 +30455,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_97.jpg"
+    , { id = "dotn_97"
       , name = "Rattleshirt's Raiders"
       , card_type = CardType_Character
       , set = Set_AKingInTheNorth
@@ -30476,7 +30476,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_88.jpg"
+    , { id = "dotn_88"
       , name = "Return of the Kraken"
       , card_type = CardType_Event
       , set = Set_AKingInTheNorth
@@ -30497,7 +30497,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_92.jpg"
+    , { id = "dotn_92"
       , name = "Serve. Obey. Protect."
       , card_type = CardType_Event
       , set = Set_AKingInTheNorth
@@ -30518,7 +30518,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_85.jpg"
+    , { id = "dotn_85"
       , name = "Stannis Baratheon"
       , card_type = CardType_Character
       , set = Set_AKingInTheNorth
@@ -30539,7 +30539,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_94.jpg"
+    , { id = "dotn_94"
       , name = "Steward of the Watch"
       , card_type = CardType_Character
       , set = Set_AKingInTheNorth
@@ -30560,7 +30560,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_95.jpg"
+    , { id = "dotn_95"
       , name = "The Feast of the Crows"
       , card_type = CardType_Event
       , set = Set_AKingInTheNorth
@@ -30581,7 +30581,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_100.jpg"
+    , { id = "dotn_100"
       , name = "The Songs of Bael the Bard"
       , card_type = CardType_Plot
       , set = Set_AKingInTheNorth
@@ -30602,7 +30602,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/AKitN_99.jpg"
+    , { id = "dotn_99"
       , name = "The Stewards"
       , card_type = CardType_Agenda
       , set = Set_AKingInTheNorth
@@ -30623,7 +30623,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_83.jpg"
+    , { id = "dotn_83"
       , name = "Treacherous Watchman"
       , card_type = CardType_Character
       , set = Set_AKingInTheNorth
@@ -30644,7 +30644,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_90.jpg"
+    , { id = "dotn_90"
       , name = "True Power"
       , card_type = CardType_Event
       , set = Set_AKingInTheNorth
@@ -30665,7 +30665,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_96.jpg"
+    , { id = "dotn_96"
       , name = "Varamyr Sixskins"
       , card_type = CardType_Character
       , set = Set_AKingInTheNorth
@@ -30686,7 +30686,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AKitN_89.jpg"
+    , { id = "dotn_89"
       , name = "White Hatchling"
       , card_type = CardType_Character
       , set = Set_AKingInTheNorth
@@ -30707,7 +30707,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_60.jpg"
+    , { id = "dotn_60"
       , name = "At the Wall"
       , card_type = CardType_Plot
       , set = Set_ASwordInTheDarkness
@@ -30728,7 +30728,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 1
       }
-    , { image_url = "/images/cards/ASitD_53.jpg"
+    , { id = "dotn_53"
       , name = "Builder of the Watch"
       , card_type = CardType_Character
       , set = Set_ASwordInTheDarkness
@@ -30749,7 +30749,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_57.jpg"
+    , { id = "dotn_57"
       , name = "Crow Killers"
       , card_type = CardType_Character
       , set = Set_ASwordInTheDarkness
@@ -30770,7 +30770,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_44.jpg"
+    , { id = "dotn_44"
       , name = "Favors from on High"
       , card_type = CardType_Event
       , set = Set_ASwordInTheDarkness
@@ -30791,7 +30791,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_42.jpg"
+    , { id = "dotn_42"
       , name = "Feigned Retreat"
       , card_type = CardType_Event
       , set = Set_ASwordInTheDarkness
@@ -30812,7 +30812,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_43.jpg"
+    , { id = "dotn_43"
       , name = "Greedy Councilor"
       , card_type = CardType_Character
       , set = Set_ASwordInTheDarkness
@@ -30833,7 +30833,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_51.jpg"
+    , { id = "dotn_51"
       , name = "House Dayne Squire"
       , card_type = CardType_Character
       , set = Set_ASwordInTheDarkness
@@ -30854,7 +30854,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_41.jpg"
+    , { id = "dotn_41"
       , name = "Jon Snow"
       , card_type = CardType_Character
       , set = Set_ASwordInTheDarkness
@@ -30875,7 +30875,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_55.jpg"
+    , { id = "dotn_55"
       , name = "Longclaw"
       , card_type = CardType_Attachment
       , set = Set_ASwordInTheDarkness
@@ -30896,7 +30896,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_47.jpg"
+    , { id = "dotn_47"
       , name = "Margaery Tyrell"
       , card_type = CardType_Character
       , set = Set_ASwordInTheDarkness
@@ -30917,7 +30917,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_48.jpg"
+    , { id = "dotn_48"
       , name = "Naval Escort"
       , card_type = CardType_Location
       , set = Set_ASwordInTheDarkness
@@ -30938,7 +30938,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_56.jpg"
+    , { id = "dotn_56"
       , name = "Orell the Eagle"
       , card_type = CardType_Character
       , set = Set_ASwordInTheDarkness
@@ -30959,7 +30959,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_58.jpg"
+    , { id = "dotn_58"
       , name = "Over the Wall"
       , card_type = CardType_Event
       , set = Set_ASwordInTheDarkness
@@ -30980,7 +30980,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_45.jpg"
+    , { id = "dotn_45"
       , name = "Salladhor's Crew"
       , card_type = CardType_Character
       , set = Set_ASwordInTheDarkness
@@ -31001,7 +31001,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_49.jpg"
+    , { id = "dotn_49"
       , name = "Stalwart Shield"
       , card_type = CardType_Character
       , set = Set_ASwordInTheDarkness
@@ -31022,7 +31022,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_52.jpg"
+    , { id = "dotn_52"
       , name = "Starfall"
       , card_type = CardType_Location
       , set = Set_ASwordInTheDarkness
@@ -31043,7 +31043,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_59.jpg"
+    , { id = "dotn_59"
       , name = "The Builders"
       , card_type = CardType_Agenda
       , set = Set_ASwordInTheDarkness
@@ -31064,7 +31064,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_50.jpg"
+    , { id = "dotn_50"
       , name = "The Hatchlings' Feast"
       , card_type = CardType_Event
       , set = Set_ASwordInTheDarkness
@@ -31085,7 +31085,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_46.jpg"
+    , { id = "dotn_46"
       , name = "The Iron Throne"
       , card_type = CardType_Location
       , set = Set_ASwordInTheDarkness
@@ -31106,7 +31106,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/ASitD_54.jpg"
+    , { id = "dotn_54"
       , name = "The Sword in the Darkness"
       , card_type = CardType_Event
       , set = Set_ASwordInTheDarkness
@@ -31127,7 +31127,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_21.jpg"
+    , { id = "dotn_21"
       , name = "Benjen Stark"
       , card_type = CardType_Character
       , set = Set_BeyondTheWall
@@ -31148,7 +31148,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_38.jpg"
+    , { id = "dotn_38"
       , name = "Beyond the Wall"
       , card_type = CardType_Location
       , set = Set_BeyondTheWall
@@ -31169,7 +31169,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_32.jpg"
+    , { id = "dotn_32"
       , name = "Bronze Shield"
       , card_type = CardType_Attachment
       , set = Set_BeyondTheWall
@@ -31190,7 +31190,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_24.jpg"
+    , { id = "dotn_24"
       , name = "Cersei's Wheelhouse"
       , card_type = CardType_Location
       , set = Set_BeyondTheWall
@@ -31211,7 +31211,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_26.jpg"
+    , { id = "dotn_26"
       , name = "Compelled by the King"
       , card_type = CardType_Event
       , set = Set_BeyondTheWall
@@ -31232,7 +31232,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_37.jpg"
+    , { id = "dotn_37"
       , name = "Craster's Keep"
       , card_type = CardType_Location
       , set = Set_BeyondTheWall
@@ -31253,7 +31253,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_40.jpg"
+    , { id = "dotn_40"
       , name = "Fear of Winter"
       , card_type = CardType_Plot
       , set = Set_BeyondTheWall
@@ -31274,7 +31274,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 2
       }
-    , { image_url = "/images/cards/BtW_22.jpg"
+    , { id = "dotn_22"
       , name = "Frozen Moat"
       , card_type = CardType_Location
       , set = Set_BeyondTheWall
@@ -31295,7 +31295,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_23.jpg"
+    , { id = "dotn_23"
       , name = "Lord Tywin's Man"
       , card_type = CardType_Character
       , set = Set_BeyondTheWall
@@ -31316,7 +31316,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_29.jpg"
+    , { id = "dotn_29"
       , name = "Maegi Crone"
       , card_type = CardType_Character
       , set = Set_BeyondTheWall
@@ -31337,7 +31337,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_31.jpg"
+    , { id = "dotn_31"
       , name = "Maester of Lemonwood"
       , card_type = CardType_Character
       , set = Set_BeyondTheWall
@@ -31358,7 +31358,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_36.jpg"
+    , { id = "dotn_36"
       , name = "Mammoth Riders"
       , card_type = CardType_Character
       , set = Set_BeyondTheWall
@@ -31379,7 +31379,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_30.jpg"
+    , { id = "dotn_30"
       , name = "Meereenese Brothel"
       , card_type = CardType_Location
       , set = Set_BeyondTheWall
@@ -31400,7 +31400,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_27.jpg"
+    , { id = "dotn_27"
       , name = "Nute the Barber"
       , card_type = CardType_Character
       , set = Set_BeyondTheWall
@@ -31421,7 +31421,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_33.jpg"
+    , { id = "dotn_33"
       , name = "Stonesnake"
       , card_type = CardType_Character
       , set = Set_BeyondTheWall
@@ -31442,7 +31442,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_39.jpg"
+    , { id = "dotn_39"
       , name = "The Free Folk"
       , card_type = CardType_Agenda
       , set = Set_BeyondTheWall
@@ -31463,7 +31463,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_28.jpg"
+    , { id = "dotn_28"
       , name = "The Seastone Chair"
       , card_type = CardType_Location
       , set = Set_BeyondTheWall
@@ -31484,7 +31484,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_34.jpg"
+    , { id = "dotn_34"
       , name = "Traitorous Crow"
       , card_type = CardType_Character
       , set = Set_BeyondTheWall
@@ -31505,7 +31505,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_35.jpg"
+    , { id = "dotn_35"
       , name = "Yoren's Task"
       , card_type = CardType_Event
       , set = Set_BeyondTheWall
@@ -31526,7 +31526,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/BtW_25.jpg"
+    , { id = "dotn_25"
       , name = "Zealot of the Light"
       , card_type = CardType_Character
       , set = Set_BeyondTheWall
@@ -31547,7 +31547,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_109.jpg"
+    , { id = "dotn_109"
       , name = "Balerion the Black"
       , card_type = CardType_Character
       , set = Set_ReturnOfTheOthers
@@ -31568,7 +31568,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_119.jpg"
+    , { id = "dotn_119"
       , name = "Blood of the First Men"
       , card_type = CardType_Agenda
       , set = Set_ReturnOfTheOthers
@@ -31589,7 +31589,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_112.jpg"
+    , { id = "dotn_112"
       , name = "Burning on the Sand"
       , card_type = CardType_Event
       , set = Set_ReturnOfTheOthers
@@ -31610,7 +31610,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_101.jpg"
+    , { id = "dotn_101"
       , name = "Coldhands"
       , card_type = CardType_Character
       , set = Set_ReturnOfTheOthers
@@ -31631,7 +31631,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_106.jpg"
+    , { id = "dotn_106"
       , name = "For R'hllor"
       , card_type = CardType_Event
       , set = Set_ReturnOfTheOthers
@@ -31652,7 +31652,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_110.jpg"
+    , { id = "dotn_110"
       , name = "Hrakkar Pelt"
       , card_type = CardType_Attachment
       , set = Set_ReturnOfTheOthers
@@ -31673,7 +31673,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_108.jpg"
+    , { id = "dotn_108"
       , name = "Kingsmoot Support"
       , card_type = CardType_Event
       , set = Set_ReturnOfTheOthers
@@ -31694,7 +31694,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_103.jpg"
+    , { id = "dotn_103"
       , name = "Lannisport Councilor"
       , card_type = CardType_Character
       , set = Set_ReturnOfTheOthers
@@ -31715,7 +31715,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_115.jpg"
+    , { id = "dotn_115"
       , name = "Lost Ranger"
       , card_type = CardType_Character
       , set = Set_ReturnOfTheOthers
@@ -31736,7 +31736,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_116.jpg"
+    , { id = "dotn_116"
       , name = "Mance Rayder"
       , card_type = CardType_Character
       , set = Set_ReturnOfTheOthers
@@ -31757,7 +31757,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_105.jpg"
+    , { id = "dotn_105"
       , name = "Melisandre"
       , card_type = CardType_Character
       , set = Set_ReturnOfTheOthers
@@ -31778,7 +31778,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_118.jpg"
+    , { id = "dotn_118"
       , name = "Nightmares in the North"
       , card_type = CardType_Event
       , set = Set_ReturnOfTheOthers
@@ -31799,7 +31799,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_113.jpg"
+    , { id = "dotn_113"
       , name = "Old Bear Mormont"
       , card_type = CardType_Character
       , set = Set_ReturnOfTheOthers
@@ -31820,7 +31820,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_102.jpg"
+    , { id = "dotn_102"
       , name = "Reed's Crannogmen"
       , card_type = CardType_Character
       , set = Set_ReturnOfTheOthers
@@ -31841,7 +31841,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_111.jpg"
+    , { id = "dotn_111"
       , name = "Starfall Healer"
       , card_type = CardType_Character
       , set = Set_ReturnOfTheOthers
@@ -31862,7 +31862,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_107.jpg"
+    , { id = "dotn_107"
       , name = "Tarle the Thrice-Drowned"
       , card_type = CardType_Character
       , set = Set_ReturnOfTheOthers
@@ -31883,7 +31883,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_120.jpg"
+    , { id = "dotn_120"
       , name = "The Minstrel's Muse"
       , card_type = CardType_Plot
       , set = Set_ReturnOfTheOthers
@@ -31904,7 +31904,7 @@ all_cards =
       , initiative = Just 8
       , claim = Just 1
       }
-    , { image_url = "/images/cards/RotO_104.jpg"
+    , { id = "dotn_104"
       , name = "The Price of Nobility"
       , card_type = CardType_Attachment
       , set = Set_ReturnOfTheOthers
@@ -31925,7 +31925,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_114.jpg"
+    , { id = "dotn_114"
       , name = "The Wall"
       , card_type = CardType_Location
       , set = Set_ReturnOfTheOthers
@@ -31946,7 +31946,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/RotO_117.jpg"
+    , { id = "dotn_117"
       , name = "Val"
       , card_type = CardType_Character
       , set = Set_ReturnOfTheOthers
@@ -31967,7 +31967,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_65.jpg"
+    , { id = "dotn_65"
       , name = "Acolyte of the Flame"
       , card_type = CardType_Character
       , set = Set_TheWildlingHorde
@@ -31988,7 +31988,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_62.jpg"
+    , { id = "dotn_62"
       , name = "Borderland Keep"
       , card_type = CardType_Location
       , set = Set_TheWildlingHorde
@@ -32009,7 +32009,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_73.jpg"
+    , { id = "dotn_73"
       , name = "Dolorous Edd"
       , card_type = CardType_Character
       , set = Set_TheWildlingHorde
@@ -32030,7 +32030,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_66.jpg"
+    , { id = "dotn_66"
       , name = "Eastwatch-by-the-Sea"
       , card_type = CardType_Location
       , set = Set_TheWildlingHorde
@@ -32051,7 +32051,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_78.jpg"
+    , { id = "dotn_78"
       , name = "Frostfang Peaks"
       , card_type = CardType_Location
       , set = Set_TheWildlingHorde
@@ -32072,7 +32072,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_61.jpg"
+    , { id = "dotn_61"
       , name = "Ghost"
       , card_type = CardType_Character
       , set = Set_TheWildlingHorde
@@ -32093,7 +32093,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_69.jpg"
+    , { id = "dotn_69"
       , name = "Green Hatchling"
       , card_type = CardType_Character
       , set = Set_TheWildlingHorde
@@ -32114,7 +32114,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_67.jpg"
+    , { id = "dotn_67"
       , name = "Mercenaries from Pyke"
       , card_type = CardType_Character
       , set = Set_TheWildlingHorde
@@ -32135,7 +32135,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_64.jpg"
+    , { id = "dotn_64"
       , name = "Misinformation"
       , card_type = CardType_Event
       , set = Set_TheWildlingHorde
@@ -32156,7 +32156,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_68.jpg"
+    , { id = "dotn_68"
       , name = "Pulled Under"
       , card_type = CardType_Attachment
       , set = Set_TheWildlingHorde
@@ -32177,7 +32177,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_74.jpg"
+    , { id = "dotn_74"
       , name = "Recruiter for the Watch"
       , card_type = CardType_Character
       , set = Set_TheWildlingHorde
@@ -32198,7 +32198,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_72.jpg"
+    , { id = "dotn_72"
       , name = "Scorpions Underfoot"
       , card_type = CardType_Event
       , set = Set_TheWildlingHorde
@@ -32219,7 +32219,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_63.jpg"
+    , { id = "dotn_63"
       , name = "Ser Balon Swann"
       , card_type = CardType_Character
       , set = Set_TheWildlingHorde
@@ -32240,7 +32240,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_71.jpg"
+    , { id = "dotn_71"
       , name = "Starfall Advisor"
       , card_type = CardType_Character
       , set = Set_TheWildlingHorde
@@ -32261,7 +32261,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_70.jpg"
+    , { id = "dotn_70"
       , name = "The Dragon's Fire"
       , card_type = CardType_Event
       , set = Set_TheWildlingHorde
@@ -32282,7 +32282,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_79.jpg"
+    , { id = "dotn_79"
       , name = "The Last Giants"
       , card_type = CardType_Agenda
       , set = Set_TheWildlingHorde
@@ -32303,7 +32303,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_75.jpg"
+    , { id = "dotn_75"
       , name = "The Shadow Tower"
       , card_type = CardType_Location
       , set = Set_TheWildlingHorde
@@ -32324,7 +32324,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_76.jpg"
+    , { id = "dotn_76"
       , name = "The Wildling Horde"
       , card_type = CardType_Character
       , set = Set_TheWildlingHorde
@@ -32345,7 +32345,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TWH_80.jpg"
+    , { id = "dotn_80"
       , name = "Valar Dohaeris"
       , card_type = CardType_Plot
       , set = Set_TheWildlingHorde
@@ -32366,7 +32366,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TWH_77.jpg"
+    , { id = "dotn_77"
       , name = "Wildling Wisewoman"
       , card_type = CardType_Character
       , set = Set_TheWildlingHorde
@@ -32387,7 +32387,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_26.jpg"
+    , { id = "kl_26"
       , name = "A Fistful of Coppers"
       , card_type = CardType_Event
       , set = Set_ATimeOfTrials
@@ -32408,7 +32408,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_29.jpg"
+    , { id = "kl_29"
       , name = "Abandoned Forge"
       , card_type = CardType_Location
       , set = Set_ATimeOfTrials
@@ -32429,7 +32429,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_30.jpg"
+    , { id = "kl_30"
       , name = "Balon Greyjoy"
       , card_type = CardType_Character
       , set = Set_ATimeOfTrials
@@ -32450,7 +32450,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_31.jpg"
+    , { id = "kl_31"
       , name = "Balon's Rebellion"
       , card_type = CardType_Event
       , set = Set_ATimeOfTrials
@@ -32471,7 +32471,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_21.jpg"
+    , { id = "kl_21"
       , name = "Catelyn Stark"
       , card_type = CardType_Character
       , set = Set_ATimeOfTrials
@@ -32492,7 +32492,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_24.jpg"
+    , { id = "kl_24"
       , name = "Cersei Lannister"
       , card_type = CardType_Character
       , set = Set_ATimeOfTrials
@@ -32513,7 +32513,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_40.jpg"
+    , { id = "kl_40"
       , name = "City of Sin"
       , card_type = CardType_Plot
       , set = Set_ATimeOfTrials
@@ -32534,7 +32534,7 @@ all_cards =
       , initiative = Just 1
       , claim = Just 1
       }
-    , { image_url = "/images/cards/AToT_38.jpg"
+    , { id = "kl_38"
       , name = "Condemned by the Council"
       , card_type = CardType_Event
       , set = Set_ATimeOfTrials
@@ -32555,7 +32555,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_35.jpg"
+    , { id = "kl_35"
       , name = "Flea Bottom Scavenger"
       , card_type = CardType_Character
       , set = Set_ATimeOfTrials
@@ -32576,7 +32576,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_25.jpg"
+    , { id = "kl_25"
       , name = "Gold Cloaks"
       , card_type = CardType_Character
       , set = Set_ATimeOfTrials
@@ -32597,7 +32597,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_36.jpg"
+    , { id = "kl_36"
       , name = "Lost Oasis"
       , card_type = CardType_Location
       , set = Set_ATimeOfTrials
@@ -32618,7 +32618,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_28.jpg"
+    , { id = "kl_28"
       , name = "Moon Boy"
       , card_type = CardType_Character
       , set = Set_ATimeOfTrials
@@ -32639,7 +32639,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_22.jpg"
+    , { id = "kl_22"
       , name = "Septa Mordane"
       , card_type = CardType_Character
       , set = Set_ATimeOfTrials
@@ -32660,7 +32660,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_23.jpg"
+    , { id = "kl_23"
       , name = "Storm Dancer"
       , card_type = CardType_Location
       , set = Set_ATimeOfTrials
@@ -32681,7 +32681,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_32.jpg"
+    , { id = "kl_32"
       , name = "Street Waif"
       , card_type = CardType_Character
       , set = Set_ATimeOfTrials
@@ -32702,7 +32702,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_27.jpg"
+    , { id = "kl_27"
       , name = "Sweet Cersei"
       , card_type = CardType_Location
       , set = Set_ATimeOfTrials
@@ -32723,7 +32723,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_33.jpg"
+    , { id = "kl_33"
       , name = "Tears of Lys"
       , card_type = CardType_Attachment
       , set = Set_ATimeOfTrials
@@ -32744,7 +32744,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_37.jpg"
+    , { id = "kl_37"
       , name = "The Hound"
       , card_type = CardType_Character
       , set = Set_ATimeOfTrials
@@ -32765,7 +32765,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_34.jpg"
+    , { id = "kl_34"
       , name = "The Shadow of the East"
       , card_type = CardType_Event
       , set = Set_ATimeOfTrials
@@ -32786,7 +32786,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AToT_39.jpg"
+    , { id = "kl_39"
       , name = "Twilight Market"
       , card_type = CardType_Location
       , set = Set_ATimeOfTrials
@@ -32807,7 +32807,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_1.jpg"
+    , { id = "kl_1"
       , name = "Arya Stark"
       , card_type = CardType_Character
       , set = Set_CityOfSecrets
@@ -32828,7 +32828,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_4.jpg"
+    , { id = "kl_4"
       , name = "Bound by Duty"
       , card_type = CardType_Event
       , set = Set_CityOfSecrets
@@ -32849,7 +32849,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_19.jpg"
+    , { id = "kl_19"
       , name = "City of Lies"
       , card_type = CardType_Plot
       , set = Set_CityOfSecrets
@@ -32870,7 +32870,7 @@ all_cards =
       , initiative = Just 6
       , claim = Just 1
       }
-    , { image_url = "/images/cards/CoS_20.jpg"
+    , { id = "kl_20"
       , name = "City of Shadows"
       , card_type = CardType_Agenda
       , set = Set_CityOfSecrets
@@ -32891,7 +32891,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_7.jpg"
+    , { id = "kl_7"
       , name = "City Watch"
       , card_type = CardType_Character
       , set = Set_CityOfSecrets
@@ -32912,7 +32912,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_13.jpg"
+    , { id = "kl_13"
       , name = "Dragon Skull"
       , card_type = CardType_Attachment
       , set = Set_CityOfSecrets
@@ -32933,7 +32933,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_3.jpg"
+    , { id = "kl_3"
       , name = "Hidden Chambers"
       , card_type = CardType_Location
       , set = Set_CityOfSecrets
@@ -32954,7 +32954,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_2.jpg"
+    , { id = "kl_2"
       , name = "Hungry Mob"
       , card_type = CardType_Character
       , set = Set_CityOfSecrets
@@ -32975,7 +32975,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_8.jpg"
+    , { id = "kl_8"
       , name = "Kingswood Trail"
       , card_type = CardType_Location
       , set = Set_CityOfSecrets
@@ -32996,7 +32996,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_10.jpg"
+    , { id = "kl_10"
       , name = "Kraken Tattoo"
       , card_type = CardType_Attachment
       , set = Set_CityOfSecrets
@@ -33017,7 +33017,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_14.jpg"
+    , { id = "kl_14"
       , name = "Nomadic Trader"
       , card_type = CardType_Character
       , set = Set_CityOfSecrets
@@ -33038,7 +33038,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_12.jpg"
+    , { id = "kl_12"
       , name = "Ser Barristan Selmy"
       , card_type = CardType_Character
       , set = Set_CityOfSecrets
@@ -33059,7 +33059,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_17.jpg"
+    , { id = "kl_17"
       , name = "Ser Meryn Trant"
       , card_type = CardType_Character
       , set = Set_CityOfSecrets
@@ -33080,7 +33080,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_18.jpg"
+    , { id = "kl_18"
       , name = "Shadow Politics"
       , card_type = CardType_Event
       , set = Set_CityOfSecrets
@@ -33101,7 +33101,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_16.jpg"
+    , { id = "kl_16"
       , name = "The Shadow of the South"
       , card_type = CardType_Event
       , set = Set_CityOfSecrets
@@ -33122,7 +33122,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_11.jpg"
+    , { id = "kl_11"
       , name = "Treaty with the Isles"
       , card_type = CardType_Agenda
       , set = Set_CityOfSecrets
@@ -33143,7 +33143,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_15.jpg"
+    , { id = "kl_15"
       , name = "Treaty with the South"
       , card_type = CardType_Agenda
       , set = Set_CityOfSecrets
@@ -33164,7 +33164,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_6.jpg"
+    , { id = "kl_6"
       , name = "Tunnels of the Red Keep"
       , card_type = CardType_Location
       , set = Set_CityOfSecrets
@@ -33185,7 +33185,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_5.jpg"
+    , { id = "kl_5"
       , name = "Tyrion Lannister"
       , card_type = CardType_Character
       , set = Set_CityOfSecrets
@@ -33206,7 +33206,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/CoS_9.jpg"
+    , { id = "kl_9"
       , name = "Wharf Rats"
       , card_type = CardType_Character
       , set = Set_CityOfSecrets
@@ -33227,7 +33227,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_93.jpg"
+    , { id = "kl_93"
       , name = "Aegon's Legacy"
       , card_type = CardType_Event
       , set = Set_SecretsAndSpies
@@ -33248,7 +33248,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_88.jpg"
+    , { id = "kl_88"
       , name = "Ancient Mariner"
       , card_type = CardType_Character
       , set = Set_SecretsAndSpies
@@ -33269,7 +33269,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_96.jpg"
+    , { id = "kl_96"
       , name = "Backroom Bribery"
       , card_type = CardType_Event
       , set = Set_SecretsAndSpies
@@ -33290,7 +33290,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_82.jpg"
+    , { id = "kl_82"
       , name = "Cannot be Bribed, Cannot be Bought"
       , card_type = CardType_Event
       , set = Set_SecretsAndSpies
@@ -33311,7 +33311,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_100.jpg"
+    , { id = "kl_100"
       , name = "City of Spies"
       , card_type = CardType_Plot
       , set = Set_SecretsAndSpies
@@ -33332,7 +33332,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/SaS_85.jpg"
+    , { id = "kl_85"
       , name = "Death by Payne"
       , card_type = CardType_Event
       , set = Set_SecretsAndSpies
@@ -33353,7 +33353,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_94.jpg"
+    , { id = "kl_94"
       , name = "Dornish Diplomat"
       , card_type = CardType_Character
       , set = Set_SecretsAndSpies
@@ -33374,7 +33374,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_81.jpg"
+    , { id = "kl_81"
       , name = "Jeyne Poole"
       , card_type = CardType_Character
       , set = Set_SecretsAndSpies
@@ -33395,7 +33395,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_99.jpg"
+    , { id = "kl_99"
       , name = "King's Landing"
       , card_type = CardType_Location
       , set = Set_SecretsAndSpies
@@ -33416,7 +33416,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_90.jpg"
+    , { id = "kl_90"
       , name = "King's Landing Assassin"
       , card_type = CardType_Character
       , set = Set_SecretsAndSpies
@@ -33437,7 +33437,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_86.jpg"
+    , { id = "kl_86"
       , name = "Knight of Flowers"
       , card_type = CardType_Character
       , set = Set_SecretsAndSpies
@@ -33458,7 +33458,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_84.jpg"
+    , { id = "kl_84"
       , name = "Littlefinger"
       , card_type = CardType_Character
       , set = Set_SecretsAndSpies
@@ -33479,7 +33479,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_83.jpg"
+    , { id = "kl_83"
       , name = "Qyburn"
       , card_type = CardType_Character
       , set = Set_SecretsAndSpies
@@ -33500,7 +33500,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_98.jpg"
+    , { id = "kl_98"
       , name = "Ser Osmund Kettleblack"
       , card_type = CardType_Character
       , set = Set_SecretsAndSpies
@@ -33521,7 +33521,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_91.jpg"
+    , { id = "kl_91"
       , name = "Shadow Prophet"
       , card_type = CardType_Character
       , set = Set_SecretsAndSpies
@@ -33542,7 +33542,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_89.jpg"
+    , { id = "kl_89"
       , name = "Shore Leave"
       , card_type = CardType_Event
       , set = Set_SecretsAndSpies
@@ -33563,7 +33563,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_87.jpg"
+    , { id = "kl_87"
       , name = "Small Council Chamber"
       , card_type = CardType_Location
       , set = Set_SecretsAndSpies
@@ -33584,7 +33584,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_95.jpg"
+    , { id = "kl_95"
       , name = "The Broken Spear"
       , card_type = CardType_Attachment
       , set = Set_SecretsAndSpies
@@ -33605,7 +33605,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_97.jpg"
+    , { id = "kl_97"
       , name = "Varys"
       , card_type = CardType_Character
       , set = Set_SecretsAndSpies
@@ -33626,7 +33626,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/SaS_92.jpg"
+    , { id = "kl_92"
       , name = "Visenya's Hill"
       , card_type = CardType_Location
       , set = Set_SecretsAndSpies
@@ -33647,7 +33647,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_70.jpg"
+    , { id = "kl_70"
       , name = "Blackwater Raiders"
       , card_type = CardType_Character
       , set = Set_TalesFromTheRedKeep
@@ -33668,7 +33668,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_80.jpg"
+    , { id = "kl_80"
       , name = "City of Spiders"
       , card_type = CardType_Plot
       , set = Set_TalesFromTheRedKeep
@@ -33689,7 +33689,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 2
       }
-    , { image_url = "/images/cards/TftRK_73.jpg"
+    , { id = "kl_73"
       , name = "Daemon Blackfyre"
       , card_type = CardType_Character
       , set = Set_TalesFromTheRedKeep
@@ -33710,7 +33710,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_69.jpg"
+    , { id = "kl_69"
       , name = "Distinguished Boatswain"
       , card_type = CardType_Character
       , set = Set_TalesFromTheRedKeep
@@ -33731,7 +33731,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_72.jpg"
+    , { id = "kl_72"
       , name = "Fishmonger's Square"
       , card_type = CardType_Location
       , set = Set_TalesFromTheRedKeep
@@ -33752,7 +33752,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_65.jpg"
+    , { id = "kl_65"
       , name = "Flogged and Chained"
       , card_type = CardType_Attachment
       , set = Set_TalesFromTheRedKeep
@@ -33773,7 +33773,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_64.jpg"
+    , { id = "kl_64"
       , name = "Joffrey Baratheon"
       , card_type = CardType_Character
       , set = Set_TalesFromTheRedKeep
@@ -33794,7 +33794,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_63.jpg"
+    , { id = "kl_63"
       , name = "Maester Malleon's Tome"
       , card_type = CardType_Attachment
       , set = Set_TalesFromTheRedKeep
@@ -33815,7 +33815,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_67.jpg"
+    , { id = "kl_67"
       , name = "Margaery Tyrell"
       , card_type = CardType_Character
       , set = Set_TalesFromTheRedKeep
@@ -33836,7 +33836,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_61.jpg"
+    , { id = "kl_61"
       , name = "Sansa Stark"
       , card_type = CardType_Character
       , set = Set_TalesFromTheRedKeep
@@ -33857,7 +33857,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_71.jpg"
+    , { id = "kl_71"
       , name = "Scurvy"
       , card_type = CardType_Attachment
       , set = Set_TalesFromTheRedKeep
@@ -33878,7 +33878,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_62.jpg"
+    , { id = "kl_62"
       , name = "Ser Dontos Hollard"
       , card_type = CardType_Character
       , set = Set_TalesFromTheRedKeep
@@ -33899,7 +33899,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_77.jpg"
+    , { id = "kl_77"
       , name = "Syrio Forel"
       , card_type = CardType_Character
       , set = Set_TalesFromTheRedKeep
@@ -33920,7 +33920,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_68.jpg"
+    , { id = "kl_68"
       , name = "The Black Cells"
       , card_type = CardType_Location
       , set = Set_TalesFromTheRedKeep
@@ -33941,7 +33941,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_74.jpg"
+    , { id = "kl_74"
       , name = "The Dragonpit"
       , card_type = CardType_Location
       , set = Set_TalesFromTheRedKeep
@@ -33962,7 +33962,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_66.jpg"
+    , { id = "kl_66"
       , name = "The Queen of Thorns"
       , card_type = CardType_Character
       , set = Set_TalesFromTheRedKeep
@@ -33983,7 +33983,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_78.jpg"
+    , { id = "kl_78"
       , name = "The Red Keep"
       , card_type = CardType_Location
       , set = Set_TalesFromTheRedKeep
@@ -34004,7 +34004,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_75.jpg"
+    , { id = "kl_75"
       , name = "The Red Viper"
       , card_type = CardType_Character
       , set = Set_TalesFromTheRedKeep
@@ -34025,7 +34025,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_76.jpg"
+    , { id = "kl_76"
       , name = "The Viper's Rage"
       , card_type = CardType_Event
       , set = Set_TalesFromTheRedKeep
@@ -34046,7 +34046,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TftRK_79.jpg"
+    , { id = "kl_79"
       , name = "The White Book"
       , card_type = CardType_Agenda
       , set = Set_TalesFromTheRedKeep
@@ -34067,7 +34067,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_103.jpg"
+    , { id = "kl_103"
       , name = "Alchemist's Guild Hall"
       , card_type = CardType_Location
       , set = Set_TheBattleOfBlackwaterBay
@@ -34088,7 +34088,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_119.jpg"
+    , { id = "kl_119"
       , name = "Battle of the Bay"
       , card_type = CardType_Event
       , set = Set_TheBattleOfBlackwaterBay
@@ -34109,7 +34109,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_107.jpg"
+    , { id = "kl_107"
       , name = "Blackwater Bay"
       , card_type = CardType_Location
       , set = Set_TheBattleOfBlackwaterBay
@@ -34130,7 +34130,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_120.jpg"
+    , { id = "kl_120"
       , name = "City of Soldiers"
       , card_type = CardType_Plot
       , set = Set_TheBattleOfBlackwaterBay
@@ -34151,7 +34151,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 2
       }
-    , { image_url = "/images/cards/TBoBB_109.jpg"
+    , { id = "kl_109"
       , name = "Drinking the Sea"
       , card_type = CardType_Event
       , set = Set_TheBattleOfBlackwaterBay
@@ -34172,7 +34172,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_110.jpg"
+    , { id = "kl_110"
       , name = "Free Cities Mercenaries"
       , card_type = CardType_Character
       , set = Set_TheBattleOfBlackwaterBay
@@ -34193,7 +34193,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_108.jpg"
+    , { id = "kl_108"
       , name = "Island Mercenaries"
       , card_type = CardType_Character
       , set = Set_TheBattleOfBlackwaterBay
@@ -34214,7 +34214,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_106.jpg"
+    , { id = "kl_106"
       , name = "King Robert's Hammer"
       , card_type = CardType_Location
       , set = Set_TheBattleOfBlackwaterBay
@@ -34235,7 +34235,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_111.jpg"
+    , { id = "kl_111"
       , name = "Mercenary Contract"
       , card_type = CardType_Attachment
       , set = Set_TheBattleOfBlackwaterBay
@@ -34256,7 +34256,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_102.jpg"
+    , { id = "kl_102"
       , name = "Northern Steel"
       , card_type = CardType_Attachment
       , set = Set_TheBattleOfBlackwaterBay
@@ -34277,7 +34277,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_101.jpg"
+    , { id = "kl_101"
       , name = "Peasant Defenders"
       , card_type = CardType_Character
       , set = Set_TheBattleOfBlackwaterBay
@@ -34298,7 +34298,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_118.jpg"
+    , { id = "kl_118"
       , name = "Pyromancer's Apprentice"
       , card_type = CardType_Character
       , set = Set_TheBattleOfBlackwaterBay
@@ -34319,7 +34319,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_112.jpg"
+    , { id = "kl_112"
       , name = "Rhaenys's Hill"
       , card_type = CardType_Location
       , set = Set_TheBattleOfBlackwaterBay
@@ -34340,7 +34340,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_116.jpg"
+    , { id = "kl_116"
       , name = "Rumors of War"
       , card_type = CardType_Event
       , set = Set_TheBattleOfBlackwaterBay
@@ -34361,7 +34361,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_105.jpg"
+    , { id = "kl_105"
       , name = "Ser Davos Seaworth"
       , card_type = CardType_Character
       , set = Set_TheBattleOfBlackwaterBay
@@ -34382,7 +34382,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_117.jpg"
+    , { id = "kl_117"
       , name = "Ser Mandon Moore"
       , card_type = CardType_Character
       , set = Set_TheBattleOfBlackwaterBay
@@ -34403,7 +34403,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_113.jpg"
+    , { id = "kl_113"
       , name = "Southron Mercenaries"
       , card_type = CardType_Character
       , set = Set_TheBattleOfBlackwaterBay
@@ -34424,7 +34424,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_104.jpg"
+    , { id = "kl_104"
       , name = "Tyrion's Chain"
       , card_type = CardType_Attachment
       , set = Set_TheBattleOfBlackwaterBay
@@ -34445,7 +34445,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_115.jpg"
+    , { id = "kl_115"
       , name = "Venomous Blade"
       , card_type = CardType_Attachment
       , set = Set_TheBattleOfBlackwaterBay
@@ -34466,7 +34466,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBoBB_114.jpg"
+    , { id = "kl_114"
       , name = "Veteran Spearman"
       , card_type = CardType_Character
       , set = Set_TheBattleOfBlackwaterBay
@@ -34487,7 +34487,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_54.jpg"
+    , { id = "kl_54"
       , name = "Aegon's Hill"
       , card_type = CardType_Location
       , set = Set_TheTowerOfTheHand
@@ -34508,7 +34508,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_56.jpg"
+    , { id = "kl_56"
       , name = "By the Light of the Sun"
       , card_type = CardType_Event
       , set = Set_TheTowerOfTheHand
@@ -34529,7 +34529,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_60.jpg"
+    , { id = "kl_60"
       , name = "City of Secrets"
       , card_type = CardType_Plot
       , set = Set_TheTowerOfTheHand
@@ -34550,7 +34550,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TTotH_55.jpg"
+    , { id = "kl_55"
       , name = "Dornish Paramour"
       , card_type = CardType_Character
       , set = Set_TheTowerOfTheHand
@@ -34571,7 +34571,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_41.jpg"
+    , { id = "kl_41"
       , name = "Eddard Stark"
       , card_type = CardType_Character
       , set = Set_TheTowerOfTheHand
@@ -34592,7 +34592,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_51.jpg"
+    , { id = "kl_51"
       , name = "Harbor Thug"
       , card_type = CardType_Character
       , set = Set_TheTowerOfTheHand
@@ -34613,7 +34613,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_57.jpg"
+    , { id = "kl_57"
       , name = "Jon Arryn"
       , card_type = CardType_Character
       , set = Set_TheTowerOfTheHand
@@ -34634,7 +34634,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_48.jpg"
+    , { id = "kl_48"
       , name = "Jousting Steed"
       , card_type = CardType_Attachment
       , set = Set_TheTowerOfTheHand
@@ -34655,7 +34655,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_53.jpg"
+    , { id = "kl_53"
       , name = "Merchant Spy"
       , card_type = CardType_Character
       , set = Set_TheTowerOfTheHand
@@ -34676,7 +34676,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_46.jpg"
+    , { id = "kl_46"
       , name = "Robert Baratheon"
       , card_type = CardType_Character
       , set = Set_TheTowerOfTheHand
@@ -34697,7 +34697,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_47.jpg"
+    , { id = "kl_47"
       , name = "Royal Entourage"
       , card_type = CardType_Character
       , set = Set_TheTowerOfTheHand
@@ -34718,7 +34718,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_50.jpg"
+    , { id = "kl_50"
       , name = "Seaside Urchin"
       , card_type = CardType_Character
       , set = Set_TheTowerOfTheHand
@@ -34739,7 +34739,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_44.jpg"
+    , { id = "kl_44"
       , name = "Ser Jaime Lannister"
       , card_type = CardType_Character
       , set = Set_TheTowerOfTheHand
@@ -34760,7 +34760,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_58.jpg"
+    , { id = "kl_58"
       , name = "Ser Preston Greenfield"
       , card_type = CardType_Character
       , set = Set_TheTowerOfTheHand
@@ -34781,7 +34781,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_45.jpg"
+    , { id = "kl_45"
       , name = "Shae's Manse"
       , card_type = CardType_Location
       , set = Set_TheTowerOfTheHand
@@ -34802,7 +34802,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_59.jpg"
+    , { id = "kl_59"
       , name = "The Hand's Judgement"
       , card_type = CardType_Event
       , set = Set_TheTowerOfTheHand
@@ -34823,7 +34823,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_49.jpg"
+    , { id = "kl_49"
       , name = "The Iron Throne"
       , card_type = CardType_Location
       , set = Set_TheTowerOfTheHand
@@ -34844,7 +34844,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_52.jpg"
+    , { id = "kl_52"
       , name = "The Shadow of the Isles"
       , card_type = CardType_Event
       , set = Set_TheTowerOfTheHand
@@ -34865,7 +34865,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_42.jpg"
+    , { id = "kl_42"
       , name = "Tower of the Hand"
       , card_type = CardType_Location
       , set = Set_TheTowerOfTheHand
@@ -34886,7 +34886,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TTotH_43.jpg"
+    , { id = "kl_43"
       , name = "Tywin Lannister"
       , card_type = CardType_Character
       , set = Set_TheTowerOfTheHand
@@ -34907,7 +34907,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_113.jpg"
+    , { id = "kr_113"
       , name = "Alleras"
       , card_type = CardType_Character
       , set = Set_AHiddenAgenda
@@ -34928,7 +34928,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_119.jpg"
+    , { id = "kr_119"
       , name = "Bloodthirst"
       , card_type = CardType_Agenda
       , set = Set_AHiddenAgenda
@@ -34949,7 +34949,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_117.jpg"
+    , { id = "kr_117"
       , name = "Drogon"
       , card_type = CardType_Character
       , set = Set_AHiddenAgenda
@@ -34970,7 +34970,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_106.jpg"
+    , { id = "kr_106"
       , name = "Euron's Favor"
       , card_type = CardType_Attachment
       , set = Set_AHiddenAgenda
@@ -34991,7 +34991,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_104.jpg"
+    , { id = "kr_104"
       , name = "Gran Goodbrother"
       , card_type = CardType_Character
       , set = Set_AHiddenAgenda
@@ -35012,7 +35012,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_107.jpg"
+    , { id = "kr_107"
       , name = "Grand Maester Pycelle"
       , card_type = CardType_Character
       , set = Set_AHiddenAgenda
@@ -35033,7 +35033,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_109.jpg"
+    , { id = "kr_109"
       , name = "Lashing Out"
       , card_type = CardType_Event
       , set = Set_AHiddenAgenda
@@ -35054,7 +35054,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_112.jpg"
+    , { id = "kr_112"
       , name = "Littlefinger"
       , card_type = CardType_Character
       , set = Set_AHiddenAgenda
@@ -35075,7 +35075,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_105.jpg"
+    , { id = "kr_105"
       , name = "Longship Maiden's Bane"
       , card_type = CardType_Location
       , set = Set_AHiddenAgenda
@@ -35096,7 +35096,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_102.jpg"
+    , { id = "kr_102"
       , name = "Mace Tyrell"
       , card_type = CardType_Character
       , set = Set_AHiddenAgenda
@@ -35117,7 +35117,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_101.jpg"
+    , { id = "kr_101"
       , name = "Maester Cressen"
       , card_type = CardType_Character
       , set = Set_AHiddenAgenda
@@ -35138,7 +35138,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_118.jpg"
+    , { id = "kr_118"
       , name = "Rhaegal"
       , card_type = CardType_Character
       , set = Set_AHiddenAgenda
@@ -35159,7 +35159,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_103.jpg"
+    , { id = "kr_103"
       , name = "Riches of the Reach"
       , card_type = CardType_Event
       , set = Set_AHiddenAgenda
@@ -35180,7 +35180,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_115.jpg"
+    , { id = "kr_115"
       , name = "Robb's Favor"
       , card_type = CardType_Attachment
       , set = Set_AHiddenAgenda
@@ -35201,7 +35201,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_114.jpg"
+    , { id = "kr_114"
       , name = "Sansa Stark"
       , card_type = CardType_Character
       , set = Set_AHiddenAgenda
@@ -35222,7 +35222,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_111.jpg"
+    , { id = "kr_111"
       , name = "Secret Schemes"
       , card_type = CardType_Event
       , set = Set_AHiddenAgenda
@@ -35243,7 +35243,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_110.jpg"
+    , { id = "kr_110"
       , name = "Southron Heiress"
       , card_type = CardType_Character
       , set = Set_AHiddenAgenda
@@ -35264,7 +35264,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_120.jpg"
+    , { id = "kr_120"
       , name = "Summoned by the Conclave"
       , card_type = CardType_Plot
       , set = Set_AHiddenAgenda
@@ -35285,7 +35285,7 @@ all_cards =
       , initiative = Just 1
       , claim = Just 1
       }
-    , { image_url = "/images/cards/AHA_108.jpg"
+    , { id = "kr_108"
       , name = "Tywin's Favor"
       , card_type = CardType_Attachment
       , set = Set_AHiddenAgenda
@@ -35306,7 +35306,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/AHA_116.jpg"
+    , { id = "kr_116"
       , name = "Viserion"
       , card_type = CardType_Character
       , set = Set_AHiddenAgenda
@@ -35327,7 +35327,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_39.jpg"
+    , { id = "kr_39"
       , name = "A Song of Fire"
       , card_type = CardType_Agenda
       , set = Set_FireAndIce
@@ -35348,7 +35348,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_40.jpg"
+    , { id = "kr_40"
       , name = "A Song of Ice"
       , card_type = CardType_Agenda
       , set = Set_FireAndIce
@@ -35369,7 +35369,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_24.jpg"
+    , { id = "kr_24"
       , name = "Balon Greyjoy"
       , card_type = CardType_Character
       , set = Set_FireAndIce
@@ -35390,7 +35390,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_33.jpg"
+    , { id = "kr_33"
       , name = "Bran Stark"
       , card_type = CardType_Character
       , set = Set_FireAndIce
@@ -35411,7 +35411,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_26.jpg"
+    , { id = "kr_26"
       , name = "Damphair's Drowned"
       , card_type = CardType_Character
       , set = Set_FireAndIce
@@ -35432,7 +35432,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_38.jpg"
+    , { id = "kr_38"
       , name = "Dothraki Vanguard"
       , card_type = CardType_Character
       , set = Set_FireAndIce
@@ -35453,7 +35453,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_30.jpg"
+    , { id = "kr_30"
       , name = "Ellaria Sand"
       , card_type = CardType_Character
       , set = Set_FireAndIce
@@ -35474,7 +35474,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_35.jpg"
+    , { id = "kr_35"
       , name = "Green Dream"
       , card_type = CardType_Event
       , set = Set_FireAndIce
@@ -35495,7 +35495,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_36.jpg"
+    , { id = "kr_36"
       , name = "Khal Drogo"
       , card_type = CardType_Character
       , set = Set_FireAndIce
@@ -35516,7 +35516,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_27.jpg"
+    , { id = "kr_27"
       , name = "King's Landing Guard"
       , card_type = CardType_Character
       , set = Set_FireAndIce
@@ -35537,7 +35537,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_25.jpg"
+    , { id = "kr_25"
       , name = "Longship Great Kraken"
       , card_type = CardType_Location
       , set = Set_FireAndIce
@@ -35558,7 +35558,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_31.jpg"
+    , { id = "kr_31"
       , name = "Oberyn's Shield Bearer"
       , card_type = CardType_Character
       , set = Set_FireAndIce
@@ -35579,7 +35579,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_22.jpg"
+    , { id = "kr_22"
       , name = "Ser Garlan Tyrell"
       , card_type = CardType_Character
       , set = Set_FireAndIce
@@ -35600,7 +35600,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_21.jpg"
+    , { id = "kr_21"
       , name = "Ser Imry Florent"
       , card_type = CardType_Character
       , set = Set_FireAndIce
@@ -35621,7 +35621,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_37.jpg"
+    , { id = "kr_37"
       , name = "Slaver's Bay"
       , card_type = CardType_Location
       , set = Set_FireAndIce
@@ -35642,7 +35642,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_23.jpg"
+    , { id = "kr_23"
       , name = "The Kingsroad 23"
       , card_type = CardType_Location
       , set = Set_FireAndIce
@@ -35663,7 +35663,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_29.jpg"
+    , { id = "kr_29"
       , name = "The Kingsroad 29"
       , card_type = CardType_Location
       , set = Set_FireAndIce
@@ -35684,7 +35684,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_32.jpg"
+    , { id = "kr_32"
       , name = "The Long Plan"
       , card_type = CardType_Event
       , set = Set_FireAndIce
@@ -35705,7 +35705,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_28.jpg"
+    , { id = "kr_28"
       , name = "Tommen Baratheon"
       , card_type = CardType_Character
       , set = Set_FireAndIce
@@ -35726,7 +35726,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FaI_34.jpg"
+    , { id = "kr_34"
       , name = "Winterfell"
       , card_type = CardType_Location
       , set = Set_FireAndIce
@@ -35747,7 +35747,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_98.jpg"
+    , { id = "kr_98"
       , name = "A Noble Cause"
       , card_type = CardType_Agenda
       , set = Set_ForgottenFellowship
@@ -35768,7 +35768,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_83.jpg"
+    , { id = "kr_83"
       , name = "Asha Greyjoy"
       , card_type = CardType_Character
       , set = Set_ForgottenFellowship
@@ -35789,7 +35789,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_86.jpg"
+    , { id = "kr_86"
       , name = "Ashemark Knight"
       , card_type = CardType_Character
       , set = Set_ForgottenFellowship
@@ -35810,7 +35810,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_81.jpg"
+    , { id = "kr_81"
       , name = "Brightwater Man-at-Arms"
       , card_type = CardType_Character
       , set = Set_ForgottenFellowship
@@ -35831,7 +35831,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_95.jpg"
+    , { id = "kr_95"
       , name = "Daenerys's Favor"
       , card_type = CardType_Attachment
       , set = Set_ForgottenFellowship
@@ -35852,7 +35852,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_90.jpg"
+    , { id = "kr_90"
       , name = "Doran's Favor"
       , card_type = CardType_Attachment
       , set = Set_ForgottenFellowship
@@ -35873,7 +35873,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_82.jpg"
+    , { id = "kr_82"
       , name = "Forced March"
       , card_type = CardType_Event
       , set = Set_ForgottenFellowship
@@ -35894,7 +35894,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_96.jpg"
+    , { id = "kr_96"
       , name = "Gendry"
       , card_type = CardType_Character
       , set = Set_ForgottenFellowship
@@ -35915,7 +35915,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_94.jpg"
+    , { id = "kr_94"
       , name = "Griffin's Roost"
       , card_type = CardType_Location
       , set = Set_ForgottenFellowship
@@ -35936,7 +35936,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_88.jpg"
+    , { id = "kr_88"
       , name = "Harry the Riverlands"
       , card_type = CardType_Event
       , set = Set_ForgottenFellowship
@@ -35957,7 +35957,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_93.jpg"
+    , { id = "kr_93"
       , name = "Harwin"
       , card_type = CardType_Character
       , set = Set_ForgottenFellowship
@@ -35978,7 +35978,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_97.jpg"
+    , { id = "kr_97"
       , name = "Lady of the Leaves"
       , card_type = CardType_Character
       , set = Set_ForgottenFellowship
@@ -35999,7 +35999,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_89.jpg"
+    , { id = "kr_89"
       , name = "Obara Sand"
       , card_type = CardType_Character
       , set = Set_ForgottenFellowship
@@ -36020,7 +36020,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_91.jpg"
+    , { id = "kr_91"
       , name = "Prepare for War"
       , card_type = CardType_Event
       , set = Set_ForgottenFellowship
@@ -36041,7 +36041,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_84.jpg"
+    , { id = "kr_84"
       , name = "Pyke"
       , card_type = CardType_Location
       , set = Set_ForgottenFellowship
@@ -36062,7 +36062,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Forgotten Fellowship_100.jpg"
+    , { id = "kr_100"
       , name = "Redwyne Straits"
       , card_type = CardType_Plot
       , set = Set_ForgottenFellowship
@@ -36083,7 +36083,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/FF_92.jpg"
+    , { id = "kr_92"
       , name = "Robb Stark"
       , card_type = CardType_Character
       , set = Set_ForgottenFellowship
@@ -36104,7 +36104,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_87.jpg"
+    , { id = "kr_87"
       , name = "Ser Gregor's Dog"
       , card_type = CardType_Character
       , set = Set_ForgottenFellowship
@@ -36125,7 +36125,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_85.jpg"
+    , { id = "kr_85"
       , name = "Storming the Shore"
       , card_type = CardType_Event
       , set = Set_ForgottenFellowship
@@ -36146,7 +36146,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FF_99.jpg"
+    , { id = "kr_99"
       , name = "The Old Way"
       , card_type = CardType_Agenda
       , set = Set_ForgottenFellowship
@@ -36167,7 +36167,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_1.jpg"
+    , { id = "kr_1"
       , name = "Alester Florent"
       , card_type = CardType_Character
       , set = Set_TheBannersGather
@@ -36188,7 +36188,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_8.jpg"
+    , { id = "kr_8"
       , name = "Ashemark"
       , card_type = CardType_Location
       , set = Set_TheBannersGather
@@ -36209,7 +36209,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_15.jpg"
+    , { id = "kr_15"
       , name = "Breaching the Wall"
       , card_type = CardType_Event
       , set = Set_TheBannersGather
@@ -36230,7 +36230,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_2.jpg"
+    , { id = "kr_2"
       , name = "Brightwater Keep"
       , card_type = CardType_Location
       , set = Set_TheBannersGather
@@ -36251,7 +36251,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_17.jpg"
+    , { id = "kr_17"
       , name = "Castle Darry"
       , card_type = CardType_Location
       , set = Set_TheBannersGather
@@ -36272,7 +36272,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_79.jpg"
+    , { id = "kr_79"
       , name = "Damon Marbrand"
       , card_type = CardType_Character
       , set = Set_TheBannersGather
@@ -36293,7 +36293,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_10.jpg"
+    , { id = "kr_10"
       , name = "Edric Dayne"
       , card_type = CardType_Character
       , set = Set_TheBannersGather
@@ -36314,7 +36314,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_4.jpg"
+    , { id = "kr_4"
       , name = "Gorold Goodbrother"
       , card_type = CardType_Character
       , set = Set_TheBannersGather
@@ -36335,7 +36335,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_5.jpg"
+    , { id = "kr_5"
       , name = "Hammerhorn"
       , card_type = CardType_Location
       , set = Set_TheBannersGather
@@ -36356,7 +36356,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_3.jpg"
+    , { id = "kr_3"
       , name = "Into the Breach"
       , card_type = CardType_Event
       , set = Set_TheBannersGather
@@ -36377,7 +36377,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_13.jpg"
+    , { id = "kr_13"
       , name = "Mors Umber"
       , card_type = CardType_Character
       , set = Set_TheBannersGather
@@ -36398,7 +36398,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_14.jpg"
+    , { id = "kr_14"
       , name = "Northland Keep"
       , card_type = CardType_Location
       , set = Set_TheBannersGather
@@ -36419,7 +36419,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_12.jpg"
+    , { id = "kr_12"
       , name = "Poisoned Well"
       , card_type = CardType_Attachment
       , set = Set_TheBannersGather
@@ -36440,7 +36440,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_18.jpg"
+    , { id = "kr_18"
       , name = "Rain of Fire"
       , card_type = CardType_Event
       , set = Set_TheBannersGather
@@ -36461,7 +36461,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_20.jpg"
+    , { id = "kr_20"
       , name = "Rally Cry"
       , card_type = CardType_Plot
       , set = Set_TheBannersGather
@@ -36482,7 +36482,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/TBG_6.jpg"
+    , { id = "kr_6"
       , name = "Scaling Ladder"
       , card_type = CardType_Attachment
       , set = Set_TheBannersGather
@@ -36503,7 +36503,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_16.jpg"
+    , { id = "kr_16"
       , name = "Ser Raymun Darry"
       , card_type = CardType_Character
       , set = Set_TheBannersGather
@@ -36524,7 +36524,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_11.jpg"
+    , { id = "kr_11"
       , name = "Southron Stronghold"
       , card_type = CardType_Location
       , set = Set_TheBannersGather
@@ -36545,7 +36545,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_19.jpg"
+    , { id = "kr_19"
       , name = "Storm the Gate"
       , card_type = CardType_Event
       , set = Set_TheBannersGather
@@ -36566,7 +36566,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/TBG_9.jpg"
+    , { id = "kr_9"
       , name = "Trebuchet"
       , card_type = CardType_Location
       , set = Set_TheBannersGather
@@ -36587,7 +36587,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_75.jpg"
+    , { id = "kr_75"
       , name = "Aegon's Favor"
       , card_type = CardType_Attachment
       , set = Set_TheHornThatWakes
@@ -36608,7 +36608,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_80.jpg"
+    , { id = "kr_80"
       , name = "Befouled River"
       , card_type = CardType_Plot
       , set = Set_TheHornThatWakes
@@ -36629,7 +36629,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 2
       }
-    , { image_url = "/images/cards/THTW_79.jpg"
+    , { id = "kr_79"
       , name = "Betrayal at the Wall"
       , card_type = CardType_Plot
       , set = Set_TheHornThatWakes
@@ -36650,7 +36650,7 @@ all_cards =
       , initiative = Just 11
       , claim = Just 1
       }
-    , { image_url = "/images/cards/THtW_61.jpg"
+    , { id = "kr_61"
       , name = "Coldhands"
       , card_type = CardType_Character
       , set = Set_TheHornThatWakes
@@ -36671,7 +36671,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_71.jpg"
+    , { id = "kr_71"
       , name = "Dayne Spearman"
       , card_type = CardType_Character
       , set = Set_TheHornThatWakes
@@ -36692,7 +36692,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_72.jpg"
+    , { id = "kr_72"
       , name = "Dornish Hermitage"
       , card_type = CardType_Location
       , set = Set_TheHornThatWakes
@@ -36713,7 +36713,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_77.jpg"
+    , { id = "kr_77"
       , name = "Eastwatch Envoy"
       , card_type = CardType_Character
       , set = Set_TheHornThatWakes
@@ -36734,7 +36734,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_64.jpg"
+    , { id = "kr_64"
       , name = "Gormond Goodbrother"
       , card_type = CardType_Character
       , set = Set_TheHornThatWakes
@@ -36755,7 +36755,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_65.jpg"
+    , { id = "kr_65"
       , name = "Hammerhorn Raiders"
       , card_type = CardType_Character
       , set = Set_TheHornThatWakes
@@ -36776,7 +36776,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_67.jpg"
+    , { id = "kr_67"
       , name = "Janos Slynt"
       , card_type = CardType_Character
       , set = Set_TheHornThatWakes
@@ -36797,7 +36797,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_68.jpg"
+    , { id = "kr_68"
       , name = "Janos's Conspirator"
       , card_type = CardType_Character
       , set = Set_TheHornThatWakes
@@ -36818,7 +36818,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THTW_73.jpg"
+    , { id = "kr_73"
       , name = "Jon Snow"
       , card_type = CardType_Character
       , set = Set_TheHornThatWakes
@@ -36839,7 +36839,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_76.jpg"
+    , { id = "kr_76"
       , name = "Loyal to the Last"
       , card_type = CardType_Event
       , set = Set_TheHornThatWakes
@@ -36860,7 +36860,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_63.jpg"
+    , { id = "kr_63"
       , name = "Melisandre's Favor"
       , card_type = CardType_Attachment
       , set = Set_TheHornThatWakes
@@ -36881,7 +36881,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_66.jpg"
+    , { id = "kr_66"
       , name = "Plunder"
       , card_type = CardType_Event
       , set = Set_TheHornThatWakes
@@ -36902,7 +36902,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_69.jpg"
+    , { id = "kr_69"
       , name = "Secret Orders"
       , card_type = CardType_Event
       , set = Set_TheHornThatWakes
@@ -36923,7 +36923,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_62.jpg"
+    , { id = "kr_62"
       , name = "Stannis Baratheon"
       , card_type = CardType_Character
       , set = Set_TheHornThatWakes
@@ -36944,7 +36944,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_70.jpg"
+    , { id = "kr_70"
       , name = "Viper's Paramour"
       , card_type = CardType_Character
       , set = Set_TheHornThatWakes
@@ -36965,7 +36965,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_78.jpg"
+    , { id = "kr_78"
       , name = "Ygritte"
       , card_type = CardType_Character
       , set = Set_TheHornThatWakes
@@ -36986,7 +36986,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/THtW_74.jpg"
+    , { id = "kr_74"
       , name = "Yoren"
       , card_type = CardType_Character
       , set = Set_TheHornThatWakes
@@ -37007,7 +37007,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_25.jpg"
+    , { id = "soo_25"
       , name = "Black Ears"
       , card_type = CardType_Character
       , set = Set_ForgingTheChain
@@ -37028,7 +37028,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_39.jpg"
+    , { id = "soo_39"
       , name = "Bronze Link"
       , card_type = CardType_Attachment
       , set = Set_ForgingTheChain
@@ -37049,7 +37049,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_30.jpg"
+    , { id = "soo_30"
       , name = "Burned and Pillaged"
       , card_type = CardType_Attachment
       , set = Set_ForgingTheChain
@@ -37070,7 +37070,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_37.jpg"
+    , { id = "soo_37"
       , name = "Called by the Citadel"
       , card_type = CardType_Event
       , set = Set_ForgingTheChain
@@ -37091,7 +37091,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_28.jpg"
+    , { id = "soo_28"
       , name = "Cleansing Light"
       , card_type = CardType_Attachment
       , set = Set_ForgingTheChain
@@ -37112,7 +37112,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_40.jpg"
+    , { id = "soo_40"
       , name = "Forging the Chain"
       , card_type = CardType_Plot
       , set = Set_ForgingTheChain
@@ -37133,7 +37133,7 @@ all_cards =
       , initiative = Just 4
       , claim = Just 1
       }
-    , { image_url = "/images/cards/FtC_23.jpg"
+    , { id = "soo_23"
       , name = "Freezing Rain"
       , card_type = CardType_Attachment
       , set = Set_ForgingTheChain
@@ -37154,7 +37154,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_34.jpg"
+    , { id = "soo_34"
       , name = "Ghaston Grey"
       , card_type = CardType_Location
       , set = Set_ForgingTheChain
@@ -37175,7 +37175,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_35.jpg"
+    , { id = "soo_35"
       , name = "Jaqen H'ghar"
       , card_type = CardType_Character
       , set = Set_ForgingTheChain
@@ -37196,7 +37196,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_29.jpg"
+    , { id = "soo_29"
       , name = "Kingsmoot Hopeful"
       , card_type = CardType_Character
       , set = Set_ForgingTheChain
@@ -37217,7 +37217,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_24.jpg"
+    , { id = "soo_24"
       , name = "Maester Creylen"
       , card_type = CardType_Character
       , set = Set_ForgingTheChain
@@ -37238,7 +37238,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_33.jpg"
+    , { id = "soo_33"
       , name = "Maester Kedry"
       , card_type = CardType_Character
       , set = Set_ForgingTheChain
@@ -37259,7 +37259,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_21.jpg"
+    , { id = "soo_21"
       , name = "Maester Luwin"
       , card_type = CardType_Character
       , set = Set_ForgingTheChain
@@ -37280,7 +37280,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_36.jpg"
+    , { id = "soo_36"
       , name = "Oldtown Scholar"
       , card_type = CardType_Character
       , set = Set_ForgingTheChain
@@ -37301,7 +37301,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_38.jpg"
+    , { id = "soo_38"
       , name = "Pale Steel Link"
       , card_type = CardType_Attachment
       , set = Set_ForgingTheChain
@@ -37322,7 +37322,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_32.jpg"
+    , { id = "soo_32"
       , name = "Pyrophobia"
       , card_type = CardType_Event
       , set = Set_ForgingTheChain
@@ -37343,7 +37343,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_22.jpg"
+    , { id = "soo_22"
       , name = "Riders of the Red Fork"
       , card_type = CardType_Character
       , set = Set_ForgingTheChain
@@ -37364,7 +37364,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_31.jpg"
+    , { id = "soo_31"
       , name = "Shadow Seer"
       , card_type = CardType_Character
       , set = Set_ForgingTheChain
@@ -37385,7 +37385,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_27.jpg"
+    , { id = "soo_27"
       , name = "Shireen Baratheon"
       , card_type = CardType_Character
       , set = Set_ForgingTheChain
@@ -37406,7 +37406,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/FtC_26.jpg"
+    , { id = "soo_26"
       , name = "The Inn of the Kneeling Man"
       , card_type = CardType_Location
       , set = Set_ForgingTheChain
@@ -37427,7 +37427,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_19.jpg"
+    , { id = "soo_19"
       , name = "Apprentice Collar"
       , card_type = CardType_Attachment
       , set = Set_GatesOfTheCitadel
@@ -37448,7 +37448,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_20.jpg"
+    , { id = "soo_20"
       , name = "At the Gates"
       , card_type = CardType_Plot
       , set = Set_GatesOfTheCitadel
@@ -37469,7 +37469,7 @@ all_cards =
       , initiative = Just 1
       , claim = Just 1
       }
-    , { image_url = "/images/cards/GotC_15.jpg"
+    , { id = "soo_15"
       , name = "Beware of the Sphinx"
       , card_type = CardType_Event
       , set = Set_GatesOfTheCitadel
@@ -37490,7 +37490,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_17.jpg"
+    , { id = "soo_17"
       , name = "Copper Link"
       , card_type = CardType_Attachment
       , set = Set_GatesOfTheCitadel
@@ -37511,7 +37511,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_9.jpg"
+    , { id = "soo_9"
       , name = "Daenerys Targaryen"
       , card_type = CardType_Character
       , set = Set_GatesOfTheCitadel
@@ -37532,7 +37532,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_3.jpg"
+    , { id = "soo_3"
       , name = "Daven Lannister"
       , card_type = CardType_Character
       , set = Set_GatesOfTheCitadel
@@ -37553,7 +37553,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_4.jpg"
+    , { id = "soo_4"
       , name = "Deep Den"
       , card_type = CardType_Location
       , set = Set_GatesOfTheCitadel
@@ -37574,7 +37574,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_12.jpg"
+    , { id = "soo_12"
       , name = "Doran's Game"
       , card_type = CardType_Event
       , set = Set_GatesOfTheCitadel
@@ -37595,7 +37595,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_7.jpg"
+    , { id = "soo_7"
       , name = "Gylbert Farwynd"
       , card_type = CardType_Character
       , set = Set_GatesOfTheCitadel
@@ -37616,7 +37616,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_14.jpg"
+    , { id = "soo_14"
       , name = "Leyton Hightower"
       , card_type = CardType_Character
       , set = Set_GatesOfTheCitadel
@@ -37637,7 +37637,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_1.jpg"
+    , { id = "soo_1"
       , name = "Lucas Blackwood"
       , card_type = CardType_Character
       , set = Set_GatesOfTheCitadel
@@ -37658,7 +37658,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_6.jpg"
+    , { id = "soo_6"
       , name = "Lucky Bones"
       , card_type = CardType_Attachment
       , set = Set_GatesOfTheCitadel
@@ -37679,7 +37679,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_13.jpg"
+    , { id = "soo_13"
       , name = "Oldtown Advisor"
       , card_type = CardType_Character
       , set = Set_GatesOfTheCitadel
@@ -37700,7 +37700,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_8.jpg"
+    , { id = "soo_8"
       , name = "Support of Saltcliffe"
       , card_type = CardType_Attachment
       , set = Set_GatesOfTheCitadel
@@ -37721,7 +37721,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_16.jpg"
+    , { id = "soo_16"
       , name = "The Citadel of Oldtown"
       , card_type = CardType_Location
       , set = Set_GatesOfTheCitadel
@@ -37742,7 +37742,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_10.jpg"
+    , { id = "soo_10"
       , name = "The Dragon Strikes"
       , card_type = CardType_Event
       , set = Set_GatesOfTheCitadel
@@ -37763,7 +37763,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_5.jpg"
+    , { id = "soo_5"
       , name = "The Laughing Storm"
       , card_type = CardType_Character
       , set = Set_GatesOfTheCitadel
@@ -37784,7 +37784,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_19.jpg"
+    , { id = "soo_19"
       , name = "The Maester's Path"
       , card_type = CardType_Agenda
       , set = Set_GatesOfTheCitadel
@@ -37805,7 +37805,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_11.jpg"
+    , { id = "soo_11"
       , name = "Tower Captain"
       , card_type = CardType_Character
       , set = Set_GatesOfTheCitadel
@@ -37826,7 +37826,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/GotC_2.jpg"
+    , { id = "soo_2"
       , name = "Widow's Watch"
       , card_type = CardType_Location
       , set = Set_GatesOfTheCitadel
@@ -37847,7 +37847,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_112.jpg"
+    , { id = "soo_112"
       , name = "Advisor's Chambers"
       , card_type = CardType_Location
       , set = Set_HereToServe
@@ -37868,7 +37868,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_118.jpg"
+    , { id = "soo_118"
       , name = "Brass Link"
       , card_type = CardType_Attachment
       , set = Set_HereToServe
@@ -37889,7 +37889,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_116.jpg"
+    , { id = "soo_116"
       , name = "Citadel Politics"
       , card_type = CardType_Event
       , set = Set_HereToServe
@@ -37910,7 +37910,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_103.jpg"
+    , { id = "soo_103"
       , name = "Corrupt Contender"
       , card_type = CardType_Character
       , set = Set_HereToServe
@@ -37931,7 +37931,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_113.jpg"
+    , { id = "soo_113"
       , name = "Faceless Man"
       , card_type = CardType_Character
       , set = Set_HereToServe
@@ -37952,7 +37952,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_107.jpg"
+    , { id = "soo_107"
       , name = "Famished Deckhand"
       , card_type = CardType_Character
       , set = Set_HereToServe
@@ -37973,7 +37973,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_110.jpg"
+    , { id = "soo_110"
       , name = "Litany of Fire"
       , card_type = CardType_Event
       , set = Set_HereToServe
@@ -37994,7 +37994,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_101.jpg"
+    , { id = "soo_101"
       , name = "Maester of Last Hearth"
       , card_type = CardType_Character
       , set = Set_HereToServe
@@ -38015,7 +38015,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_106.jpg"
+    , { id = "soo_106"
       , name = "Maester's Tower"
       , card_type = CardType_Location
       , set = Set_HereToServe
@@ -38036,7 +38036,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_114.jpg"
+    , { id = "soo_114"
       , name = "Prolific Statesman"
       , card_type = CardType_Character
       , set = Set_HereToServe
@@ -38057,7 +38057,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_105.jpg"
+    , { id = "soo_105"
       , name = "Rotten Bastard"
       , card_type = CardType_Character
       , set = Set_HereToServe
@@ -38078,7 +38078,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_119.jpg"
+    , { id = "soo_119"
       , name = "Schemes of the Scholar"
       , card_type = CardType_Plot
       , set = Set_HereToServe
@@ -38099,7 +38099,7 @@ all_cards =
       , initiative = Just 6
       , claim = Just 1
       }
-    , { image_url = "/images/cards/HtS_120.jpg"
+    , { id = "soo_120"
       , name = "Search and Detain"
       , card_type = CardType_Plot
       , set = Set_HereToServe
@@ -38120,7 +38120,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/HtS_102.jpg"
+    , { id = "soo_102"
       , name = "Ser Brynden's Guile"
       , card_type = CardType_Event
       , set = Set_HereToServe
@@ -38141,7 +38141,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_115.jpg"
+    , { id = "soo_115"
       , name = "Ser Gerold Hightower"
       , card_type = CardType_Character
       , set = Set_HereToServe
@@ -38162,7 +38162,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_109.jpg"
+    , { id = "soo_109"
       , name = "Shadow Parasite"
       , card_type = CardType_Character
       , set = Set_HereToServe
@@ -38183,7 +38183,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_104.jpg"
+    , { id = "soo_104"
       , name = "Slander and Lies"
       , card_type = CardType_Attachment
       , set = Set_HereToServe
@@ -38204,7 +38204,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_111.jpg"
+    , { id = "soo_111"
       , name = "Spear Phalanx"
       , card_type = CardType_Character
       , set = Set_HereToServe
@@ -38225,7 +38225,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_108.jpg"
+    , { id = "soo_108"
       , name = "The Iron Cliffs"
       , card_type = CardType_Location
       , set = Set_HereToServe
@@ -38246,7 +38246,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/HtS_117.jpg"
+    , { id = "soo_117"
       , name = "Valyrian Steel Link"
       , card_type = CardType_Attachment
       , set = Set_HereToServe
@@ -38267,7 +38267,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_94.jpg"
+    , { id = "soo_94"
       , name = "Archmaester Marwyn"
       , card_type = CardType_Character
       , set = Set_MaskOfTheArchmaester
@@ -38288,7 +38288,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_99.jpg"
+    , { id = "soo_99"
       , name = "Black Iron Link"
       , card_type = CardType_Attachment
       , set = Set_MaskOfTheArchmaester
@@ -38309,7 +38309,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_89.jpg"
+    , { id = "soo_89"
       , name = "Bloodrider"
       , card_type = CardType_Character
       , set = Set_MaskOfTheArchmaester
@@ -38330,7 +38330,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_95.jpg"
+    , { id = "soo_95"
       , name = "Citadel Law"
       , card_type = CardType_Event
       , set = Set_MaskOfTheArchmaester
@@ -38351,7 +38351,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_86.jpg"
+    , { id = "soo_86"
       , name = "Dragonstone Watchtower"
       , card_type = CardType_Location
       , set = Set_MaskOfTheArchmaester
@@ -38372,7 +38372,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_90.jpg"
+    , { id = "soo_90"
       , name = "House of Shadow"
       , card_type = CardType_Location
       , set = Set_MaskOfTheArchmaester
@@ -38393,7 +38393,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_83.jpg"
+    , { id = "soo_83"
       , name = "House Payne Enforcer"
       , card_type = CardType_Character
       , set = Set_MaskOfTheArchmaester
@@ -38414,7 +38414,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_87.jpg"
+    , { id = "soo_87"
       , name = "Iron Fleet Raiders"
       , card_type = CardType_Character
       , set = Set_MaskOfTheArchmaester
@@ -38435,7 +38435,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_98.jpg"
+    , { id = "soo_98"
       , name = "Iron Link"
       , card_type = CardType_Attachment
       , set = Set_MaskOfTheArchmaester
@@ -38456,7 +38456,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_88.jpg"
+    , { id = "soo_88"
       , name = "Iron Lore"
       , card_type = CardType_Event
       , set = Set_MaskOfTheArchmaester
@@ -38477,7 +38477,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_81.jpg"
+    , { id = "soo_81"
       , name = "Lonely Hills"
       , card_type = CardType_Location
       , set = Set_MaskOfTheArchmaester
@@ -38498,7 +38498,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_92.jpg"
+    , { id = "soo_92"
       , name = "Oberyn's Guile"
       , card_type = CardType_Attachment
       , set = Set_MaskOfTheArchmaester
@@ -38519,7 +38519,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_84.jpg"
+    , { id = "soo_84"
       , name = "Restrict and Restrain"
       , card_type = CardType_Event
       , set = Set_MaskOfTheArchmaester
@@ -38540,7 +38540,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_81.jpg"
+    , { id = "soo_81"
       , name = "Rickon Stark"
       , card_type = CardType_Character
       , set = Set_MaskOfTheArchmaester
@@ -38561,7 +38561,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_85.jpg"
+    , { id = "soo_85"
       , name = "Ser Jon Fossoway"
       , card_type = CardType_Character
       , set = Set_MaskOfTheArchmaester
@@ -38582,7 +38582,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_91.jpg"
+    , { id = "soo_91"
       , name = "Starfall Cavalry"
       , card_type = CardType_Character
       , set = Set_MaskOfTheArchmaester
@@ -38603,7 +38603,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_97.jpg"
+    , { id = "soo_97"
       , name = "The Archmaester's Wrath"
       , card_type = CardType_Event
       , set = Set_MaskOfTheArchmaester
@@ -38624,7 +38624,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_93.jpg"
+    , { id = "soo_93"
       , name = "The Mad Mouse"
       , card_type = CardType_Character
       , set = Set_MaskOfTheArchmaester
@@ -38645,7 +38645,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/MotA_100.jpg"
+    , { id = "soo_100"
       , name = "War of Attrition"
       , card_type = CardType_Plot
       , set = Set_MaskOfTheArchmaester
@@ -38666,7 +38666,7 @@ all_cards =
       , initiative = Just 8
       , claim = Just 1
       }
-    , { image_url = "/images/cards/MotA_96.jpg"
+    , { id = "soo_96"
       , name = "We Light the Way"
       , card_type = CardType_Event
       , set = Set_MaskOfTheArchmaester
@@ -38687,7 +38687,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_31.jpg"
+    , { id = "w_31"
       , name = "A Secret Mission"
       , card_type = CardType_Event
       , set = Set_ADeadlyGame
@@ -38708,7 +38708,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_25.jpg"
+    , { id = "w_25"
       , name = "âˆž Command the Winds"
       , card_type = CardType_Event
       , set = Set_ADeadlyGame
@@ -38729,7 +38729,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_21.jpg"
+    , { id = "w_21"
       , name = "Brienne of Tarth"
       , card_type = CardType_Character
       , set = Set_ADeadlyGame
@@ -38750,7 +38750,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_40.jpg"
+    , { id = "w_40"
       , name = "Fallen from Favor"
       , card_type = CardType_Plot
       , set = Set_ADeadlyGame
@@ -38771,7 +38771,7 @@ all_cards =
       , initiative = Just 6
       , claim = Just 2
       }
-    , { image_url = "/images/cards/A Deadly Game_36.jpg"
+    , { id = "w_36"
       , name = "Irri"
       , card_type = CardType_Character
       , set = Set_ADeadlyGame
@@ -38792,7 +38792,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_35.jpg"
+    , { id = "w_35"
       , name = "Khal Drogo"
       , card_type = CardType_Character
       , set = Set_ADeadlyGame
@@ -38813,7 +38813,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_27.jpg"
+    , { id = "w_27"
       , name = "Moon Brother Harriers"
       , card_type = CardType_Character
       , set = Set_ADeadlyGame
@@ -38834,7 +38834,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_37.jpg"
+    , { id = "w_37"
       , name = "Mya Stone"
       , card_type = CardType_Character
       , set = Set_ADeadlyGame
@@ -38855,7 +38855,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_22.jpg"
+    , { id = "w_22"
       , name = "Offer of a Peach"
       , card_type = CardType_Event
       , set = Set_ADeadlyGame
@@ -38876,7 +38876,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_33.jpg"
+    , { id = "w_33"
       , name = "Raventree Elite"
       , card_type = CardType_Character
       , set = Set_ADeadlyGame
@@ -38897,7 +38897,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_34.jpg"
+    , { id = "w_34"
       , name = "Seagard"
       , card_type = CardType_Location
       , set = Set_ADeadlyGame
@@ -38918,7 +38918,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_39.jpg"
+    , { id = "w_39"
       , name = "Taken Captive"
       , card_type = CardType_Plot
       , set = Set_ADeadlyGame
@@ -38939,7 +38939,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/A Deadly Game_38.jpg"
+    , { id = "w_38"
       , name = "The Eyrie"
       , card_type = CardType_Location
       , set = Set_ADeadlyGame
@@ -38960,7 +38960,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_30.jpg"
+    , { id = "w_30"
       , name = "The Red Mountains"
       , card_type = CardType_Location
       , set = Set_ADeadlyGame
@@ -38981,7 +38981,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_24.jpg"
+    , { id = "w_24"
       , name = "Thunderer"
       , card_type = CardType_Location
       , set = Set_ADeadlyGame
@@ -39002,7 +39002,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_29.jpg"
+    , { id = "w_29"
       , name = "Tyene Sand"
       , card_type = CardType_Character
       , set = Set_ADeadlyGame
@@ -39023,7 +39023,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_32.jpg"
+    , { id = "w_32"
       , name = "Tytos Blackwood"
       , card_type = CardType_Character
       , set = Set_ADeadlyGame
@@ -39044,7 +39044,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_26.jpg"
+    , { id = "w_26"
       , name = "Ulf Son of Umar"
       , card_type = CardType_Character
       , set = Set_ADeadlyGame
@@ -39065,7 +39065,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_28.jpg"
+    , { id = "w_28"
       , name = "Vale Encampment"
       , card_type = CardType_Location
       , set = Set_ADeadlyGame
@@ -39086,7 +39086,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Deadly Game_23.jpg"
+    , { id = "w_23"
       , name = "Warrior of Note"
       , card_type = CardType_Character
       , set = Set_ADeadlyGame
@@ -39107,7 +39107,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_70.jpg"
+    , { id = "w_70"
       , name = "A Hidden Game"
       , card_type = CardType_Event
       , set = Set_ATimeForWolves
@@ -39128,7 +39128,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_80.jpg"
+    , { id = "w_80"
       , name = "A Time for Wolves"
       , card_type = CardType_Plot
       , set = Set_ATimeForWolves
@@ -39149,7 +39149,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/A Time for Wolves_73.jpg"
+    , { id = "w_73"
       , name = "Aggo"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39170,7 +39170,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_71.jpg"
+    , { id = "w_71"
       , name = "Alayne Stone"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39191,7 +39191,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_62.jpg"
+    , { id = "w_62"
       , name = "Camp Follower"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39212,7 +39212,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_67.jpg"
+    , { id = "w_67"
       , name = "Clan Scout"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39233,7 +39233,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_69.jpg"
+    , { id = "w_69"
       , name = "Doran's Solar"
       , card_type = CardType_Location
       , set = Set_ATimeForWolves
@@ -39254,7 +39254,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_75.jpg"
+    , { id = "w_75"
       , name = "Horse Gate"
       , card_type = CardType_Location
       , set = Set_ATimeForWolves
@@ -39275,7 +39275,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_64.jpg"
+    , { id = "w_64"
       , name = "Iron Fleet Pillager"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39296,7 +39296,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_79.jpg"
+    , { id = "w_79"
       , name = "Knights Declarant"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39317,7 +39317,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_74.jpg"
+    , { id = "w_74"
       , name = "Lesser Ko"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39338,7 +39338,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_78.jpg"
+    , { id = "w_78"
       , name = "Lyn Corbray"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39359,7 +39359,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_76.jpg"
+    , { id = "w_76"
       , name = "Lysa Arryn"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39380,7 +39380,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_68.jpg"
+    , { id = "w_68"
       , name = "Obella Sand"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39401,7 +39401,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_77.jpg"
+    , { id = "w_77"
       , name = "Petyr Baelish"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39422,7 +39422,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_63.jpg"
+    , { id = "w_63"
       , name = "Renly's Pavilion"
       , card_type = CardType_Location
       , set = Set_ATimeForWolves
@@ -39443,7 +39443,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_65.jpg"
+    , { id = "w_65"
       , name = "Salt and Iron"
       , card_type = CardType_Event
       , set = Set_ATimeForWolves
@@ -39464,7 +39464,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_61.jpg"
+    , { id = "w_61"
       , name = "Ser Emmon Cuy"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39485,7 +39485,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_66.jpg"
+    , { id = "w_66"
       , name = "The Mountain Clan Horde"
       , card_type = CardType_Character
       , set = Set_ATimeForWolves
@@ -39506,7 +39506,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A Time for Wolves_72.jpg"
+    , { id = "w_72"
       , name = "Volley of Arrows"
       , card_type = CardType_Event
       , set = Set_ATimeForWolves
@@ -39527,7 +39527,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_82.jpg"
+    , { id = "w_82"
       , name = "Bitterbridge Encampment"
       , card_type = CardType_Location
       , set = Set_HouseOfTalons
@@ -39548,7 +39548,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_95.jpg"
+    , { id = "w_95"
       , name = "Braided Warrior"
       , card_type = CardType_Character
       , set = Set_HouseOfTalons
@@ -39569,7 +39569,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_97.jpg"
+    , { id = "w_97"
       , name = "Bronze Yohn Royce"
       , card_type = CardType_Character
       , set = Set_HouseOfTalons
@@ -39590,7 +39590,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_89.jpg"
+    , { id = "w_89"
       , name = "Dorea Sand"
       , card_type = CardType_Character
       , set = Set_HouseOfTalons
@@ -39611,7 +39611,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_96.jpg"
+    , { id = "w_96"
       , name = "Eastern Market"
       , card_type = CardType_Location
       , set = Set_HouseOfTalons
@@ -39632,7 +39632,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_91.jpg"
+    , { id = "w_91"
       , name = "House Tully Footman"
       , card_type = CardType_Character
       , set = Set_HouseOfTalons
@@ -39653,7 +39653,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_83.jpg"
+    , { id = "w_83"
       , name = "In Renlyâ€™s Name"
       , card_type = CardType_Attachment
       , set = Set_HouseOfTalons
@@ -39674,7 +39674,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_84.jpg"
+    , { id = "w_84"
       , name = "Iron Islands Reaver"
       , card_type = CardType_Character
       , set = Set_HouseOfTalons
@@ -39695,7 +39695,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_94.jpg"
+    , { id = "w_94"
       , name = "Jhogo"
       , card_type = CardType_Character
       , set = Set_HouseOfTalons
@@ -39716,7 +39716,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_85.jpg"
+    , { id = "w_85"
       , name = "Kettledrum"
       , card_type = CardType_Attachment
       , set = Set_HouseOfTalons
@@ -39737,7 +39737,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_100.jpg"
+    , { id = "w_100"
       , name = "Kings of Mountain and Vale"
       , card_type = CardType_Plot
       , set = Set_HouseOfTalons
@@ -39758,7 +39758,7 @@ all_cards =
       , initiative = Just 3
       , claim = Just 1
       }
-    , { image_url = "/images/cards/A House of Talons_93.jpg"
+    , { id = "w_93"
       , name = "Lay Waste"
       , card_type = CardType_Event
       , set = Set_HouseOfTalons
@@ -39779,7 +39779,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_87.jpg"
+    , { id = "w_87"
       , name = "Milk Snakes"
       , card_type = CardType_Character
       , set = Set_HouseOfTalons
@@ -39800,7 +39800,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_86.jpg"
+    , { id = "w_86"
       , name = "Reborn from the Sea"
       , card_type = CardType_Event
       , set = Set_HouseOfTalons
@@ -39821,7 +39821,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_98.jpg"
+    , { id = "w_98"
       , name = "Robert Arryn"
       , card_type = CardType_Character
       , set = Set_HouseOfTalons
@@ -39842,7 +39842,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_81.jpg"
+    , { id = "w_81"
       , name = "Ser Parmen Crane"
       , card_type = CardType_Character
       , set = Set_HouseOfTalons
@@ -39863,7 +39863,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_88.jpg"
+    , { id = "w_88"
       , name = "Sign of the Red Hand"
       , card_type = CardType_Attachment
       , set = Set_HouseOfTalons
@@ -39884,7 +39884,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_99.jpg"
+    , { id = "w_99"
       , name = "The Bloody Gate"
       , card_type = CardType_Location
       , set = Set_HouseOfTalons
@@ -39905,7 +39905,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_90.jpg"
+    , { id = "w_90"
       , name = "Water Gardens Sentry"
       , card_type = CardType_Character
       , set = Set_HouseOfTalons
@@ -39926,7 +39926,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/A House of Talons_92.jpg"
+    , { id = "w_92"
       , name = "Winterfell Heart Tree"
       , card_type = CardType_Location
       , set = Set_HouseOfTalons
@@ -39947,7 +39947,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_18.jpg"
+    , { id = "w_18"
       , name = "Aloof and Apart"
       , card_type = CardType_Agenda
       , set = Set_SecretsAndSchemes
@@ -39968,7 +39968,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_7.jpg"
+    , { id = "w_7"
       , name = "Chella, Daughter of Cheyk"
       , card_type = CardType_Character
       , set = Set_SecretsAndSchemes
@@ -39989,7 +39989,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_15.jpg"
+    , { id = "w_15"
       , name = "Dosh Khaleen"
       , card_type = CardType_Character
       , set = Set_SecretsAndSchemes
@@ -40010,7 +40010,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_9.jpg"
+    , { id = "w_9"
       , name = "Enemy of the Queen"
       , card_type = CardType_Attachment
       , set = Set_SecretsAndSchemes
@@ -40031,7 +40031,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_10.jpg"
+    , { id = "w_10"
       , name = "Ghost Hill Elite"
       , card_type = CardType_Character
       , set = Set_SecretsAndSchemes
@@ -40052,7 +40052,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_17.jpg"
+    , { id = "w_17"
       , name = "Greenseerâ€™s Raven"
       , card_type = CardType_Character
       , set = Set_SecretsAndSchemes
@@ -40073,7 +40073,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_12.jpg"
+    , { id = "w_12"
       , name = "Hotahâ€™s Axe"
       , card_type = CardType_Attachment
       , set = Set_SecretsAndSchemes
@@ -40094,7 +40094,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_1.jpg"
+    , { id = "w_1"
       , name = "Knight of Flowers"
       , card_type = CardType_Character
       , set = Set_SecretsAndSchemes
@@ -40115,7 +40115,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_20.jpg"
+    , { id = "w_20"
       , name = "Naming the Heir"
       , card_type = CardType_Plot
       , set = Set_SecretsAndSchemes
@@ -40136,7 +40136,7 @@ all_cards =
       , initiative = Just 2
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Secrets and Schemes_11.jpg"
+    , { id = "w_11"
       , name = "Princeâ€™s Attendant"
       , card_type = CardType_Character
       , set = Set_SecretsAndSchemes
@@ -40157,7 +40157,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_3.jpg"
+    , { id = "w_3"
       , name = "Rainbow Guard Squire"
       , card_type = CardType_Character
       , set = Set_SecretsAndSchemes
@@ -40178,7 +40178,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_14.jpg"
+    , { id = "w_14"
       , name = "Raventree Hall"
       , card_type = CardType_Location
       , set = Set_SecretsAndSchemes
@@ -40199,7 +40199,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_6.jpg"
+    , { id = "w_6"
       , name = "Red Rain"
       , card_type = CardType_Attachment
       , set = Set_SecretsAndSchemes
@@ -40220,7 +40220,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_13.jpg"
+    , { id = "w_13"
       , name = "Ser Jason Mallister"
       , card_type = CardType_Character
       , set = Set_SecretsAndSchemes
@@ -40241,7 +40241,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_8.jpg"
+    , { id = "w_8"
       , name = "Ser Kevan Lannister"
       , card_type = CardType_Character
       , set = Set_SecretsAndSchemes
@@ -40262,7 +40262,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_2.jpg"
+    , { id = "w_2"
       , name = "Ser Robar Royce"
       , card_type = CardType_Character
       , set = Set_SecretsAndSchemes
@@ -40283,7 +40283,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_19.jpg"
+    , { id = "w_19"
       , name = "Siege Preparations"
       , card_type = CardType_Plot
       , set = Set_SecretsAndSchemes
@@ -40304,7 +40304,7 @@ all_cards =
       , initiative = Just 0
       , claim = Just 1
       }
-    , { image_url = "/images/cards/Secrets and Schemes_4.jpg"
+    , { id = "w_4"
       , name = "The Drumm"
       , card_type = CardType_Character
       , set = Set_SecretsAndSchemes
@@ -40325,7 +40325,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_5.jpg"
+    , { id = "w_5"
       , name = "The Sea Tower"
       , card_type = CardType_Location
       , set = Set_SecretsAndSchemes
@@ -40346,7 +40346,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/Secrets and Schemes_16.jpg"
+    , { id = "w_16"
       , name = "Vaes Dothrak"
       , card_type = CardType_Location
       , set = Set_SecretsAndSchemes
@@ -40367,7 +40367,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_111.jpg"
+    , { id = "w_111"
       , name = "A False Hunt"
       , card_type = CardType_Event
       , set = Set_TheBlueIsCalling
@@ -40388,7 +40388,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_120.jpg"
+    , { id = "w_120"
       , name = "As High As Honor"
       , card_type = CardType_Plot
       , set = Set_TheBlueIsCalling
@@ -40409,7 +40409,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/The Blue is Calling_116.jpg"
+    , { id = "w_116"
       , name = "Bloody Arakh"
       , card_type = CardType_Attachment
       , set = Set_TheBlueIsCalling
@@ -40430,7 +40430,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_115.jpg"
+    , { id = "w_115"
       , name = "Dothraki Sea"
       , card_type = CardType_Location
       , set = Set_TheBlueIsCalling
@@ -40451,7 +40451,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_108.jpg"
+    , { id = "w_108"
       , name = "Feed it to the Goats"
       , card_type = CardType_Event
       , set = Set_TheBlueIsCalling
@@ -40472,7 +40472,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_105.jpg"
+    , { id = "w_105"
       , name = "Iron Islands Shipwright"
       , card_type = CardType_Character
       , set = Set_TheBlueIsCalling
@@ -40493,7 +40493,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_104.jpg"
+    , { id = "w_104"
       , name = "Iron Kingâ€™s Guard"
       , card_type = CardType_Character
       , set = Set_TheBlueIsCalling
@@ -40514,7 +40514,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_110.jpg"
+    , { id = "w_110"
       , name = "Loreza Sand"
       , card_type = CardType_Character
       , set = Set_TheBlueIsCalling
@@ -40535,7 +40535,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_117.jpg"
+    , { id = "w_117"
       , name = "Lothor Brune"
       , card_type = CardType_Character
       , set = Set_TheBlueIsCalling
@@ -40556,7 +40556,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_102.jpg"
+    , { id = "w_102"
       , name = "Margaery's Favor"
       , card_type = CardType_Attachment
       , set = Set_TheBlueIsCalling
@@ -40577,7 +40577,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_118.jpg"
+    , { id = "w_118"
       , name = "Mord"
       , card_type = CardType_Character
       , set = Set_TheBlueIsCalling
@@ -40598,7 +40598,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_114.jpg"
+    , { id = "w_114"
       , name = "New Khalasar"
       , card_type = CardType_Character
       , set = Set_TheBlueIsCalling
@@ -40619,7 +40619,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_112.jpg"
+    , { id = "w_112"
       , name = "Northern Patriarch"
       , card_type = CardType_Character
       , set = Set_TheBlueIsCalling
@@ -40640,7 +40640,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_106.jpg"
+    , { id = "w_106"
       , name = "Orkmont Port"
       , card_type = CardType_Location
       , set = Set_TheBlueIsCalling
@@ -40661,7 +40661,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_113.jpg"
+    , { id = "w_113"
       , name = "Palisades"
       , card_type = CardType_Location
       , set = Set_TheBlueIsCalling
@@ -40682,7 +40682,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_109.jpg"
+    , { id = "w_109"
       , name = "Ransack"
       , card_type = CardType_Event
       , set = Set_TheBlueIsCalling
@@ -40703,7 +40703,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_101.jpg"
+    , { id = "w_101"
       , name = "Ser Guyard Morrigen"
       , card_type = CardType_Character
       , set = Set_TheBlueIsCalling
@@ -40724,7 +40724,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_119.jpg"
+    , { id = "w_119"
       , name = "Sky Cell"
       , card_type = CardType_Attachment
       , set = Set_TheBlueIsCalling
@@ -40745,7 +40745,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_107.jpg"
+    , { id = "w_107"
       , name = "The Giantâ€™s Lance"
       , card_type = CardType_Location
       , set = Set_TheBlueIsCalling
@@ -40766,7 +40766,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Blue is Calling_103.jpg"
+    , { id = "w_103"
       , name = "The Stag and Rose"
       , card_type = CardType_Event
       , set = Set_TheBlueIsCalling
@@ -40787,7 +40787,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_49.jpg"
+    , { id = "w_49"
       , name = "An Opening Gambit"
       , card_type = CardType_Event
       , set = Set_TheValemen
@@ -40808,7 +40808,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_47.jpg"
+    , { id = "w_47"
       , name = "Battle of the Green Fork"
       , card_type = CardType_Event
       , set = Set_TheValemen
@@ -40829,7 +40829,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_53.jpg"
+    , { id = "w_53"
       , name = "Blackfish's Vanguard"
       , card_type = CardType_Character
       , set = Set_TheValemen
@@ -40850,7 +40850,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_43.jpg"
+    , { id = "w_43"
       , name = "Euron Crow's Eye"
       , card_type = CardType_Character
       , set = Set_TheValemen
@@ -40871,7 +40871,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_45.jpg"
+    , { id = "w_45"
       , name = "Gunthor Son of Gurn"
       , card_type = CardType_Character
       , set = Set_TheValemen
@@ -40892,7 +40892,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_59.jpg"
+    , { id = "w_59"
       , name = "Holding Council"
       , card_type = CardType_Plot
       , set = Set_TheValemen
@@ -40913,7 +40913,7 @@ all_cards =
       , initiative = Just 7
       , claim = Just 1
       }
-    , { image_url = "/images/cards/The Valemen_55.jpg"
+    , { id = "w_55"
       , name = "Jhiqui"
       , card_type = CardType_Character
       , set = Set_TheValemen
@@ -40934,7 +40934,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_51.jpg"
+    , { id = "w_51"
       , name = "Maester Vyman"
       , card_type = CardType_Character
       , set = Set_TheValemen
@@ -40955,7 +40955,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_48.jpg"
+    , { id = "w_48"
       , name = "Nymeria Sand"
       , card_type = CardType_Character
       , set = Set_TheValemen
@@ -40976,7 +40976,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_54.jpg"
+    , { id = "w_54"
       , name = "Rakharo"
       , card_type = CardType_Character
       , set = Set_TheValemen
@@ -40997,7 +40997,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_50.jpg"
+    , { id = "w_50"
       , name = "Red Mountain Keep"
       , card_type = CardType_Location
       , set = Set_TheValemen
@@ -41018,7 +41018,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_41.jpg"
+    , { id = "w_41"
       , name = "Ser Bryce Caron"
       , card_type = CardType_Character
       , set = Set_TheValemen
@@ -41039,7 +41039,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_52.jpg"
+    , { id = "w_52"
       , name = "Ser Desmond Grell"
       , card_type = CardType_Character
       , set = Set_TheValemen
@@ -41060,7 +41060,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_46.jpg"
+    , { id = "w_46"
       , name = "Ser Ilyn Payne"
       , card_type = CardType_Character
       , set = Set_TheValemen
@@ -41081,7 +41081,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_44.jpg"
+    , { id = "w_44"
       , name = "Silence Crewman"
       , card_type = CardType_Character
       , set = Set_TheValemen
@@ -41102,7 +41102,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_42.jpg"
+    , { id = "w_42"
       , name = "Storm's End Freerider"
       , card_type = CardType_Character
       , set = Set_TheValemen
@@ -41123,7 +41123,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_58.jpg"
+    , { id = "w_58"
       , name = "The Moon Door"
       , card_type = CardType_Location
       , set = Set_TheValemen
@@ -41144,7 +41144,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_60.jpg"
+    , { id = "w_60"
       , name = "The Withering Cold"
       , card_type = CardType_Plot
       , set = Set_TheValemen
@@ -41165,7 +41165,7 @@ all_cards =
       , initiative = Just 5
       , claim = Just 1
       }
-    , { image_url = "/images/cards/The Valemen_56.jpg"
+    , { id = "w_56"
       , name = "Vaes Tolorro"
       , card_type = CardType_Location
       , set = Set_TheValemen
@@ -41186,7 +41186,7 @@ all_cards =
       , initiative = Nothing
       , claim = Nothing
       }
-    , { image_url = "/images/cards/The Valemen_57.jpg"
+    , { id = "w_57"
       , name = "Vale Informant"
       , card_type = CardType_Character
       , set = Set_TheValemen

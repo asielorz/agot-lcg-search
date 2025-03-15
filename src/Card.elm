@@ -15,7 +15,7 @@ type Crest = Crest_Holy | Crest_Noble | Crest_War | Crest_Learned | Crest_Shadow
 type Legality = Legality_Legal | Legality_Banned | Legality_Restricted
 
 type alias Card = 
-    { image_url : String
+    { id : String
     , name : String
     , card_type : CardType
     , set : Set
@@ -177,7 +177,8 @@ card_to_json : Card -> Json.Encode.Value
 card_to_json card = 
     let 
         fields = List.filterMap identity
-            [ Just ("image_url", Json.Encode.string card.image_url)
+            [ Just ("id", Json.Encode.string card.id)
+            , Just ("image_url", Json.Encode.string <| image_url card)
             , Just ("name", Json.Encode.string card.name)
             , Just ("card_type", Json.Encode.string <| card_type_to_string card.card_type)
             , Just ("set", card.set |> data_of_set |> .full_name |> Json.Encode.string )
@@ -217,5 +218,8 @@ icon_sort_order icon = case icon of
     Icon_Intrigue -> 1
     Icon_Power -> 2
 
-card_id : Card -> String
-card_id card = (data_of_set card.set).code_name ++ "_" ++ String.fromInt card.number
+page_url : Card -> String
+page_url card = "/card/" ++ card.id
+
+image_url : Card -> String
+image_url card = "/images/cards/" ++ card.id ++ ".jpg"

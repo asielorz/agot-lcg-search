@@ -80,7 +80,9 @@ number_of_results_text model =
         total = List.length model.cards
         last = min (first + 59) total
     in
-        String.fromInt first ++ " - " ++ String.fromInt last ++ " of " ++ String.fromInt total ++ " cards"
+        if total == 0
+            then "No cards found"
+            else String.fromInt first ++ " - " ++ String.fromInt last ++ " of " ++ String.fromInt total ++ " cards"
 
 view_results : List Card -> Maybe (UI.Element msg)
 view_results cards = Just <| UI.wrappedRow 

@@ -89,6 +89,7 @@ type Predicate
     | Predicate_Income Comparison Int
     | Predicate_Initiative Comparison Int
     | Predicate_Claim Comparison Int
+    | Predicate_Influence Comparison Int
     | Predicate_Text String
     | Predicate_Flavor String
     | Predicate_Type CardType
@@ -111,6 +112,7 @@ card_passes_predicate predicate card = case predicate of
     Predicate_Income c n -> int_comparison_predicate n c card.income
     Predicate_Initiative c n -> int_comparison_predicate n c card.initiative
     Predicate_Claim c n -> int_comparison_predicate n c card.claim
+    Predicate_Influence c n -> int_comparison_predicate n c card.influence
     Predicate_Text s -> string_contains_predicate s card.rules_text
     Predicate_Flavor s -> string_contains_predicate s card.flavor_text
     Predicate_Type t -> card.card_type == t
@@ -239,6 +241,7 @@ parse_predicate_from_token token =
             , Parser.succeed Predicate_Income |. Parser.symbol "income" |= parse_comparison |= Parser.int |. Parser.end
             , Parser.succeed Predicate_Initiative |. Parser.symbol "initiative" |= parse_comparison |= Parser.int |. Parser.end
             , Parser.succeed Predicate_Claim |. Parser.symbol "claim" |= parse_comparison |= Parser.int |. Parser.end
+            , Parser.succeed Predicate_Influence |. Parser.symbol "influence" |= parse_comparison |= Parser.int |. Parser.end
             , Parser.succeed Predicate_Text |. Parser.symbol "text:" |= parse_until_end
             , Parser.succeed Predicate_Flavor |. Parser.symbol "flavor:" |= parse_until_end
             , Parser.succeed Predicate_Type |. Parser.symbol "type:" |= parse_type
@@ -412,6 +415,10 @@ parse_sort_order sort = case sort of
     "init>" -> Ok <| \x y -> compare_maybe y.initiative x.initiative
     "claim" -> Ok <| \x y -> compare_maybe x.claim y.claim
     "claim>" -> Ok <| \x y -> compare_maybe y.claim x.claim
+    "influence" -> Ok <| \x y -> compare_maybe x.influence y.influence
+    "influence>" -> Ok <| \x y -> compare_maybe y.influence x.influence
+    "inf" -> Ok <| \x y -> compare_maybe x.influence y.influence
+    "inf>" -> Ok <| \x y -> compare_maybe y.influence x.influence
     other -> Err <| "'" ++ other ++ "' is not an order category."
 
 parse_sort_orders : List String -> ((Card -> Card -> Order), List String)

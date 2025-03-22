@@ -25,6 +25,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_31"
       , name = "Bear Island"
@@ -46,6 +47,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_40"
       , name = "Bringers of Law"
@@ -67,6 +69,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_23"
       , name = "Die for Your King!"
@@ -88,6 +91,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_38"
       , name = "Dragon Bite"
@@ -109,6 +113,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_37"
       , name = "Dragon Thief"
@@ -130,6 +135,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_35"
       , name = "Drowned Prophet"
@@ -151,6 +157,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_39"
       , name = "Field Spikes"
@@ -172,6 +179,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_29"
       , name = "Fury of the Dragon"
@@ -193,6 +201,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 7
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "acoa_28"
       , name = "Fury of the Kraken"
@@ -214,6 +223,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 7
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "acoa_26"
       , name = "Fury of the Lion"
@@ -235,6 +245,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 7
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "acoa_27"
       , name = "Fury of the Stag"
@@ -256,6 +267,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 7
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "acoa_30"
       , name = "Fury of the Sun"
@@ -277,6 +289,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 7
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "acoa_25"
       , name = "Fury of the Wolf"
@@ -298,6 +311,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 7
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "acoa_34"
       , name = "King's Champion"
@@ -319,6 +333,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_24"
       , name = "Questioned Claim"
@@ -340,6 +355,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_36"
       , name = "Salt Wife"
@@ -361,6 +377,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_21"
       , name = "Ten Towers"
@@ -382,6 +399,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_33"
       , name = "Toll Gate"
@@ -403,6 +421,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_32"
       , name = "Turncloak Mercenaries"
@@ -424,6 +443,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_59"
       , name = "Dragon Chaser"
@@ -435,7 +455,7 @@ all_cards =
       , illustrator = "Jonny Klein"
       , house = [ House_Targaryen, House_Greyjoy ]
       , unique = False
-      , rules_text = Just "Ambush. Intimidate.\n"
+      , rules_text = Just "Ambush. Intimidate."
       , flavor_text = Just "\"Our decks will stink of pigs and chickens on the voyage east, but we'll return with dragons.\" - Euron Crow's Eye"
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Intrigue ]
@@ -445,6 +465,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_41"
       , name = "Feral Pack"
@@ -466,6 +487,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_53"
       , name = "Fiery Followers"
@@ -477,7 +499,7 @@ all_cards =
       , illustrator = "Jarreau Wimberly"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "Vigilant. No attachments except Boon.\n"
+      , rules_text = Just "Vigilant. No attachments except Boon."
       , flavor_text = Just "\"I know little and care less of gods, but the red priestess has power.\" - Stannis Baratheon"
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
@@ -487,6 +509,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_42"
       , name = "First Mate"
@@ -508,6 +531,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_56"
       , name = "Herald of the East"
@@ -529,6 +553,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_55"
       , name = "Herald of the Sea"
@@ -550,6 +575,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_54"
       , name = "Herald of the Stag"
@@ -571,6 +597,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_57"
       , name = "Herald of the Sun"
@@ -592,6 +619,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_43"
       , name = "Jaqen H'ghar"
@@ -613,6 +641,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_52"
       , name = "Lion Herald"
@@ -634,6 +663,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_58"
       , name = "Royal Guard"
@@ -645,7 +675,7 @@ all_cards =
       , illustrator = "Carlo Bocchio"
       , house = [ House_Stark, House_Baratheon ]
       , unique = False
-      , rules_text = Just "Stalwart. Vigilant.\n"
+      , rules_text = Just "Stalwart. Vigilant."
       , flavor_text = Just "\"... there were always dangers when men were in their cups, and a king should never be unguarded...\" - Catelyn Stark"
       , cost = Just 2
       , icons = [ Icon_Military, Icon_Power ]
@@ -655,6 +685,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_48"
       , name = "To Be a Dragon"
@@ -676,6 +707,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_47"
       , name = "To Be a Kraken"
@@ -697,6 +729,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_45"
       , name = "To Be a Lion"
@@ -718,6 +751,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_46"
       , name = "To Be a Stag"
@@ -739,6 +773,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_50"
       , name = "To Be a Viper"
@@ -760,6 +795,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_44"
       , name = "To Be a Wolf"
@@ -781,6 +817,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_49"
       , name = "Too Proud to Bow"
@@ -802,6 +839,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_60"
       , name = "Vendor of Venoms"
@@ -823,6 +861,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_51"
       , name = "Wolf Herald"
@@ -844,6 +883,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_4"
       , name = "Apostle of The Drowned God"
@@ -865,6 +905,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_12"
       , name = "Areo Hotah"
@@ -886,6 +927,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_18"
       , name = "Black Sails"
@@ -907,6 +949,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_2"
       , name = "Blackwater Bay Veteran"
@@ -928,6 +971,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_15"
       , name = "Captain Groleo"
@@ -949,6 +993,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_20"
       , name = "Crossing the Ruby Ford"
@@ -970,6 +1015,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "asots_8"
       , name = "Fleet from Lys"
@@ -991,6 +1037,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_5"
       , name = "Fleet from Pyke"
@@ -1012,6 +1059,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_3"
       , name = "Fleet from The Arbor"
@@ -1033,6 +1081,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_16"
       , name = "Fleet from Volantis"
@@ -1054,6 +1103,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_11"
       , name = "Fleet from Wolf's Den"
@@ -1075,6 +1125,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_13"
       , name = "Lady Nym's Guard"
@@ -1096,6 +1147,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_7"
       , name = "Lady Olenna's Guard"
@@ -1117,6 +1169,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_1"
       , name = "Little Bird"
@@ -1138,6 +1191,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_9"
       , name = "Melisandre's Scheme"
@@ -1159,6 +1213,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 2
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "asots_14"
       , name = "Missandei"
@@ -1170,7 +1225,7 @@ all_cards =
       , illustrator = "Sara Biddle"
       , house = [ House_Targaryen ]
       , unique = True
-      , rules_text = Just "While no opponent controls a Queen character, Missandei cannot be discarded from play.\n[2 Influence]"
+      , rules_text = Just "While no opponent controls a Queen character, Missandei cannot be discarded from play.\n[+2 Influence]"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [ Icon_Power ]
@@ -1180,6 +1235,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 2
       }
     , { id = "asots_19"
       , name = "Naval Reinforcements"
@@ -1201,6 +1257,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "asots_17"
       , name = "Summer Sea Corsair"
@@ -1222,6 +1279,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_6"
       , name = "Victarion Greyjoy"
@@ -1243,6 +1301,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_10"
       , name = "Wyman Manderly"
@@ -1264,6 +1323,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_117"
       , name = "Beguiled Bodyguard"
@@ -1285,6 +1345,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_102"
       , name = "Depleted Host"
@@ -1306,6 +1367,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_112"
       , name = "Desert Exiles"
@@ -1327,6 +1389,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_101"
       , name = "Desperate Looters"
@@ -1348,6 +1411,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_111"
       , name = "Destitute Horde"
@@ -1369,6 +1433,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_107"
       , name = "Exhausted Horsemen"
@@ -1390,6 +1455,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_113"
       , name = "Men With No King"
@@ -1411,6 +1477,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_115"
       , name = "Missing Recruit"
@@ -1432,6 +1499,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_103"
       , name = "Northern Cavalry Flank"
@@ -1453,6 +1521,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_104"
       , name = "Northern Infantry"
@@ -1474,6 +1543,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_110"
       , name = "Pirates of Orkmont"
@@ -1495,6 +1565,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_114"
       , name = "Retreat and Regroup"
@@ -1516,6 +1587,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_116"
       , name = "Spy in Their Midst"
@@ -1537,6 +1609,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_108"
       , name = "Stormland Scavengers"
@@ -1558,6 +1631,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_120"
       , name = "Summer Encampment"
@@ -1579,6 +1653,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_119"
       , name = "Summer Reserves"
@@ -1600,6 +1675,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_106"
       , name = "Tommen Baratheon"
@@ -1621,6 +1697,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_105"
       , name = "Weary Swordsmen"
@@ -1642,6 +1719,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_109"
       , name = "Weathered Crew"
@@ -1663,6 +1741,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_118"
       , name = "Winter Reserves"
@@ -1684,6 +1763,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_50"
       , name = "Black Amethysts"
@@ -1705,6 +1785,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_53"
       , name = "Blood-Crazed Screamer"
@@ -1726,6 +1807,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_52"
       , name = "Driftwood Crown"
@@ -1747,6 +1829,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_47"
       , name = "Hidden Vale Pass"
@@ -1768,6 +1851,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_42"
       , name = "Imposter!"
@@ -1789,6 +1873,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_51"
       , name = "Island Smuggler"
@@ -1810,6 +1895,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_59"
       , name = "Knights of the Hollow Hill"
@@ -1821,16 +1907,17 @@ all_cards =
       , illustrator = "Christine Griffin"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "This agenda counts as 5  cards at your command.\nYou cannot place cards during the setup phase. Other cards you control do not provide a gold bonus. Your House card gains: \n+2 Income\n+2 Influence\n+2 Initiative"
+      , rules_text = Just "This agenda counts as 5  cards at your command.\nYou cannot place cards during the setup phase. Other cards you control do not provide a gold bonus. Your House card gains: \n[+2 Income]\n[+2 Influence]\n[+2 Initiative]"
       , flavor_text = Just "Card designed by 2009 A Game of Thrones Joust Champion, Greg Atkinson."
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
       , traits = [  ]
       , strength = Nothing
-      , income = Nothing
-      , initiative = Nothing
+      , income = Just 2
+      , initiative = Just 2
       , claim = Nothing
+      , influence = Just 2
       }
     , { id = "bwb_58"
       , name = "Lady Stoneheart"
@@ -1852,6 +1939,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_57"
       , name = "Lem Lemoncloak"
@@ -1873,6 +1961,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_55"
       , name = "Lost Spearman"
@@ -1894,6 +1983,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_56"
       , name = "Patience"
@@ -1915,6 +2005,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_41"
       , name = "Reek"
@@ -1936,6 +2027,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_48"
       , name = "Rise of the Mountain Clans"
@@ -1957,6 +2049,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_49"
       , name = "Ser Eldon Estermont"
@@ -1978,6 +2071,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_60"
       , name = "Stoic Resolve"
@@ -1999,6 +2093,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 6
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "bwb_44"
       , name = "The Burned Men"
@@ -2020,6 +2115,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_43"
       , name = "Timett Son of Timett"
@@ -2041,6 +2137,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_45"
       , name = "Tyrion's Enforcers"
@@ -2062,6 +2159,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_46"
       , name = "Vale Scavenger"
@@ -2083,6 +2181,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_54"
       , name = "Wedding Feast"
@@ -2104,6 +2203,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_76"
       , name = "Daenerys Targaryen"
@@ -2125,6 +2225,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_80"
       , name = "Dark Wings, Dark Words"
@@ -2146,6 +2247,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_70"
       , name = "Dorne Loyalist"
@@ -2167,6 +2269,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_64"
       , name = "Great Wyk"
@@ -2188,6 +2291,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_78"
       , name = "Harrenhal"
@@ -2209,6 +2313,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_75"
       , name = "Horselord"
@@ -2230,6 +2335,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_72"
       , name = "Hoster Tully"
@@ -2251,6 +2357,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_77"
       , name = "Khal"
@@ -2272,6 +2379,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_65"
       , name = "King of the Isles"
@@ -2293,6 +2401,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_62"
       , name = "Lyseni Captain"
@@ -2314,6 +2423,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_71"
       , name = "Prince of Dorne"
@@ -2335,6 +2445,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_61"
       , name = "Renly Baratheon"
@@ -2356,6 +2467,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_66"
       , name = "Set Sail"
@@ -2377,6 +2489,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_73"
       , name = "The Blackfish"
@@ -2389,7 +2502,7 @@ all_cards =
       , house = [ House_Stark ]
       , unique = True
       , rules_text = Just "Prized 2. Renown.\nWhile The Blackfish is attacking, each character that dies for [Military] claim gains \"prized 1.\""
-      , flavor_text = Just "\"He's not as black a fish as that.\"<br>–Ser Jaime Lannister"
+      , flavor_text = Just "\"He's not as black a fish as that.\"\n–Ser Jaime Lannister"
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Power ]
       , crest = [ Crest_War ]
@@ -2398,6 +2511,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_79"
       , name = "The Brave Companions"
@@ -2419,6 +2533,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_68"
       , name = "The Westerlands"
@@ -2440,6 +2555,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_67"
       , name = "Tyrion Lannister"
@@ -2461,6 +2577,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_74"
       , name = "Warden of the North"
@@ -2482,6 +2599,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_63"
       , name = "Warden of the South"
@@ -2503,6 +2621,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_69"
       , name = "Warden of the West"
@@ -2524,6 +2643,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_166"
       , name = "A Lannister Pays His Debts"
@@ -2545,6 +2665,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_102"
       , name = "Aegon's Blade"
@@ -2566,6 +2687,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_95"
       , name = "Aegon's Garden"
@@ -2577,16 +2699,17 @@ all_cards =
       , illustrator = "Franz Miklis"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "Limited.\n+1 Income.\n"
+      , rules_text = Just "Limited.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Dragonstone" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_85"
       , name = "Army of the Faithful"
@@ -2608,6 +2731,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_7"
       , name = "Arya Stark"
@@ -2629,6 +2753,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_87"
       , name = "Bastard of Robert"
@@ -2640,7 +2765,7 @@ all_cards =
       , illustrator = "Jim Pavelec"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "Stealth. No attachments.\n"
+      , rules_text = Just "Stealth. No attachments."
       , flavor_text = Just "What had John Arryn wanted with a king's bastard, and why was it worth his life?"
       , cost = Just 1
       , icons = [ Icon_Power ]
@@ -2650,6 +2775,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_135"
       , name = "Benjen Stark"
@@ -2671,6 +2797,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_193"
       , name = "Blockade"
@@ -2692,6 +2819,7 @@ all_cards =
       , income = Just 0
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_100"
       , name = "Blood of the Dragon"
@@ -2713,6 +2841,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_150"
       , name = "Bodyguard"
@@ -2734,6 +2863,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_104"
       , name = "Bones of a Child"
@@ -2755,6 +2885,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_13"
       , name = "Bran Stark"
@@ -2776,6 +2907,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_159"
       , name = "Bran the Builder's Legacy"
@@ -2797,6 +2929,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_76"
       , name = "Brienne of Tarth"
@@ -2808,7 +2941,7 @@ all_cards =
       , illustrator = "Chris Dien"
       , house = [ House_Baratheon ]
       , unique = True
-      , rules_text = Just "Renown. Immune to opponent's character abilities.\n"
+      , rules_text = Just "Renown. Immune to opponent's character abilities."
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military ]
@@ -2818,6 +2951,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_44"
       , name = "Bronn"
@@ -2839,6 +2973,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_118"
       , name = "Brown Ben Plumm"
@@ -2851,7 +2986,7 @@ all_cards =
       , house = [ House_Targaryen ]
       , unique = True
       , rules_text = Nothing
-      , flavor_text = Just "\"Well,\" said Brown Ben Plumm, \"there was some old Plumm in the Sunset Kingdoms who wed a dragon princess. My grandmama told me the tale. He lived in King Aegon's day.\"<br>\"Which King Aegon?\" Dany asked. \"Five Aegon's have ruled in Westeros.\""
+      , flavor_text = Just "\"Well,\" said Brown Ben Plumm, \"there was some old Plumm in the Sunset Kingdoms who wed a dragon princess. My grandmama told me the tale. He lived in King Aegon's day.\"\n\"Which King Aegon?\" Dany asked. \"Five Aegon's have ruled in Westeros.\""
       , cost = Just 0
       , icons = [ Icon_Military ]
       , crest = [  ]
@@ -2860,6 +2995,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_195"
       , name = "Building Season"
@@ -2881,6 +3017,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 1
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_164"
       , name = "Call Their Bluff"
@@ -2902,6 +3039,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_198"
       , name = "Calm Over Westeros"
@@ -2923,6 +3061,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_105"
       , name = "Captain Groleo"
@@ -2944,6 +3083,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_6"
       , name = "Catelyn Stark"
@@ -2965,6 +3105,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_39"
       , name = "Cersei Lannister"
@@ -2986,6 +3127,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_50"
       , name = "Cersei's Attendant"
@@ -3007,6 +3149,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_43"
       , name = "Chella, Daughter of Cheyk"
@@ -3028,6 +3171,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_202"
       , name = "Condemned by the Realm"
@@ -3049,6 +3193,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_203"
       , name = "Counting Favors"
@@ -3070,6 +3215,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_138"
       , name = "Crossroads"
@@ -3081,16 +3227,17 @@ all_cards =
       , illustrator = "Michael Clarke"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "+1 Income.\n+1 Influence."
+      , rules_text = Just "[+1 Income]\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Westeros" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "core_114"
       , name = "Daario Naharis"
@@ -3112,6 +3259,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_106"
       , name = "Daenerys Targaryen"
@@ -3133,6 +3281,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_173"
       , name = "Dance With Dragons"
@@ -3154,6 +3303,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_121"
       , name = "Dany's Handmaiden"
@@ -3175,6 +3325,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_80"
       , name = "Devan Seaworth"
@@ -3196,6 +3347,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_19"
       , name = "Direwolf Pup"
@@ -3207,7 +3359,7 @@ all_cards =
       , illustrator = "Patrick McEvoy"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "House Stark only. No attachments.\n"
+      , rules_text = Just "House Stark only. No attachments."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [ Icon_Military ]
@@ -3217,6 +3369,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_177"
       , name = "Distinct Mastery"
@@ -3238,6 +3391,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_155"
       , name = "Distraction"
@@ -3259,6 +3413,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_119"
       , name = "Dothraki Honor Guard"
@@ -3280,6 +3435,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_91"
       , name = "Dragonstone Port"
@@ -3301,6 +3457,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_111"
       , name = "Drogon"
@@ -3322,6 +3479,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_188"
       , name = "Drunken Allegations"
@@ -3343,6 +3501,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_127"
       , name = "Eastern Fiefdoms"
@@ -3354,7 +3513,7 @@ all_cards =
       , illustrator = "Andrew Hall"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "Limited.\nMarshalling: Kneel Eastern Fiefdoms to lower the cost of the next House Targaryen card you play this phase by 1.\n+1 Influence."
+      , rules_text = Just "Limited.\nMarshalling: Kneel Eastern Fiefdoms to lower the cost of the next House Targaryen card you play this phase by 1.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -3364,6 +3523,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "core_5"
       , name = "Eddard Stark"
@@ -3385,6 +3545,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_79"
       , name = "Edric Storm"
@@ -3406,6 +3567,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_48"
       , name = "Enemy Informer"
@@ -3427,6 +3589,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_103"
       , name = "Flame-Kissed"
@@ -3448,6 +3611,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_187"
       , name = "Fleeing to the Wall"
@@ -3469,6 +3633,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_174"
       , name = "Forever Burning"
@@ -3490,6 +3655,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_137"
       , name = "Ghost"
@@ -3511,6 +3677,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_35"
       , name = "Gilded Plate"
@@ -3532,6 +3699,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_32"
       , name = "Godswood"
@@ -3553,6 +3721,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_57"
       , name = "Golden Tooth Mines"
@@ -3574,6 +3743,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_185"
       , name = "Good for the Gander"
@@ -3595,6 +3765,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_45"
       , name = "Grand Maester Pycelle"
@@ -3616,6 +3787,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_98"
       , name = "Great Hall"
@@ -3637,6 +3809,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_29"
       , name = "Great Keep"
@@ -3648,7 +3821,7 @@ all_cards =
       , illustrator = "Eric Lofgren"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "Limited.\n"
+      , rules_text = Just "Limited."
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -3658,6 +3831,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_133"
       , name = "Great Pyramid"
@@ -3679,6 +3853,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_10"
       , name = "Greatjon Umber"
@@ -3700,6 +3875,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_14"
       , name = "Grey Wind"
@@ -3721,6 +3897,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_160"
       , name = "Guilty!"
@@ -3742,6 +3919,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_34"
       , name = "Gutter Rat's Cunning"
@@ -3763,6 +3941,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_64"
       , name = "Hall of Heroes"
@@ -3784,6 +3963,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_192"
       , name = "Hear Me Roar"
@@ -3805,6 +3985,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_208"
       , name = "Herding the Masses"
@@ -3826,6 +4007,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 0
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "core_83"
       , name = "Highgarden Honor Guard"
@@ -3847,6 +4029,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_12"
       , name = "Hodor"
@@ -3868,6 +4051,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_197"
       , name = "Holding the Trident"
@@ -3889,6 +4073,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_89"
       , name = "Host of Storm's End"
@@ -3900,7 +4085,7 @@ all_cards =
       , illustrator = "Jason Engle"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "No attachments.\n"
+      , rules_text = Just "No attachments."
       , flavor_text = Just "The horse lines stretched out over leagues. A forest had surely been felled to make the tall staffs that held the banners."
       , cost = Just 5
       , icons = [ Icon_Military, Icon_Power ]
@@ -3910,6 +4095,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_21"
       , name = "House Tully Recruiter"
@@ -3931,6 +4117,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_88"
       , name = "House Tyrell Guard"
@@ -3952,6 +4139,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_161"
       , name = "I Never Bet Against My Family"
@@ -3973,6 +4161,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_165"
       , name = "I'm You Writ Small"
@@ -3994,6 +4183,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_1"
       , name = "Ice"
@@ -4015,6 +4205,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_125"
       , name = "Illyrio's Man"
@@ -4036,6 +4227,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_163"
       , name = "Insidious Ways"
@@ -4057,6 +4249,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_117"
       , name = "Jhogo"
@@ -4078,6 +4271,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_36"
       , name = "Joffrey Baratheon"
@@ -4099,6 +4293,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_136"
       , name = "Jon Snow"
@@ -4120,6 +4315,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_20"
       , name = "Kennel Master"
@@ -4141,6 +4337,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_107"
       , name = "Khal Drogo"
@@ -4162,6 +4359,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_130"
       , name = "Khal Drogo's Tent"
@@ -4173,16 +4371,17 @@ all_cards =
       , illustrator = "Winona Nelson"
       , house = [ House_Targaryen ]
       , unique = True
-      , rules_text = Just "You may choose to play Khal Drogo's Tent as an attachment to your House card.\n+1 Income.\n+1 Influence."
+      , rules_text = Just "You may choose to play Khal Drogo's Tent as an attachment to your House card.\n[+1 Income]\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "The East" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "core_94"
       , name = "King Robert's Chambers"
@@ -4194,16 +4393,17 @@ all_cards =
       , illustrator = "Yulia Startsev"
       , house = [ House_Baratheon ]
       , unique = True
-      , rules_text = Just "You may choose to play King Robert's Chambers as an attachment to your House card.\n+1 Income.\n+1 Influence."
+      , rules_text = Just "You may choose to play King Robert's Chambers as an attachment to your House card.\n[+1 Income]\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "King's Landing" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "core_157"
       , name = "Kings in the North"
@@ -4225,6 +4425,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_147"
       , name = "Knight of Flowers"
@@ -4246,6 +4447,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_81"
       , name = "Knight of the Rainwood"
@@ -4267,6 +4469,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_18"
       , name = "Knight of the Tumblestone"
@@ -4288,6 +4491,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_15"
       , name = "Lady"
@@ -4309,6 +4513,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_180"
       , name = "Lady Daenerys's Chambers"
@@ -4330,6 +4535,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_55"
       , name = "Lannisport"
@@ -4351,6 +4557,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_56"
       , name = "Lannisport Brothel"
@@ -4372,6 +4579,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_54"
       , name = "Lannisport Honor Guard"
@@ -4393,6 +4601,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_52"
       , name = "Lannisport Steward"
@@ -4404,16 +4613,17 @@ all_cards =
       , illustrator = "Marc Simonetti"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "+2 Income"
+      , rules_text = Just "[+2 Income]"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [ Icon_Intrigue ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
-      , income = Nothing
+      , income = Just 2
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_53"
       , name = "Lannisport Weaponsmith"
@@ -4425,16 +4635,17 @@ all_cards =
       , illustrator = "Removed at Illustrators Request"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "+1 Income"
+      , rules_text = Just "[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [ Icon_Military ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_158"
       , name = "Lethal Counterattack"
@@ -4456,6 +4667,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_68"
       , name = "Lightbringer"
@@ -4477,6 +4689,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_141"
       , name = "Littlefinger"
@@ -4488,16 +4701,17 @@ all_cards =
       , illustrator = "Mark Evans"
       , house = [ House_Neutral ]
       , unique = True
-      , rules_text = Just "Stealth.\nLittlefinger gets +1 STR for each gold token in your gold pool.\n+2 Income."
+      , rules_text = Just "Stealth.\nLittlefinger gets +1 STR for each gold token in your gold pool.\n[+2 Income]"
       , flavor_text = Nothing
       , cost = Just 5
       , icons = [ Icon_Intrigue, Icon_Power ]
       , crest = [ Crest_Learned ]
       , traits = [ "Lord", "Ally" ]
       , strength = Just 3
-      , income = Nothing
+      , income = Just 2
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_28"
       , name = "Lord Eddard's Chambers"
@@ -4519,6 +4733,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_170"
       , name = "Lords of the Narrow Sea"
@@ -4540,6 +4755,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_140"
       , name = "Lordship"
@@ -4561,6 +4777,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_51"
       , name = "Lurkers at Harrenhal"
@@ -4572,7 +4789,7 @@ all_cards =
       , illustrator = "Anders Finer"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "Stealth. Deadly. No attachments.\n"
+      , rules_text = Just "Stealth. Deadly. No attachments."
       , flavor_text = Just "Arya looked at Vargo Hoat again. How many monsters does Lord Tywin have?"
       , cost = Just 6
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -4582,6 +4799,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_205"
       , name = "Mad King's Legacy"
@@ -4603,6 +4821,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_151"
       , name = "Maester Aemon"
@@ -4624,6 +4843,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_77"
       , name = "Maester Cressen"
@@ -4645,6 +4865,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_152"
       , name = "Magister Illyrio"
@@ -4666,6 +4887,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_74"
       , name = "Melisandre"
@@ -4687,6 +4909,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_145"
       , name = "Milk of the Poppy"
@@ -4708,6 +4931,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_67"
       , name = "Motley"
@@ -4729,6 +4953,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_168"
       , name = "Muster"
@@ -4750,6 +4975,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_189"
       , name = "Mutual Blackmail"
@@ -4771,6 +4997,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 1
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "core_182"
       , name = "Mutual Cause"
@@ -4792,6 +5019,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 3
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "core_196"
       , name = "Mutual Enemies"
@@ -4813,6 +5041,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 2
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "core_33"
       , name = "Narrow Sea"
@@ -4834,6 +5063,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_207"
       , name = "Noose and Swordpoint"
@@ -4855,6 +5085,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_26"
       , name = "Northern Fiefdoms"
@@ -4876,6 +5107,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_2"
       , name = "Nymeria"
@@ -4897,6 +5129,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_84"
       , name = "Old Red Priest"
@@ -4918,6 +5151,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_124"
       , name = "Pentoshi Guildmaster"
@@ -4939,6 +5173,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_190"
       , name = "Planning Ahead"
@@ -4960,6 +5195,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_101"
       , name = "Poisoned Wine"
@@ -4981,6 +5217,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_204"
       , name = "Power and Wealth"
@@ -5002,6 +5239,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_169"
       , name = "Prosperity and Plenty"
@@ -5023,6 +5261,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_123"
       , name = "Qartheen Fanatic"
@@ -5044,6 +5283,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_115"
       , name = "Quaithe of the Shadow"
@@ -5065,6 +5305,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_60"
       , name = "Queen Cersei's Chambers"
@@ -5076,16 +5317,17 @@ all_cards =
       , illustrator = "Yulia Startsev"
       , house = [ House_Lannister ]
       , unique = True
-      , rules_text = Just "You may choose to play Queen Cersei's Chambers as an attachment to your House card.\n+1 Income.\n+1 Influence."
+      , rules_text = Just "You may choose to play Queen Cersei's Chambers as an attachment to your House card.\n[+1 Income]\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "King's Landing" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "core_49"
       , name = "Qyburn's Informers"
@@ -5107,6 +5349,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_46"
       , name = "Raff the Sweetling"
@@ -5128,6 +5371,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_184"
       , name = "Rains of Autumn"
@@ -5149,6 +5393,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_73"
       , name = "Renly Baratheon"
@@ -5170,6 +5415,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_86"
       , name = "Renly's Courtier"
@@ -5191,6 +5437,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_171"
       , name = "Retreat"
@@ -5212,6 +5459,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_109"
       , name = "Rhaegal"
@@ -5233,6 +5481,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_8"
       , name = "Robb Stark"
@@ -5254,6 +5503,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_71"
       , name = "Robert Baratheon"
@@ -5275,6 +5525,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_206"
       , name = "Rule by Decree"
@@ -5296,6 +5547,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_9"
       , name = "Sansa Stark"
@@ -5317,6 +5569,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_175"
       , name = "Seductive Promise"
@@ -5338,6 +5591,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_70"
       , name = "Selyse Baratheon"
@@ -5359,6 +5613,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_78"
       , name = "Ser Axel Florent"
@@ -5380,6 +5635,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_146"
       , name = "Ser Barristan Selmy"
@@ -5401,6 +5657,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_75"
       , name = "Ser Davos Seaworth"
@@ -5422,6 +5679,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_41"
       , name = "Ser Ilyn Payne"
@@ -5443,6 +5701,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_47"
       , name = "Ser Jacelyn Bywater"
@@ -5464,6 +5723,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_37"
       , name = "Ser Jaime Lannister"
@@ -5485,6 +5745,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_4"
       , name = "Ser Rodrik Cassel"
@@ -5506,6 +5767,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_66"
       , name = "Shadow's Blessing"
@@ -5527,6 +5789,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_144"
       , name = "Shadowblack Lane"
@@ -5548,6 +5811,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_178"
       , name = "Shae"
@@ -5569,6 +5833,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_11"
       , name = "Shaggydog"
@@ -5590,6 +5855,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_199"
       , name = "Snowed Under"
@@ -5611,6 +5877,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_72"
       , name = "Stannis Baratheon"
@@ -5632,6 +5899,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_82"
       , name = "Stannis's Northern Cavalry"
@@ -5653,6 +5921,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_69"
       , name = "Stinking Drunk"
@@ -5674,6 +5943,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_92"
       , name = "Stormlands Fiefdoms"
@@ -5685,7 +5955,7 @@ all_cards =
       , illustrator = "Andrew Hall"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "Limited.\nMarshalling: Kneel Stormlands Fiefdoms to lower the cost of the next House Baratheon card you play this phase by 1.\n+1 Influence"
+      , rules_text = Just "Limited.\nMarshalling: Kneel Stormlands Fiefdoms to lower the cost of the next House Baratheon card you play this phase by 1.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -5695,6 +5965,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "core_149"
       , name = "Street of Sisters"
@@ -5716,6 +5987,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_139"
       , name = "Street of Steel"
@@ -5737,6 +6009,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_113"
       , name = "Strong Belwas"
@@ -5758,6 +6031,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_3"
       , name = "Summer"
@@ -5779,6 +6053,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_134"
       , name = "Summer Sea"
@@ -5790,7 +6065,7 @@ all_cards =
       , illustrator = "Trevor Cook"
       , house = [ House_Targaryen, House_Martell ]
       , unique = False
-      , rules_text = Just "Marshalling: Discard Summer Sea from play to reduce the cost of the next House Targaryen or House Martell character you play this phase by 2.\n+1 Influence."
+      , rules_text = Just "Marshalling: Discard Summer Sea from play to reduce the cost of the next House Targaryen or House Martell character you play this phase by 2.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -5800,6 +6075,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "core_181"
       , name = "Summoning Season"
@@ -5821,6 +6097,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_65"
       , name = "Sunset Sea"
@@ -5832,7 +6109,7 @@ all_cards =
       , illustrator = "Trevor Cook"
       , house = [ House_Lannister, House_Greyjoy ]
       , unique = False
-      , rules_text = Just "Marshalling: Discard Sunset Sea from play to reduce the cost of the next House Lannister or House Greyjoy character you play this phase by 2.\n+1 Influence."
+      , rules_text = Just "Marshalling: Discard Sunset Sea from play to reduce the cost of the next House Lannister or House Greyjoy character you play this phase by 2.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -5842,6 +6119,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "core_172"
       , name = "Support of the Kingdom"
@@ -5863,6 +6141,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_131"
       , name = "Temple of the Graces"
@@ -5874,16 +6153,17 @@ all_cards =
       , illustrator = "Martina Pilcerova"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "Limited.\n+1 Income."
+      , rules_text = Just "Limited.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Free Cities" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_61"
       , name = "The Goldroad"
@@ -5895,16 +6175,17 @@ all_cards =
       , illustrator = "Eric Lofgren"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "Limited.\n+1 Income.\n"
+      , rules_text = Just "Limited.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Westeros" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_42"
       , name = "The Hound"
@@ -5926,6 +6207,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_162"
       , name = "The Lion's Will"
@@ -5947,6 +6229,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_200"
       , name = "The Power of Arms"
@@ -5968,6 +6251,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 1
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "core_194"
       , name = "The Power of Blood"
@@ -5989,6 +6273,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_120"
       , name = "The Titan's Bastard"
@@ -6010,6 +6295,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_186"
       , name = "Tourney for the Hand"
@@ -6031,6 +6317,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 6
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_22"
       , name = "Trident Reinforcements"
@@ -6052,6 +6339,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_38"
       , name = "Tyrion Lannister"
@@ -6073,6 +6361,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_40"
       , name = "Tywin Lannister"
@@ -6094,6 +6383,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_183"
       , name = "Uneasy Truce"
@@ -6115,6 +6405,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_201"
       , name = "Valar Morghulis"
@@ -6136,6 +6427,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 0
       , claim = Just 0
+      , influence = Nothing
       }
     , { id = "core_142"
       , name = "Varys"
@@ -6157,6 +6449,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_112"
       , name = "Viserion"
@@ -6178,6 +6471,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_108"
       , name = "Viserys Targaryen"
@@ -6199,6 +6493,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_16"
       , name = "War Host of the North"
@@ -6210,7 +6505,7 @@ all_cards =
       , illustrator = "Daerick Gross Sr."
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "No attachments.\n"
+      , rules_text = Just "No attachments."
       , flavor_text = Just "Robb rode at the front of the column, beneath the flapping white banner of Winterfell. Each day he would ask one of his lords to join him, so they might confer as they marched..."
       , cost = Just 7
       , icons = [ Icon_Military ]
@@ -6220,6 +6515,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_122"
       , name = "Warlock's Servitors"
@@ -6231,7 +6527,7 @@ all_cards =
       , illustrator = "John Moriarty"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "Deadly. Immune to character abilities.\n"
+      , rules_text = Just "Deadly. Immune to character abilities."
       , flavor_text = Nothing
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Power ]
@@ -6241,6 +6537,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_58"
       , name = "Western Fiefdoms"
@@ -6262,6 +6559,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_176"
       , name = "Westeros Bleeds"
@@ -6283,6 +6581,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_191"
       , name = "Wildfire Assault"
@@ -6304,6 +6603,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "core_156"
       , name = "Winter is Coming"
@@ -6325,6 +6625,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_25"
       , name = "Winterfell Castle"
@@ -6346,6 +6647,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_17"
       , name = "Winterfell Honor Guard"
@@ -6367,6 +6669,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_24"
       , name = "Winterfell Kennels"
@@ -6388,6 +6691,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_23"
       , name = "Winterfell Reserves"
@@ -6409,6 +6713,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_116"
       , name = "Xaro Xoan Daxos"
@@ -6430,6 +6735,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_126"
       , name = "Xaro's Home"
@@ -6451,6 +6757,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "core_167"
       , name = "You've Killed the Wrong Dwarf!"
@@ -6472,6 +6779,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_12"
       , name = "A Gentle Prison"
@@ -6493,6 +6801,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_8"
       , name = "Ahead of the Tide"
@@ -6514,6 +6823,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_15"
       , name = "Castle Black"
@@ -6535,6 +6845,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_17"
       , name = "Craster"
@@ -6556,6 +6867,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_7"
       , name = "Drowned Fanatic"
@@ -6577,6 +6889,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_3"
       , name = "Janos Slynt"
@@ -6598,6 +6911,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_9"
       , name = "Khal Drogo"
@@ -6619,6 +6933,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_5"
       , name = "Loyal Guard"
@@ -6640,6 +6955,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_11"
       , name = "Palace Spy"
@@ -6661,6 +6977,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_4"
       , name = "Pickpocket"
@@ -6682,6 +6999,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_13"
       , name = "Ranger of the Watch"
@@ -6703,6 +7021,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_6"
       , name = "Seat of Power"
@@ -6724,6 +7043,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_14"
       , name = "Septon Cellador"
@@ -6745,6 +7065,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_16"
       , name = "Skinchanger"
@@ -6766,6 +7087,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_10"
       , name = "The Dragon's Blood"
@@ -6787,6 +7109,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_19"
       , name = "The Rangers"
@@ -6808,6 +7131,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_18"
       , name = "Wildling Mead"
@@ -6829,6 +7153,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_2"
       , name = "Winter Cache"
@@ -6850,6 +7175,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_20"
       , name = "Winter Festival"
@@ -6871,6 +7197,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "dotn_1"
       , name = "Wolves of the North"
@@ -6892,6 +7219,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_6"
       , name = "Aeron Damphair"
@@ -6913,6 +7241,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_24"
       , name = "Aeron's Chambers"
@@ -6924,16 +7253,17 @@ all_cards =
       , illustrator = "Laurel Austin"
       , house = [ House_Greyjoy ]
       , unique = True
-      , rules_text = Just "You may choose to play Aeron's Chambers as an attachment to your House card.\n+1 Income.\n+1 Influence."
+      , rules_text = Just "You may choose to play Aeron's Chambers as an attachment to your House card.\n[+1 Income]\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Iron Islands" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "kotse_48"
       , name = "After the Mummer's Ford"
@@ -6955,6 +7285,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kotse_53"
       , name = "An Empty Throne"
@@ -6976,6 +7307,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kotse_2"
       , name = "Asha Greyjoy"
@@ -6997,6 +7329,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_17"
       , name = "Assault of the Kraken"
@@ -7018,6 +7351,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_41"
       , name = "Assertion of Might"
@@ -7039,6 +7373,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_1"
       , name = "Balon Greyjoy"
@@ -7060,6 +7395,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_30"
       , name = "Bay of Ice"
@@ -7071,7 +7407,7 @@ all_cards =
       , illustrator = "Kevin Childress"
       , house = [ House_Stark, House_Lannister, House_Baratheon, House_Targaryen, House_Martell, House_Greyjoy ]
       , unique = False
-      , rules_text = Just "After a player wins initiative, that player kneels all cards named Bay of Ice, then draws a card.\n+1 Initiative."
+      , rules_text = Just "After a player wins initiative, that player kneels all cards named Bay of Ice, then draws a card.\n[+1 Initiative]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -7079,8 +7415,9 @@ all_cards =
       , traits = [ "Kingdom" ]
       , strength = Nothing
       , income = Nothing
-      , initiative = Nothing
+      , initiative = Just 1
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_26"
       , name = "Bloody Keep"
@@ -7102,6 +7439,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_39"
       , name = "Confession"
@@ -7123,6 +7461,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_14"
       , name = "Dagmer Cleftjaw"
@@ -7144,6 +7483,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_13"
       , name = "Drowned Disciple"
@@ -7165,6 +7505,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_12"
       , name = "Drumbeater"
@@ -7186,6 +7527,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_4"
       , name = "Euron Crow's Eye"
@@ -7198,7 +7540,7 @@ all_cards =
       , house = [ House_Greyjoy ]
       , unique = True
       , rules_text = Just "Immune to events.\nWhile Euron Crow's Eye is standing, House Greyjoy characters you control gain stealth."
-      , flavor_text = Just "Only one living kraken has never known defeat.<br>Only one has never bent his knee."
+      , flavor_text = Just "Only one living kraken has never known defeat.\nOnly one has never bent his knee."
       , cost = Just 5
       , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
       , crest = [  ]
@@ -7207,6 +7549,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_31"
       , name = "Gatehouse"
@@ -7218,16 +7561,17 @@ all_cards =
       , illustrator = "Martina Pilcerova"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "Limited.\n+1 Income."
+      , rules_text = Just "Limited.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Iron Islands" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_47"
       , name = "Godswood Attendant"
@@ -7249,6 +7593,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_23"
       , name = "Iron Island Fiefdoms"
@@ -7260,7 +7605,7 @@ all_cards =
       , illustrator = "Andrew Hall"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "Limited.\nMarshalling: Kneel Iron Island Fiefdoms to lower the cost of the next House Greyjoy card you play this phase by 1.\n+1 Influence."
+      , rules_text = Just "Limited.\nMarshalling: Kneel Iron Island Fiefdoms to lower the cost of the next House Greyjoy card you play this phase by 1.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -7270,6 +7615,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "kotse_46"
       , name = "Jack of all Trades"
@@ -7291,6 +7637,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_34"
       , name = "Joffrey Baratheon"
@@ -7312,6 +7659,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_32"
       , name = "Kingdom of Shadows"
@@ -7323,16 +7671,17 @@ all_cards =
       , illustrator = "Andrew Navaro"
       , house = [ House_Stark, House_Lannister, House_Baratheon, House_Targaryen, House_Martell, House_Greyjoy ]
       , unique = False
-      , rules_text = Just "After a player wins an Intrigue challenge, that player kneels all copies of Kingdom of Shadows to choose and stand a card with the S crest.\n+1 Income."
+      , rules_text = Just "After a player wins an Intrigue challenge, that player kneels all copies of Kingdom of Shadows to choose and stand a card with the S crest.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Kingdom" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_18"
       , name = "Kingsmoot"
@@ -7354,6 +7703,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_28"
       , name = "Longship Iron Victory"
@@ -7375,6 +7725,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_7"
       , name = "Maester Wendamyr"
@@ -7396,6 +7747,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_37"
       , name = "Myrcella Lannister"
@@ -7417,6 +7769,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_11"
       , name = "Priest of the Drowned God"
@@ -7438,6 +7791,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_45"
       , name = "Randyl Tarly"
@@ -7459,6 +7813,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_54"
       , name = "Rise of the Kraken"
@@ -7480,6 +7835,7 @@ all_cards =
       , income = Just 1
       , initiative = Just 8
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "kotse_20"
       , name = "Risen from the Sea"
@@ -7501,6 +7857,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_33"
       , name = "Robb Stark"
@@ -7522,6 +7879,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_35"
       , name = "Robert Baratheon"
@@ -7543,6 +7901,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_29"
       , name = "Scouting Vessel"
@@ -7564,6 +7923,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_16"
       , name = "Scurvy Cutthroat"
@@ -7585,6 +7945,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_9"
       , name = "Sea Raiders"
@@ -7596,7 +7957,7 @@ all_cards =
       , illustrator = "Thomas Gianni"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "Limited. No attachments.\n"
+      , rules_text = Just "Limited. No attachments."
       , flavor_text = Just "\"You are to harry the Stony Shore, raiding the fishing villages and sinking any ships you chance to meet.\" - Lord Balon Greyjoy"
       , cost = Just 2
       , icons = [ Icon_Military, Icon_Power ]
@@ -7606,6 +7967,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_40"
       , name = "Seafarer's Bow"
@@ -7627,6 +7989,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_19"
       , name = "Seasick"
@@ -7648,6 +8011,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_43"
       , name = "Shadowcat"
@@ -7659,7 +8023,7 @@ all_cards =
       , illustrator = "Patrick Keith"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "Stealth. No attachments.\n"
+      , rules_text = Just "Stealth. No attachments."
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [ Icon_Military ]
@@ -7669,6 +8033,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_42"
       , name = "Shivering Sea"
@@ -7690,6 +8055,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_49"
       , name = "Siege of Riverrun"
@@ -7711,6 +8077,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 4
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "kotse_44"
       , name = "Silent Sisters"
@@ -7732,6 +8099,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_52"
       , name = "Stay of Execution"
@@ -7753,6 +8121,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kotse_10"
       , name = "Stowaway"
@@ -7774,6 +8143,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_25"
       , name = "Sunset Sea"
@@ -7785,7 +8155,7 @@ all_cards =
       , illustrator = "Trevor Cook"
       , house = [ House_Lannister, House_Greyjoy ]
       , unique = False
-      , rules_text = Just "Marshalling: Discard Sunset Sea from play to reduce the cost of the next House Lannister or House Greyjoy character you play this phase by 2.\n+1 Influence."
+      , rules_text = Just "Marshalling: Discard Sunset Sea from play to reduce the cost of the next House Lannister or House Greyjoy character you play this phase by 2.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -7795,6 +8165,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "kotse_21"
       , name = "Support of Harlaw"
@@ -7816,6 +8187,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_15"
       , name = "Ten Towers Honor Guard"
@@ -7837,6 +8209,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_50"
       , name = "The Breaking of Oaths"
@@ -7858,6 +8231,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kotse_27"
       , name = "The Iron Mines"
@@ -7879,6 +8253,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_38"
       , name = "The Price of War"
@@ -7900,6 +8275,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_51"
       , name = "The Promise of Victory"
@@ -7921,6 +8297,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kotse_3"
       , name = "Theon Greyjoy"
@@ -7942,6 +8319,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_22"
       , name = "Veteran Marauder"
@@ -7963,6 +8341,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_5"
       , name = "Victarion Greyjoy"
@@ -7984,6 +8363,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_36"
       , name = "Viserys Targaryen"
@@ -8005,6 +8385,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotse_8"
       , name = "Wex Pyke"
@@ -8026,6 +8407,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_22"
       , name = "Accepted Destiny"
@@ -8047,6 +8429,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_52"
       , name = "Assault on King's Landing"
@@ -8068,6 +8451,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kotst_14"
       , name = "Asshai Initiate"
@@ -8089,6 +8473,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_19"
       , name = "Bastard in Hiding"
@@ -8110,6 +8495,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_13"
       , name = "Bearer of the Light"
@@ -8131,6 +8517,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_35"
       , name = "Bound by Blood"
@@ -8152,6 +8539,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_23"
       , name = "Crown of Azor Ahai"
@@ -8173,6 +8561,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_37"
       , name = "Dark Prophecy"
@@ -8194,6 +8583,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_36"
       , name = "Direct Assault"
@@ -8215,6 +8605,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_42"
       , name = "Fanatical Follower"
@@ -8236,6 +8627,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_54"
       , name = "Feast or Famine"
@@ -8257,6 +8649,7 @@ all_cards =
       , income = Just 0
       , initiative = Just 5
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "kotst_50"
       , name = "Forgotten Plans"
@@ -8278,6 +8671,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kotst_27"
       , name = "Great Hall"
@@ -8299,6 +8693,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_34"
       , name = "Heart of the Stag"
@@ -8320,6 +8715,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_40"
       , name = "Hedge Knight"
@@ -8341,6 +8737,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_20"
       , name = "Herald of Storm's End"
@@ -8352,7 +8749,7 @@ all_cards =
       , illustrator = "Patrick McEvoy"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "House Baratheon only. \n"
+      , rules_text = Just "House Baratheon only. "
       , flavor_text = Just "\"Maester, perhaps you ought to get to your writing. We will need a great many letters, and soon.\" - Ser Davos Seaworth"
       , cost = Just 0
       , icons = [ Icon_Power ]
@@ -8362,6 +8759,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_26"
       , name = "King Robert's Chambers"
@@ -8373,16 +8771,17 @@ all_cards =
       , illustrator = "Yulia Startsev"
       , house = [ House_Baratheon ]
       , unique = True
-      , rules_text = Just "You may choose to play King Robert's Chambers as an attachment to your House card.\n+1 Income.\n+1 Influence."
+      , rules_text = Just "You may choose to play King Robert's Chambers as an attachment to your House card.\n[+1 Income]\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "King's Landing" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "kotst_46"
       , name = "King's Pavillion"
@@ -8404,6 +8803,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_43"
       , name = "Knighted"
@@ -8425,6 +8825,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_39"
       , name = "Knights of the Realm"
@@ -8446,6 +8847,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_15"
       , name = "Knights of the Storm"
@@ -8467,6 +8869,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_55"
       , name = "Lineage and Legacy"
@@ -8488,6 +8891,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kotst_17"
       , name = "Lost Captain"
@@ -8509,6 +8913,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_9"
       , name = "Maester Pylos"
@@ -8530,6 +8935,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_10"
       , name = "Marya Seaworth"
@@ -8551,6 +8957,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_48"
       , name = "Narrow Escape"
@@ -8572,6 +8979,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_29"
       , name = "Narrow Sea"
@@ -8583,7 +8991,7 @@ all_cards =
       , illustrator = "Trevor Cook"
       , house = [ House_Stark, House_Baratheon ]
       , unique = False
-      , rules_text = Just "Marshalling: Discard Narrow Sea from play to reduce the cost of the next House Stark or House Baratheon character you play this phase by 2.\n+1 Influence."
+      , rules_text = Just "Marshalling: Discard Narrow Sea from play to reduce the cost of the next House Stark or House Baratheon character you play this phase by 2.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -8593,6 +9001,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "kotst_33"
       , name = "Obey the King"
@@ -8614,6 +9023,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_30"
       , name = "Pyre of the False Gods"
@@ -8635,6 +9045,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_53"
       , name = "Regroup"
@@ -8656,6 +9067,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 2
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "kotst_2"
       , name = "Renly Baratheon"
@@ -8677,6 +9089,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_1"
       , name = "Robert Baratheon"
@@ -8698,6 +9111,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_21"
       , name = "Ruby of R'hllor"
@@ -8719,6 +9133,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_25"
       , name = "Salla's Escort Ship"
@@ -8740,6 +9155,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_7"
       , name = "Salladhor Saan"
@@ -8761,6 +9177,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_38"
       , name = "See who is Stronger"
@@ -8782,6 +9199,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_8"
       , name = "Ser Cortnay Penrose"
@@ -8794,7 +9212,7 @@ all_cards =
       , house = [ House_Baratheon ]
       , unique = True
       , rules_text = Just "During Power challenges, Ser Cortnay Penrose gets +2 STR and gains vigilant."
-      , flavor_text = Just "\"What do you make of this Ser Cortnay Penrose?\"<br>\"A stubborn man,\" said Davos carefully."
+      , flavor_text = Just "\"What do you make of this Ser Cortnay Penrose?\"\n\"A stubborn man,\" said Davos carefully."
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
       , crest = [  ]
@@ -8803,6 +9221,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_4"
       , name = "Ser Emmon Cuy"
@@ -8824,6 +9243,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_5"
       , name = "Ser Guyard Morrigen"
@@ -8845,6 +9265,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_6"
       , name = "Ser Parmen Crane"
@@ -8866,6 +9287,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_41"
       , name = "Ser Preston Greenfield"
@@ -8887,6 +9309,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_12"
       , name = "Sister of Truth"
@@ -8908,6 +9331,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_31"
       , name = "Smuggler's Cove"
@@ -8929,6 +9353,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_3"
       , name = "Stannis Baratheon"
@@ -8950,6 +9375,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_16"
       , name = "Stannis's Cavalry"
@@ -8971,6 +9397,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_32"
       , name = "Storm's End"
@@ -8992,6 +9419,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_28"
       , name = "Stormlands Fiefdoms"
@@ -9003,7 +9431,7 @@ all_cards =
       , illustrator = "Andrew Hall"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "Limited.\nMarshalling: Kneel Stormlands Fiefdoms to lower the cost of the next House Baratheon card you play this phase by 1.\n+1 Influence."
+      , rules_text = Just "Limited.\nMarshalling: Kneel Stormlands Fiefdoms to lower the cost of the next House Baratheon card you play this phase by 1.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -9013,6 +9441,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "kotst_47"
       , name = "Superior Claim"
@@ -9034,6 +9463,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_49"
       , name = "The King's Law"
@@ -9055,6 +9485,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 9
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kotst_51"
       , name = "The Power of Faith"
@@ -9076,6 +9507,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 6
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kotst_44"
       , name = "The Roseroad"
@@ -9087,16 +9519,17 @@ all_cards =
       , illustrator = "Eric Lofgren"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "Limited.\n+1 Income.\n"
+      , rules_text = Just "Limited.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Westeros" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_45"
       , name = "The Searoad"
@@ -9108,16 +9541,17 @@ all_cards =
       , illustrator = "Eric Lofgren"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "Limited.\n+1 Income.\n"
+      , rules_text = Just "Limited.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Westeros" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_24"
       , name = "The Stormlands"
@@ -9139,6 +9573,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kotst_18"
       , name = "Vanguard Lancer"
@@ -9150,7 +9585,7 @@ all_cards =
       , illustrator = "Emrah Elmasil"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "+1 Initiative.\n+1 Influence."
+      , rules_text = Just "[+1 Initiative]\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [ Icon_Military, Icon_Power ]
@@ -9158,8 +9593,9 @@ all_cards =
       , traits = [ "Knight", "House Florent" ]
       , strength = Just 2
       , income = Nothing
-      , initiative = Nothing
+      , initiative = Just 1
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "kotst_11"
       , name = "Veteran Knight"
@@ -9181,6 +9617,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_47"
       , name = "Arianne Martell"
@@ -9202,6 +9639,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_43"
       , name = "Greydon Goodbrother"
@@ -9223,6 +9661,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_52"
       , name = "Harpy's Scourge"
@@ -9244,6 +9683,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_44"
       , name = "Longship Grey Ghost"
@@ -9265,6 +9705,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_42"
       , name = "Melisandre"
@@ -9286,6 +9727,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_50"
       , name = "Moat Cailin"
@@ -9307,6 +9749,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_60"
       , name = "On My Oath"
@@ -9328,6 +9771,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 7
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kr_48"
       , name = "Palestone Sword Guard"
@@ -9349,6 +9793,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_58"
       , name = "Ser Arys Oakheart"
@@ -9370,6 +9815,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_53"
       , name = "Ser Barristan Selmy"
@@ -9391,6 +9837,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_59"
       , name = "Ser Boros Blount"
@@ -9412,6 +9859,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_54"
       , name = "Ser Jaime Lannister"
@@ -9433,6 +9881,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_51"
       , name = "Ser Jorah Mormont"
@@ -9454,6 +9903,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_56"
       , name = "Ser Mandon Moore"
@@ -9475,6 +9925,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_55"
       , name = "Ser Meryn Trant"
@@ -9496,6 +9947,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_57"
       , name = "Ser Preston Greenfield"
@@ -9517,6 +9969,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_41"
       , name = "Shadow Killer"
@@ -9538,6 +9991,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_46"
       , name = "The Hound"
@@ -9559,6 +10013,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_45"
       , name = "Tywin Lannister"
@@ -9580,6 +10035,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_49"
       , name = "Umber Champion"
@@ -9601,6 +10057,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_50"
       , name = "All the Gold in Casterly Rock"
@@ -9622,6 +10079,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "lotr_44"
       , name = "Arrogant Contender"
@@ -9643,6 +10101,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_39"
       , name = "Bastard"
@@ -9664,6 +10123,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_51"
       , name = "Breaking and Entering"
@@ -9685,6 +10145,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 4
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "lotr_80"
       , name = "Bronn"
@@ -9706,6 +10167,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_17"
       , name = "Bronn's Hireling"
@@ -9727,6 +10189,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_43"
       , name = "Brothel Guard"
@@ -9748,6 +10211,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_24"
       , name = "Casterly Rock"
@@ -9769,6 +10233,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_6"
       , name = "Cersei Lannister"
@@ -9790,6 +10255,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_27"
       , name = "Coin Mint"
@@ -9811,6 +10277,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_19"
       , name = "Crawn Son of Calor"
@@ -9832,6 +10299,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_28"
       , name = "Darkened Hallways"
@@ -9853,6 +10321,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_34"
       , name = "Double Bluff"
@@ -9874,6 +10343,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_15"
       , name = "Doubting Septa"
@@ -9895,6 +10365,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_54"
       , name = "Edict of the Rock"
@@ -9916,6 +10387,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 2
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "lotr_38"
       , name = "Feuding Clanswoman"
@@ -9935,8 +10407,9 @@ all_cards =
       , traits = [ "Clansman" ]
       , strength = Just 1
       , income = Nothing
-      , initiative = Nothing
+      , initiative = Just 2
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_49"
       , name = "Frey Hospitality"
@@ -9958,6 +10431,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 6
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "lotr_53"
       , name = "Game of Thrones"
@@ -9979,6 +10453,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "lotr_37"
       , name = "High Septon"
@@ -10000,6 +10475,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_3"
       , name = "Increased Levy"
@@ -10011,16 +10487,17 @@ all_cards =
       , illustrator = "Thomas Denmark"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "Setup. Attach to a location you control.\n[+1 Gold]"
+      , rules_text = Just "Setup. Attach to a location you control.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Condition" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_35"
       , name = "Infamous!"
@@ -10042,6 +10519,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_4"
       , name = "Joffrey Baratheon"
@@ -10063,6 +10541,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_22"
       , name = "Lannisport Moneylender"
@@ -10074,16 +10553,17 @@ all_cards =
       , illustrator = "Patrick Keith"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "[+1 Gold]"
+      , rules_text = Just "[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [ Icon_Intrigue ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_30"
       , name = "Lannisport Treasury"
@@ -10095,16 +10575,17 @@ all_cards =
       , illustrator = "Franz Miklis"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "Limited.\n[+2 Gold]"
+      , rules_text = Just "Limited.\n[+2 Income]"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Lannisport" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 2
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_16"
       , name = "Lord Tyrion's Host"
@@ -10126,6 +10607,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_13"
       , name = "Myrcella Lannister"
@@ -10147,6 +10629,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_26"
       , name = "Queen Cersei's Chambers"
@@ -10158,16 +10641,17 @@ all_cards =
       , illustrator = "Yulia Startsev"
       , house = [ House_Lannister ]
       , unique = True
-      , rules_text = Just "You may choose to play Queen Cersei's Chambers as an attachment to your House card.\n[+1 Gold] [+1 Influence]"
+      , rules_text = Just "You may choose to play Queen Cersei's Chambers as an attachment to your House card.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "King's Landing" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_47"
       , name = "Rich Lands and a Keep"
@@ -10189,6 +10673,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_14"
       , name = "Ser Addam Marbrand"
@@ -10210,6 +10695,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_11"
       , name = "Ser Amory Lorch"
@@ -10231,6 +10717,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_21"
       , name = "Ser Amory's Poachers"
@@ -10252,6 +10739,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_10"
       , name = "Ser Gregor Clegane"
@@ -10273,6 +10761,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_18"
       , name = "Ser Gregor's Band"
@@ -10294,6 +10783,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_5"
       , name = "Ser Jaime Lannister"
@@ -10315,6 +10805,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_12"
       , name = "Ser Kevan Lannister"
@@ -10336,6 +10827,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_55"
       , name = "Shadows and Spiders"
@@ -10357,6 +10849,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "lotr_46"
       , name = "Shield Islands Dromon"
@@ -10378,6 +10871,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_45"
       , name = "Split Loyalties"
@@ -10390,7 +10884,7 @@ all_cards =
       , house = [ House_Stark, House_Lannister ]
       , unique = False
       , rules_text = Just "House Stark or House Lannister only.\nDominance: Kneel 1 influence to choose 2 unique characters in 2 different discard piles, and put them into play, under their owners' control."
-      , flavor_text = Just "\"Lannister enmity means little to Bolton.\"<br>\"Lannister friendship could mean much.\""
+      , flavor_text = Just "\"Lannister enmity means little to Bolton.\"\n\"Lannister friendship could mean much.\""
       , cost = Nothing
       , icons = [  ]
       , crest = [  ]
@@ -10399,6 +10893,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_40"
       , name = "Street of Silk"
@@ -10420,6 +10915,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_25"
       , name = "Sunset Sea"
@@ -10441,6 +10937,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "lotr_42"
       , name = "Terminal Schemes"
@@ -10462,6 +10959,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_52"
       , name = "The Art of Seduction"
@@ -10483,6 +10981,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 2
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "lotr_29"
       , name = "The Goldroad"
@@ -10494,16 +10993,17 @@ all_cards =
       , illustrator = "Eric Lofgren"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "Limited.\n[+1 Gold]"
+      , rules_text = Just "Limited.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Westeros" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_23"
       , name = "The Inn at the Crossroads"
@@ -10525,6 +11025,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_31"
       , name = "The Iron Throne"
@@ -10546,6 +11047,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_32"
       , name = "The Lion's Cunning"
@@ -10567,6 +11069,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_41"
       , name = "The Only Game that Matters"
@@ -10588,6 +11091,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_48"
       , name = "The Power Behind the Throne"
@@ -10609,6 +11113,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_33"
       , name = "The Wealth of the Rock"
@@ -10630,6 +11135,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_20"
       , name = "Tribes of the Vale"
@@ -10651,6 +11157,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_7"
       , name = "Tyrion Lannister"
@@ -10672,6 +11179,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_9"
       , name = "Tywin Lannister"
@@ -10693,6 +11201,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_2"
       , name = "Vat of Wildfire"
@@ -10714,6 +11223,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_36"
       , name = "Warrior's Sons"
@@ -10735,6 +11245,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "lotr_1"
       , name = "Widow's Wail"
@@ -10756,6 +11267,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_38"
       , name = "At Night They Howl"
@@ -10777,6 +11289,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_43"
       , name = "Bowl of Brown"
@@ -10789,7 +11302,7 @@ all_cards =
       , house = [ House_Neutral ]
       , unique = False
       , rules_text = Just "Attached character cannot trigger its abilities and cannot kneel to pay for effects."
-      , flavor_text = Just "\"There's a pot shop I know in Flea Bottom, makes a savory bowl of brown. All kinds of meat in it, I hear.\"<br>\"Make sure I never eat there.\""
+      , flavor_text = Just "\"There's a pot shop I know in Flea Bottom, makes a savory bowl of brown. All kinds of meat in it, I hear.\"\n\"Make sure I never eat there.\""
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
@@ -10798,6 +11311,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_10"
       , name = "Bran Stark"
@@ -10819,6 +11333,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_51"
       , name = "Calm Before the Storm"
@@ -10840,6 +11355,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 2
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "low_7"
       , name = "Catelyn Stark"
@@ -10861,6 +11377,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_1"
       , name = "Crown of Winter"
@@ -10882,6 +11399,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_11"
       , name = "Deepwood Mercenary"
@@ -10903,6 +11421,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_47"
       , name = "Die by the Sword"
@@ -10924,6 +11443,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_6"
       , name = "Eddard Stark"
@@ -10945,6 +11465,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_19"
       , name = "Edmure's Host"
@@ -10966,6 +11487,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_37"
       , name = "Endless Endurance"
@@ -10987,6 +11509,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_54"
       , name = "Family, Duty, Honor"
@@ -11008,6 +11531,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "low_36"
       , name = "Fear Cuts Deeper than Swords"
@@ -11020,7 +11544,7 @@ all_cards =
       , house = [ House_Neutral ]
       , unique = False
       , rules_text = Just "Response: Cancel the effects of an event card just played if one of your House Stark characters is chosen as the only target."
-      , flavor_text = Just "Bran thought about it. \"Can a man be brave if he's afraid?\"<br>\"That is the only time a man can be brave,\" his father told him."
+      , flavor_text = Just "Bran thought about it. \"Can a man be brave if he's afraid?\"\n\"That is the only time a man can be brave,\" his father told him."
       , cost = Nothing
       , icons = [  ]
       , crest = [  ]
@@ -11029,6 +11553,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_50"
       , name = "Fortified Position"
@@ -11050,6 +11575,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "low_26"
       , name = "Frozen Outpost"
@@ -11071,6 +11597,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_4"
       , name = "Frozen Solid"
@@ -11092,6 +11619,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_29"
       , name = "Godswood"
@@ -11113,6 +11641,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_30"
       , name = "Great Keep"
@@ -11124,16 +11653,17 @@ all_cards =
       , illustrator = "Eric Lofgren"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "Limited.\n+1 Income.\n"
+      , rules_text = Just "Limited.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Winterfell", "Stronghold" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_2"
       , name = "Grey Wind"
@@ -11155,6 +11685,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_18"
       , name = "Guard at Riverrun"
@@ -11176,6 +11707,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_15"
       , name = "Host of the Bear"
@@ -11197,6 +11729,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_21"
       , name = "Hoster Tully"
@@ -11218,6 +11751,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_12"
       , name = "House Tully Septon"
@@ -11239,6 +11773,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_5"
       , name = "Jojen Reed"
@@ -11260,6 +11795,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_16"
       , name = "King Robb's Companions"
@@ -11281,6 +11817,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_17"
       , name = "Knight of the Red Fork"
@@ -11302,6 +11839,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_28"
       , name = "Lord Eddard's Chambers"
@@ -11313,16 +11851,17 @@ all_cards =
       , illustrator = "Yulia Startsev"
       , house = [ House_Stark ]
       , unique = True
-      , rules_text = Just "You may choose to play Lord Eddard's Chambers as an attachment to your House card.\n+1 Income.\n+1 Influence."
+      , rules_text = Just "You may choose to play Lord Eddard's Chambers as an attachment to your House card.\n[+1 Income]\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Winterfell" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "low_41"
       , name = "Mance's Men"
@@ -11334,7 +11873,7 @@ all_cards =
       , illustrator = "Miguel Coimbra"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "Deadly. No attachments.\n"
+      , rules_text = Just "Deadly. No attachments."
       , flavor_text = Just "\"They'll come right at you, screaming in your face...\""
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Power ]
@@ -11344,6 +11883,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_49"
       , name = "Marched to the Wall"
@@ -11365,6 +11905,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "low_25"
       , name = "Mole Town Brothel"
@@ -11386,6 +11927,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_32"
       , name = "Narrow Sea"
@@ -11397,7 +11939,7 @@ all_cards =
       , illustrator = "Trevor Cook"
       , house = [ House_Stark, House_Baratheon ]
       , unique = False
-      , rules_text = Just "Marshalling: Discard Narrow Sea from play to reduce the cost of the next House Stark or House Baratheon character you play this phase by 2. \n+1 Influence."
+      , rules_text = Just "Marshalling: Discard Narrow Sea from play to reduce the cost of the next House Stark or House Baratheon character you play this phase by 2. \n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -11407,6 +11949,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "low_46"
       , name = "Nightmares"
@@ -11428,6 +11971,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_31"
       , name = "Northern Fiefdoms"
@@ -11439,7 +11983,7 @@ all_cards =
       , illustrator = "Andrew Hall"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "Limited.\nMarshalling: Kneel Northern Fiefdoms to lower the cost of the next House Stark card you play this phase by 1.\n+1 Influence."
+      , rules_text = Just "Limited.\nMarshalling: Kneel Northern Fiefdoms to lower the cost of the next House Stark card you play this phase by 1.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -11449,6 +11993,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "low_40"
       , name = "Qhorin Halfhand"
@@ -11470,6 +12015,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_55"
       , name = "Respect of the Old Gods"
@@ -11491,6 +12037,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 2
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "low_24"
       , name = "Riverrun"
@@ -11512,6 +12059,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_13"
       , name = "Riverrun Messenger"
@@ -11533,6 +12081,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_8"
       , name = "Robb Stark"
@@ -11554,6 +12103,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_42"
       , name = "Rorge"
@@ -11575,6 +12125,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_33"
       , name = "Routing the Charge"
@@ -11596,6 +12147,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_20"
       , name = "Ser Edmure Tully"
@@ -11617,6 +12169,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_3"
       , name = "Shaggydog"
@@ -11638,6 +12191,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_53"
       , name = "Storm of Swords"
@@ -11659,6 +12213,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 6
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "low_45"
       , name = "Street of Steel"
@@ -11680,6 +12235,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_9"
       , name = "Summer"
@@ -11701,6 +12257,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_52"
       , name = "Take Them by Surprise"
@@ -11722,6 +12279,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 11
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "low_22"
       , name = "The Blackfish"
@@ -11743,6 +12301,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_48"
       , name = "The Siege of Winterfell"
@@ -11764,6 +12323,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_34"
       , name = "They Shall Not Cross"
@@ -11785,6 +12345,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_44"
       , name = "Training Grounds"
@@ -11806,6 +12367,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_39"
       , name = "Treaty with the North"
@@ -11827,6 +12389,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_23"
       , name = "Winterfell"
@@ -11848,6 +12411,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_35"
       , name = "Wolf Dreams"
@@ -11869,6 +12433,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_14"
       , name = "Wolf Pack"
@@ -11880,7 +12445,7 @@ all_cards =
       , illustrator = "Thomas Gianni"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "No attachments.\n"
+      , rules_text = Just "No attachments."
       , flavor_text = Just "The queen shuddered. \"There is something unnatural about those animals,\" she said. \"They are dangerous. I will not have any of them coming south with us.\""
       , cost = Just 2
       , icons = [ Icon_Military ]
@@ -11890,6 +12455,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "low_27"
       , name = "Wolfswood"
@@ -11911,6 +12477,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_53"
       , name = "A Pinch of Powder"
@@ -11932,6 +12499,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_59"
       , name = "Alliance"
@@ -11953,6 +12521,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "pots_5"
       , name = "Areo Hotah"
@@ -11974,6 +12543,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_2"
       , name = "Arianne Martell"
@@ -11995,6 +12565,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_58"
       , name = "Attack from the Sea"
@@ -12016,6 +12587,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "pots_54"
       , name = "Battle of Oxcross"
@@ -12037,6 +12609,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "pots_20"
       , name = "Blood for Blood"
@@ -12049,7 +12622,7 @@ all_cards =
       , house = [ House_Neutral ]
       , unique = False
       , rules_text = Just "Response: After 1 of your House Martell characters is killed, choose and kill 1 character with equal or lower STR. (Limit 1 per phase.)"
-      , flavor_text = Just "\"You are going to fight that?\" Ellaria Sand said in a hushed voice.<br>\"I am going to kill that.\" her lover replied..."
+      , flavor_text = Just "\"You are going to fight that?\" Ellaria Sand said in a hushed voice.\n\"I am going to kill that.\" her lover replied..."
       , cost = Nothing
       , icons = [  ]
       , crest = [  ]
@@ -12058,6 +12631,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_37"
       , name = "Brienne of Tarth"
@@ -12079,6 +12653,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_45"
       , name = "Court Advisor"
@@ -12100,6 +12675,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_4"
       , name = "Darkstar"
@@ -12121,6 +12697,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_48"
       , name = "Denys Mallister"
@@ -12142,6 +12719,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_3"
       , name = "Doran Martell"
@@ -12163,6 +12741,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_31"
       , name = "Dorne"
@@ -12184,6 +12763,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_26"
       , name = "Dornish Fiefdoms"
@@ -12195,7 +12775,7 @@ all_cards =
       , illustrator = "Andrew Hall"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "Limited.\nMarshalling: Kneel Dornish Fiefdoms to lower the cost of the next House Martell card you play this phase by 1.\n+1 Influence."
+      , rules_text = Just "Limited.\nMarshalling: Kneel Dornish Fiefdoms to lower the cost of the next House Martell card you play this phase by 1.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -12205,6 +12785,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "pots_7"
       , name = "Ellaria Sand"
@@ -12226,6 +12807,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_44"
       , name = "Formal Petition"
@@ -12247,6 +12829,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_52"
       , name = "Former Champion"
@@ -12268,6 +12851,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_8"
       , name = "Harmen Uller"
@@ -12289,6 +12873,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_21"
       , name = "He Calls It Thinking"
@@ -12310,6 +12895,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_11"
       , name = "House Dayne Knight"
@@ -12331,6 +12917,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_17"
       , name = "House Dayne Reserves"
@@ -12352,6 +12939,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_14"
       , name = "House Dayne Skirmisher"
@@ -12373,6 +12961,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_10"
       , name = "House Messenger"
@@ -12394,6 +12983,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_36"
       , name = "Joffrey Baratheon"
@@ -12415,6 +13005,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_50"
       , name = "Kingsguard Squire"
@@ -12436,6 +13027,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_55"
       , name = "Let My Porridge Fly"
@@ -12457,6 +13049,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "pots_19"
       , name = "Locked Away"
@@ -12478,6 +13071,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_27"
       , name = "Lord Doran's Chambers"
@@ -12489,16 +13083,17 @@ all_cards =
       , illustrator = "Winona Nelson"
       , house = [ House_Martell ]
       , unique = True
-      , rules_text = Just "You may choose to play Lord Doran's Chambers as an attachment to your House card.\n+1 Income.\n+1 Influence."
+      , rules_text = Just "You may choose to play Lord Doran's Chambers as an attachment to your House card.\n[+1 Income]\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Dorne" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "pots_13"
       , name = "Lord Edric's Knight"
@@ -12510,7 +13105,7 @@ all_cards =
       , illustrator = "Edward Reed"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "Stealth.\n"
+      , rules_text = Just "Stealth."
       , flavor_text = Just "The salty Dornishmen were lithe and dark, with smooth olive skin and long black hair streaming in the wind."
       , cost = Just 2
       , icons = [ Icon_Military ]
@@ -12520,6 +13115,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_49"
       , name = "Mag the Mighty"
@@ -12541,6 +13137,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_42"
       , name = "Make an Example"
@@ -12562,6 +13159,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_15"
       , name = "Orphan of the Greenblood"
@@ -12583,6 +13181,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_29"
       , name = "Palace Fountains"
@@ -12604,6 +13203,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_12"
       , name = "Paramour"
@@ -12615,7 +13215,7 @@ all_cards =
       , illustrator = "Sedone Thongvilay"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "+1 Influence."
+      , rules_text = Just "[+1 Influence]"
       , flavor_text = Just "She is not truly beautiful, she thought, but something about her draws the eye."
       , cost = Just 1
       , icons = [ Icon_Intrigue ]
@@ -12625,6 +13225,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "pots_40"
       , name = "Parting Blow"
@@ -12646,6 +13247,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_25"
       , name = "Red Vengeance"
@@ -12667,6 +13269,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_47"
       , name = "Rusted Sword"
@@ -12688,6 +13291,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_6"
       , name = "Sarella Sand"
@@ -12709,6 +13313,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_24"
       , name = "Scheming on the Sand"
@@ -12730,6 +13335,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_9"
       , name = "Ser Arys Oakheart"
@@ -12751,6 +13357,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_39"
       , name = "Ser Jorah Mormont"
@@ -12772,6 +13379,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_23"
       , name = "Someone Always Tells"
@@ -12793,6 +13401,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_28"
       , name = "Summer Sea"
@@ -12804,7 +13413,7 @@ all_cards =
       , illustrator = "Trevor Cook"
       , house = [ House_Targaryen, House_Martell ]
       , unique = False
-      , rules_text = Just "Marshalling: Discard Summer Sea from play to reduce the cost of the next House Targaryen or House Martell character you play this phase by 2.\n+1 Influence."
+      , rules_text = Just "Marshalling: Discard Summer Sea from play to reduce the cost of the next House Targaryen or House Martell character you play this phase by 2.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -12814,6 +13423,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "pots_18"
       , name = "Taste for Blood"
@@ -12835,6 +13445,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_46"
       , name = "The Art of Diplomacy"
@@ -12856,6 +13467,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_43"
       , name = "The Dragon's Tail"
@@ -12877,6 +13489,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_35"
       , name = "The Hound"
@@ -12898,6 +13511,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_32"
       , name = "The Old Palace"
@@ -12919,6 +13533,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_22"
       , name = "The Prince's Wrath"
@@ -12940,6 +13555,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_1"
       , name = "The Red Viper"
@@ -12961,6 +13577,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_57"
       , name = "The Red Wedding"
@@ -12982,6 +13599,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "pots_33"
       , name = "The Spear Tower"
@@ -13003,6 +13621,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_16"
       , name = "The Viper's Bannermen"
@@ -13024,6 +13643,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_38"
       , name = "Theon Greyjoy"
@@ -13045,6 +13665,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_56"
       , name = "Threat from the North"
@@ -13066,6 +13687,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "pots_60"
       , name = "To the Spears!"
@@ -13087,6 +13709,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "pots_34"
       , name = "Tower of the Sun"
@@ -13108,6 +13731,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_41"
       , name = "Wars Are Won with Quills"
@@ -13129,6 +13753,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_30"
       , name = "Water Garden"
@@ -13140,16 +13765,17 @@ all_cards =
       , illustrator = "Patrick Keith"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "Limited.\n+1 Income.\n"
+      , rules_text = Just "Limited.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Dorne" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "pots_51"
       , name = "When I Woke..."
@@ -13162,7 +13788,7 @@ all_cards =
       , house = [ House_Neutral ]
       , unique = False
       , rules_text = Just "Response: After a Military challenge resolves, kneel 1 influence to have the losing player choose 1 participating character and put that character on top of its owner's deck."
-      , flavor_text = Just "When I woke, my hands were clean.<br>Card designed by the 2008 AGoT Melee World Champion, Tzu-Mainn Chen."
+      , flavor_text = Just "When I woke, my hands were clean.\nCard designed by the 2008 AGoT Melee World Champion, Tzu-Mainn Chen."
       , cost = Nothing
       , icons = [  ]
       , crest = [  ]
@@ -13171,6 +13797,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_39"
       , name = "Advisor to the Crown"
@@ -13182,7 +13809,7 @@ all_cards =
       , illustrator = "Matt Dixon"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "+2 Influence."
+      , rules_text = Just "[+2 Influence]"
       , flavor_text = Just "\"A maester chained and sworn... \" - Samwell Tarley"
       , cost = Just 3
       , icons = [ Icon_Power ]
@@ -13192,6 +13819,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 2
       }
     , { id = "qod_47"
       , name = "Alliance"
@@ -13213,6 +13841,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_36"
       , name = "Ambush from the Plains"
@@ -13234,6 +13863,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_28"
       , name = "Astapor"
@@ -13255,6 +13885,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_18"
       , name = "Black Hatchling"
@@ -13276,6 +13907,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_3"
       , name = "Bloodrider's Arakh"
@@ -13297,6 +13929,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_13"
       , name = "Blue-Lipped Warlock"
@@ -13318,6 +13951,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_49"
       , name = "Burning Bridges"
@@ -13339,6 +13973,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "qod_6"
       , name = "Crown of Meereen"
@@ -13360,6 +13995,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_22"
       , name = "Daenerys Targaryen"
@@ -13381,6 +14017,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_44"
       , name = "Dissension"
@@ -13402,6 +14039,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_2"
       , name = "Dragon Fear"
@@ -13423,6 +14061,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_23"
       , name = "Drogon"
@@ -13444,6 +14083,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_34"
       , name = "Eastern Fiefdoms"
@@ -13455,7 +14095,7 @@ all_cards =
       , illustrator = "Andrew Hall"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "Limited \nMarshalling: Kneel Eastern Fiefdoms to lower the cost of the next Targaryen card you play this phase by 1. \n+1 Influence"
+      , rules_text = Just "Limited \nMarshalling: Kneel Eastern Fiefdoms to lower the cost of the next Targaryen card you play this phase by 1. \n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -13465,6 +14105,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "qod_45"
       , name = "Favorable Ground"
@@ -13486,6 +14127,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_37"
       , name = "Field of Fire"
@@ -13507,6 +14149,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_51"
       , name = "Focused Offense"
@@ -13528,6 +14171,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 4
       , claim = Just 3
+      , influence = Nothing
       }
     , { id = "qod_35"
       , name = "Great Pyramid"
@@ -13549,6 +14193,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_19"
       , name = "Green Hatchling"
@@ -13570,6 +14215,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_10"
       , name = "Grey Worm"
@@ -13591,6 +14237,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_48"
       , name = "Heir to the Iron Throne"
@@ -13612,6 +14259,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_41"
       , name = "High Ground"
@@ -13633,6 +14281,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_8"
       , name = "Hired Swords"
@@ -13654,6 +14303,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_15"
       , name = "Horseback Archers"
@@ -13675,6 +14325,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_40"
       , name = "Initiate of the Citadel"
@@ -13696,6 +14347,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_11"
       , name = "Jorah's Cohorts"
@@ -13717,6 +14369,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_21"
       , name = "Khal Drogo"
@@ -13738,6 +14391,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_33"
       , name = "Khal Drogo's Tent"
@@ -13749,16 +14403,17 @@ all_cards =
       , illustrator = "Winona Nelson"
       , house = [ House_Targaryen ]
       , unique = True
-      , rules_text = Just "You may choose to play Khal Drogo's Tent as an attachment on your House card. \n+1 Gold\n+1 Influence"
+      , rules_text = Just "You may choose to play Khal Drogo's Tent as an attachment on your House card. \n[+1 Income]\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "The East" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "qod_16"
       , name = "Killer of the Wounded"
@@ -13780,6 +14435,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_42"
       , name = "Kingsroad Fiefdom"
@@ -13791,7 +14447,7 @@ all_cards =
       , illustrator = "Franz Miklis"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "+2 Influence.\n+2 Initiative."
+      , rules_text = Just "[+2 Influence]\n[+2 Initiative]"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [  ]
@@ -13799,8 +14455,9 @@ all_cards =
       , traits = [ "Westeros" ]
       , strength = Nothing
       , income = Nothing
-      , initiative = Nothing
+      , initiative = Just 2
       , claim = Nothing
+      , influence = Just 2
       }
     , { id = "qod_53"
       , name = "Loyalty Money Can Buy"
@@ -13822,6 +14479,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "qod_38"
       , name = "Maegi's Promise"
@@ -13843,6 +14501,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_29"
       , name = "Meereen"
@@ -13864,6 +14523,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_54"
       , name = "Muster the Realm!"
@@ -13885,6 +14545,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 2
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "qod_31"
       , name = "Myrish Villa"
@@ -13906,6 +14567,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_46"
       , name = "Paper Shield"
@@ -13927,6 +14589,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_9"
       , name = "Pike Phalanx"
@@ -13948,6 +14611,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_30"
       , name = "Plaza of Pride"
@@ -13969,6 +14633,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_17"
       , name = "Pyat Pree"
@@ -13990,6 +14655,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_26"
       , name = "Qarth"
@@ -14011,6 +14677,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_24"
       , name = "Rhaegal"
@@ -14032,6 +14699,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_43"
       , name = "River Row"
@@ -14053,6 +14721,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_4"
       , name = "Shade of the Evening"
@@ -14074,6 +14743,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_52"
       , name = "Spending the Winter Stores"
@@ -14095,6 +14765,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "qod_32"
       , name = "Summer Sea"
@@ -14106,7 +14777,7 @@ all_cards =
       , illustrator = "Trevor Cook"
       , house = [ House_Targaryen, House_Martell ]
       , unique = False
-      , rules_text = Just "Marshalling: Discard Summer Sea from play to reduce the cost of the next Martell or Targaryen character you play this phase by 2.\n+1 Influence."
+      , rules_text = Just "Marshalling: Discard Summer Sea from play to reduce the cost of the next Martell or Targaryen character you play this phase by 2.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -14116,6 +14787,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "qod_5"
       , name = "Sun Stroke"
@@ -14137,6 +14809,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_55"
       , name = "Threat from the East"
@@ -14158,6 +14831,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 6
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "qod_12"
       , name = "Thundering Calvary"
@@ -14179,6 +14853,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_7"
       , name = "True-Queen's Harbinger"
@@ -14200,6 +14875,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_1"
       , name = "Unburnt"
@@ -14221,6 +14897,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_25"
       , name = "Viserion"
@@ -14242,6 +14919,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_14"
       , name = "Warlock of Qarth"
@@ -14263,6 +14941,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_50"
       , name = "Waste Their Time"
@@ -14284,6 +14963,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 1
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "qod_20"
       , name = "White Hatchling"
@@ -14305,6 +14985,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "qod_27"
       , name = "Yunkai"
@@ -14326,6 +15007,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_55"
       , name = "Archmaester Ebrose"
@@ -14347,6 +15029,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_50"
       , name = "Called to Arms"
@@ -14368,6 +15051,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_56"
       , name = "Citadel Custom"
@@ -14389,6 +15073,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_46"
       , name = "Conflict of Interest"
@@ -14410,6 +15095,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_52"
       , name = "Dragon Lore"
@@ -14431,6 +15117,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_60"
       , name = "Dry Season"
@@ -14452,6 +15139,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 5
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "soo_41"
       , name = "Galbart Glover"
@@ -14473,6 +15161,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_53"
       , name = "Hellholt Engineer"
@@ -14494,6 +15183,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_42"
       , name = "Karhold Rookery"
@@ -14505,7 +15195,7 @@ all_cards =
       , illustrator = "David A. Nash"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "When you search the top X cards of your deck, search 1 additional card.\n+1 Initiative."
+      , rules_text = Just "When you search the top X cards of your deck, search 1 additional card.\n[+1 Initiative]"
       , flavor_text = Just "\"We are kin, Stark and Karstark.\" - Lord Rickard Karstark"
       , cost = Just 0
       , icons = [  ]
@@ -14513,8 +15203,9 @@ all_cards =
       , traits = [ "Westeros" ]
       , strength = Nothing
       , income = Nothing
-      , initiative = Nothing
+      , initiative = Just 1
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_43"
       , name = "Lady Genna"
@@ -14536,6 +15227,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_59"
       , name = "Lead Link"
@@ -14557,6 +15249,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_49"
       , name = "Longship Black Wind"
@@ -14578,6 +15271,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_45"
       , name = "Maester Lomys"
@@ -14599,6 +15293,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_48"
       , name = "Maester Murenmure"
@@ -14620,6 +15315,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_51"
       , name = "Magister Illyrio"
@@ -14641,6 +15337,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_54"
       , name = "Snakeskin Veil"
@@ -14662,6 +15359,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_57"
       , name = "The Conclave"
@@ -14683,6 +15381,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_58"
       , name = "Tin Link"
@@ -14704,6 +15403,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_47"
       , name = "Tower Library"
@@ -14725,6 +15425,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_44"
       , name = "Without His Beard"
@@ -14746,6 +15447,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_67"
       , name = "Baelor Blacktyde"
@@ -14767,6 +15469,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_79"
       , name = "Gold Link"
@@ -14788,6 +15491,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_61"
       , name = "Guardian Wolf"
@@ -14809,6 +15513,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_72"
       , name = "Informed Acolyte"
@@ -14830,6 +15535,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_69"
       , name = "Linked Advisor"
@@ -14851,6 +15557,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_66"
       , name = "Litany of Light"
@@ -14872,6 +15579,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_77"
       , name = "Old Intrigues"
@@ -14893,6 +15601,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_75"
       , name = "Oldtown Raven"
@@ -14914,6 +15623,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_80"
       , name = "Outwit"
@@ -14935,6 +15645,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "soo_70"
       , name = "Plaza of Purification"
@@ -14956,6 +15667,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_71"
       , name = "Royal Favor"
@@ -14977,6 +15689,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_64"
       , name = "Spidercraft"
@@ -14998,6 +15711,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_78"
       , name = "Steel Link"
@@ -15019,6 +15733,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_65"
       , name = "Stormlands Bastard"
@@ -15040,6 +15755,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_73"
       , name = "Streets of Hellholt"
@@ -15061,6 +15777,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_76"
       , name = "The Isle of Ravens"
@@ -15082,6 +15799,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_74"
       , name = "The Prince's Plans"
@@ -15103,6 +15821,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_63"
       , name = "The Regent's Spy"
@@ -15124,6 +15843,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_62"
       , name = "The Weasel's Way"
@@ -15145,6 +15865,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_68"
       , name = "Training Vessel"
@@ -15166,6 +15887,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_87"
       , name = "Battle of Ruby Ford"
@@ -15187,6 +15909,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_93"
       , name = "Castellan of the Rock"
@@ -15208,6 +15931,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_88"
       , name = "Desperate Tactics"
@@ -15229,6 +15953,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_94"
       , name = "Devious Intentions"
@@ -15250,6 +15975,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_98"
       , name = "Disgruntled Mercenary"
@@ -15271,6 +15997,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_86"
       , name = "Herald of the King"
@@ -15292,6 +16019,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_92"
       , name = "House Umber Berserkers"
@@ -15313,6 +16041,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_95"
       , name = "Hunting Spear"
@@ -15334,6 +16063,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_89"
       , name = "Lie for Your King!"
@@ -15355,6 +16085,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_97"
       , name = "Martial Law"
@@ -15376,6 +16107,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_91"
       , name = "Midnight Sentry"
@@ -15397,6 +16129,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_96"
       , name = "Mustering Yard"
@@ -15418,6 +16151,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_99"
       , name = "Observation Point"
@@ -15439,6 +16173,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_81"
       , name = "Old Nan"
@@ -15460,6 +16195,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_85"
       , name = "Overzealous Scout"
@@ -15468,10 +16204,10 @@ all_cards =
       , number = 85
       , quantity = 1
       , legality = Legality_Legal
-      , illustrator = "RÃ©gis Moulun"
+      , illustrator = "Régis Moulun"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "+4 Initiative."
+      , rules_text = Just "[+4 Initiative]"
       , flavor_text = Just "\"There are a dozen scouts who won't be reporting back to Lord Tywin anytime soon. Or ever.\" - Theon Greyjoy"
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Intrigue ]
@@ -15479,8 +16215,9 @@ all_cards =
       , traits = [ "Ally" ]
       , strength = Just 3
       , income = Nothing
-      , initiative = Nothing
+      , initiative = Just 4
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_82"
       , name = "Rhaegar Targaryen"
@@ -15496,12 +16233,13 @@ all_cards =
       , flavor_text = Just "\"Rhaegar fought valiantly, Rhaegar fought nobly, Rhaegar fought honorably. And Rhaegar died.\" - Ser Jorah Mormont"
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
-      , crest = [  ]
+      , crest = [ Crest_Noble, Crest_War ]
       , traits = [ "Lord", "King" ]
       , strength = Just 5
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_84"
       , name = "Rhaegar's Harp"
@@ -15523,6 +16261,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_83"
       , name = "Scorched Earth"
@@ -15544,6 +16283,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_90"
       , name = "Starve for Your King!"
@@ -15565,6 +16305,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_100"
       , name = "War Scorpion"
@@ -15586,6 +16327,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_117"
       , name = "Ascetic Follower"
@@ -15607,6 +16349,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_118"
       , name = "Banner for the Dragon"
@@ -15628,6 +16371,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_116"
       , name = "Banner for the Kraken"
@@ -15649,6 +16393,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_111"
       , name = "Banner for the North"
@@ -15670,6 +16415,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_119"
       , name = "Banner for the South"
@@ -15691,6 +16437,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_114"
       , name = "Banner for the Storm"
@@ -15712,6 +16459,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_112"
       , name = "Campfire Lights"
@@ -15733,6 +16481,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_107"
       , name = "Compelled by the Crown"
@@ -15754,6 +16503,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_105"
       , name = "Compelled by the North"
@@ -15775,6 +16525,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_109"
       , name = "Compelled by the Queen"
@@ -15796,6 +16547,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_106"
       , name = "Compelled by the Rock"
@@ -15817,6 +16569,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_108"
       , name = "Compelled by the Sea"
@@ -15838,6 +16591,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_110"
       , name = "Compelled by the Sun"
@@ -15859,6 +16613,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_104"
       , name = "Fishwhiskers"
@@ -15880,6 +16635,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_120"
       , name = "For Family and Honor"
@@ -15901,6 +16657,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_102"
       , name = "Gates of Winterfell"
@@ -15922,6 +16679,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_101"
       , name = "Jory Cassel"
@@ -15943,6 +16701,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_113"
       , name = "Practical Believer"
@@ -15964,6 +16723,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_103"
       , name = "Ser Lancel Lannister"
@@ -15985,6 +16745,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_115"
       , name = "Zealous Collector"
@@ -16006,6 +16767,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_63"
       , name = "Arstan Whitebeard"
@@ -16027,6 +16789,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_74"
       , name = "Besieged Shipyard"
@@ -16048,6 +16811,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_73"
       , name = "Claw Isle"
@@ -16069,6 +16833,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_61"
       , name = "Dacey Mormont"
@@ -16090,6 +16855,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_71"
       , name = "Highgarden Cavaliers"
@@ -16101,7 +16867,7 @@ all_cards =
       , illustrator = "Ben Zweifel"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "No attachments except Siege.\n"
+      , rules_text = Just "No attachments except Siege."
       , flavor_text = Nothing
       , cost = Just 5
       , icons = [ Icon_Military, Icon_Intrigue ]
@@ -16111,6 +16877,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_72"
       , name = "Hornvale"
@@ -16132,6 +16899,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_77"
       , name = "Norvos"
@@ -16153,6 +16921,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_76"
       , name = "Pentos"
@@ -16174,6 +16943,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_62"
       , name = "Salladhor Saan"
@@ -16195,6 +16965,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_75"
       , name = "Stormcrows"
@@ -16216,6 +16987,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_64"
       , name = "The Bastard of Godsgrace"
@@ -16237,6 +17009,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_67"
       , name = "The Battle at the Wall"
@@ -16258,6 +17031,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_69"
       , name = "The Battle of Astapor"
@@ -16279,6 +17053,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_68"
       , name = "The Battle of Deepwood Motte"
@@ -16300,6 +17075,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_66"
       , name = "The Battle of the Blackwater"
@@ -16321,6 +17097,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_65"
       , name = "The Battle of the Whispering Wood"
@@ -16342,6 +17119,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_78"
       , name = "The Gift"
@@ -16363,6 +17141,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_79"
       , name = "The Land Beyond the Wall"
@@ -16384,6 +17163,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_80"
       , name = "The Neck"
@@ -16405,6 +17185,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_70"
       , name = "The Viper's Revenge"
@@ -16426,6 +17207,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_19"
       , name = "Besiegers of Dorne"
@@ -16447,6 +17229,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_20"
       , name = "Dornish Chariot"
@@ -16468,6 +17251,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_18"
       , name = "Flaming-Pitch Tower"
@@ -16489,6 +17273,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_14"
       , name = "House Florent Scouts"
@@ -16510,6 +17295,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_12"
       , name = "Icy Catapult"
@@ -16531,6 +17317,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_2"
       , name = "Jhalabar Xho"
@@ -16552,6 +17339,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_10"
       , name = "Kill for Your King!"
@@ -16573,6 +17361,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_5"
       , name = "King Balon's Host"
@@ -16594,6 +17383,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_3"
       , name = "King Joffrey's Guard"
@@ -16615,6 +17405,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_1"
       , name = "King Robb's Host"
@@ -16636,6 +17427,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_4"
       , name = "King Robert's Host"
@@ -16657,6 +17449,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_6"
       , name = "Longship \"Foamdrinker\""
@@ -16678,6 +17471,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_8"
       , name = "Maester of War"
@@ -16699,6 +17493,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_13"
       , name = "Pyromancer's Cache"
@@ -16720,6 +17515,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_7"
       , name = "Queen Daenerys's Horde"
@@ -16741,6 +17537,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_9"
       , name = "Queen Myrcella's Guard"
@@ -16762,6 +17559,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_17"
       , name = "Queen's Knight"
@@ -16783,6 +17581,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_16"
       , name = "Seawater Scalawags"
@@ -16804,6 +17603,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_15"
       , name = "The Fox's Teeth"
@@ -16825,6 +17625,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "acoa_11"
       , name = "Vanguard Scouts"
@@ -16846,6 +17647,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_105"
       , name = "Arms of the Kraken"
@@ -16867,6 +17669,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_118"
       , name = "Blessed by the Maiden"
@@ -16888,6 +17691,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_111"
       , name = "Call of the Three-Eyed Crow"
@@ -16909,6 +17713,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_116"
       , name = "Cape Wrath"
@@ -16930,6 +17735,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_113"
       , name = "Choosing the Spear"
@@ -16951,6 +17757,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_120"
       , name = "Favored by the Warrior"
@@ -16972,6 +17779,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_108"
       , name = "Fury"
@@ -16993,6 +17801,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_109"
       , name = "House Manderly Escort"
@@ -17014,6 +17823,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_107"
       , name = "Huntress"
@@ -17035,6 +17845,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_101"
       , name = "King's Landing Dromon"
@@ -17056,6 +17867,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_104"
       , name = "Longship Nightflyer"
@@ -17077,6 +17889,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_102"
       , name = "Qarl the Maid"
@@ -17098,6 +17911,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_115"
       , name = "Randyll Tarly"
@@ -17119,6 +17933,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_106"
       , name = "Shores of the Mander"
@@ -17131,7 +17946,7 @@ all_cards =
       , house = [ House_Baratheon ]
       , unique = False
       , rules_text = Just "While you control at least 1 Captain character, your characters get +1 STR during the challenges phase."
-      , flavor_text = Just "Across the Mander, the storm lords had raised their standards, Renly's own bannermen, sworn to House Baratheon and Storm's End.<br>- A Clash of Kings"
+      , flavor_text = Just "Across the Mander, the storm lords had raised their standards, Renly's own bannermen, sworn to House Baratheon and Storm's End.\n- A Clash of Kings"
       , cost = Nothing
       , icons = [  ]
       , crest = [  ]
@@ -17140,6 +17955,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_112"
       , name = "Starfall Skirmisher"
@@ -17161,6 +17977,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_119"
       , name = "Supported by the Smith"
@@ -17182,6 +17999,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_103"
       , name = "Ten Towers Longship"
@@ -17193,7 +18011,7 @@ all_cards =
       , illustrator = "Lukasz Jaskolski"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "You may place an event card attached to Ten Towers Longship on the bottom of its owner's deck to play it as if it was in your hand.\nResponse: After you win a challenge by 4 or more total STR, kneel Ten Towers Longship to choose an event card in the losing opponent's discard pile. Attach that event card to Ten Towers Longship.\n"
+      , rules_text = Just "You may place an event card attached to Ten Towers Longship on the bottom of its owner's deck to play it as if it was in your hand.\nResponse: After you win a challenge by 4 or more total STR, kneel Ten Towers Longship to choose an event card in the losing opponent's discard pile. Attach that event card to Ten Towers Longship."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -17203,6 +18021,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_117"
       , name = "The Tattered Prince"
@@ -17224,6 +18043,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_110"
       , name = "Trident Guard"
@@ -17245,6 +18065,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_114"
       , name = "Venomous Manticore"
@@ -17266,6 +18087,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_66"
       , name = "Blackcrown Knights"
@@ -17287,6 +18109,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_79"
       , name = "Blackwater Rush"
@@ -17308,6 +18131,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_78"
       , name = "Blazewater Bay"
@@ -17329,6 +18153,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "asots_75"
       , name = "Braided Screamers"
@@ -17350,6 +18175,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_67"
       , name = "Dale Seaworth"
@@ -17371,6 +18197,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_64"
       , name = "Deepwood Motte"
@@ -17392,6 +18219,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_74"
       , name = "Dothraki Outrider"
@@ -17413,6 +18241,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_72"
       , name = "Greenblood Vessel"
@@ -17434,6 +18263,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_71"
       , name = "Host of the Boneway"
@@ -17455,6 +18285,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_61"
       , name = "House Clegane Brigands"
@@ -17476,6 +18307,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_80"
       , name = "King's Landing Coup"
@@ -17497,6 +18329,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 8
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "asots_77"
       , name = "Margaery Tyrell"
@@ -17518,6 +18351,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_70"
       , name = "Passing the Wall"
@@ -17539,6 +18373,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_76"
       , name = "Port at Slaver's Bay"
@@ -17560,6 +18395,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_63"
       , name = "Raiders of Orkmont"
@@ -17581,6 +18417,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_69"
       , name = "Riders of Karhold"
@@ -17602,6 +18439,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_65"
       , name = "Seized"
@@ -17623,6 +18461,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_68"
       , name = "Shores of the Blackwater"
@@ -17644,6 +18483,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_73"
       , name = "Shores of the Summer Sea"
@@ -17665,6 +18505,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_62"
       , name = "Sitting the Iron Throne"
@@ -17686,6 +18527,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_96"
       , name = "Anointed by the Mother"
@@ -17707,6 +18549,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_81"
       , name = "Arbor Guardsman"
@@ -17728,6 +18571,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_100"
       , name = "Aurane Waters"
@@ -17749,6 +18593,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_93"
       , name = "Blood Magic Ritual"
@@ -17770,6 +18615,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_95"
       , name = "Dagger Lake Galley"
@@ -17791,6 +18637,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_99"
       , name = "Desperate Measures"
@@ -17812,6 +18659,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_94"
       , name = "Guided by Quaithe"
@@ -17833,6 +18681,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_83"
       , name = "Iron Fleet Scout"
@@ -17854,6 +18703,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_82"
       , name = "Iron Islands Brigand"
@@ -17875,6 +18725,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_97"
       , name = "Judged by the Father"
@@ -17896,6 +18747,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_85"
       , name = "Khorane Sathmantes"
@@ -17917,6 +18769,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_84"
       , name = "Lyseni Pirate"
@@ -17938,6 +18791,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_88"
       , name = "Manderly's Scheme"
@@ -17959,6 +18813,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "asots_98"
       , name = "Nurtured by the Crone"
@@ -17980,6 +18835,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_89"
       , name = "Planky Town Orphan"
@@ -18001,6 +18857,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_90"
       , name = "Salty Dornishman"
@@ -18022,6 +18879,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_91"
       , name = "Ser Cletus Yronwood"
@@ -18043,6 +18901,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_92"
       , name = "Ser Rolly Duckfield"
@@ -18064,6 +18923,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_87"
       , name = "White Harbor"
@@ -18085,6 +18945,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_86"
       , name = "Wylla Manderly"
@@ -18106,6 +18967,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_22"
       , name = "Arbor Queen"
@@ -18127,6 +18989,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_39"
       , name = "Battle for the Shield Islands"
@@ -18148,6 +19011,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_29"
       , name = "Black Betha"
@@ -18169,6 +19033,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_35"
       , name = "Doran's Scheme"
@@ -18190,6 +19055,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "asots_24"
       , name = "Ironborn Marauder"
@@ -18211,6 +19077,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_23"
       , name = "Lionstar"
@@ -18232,6 +19099,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_26"
       , name = "Longship Golden Storm"
@@ -18253,6 +19121,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_34"
       , name = "Meadowlark"
@@ -18274,6 +19143,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_40"
       , name = "Naval Superiority"
@@ -18295,6 +19165,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "asots_30"
       , name = "Northern Sailor"
@@ -18316,6 +19187,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_21"
       , name = "Paxter Redwyne"
@@ -18337,6 +19209,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_36"
       , name = "Pentoshi Deckhand"
@@ -18358,6 +19231,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_33"
       , name = "Quentyn Martell"
@@ -18379,6 +19253,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_27"
       , name = "River Runner"
@@ -18400,6 +19275,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_38"
       , name = "Selmy's Scheme"
@@ -18421,6 +19297,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 2
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "asots_28"
       , name = "Ser Davos Seaworth"
@@ -18442,6 +19319,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_25"
       , name = "The Reader"
@@ -18463,6 +19341,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_37"
       , name = "Vhagar"
@@ -18484,6 +19363,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_31"
       , name = "White Harbor Captain"
@@ -18505,6 +19385,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_32"
       , name = "White Harbor Dromon"
@@ -18526,6 +19407,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_44"
       , name = "Andrik the Unsmiling"
@@ -18547,6 +19429,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_56"
       , name = "Balerion"
@@ -18568,6 +19451,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_43"
       , name = "Cersei's Scheme"
@@ -18589,6 +19473,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 6
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "asots_57"
       , name = "Fire and Blood"
@@ -18610,6 +19495,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_53"
       , name = "Hellholt Docks"
@@ -18631,6 +19517,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_55"
       , name = "House Targaryen Loyalist"
@@ -18652,6 +19539,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_50"
       , name = "Moreo Tumitis"
@@ -18673,6 +19561,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_59"
       , name = "Negotiations at the Great Sept"
@@ -18694,6 +19583,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 2
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "asots_48"
       , name = "Oakenshield Port"
@@ -18715,6 +19605,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_49"
       , name = "Ours is the Fury"
@@ -18736,6 +19627,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_47"
       , name = "Salladhor Saan"
@@ -18757,6 +19649,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_41"
       , name = "Ser Lancel Lannister"
@@ -18778,6 +19671,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_51"
       , name = "Swamps of the Neck"
@@ -18799,6 +19693,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_42"
       , name = "The Bear and the Maiden Fair"
@@ -18820,6 +19715,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_60"
       , name = "The Long Voyage"
@@ -18841,6 +19737,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_52"
       , name = "Titan's Daughter"
@@ -18862,6 +19759,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_58"
       , name = "Torrhen's Square"
@@ -18883,6 +19781,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "asots_54"
       , name = "Unbowed, Unbent, Unbroken"
@@ -18904,6 +19803,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "asots_46"
       , name = "Victarion's Scheme"
@@ -18925,6 +19825,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 7
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "asots_45"
       , name = "We Do Not Sow"
@@ -18946,6 +19847,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_120"
       , name = "Across the Summer Sea"
@@ -18967,6 +19869,7 @@ all_cards =
       , income = Just 6
       , initiative = Just 0
       , claim = Just 0
+      , influence = Nothing
       }
     , { id = "atoc_104"
       , name = "Andal Charger"
@@ -18988,6 +19891,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_112"
       , name = "Dothraki Stallion"
@@ -19009,6 +19913,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_105"
       , name = "Dragonstone Convert"
@@ -19030,6 +19935,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_108"
       , name = "Drowned Crewman"
@@ -19051,6 +19957,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_116"
       , name = "Heavy Taxes"
@@ -19072,6 +19979,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_106"
       , name = "Highgarden Destrier"
@@ -19093,6 +20001,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_103"
       , name = "House Clegane Outlaw"
@@ -19114,6 +20023,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_109"
       , name = "Isle Garron"
@@ -19135,6 +20045,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_118"
       , name = "Isle of Faces"
@@ -19156,6 +20067,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_102"
       , name = "Northern Courser"
@@ -19177,6 +20089,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_115"
       , name = "Poisoned Spear"
@@ -19198,6 +20111,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_114"
       , name = "Rhoynish Steed"
@@ -19219,6 +20133,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_117"
       , name = "Seal of the Crown"
@@ -19240,6 +20155,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_101"
       , name = "Ser Kyle Condon"
@@ -19261,6 +20177,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_110"
       , name = "Sorrowful Man"
@@ -19282,6 +20199,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_113"
       , name = "The Red Viper"
@@ -19303,6 +20221,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_107"
       , name = "The Sparr"
@@ -19324,6 +20243,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_111"
       , name = "True Queen's Loyalist"
@@ -19345,6 +20265,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_119"
       , name = "Twist of Fate"
@@ -19366,6 +20287,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 4
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "atoc_48"
       , name = "Alannys Greyjoy"
@@ -19387,6 +20309,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_60"
       , name = "Called to Court"
@@ -19408,6 +20331,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 7
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "atoc_58"
       , name = "Champion's Favour"
@@ -19429,6 +20353,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_46"
       , name = "Enemy to the Crown"
@@ -19450,6 +20375,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_47"
       , name = "Fiery Kiss"
@@ -19471,6 +20397,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_42"
       , name = "Harrenhal"
@@ -19492,6 +20419,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_57"
       , name = "Jalabhar Xho"
@@ -19513,6 +20441,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_44"
       , name = "Lannisport Tourney Grounds"
@@ -19534,6 +20463,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_56"
       , name = "Lyanna Stark"
@@ -19555,6 +20485,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_53"
       , name = "Maiden of Poisons"
@@ -19576,6 +20507,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_51"
       , name = "Meereen Tourney Grounds"
@@ -19597,6 +20529,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_43"
       , name = "Myrcella Lannister"
@@ -19618,6 +20551,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_49"
       , name = "Nagga's Hill"
@@ -19639,6 +20573,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_52"
       , name = "Ride Them Down"
@@ -19660,6 +20595,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_45"
       , name = "Shyra Errol"
@@ -19681,6 +20617,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_54"
       , name = "Sunspear Tourney Grounds"
@@ -19702,6 +20639,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_59"
       , name = "The First Snow of Winter"
@@ -19723,6 +20661,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 1
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "atoc_50"
       , name = "The Iron Price"
@@ -19744,6 +20683,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_55"
       , name = "The Scourge"
@@ -19765,6 +20705,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_41"
       , name = "Winterfell Practice Yard"
@@ -19786,6 +20727,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_38"
       , name = "A Champion Arises"
@@ -19807,6 +20749,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_26"
       , name = "Bought and Paid For"
@@ -19828,6 +20771,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_30"
       , name = "Captain of the Iron Fleet"
@@ -19849,6 +20793,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_34"
       , name = "Doran Martell"
@@ -19870,6 +20815,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_22"
       , name = "Dreadfort Outrider"
@@ -19891,6 +20837,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_29"
       , name = "Euron Crow's Eye"
@@ -19912,6 +20859,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_39"
       , name = "Flea Bottom"
@@ -19933,6 +20881,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_23"
       , name = "In the Name of the King"
@@ -19954,6 +20903,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_32"
       , name = "Khaleesi's Faithful"
@@ -19975,6 +20925,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_37"
       , name = "Old Bear's Crow"
@@ -19996,6 +20947,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_33"
       , name = "Overwhelming Numbers"
@@ -20017,6 +20969,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_31"
       , name = "Raiding the Reach"
@@ -20038,6 +20991,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_27"
       , name = "Robert Baratheon"
@@ -20059,6 +21013,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_40"
       , name = "The Grand Melee"
@@ -20080,6 +21035,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 2
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "atoc_21"
       , name = "The Smalljon"
@@ -20101,6 +21057,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_35"
       , name = "The Vaith"
@@ -20122,6 +21079,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_36"
       , name = "Thoros of Myr"
@@ -20143,6 +21101,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_24"
       , name = "Varys"
@@ -20164,6 +21123,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_28"
       , name = "Warhammer"
@@ -20185,6 +21145,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_25"
       , name = "Whisper Campaign"
@@ -20206,6 +21167,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_14"
       , name = "A Nest of Vipers"
@@ -20227,6 +21189,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_1"
       , name = "Arya Stark"
@@ -20248,6 +21211,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_12"
       , name = "Darkstar"
@@ -20269,6 +21233,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_13"
       , name = "Dorea Sand"
@@ -20290,6 +21255,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_11"
       , name = "Dragon Support"
@@ -20311,6 +21277,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_18"
       , name = "Free Man"
@@ -20332,6 +21299,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_15"
       , name = "Highgarden"
@@ -20353,6 +21321,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_6"
       , name = "Highgarden Squire"
@@ -20374,6 +21343,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_20"
       , name = "Into the Lists"
@@ -20395,6 +21365,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "atoc_5"
       , name = "Knight of Flowers"
@@ -20416,6 +21387,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_2"
       , name = "Meera Reed"
@@ -20437,6 +21409,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_16"
       , name = "Newly Made Lord"
@@ -20449,7 +21422,7 @@ all_cards =
       , house = [ House_Greyjoy ]
       , unique = False
       , rules_text = Just "After you play Newly Made Lord from your hand, choose and discard from play 1 non-limited location with cost 3 or lower if able."
-      , flavor_text = Just "Card designed by the 2003 A Game of Thrones World Champion Casey Galvan.<br>\"Captains and kings, lift your cups to the Lords of the Four Shields!\""
+      , flavor_text = Just "Card designed by the 2003 A Game of Thrones World Champion Casey Galvan.\n\"Captains and kings, lift your cups to the Lords of the Four Shields!\""
       , cost = Just 3
       , icons = [ Icon_Power ]
       , crest = [  ]
@@ -20458,6 +21431,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_9"
       , name = "Nightfall"
@@ -20479,6 +21453,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_10"
       , name = "Ser Barristan Selmy"
@@ -20500,6 +21475,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_4"
       , name = "Ser Jaime Lannister"
@@ -20521,6 +21497,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_17"
       , name = "Shadow Tower Knight"
@@ -20542,6 +21519,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_7"
       , name = "Storm's End Tourney Grounds"
@@ -20563,6 +21541,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_8"
       , name = "The Knight"
@@ -20584,6 +21563,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_3"
       , name = "The Last River"
@@ -20605,6 +21585,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_19"
       , name = "Tourney Lance"
@@ -20626,6 +21607,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_97"
       , name = "A United Cause"
@@ -20647,6 +21629,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_94"
       , name = "Blood Debt"
@@ -20668,6 +21651,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_96"
       , name = "Condemned"
@@ -20689,6 +21673,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_87"
       , name = "Corpse Lake"
@@ -20710,6 +21695,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_86"
       , name = "Cotter Pyke"
@@ -20731,6 +21717,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_92"
       , name = "Dagos Manwoody"
@@ -20752,6 +21739,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_84"
       , name = "Davos's Confidant"
@@ -20773,6 +21761,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_89"
       , name = "Dragon Knight"
@@ -20794,6 +21783,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_98"
       , name = "Enemy of My Enemy"
@@ -20815,6 +21805,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_90"
       , name = "Exiled Knight"
@@ -20836,6 +21827,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_95"
       , name = "First Ranger"
@@ -20857,6 +21849,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_100"
       , name = "I Fight to Win"
@@ -20878,6 +21871,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "atoc_81"
       , name = "Knight of Harrenhal"
@@ -20899,6 +21893,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_91"
       , name = "Meraxes"
@@ -20920,6 +21915,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_88"
       , name = "Nighttime Raid"
@@ -20941,6 +21937,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_82"
       , name = "No Quarter"
@@ -20962,6 +21959,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_83"
       , name = "Queen's Guard"
@@ -20983,6 +21981,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_99"
       , name = "Secret Alliance"
@@ -21004,6 +22003,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_93"
       , name = "The Brimstone"
@@ -21025,6 +22025,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_85"
       , name = "The Painted Table"
@@ -21046,6 +22047,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_65"
       , name = "A House Divided"
@@ -21067,6 +22069,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_74"
       , name = "Arianne's Conspirators"
@@ -21088,6 +22091,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_70"
       , name = "Asha Greyjoy"
@@ -21109,6 +22113,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_73"
       , name = "Daario Naharis"
@@ -21130,6 +22135,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_71"
       , name = "Finger Dance"
@@ -21151,6 +22157,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_77"
       , name = "Ghost of High Heart"
@@ -21172,6 +22179,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_61"
       , name = "Greatjon Umber"
@@ -21193,6 +22201,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_66"
       , name = "Oath of Fealty"
@@ -21214,6 +22223,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_78"
       , name = "Ocean Road"
@@ -21235,6 +22245,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_75"
       , name = "Quentyn's Guard"
@@ -21256,6 +22267,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_62"
       , name = "Rickard Karstark"
@@ -21277,6 +22289,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_79"
       , name = "Satin"
@@ -21298,6 +22311,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_68"
       , name = "Ser Axell Florent"
@@ -21319,6 +22333,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_67"
       , name = "Ser Davos Seaworth"
@@ -21340,6 +22355,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_63"
       , name = "Ser Gregor Clegane"
@@ -21361,6 +22377,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_72"
       , name = "Ser Jorah Mormont"
@@ -21382,6 +22399,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_64"
       , name = "The Hound"
@@ -21403,6 +22421,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_69"
       , name = "Theon Greyjoy"
@@ -21424,6 +22443,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_76"
       , name = "Words Are Like Arrows"
@@ -21445,6 +22465,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "atoc_80"
       , name = "You Swore an Oath"
@@ -21466,6 +22487,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "ator_57"
       , name = "A Game of Cyvasse"
@@ -21487,6 +22509,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_59"
       , name = "A Time for Ravens"
@@ -21508,6 +22531,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 2
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "ator_43"
       , name = "Burning Sword"
@@ -21529,6 +22553,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_45"
       , name = "Demon's Dance"
@@ -21550,6 +22575,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_58"
       , name = "Den of the Wolf"
@@ -21571,6 +22597,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_56"
       , name = "Dragon Attack"
@@ -21592,6 +22619,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_49"
       , name = "Maester Aemon"
@@ -21613,6 +22641,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_52"
       , name = "Secret Hideout"
@@ -21634,6 +22663,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_46"
       , name = "Shadow Stalker"
@@ -21655,6 +22685,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_50"
       , name = "Southron Scavengers"
@@ -21676,6 +22707,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_42"
       , name = "Taxed Dry"
@@ -21697,6 +22729,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_53"
       , name = "The Lion's Law"
@@ -21718,6 +22751,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_44"
       , name = "The Long Summer"
@@ -21739,6 +22773,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_41"
       , name = "The Long Winter"
@@ -21760,6 +22795,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_48"
       , name = "Theon Greyjoy"
@@ -21781,6 +22817,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_55"
       , name = "Thuggish Tactics"
@@ -21802,6 +22839,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_60"
       , name = "Unconventional Warfare"
@@ -21823,6 +22861,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "ator_54"
       , name = "Vigilant Stag"
@@ -21844,6 +22883,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_51"
       , name = "Walder Frey"
@@ -21865,6 +22905,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_47"
       , name = "Wintertime Marauders"
@@ -21886,6 +22927,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_20"
       , name = "A Song of Summer"
@@ -21907,6 +22949,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "ator_2"
       , name = "Black Raven"
@@ -21928,6 +22971,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_16"
       , name = "Carrion Bird"
@@ -21949,6 +22993,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_5"
       , name = "Dragon Sight"
@@ -21970,6 +23015,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_11"
       , name = "Fairweather Followers"
@@ -21991,6 +23037,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_4"
       , name = "Fishing Net"
@@ -22012,6 +23059,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_6"
       , name = "Jeyne Westerling"
@@ -22033,6 +23081,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_1"
       , name = "Kings of Summer"
@@ -22054,6 +23103,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_15"
       , name = "Knights of the Sun"
@@ -22075,6 +23125,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_17"
       , name = "Lion's Gate"
@@ -22096,6 +23147,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_14"
       , name = "Maester of the Sun"
@@ -22117,6 +23169,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_19"
       , name = "Open Market"
@@ -22138,6 +23191,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_7"
       , name = "Priestess of the Pyre"
@@ -22159,6 +23213,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_12"
       , name = "Red Warlock"
@@ -22180,6 +23235,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_10"
       , name = "Scavengers of the Sea"
@@ -22201,6 +23257,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_8"
       , name = "Selyse Baratheon"
@@ -22222,6 +23279,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_13"
       , name = "Starfall Bannerman"
@@ -22243,6 +23301,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_18"
       , name = "Summer Port"
@@ -22264,6 +23323,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_3"
       , name = "Summer Tax"
@@ -22285,6 +23345,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_9"
       , name = "Summer's Champion"
@@ -22306,6 +23367,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_89"
       , name = "Alannys Greyjoy"
@@ -22327,6 +23389,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_87"
       , name = "Arena Knight"
@@ -22348,6 +23411,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_96"
       , name = "Bandit of Summer"
@@ -22369,6 +23433,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_94"
       , name = "Bandit of Winter"
@@ -22390,6 +23455,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_83"
       , name = "Bolton Refugee"
@@ -22411,6 +23477,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_84"
       , name = "Cat o' the Canals"
@@ -22432,6 +23499,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_91"
       , name = "Dragonstone Scavenger"
@@ -22453,6 +23521,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_98"
       , name = "Gilly"
@@ -22474,6 +23543,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_82"
       , name = "Head of a Dwarf"
@@ -22495,6 +23565,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_86"
       , name = "Highgarden Refugee"
@@ -22516,6 +23587,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_88"
       , name = "Island Refugee"
@@ -22537,6 +23609,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_85"
       , name = "Mountain Refugee"
@@ -22558,6 +23631,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_81"
       , name = "Needle"
@@ -22579,6 +23653,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_93"
       , name = "Pit Viper"
@@ -22600,6 +23675,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_92"
       , name = "Refugee of the Citadel"
@@ -22621,6 +23697,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_90"
       , name = "Refugee of the Plains"
@@ -22642,6 +23719,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_95"
       , name = "River Bandit"
@@ -22663,6 +23741,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_100"
       , name = "The Tides of War"
@@ -22684,6 +23763,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "ator_97"
       , name = "Vale Refugee"
@@ -22705,6 +23785,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_99"
       , name = "War of Five Kings"
@@ -22726,6 +23807,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_69"
       , name = "At the Point of a Blade"
@@ -22747,6 +23829,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_61"
       , name = "Dawn"
@@ -22768,6 +23851,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_79"
       , name = "Desolate Passage"
@@ -22789,6 +23873,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "ator_72"
       , name = "Dragonstone Rookery"
@@ -22810,6 +23895,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_67"
       , name = "Fights No Sword Can Win"
@@ -22831,6 +23917,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_63"
       , name = "Grand Maester Pycelle"
@@ -22852,6 +23939,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_77"
       , name = "Heart of the Kingdom"
@@ -22873,6 +23961,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_73"
       , name = "Island Rookery"
@@ -22894,6 +23983,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_65"
       , name = "Kraznys mo Nakloz"
@@ -22915,6 +24005,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_71"
       , name = "Lannisport Rookery"
@@ -22936,6 +24027,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_62"
       , name = "Northern Scavengers"
@@ -22957,6 +24049,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_74"
       , name = "Qartheen Rookery"
@@ -22978,6 +24071,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_64"
       , name = "Renly Baratheon"
@@ -22999,6 +24093,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_75"
       , name = "Rookery of Sunspear"
@@ -23020,6 +24115,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_66"
       , name = "Samwell Tarly"
@@ -23041,6 +24137,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_68"
       , name = "The Raven's Message"
@@ -23062,6 +24159,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_80"
       , name = "The Raven's Song"
@@ -23083,6 +24181,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 1
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "ator_78"
       , name = "The Tower of Joy"
@@ -23104,6 +24203,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_76"
       , name = "Vale Rookery"
@@ -23125,6 +24225,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_70"
       , name = "Winterfell Rookery"
@@ -23146,6 +24247,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_35"
       , name = "Carrion Bird"
@@ -23167,6 +24269,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_38"
       , name = "Frozen Sea"
@@ -23188,6 +24291,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_29"
       , name = "Ice Fisherman"
@@ -23209,6 +24313,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_28"
       , name = "Janos Slynt"
@@ -23230,6 +24335,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_21"
       , name = "Kings of Winter"
@@ -23251,6 +24357,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_26"
       , name = "Maester Vyman"
@@ -23272,6 +24379,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_33"
       , name = "Mance Rayder"
@@ -23293,6 +24401,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_36"
       , name = "Northern Cave"
@@ -23314,6 +24423,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_31"
       , name = "Obara Sand"
@@ -23335,6 +24445,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_25"
       , name = "Ranger of Winter"
@@ -23356,6 +24467,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_27"
       , name = "Scavengers of King's Landing"
@@ -23377,6 +24489,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_34"
       , name = "Ser Arthur Dayne"
@@ -23398,6 +24511,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_22"
       , name = "Son of a King"
@@ -23419,6 +24533,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_37"
       , name = "The Wall"
@@ -23440,6 +24555,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_40"
       , name = "The Winds of Winter"
@@ -23461,6 +24577,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 2
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "ator_32"
       , name = "Underhanded Assassin"
@@ -23482,6 +24599,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_30"
       , name = "Valyrian Spirit"
@@ -23503,6 +24621,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_23"
       , name = "War Horn"
@@ -23524,6 +24643,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_24"
       , name = "White Raven"
@@ -23545,6 +24665,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "ator_39"
       , name = "Winter Armada"
@@ -23566,6 +24687,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_69"
       , name = "Captured Cog"
@@ -23585,8 +24707,9 @@ all_cards =
       , traits = [ "Warship" ]
       , strength = Nothing
       , income = Nothing
-      , initiative = Nothing
+      , initiative = Just 2
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_74"
       , name = "Dragon Egg"
@@ -23608,6 +24731,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_67"
       , name = "Ghost of Winterfell"
@@ -23629,6 +24753,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_75"
       , name = "Great Pyramid of Meereen"
@@ -23640,7 +24765,7 @@ all_cards =
       , illustrator = "Franz Miklis"
       , house = [ House_Targaryen ]
       , unique = True
-      , rules_text = Just "Limited.\nMarshalling: Kneel Great Pyramid of Meereen to lower the cost of the next [Targaryen] character you play this phase by 2.\n+2 [Influence]."
+      , rules_text = Just "Limited.\nMarshalling: Kneel Great Pyramid of Meereen to lower the cost of the next [Targaryen] character you play this phase by 2.\n[+2 Influence]"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [  ]
@@ -23650,6 +24775,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 2
       }
     , { id = "btns_62"
       , name = "Hall of Dragons"
@@ -23671,6 +24797,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_68"
       , name = "Longship Red Jester"
@@ -23692,6 +24819,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_61"
       , name = "Maege Mormont"
@@ -23713,6 +24841,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_70"
       , name = "Maester Myles"
@@ -23734,6 +24863,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_80"
       , name = "Men of Duty"
@@ -23755,6 +24885,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 7
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "btns_79"
       , name = "Men of Honor"
@@ -23776,6 +24907,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "btns_78"
       , name = "Much and More"
@@ -23797,6 +24929,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_76"
       , name = "Myr"
@@ -23808,7 +24941,7 @@ all_cards =
       , illustrator = "Jared Blando"
       , house = [ House_Stark, House_Lannister, House_Baratheon, House_Targaryen, House_Martell, House_Greyjoy ]
       , unique = True
-      , rules_text = Just "Lower the cost of the first out-of-House [Baratheon] card you play each round by 1.\nLower the cost of the first Knight character you play each round by 1.\n+1 [Influence]"
+      , rules_text = Just "Lower the cost of the first out-of-House [Baratheon] card you play each round by 1.\nLower the cost of the first Knight character you play each round by 1.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -23818,6 +24951,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "btns_64"
       , name = "Pentoshi Manor"
@@ -23839,6 +24973,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_71"
       , name = "Rhoynar Emissary"
@@ -23860,6 +24995,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_73"
       , name = "The Golden Company"
@@ -23881,6 +25017,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_66"
       , name = "The Nightfort"
@@ -23902,6 +25039,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_72"
       , name = "The Windblown"
@@ -23923,6 +25061,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_77"
       , name = "Tyrosh"
@@ -23934,7 +25073,7 @@ all_cards =
       , illustrator = "Jared Blando"
       , house = [ House_Stark, House_Lannister, House_Baratheon, House_Targaryen, House_Martell, House_Greyjoy ]
       , unique = True
-      , rules_text = Just "Lower the cost of the first out-of-House [Lannister] card you play each round by 1.\nLower the cost of the first Ally character you play each round by 1.\n+1 [Influence]"
+      , rules_text = Just "Lower the cost of the first out-of-House [Lannister] card you play each round by 1.\nLower the cost of the first Ally character you play each round by 1.\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -23944,6 +25083,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "btns_63"
       , name = "Volantis Inn"
@@ -23965,6 +25105,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_65"
       , name = "Watcher of the Nightfire"
@@ -23986,6 +25127,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_114"
       , name = "Deceit"
@@ -24007,6 +25149,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_117"
       , name = "Dragonbone Bow"
@@ -24028,6 +25171,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_110"
       , name = "Flood Waters"
@@ -24049,6 +25193,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_107"
       , name = "Glamor of Fire"
@@ -24070,6 +25215,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_112"
       , name = "Greenblood Merchant"
@@ -24091,6 +25237,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_119"
       , name = "House of Dreams"
@@ -24112,6 +25259,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_120"
       , name = "Lead by Example"
@@ -24133,6 +25281,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "btns_118"
       , name = "Little and Less"
@@ -24154,6 +25303,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_116"
       , name = "Meereenese Fighting Pit"
@@ -24175,6 +25325,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_111"
       , name = "Old Bill Bone"
@@ -24196,6 +25347,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_108"
       , name = "Outfitted for War"
@@ -24217,6 +25369,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_113"
       , name = "Outthought"
@@ -24238,6 +25391,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_102"
       , name = "Ramsay's Hunting Dogs"
@@ -24259,6 +25413,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_103"
       , name = "Rhymes with Meek"
@@ -24280,6 +25435,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_109"
       , name = "Sacrificed to Two Gods"
@@ -24301,6 +25457,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_106"
       , name = "Snowed In"
@@ -24322,6 +25479,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_101"
       , name = "The Bastard's Boys"
@@ -24343,6 +25501,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_115"
       , name = "The Brazen Beasts"
@@ -24364,6 +25523,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_105"
       , name = "The Second Sons"
@@ -24385,6 +25545,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_104"
       , name = "Walk of Shame"
@@ -24406,6 +25567,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_59"
       , name = "A City Besieged"
@@ -24427,6 +25589,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "btns_42"
       , name = "Abel's Washerwoman"
@@ -24448,6 +25611,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_55"
       , name = "Archmaester Marwyn"
@@ -24469,6 +25633,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_41"
       , name = "Follower of the Many-Faced God"
@@ -24490,6 +25655,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_47"
       , name = "Follower of Two Gods"
@@ -24511,6 +25677,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_57"
       , name = "Griff"
@@ -24532,6 +25699,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_49"
       , name = "Iron Fleet Captain"
@@ -24553,6 +25721,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_51"
       , name = "Longship Grief"
@@ -24574,6 +25743,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_60"
       , name = "Manning the City Walls"
@@ -24595,6 +25765,7 @@ all_cards =
       , income = Just 1
       , initiative = Just 2
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "btns_58"
       , name = "Pentos"
@@ -24616,6 +25787,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "btns_44"
       , name = "Selhorys Customs Officer"
@@ -24637,6 +25809,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_56"
       , name = "Sellsword Deserter"
@@ -24658,6 +25831,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_52"
       , name = "Ser Archibald Yronwood"
@@ -24679,6 +25853,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_53"
       , name = "Ser Gerris Drinkwater"
@@ -24700,6 +25875,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_46"
       , name = "The Red Queen's Faithful"
@@ -24721,6 +25897,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_48"
       , name = "Thrall"
@@ -24742,6 +25919,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_50"
       , name = "Victarion's Reavers"
@@ -24763,6 +25941,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_54"
       , name = "Watchful Servant"
@@ -24784,6 +25963,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_45"
       , name = "Wildling Bard"
@@ -24805,6 +25985,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_43"
       , name = "Yezzan's Grotesquerie"
@@ -24826,6 +26007,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_81"
       , name = "Arya Stark"
@@ -24847,6 +26029,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_89"
       , name = "Banner Bearer"
@@ -24868,6 +26051,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_95"
       , name = "Company of the Cat"
@@ -24889,6 +26073,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_91"
       , name = "Cowed"
@@ -24910,6 +26095,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_85"
       , name = "Dockside Brothel"
@@ -24931,6 +26117,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_86"
       , name = "Dragonbone Dagger"
@@ -24952,6 +26139,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_87"
       , name = "Enslaved"
@@ -24973,6 +26161,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_98"
       , name = "Execution"
@@ -24994,6 +26183,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_90"
       , name = "Freed Galley"
@@ -25015,6 +26205,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_97"
       , name = "Greyscale"
@@ -25036,6 +26227,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_84"
       , name = "I Am No One"
@@ -25057,6 +26249,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_94"
       , name = "Lhorulu"
@@ -25078,6 +26271,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_96"
       , name = "Long Lances"
@@ -25099,6 +26293,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_99"
       , name = "Men of Pride"
@@ -25120,6 +26315,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 0
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "btns_88"
       , name = "Northern Encampment"
@@ -25141,6 +26337,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_92"
       , name = "Noyne"
@@ -25162,6 +26359,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_83"
       , name = "Poisoned Coin"
@@ -25183,6 +26381,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_93"
       , name = "Qhoyne"
@@ -25204,6 +26403,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_82"
       , name = "The House of Black and White"
@@ -25225,6 +26425,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_100"
       , name = "The Pale Mare"
@@ -25246,6 +26447,7 @@ all_cards =
       , income = Just 0
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "btns_40"
       , name = "Before the Black Walls"
@@ -25267,6 +26469,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 2
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "btns_35"
       , name = "Braavos"
@@ -25288,6 +26491,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "btns_22"
       , name = "Bran Stark"
@@ -25309,6 +26513,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_23"
       , name = "Castle Battlements"
@@ -25330,6 +26535,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_21"
       , name = "Damon Dance-For-Me"
@@ -25351,6 +26557,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_27"
       , name = "Dragonstone Bannerman"
@@ -25372,6 +26579,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_25"
       , name = "Merchant's Widow"
@@ -25393,6 +26601,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_29"
       , name = "Moqorro"
@@ -25414,6 +26623,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_36"
       , name = "Norvos"
@@ -25435,6 +26645,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "btns_39"
       , name = "On Dagger Lake"
@@ -25456,6 +26667,7 @@ all_cards =
       , income = Just 1
       , initiative = Just 6
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "btns_24"
       , name = "Penny"
@@ -25477,6 +26689,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_37"
       , name = "Pulled from the Rhoyne"
@@ -25498,6 +26711,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "btns_30"
       , name = "Quentyn Martell"
@@ -25519,6 +26733,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_32"
       , name = "Recruitment"
@@ -25540,6 +26755,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_26"
       , name = "Shireen Baratheon"
@@ -25561,6 +26777,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_31"
       , name = "Spiteful Bastard"
@@ -25582,6 +26799,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_34"
       , name = "Strong Belwas"
@@ -25603,6 +26821,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_38"
       , name = "Under the Bridge of Dream"
@@ -25624,6 +26843,7 @@ all_cards =
       , income = Just 1
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "btns_28"
       , name = "Victarion Greyjoy"
@@ -25645,6 +26865,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_33"
       , name = "Young Griff"
@@ -25666,6 +26887,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_18"
       , name = "Above the Sorrows"
@@ -25687,6 +26909,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 5
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "btns_10"
       , name = "Aeron Damphair"
@@ -25708,6 +26931,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_20"
       , name = "At the Palace of Sorrows"
@@ -25729,6 +26953,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "btns_6"
       , name = "Futile Gestures"
@@ -25750,6 +26975,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_14"
       , name = "Harried by Dragons"
@@ -25771,6 +26997,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_4"
       , name = "Hugor Hill"
@@ -25792,6 +27019,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_15"
       , name = "Incinerate"
@@ -25813,6 +27041,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_11"
       , name = "Maester Kerwin"
@@ -25834,6 +27063,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_16"
       , name = "Magister Illyrio"
@@ -25855,6 +27085,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_13"
       , name = "Playing the Part"
@@ -25876,6 +27107,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_4"
       , name = "Ser Kevan Lannister"
@@ -25897,6 +27129,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_19"
       , name = "Shores of Ny Sar"
@@ -25918,6 +27151,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "btns_7"
       , name = "Stannis Baratheon"
@@ -25939,6 +27173,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_8"
       , name = "The Bastard of Nightsong"
@@ -25960,6 +27195,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_1"
       , name = "The Kindly Man"
@@ -25981,6 +27217,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_12"
       , name = "Thirst-for-Vengeance"
@@ -26002,6 +27239,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_2"
       , name = "Turncloak"
@@ -26023,6 +27261,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_17"
       , name = "Volantis"
@@ -26044,6 +27283,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "btns_3"
       , name = "Ward"
@@ -26065,6 +27305,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "btns_9"
       , name = "Willas Tyrell"
@@ -26086,6 +27327,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_68"
       , name = "Cragorn"
@@ -26107,6 +27349,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_67"
       , name = "Euron Crow's Eye"
@@ -26128,6 +27371,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_69"
       , name = "Euron's Mongrel"
@@ -26149,6 +27393,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_78"
       , name = "Hollow Hill"
@@ -26170,6 +27415,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_70"
       , name = "Horn of Dragons"
@@ -26191,6 +27437,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_73"
       , name = "Horseback Hunters"
@@ -26212,6 +27459,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_64"
       , name = "Ill-Begotten Spoils"
@@ -26233,6 +27481,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_62"
       , name = "In Ramsay's Name"
@@ -26254,6 +27503,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_71"
       , name = "Longship Silence"
@@ -26275,6 +27525,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_66"
       , name = "Massey's Hook"
@@ -26296,6 +27547,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_76"
       , name = "Poisoned Knife"
@@ -26317,6 +27569,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_80"
       , name = "Retaliation!"
@@ -26338,6 +27591,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 8
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "bwb_72"
       , name = "River Raid"
@@ -26359,6 +27613,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_75"
       , name = "Silent Assassin"
@@ -26380,6 +27635,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_63"
       , name = "Son of the Mist"
@@ -26401,6 +27657,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_61"
       , name = "Steelshanks' Reserves"
@@ -26422,6 +27679,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_65"
       , name = "Stormlands Smuggler"
@@ -26433,7 +27691,7 @@ all_cards =
       , illustrator = "Skysoul Visual Art Studios"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "House Baratheon only. Stealth. Immune to events.\n"
+      , rules_text = Just "House Baratheon only. Stealth. Immune to events."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [ Icon_Military, Icon_Power ]
@@ -26443,6 +27701,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_77"
       , name = "The Mad Huntsman"
@@ -26464,6 +27723,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_74"
       , name = "The Womb of the World"
@@ -26485,6 +27745,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_79"
       , name = "Whispers from the Hill"
@@ -26506,6 +27767,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_117"
       , name = "Anguy the Archer"
@@ -26527,6 +27789,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_114"
       , name = "Black Hatchling"
@@ -26548,6 +27811,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_104"
       , name = "Bloody Scourge"
@@ -26569,6 +27833,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_103"
       , name = "Bolton Loyalist"
@@ -26590,6 +27855,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_110"
       , name = "Bound by the Light"
@@ -26611,6 +27877,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_113"
       , name = "Dothraki Handmaiden"
@@ -26632,6 +27899,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_111"
       , name = "Euron's Enforcers"
@@ -26653,6 +27921,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_119"
       , name = "Flaming Sword"
@@ -26674,6 +27943,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_109"
       , name = "Knight of Summerhall"
@@ -26695,6 +27965,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_108"
       , name = "Mountain Camp"
@@ -26716,6 +27987,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_116"
       , name = "No Use For Grief"
@@ -26737,6 +28009,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_115"
       , name = "Obella Sand"
@@ -26758,6 +28031,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_120"
       , name = "Relentless Persecution"
@@ -26779,6 +28053,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "bwb_101"
       , name = "Roose Bolton"
@@ -26800,6 +28075,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_107"
       , name = "Shagga Son of Dolf"
@@ -26821,6 +28097,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_118"
       , name = "Stoney Sept"
@@ -26842,6 +28119,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_106"
       , name = "Terror in the Dungeons"
@@ -26863,6 +28141,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_105"
       , name = "The Dreadfort"
@@ -26884,6 +28163,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_102"
       , name = "The Flayed Men"
@@ -26905,6 +28185,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_112"
       , name = "We Take Westeros!"
@@ -26926,6 +28207,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_17"
       , name = "Beric Dondarrion"
@@ -26947,6 +28229,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_11"
       , name = "Bitter Crone"
@@ -26968,6 +28251,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_14"
       , name = "Deadly Khalasar"
@@ -26989,6 +28273,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_10"
       , name = "Drogo's Horde"
@@ -27010,6 +28295,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_2"
       , name = "Dubious Loyalties"
@@ -27031,6 +28317,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_15"
       , name = "Edric Dayne"
@@ -27052,6 +28339,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_4"
       , name = "Fog of War"
@@ -27073,6 +28361,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_19"
       , name = "Ill Tidings"
@@ -27094,6 +28383,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_7"
       , name = "Motley Crewman"
@@ -27115,6 +28405,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_18"
       , name = "Neutral Faction"
@@ -27136,6 +28427,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_8"
       , name = "Ours for the Taking"
@@ -27157,6 +28449,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_3"
       , name = "Painted Dogs"
@@ -27178,6 +28471,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_9"
       , name = "Rakharo"
@@ -27199,6 +28493,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_12"
       , name = "Rakharo's Arakh"
@@ -27220,6 +28515,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_5"
       , name = "Robert's Loyalists"
@@ -27241,6 +28537,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_16"
       , name = "Southron Vessel"
@@ -27262,6 +28559,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_1"
       , name = "The Bastard of Bolton"
@@ -27274,7 +28572,7 @@ all_cards =
       , house = [ House_Stark ]
       , unique = True
       , rules_text = Just "House Stark only. Deadly.\nResponse: After control of a character changes, put The Bastard of Bolton into play from your hand."
-      , flavor_text = Just "\"Ser Rodrik had you five-to-one.\"<br>\"Aye, but he thought us friends. A common mistake.\""
+      , flavor_text = Just "\"Ser Rodrik had you five-to-one.\"\n\"Aye, but he thought us friends. A common mistake.\""
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
       , crest = [  ]
@@ -27283,6 +28581,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_6"
       , name = "The King's Ground"
@@ -27304,6 +28603,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_20"
       , name = "The Prince That Was Promised"
@@ -27325,6 +28625,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "bwb_13"
       , name = "Vaes Dothrak"
@@ -27346,6 +28647,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_95"
       , name = "Alchemist's Shop"
@@ -27367,6 +28669,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_93"
       , name = "Bastard Daughter"
@@ -27388,6 +28691,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_94"
       , name = "Blood of the Viper"
@@ -27409,6 +28713,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_87"
       , name = "Bloodthirsty Crew"
@@ -27430,6 +28735,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_100"
       , name = "Bungled Orders"
@@ -27451,6 +28757,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "bwb_99"
       , name = "Gossip and Lies"
@@ -27472,6 +28779,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_96"
       , name = "His Viper Eyes"
@@ -27493,6 +28801,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_97"
       , name = "Jack-be-Lucky"
@@ -27514,6 +28823,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_89"
       , name = "Jhogo"
@@ -27535,6 +28845,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_90"
       , name = "Jhogo's Whip"
@@ -27556,6 +28867,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_86"
       , name = "King Robert's Debt"
@@ -27577,6 +28889,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_92"
       , name = "Nymeria Sand"
@@ -27598,6 +28911,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_98"
       , name = "Orphaned Recruit"
@@ -27619,6 +28933,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_88"
       , name = "Refurbished Hulk"
@@ -27640,6 +28955,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_85"
       , name = "Shadow Enchantress"
@@ -27661,6 +28977,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_81"
       , name = "Steelshanks Walton"
@@ -27682,6 +28999,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_82"
       , name = "The Weeping Water"
@@ -27703,6 +29021,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_83"
       , name = "Tribeless Vagabond"
@@ -27724,6 +29043,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_91"
       , name = "Tyene Sand"
@@ -27745,6 +29065,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_84"
       , name = "Tyrion's Thug"
@@ -27766,6 +29087,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_22"
       , name = "Abandoned Fort"
@@ -27787,6 +29109,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_33"
       , name = "Aggo"
@@ -27808,6 +29131,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_34"
       , name = "Aggo's Bow"
@@ -27829,6 +29153,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_29"
       , name = "Altar of Fire"
@@ -27850,6 +29175,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_31"
       , name = "Ambitious Oarsman"
@@ -27871,6 +29197,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_23"
       , name = "Campfire Mime"
@@ -27892,6 +29219,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_36"
       , name = "Fallen and Reborn"
@@ -27913,6 +29241,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_28"
       , name = "Fanatic"
@@ -27934,6 +29263,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_27"
       , name = "Intolerant Priest"
@@ -27955,6 +29285,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_30"
       , name = "Lord of Light, Protect Us"
@@ -27976,6 +29307,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_40"
       , name = "Many Powers Long Asleep"
@@ -27997,6 +29329,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "bwb_25"
       , name = "Melisandre"
@@ -28018,6 +29351,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_24"
       , name = "Mountain Tactics"
@@ -28039,6 +29373,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_32"
       , name = "River Blockade"
@@ -28060,6 +29395,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_35"
       , name = "Starfall Merchant"
@@ -28071,7 +29407,7 @@ all_cards =
       , illustrator = "Veronica Jones"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "After you kneel Starfall Merchant to pay an influence cost, discard it from play (cannot be saved).\n+ 3 Influence."
+      , rules_text = Just "After you kneel Starfall Merchant to pay an influence cost, discard it from play (cannot be saved).\n[+3 Influence]"
       , flavor_text = Just "\"Two honors! Two! Two!\" The merchant was panting heavily from the effort of running backward."
       , cost = Just 2
       , icons = [ Icon_Intrigue ]
@@ -28081,6 +29417,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 3
       }
     , { id = "bwb_21"
       , name = "The Bastard's Elite"
@@ -28102,6 +29439,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_39"
       , name = "The Brotherhood Without Banners"
@@ -28123,6 +29461,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_37"
       , name = "Thoros of Myr"
@@ -28144,6 +29483,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_38"
       , name = "Tom Sevenstrings"
@@ -28165,6 +29505,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "bwb_26"
       , name = "Wicked Seductress"
@@ -28177,7 +29518,7 @@ all_cards =
       , house = [ House_Baratheon ]
       , unique = False
       , rules_text = Just "Response: After Wicked Seductress is knelt, choose and kneel 1 character without an Intrigue icon."
-      , flavor_text = Just "\"What do you mean, he sees no one?\"<br>\"No one but her,\" said Salladhor Saan"
+      , flavor_text = Just "\"What do you mean, he sees no one?\"\n\"No one but her,\" said Salladhor Saan"
       , cost = Just 3
       , icons = [ Icon_Intrigue, Icon_Power ]
       , crest = [  ]
@@ -28186,6 +29527,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_119"
       , name = "A Task for the King"
@@ -28207,6 +29549,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "cad_118"
       , name = "A Task in the East"
@@ -28228,6 +29571,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "cad_111"
       , name = "Blackwood Elite"
@@ -28249,6 +29593,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_114"
       , name = "By Sword or By Guile"
@@ -28270,6 +29615,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_113"
       , name = "Dragon Ambassador"
@@ -28291,6 +29637,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_102"
       , name = "Flame and Shadow"
@@ -28312,6 +29659,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_109"
       , name = "Locked in a Cell"
@@ -28333,6 +29681,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_112"
       , name = "Mad King Aerys"
@@ -28354,6 +29703,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_110"
       , name = "Northern Clansman"
@@ -28375,6 +29725,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_104"
       , name = "Orkwood Captain"
@@ -28396,6 +29747,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_103"
       , name = "Raider from Orkwood"
@@ -28417,6 +29769,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_101"
       , name = "Robert Baratheon"
@@ -28438,6 +29791,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_116"
       , name = "Sellsail Galley"
@@ -28459,6 +29813,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_106"
       , name = "Ser Balon Swann"
@@ -28480,6 +29835,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_105"
       , name = "Ten Towers"
@@ -28501,6 +29857,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_108"
       , name = "The Boneway"
@@ -28522,6 +29879,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_115"
       , name = "The Iron Throne"
@@ -28543,6 +29901,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_120"
       , name = "The Turncloak's Task"
@@ -28564,6 +29923,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "cad_117"
       , name = "They Lay with Lions"
@@ -28585,6 +29945,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 2
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "cad_107"
       , name = "Wheels within Wheels"
@@ -28606,6 +29967,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_54"
       , name = "Blackfyre"
@@ -28627,6 +29989,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_59"
       , name = "Calling the Banners"
@@ -28648,6 +30011,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_60"
       , name = "Common Cause"
@@ -28669,6 +30033,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 1
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_55"
       , name = "Fire Made Flesh"
@@ -28690,6 +30055,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_42"
       , name = "Heartsbane"
@@ -28711,6 +30077,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_56"
       , name = "House Bannerman"
@@ -28732,6 +30099,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_53"
       , name = "Ice"
@@ -28753,6 +30121,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_44"
       , name = "Iron Islands Marines"
@@ -28774,6 +30143,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_41"
       , name = "Knight of the North"
@@ -28795,6 +30165,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_45"
       , name = "Longship Iron Victory"
@@ -28816,6 +30187,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_43"
       , name = "Orkmont Reaver"
@@ -28837,6 +30209,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_46"
       , name = "Podrick Payne"
@@ -28858,6 +30231,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_57"
       , name = "Septon Utt"
@@ -28879,6 +30253,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_49"
       , name = "The Bastard of Godsgrace"
@@ -28900,6 +30275,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_52"
       , name = "The Children's Tower"
@@ -28921,6 +30297,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_51"
       , name = "The Drunkard's Tower"
@@ -28942,6 +30319,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_47"
       , name = "The Mander"
@@ -28963,6 +30341,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_50"
       , name = "The Stepstones"
@@ -28984,6 +30363,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_48"
       , name = "There Are No Men Like Me"
@@ -29005,6 +30385,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_58"
       , name = "Zollo"
@@ -29026,6 +30407,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_15"
       , name = "Aegon Targaryen"
@@ -29047,6 +30429,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_4"
       , name = "Bitterbridge"
@@ -29068,6 +30451,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_13"
       , name = "Catelyn Stark"
@@ -29089,6 +30473,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_1"
       , name = "Conquest"
@@ -29110,6 +30495,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_20"
       , name = "Crossing the Mummer's Ford"
@@ -29131,6 +30517,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 1
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "cad_2"
       , name = "Defiance"
@@ -29152,6 +30539,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_10"
       , name = "Doran Martell"
@@ -29173,6 +30561,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_6"
       , name = "Enraged Crewman"
@@ -29194,6 +30583,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_8"
       , name = "Frey Armsmen"
@@ -29215,6 +30605,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_16"
       , name = "Lysono Maar"
@@ -29236,6 +30627,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_5"
       , name = "Right of Conquest"
@@ -29257,6 +30649,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_3"
       , name = "Seasoned Smuggler"
@@ -29278,6 +30671,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_19"
       , name = "Seizing the Prize"
@@ -29299,6 +30693,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 10
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "cad_14"
       , name = "Show of Force"
@@ -29320,6 +30715,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_11"
       , name = "Spy from Starfall"
@@ -29341,6 +30737,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_7"
       , name = "The Reaver's Song"
@@ -29362,6 +30759,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_17"
       , name = "Theon Greyjoy"
@@ -29383,6 +30781,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_9"
       , name = "Traitor"
@@ -29404,6 +30803,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_18"
       , name = "Tycho Nestoris"
@@ -29415,16 +30815,17 @@ all_cards =
       , illustrator = "Aleksander Karcz"
       , house = [ House_Neutral ]
       , unique = True
-      , rules_text = Just "Prized 2. No attachments.\nResponse: After you count income, pay 1 gold to draw 1 card.\n[+1 Gold]"
+      , rules_text = Just "Prized 2. No attachments.\nResponse: After you count income, pay 1 gold to draw 1 card.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Intrigue, Icon_Power ]
       , crest = [  ]
       , traits = [ "Braavos" ]
       , strength = Just 3
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_12"
       , name = "You Murdered Her Children"
@@ -29446,6 +30847,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_23"
       , name = "A Taste of Glory"
@@ -29467,6 +30869,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_30"
       , name = "Blood Orange Grove"
@@ -29488,6 +30891,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_28"
       , name = "Counterplot"
@@ -29509,6 +30913,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_31"
       , name = "Desert Raider"
@@ -29520,7 +30925,7 @@ all_cards =
       , illustrator = "Diego Gisbert Llorens"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "House Martell only. Prized 1.\nResponse: After you lose a challenge, put Desert Raider into play from your dead pile. Then, choose a character and either an [Intrigue] or a [Power] icon. Until the end of the phase, the chosen character loses that icon and Desert Raider gains it.\n"
+      , rules_text = Just "House Martell only. Prized 1.\nResponse: After you lose a challenge, put Desert Raider into play from your dead pile. Then, choose a character and either an [Intrigue] or a [Power] icon. Until the end of the phase, the chosen character loses that icon and Desert Raider gains it."
       , flavor_text = Just "Card designed by 2012 A Game of Thrones European Melee Champion Istvan Cserdi"
       , cost = Just 2
       , icons = [ Icon_Military ]
@@ -29530,6 +30935,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_25"
       , name = "Every Captain is a King"
@@ -29541,7 +30947,7 @@ all_cards =
       , illustrator = "Tomasz Jedruszek"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "House Greyjoy only.\nResponse: After a player declares a [Naval] attacker or defender, put a Warship location into play from your hand.\n"
+      , rules_text = Just "House Greyjoy only.\nResponse: After a player declares a [Naval] attacker or defender, put a Warship location into play from your hand."
       , flavor_text = Just "On the Iron Islands they were one and the same, for every captain was a king on his own deck, and every king must be a captain."
       , cost = Nothing
       , icons = [  ]
@@ -29551,6 +30957,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_27"
       , name = "Frey Emissary"
@@ -29572,6 +30979,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_21"
       , name = "Knight of the Songs"
@@ -29584,7 +30992,7 @@ all_cards =
       , house = [ House_Baratheon ]
       , unique = False
       , rules_text = Just "Joust.\nKnight of the Songs gets +1 STR for each prized character you control."
-      , flavor_text = Just "\"Winter will never come for the likes of us. Should we die in battle, they will surely sing of us, and it's always summer in the songs.\" <br>â€“Brienne of Tarth"
+      , flavor_text = Just "\"Winter will never come for the likes of us. Should we die in battle, they will surely sing of us, and it's always summer in the songs.\" \nâ€“Brienne of Tarth"
       , cost = Just 2
       , icons = [ Icon_Military, Icon_Power ]
       , crest = [  ]
@@ -29593,6 +31001,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_34"
       , name = "Needle"
@@ -29614,6 +31023,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_35"
       , name = "Rhoyne Poleman"
@@ -29635,6 +31045,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_22"
       , name = "Rider from Storm's End"
@@ -29656,6 +31067,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_32"
       , name = "Ser Edmure Tully"
@@ -29667,7 +31079,7 @@ all_cards =
       , illustrator = "Ian Kirkpatrick"
       , house = [ House_Stark ]
       , unique = True
-      , rules_text = Just "Deadly.\nAny Phase: Choose a card in any player's discard or dead pile. Shuffle that card back into its owner's deck. (Limit once per round.)\n"
+      , rules_text = Just "Deadly.\nAny Phase: Choose a card in any player's discard or dead pile. Shuffle that card back into its owner's deck. (Limit once per round.)"
       , flavor_text = Just "\"I held Riverrun, and I bloodied Lord Tywinâ€™s nose.\""
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
@@ -29677,6 +31089,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_26"
       , name = "Ser Robert Strong"
@@ -29698,6 +31111,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_38"
       , name = "Shagwell"
@@ -29719,6 +31133,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_29"
       , name = "Summer Sea Scout"
@@ -29740,6 +31155,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_33"
       , name = "The Gatehouse Tower"
@@ -29751,7 +31167,7 @@ all_cards =
       , illustrator = "Dimitri Bielak"
       , house = [ House_Stark ]
       , unique = True
-      , rules_text = Just "House Stark only.\nYour characters get +1 STR if you control fewer characters than each opponent.\n"
+      , rules_text = Just "House Stark only.\nYour characters get +1 STR if you control fewer characters than each opponent."
       , flavor_text = Just "The Gatehouse Tower, squat and wide, was the largest of the three, slimy with moss, a gnarled tree growing sideways from the stones of its north sideâ€¦"
       , cost = Just 1
       , icons = [  ]
@@ -29761,6 +31177,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_40"
       , name = "The Lost Message"
@@ -29782,6 +31199,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "cad_37"
       , name = "Tokar"
@@ -29793,7 +31211,7 @@ all_cards =
       , illustrator = "Drazenka Kimpel"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "Attached character gains a [Power] icon, and during [Power] challenges gains renown.\n"
+      , rules_text = Just "Attached character gains a [Power] icon, and during [Power] challenges gains renown."
       , flavor_text = Just "The garment was a clumsy thing, a long loose shapeless sheet that had to be wound around her hips and under an arm and over a shoulder, its dangling fringes carefully layered and displayed. Wound too loose, it was like to fall off; wound too tight, it would tangle, trip, and bind"
       , cost = Just 1
       , icons = [  ]
@@ -29803,6 +31221,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_39"
       , name = "Vargo Hoat"
@@ -29824,6 +31243,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_36"
       , name = "Viserys Targaryen"
@@ -29835,7 +31255,7 @@ all_cards =
       , illustrator = "Cristina Vela"
       , house = [ House_Targaryen ]
       , unique = True
-      , rules_text = Just "House Targaryen only.\nPrized 1. \nAny Phase: Kneel Viserys Targaryen to choose and discard an attachment from play.\n"
+      , rules_text = Just "House Targaryen only.\nPrized 1. \nAny Phase: Kneel Viserys Targaryen to choose and discard an attachment from play."
       , flavor_text = Just "\"Keep your hands off me! No one touches the dragon without leave.\""
       , cost = Just 1
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -29845,6 +31265,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_24"
       , name = "Wex Pyke"
@@ -29866,6 +31287,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_87"
       , name = "Ashemark Councilor"
@@ -29887,6 +31309,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_94"
       , name = "Black Dragon Egg"
@@ -29908,6 +31331,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_81"
       , name = "Defenders of the Wall"
@@ -29929,6 +31353,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_82"
       , name = "Deserted Castle"
@@ -29950,6 +31375,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_91"
       , name = "Elia Sand"
@@ -29971,6 +31397,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_85"
       , name = "Farwynd Explorer"
@@ -29992,6 +31419,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_96"
       , name = "Green Dragon Egg"
@@ -30013,6 +31441,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_93"
       , name = "Hand of the King"
@@ -30034,6 +31463,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_99"
       , name = "Heads on Pikes"
@@ -30055,6 +31485,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_89"
       , name = "House Dayne Escort"
@@ -30076,6 +31507,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_97"
       , name = "In the Hands of the Qohorik"
@@ -30097,6 +31529,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_84"
       , name = "Lonely Light Envoy"
@@ -30118,6 +31551,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_86"
       , name = "Longship Iron Wind"
@@ -30139,6 +31573,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_88"
       , name = "Marbrand Outrider"
@@ -30160,6 +31595,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_92"
       , name = "Riverlands Hunter"
@@ -30181,6 +31617,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_98"
       , name = "Royal Decree"
@@ -30193,7 +31630,7 @@ all_cards =
       , house = [ House_Neutral ]
       , unique = False
       , rules_text = Just "Prized 2.\nResponse: Cancel the effects of an event card just played. (Non-prized event cards cannot cancel this effect.)"
-      , flavor_text = Just "“It is His Grace's wish that these good men be rewarded for their valor. By his decree...”<br>–Kevan Lannister"
+      , flavor_text = Just "“It is His Grace's wish that these good men be rewarded for their valor. By his decree...”\n–Kevan Lannister"
       , cost = Nothing
       , icons = [  ]
       , crest = [  ]
@@ -30202,6 +31639,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_90"
       , name = "Seneschal Ricasso"
@@ -30214,7 +31652,7 @@ all_cards =
       , house = [ House_Martell ]
       , unique = True
       , rules_text = Just "Response: After Seneschal Ricasso leaves play, choose a prized character in your dead or discard pile and put it into play under your control."
-      , flavor_text = Just "“Best send a rider to Ricasso, and have him open my apartments in the Tower of the Sun.”<br>–Doran Martell"
+      , flavor_text = Just "“Best send a rider to Ricasso, and have him open my apartments in the Tower of the Sun.”\n–Doran Martell"
       , cost = Just 2
       , icons = [ Icon_Intrigue, Icon_Power ]
       , crest = [ Crest_Learned ]
@@ -30223,6 +31661,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_100"
       , name = "The Aftermath"
@@ -30244,6 +31683,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 7
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "cad_83"
       , name = "The Wall"
@@ -30265,6 +31705,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "cad_96"
       , name = "White Dragon Egg"
@@ -30286,6 +31727,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_98"
       , name = "Climbing Spikes"
@@ -30307,6 +31749,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_82"
       , name = "Deep Freeze"
@@ -30328,6 +31771,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_93"
       , name = "Defenders of the North"
@@ -30349,6 +31793,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_91"
       , name = "Formal Escort"
@@ -30370,6 +31815,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_84"
       , name = "Golden Tooth Vaults"
@@ -30391,6 +31837,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_81"
       , name = "Osha"
@@ -30412,6 +31859,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_86"
       , name = "R'hllor's Blessing"
@@ -30433,6 +31881,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_87"
       , name = "Raiding Fleet"
@@ -30454,6 +31903,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_97"
       , name = "Rattleshirt's Raiders"
@@ -30475,6 +31925,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_88"
       , name = "Return of the Kraken"
@@ -30496,6 +31947,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_92"
       , name = "Serve. Obey. Protect."
@@ -30517,6 +31969,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_85"
       , name = "Stannis Baratheon"
@@ -30538,6 +31991,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_94"
       , name = "Steward of the Watch"
@@ -30559,6 +32013,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_95"
       , name = "The Feast of the Crows"
@@ -30580,6 +32035,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_100"
       , name = "The Songs of Bael the Bard"
@@ -30601,6 +32057,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "dotn_99"
       , name = "The Stewards"
@@ -30622,6 +32079,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_83"
       , name = "Treacherous Watchman"
@@ -30643,6 +32101,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_90"
       , name = "True Power"
@@ -30664,6 +32123,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_96"
       , name = "Varamyr Sixskins"
@@ -30685,6 +32145,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_89"
       , name = "White Hatchling"
@@ -30706,6 +32167,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_60"
       , name = "At the Wall"
@@ -30727,6 +32189,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 2
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "dotn_53"
       , name = "Builder of the Watch"
@@ -30748,6 +32211,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_57"
       , name = "Crow Killers"
@@ -30769,6 +32233,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_44"
       , name = "Favors from on High"
@@ -30790,6 +32255,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_42"
       , name = "Feigned Retreat"
@@ -30811,6 +32277,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_43"
       , name = "Greedy Councilor"
@@ -30832,6 +32299,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_51"
       , name = "House Dayne Squire"
@@ -30853,6 +32321,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_41"
       , name = "Jon Snow"
@@ -30874,6 +32343,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_55"
       , name = "Longclaw"
@@ -30895,6 +32365,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_47"
       , name = "Margaery Tyrell"
@@ -30916,6 +32387,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_48"
       , name = "Naval Escort"
@@ -30937,6 +32409,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_56"
       , name = "Orell the Eagle"
@@ -30958,6 +32431,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_58"
       , name = "Over the Wall"
@@ -30979,6 +32453,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_45"
       , name = "Salladhor's Crew"
@@ -31000,6 +32475,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_49"
       , name = "Stalwart Shield"
@@ -31021,6 +32497,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_52"
       , name = "Starfall"
@@ -31042,6 +32519,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_59"
       , name = "The Builders"
@@ -31063,6 +32541,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_50"
       , name = "The Hatchlings' Feast"
@@ -31084,6 +32563,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_46"
       , name = "The Iron Throne"
@@ -31105,6 +32585,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_54"
       , name = "The Sword in the Darkness"
@@ -31126,6 +32607,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_21"
       , name = "Benjen Stark"
@@ -31147,6 +32629,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_38"
       , name = "Beyond the Wall"
@@ -31168,6 +32651,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_32"
       , name = "Bronze Shield"
@@ -31189,6 +32673,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_24"
       , name = "Cersei's Wheelhouse"
@@ -31210,6 +32695,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_26"
       , name = "Compelled by the King"
@@ -31231,6 +32717,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_37"
       , name = "Craster's Keep"
@@ -31252,6 +32739,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_40"
       , name = "Fear of Winter"
@@ -31273,6 +32761,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 4
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "dotn_22"
       , name = "Frozen Moat"
@@ -31294,6 +32783,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_23"
       , name = "Lord Tywin's Man"
@@ -31315,6 +32805,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_29"
       , name = "Maegi Crone"
@@ -31336,6 +32827,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_31"
       , name = "Maester of Lemonwood"
@@ -31357,6 +32849,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_36"
       , name = "Mammoth Riders"
@@ -31378,6 +32871,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_30"
       , name = "Meereenese Brothel"
@@ -31399,6 +32893,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_27"
       , name = "Nute the Barber"
@@ -31420,6 +32915,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_33"
       , name = "Stonesnake"
@@ -31441,6 +32937,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_39"
       , name = "The Free Folk"
@@ -31462,6 +32959,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_28"
       , name = "The Seastone Chair"
@@ -31483,6 +32981,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_34"
       , name = "Traitorous Crow"
@@ -31504,6 +33003,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_35"
       , name = "Yoren's Task"
@@ -31525,6 +33025,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_25"
       , name = "Zealot of the Light"
@@ -31546,6 +33047,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_109"
       , name = "Balerion the Black"
@@ -31567,6 +33069,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_119"
       , name = "Blood of the First Men"
@@ -31588,6 +33091,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_112"
       , name = "Burning on the Sand"
@@ -31609,6 +33113,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_101"
       , name = "Coldhands"
@@ -31630,6 +33135,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_106"
       , name = "For R'hllor"
@@ -31651,6 +33157,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_110"
       , name = "Hrakkar Pelt"
@@ -31672,6 +33179,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_108"
       , name = "Kingsmoot Support"
@@ -31693,6 +33201,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_103"
       , name = "Lannisport Councilor"
@@ -31704,16 +33213,17 @@ all_cards =
       , illustrator = "Bruce Moffet"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "+1 Income."
+      , rules_text = Just "[+1 Income]"
       , flavor_text = Just "The Lannisters never declined, graciously, or otherwise. The Lannisters took what was offered."
       , cost = Just 1
       , icons = [ Icon_Power ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_115"
       , name = "Lost Ranger"
@@ -31735,6 +33245,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_116"
       , name = "Mance Rayder"
@@ -31756,6 +33267,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_105"
       , name = "Melisandre"
@@ -31777,6 +33289,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_118"
       , name = "Nightmares in the North"
@@ -31798,6 +33311,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_113"
       , name = "Old Bear Mormont"
@@ -31819,6 +33333,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_102"
       , name = "Reed's Crannogmen"
@@ -31840,6 +33355,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_111"
       , name = "Starfall Healer"
@@ -31861,6 +33377,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_107"
       , name = "Tarle the Thrice-Drowned"
@@ -31882,6 +33399,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_120"
       , name = "The Minstrel's Muse"
@@ -31903,6 +33421,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 8
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "dotn_104"
       , name = "The Price of Nobility"
@@ -31924,6 +33443,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_114"
       , name = "The Wall"
@@ -31945,6 +33465,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_117"
       , name = "Val"
@@ -31966,6 +33487,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_65"
       , name = "Acolyte of the Flame"
@@ -31987,6 +33509,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_62"
       , name = "Borderland Keep"
@@ -32008,6 +33531,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_73"
       , name = "Dolorous Edd"
@@ -32029,6 +33553,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_66"
       , name = "Eastwatch-by-the-Sea"
@@ -32050,6 +33575,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_78"
       , name = "Frostfang Peaks"
@@ -32071,6 +33597,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_61"
       , name = "Ghost"
@@ -32092,6 +33619,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_69"
       , name = "Green Hatchling"
@@ -32113,6 +33641,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_67"
       , name = "Mercenaries from Pyke"
@@ -32134,6 +33663,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_64"
       , name = "Misinformation"
@@ -32155,6 +33685,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_68"
       , name = "Pulled Under"
@@ -32176,6 +33707,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_74"
       , name = "Recruiter for the Watch"
@@ -32197,6 +33729,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_72"
       , name = "Scorpions Underfoot"
@@ -32218,6 +33751,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_63"
       , name = "Ser Balon Swann"
@@ -32239,6 +33773,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_71"
       , name = "Starfall Advisor"
@@ -32260,6 +33795,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_70"
       , name = "The Dragon's Fire"
@@ -32281,6 +33817,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_79"
       , name = "The Last Giants"
@@ -32302,6 +33839,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_75"
       , name = "The Shadow Tower"
@@ -32323,6 +33861,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_76"
       , name = "The Wildling Horde"
@@ -32344,6 +33883,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "dotn_80"
       , name = "Valar Dohaeris"
@@ -32365,6 +33905,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "dotn_77"
       , name = "Wildling Wisewoman"
@@ -32386,6 +33927,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_26"
       , name = "A Fistful of Coppers"
@@ -32407,6 +33949,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_29"
       , name = "Abandoned Forge"
@@ -32428,6 +33971,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_30"
       , name = "Balon Greyjoy"
@@ -32449,6 +33993,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_31"
       , name = "Balon's Rebellion"
@@ -32470,6 +34015,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_21"
       , name = "Catelyn Stark"
@@ -32491,6 +34037,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_24"
       , name = "Cersei Lannister"
@@ -32512,6 +34059,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_40"
       , name = "City of Sin"
@@ -32533,6 +34081,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 1
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kl_38"
       , name = "Condemned by the Council"
@@ -32554,6 +34103,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_35"
       , name = "Flea Bottom Scavenger"
@@ -32575,6 +34125,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_25"
       , name = "Gold Cloaks"
@@ -32596,6 +34147,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_36"
       , name = "Lost Oasis"
@@ -32617,6 +34169,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_28"
       , name = "Moon Boy"
@@ -32638,6 +34191,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_22"
       , name = "Septa Mordane"
@@ -32659,6 +34213,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_23"
       , name = "Storm Dancer"
@@ -32680,6 +34235,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_32"
       , name = "Street Waif"
@@ -32701,6 +34257,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_27"
       , name = "Sweet Cersei"
@@ -32722,6 +34279,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_33"
       , name = "Tears of Lys"
@@ -32743,6 +34301,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_37"
       , name = "The Hound"
@@ -32764,6 +34323,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_34"
       , name = "The Shadow of the East"
@@ -32785,6 +34345,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_39"
       , name = "Twilight Market"
@@ -32806,6 +34367,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_1"
       , name = "Arya Stark"
@@ -32827,6 +34389,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_4"
       , name = "Bound by Duty"
@@ -32848,6 +34411,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_19"
       , name = "City of Lies"
@@ -32869,6 +34433,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 6
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kl_20"
       , name = "City of Shadows"
@@ -32890,6 +34455,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_7"
       , name = "City Watch"
@@ -32911,6 +34477,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_13"
       , name = "Dragon Skull"
@@ -32932,6 +34499,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_3"
       , name = "Hidden Chambers"
@@ -32953,6 +34521,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_2"
       , name = "Hungry Mob"
@@ -32974,6 +34543,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_8"
       , name = "Kingswood Trail"
@@ -32995,6 +34565,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_10"
       , name = "Kraken Tattoo"
@@ -33016,6 +34587,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_14"
       , name = "Nomadic Trader"
@@ -33037,6 +34609,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_12"
       , name = "Ser Barristan Selmy"
@@ -33058,6 +34631,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_17"
       , name = "Ser Meryn Trant"
@@ -33079,6 +34653,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_18"
       , name = "Shadow Politics"
@@ -33100,6 +34675,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_16"
       , name = "The Shadow of the South"
@@ -33121,6 +34697,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_11"
       , name = "Treaty with the Isles"
@@ -33142,6 +34719,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_15"
       , name = "Treaty with the South"
@@ -33163,6 +34741,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_6"
       , name = "Tunnels of the Red Keep"
@@ -33184,6 +34763,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_5"
       , name = "Tyrion Lannister"
@@ -33205,6 +34785,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_9"
       , name = "Wharf Rats"
@@ -33226,6 +34807,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_93"
       , name = "Aegon's Legacy"
@@ -33247,6 +34829,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_88"
       , name = "Ancient Mariner"
@@ -33268,6 +34851,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_96"
       , name = "Backroom Bribery"
@@ -33289,6 +34873,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_82"
       , name = "Cannot be Bribed, Cannot be Bought"
@@ -33310,6 +34895,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_100"
       , name = "City of Spies"
@@ -33331,6 +34917,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kl_85"
       , name = "Death by Payne"
@@ -33352,6 +34939,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_94"
       , name = "Dornish Diplomat"
@@ -33373,6 +34961,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_81"
       , name = "Jeyne Poole"
@@ -33394,6 +34983,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_99"
       , name = "King's Landing"
@@ -33415,6 +35005,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_90"
       , name = "King's Landing Assassin"
@@ -33436,6 +35027,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_86"
       , name = "Knight of Flowers"
@@ -33457,6 +35049,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_84"
       , name = "Littlefinger"
@@ -33478,6 +35071,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_83"
       , name = "Qyburn"
@@ -33499,6 +35093,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_98"
       , name = "Ser Osmund Kettleblack"
@@ -33520,6 +35115,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_91"
       , name = "Shadow Prophet"
@@ -33541,6 +35137,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_89"
       , name = "Shore Leave"
@@ -33562,6 +35159,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_87"
       , name = "Small Council Chamber"
@@ -33583,6 +35181,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_95"
       , name = "The Broken Spear"
@@ -33604,6 +35203,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_97"
       , name = "Varys"
@@ -33625,6 +35225,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_92"
       , name = "Visenya's Hill"
@@ -33646,6 +35247,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_70"
       , name = "Blackwater Raiders"
@@ -33667,6 +35269,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_80"
       , name = "City of Spiders"
@@ -33688,6 +35291,7 @@ all_cards =
       , income = Just 1
       , initiative = Just 0
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "kl_73"
       , name = "Daemon Blackfyre"
@@ -33709,6 +35313,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_69"
       , name = "Distinguished Boatswain"
@@ -33730,6 +35335,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_72"
       , name = "Fishmonger's Square"
@@ -33751,6 +35357,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_65"
       , name = "Flogged and Chained"
@@ -33772,6 +35379,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_64"
       , name = "Joffrey Baratheon"
@@ -33793,6 +35401,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_63"
       , name = "Maester Malleon's Tome"
@@ -33814,6 +35423,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_67"
       , name = "Margaery Tyrell"
@@ -33835,6 +35445,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_61"
       , name = "Sansa Stark"
@@ -33856,6 +35467,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_71"
       , name = "Scurvy"
@@ -33877,6 +35489,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_62"
       , name = "Ser Dontos Hollard"
@@ -33898,6 +35511,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_77"
       , name = "Syrio Forel"
@@ -33919,6 +35533,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_68"
       , name = "The Black Cells"
@@ -33940,6 +35555,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_74"
       , name = "The Dragonpit"
@@ -33961,6 +35577,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_66"
       , name = "The Queen of Thorns"
@@ -33982,6 +35599,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_78"
       , name = "The Red Keep"
@@ -33993,7 +35611,7 @@ all_cards =
       , illustrator = "Ryan Barger"
       , house = [ House_Neutral ]
       , unique = True
-      , rules_text = Just "No attachments.\nIf The Red Keep would leave play, it goes into Shadows instead of going to its owner's hand, deck, discard, or dead pile.\n+3 Influence."
+      , rules_text = Just "No attachments.\nIf The Red Keep would leave play, it goes into Shadows instead of going to its owner's hand, deck, discard, or dead pile.\n[+3 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -34003,6 +35621,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 3
       }
     , { id = "kl_75"
       , name = "The Red Viper"
@@ -34024,6 +35643,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_76"
       , name = "The Viper's Rage"
@@ -34045,6 +35665,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_79"
       , name = "The White Book"
@@ -34066,6 +35687,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_103"
       , name = "Alchemist's Guild Hall"
@@ -34087,6 +35709,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_119"
       , name = "Battle of the Bay"
@@ -34108,6 +35731,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_107"
       , name = "Blackwater Bay"
@@ -34129,6 +35753,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_120"
       , name = "City of Soldiers"
@@ -34150,6 +35775,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 0
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "kl_109"
       , name = "Drinking the Sea"
@@ -34171,6 +35797,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_110"
       , name = "Free Cities Mercenaries"
@@ -34192,6 +35819,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_108"
       , name = "Island Mercenaries"
@@ -34213,6 +35841,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_106"
       , name = "King Robert's Hammer"
@@ -34234,6 +35863,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_111"
       , name = "Mercenary Contract"
@@ -34255,6 +35885,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_102"
       , name = "Northern Steel"
@@ -34276,6 +35907,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_101"
       , name = "Peasant Defenders"
@@ -34297,6 +35929,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_118"
       , name = "Pyromancer's Apprentice"
@@ -34318,6 +35951,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_112"
       , name = "Rhaenys's Hill"
@@ -34339,6 +35973,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_116"
       , name = "Rumors of War"
@@ -34360,6 +35995,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_105"
       , name = "Ser Davos Seaworth"
@@ -34381,6 +36017,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_117"
       , name = "Ser Mandon Moore"
@@ -34402,6 +36039,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_113"
       , name = "Southron Mercenaries"
@@ -34423,6 +36061,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_104"
       , name = "Tyrion's Chain"
@@ -34444,6 +36083,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_115"
       , name = "Venomous Blade"
@@ -34465,6 +36105,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_114"
       , name = "Veteran Spearman"
@@ -34486,6 +36127,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_54"
       , name = "Aegon's Hill"
@@ -34507,6 +36149,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_56"
       , name = "By the Light of the Sun"
@@ -34528,6 +36171,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_60"
       , name = "City of Secrets"
@@ -34549,6 +36193,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kl_55"
       , name = "Dornish Paramour"
@@ -34570,6 +36215,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_41"
       , name = "Eddard Stark"
@@ -34591,6 +36237,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_51"
       , name = "Harbor Thug"
@@ -34612,6 +36259,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_57"
       , name = "Jon Arryn"
@@ -34633,6 +36281,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_48"
       , name = "Jousting Steed"
@@ -34654,6 +36303,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_53"
       , name = "Merchant Spy"
@@ -34675,6 +36325,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_46"
       , name = "Robert Baratheon"
@@ -34696,6 +36347,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_47"
       , name = "Royal Entourage"
@@ -34717,6 +36369,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_50"
       , name = "Seaside Urchin"
@@ -34738,6 +36391,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_44"
       , name = "Ser Jaime Lannister"
@@ -34759,6 +36413,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_58"
       , name = "Ser Preston Greenfield"
@@ -34780,6 +36435,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_45"
       , name = "Shae's Manse"
@@ -34801,6 +36457,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_59"
       , name = "The Hand's Judgement"
@@ -34822,6 +36479,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_49"
       , name = "The Iron Throne"
@@ -34843,6 +36501,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_52"
       , name = "The Shadow of the Isles"
@@ -34864,6 +36523,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_42"
       , name = "Tower of the Hand"
@@ -34885,6 +36545,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kl_43"
       , name = "Tywin Lannister"
@@ -34906,6 +36567,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_113"
       , name = "Alleras"
@@ -34927,6 +36589,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_119"
       , name = "Bloodthirst"
@@ -34948,6 +36611,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_117"
       , name = "Drogon"
@@ -34969,6 +36633,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_106"
       , name = "Euron's Favor"
@@ -34990,6 +36655,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_104"
       , name = "Gran Goodbrother"
@@ -35011,6 +36677,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_107"
       , name = "Grand Maester Pycelle"
@@ -35032,6 +36699,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_109"
       , name = "Lashing Out"
@@ -35053,6 +36721,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_112"
       , name = "Littlefinger"
@@ -35064,7 +36733,7 @@ all_cards =
       , illustrator = "Chris Rallis"
       , house = [ House_Neutral ]
       , unique = True
-      , rules_text = Just "Stealth. Immune to opponents' events.\nReduce the cost to bring Littlefinger out of shadows by a single opponent's (your choice) current power total.\nIncrease the claim value on your revealed plot card by 1 when attacking an opponent with more power than you.\n"
+      , rules_text = Just "Stealth. Immune to opponents' events.\nReduce the cost to bring Littlefinger out of shadows by a single opponent's (your choice) current power total.\nIncrease the claim value on your revealed plot card by 1 when attacking an opponent with more power than you."
       , flavor_text = Just "Card designed by the player community at Days of Ice and Fire 2012."
       , cost = Just 10
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -35074,6 +36743,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_105"
       , name = "Longship Maiden's Bane"
@@ -35095,6 +36765,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_102"
       , name = "Mace Tyrell"
@@ -35116,6 +36787,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_101"
       , name = "Maester Cressen"
@@ -35137,6 +36809,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_118"
       , name = "Rhaegal"
@@ -35158,6 +36831,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_103"
       , name = "Riches of the Reach"
@@ -35179,6 +36853,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_115"
       , name = "Robb's Favor"
@@ -35200,6 +36875,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_114"
       , name = "Sansa Stark"
@@ -35221,6 +36897,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_111"
       , name = "Secret Schemes"
@@ -35242,6 +36919,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_110"
       , name = "Southron Heiress"
@@ -35254,7 +36932,7 @@ all_cards =
       , house = [ House_Martell ]
       , unique = False
       , rules_text = Just "Southron Heiress gains stealth and deadly when attacking a player who controls more characters than you."
-      , flavor_text = Just "\"It would gladden my heart if I could assure you that the Sand Snakes were alone in wanting war, but I will not tell you lies, ser.\" <br>â€“Doran Martell"
+      , flavor_text = Just "\"It would gladden my heart if I could assure you that the Sand Snakes were alone in wanting war, but I will not tell you lies, ser.\" \nâ€“Doran Martell"
       , cost = Just 2
       , icons = [ Icon_Military, Icon_Intrigue ]
       , crest = [  ]
@@ -35263,6 +36941,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_120"
       , name = "Summoned by the Conclave"
@@ -35284,6 +36963,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 1
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kr_108"
       , name = "Tywin's Favor"
@@ -35296,7 +36976,7 @@ all_cards =
       , house = [ House_Lannister ]
       , unique = False
       , rules_text = Just "Setup. Attach to a character you control.\nAny Phase: Discard attached character from play to add 4 gold tokens to your gold pool from the treasury."
-      , flavor_text = Just "\"House Westerling has its pardon, and your brother Rolph has been made Lord of Castamere. What else would you have of us?\" <br>â€“Jaime Lannister"
+      , flavor_text = Just "\"House Westerling has its pardon, and your brother Rolph has been made Lord of Castamere. What else would you have of us?\" \nâ€“Jaime Lannister"
       , cost = Just 0
       , icons = [  ]
       , crest = [  ]
@@ -35305,6 +36985,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_116"
       , name = "Viserion"
@@ -35326,6 +37007,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_39"
       , name = "A Song of Fire"
@@ -35347,6 +37029,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_40"
       , name = "A Song of Ice"
@@ -35368,6 +37051,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_24"
       , name = "Balon Greyjoy"
@@ -35389,6 +37073,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_33"
       , name = "Bran Stark"
@@ -35410,6 +37095,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_26"
       , name = "Damphair's Drowned"
@@ -35431,6 +37117,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_38"
       , name = "Dothraki Vanguard"
@@ -35452,6 +37139,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_30"
       , name = "Ellaria Sand"
@@ -35473,6 +37161,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_35"
       , name = "Green Dream"
@@ -35494,6 +37183,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_36"
       , name = "Khal Drogo"
@@ -35515,6 +37205,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_27"
       , name = "King's Landing Guard"
@@ -35536,6 +37227,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_25"
       , name = "Longship Great Kraken"
@@ -35557,6 +37249,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_31"
       , name = "Oberyn's Shield Bearer"
@@ -35578,6 +37271,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_22"
       , name = "Ser Garlan Tyrell"
@@ -35599,6 +37293,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_21"
       , name = "Ser Imry Florent"
@@ -35620,6 +37315,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_37"
       , name = "Slaver's Bay"
@@ -35641,6 +37337,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_23"
       , name = "The Kingsroad 23"
@@ -35652,16 +37349,17 @@ all_cards =
       , illustrator = "Julepe"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "After you win a challenge, kneel all copies of The Kingsroad in play to choose an opponent. Then, if it is Winter, that player must discard 1 card at random from his or her hand.\n+1 Initiative\n+1 Gold"
+      , rules_text = Just "After you win a challenge, kneel all copies of The Kingsroad in play to choose an opponent. Then, if it is Winter, that player must discard 1 card at random from his or her hand.\n[+1 Initiative]\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "The North" ]
       , strength = Nothing
-      , income = Nothing
-      , initiative = Nothing
+      , income = Just 1
+      , initiative = Just 1
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_29"
       , name = "The Kingsroad 29"
@@ -35673,16 +37371,17 @@ all_cards =
       , illustrator = "Julepe"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "After you win a challenge, kneel all copies of The Kingsroad in play. Then, if it is Summer, draw 1 card.\n+1 Initiative\n+1 Gold"
+      , rules_text = Just "After you win a challenge, kneel all copies of The Kingsroad in play. Then, if it is Summer, draw 1 card.\n[+1 Initiative]\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Westeros" ]
       , strength = Nothing
-      , income = Nothing
-      , initiative = Nothing
+      , income = Just 1
+      , initiative = Just 1
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_32"
       , name = "The Long Plan"
@@ -35704,6 +37403,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_28"
       , name = "Tommen Baratheon"
@@ -35725,6 +37425,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_34"
       , name = "Winterfell"
@@ -35737,7 +37438,7 @@ all_cards =
       , house = [ House_Stark ]
       , unique = True
       , rules_text = Just "House Stark only. No attachments.\nChallenges: If it is Winter, kneel Winterfell to increase the claim of the current challenge by 1."
-      , flavor_text = Just "\"Winterfell may have need of all its swords soon, and they had best not be made of wood.\" <br>â€“Catelyn Stark"
+      , flavor_text = Just "\"Winterfell may have need of all its swords soon, and they had best not be made of wood.\" \nâ€“Catelyn Stark"
       , cost = Just 3
       , icons = [  ]
       , crest = [  ]
@@ -35746,6 +37447,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_98"
       , name = "A Noble Cause"
@@ -35767,6 +37469,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_83"
       , name = "Asha Greyjoy"
@@ -35788,6 +37491,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_86"
       , name = "Ashemark Knight"
@@ -35809,6 +37513,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_81"
       , name = "Brightwater Man-at-Arms"
@@ -35830,6 +37535,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_95"
       , name = "Daenerys's Favor"
@@ -35851,6 +37557,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_90"
       , name = "Doran's Favor"
@@ -35872,6 +37579,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 4
       }
     , { id = "kr_82"
       , name = "Forced March"
@@ -35893,6 +37601,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_96"
       , name = "Gendry"
@@ -35914,6 +37623,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_94"
       , name = "Griffin's Roost"
@@ -35935,6 +37645,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_88"
       , name = "Harry the Riverlands"
@@ -35947,7 +37658,7 @@ all_cards =
       , house = [ House_Lannister ]
       , unique = False
       , rules_text = Just "House Lannister only.\nAny Phase: Kneel any number of characters with combined printed cost 3 or lower."
-      , flavor_text = Just "\"Tell them I want to see the riverlands afire from the Gods Eye to the Red Fork.\"<br>â€“Tywin Lannister"
+      , flavor_text = Just "\"Tell them I want to see the riverlands afire from the Gods Eye to the Red Fork.\"\nâ€“Tywin Lannister"
       , cost = Nothing
       , icons = [  ]
       , crest = [  ]
@@ -35956,6 +37667,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_93"
       , name = "Harwin"
@@ -35977,6 +37689,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_97"
       , name = "Lady of the Leaves"
@@ -35998,6 +37711,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_89"
       , name = "Obara Sand"
@@ -36019,6 +37733,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_91"
       , name = "Prepare for War"
@@ -36040,6 +37755,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_84"
       , name = "Pyke"
@@ -36061,6 +37777,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_100"
       , name = "Redwyne Straits"
@@ -36082,6 +37799,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kr_92"
       , name = "Robb Stark"
@@ -36103,6 +37821,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_87"
       , name = "Ser Gregor's Dog"
@@ -36124,6 +37843,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_85"
       , name = "Storming the Shore"
@@ -36145,6 +37865,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_99"
       , name = "The Old Way"
@@ -36166,6 +37887,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_1"
       , name = "Alester Florent"
@@ -36187,6 +37909,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_8"
       , name = "Ashemark"
@@ -36208,6 +37931,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_15"
       , name = "Breaching the Wall"
@@ -36229,6 +37953,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_2"
       , name = "Brightwater Keep"
@@ -36250,6 +37975,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_17"
       , name = "Castle Darry"
@@ -36271,12 +37997,13 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
-    , { id = "kr_79"
+    , { id = "kr_7"
       , name = "Damon Marbrand"
       , card_type = CardType_Character
       , set = Set_TheBannersGather
-      , number = 79
+      , number = 7
       , quantity = 3
       , legality = Legality_Legal
       , illustrator = "Aurelien Hubert"
@@ -36292,6 +38019,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_10"
       , name = "Edric Dayne"
@@ -36313,6 +38041,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_4"
       , name = "Gorold Goodbrother"
@@ -36334,6 +38063,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_5"
       , name = "Hammerhorn"
@@ -36355,6 +38085,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_3"
       , name = "Into the Breach"
@@ -36376,6 +38107,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_13"
       , name = "Mors Umber"
@@ -36397,6 +38129,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_14"
       , name = "Northland Keep"
@@ -36418,6 +38151,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_12"
       , name = "Poisoned Well"
@@ -36439,6 +38173,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_18"
       , name = "Rain of Fire"
@@ -36460,6 +38195,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_20"
       , name = "Rally Cry"
@@ -36481,6 +38217,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kr_6"
       , name = "Scaling Ladder"
@@ -36502,6 +38239,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_16"
       , name = "Ser Raymun Darry"
@@ -36523,6 +38261,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_11"
       , name = "Southron Stronghold"
@@ -36534,16 +38273,17 @@ all_cards =
       , illustrator = "Lino Drieghe"
       , house = [ House_Martell ]
       , unique = True
-      , rules_text = Just "Any Phase: Discard a card from your hand to stand Southron Stronghold.\n+1 Gold\n+1 Influence"
+      , rules_text = Just "Any Phase: Discard a card from your hand to stand Southron Stronghold.\n[+1 Income]\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Stronghold", "House Dayne" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "kr_19"
       , name = "Storm the Gate"
@@ -36565,6 +38305,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_9"
       , name = "Trebuchet"
@@ -36586,6 +38327,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_75"
       , name = "Aegon's Favor"
@@ -36607,6 +38349,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_80"
       , name = "Befouled River"
@@ -36628,6 +38371,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 0
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "kr_79"
       , name = "Betrayal at the Wall"
@@ -36649,6 +38393,7 @@ all_cards =
       , income = Just 1
       , initiative = Just 11
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "kr_61"
       , name = "Coldhands"
@@ -36670,6 +38415,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_71"
       , name = "Dayne Spearman"
@@ -36691,6 +38437,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_72"
       , name = "Dornish Hermitage"
@@ -36712,6 +38459,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_77"
       , name = "Eastwatch Envoy"
@@ -36733,6 +38481,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_64"
       , name = "Gormond Goodbrother"
@@ -36745,7 +38494,7 @@ all_cards =
       , house = [ House_Greyjoy ]
       , unique = True
       , rules_text = Just "Response: Kneel Gormond Goodbrother to save a location you control from being discarded from play."
-      , flavor_text = Just "\"Aye, and which are you?\" Aeron demanded. <br>\"Gormond. Gormond Goodbrother, if it please my lord.\""
+      , flavor_text = Just "\"Aye, and which are you?\" Aeron demanded. \n\"Gormond. Gormond Goodbrother, if it please my lord.\""
       , cost = Just 2
       , icons = [ Icon_Intrigue, Icon_Power ]
       , crest = [  ]
@@ -36754,6 +38503,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_65"
       , name = "Hammerhorn Raiders"
@@ -36775,6 +38525,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_67"
       , name = "Janos Slynt"
@@ -36796,6 +38547,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_68"
       , name = "Janos's Conspirator"
@@ -36817,6 +38569,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_73"
       , name = "Jon Snow"
@@ -36838,6 +38591,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_76"
       , name = "Loyal to the Last"
@@ -36859,6 +38613,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_63"
       , name = "Melisandre's Favor"
@@ -36880,6 +38635,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_66"
       , name = "Plunder"
@@ -36901,6 +38657,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_69"
       , name = "Secret Orders"
@@ -36922,6 +38679,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_62"
       , name = "Stannis Baratheon"
@@ -36943,6 +38701,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_70"
       , name = "Viper's Paramour"
@@ -36955,7 +38714,7 @@ all_cards =
       , house = [ House_Martell ]
       , unique = False
       , rules_text = Just "Ally characters cannot be declared as defenders while Viperâ€™s Paramour is attacking."
-      , flavor_text = Just "\"Did you tire of your paramour on the road?\"<br>â€“Tyrion Lannister"
+      , flavor_text = Just "\"Did you tire of your paramour on the road?\"\nâ€“Tyrion Lannister"
       , cost = Just 1
       , icons = [ Icon_Intrigue ]
       , crest = [  ]
@@ -36964,6 +38723,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_78"
       , name = "Ygritte"
@@ -36985,6 +38745,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "kr_74"
       , name = "Yoren"
@@ -37006,6 +38767,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_25"
       , name = "Black Ears"
@@ -37027,6 +38789,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_39"
       , name = "Bronze Link"
@@ -37048,6 +38811,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_30"
       , name = "Burned and Pillaged"
@@ -37059,16 +38823,17 @@ all_cards =
       , illustrator = "Yoann Boissonnet"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "Limited.\nAttach to a location.\nAttached location gains:\n-1 Initiative\n-1 Gold"
+      , rules_text = Just "Limited.\nAttach to a location.\nAttached location gains:\n[-1 Initiative]\n[-1 Income]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Condition" ]
       , strength = Nothing
-      , income = Nothing
-      , initiative = Nothing
+      , income = Just -1
+      , initiative = Just -1
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_37"
       , name = "Called by the Citadel"
@@ -37090,6 +38855,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_28"
       , name = "Cleansing Light"
@@ -37111,6 +38877,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_40"
       , name = "Forging the Chain"
@@ -37132,6 +38899,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 4
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "soo_23"
       , name = "Freezing Rain"
@@ -37153,6 +38921,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_34"
       , name = "Ghaston Grey"
@@ -37174,6 +38943,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_35"
       , name = "Jaqen H'ghar"
@@ -37195,6 +38965,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_29"
       , name = "Kingsmoot Hopeful"
@@ -37216,6 +38987,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_24"
       , name = "Maester Creylen"
@@ -37237,6 +39009,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_33"
       , name = "Maester Kedry"
@@ -37248,7 +39021,7 @@ all_cards =
       , illustrator = "Melissa Findley"
       , house = [ House_Martell ]
       , unique = True
-      , rules_text = Just "+ 2 Influence."
+      , rules_text = Just "[+2 Influence]"
       , flavor_text = Just "A maester traveled with them too, a maester skilled in tongues."
       , cost = Just 2
       , icons = [ Icon_Power ]
@@ -37258,6 +39031,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 2
       }
     , { id = "soo_21"
       , name = "Maester Luwin"
@@ -37279,6 +39053,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_36"
       , name = "Oldtown Scholar"
@@ -37300,6 +39075,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_38"
       , name = "Pale Steel Link"
@@ -37321,6 +39097,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_32"
       , name = "Pyrophobia"
@@ -37342,6 +39119,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_22"
       , name = "Riders of the Red Fork"
@@ -37363,6 +39141,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_31"
       , name = "Shadow Seer"
@@ -37384,6 +39163,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_27"
       , name = "Shireen Baratheon"
@@ -37405,6 +39185,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_26"
       , name = "The Inn of the Kneeling Man"
@@ -37426,6 +39207,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_19"
       , name = "Apprentice Collar"
@@ -37447,6 +39229,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_20"
       , name = "At the Gates"
@@ -37468,6 +39251,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 1
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "soo_15"
       , name = "Beware of the Sphinx"
@@ -37489,6 +39273,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_17"
       , name = "Copper Link"
@@ -37510,6 +39295,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_9"
       , name = "Daenerys Targaryen"
@@ -37531,6 +39317,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_3"
       , name = "Daven Lannister"
@@ -37552,6 +39339,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_4"
       , name = "Deep Den"
@@ -37573,6 +39361,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_12"
       , name = "Doran's Game"
@@ -37594,6 +39383,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_7"
       , name = "Gylbert Farwynd"
@@ -37615,6 +39405,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_14"
       , name = "Leyton Hightower"
@@ -37636,6 +39427,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_1"
       , name = "Lucas Blackwood"
@@ -37657,6 +39449,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_6"
       , name = "Lucky Bones"
@@ -37678,6 +39471,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_13"
       , name = "Oldtown Advisor"
@@ -37689,7 +39483,7 @@ all_cards =
       , illustrator = ""
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "If Oldtown Advisor has at least 2 Chain attachments attached, it gains: \"Response: Kneel Oldtown Advisor to cancel the effects of an event card just played.\"\n"
+      , rules_text = Just "If Oldtown Advisor has at least 2 Chain attachments attached, it gains: \"Response: Kneel Oldtown Advisor to cancel the effects of an event card just played.\""
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -37699,6 +39493,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_8"
       , name = "Support of Saltcliffe"
@@ -37720,6 +39515,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_16"
       , name = "The Citadel of Oldtown"
@@ -37741,6 +39537,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_10"
       , name = "The Dragon Strikes"
@@ -37762,6 +39559,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_5"
       , name = "The Laughing Storm"
@@ -37774,7 +39572,7 @@ all_cards =
       , house = [ House_Baratheon ]
       , unique = True
       , rules_text = Just "House Baratheon only. Deadly.\nWhile The Laughing Storm is standing, cards cannot be discarded from your hand."
-      , flavor_text = Just "\"Ha ha ha! Ha ha ha ha ha!\"<br>Card designed by 2010 A Game of Thrones World Joust Champion, Alec Irwin"
+      , flavor_text = Just "\"Ha ha ha! Ha ha ha ha ha!\"\nCard designed by 2010 A Game of Thrones World Joust Champion, Alec Irwin"
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
       , crest = [ Crest_War ]
@@ -37783,6 +39581,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_19"
       , name = "The Maester's Path"
@@ -37804,6 +39603,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_11"
       , name = "Tower Captain"
@@ -37815,7 +39615,7 @@ all_cards =
       , illustrator = ""
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "+1 Influence."
+      , rules_text = Just "[+1 Influence]"
       , flavor_text = Just "He was only a captain of guards, and still a stranger to this land and its seven-faced god, even after all these years."
       , cost = Just 1
       , icons = [ Icon_Military ]
@@ -37825,6 +39625,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 1
       }
     , { id = "soo_2"
       , name = "Widow's Watch"
@@ -37846,6 +39647,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_112"
       , name = "Advisor's Chambers"
@@ -37857,7 +39659,7 @@ all_cards =
       , illustrator = "Sara Biddle"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "Any Phase: Kneel a Learned character to stand Advisor's Chambers.\n+2 Influence"
+      , rules_text = Just "Any Phase: Kneel a Learned character to stand Advisor's Chambers.\n[+2 Influence]"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [  ]
@@ -37867,6 +39669,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Just 2
       }
     , { id = "soo_118"
       , name = "Brass Link"
@@ -37888,6 +39691,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_116"
       , name = "Citadel Politics"
@@ -37909,6 +39713,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_103"
       , name = "Corrupt Contender"
@@ -37930,6 +39735,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_113"
       , name = "Faceless Man"
@@ -37951,6 +39757,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_107"
       , name = "Famished Deckhand"
@@ -37972,6 +39779,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_110"
       , name = "Litany of Fire"
@@ -37993,6 +39801,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_101"
       , name = "Maester of Last Hearth"
@@ -38014,6 +39823,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_106"
       , name = "Maester's Tower"
@@ -38035,6 +39845,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_114"
       , name = "Prolific Statesman"
@@ -38056,6 +39867,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_105"
       , name = "Rotten Bastard"
@@ -38077,6 +39889,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_119"
       , name = "Schemes of the Scholar"
@@ -38098,6 +39911,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 6
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "soo_120"
       , name = "Search and Detain"
@@ -38119,6 +39933,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "soo_102"
       , name = "Ser Brynden's Guile"
@@ -38140,6 +39955,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_115"
       , name = "Ser Gerold Hightower"
@@ -38161,6 +39977,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_109"
       , name = "Shadow Parasite"
@@ -38182,6 +39999,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_104"
       , name = "Slander and Lies"
@@ -38203,6 +40021,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_111"
       , name = "Spear Phalanx"
@@ -38224,6 +40043,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_108"
       , name = "The Iron Cliffs"
@@ -38245,6 +40065,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_117"
       , name = "Valyrian Steel Link"
@@ -38266,6 +40087,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_94"
       , name = "Archmaester Marwyn"
@@ -38287,6 +40109,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_99"
       , name = "Black Iron Link"
@@ -38308,6 +40131,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_89"
       , name = "Bloodrider"
@@ -38329,6 +40153,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_95"
       , name = "Citadel Law"
@@ -38350,6 +40175,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_86"
       , name = "Dragonstone Watchtower"
@@ -38371,6 +40197,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_90"
       , name = "House of Shadow"
@@ -38392,6 +40219,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_83"
       , name = "House Payne Enforcer"
@@ -38413,6 +40241,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_87"
       , name = "Iron Fleet Raiders"
@@ -38434,6 +40263,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_98"
       , name = "Iron Link"
@@ -38455,6 +40285,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_88"
       , name = "Iron Lore"
@@ -38476,6 +40307,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_81"
       , name = "Lonely Hills"
@@ -38497,6 +40329,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_92"
       , name = "Oberyn's Guile"
@@ -38518,6 +40351,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_84"
       , name = "Restrict and Restrain"
@@ -38539,6 +40373,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_81"
       , name = "Rickon Stark"
@@ -38560,6 +40395,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_85"
       , name = "Ser Jon Fossoway"
@@ -38581,6 +40417,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_91"
       , name = "Starfall Cavalry"
@@ -38602,6 +40439,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_97"
       , name = "The Archmaester's Wrath"
@@ -38623,6 +40461,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_93"
       , name = "The Mad Mouse"
@@ -38644,6 +40483,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "soo_100"
       , name = "War of Attrition"
@@ -38665,6 +40505,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 8
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "soo_96"
       , name = "We Light the Way"
@@ -38686,6 +40527,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_31"
       , name = "A Secret Mission"
@@ -38697,7 +40539,7 @@ all_cards =
       , illustrator = "Sara Betsy"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Martell only.\n</span><span style=\"font-weight: bold;\">Challenges</span><span style=\"\">: Kill a </span><span style=\"font-weight: bold;font-style:italic;\">Sand Snake</span><span style=\"\"> character you control to choose and return up to 3 [Shadow] cards to Shadows.</span>"
+      , rules_text = Just "House Martell only.\nChallenges: Kill a Sand Snake character you control to choose and return up to 3 [Shadow] cards to Shadows."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -38707,6 +40549,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_25"
       , name = "âˆž Command the Winds"
@@ -38718,7 +40561,7 @@ all_cards =
       , illustrator = "Wibben"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Deathbound.\nAny Phase: Choose a [Greyjoy] character. That character gets +1 STR until the end of the phase.\nDominance: Kneel a Warship location to return Command the Winds from your dead pile to your hand.</span>"
+      , rules_text = Just "Deathbound.\nAny Phase: Choose a [Greyjoy] character. That character gets +1 STR until the end of the phase.\nDominance: Kneel a Warship location to return Command the Winds from your dead pile to your hand."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -38728,6 +40571,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_21"
       , name = "Brienne of Tarth"
@@ -38739,7 +40583,7 @@ all_cards =
       , illustrator = "Tiziano Baracchi"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Brienne of Tarth is considered to have the </span><span style=\"font-weight: bold;font-style:italic;\">Knight</span><span style=\"\"> trait.\n</span><span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After Brienne of Tarth kneels, each opponent may move 1 power to your House card from a card he or she controls. Any opponent who does not cannot play event cards this round. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "Brienne of Tarth is considered to have the Knight trait.\nLimited Response: After Brienne of Tarth kneels, each opponent may move 1 power to your House card from a card he or she controls. Any opponent who does not cannot play event cards this round. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [ Icon_Military ]
@@ -38749,6 +40593,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_40"
       , name = "Fallen from Favor"
@@ -38760,7 +40605,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;font-style:italic;\">Castle</span><span style=\"\">. After this plot is placed in your used pile,choose 1 character you control, and return it to the bottom of its owner’s deck (cannot be saved).</span>"
+      , rules_text = Just "Castle. After this plot is placed in your used pile,choose 1 character you control, and return it to the bottom of its owner’s deck (cannot be saved)."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -38770,6 +40615,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 6
       , claim = Just 2
+      , influence = Nothing
       }
     , { id = "w_36"
       , name = "Irri"
@@ -38781,7 +40627,7 @@ all_cards =
       , illustrator = "Mariana Vieira"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"\">If Irri would be killed, you may instead attach her to a [Targaryen] character as a </span><span style=\"font-weight: bold;font-style:italic;\">Handmaiden</span><span style=\"\"> attachment with the text, “Attached character gains a [Power] icon, and does not kneel to attack during [Power] challenges.”</span>"
+      , rules_text = Just "If Irri would be killed, you may instead attach her to a [Targaryen] character as a Handmaiden attachment with the text, “Attached character gains a [Power] icon, and does not kneel to attack during [Power] challenges.”"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [ Icon_Power ]
@@ -38791,6 +40637,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_35"
       , name = "Khal Drogo"
@@ -38802,7 +40649,7 @@ all_cards =
       , illustrator = "David Kegg"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Deadly.\nIf you win a challenge in which Khal Drogo attacked alone, instead of the normal claim effects, the losing player must choose and kill 1 character he or she controls, randomly discard 1 card from his or her hand, and move 1 power from his or her house card to yours.</span>"
+      , rules_text = Just "Deadly.\nIf you win a challenge in which Khal Drogo attacked alone, instead of the normal claim effects, the losing player must choose and kill 1 character he or she controls, randomly discard 1 card from his or her hand, and move 1 power from his or her house card to yours."
       , flavor_text = Nothing
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Power ]
@@ -38812,6 +40659,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_27"
       , name = "Moon Brother Harriers"
@@ -38823,7 +40671,7 @@ all_cards =
       , illustrator = "Tomasz Jedruszek"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"\">No attachments except </span><span style=\"font-weight: bold;font-style:italic;\">Weapon</span><span style=\"\">.\n</span><span style=\"font-weight: bold;\">Challenges</span><span style=\"\">: Pay 1 gold to give each participating </span><span style=\"font-weight: bold;font-style:italic;\">Clansman</span><span style=\"\"> character you control +1 STR until the end of the challenge. (Limit once per challenge.)</span>"
+      , rules_text = Just "No attachments except Weapon.\nChallenges: Pay 1 gold to give each participating Clansman character you control +1 STR until the end of the challenge. (Limit once per challenge.)"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [ Icon_Military, Icon_Intrigue ]
@@ -38833,6 +40681,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_37"
       , name = "Mya Stone"
@@ -38844,7 +40693,7 @@ all_cards =
       , illustrator = "Jorge Barrero"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">While there is at least 1 </span><span style=\"font-weight: bold;font-style:italic;\">Castle</span><span style=\"\"> plot card revealed, Mya Stone gains: “Opponent’s characters with printed cost 3 or lower cannot be declared alone as attackers.”</span>"
+      , rules_text = Just "While there is at least 1 Castle plot card revealed, Mya Stone gains: “Opponent’s characters with printed cost 3 or lower cannot be declared alone as attackers.”"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -38854,6 +40703,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_22"
       , name = "Offer of a Peach"
@@ -38865,7 +40715,7 @@ all_cards =
       , illustrator = "*credit artists individually - ask art coordinator"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Baratheon only.\n</span><span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After you win dominance, choose up to X standing characters to claim 1 power each. X is the number of plot cards in your used pile. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "House Baratheon only.\nLimited Response: After you win dominance, choose up to X standing characters to claim 1 power each. X is the number of plot cards in your used pile. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -38875,6 +40725,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_33"
       , name = "Raventree Elite"
@@ -38886,7 +40737,7 @@ all_cards =
       , illustrator = "Tomasz Jedruszek"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"\">No attachments. Stealth.\nEach </span><span style=\"font-weight: bold;font-style:italic;\">House Tully</span><span style=\"\"> character you control gains “immune to opponent’s triggered effects” while it is participating in a challenge.\n</span>"
+      , rules_text = Just "No attachments. Stealth.\nEach House Tully character you control gains “immune to opponent’s triggered effects” while it is participating in a challenge."
       , flavor_text = Nothing
       , cost = Just 6
       , icons = [ Icon_Military, Icon_Power ]
@@ -38896,6 +40747,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_34"
       , name = "Seagard"
@@ -38907,7 +40759,7 @@ all_cards =
       , illustrator = "Thomas Denmark"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Challenges</span><span style=\"\">: Kneel Seagard to choose a defending character you control. That character gets +2 STR and gains deadly until the end of the challenge. If you win the challenge, stand Seagard.</span>"
+      , rules_text = Just "Challenges: Kneel Seagard to choose a defending character you control. That character gets +2 STR and gains deadly until the end of the challenge. If you win the challenge, stand Seagard."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -38917,6 +40769,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_39"
       , name = "Taken Captive"
@@ -38928,7 +40781,7 @@ all_cards =
       , illustrator = "Michael J. Williams"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;font-style:italic;\">Castle</span><span style=\"\">. After this plot is placed in your used pile, choose an opponent’s character with printed cost 3 or lower. Take control of that character until a new plot is placed in your used pile.</span>"
+      , rules_text = Just "Castle. After this plot is placed in your used pile, choose an opponent’s character with printed cost 3 or lower. Take control of that character until a new plot is placed in your used pile."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -38938,6 +40791,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "w_38"
       , name = "The Eyrie"
@@ -38949,7 +40803,7 @@ all_cards =
       , illustrator = "Lino Drieghe"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Immune to plot card effects.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: Kneel The Eyrie to save a non-</span><span style=\"font-weight: bold;font-style:italic;\">Army</span><span style=\"\"> character with printed cost 4 or higher from being killed or discarded from play. Then, discard all power on that character.</span>"
+      , rules_text = Just "Immune to plot card effects.\nResponse: Kneel The Eyrie to save a non-Army character with printed cost 4 or higher from being killed or discarded from play. Then, discard all power on that character."
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [  ]
@@ -38959,6 +40813,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_30"
       , name = "The Red Mountains"
@@ -38970,7 +40825,7 @@ all_cards =
       , illustrator = "Christian Schwager"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Challenges</span><span style=\"\">: Kneel The Red Mountains to choose a [Martell] character with printed cost 3 or lower. Until the end of the phase, that character gains the </span><span style=\"font-weight: bold;font-style:italic;\">Sand Snake</span><span style=\"\"> trait.</span>"
+      , rules_text = Just "Challenges: Kneel The Red Mountains to choose a [Martell] character with printed cost 3 or lower. Until the end of the phase, that character gains the Sand Snake trait."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -38980,6 +40835,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_24"
       , name = "Thunderer"
@@ -38991,7 +40847,7 @@ all_cards =
       , illustrator = "Tomasz Jedruszek"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After an opponent reveals a plot card, kneel Thunderer to choose an opponent and discard the top card of his or her deck. If that card is a character or location, draw 1 card. (Limit 1 limited response per round.)\n</span>"
+      , rules_text = Just "Limited Response: After an opponent reveals a plot card, kneel Thunderer to choose an opponent and discard the top card of his or her deck. If that card is a character or location, draw 1 card. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [  ]
@@ -39001,6 +40857,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_29"
       , name = "Tyene Sand"
@@ -39012,7 +40869,7 @@ all_cards =
       , illustrator = "Drazenka Kimpel"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you lose a challenge as the defender, set the Claim value on your revealed plot card to 2 until the end of the phase. (While set, the value cannot be raised or lowered.)</span>"
+      , rules_text = Just "Response: After you lose a challenge as the defender, set the Claim value on your revealed plot card to 2 until the end of the phase. (While set, the value cannot be raised or lowered.)"
       , flavor_text = Nothing
       , cost = Just 4
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -39022,6 +40879,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_32"
       , name = "Tytos Blackwood"
@@ -39033,7 +40891,7 @@ all_cards =
       , illustrator = "Wibben"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Stealth.\nImmune to opponent’s events.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you win a challenge as the defender, move 1 power from the attacker player’s House card to your own.</span>"
+      , rules_text = Just "Stealth.\nImmune to opponent’s events.\nResponse: After you win a challenge as the defender, move 1 power from the attacker player’s House card to your own."
       , flavor_text = Nothing
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Power ]
@@ -39043,6 +40901,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_26"
       , name = "Ulf Son of Umar"
@@ -39054,7 +40913,7 @@ all_cards =
       , illustrator = "David Kegg"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Any Phase</span><span style=\"\">: Discard a card from your hand to give Ulf Son of Umar any keyword or crest printed on another character in play until the end of the phase.</span>"
+      , rules_text = Just "Any Phase: Discard a card from your hand to give Ulf Son of Umar any keyword or crest printed on another character in play until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
@@ -39064,6 +40923,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_28"
       , name = "Vale Encampment"
@@ -39075,7 +40935,7 @@ all_cards =
       , illustrator = "*credit artists individually - ask art coordinator"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Marshalling</span><span style=\"\">: Discard Vale Encampment (cannot be saved) to reduce the cost of the next </span><span style=\"font-weight: bold;font-style:italic;\">Clansman</span><span style=\"\"> card you play this phase by 1. When you play that card, draw 1 card.</span>"
+      , rules_text = Just "Marshalling: Discard Vale Encampment (cannot be saved) to reduce the cost of the next Clansman card you play this phase by 1. When you play that card, draw 1 card."
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -39085,6 +40945,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_23"
       , name = "Warrior of Note"
@@ -39096,7 +40957,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Deadly. Renown.</span>"
+      , rules_text = Just "Deadly. Renown."
       , flavor_text = Just "\"Aye. I'll take my axe and stand on that drawbridge, and let them come try me. One at a time, two, three, it makes no matter. None will pass the moat while I still draw breath.\" -Lorren, CoK"
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
@@ -39106,6 +40967,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_70"
       , name = "A Hidden Game"
@@ -39117,7 +40979,7 @@ all_cards =
       , illustrator = "Jake Murray"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Martell only.\n</span><span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After you lose a challenge, kill a </span><span style=\"font-weight: bold;font-style:italic;\">Sand Snake</span><span style=\"\"> character you control to choose a character. Until the end of the game, that character gains prized 1 and loses all instances of all challenge icons. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "House Martell only.\nLimited Response: After you lose a challenge, kill a Sand Snake character you control to choose a character. Until the end of the game, that character gains prized 1 and loses all instances of all challenge icons. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -39127,6 +40989,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_80"
       , name = "A Time for Wolves"
@@ -39138,7 +41001,7 @@ all_cards =
       , illustrator = "Jake Murray"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">When revealed, search your deck for a neutral or in-House </span><span style=\"font-weight: bold;font-style:italic;\">Creature</span><span style=\"\"> card with printed cost 3 or lower reveal it, and add it to your hand. If it is a </span><span style=\"font-weight: bold;font-style:italic;\">Direwolf</span><span style=\"\">, you may put it into play instead. Then, shuffle your deck.\n</span><span style=\"color: #211D1E;font-weight: bold;\">Card designed by 2012 AGoT LCG North American Champion, Dan Seefeldt</span>"
+      , rules_text = Just "When revealed, search your deck for a neutral or in-House Creature card with printed cost 3 or lower reveal it, and add it to your hand. If it is a Direwolf, you may put it into play instead. Then, shuffle your deck.\nCard designed by 2012 AGoT LCG North American Champion, Dan Seefeldt"
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -39148,6 +41011,7 @@ all_cards =
       , income = Just 3
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "w_73"
       , name = "Aggo"
@@ -39159,7 +41023,7 @@ all_cards =
       , illustrator = "*credit artists individually - ask art coordinator"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Deadly.\n</span><span style=\"font-weight: bold;\">Any Phase: </span><span style=\"\">Attach a [Targaryen] or neutral </span><span style=\"font-weight: bold;font-style:italic;\">Weapon</span><span style=\"\"> attachment from your discard pile to a </span><span style=\"font-weight: bold;font-style:italic;\">Dothraki</span><span style=\"\"> character you control. (Limit once per round.)</span>"
+      , rules_text = Just "Deadly.\nAny Phase: Attach a [Targaryen] or neutral Weapon attachment from your discard pile to a Dothraki character you control. (Limit once per round.)"
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
@@ -39169,6 +41033,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_71"
       , name = "Alayne Stone"
@@ -39180,7 +41045,7 @@ all_cards =
       , illustrator = "Drazenka Kimpel"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Stark only.\nIf you control Sansa Stark, discard Alayne Stone from play.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After Alayne Stone enters play, choose a </span><span style=\"font-weight: bold;font-style:italic;\">Castle</span><span style=\"\"> plot card in your used pile. Reveal it as your new plot card.</span>"
+      , rules_text = Just "House Stark only.\nIf you control Sansa Stark, discard Alayne Stone from play.\nResponse: After Alayne Stone enters play, choose a Castle plot card in your used pile. Reveal it as your new plot card."
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -39190,6 +41055,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_62"
       , name = "Camp Follower"
@@ -39201,7 +41067,7 @@ all_cards =
       , illustrator = "Sara Biddle"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Camp Follower gets +1 STR for each </span><span style=\"font-weight: bold;font-style:italic;\">Knight</span><span style=\"\"> character in play.</span>"
+      , rules_text = Just "Camp Follower gets +1 STR for each Knight character in play."
       , flavor_text = Just "The life of a soldier was not without certain compensations. Wherever you have a camp, you are certain to have camp followers. -GoT"
       , cost = Just 1
       , icons = [ Icon_Intrigue ]
@@ -39211,6 +41077,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_67"
       , name = "Clan Scout"
@@ -39232,6 +41099,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_69"
       , name = "Doran's Solar"
@@ -39243,7 +41111,7 @@ all_cards =
       , illustrator = "Adam Denton"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After 1 or more cards are discarded from your hand, kneel Doran’s Solar to draw 2 cards. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "Limited Response: After 1 or more cards are discarded from your hand, kneel Doran’s Solar to draw 2 cards. (Limit 1 limited response per round.)"
       , flavor_text = Just "Not until the doors of his solar were safely closed behind them did he wheel his chair about to face the women."
       , cost = Just 3
       , icons = [  ]
@@ -39253,6 +41121,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_75"
       , name = "Horse Gate"
@@ -39264,7 +41133,7 @@ all_cards =
       , illustrator = "Aurelien Hubert"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Targaryen only. Limited.\nDuring [Power] challenges, the claim value on your revealed plot card is increased by 1.</span>"
+      , rules_text = Just "House Targaryen only. Limited.\nDuring [Power] challenges, the claim value on your revealed plot card is increased by 1."
       , flavor_text = Just "Dany could not have said why the city needed a gate when it had no walls...and no buildings that she could see. Yet there it stood, immense and beautiful, the great horses framing the distant purple mountain beyond."
       , cost = Just 2
       , icons = [  ]
@@ -39274,6 +41143,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_64"
       , name = "Iron Fleet Pillager"
@@ -39285,7 +41155,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you win a challenge in which Iron Fleet Pillager participated, discard the top card of the losing opponent’s deck. If that card is a location or attachment, you may put it into play under your control.</span>"
+      , rules_text = Just "Response: After you win a challenge in which Iron Fleet Pillager participated, discard the top card of the losing opponent’s deck. If that card is a location or attachment, you may put it into play under your control."
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
@@ -39295,6 +41165,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_79"
       , name = "Knights Declarant"
@@ -39306,7 +41177,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">No attachments. Renown.\nReduce the cost to play Knights Declarant by 2 for each plot card in your used pile.\n</span>"
+      , rules_text = Just "No attachments. Renown.\nReduce the cost to play Knights Declarant by 2 for each plot card in your used pile."
       , flavor_text = Just "“...every knight in the Vale will pledge his sword to win you back your birthright.” -Petyr Baelish"
       , cost = Just 12
       , icons = [ Icon_Military, Icon_Power ]
@@ -39316,6 +41187,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_74"
       , name = "Lesser Ko"
@@ -39327,7 +41199,7 @@ all_cards =
       , illustrator = "Dallas Williams"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Challenges</span><span style=\"\">: Discard a card from your hand to give Lesser Ko deadly until the end of the phase.</span>"
+      , rules_text = Just "Challenges: Discard a card from your hand to give Lesser Ko deadly until the end of the phase."
       , flavor_text = Just "“Ko Pono left first, naming himself Khal Pono, and many followed him. Jhaqo was not long to do the same.” -Ser Jorah Mormont"
       , cost = Just 2
       , icons = [ Icon_Military, Icon_Intrigue ]
@@ -39337,6 +41209,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_78"
       , name = "Lyn Corbray"
@@ -39348,7 +41221,7 @@ all_cards =
       , illustrator = ""
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Stealth.\nEach of your non-</span><span style=\"font-weight: bold;font-style:italic;\">Army</span><span style=\"\"> characters with printed cost 4 or higher gets +2 STR.</span>"
+      , rules_text = Just "Stealth.\nEach of your non-Army characters with printed cost 4 or higher gets +2 STR."
       , flavor_text = Nothing
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Intrigue ]
@@ -39358,6 +41231,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_76"
       , name = "Lysa Arryn"
@@ -39369,7 +41243,7 @@ all_cards =
       , illustrator = "Mark Behm"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Response</span><span style=\"\">: Kneel Lysa Arryn to cancel a triggered effect with any form of the word “plot” or “non-plot” in its text.</span>"
+      , rules_text = Just "Response: Kneel Lysa Arryn to cancel a triggered effect with any form of the word “plot” or “non-plot” in its text."
       , flavor_text = Just "“I will not be made mock of. You have had your little jape, Imp. I trust you enjoyed it.”"
       , cost = Just 2
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -39379,6 +41253,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_68"
       , name = "Obella Sand"
@@ -39390,7 +41265,7 @@ all_cards =
       , illustrator = "David Kegg"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Martell only.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After another </span><span style=\"font-weight: bold;font-style:italic;\">Sand Snake</span><span style=\"\"> character you control is killed, put Obella Sand into Shadows from your dead pile.</span>"
+      , rules_text = Just "House Martell only.\nResponse: After another Sand Snake character you control is killed, put Obella Sand into Shadows from your dead pile."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -39400,6 +41275,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_77"
       , name = "Petyr Baelish"
@@ -39411,7 +41287,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Stealth.\nIf you control Littlefinger, discard Petyr Baelish from play.\n</span><span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: Kneel Petyr Baelish to cancel the effects of an event card just played. (Limit 1 limited response per round.)\n</span>"
+      , rules_text = Just "Stealth.\nIf you control Littlefinger, discard Petyr Baelish from play.\nLimited Response: Kneel Petyr Baelish to cancel the effects of an event card just played. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 4
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -39421,6 +41297,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_63"
       , name = "Renly's Pavilion"
@@ -39432,7 +41309,7 @@ all_cards =
       , illustrator = "Emilio Rodriguez"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"color: #211D1E;font-weight: bold;\">Response</span><span style=\"color: #211D1E;\">: After you reveal a plot card, kneel Renly’s Pavilion to claim 1 power for your House. Then, if it is summer, add 1 gold token from the treasury to your gold pool.</span>"
+      , rules_text = Just "Response: After you reveal a plot card, kneel Renly’s Pavilion to claim 1 power for your House. Then, if it is summer, add 1 gold token from the treasury to your gold pool."
       , flavor_text = Just "The candles within Renly's pavilion made the shimmering silken walls seem to glow, transforming the great tent into a magical castle alive with emerald light. -CoK"
       , cost = Just 2
       , icons = [  ]
@@ -39442,6 +41319,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_65"
       , name = "Salt and Iron"
@@ -39453,7 +41331,7 @@ all_cards =
       , illustrator = "JB Casacop"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Greyjoy only. Play only if you have won 2 or more unopposed challenges this phase.\n</span><span style=\"font-weight: bold;\">Challenges:</span><span style=\"\"> Choose and discard 1 character and 1 location, each with printed cost 3 or lower, from play.</span>"
+      , rules_text = Just "House Greyjoy only. Play only if you have won 2 or more unopposed challenges this phase.\nChallenges: Choose and discard 1 character and 1 location, each with printed cost 3 or lower, from play."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -39463,6 +41341,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_61"
       , name = "Ser Emmon Cuy"
@@ -39474,7 +41353,7 @@ all_cards =
       , illustrator = "Mark Behm"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"\">During [Power] challenges in which you control at least 1 attacking </span><span style=\"font-weight: bold;font-style:italic;\">Rainbow Guard </span><span style=\"\">character, raise the Claim value on your revealed plot card by 1.</span>"
+      , rules_text = Just "During [Power] challenges in which you control at least 1 attacking Rainbow Guard character, raise the Claim value on your revealed plot card by 1."
       , flavor_text = Just "\"You'll die for this.\" -CoK"
       , cost = Just 2
       , icons = [ Icon_Military, Icon_Power ]
@@ -39484,6 +41363,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_66"
       , name = "The Mountain Clan Horde"
@@ -39495,7 +41375,7 @@ all_cards =
       , illustrator = "Tomasz Jedruszek"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"\">No attachments.\nReduce the cost to play The Mountain Clan Horde by 1 for each </span><span style=\"font-weight: bold;font-style:italic;\">Clansman</span><span style=\"\"> character you control.\n</span><span style=\"font-weight: bold;\">Any Phase</span><span style=\"\">: Discard a card from hand to stand or kneel another </span><span style=\"font-weight: bold;font-style:italic;\">Clansman</span><span style=\"\"> character. (Limit once per phase.)</span>"
+      , rules_text = Just "No attachments.\nReduce the cost to play The Mountain Clan Horde by 1 for each Clansman character you control.\nAny Phase: Discard a card from hand to stand or kneel another Clansman character. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 8
       , icons = [ Icon_Military, Icon_Power ]
@@ -39505,6 +41385,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_72"
       , name = "Volley of Arrows"
@@ -39516,7 +41397,7 @@ all_cards =
       , illustrator = "Ignacio BazÃ¡n Lazcano"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Challenges</span><span style=\"\">: Choose a participating [Stark] character. Until the end of the challenge, that character gets +X STR. X is the number of non-participating characters you control. If you have a </span><span style=\"font-weight: bold;font-style:italic;\">Military Battle </span><span style=\"\">plot card revealed and you win the challenge, claim 1 power for that character.\n</span>"
+      , rules_text = Just "Challenges: Choose a participating [Stark] character. Until the end of the challenge, that character gets +X STR. X is the number of non-participating characters you control. If you have a Military Battle plot card revealed and you win the challenge, claim 1 power for that character."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -39526,6 +41407,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_82"
       , name = "Bitterbridge Encampment"
@@ -39537,7 +41419,7 @@ all_cards =
       , illustrator = "Franz Miklis"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After you play a </span><span style=\"font-weight: bold;font-style:italic;\">Knight</span><span style=\"\"> character, kneel Bitterbridge Encampment to search your deck for another </span><span style=\"font-weight: bold;font-style:italic;\">Knight</span><span style=\"\"> character, reveal it, and add it to your hand. Then, shuffle your deck. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "Limited Response: After you play a Knight character, kneel Bitterbridge Encampment to search your deck for another Knight character, reveal it, and add it to your hand. Then, shuffle your deck. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [  ]
@@ -39547,6 +41429,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_95"
       , name = "Braided Warrior"
@@ -39558,7 +41441,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Response</span><span style=\"\">: After Braided Warrior comes into play, search your deck for an attachment and pay its printed gold cost to put it into play attached to a card you control. Then, shuffle your deck.</span>"
+      , rules_text = Just "Response: After Braided Warrior comes into play, search your deck for an attachment and pay its printed gold cost to put it into play attached to a card you control. Then, shuffle your deck."
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
@@ -39568,6 +41451,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_97"
       , name = "Bronze Yohn Royce"
@@ -39579,7 +41463,7 @@ all_cards =
       , illustrator = ""
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Renown.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After a </span><span style=\"font-weight: bold;font-style:italic;\">Castle</span><span style=\"\"> plot card is placed in your used pile, choose and discard 1 power from a character.</span>"
+      , rules_text = Just "Renown.\nResponse: After a Castle plot card is placed in your used pile, choose and discard 1 power from a character."
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
@@ -39589,6 +41473,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_89"
       , name = "Dorea Sand"
@@ -39600,7 +41485,7 @@ all_cards =
       , illustrator = "*credit artists individually - ask art coordinator"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Response</span><span style=\"\">: After a </span><span style=\"font-weight: bold;font-style:italic;\">Sand Snake</span><span style=\"\"> character you control is killed, Dorea Sand claims 1 power. (Limit 3 times per phase.)</span>"
+      , rules_text = Just "Response: After a Sand Snake character you control is killed, Dorea Sand claims 1 power. (Limit 3 times per phase.)"
       , flavor_text = Just "“If you should die, must El and Obella seek vengeance for you, then Dorea and Loree for them?” -Ellaria Sand"
       , cost = Just 1
       , icons = [ Icon_Intrigue ]
@@ -39610,6 +41495,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_96"
       , name = "Eastern Market"
@@ -39621,7 +41507,7 @@ all_cards =
       , illustrator = "*credit artists individually - ask art coordinator"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Limited.\n</span><span style=\"font-weight: bold;\">Marshalling</span><span style=\"\">: Discard Eastern Market from play to reduce the costs of the next 3 </span><span style=\"font-weight: bold;font-style:italic;\">Dothraki</span><span style=\"\"> or </span><span style=\"font-weight: bold;font-style:italic;\">Mercenary</span><span style=\"\"> characters you play this phase by 1 each.</span>"
+      , rules_text = Just "Limited.\nMarshalling: Discard Eastern Market from play to reduce the costs of the next 3 Dothraki or Mercenary characters you play this phase by 1 each."
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -39631,6 +41517,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_91"
       , name = "House Tully Footman"
@@ -39642,7 +41529,7 @@ all_cards =
       , illustrator = "*credit artists individually - ask art coordinator"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"\">If you control a unique House Tully character, House Tully Footman does not kneel to defend.\n</span>"
+      , rules_text = Just "If you control a unique House Tully character, House Tully Footman does not kneel to defend."
       , flavor_text = Just "They were all her father's bannermen, lords of the Trident. -CoK"
       , cost = Just 1
       , icons = [ Icon_Military, Icon_Power ]
@@ -39652,6 +41539,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_83"
       , name = "In Renlyâ€™s Name"
@@ -39663,7 +41551,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Attach to an opponent's character.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After attached character is declared as an attacker against you, claim 3 power for your House.</span>"
+      , rules_text = Just "Attach to an opponent's character.\nResponse: After attached character is declared as an attacker against you, claim 3 power for your House."
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -39673,6 +41561,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_84"
       , name = "Iron Islands Reaver"
@@ -39684,7 +41573,7 @@ all_cards =
       , illustrator = ""
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">If an effect would discard 1 or more cards from an opponent’s deck that has no cards remaining in it, that opponent must choose and discard 1 card at his or her command, instead.</span>"
+      , rules_text = Just "If an effect would discard 1 or more cards from an opponent’s deck that has no cards remaining in it, that opponent must choose and discard 1 card at his or her command, instead."
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
@@ -39694,6 +41583,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_94"
       , name = "Jhogo"
@@ -39705,7 +41595,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After you win a challenge in which Jhogo and at least 2 other </span><span style=\"font-weight: bold;font-style:italic;\">Dothraki</span><span style=\"\"> characters participated as attackers, discard Jhogo to claim X power for your House. X is the number of cards in the losing opponent’s hand. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "Limited Response: After you win a challenge in which Jhogo and at least 2 other Dothraki characters participated as attackers, discard Jhogo to claim X power for your House. X is the number of cards in the losing opponent’s hand. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Power ]
@@ -39715,6 +41605,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_85"
       , name = "Kettledrum"
@@ -39726,7 +41617,7 @@ all_cards =
       , illustrator = "Joshua CairÃ³s"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Setup. \n</span><span style=\"\">[Greyjoy] character only.\nAttached character gets +1 STR and gains intimidate.</span>"
+      , rules_text = Just "Setup. \n[Greyjoy] character only.\nAttached character gets +1 STR and gains intimidate."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -39736,6 +41627,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_100"
       , name = "Kings of Mountain and Vale"
@@ -39747,7 +41639,7 @@ all_cards =
       , illustrator = "Alyn Spiller"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;font-style:italic;\">Castle</span><span style=\"\">. After this plot is placed in your used pile, draw 1 card and discard 1 card at random from each opponent’s hand.</span>"
+      , rules_text = Just "Castle. After this plot is placed in your used pile, draw 1 card and discard 1 card at random from each opponent’s hand."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -39757,6 +41649,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 3
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "w_93"
       , name = "Lay Waste"
@@ -39768,7 +41661,7 @@ all_cards =
       , illustrator = "JB Casacop"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Stark only.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you win a [Combat] challenge in which you control at least 1 participating unique character, choose and discard from play 1 location controlled by the losing opponent. (Limit 1 per challenge.)</span>"
+      , rules_text = Just "House Stark only.\nResponse: After you win a [Combat] challenge in which you control at least 1 participating unique character, choose and discard from play 1 location controlled by the losing opponent. (Limit 1 per challenge.)"
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -39778,6 +41671,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_87"
       , name = "Milk Snakes"
@@ -39789,7 +41683,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"\">No attachments except </span><span style=\"font-weight: bold;font-style:italic;\">Weapon</span><span style=\"\">.\nStealth. \n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you win a challenge in which Milk Snakes participated, choose a </span><span style=\"font-weight: bold;font-style:italic;\">Clansman</span><span style=\"\"> card in your discard pile and return it to your hand.</span>"
+      , rules_text = Just "No attachments except Weapon.\nStealth. \nResponse: After you win a challenge in which Milk Snakes participated, choose a Clansman card in your discard pile and return it to your hand."
       , flavor_text = Nothing
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Power ]
@@ -39799,6 +41693,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_86"
       , name = "Reborn from the Sea"
@@ -39810,7 +41705,7 @@ all_cards =
       , illustrator = "Tiziano Baracchi"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Greyjoy only.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you win dominance, choose a non-</span><span style=\"font-weight: bold;font-style:italic;\">Army</span><span style=\"\"> [Greyjoy] character in your dead pile and put it into play.</span>"
+      , rules_text = Just "House Greyjoy only.\nResponse: After you win dominance, choose a non-Army [Greyjoy] character in your dead pile and put it into play."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -39820,6 +41715,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_98"
       , name = "Robert Arryn"
@@ -39831,7 +41727,7 @@ all_cards =
       , illustrator = "Jeff Lee Johnson"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Response</span><span style=\"\">: After a </span><span style=\"font-weight: bold;font-style:italic;\">Castle</span><span style=\"\"> plot card is moved to your used pile, Robert Arryn claims 2 power. (Limit once per round.)</span>"
+      , rules_text = Just "Response: After a Castle plot card is moved to your used pile, Robert Arryn claims 2 power. (Limit once per round.)"
       , flavor_text = Just "“Let my porridge fly!”"
       , cost = Just 0
       , icons = [ Icon_Power ]
@@ -39841,6 +41737,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_81"
       , name = "Ser Parmen Crane"
@@ -39852,7 +41749,7 @@ all_cards =
       , illustrator = ""
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Immune to events.\nAt the beginning of the dominance phase, stand each </span><span style=\"font-weight: bold;font-style:italic;\">Rainbow Guard</span><span style=\"\"> character you control.</span>"
+      , rules_text = Just "Immune to events.\nAt the beginning of the dominance phase, stand each Rainbow Guard character you control."
       , flavor_text = Just "\"My brother is young and strong, and he has a vast host around him, and these rainbow knights of his.\" - Stannis Baratheon"
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
@@ -39862,6 +41759,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_88"
       , name = "Sign of the Red Hand"
@@ -39873,16 +41771,17 @@ all_cards =
       , illustrator = ""
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Attach to your House card.\nIf you are not running an agenda, Sign of the Red Hand gains: \"Increase your draw cap by 1.”\n[+1 Gold]</span>"
+      , rules_text = Just "Attach to your House card.\nIf you are not running an agenda, Sign of the Red Hand gains: \"Increase your draw cap by 1.”\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
       , crest = [  ]
       , traits = [ "Decree" ]
       , strength = Nothing
-      , income = Nothing
+      , income = Just 1
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_99"
       , name = "The Bloody Gate"
@@ -39904,6 +41803,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_90"
       , name = "Water Gardens Sentry"
@@ -39915,7 +41815,7 @@ all_cards =
       , illustrator = ""
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Challenges</span><span style=\"\">: Kneel Water Gardens Sentry to have it participate in the current challenge as a defender. If you win the challenge, return Water Gardens Sentry to your hand.</span>"
+      , rules_text = Just "Challenges: Kneel Water Gardens Sentry to have it participate in the current challenge as a defender. If you win the challenge, return Water Gardens Sentry to your hand."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -39925,6 +41825,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_92"
       , name = "Winterfell Heart Tree"
@@ -39936,7 +41837,7 @@ all_cards =
       , illustrator = "Thomas Denmark"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Limited.\n</span><span style=\"font-weight: bold;\">Marshalling</span><span style=\"\">: Kneel Winterfell Heart Tree to reduce the cost of the next [Stark] character you play this phase by 1.</span>"
+      , rules_text = Just "Limited.\nMarshalling: Kneel Winterfell Heart Tree to reduce the cost of the next [Stark] character you play this phase by 1."
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -39946,6 +41847,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_18"
       , name = "Aloof and Apart"
@@ -39957,7 +41859,7 @@ all_cards =
       , illustrator = ""
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"color: #211D1E;\">Reduce the cost of the first character with printed cost 4 or higher you play each round by 2. \nCharacters you control with printed cost 4 or higher gain prized 1 while leaving play, and cannot be returned to your hand by your card effects or to pay costs.</span>"
+      , rules_text = Just "Reduce the cost of the first character with printed cost 4 or higher you play each round by 2. \nCharacters you control with printed cost 4 or higher gain prized 1 while leaving play, and cannot be returned to your hand by your card effects or to pay costs."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -39967,6 +41869,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_7"
       , name = "Chella, Daughter of Cheyk"
@@ -39978,7 +41881,7 @@ all_cards =
       , illustrator = "Alessandra Pisano"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Stealth. Deadly.\nImmune to opponent’s location effects.</span>"
+      , rules_text = Just "Stealth. Deadly.\nImmune to opponent’s location effects."
       , flavor_text = Just "\"Braver to leave the man alive, with a chance to cleanse his shame by winning back his ear,\" explained Chella, a small dark woman whose grisly neckware was hung with no less than forty-six dried, wrinkled ears."
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Power ]
@@ -39988,6 +41891,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_15"
       , name = "Dosh Khaleen"
@@ -39999,7 +41903,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After an attachment leaves play, stand 1 influence providing card to draw 1 card. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "Limited Response: After an attachment leaves play, stand 1 influence providing card to draw 1 card. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -40009,6 +41913,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_9"
       , name = "Enemy of the Queen"
@@ -40020,7 +41925,7 @@ all_cards =
       , illustrator = "Lukasz Jaskolski"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Attached character does not stand during the standing phase.\nDiscard Enemy of the Queen if attached character’s controller wins an [Intrigue] challenge against you by 4 or more total STR.</span>"
+      , rules_text = Just "Attached character does not stand during the standing phase.\nDiscard Enemy of the Queen if attached character’s controller wins an [Intrigue] challenge against you by 4 or more total STR."
       , flavor_text = Just "She is not dead... but before I am done with her, I promise you, she will be singing to the Stranger, begging for his kiss."
       , cost = Just 0
       , icons = [  ]
@@ -40030,6 +41935,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_10"
       , name = "Ghost Hill Elite"
@@ -40041,7 +41947,7 @@ all_cards =
       , illustrator = "Adam Lane"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Martell only. \n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you reveal a plot card, each opponent must choose and discard 1 card from his or her hand, if able. Then, Ghost Hill Elite claims 1 power if any locations or attachments were discarded by this effect. (Limit once per round.)</span>"
+      , rules_text = Just "House Martell only. \nResponse: After you reveal a plot card, each opponent must choose and discard 1 card from his or her hand, if able. Then, Ghost Hill Elite claims 1 power if any locations or attachments were discarded by this effect. (Limit once per round.)"
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Intrigue ]
@@ -40051,6 +41957,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_17"
       , name = "Greenseerâ€™s Raven"
@@ -40062,7 +41969,7 @@ all_cards =
       , illustrator = "Owen William Weber"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">No attachments. Stealth.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: Discard Greenseer’s Raven from your hand to cancel the ‘when revealed’ effects of a just revealed plot card with one or more </span><span style=\"font-weight: bold;font-style:italic;\">Traits</span><span style=\"\">.</span>"
+      , rules_text = Just "No attachments. Stealth.\nResponse: Discard Greenseer’s Raven from your hand to cancel the ‘when revealed’ effects of a just revealed plot card with one or more Traits."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [ Icon_Power ]
@@ -40072,6 +41979,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_12"
       , name = "Hotahâ€™s Axe"
@@ -40083,7 +41991,7 @@ all_cards =
       , illustrator = "Jon Bosco"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Setup.\n</span><span style=\"color: #211D1E;font-weight: bold;\">Limited Response</span><span style=\"color: #211D1E;\">: After you win a challenge in which attached character participated, choose a character. That character loses a challenge icon of your choice until the end of the phase. Then, if that character has no challenge icons, kill it. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "Setup.\nLimited Response: After you win a challenge in which attached character participated, choose a character. That character loses a challenge icon of your choice until the end of the phase. Then, if that character has no challenge icons, kill it. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -40093,6 +42001,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_1"
       , name = "Knight of Flowers"
@@ -40104,7 +42013,7 @@ all_cards =
       , illustrator = "Jason Engle"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Baratheon only. Renown.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: Discard a card at random from your hand and bring Knight of Flowers out of Shadows to save a unique character from being killed or discarded from play.</span>"
+      , rules_text = Just "House Baratheon only. Renown.\nResponse: Discard a card at random from your hand and bring Knight of Flowers out of Shadows to save a unique character from being killed or discarded from play."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [ Icon_Military, Icon_Power ]
@@ -40114,6 +42023,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_20"
       , name = "Naming the Heir"
@@ -40125,7 +42035,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;font-style:italic;\">Castle</span><span style=\"\">. After this plot is placed in your used pile, search the top 10 cards of your deck for a non-</span><span style=\"font-weight: bold;font-style:italic;\">Army</span><span style=\"\"> character with printed cost 4 or higher, and put it into play. Then, shuffle your deck.</span>"
+      , rules_text = Just "Castle. After this plot is placed in your used pile, search the top 10 cards of your deck for a non-Army character with printed cost 4 or higher, and put it into play. Then, shuffle your deck."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -40135,6 +42045,7 @@ all_cards =
       , income = Just 2
       , initiative = Just 2
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "w_11"
       , name = "Princeâ€™s Attendant"
@@ -40146,8 +42057,8 @@ all_cards =
       , illustrator = "Jon Bosco"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Any Phase</span><span style=\"\">: Kill Prince’s Attendant (cannot be saved) to reveal the top 2 cards of your deck. Discard 1 and add the other to your hand.</span>"
-      , flavor_text = Just "“Do you have a better way?” Quentyn asked him.<br>“I do. It's just now come to me.”"
+      , rules_text = Just "Any Phase: Kill Prince’s Attendant (cannot be saved) to reveal the top 2 cards of your deck. Discard 1 and add the other to your hand."
+      , flavor_text = Just "“Do you have a better way?” Quentyn asked him.\n“I do. It's just now come to me.”"
       , cost = Just 1
       , icons = [ Icon_Intrigue ]
       , crest = [  ]
@@ -40156,6 +42067,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_3"
       , name = "Rainbow Guard Squire"
@@ -40167,7 +42079,7 @@ all_cards =
       , illustrator = "Sebastian Ciaffaglione"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Challenges</span><span style=\"\">: If you control 1 or more </span><span style=\"font-weight: bold;font-style:italic;\">Rainbow Guard</span><span style=\"\"> characters, kneel all copies of Rainbow Guard Squire you control to draw 1 card.</span>"
+      , rules_text = Just "Challenges: If you control 1 or more Rainbow Guard characters, kneel all copies of Rainbow Guard Squire you control to draw 1 card."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [ Icon_Power ]
@@ -40177,6 +42089,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_14"
       , name = "Raventree Hall"
@@ -40188,7 +42101,7 @@ all_cards =
       , illustrator = ""
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Immune to events.\nWhile a character you control is defending alone, it gets +1 STR and gains renown.</span>"
+      , rules_text = Just "Immune to events.\nWhile a character you control is defending alone, it gets +1 STR and gains renown."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -40198,6 +42111,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_6"
       , name = "Red Rain"
@@ -40209,7 +42123,7 @@ all_cards =
       , illustrator = "Tommy Arnold"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Unique [Greyjoy] character only.\n</span><span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After attached character is declared as an attacker, choose a character controlled by the defending player. If you win the challenge by 4 or more total STR, discard that character from play. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "Unique [Greyjoy] character only.\nLimited Response: After attached character is declared as an attacker, choose a character controlled by the defending player. If you win the challenge by 4 or more total STR, discard that character from play. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -40219,6 +42133,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_13"
       , name = "Ser Jason Mallister"
@@ -40230,7 +42145,7 @@ all_cards =
       , illustrator = "Wibben"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Deadly.\n</span><span style=\"font-weight: bold;\">Dominance</span><span style=\"\">: Choose and kill a character with printed cost 3 or lower controlled by an opponent who has not declared a [Millitary] challenge against you this round. (Limit once per phase.)</span>"
+      , rules_text = Just "Deadly.\nDominance: Choose and kill a character with printed cost 3 or lower controlled by an opponent who has not declared a [Millitary] challenge against you this round. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Power ]
@@ -40240,6 +42155,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_8"
       , name = "Ser Kevan Lannister"
@@ -40251,7 +42167,7 @@ all_cards =
       , illustrator = ""
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After Ser Kevan Lannister enters or leaves play, choose a [Lannister] or neutral location in your discard pile and put it into play. (Limit 1 limited response per round.) [Naval on [Power].]\n</span><span style=\"font-weight: bold;\">Card designed by the 2012 AGoT LCG Chinese Champion, Bing Ouyang</span>"
+      , rules_text = Just "Limited Response: After Ser Kevan Lannister enters or leaves play, choose a [Lannister] or neutral location in your discard pile and put it into play. (Limit 1 limited response per round.) [Naval on [Power].]\nCard designed by the 2012 AGoT LCG Chinese Champion, Bing Ouyang"
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -40261,6 +42177,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_2"
       , name = "Ser Robar Royce"
@@ -40272,7 +42189,7 @@ all_cards =
       , illustrator = "Tiziano Baracchi"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"\">While Ser Robar Royce is participating in a challenge, each </span><span style=\"font-weight: bold;font-style:italic;\">Rainbow Guard</span><span style=\"\"> character you control gains deadly.</span>"
+      , rules_text = Just "While Ser Robar Royce is participating in a challenge, each Rainbow Guard character you control gains deadly."
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
@@ -40282,6 +42199,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_19"
       , name = "Siege Preparations"
@@ -40293,7 +42211,7 @@ all_cards =
       , illustrator = "Dallas Williams"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;font-style:italic;\">Military Battle.</span><span style=\"\"> </span><span style=\"font-weight: bold;font-style:italic;\">Intrigue Gambit. Power Struggle. </span><span style=\"\">You cannot initiate more than 1 challenge this round.</span>"
+      , rules_text = Just "Military Battle. Intrigue Gambit. Power Struggle. You cannot initiate more than 1 challenge this round."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -40303,6 +42221,7 @@ all_cards =
       , income = Just 6
       , initiative = Just 0
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "w_4"
       , name = "The Drumm"
@@ -40314,7 +42233,7 @@ all_cards =
       , illustrator = "Jeff Lee Johnson"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Deadly.\n</span><span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After you declare The Drumm as an attacker, choose a location controlled by the defending player. If you win the challenge by 4 or more total STR, discard that location. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "Deadly.\nLimited Response: After you declare The Drumm as an attacker, choose a location controlled by the defending player. If you win the challenge by 4 or more total STR, discard that location. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Power ]
@@ -40324,6 +42243,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_5"
       , name = "The Sea Tower"
@@ -40335,7 +42255,7 @@ all_cards =
       , illustrator = "Martina Pilcerova"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Limited. \n</span><span style=\"font-weight: bold;\">Marshalling</span><span style=\"\">: Kneel The Sea Tower to reduce the cost of the next [Greyjoy] character you play this phase by 1.</span>"
+      , rules_text = Just "Limited. \nMarshalling: Kneel The Sea Tower to reduce the cost of the next [Greyjoy] character you play this phase by 1."
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -40345,6 +42265,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_16"
       , name = "Vaes Dothrak"
@@ -40356,7 +42277,7 @@ all_cards =
       , illustrator = "*credit artists individually - ask art coordinator"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Targaryen only. Limited.\nDuring [Intrigue] challenges, the Claim value on your revealed plot card is increased by 1.</span>"
+      , rules_text = Just "House Targaryen only. Limited.\nDuring [Intrigue] challenges, the Claim value on your revealed plot card is increased by 1."
       , flavor_text = Just "In this place, the crones of the dosh khaleen had decreed, all Dothraki were one blood, one khalasar, one herd. -GoT"
       , cost = Just 3
       , icons = [  ]
@@ -40366,6 +42287,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_111"
       , name = "A False Hunt"
@@ -40377,7 +42299,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Martell only.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: Kill a </span><span style=\"font-weight: bold;font-style:italic;\">Sand Snake </span><span style=\"\">character you control to cancel a card effect that would search any part of, or reveal 1 or more cards from, a player’s deck. Then, choose an opponent to discard 1 card at random from his or her hand.</span>"
+      , rules_text = Just "House Martell only.\nResponse: Kill a Sand Snake character you control to cancel a card effect that would search any part of, or reveal 1 or more cards from, a player’s deck. Then, choose an opponent to discard 1 card at random from his or her hand."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -40387,6 +42309,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_120"
       , name = "As High As Honor"
@@ -40398,7 +42321,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Your defending characters gain renown.</span>"
+      , rules_text = Just "Your defending characters gain renown."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -40408,6 +42331,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "w_116"
       , name = "Bloody Arakh"
@@ -40419,7 +42343,7 @@ all_cards =
       , illustrator = "Tommy Arnold"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;font-style:italic;\">Dothraki</span><span style=\"\"> character only.\nAttached character gets +1 STR.\nWhile attached character is participating in a challenge, opponents’ characters without attachments lose all keywords.</span>"
+      , rules_text = Just "Dothraki character only.\nAttached character gets +1 STR.\nWhile attached character is participating in a challenge, opponents’ characters without attachments lose all keywords."
       , flavor_text = Nothing
       , cost = Just 0
       , icons = [  ]
@@ -40429,6 +42353,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_115"
       , name = "Dothraki Sea"
@@ -40440,7 +42365,7 @@ all_cards =
       , illustrator = "Alyn Spiller"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"\">No attachments.\nIf you have won initiative this round, each of your characters with one or more attachments gets +1 STR and gains: “cannot be discarded by opponents’ card effects.”</span>"
+      , rules_text = Just "No attachments.\nIf you have won initiative this round, each of your characters with one or more attachments gets +1 STR and gains: “cannot be discarded by opponents’ card effects.”"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -40450,6 +42375,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_108"
       , name = "Feed it to the Goats"
@@ -40461,7 +42387,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Challenges</span><span style=\"\">: Kneel X </span><span style=\"font-weight: bold;font-style:italic;\">Clansman</span><span style=\"\"> characters (to a maximum of 3) to choose and kneel X non-</span><span style=\"font-weight: bold;font-style:italic;\">Lady</span><span style=\"\"> characters.</span>"
+      , rules_text = Just "Challenges: Kneel X Clansman characters (to a maximum of 3) to choose and kneel X non-Lady characters."
       , flavor_text = Just "\"Little boyman,\" Shagga roared, \"will you mock my axe after I chop off your manhood and feed it to the goats?\""
       , cost = Nothing
       , icons = [  ]
@@ -40471,6 +42397,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_105"
       , name = "Iron Islands Shipwright"
@@ -40482,7 +42409,7 @@ all_cards =
       , illustrator = "*credit artists individually - ask art coordinator"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">While Iron Islands Shipwright is standing, cards cannot be moved out of opponents’ discard and dead piles.</span>"
+      , rules_text = Just "While Iron Islands Shipwright is standing, cards cannot be moved out of opponents’ discard and dead piles."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [ Icon_Military, Icon_Power ]
@@ -40492,6 +42419,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_104"
       , name = "Iron Kingâ€™s Guard"
@@ -40503,7 +42431,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">No attachments except </span><span style=\"font-weight: bold;font-style:italic;\">Weapon</span><span style=\"\">.\n</span><span style=\"font-weight: bold;\">I</span><span style=\"\">ncrease the cost to play the first character played each round by 2.</span>"
+      , rules_text = Just "No attachments except Weapon.\nIncrease the cost to play the first character played each round by 2."
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
@@ -40513,6 +42441,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_110"
       , name = "Loreza Sand"
@@ -40524,7 +42453,7 @@ all_cards =
       , illustrator = "Sara Biddle"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Response</span><span style=\"\">: After a </span><span style=\"font-weight: bold;font-style:italic;\">Sand Snake</span><span style=\"\"> character you control is killed, draw 1 card.</span>"
+      , rules_text = Just "Response: After a Sand Snake character you control is killed, draw 1 card."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [ Icon_Power ]
@@ -40534,6 +42463,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_117"
       , name = "Lothor Brune"
@@ -40545,7 +42475,7 @@ all_cards =
       , illustrator = ""
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">While there is at least 1 </span><span style=\"font-weight: bold;font-style:italic;\">Castle</span><span style=\"\"> plot card revealed, Lothor Brune does not kneel to attack or defend.</span>"
+      , rules_text = Just "While there is at least 1 Castle plot card revealed, Lothor Brune does not kneel to attack or defend."
       , flavor_text = Just "Sober, he was a quiet man, but a strong one."
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Intrigue ]
@@ -40555,6 +42485,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_102"
       , name = "Margaery's Favor"
@@ -40566,7 +42497,7 @@ all_cards =
       , illustrator = "Sara Biddle"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;font-style:italic;\">Rainbow Guard </span><span style=\"\">character or Renly Baratheon only.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you win a challenge in which attached character participated, draw 1 card.\n</span>"
+      , rules_text = Just "Rainbow Guard character or Renly Baratheon only.\nResponse: After you win a challenge in which attached character participated, draw 1 card."
       , flavor_text = Just "“Margaery Tyrell brings fifty thousand swords and all the strength of Highgarden.” –Littlefinger"
       , cost = Just 1
       , icons = [  ]
@@ -40576,6 +42507,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_118"
       , name = "Mord"
@@ -40587,7 +42519,7 @@ all_cards =
       , illustrator = "Jake Murray"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">You may spend gold on Mord as if it were in your gold pool.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you win dominance, choose a character with printed cost 3 or lower. Shuffle that character into its owner’s deck unless its controller moves 1 gold from his or her gold pool to Mord.</span>"
+      , rules_text = Just "You may spend gold on Mord as if it were in your gold pool.\nResponse: After you win dominance, choose a character with printed cost 3 or lower. Shuffle that character into its owner’s deck unless its controller moves 1 gold from his or her gold pool to Mord."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [ Icon_Military ]
@@ -40597,6 +42529,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_114"
       , name = "New Khalasar"
@@ -40608,7 +42541,7 @@ all_cards =
       , illustrator = "Tomasz Jedruszek"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"\">No attachments. Renown.\n</span><span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After you win a [Power] challenge in which New Khalasar participated by 4 or more total STR, kill each participating character on the opposing side. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "No attachments. Renown.\nLimited Response: After you win a [Power] challenge in which New Khalasar participated by 4 or more total STR, kill each participating character on the opposing side. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Power ]
@@ -40618,6 +42551,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_112"
       , name = "Northern Patriarch"
@@ -40629,7 +42563,7 @@ all_cards =
       , illustrator = "Tiziano Baracchi"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"color: #211D1E;\">House Stark only. \nNorthern Patriarch is immune to opponent’s plot effects while it has 1 or more power on it. \nIf there are no other copies of Northern Patriarch in play, in order to play an event an opponent must move 1 power from a card he or she controls to Northern Patriarch. \n</span><span style=\"color: #211D1E;font-weight: bold;\">Card designed by 2012 AGoT LCG </span><span style=\"color: #211D1E;font-weight: bold;text-decoration:underline ;\">World Champion, Derek Shoemaker </span><span style=\"color: #211D1E;font-weight: bold;\">In Memory of Guy Gray</span>"
+      , rules_text = Just "House Stark only. \nNorthern Patriarch is immune to opponent’s plot effects while it has 1 or more power on it. \nIf there are no other copies of Northern Patriarch in play, in order to play an event an opponent must move 1 power from a card he or she controls to Northern Patriarch. \nCard designed by 2012 AGoT LCG World Champion, Derek Shoemaker In Memory of Guy Gray"
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
@@ -40639,6 +42573,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_106"
       , name = "Orkmont Port"
@@ -40650,7 +42585,7 @@ all_cards =
       , illustrator = "Thomas Denmark"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you win an unopposed challenge, claim 1 power for your House.</span>"
+      , rules_text = Just "Response: After you win an unopposed challenge, claim 1 power for your House."
       , flavor_text = Just "A great number of longships, fifty or sixty at the least, stood out to sea or lay beached on the pebbled shore to the north. -CoK"
       , cost = Just 2
       , icons = [  ]
@@ -40660,6 +42595,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_113"
       , name = "Palisades"
@@ -40671,7 +42607,7 @@ all_cards =
       , illustrator = "Bill Thompson"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"\">During the first challenge initiated against you each round, treat all non-</span><span style=\"font-weight: bold;font-style:italic;\">Army</span><span style=\"\"> characters as if their printed text boxes were blank (except for </span><span style=\"font-weight: bold;font-style:italic;\">Traits</span><span style=\"\">).</span>"
+      , rules_text = Just "During the first challenge initiated against you each round, treat all non-Army characters as if their printed text boxes were blank (except for Traits)."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -40681,6 +42617,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_109"
       , name = "Ransack"
@@ -40692,7 +42629,7 @@ all_cards =
       , illustrator = "*credit artists individually - ask art coordinator"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you win dominance, kneel X </span><span style=\"font-weight: bold;font-style:italic;\">[Lannister]</span><span style=\"\"> characters (minimum of 1) to choose and discard a location with printed cost X or lower.</span>"
+      , rules_text = Just "Response: After you win dominance, kneel X [Lannister] characters (minimum of 1) to choose and discard a location with printed cost X or lower."
       , flavor_text = Just "“They burnt us out,” a farmer beside him said. “Come riding in the dark, up from the south, and fired the fields and the houses alike...”"
       , cost = Nothing
       , icons = [  ]
@@ -40702,6 +42639,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_101"
       , name = "Ser Guyard Morrigen"
@@ -40713,7 +42651,7 @@ all_cards =
       , illustrator = "Tiziano Baracchi"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Stealth.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you win a challenge in which at least 1 </span><span style=\"font-weight: bold;font-style:italic;\">Rainbow Guard </span><span style=\"\">character participated, stand Ser Guyard Morrigen. Then, Ser Guyard Morrigen gains a [Power] icon until the end of the phase. (Limit once per phase.)</span>"
+      , rules_text = Just "Stealth.\nResponse: After you win a challenge in which at least 1 Rainbow Guard character participated, stand Ser Guyard Morrigen. Then, Ser Guyard Morrigen gains a [Power] icon until the end of the phase. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Intrigue ]
@@ -40723,6 +42661,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_119"
       , name = "Sky Cell"
@@ -40734,7 +42673,7 @@ all_cards =
       , illustrator = "Dimitri Bielak"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Attach to a character with printed cost 3 or lower.\nAttached character’s controller must select his or her plot card (when revealing a new plot) at random.\nAttached character gains: “</span><span style=\"font-weight: bold;\">Marshalling</span><span style=\"\">: Kill this character (cannot be saved).”</span>"
+      , rules_text = Just "Attach to a character with printed cost 3 or lower.\nAttached character’s controller must select his or her plot card (when revealing a new plot) at random.\nAttached character gains: “Marshalling: Kill this character (cannot be saved).”"
       , flavor_text = Just "The blue is calling..."
       , cost = Just 0
       , icons = [  ]
@@ -40744,6 +42683,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_107"
       , name = "The Giantâ€™s Lance"
@@ -40755,7 +42695,7 @@ all_cards =
       , illustrator = ""
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Lannister only.\nKneeling characters get -1 STR.</span>"
+      , rules_text = Just "House Lannister only.\nKneeling characters get -1 STR."
       , flavor_text = Just "...a mountain that even mountains looked up to, its head lost in icy mists three and a half miles above the valley floor. -GoT"
       , cost = Just 1
       , icons = [  ]
@@ -40765,6 +42705,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_103"
       , name = "The Stag and Rose"
@@ -40776,7 +42717,7 @@ all_cards =
       , illustrator = "Dimitri Bielak"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you win a [Power] challenge by 4 or more total STR, move 1 power from an opponent’s card to a [Baratheon] character you control. Until the end of the phase, that character gets +1 STR for each power on it.\n</span>"
+      , rules_text = Just "Response: After you win a [Power] challenge by 4 or more total STR, move 1 power from an opponent’s card to a [Baratheon] character you control. Until the end of the phase, that character gets +1 STR for each power on it."
       , flavor_text = Just "The crowned stag decorated the king's green velvet tunic as well, worked in gold thread upon his chest; the Baratheon sigil in the colors of Highgarden. -CoK"
       , cost = Nothing
       , icons = [  ]
@@ -40786,6 +42727,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_49"
       , name = "An Opening Gambit"
@@ -40797,7 +42739,7 @@ all_cards =
       , illustrator = "Alexandre Dainche"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Martell only.\n</span><span style=\"font-weight: bold;\">Response</span><span style=\"\">: After you lose a challenge, choose a participating </span><span style=\"font-weight: bold;font-style:italic;\">Sand Snake </span><span style=\"\">character you control to claim 1 power. Then, if this was the first challenge initiated this phase, stand that character and draw 1 card.\n</span>"
+      , rules_text = Just "House Martell only.\nResponse: After you lose a challenge, choose a participating Sand Snake character you control to claim 1 power. Then, if this was the first challenge initiated this phase, stand that character and draw 1 card."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -40807,6 +42749,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_47"
       , name = "Battle of the Green Fork"
@@ -40818,7 +42761,7 @@ all_cards =
       , illustrator = "Tomasz Jedruszek"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Lannister only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single [Combat] challenge with normal claim. During this epic phase, each unique </span><span style=\"font-weight: bold;font-style:italic;\">Clansman</span><span style=\"\"> and </span><span style=\"font-weight: bold;font-style:italic;\">Mercenary</span><span style=\"\"> character gains melee. (Place this card next to your plot deck until the end of this epic phase.)</span>"
+      , rules_text = Just "House Lannister only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single [Combat] challenge with normal claim. During this epic phase, each unique Clansman and Mercenary character gains melee. (Place this card next to your plot deck until the end of this epic phase.)"
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -40828,6 +42771,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_53"
       , name = "Blackfish's Vanguard"
@@ -40839,7 +42783,7 @@ all_cards =
       , illustrator = "Tomasz Jedruszek"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"\">No attachments.\nRenown. Deadly.\nX is the number of </span><span style=\"font-weight: bold;font-style:italic;\">House Tully</span><span style=\"\"> characters you control. (X is initiative.)</span>"
+      , rules_text = Just "No attachments.\nRenown. Deadly.\nX is the number of House Tully characters you control. (X is initiative.)"
       , flavor_text = Nothing
       , cost = Just 5
       , icons = [ Icon_Military, Icon_Power ]
@@ -40849,6 +42793,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_43"
       , name = "Euron Crow's Eye"
@@ -40860,7 +42805,7 @@ all_cards =
       , illustrator = "*credit artists individually - ask art coordinator"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">While Euron Crow’s Eye is attacking alone, opponents cannot declare defenders.</span>"
+      , rules_text = Just "While Euron Crow’s Eye is attacking alone, opponents cannot declare defenders."
       , flavor_text = Just "Better to be scorned by Balon the Brave than beloved of Euron Crow's Eye."
       , cost = Just 5
       , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
@@ -40870,6 +42815,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_45"
       , name = "Gunthor Son of Gurn"
@@ -40881,7 +42827,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Lannister only.\n</span><span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After you win a challenge in which Gunthor Son of Gurn participated, draw cards, ignoring the draw cap, until the losing opponent does not have more cards in hand than you. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "House Lannister only.\nLimited Response: After you win a challenge in which Gunthor Son of Gurn participated, draw cards, ignoring the draw cap, until the losing opponent does not have more cards in hand than you. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Power ]
@@ -40891,6 +42837,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_59"
       , name = "Holding Council"
@@ -40902,7 +42849,7 @@ all_cards =
       , illustrator = "*credit artists individually - ask art coordinator"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;font-style:italic;\">Castle</span><span style=\"\">. After this plot is placed in your used pile, put a card with printed cost 1 or lower into play from your hand.</span>"
+      , rules_text = Just "Castle. After this plot is placed in your used pile, put a card with printed cost 1 or lower into play from your hand."
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -40912,6 +42859,7 @@ all_cards =
       , income = Just 4
       , initiative = Just 7
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "w_55"
       , name = "Jhiqui"
@@ -40923,7 +42871,7 @@ all_cards =
       , illustrator = "Alessandra Pisano"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"\">If Jhiqui would be killed, you may instead attach her to a [Targaryen] character as a </span><span style=\"font-weight: bold;font-style:italic;\">Handmaiden</span><span style=\"\"> attachment with the text, “Attached character gains an [Intrigue] icon and does not kneel to attack during [Intrigue] challenges.”</span>"
+      , rules_text = Just "If Jhiqui would be killed, you may instead attach her to a [Targaryen] character as a Handmaiden attachment with the text, “Attached character gains an [Intrigue] icon and does not kneel to attack during [Intrigue] challenges.”"
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [ Icon_Intrigue ]
@@ -40933,6 +42881,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_51"
       , name = "Maester Vyman"
@@ -40944,7 +42893,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After you win a challenge in which at least 1 </span><span style=\"font-weight: bold;font-style:italic;\">House Tully</span><span style=\"\"> character participated, reveal the top card of your deck and add it to your hand. (Limit one limited response per round.)</span>"
+      , rules_text = Just "Limited Response: After you win a challenge in which at least 1 House Tully character participated, reveal the top card of your deck and add it to your hand. (Limit one limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -40954,6 +42903,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_48"
       , name = "Nymeria Sand"
@@ -40965,7 +42915,7 @@ all_cards =
       , illustrator = "Ian Kirkpatrick"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Limited Response</span><span style=\"\">: After a </span><span style=\"font-weight: bold;font-style:italic;\">Sand Snake</span><span style=\"\"> character you control is killed, choose and kill a character with an equal or lower printed cost. (Limit 1 limited response per round.)</span>"
+      , rules_text = Just "Limited Response: After a Sand Snake character you control is killed, choose and kill a character with an equal or lower printed cost. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Intrigue ]
@@ -40975,6 +42925,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_54"
       , name = "Rakharo"
@@ -40986,7 +42937,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Stealth.\n</span><span style=\"font-weight: bold;\">Challenges: </span><span style=\"\">Choose a </span><span style=\"font-weight: bold;font-style:italic;\">Dothraki</span><span style=\"\"> character. That character gains stealth until the end of the phase. (Limit once per phase.)</span>"
+      , rules_text = Just "Stealth.\nChallenges: Choose a Dothraki character. That character gains stealth until the end of the phase. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
@@ -40996,6 +42947,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_50"
       , name = "Red Mountain Keep"
@@ -41007,7 +42959,7 @@ all_cards =
       , illustrator = "Ignacio BazÃ¡n Lazcano"
       , house = [ House_Martell ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Dominance</span><span style=\"\">: Kneel Red Mountain Keep to shuffle a </span><span style=\"font-weight: bold;font-style:italic;\">Sand Snake</span><span style=\"\"> character from your dead pile back into your deck.</span>"
+      , rules_text = Just "Dominance: Kneel Red Mountain Keep to shuffle a Sand Snake character from your dead pile back into your deck."
       , flavor_text = Nothing
       , cost = Just 1
       , icons = [  ]
@@ -41017,6 +42969,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_41"
       , name = "Ser Bryce Caron"
@@ -41028,7 +42981,7 @@ all_cards =
       , illustrator = "Caravan Studio"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Joust.\nChallenges: Choose a Rainbow Guard character. That character gains renown until the end of the phase. (Limit once per phase.)</span>"
+      , rules_text = Just "Joust.\nChallenges: Choose a Rainbow Guard character. That character gains renown until the end of the phase. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 3
       , icons = [ Icon_Military, Icon_Power ]
@@ -41038,6 +42991,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_52"
       , name = "Ser Desmond Grell"
@@ -41049,7 +43003,7 @@ all_cards =
       , illustrator = "Jeff Lee Johnson"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Challenges</span><span style=\"\">: Choose a </span><span style=\"font-weight: bold;font-style:italic;\">House Tully</span><span style=\"\"> character. That character gains deadly until the end of the phase. (Limit once per phase.)</span>"
+      , rules_text = Just "Challenges: Choose a House Tully character. That character gains deadly until the end of the phase. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [ Icon_Military ]
@@ -41059,6 +43013,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_46"
       , name = "Ser Ilyn Payne"
@@ -41070,7 +43025,7 @@ all_cards =
       , illustrator = "Nicholas Gregory"
       , house = [ House_Lannister ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Dominance</span><span style=\"\">: Kneel Ser Ilyn Payne to choose and kill a kneeling character with printed cost 3 or lower.</span>"
+      , rules_text = Just "Dominance: Kneel Ser Ilyn Payne to choose and kill a kneeling character with printed cost 3 or lower."
       , flavor_text = Just "“He does so love his work...” -Varys"
       , cost = Just 4
       , icons = [ Icon_Military, Icon_Intrigue ]
@@ -41080,6 +43035,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_44"
       , name = "Silence Crewman"
@@ -41091,7 +43047,7 @@ all_cards =
       , illustrator = "Tomasz Jedruszek"
       , house = [ House_Greyjoy ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Stealth.\nAt the end of any challenge phase in which Silence Crewman was not declared as an attacker, kill it and discard the top 2 cards of each opponent’s deck.</span>"
+      , rules_text = Just "Stealth.\nAt the end of any challenge phase in which Silence Crewman was not declared as an attacker, kill it and discard the top 2 cards of each opponent’s deck."
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [ Icon_Military, Icon_Intrigue ]
@@ -41101,6 +43057,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_42"
       , name = "Storm's End Freerider"
@@ -41112,7 +43069,7 @@ all_cards =
       , illustrator = "Jorge Barrero"
       , house = [ House_Baratheon ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Any Phase</span><span style=\"\">: Kneel 1 influence to stand Storm’s End Freerider.</span>"
+      , rules_text = Just "Any Phase: Kneel 1 influence to stand Storm’s End Freerider."
       , flavor_text = Just "They belong to Stannis now, she realized, even if they do not know it themselves yet."
       , cost = Just 2
       , icons = [ Icon_Military, Icon_Power ]
@@ -41122,6 +43079,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_58"
       , name = "The Moon Door"
@@ -41133,7 +43091,7 @@ all_cards =
       , illustrator = "David Kegg"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"font-weight: bold;\">Dominance</span><span style=\"\">: Kneel The Moon Door and kneel a unique </span><span style=\"font-weight: bold;font-style:italic;\">House Arryn</span><span style=\"\"> character to choose and kill a character with printed cost 3 or lower.</span>"
+      , rules_text = Just "Dominance: Kneel The Moon Door and kneel a unique House Arryn character to choose and kill a character with printed cost 3 or lower."
       , flavor_text = Just "How many men had the snot-nosed little wretch sent through that door already? -GoT"
       , cost = Just 2
       , icons = [  ]
@@ -41143,6 +43101,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_60"
       , name = "The Withering Cold"
@@ -41154,7 +43113,7 @@ all_cards =
       , illustrator = "Jake Murray"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Prized 3. All players skip the standing phase this round.\n</span><span style=\"color: #211D1E;font-weight: bold;\">Card designed by 2013 AGoT LCG North American Champion, Steven Simoni</span>"
+      , rules_text = Just "Prized 3. All players skip the standing phase this round.\nCard designed by 2013 AGoT LCG North American Champion, Steven Simoni"
       , flavor_text = Nothing
       , cost = Nothing
       , icons = [  ]
@@ -41164,6 +43123,7 @@ all_cards =
       , income = Just 5
       , initiative = Just 5
       , claim = Just 1
+      , influence = Nothing
       }
     , { id = "w_56"
       , name = "Vaes Tolorro"
@@ -41175,7 +43135,7 @@ all_cards =
       , illustrator = "Victor Garcia"
       , house = [ House_Targaryen ]
       , unique = False
-      , rules_text = Just "<span style=\"\">House Targaryen only. Limited.\nDuring [Combat] challenges, the Claim value on your revealed plot card is increased by 1.</span>"
+      , rules_text = Just "House Targaryen only. Limited.\nDuring [Combat] challenges, the Claim value on your revealed plot card is increased by 1."
       , flavor_text = Just "\"This city is dead, Khaleesi. Nameless and godless we found it, the gates broken, only wind and flies moving through the streets.\" -Rakharo, CoK"
       , cost = Just 4
       , icons = [  ]
@@ -41185,6 +43145,7 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     , { id = "w_57"
       , name = "Vale Informant"
@@ -41196,7 +43157,7 @@ all_cards =
       , illustrator = "Jeff Lee Johnson"
       , house = [ House_Neutral ]
       , unique = False
-      , rules_text = Just "<span style=\"\">Stealth.\nVale Informant gets +1 STR for each plot card in your used pile.</span>"
+      , rules_text = Just "Stealth.\nVale Informant gets +1 STR for each plot card in your used pile."
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [ Icon_Intrigue, Icon_Power ]
@@ -41206,5 +43167,6 @@ all_cards =
       , income = Nothing
       , initiative = Nothing
       , claim = Nothing
+      , influence = Nothing
       }
     ]

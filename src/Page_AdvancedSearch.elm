@@ -21,6 +21,7 @@ type Combo
     | Combo_Income
     | Combo_Initiative
     | Combo_Claim
+    | Combo_Influence
 
 type alias Model = 
     { header_query : String
@@ -48,6 +49,8 @@ type alias Model =
     , initiative_comparison : Comparison
     , claim : Maybe Int
     , claim_comparison : Comparison
+    , influence : Maybe Int
+    , influence_comparison : Comparison
     , allowed : Bool
     , restricted : Bool
     , banned : Bool
@@ -100,6 +103,8 @@ init =
     , initiative_comparison = Query.Comparison_Equal
     , claim = Nothing
     , claim_comparison = Query.Comparison_Equal
+    , influence = Nothing
+    , influence_comparison = Query.Comparison_Equal
     , allowed = True
     , restricted = True
     , banned = False
@@ -164,6 +169,8 @@ view_advanced_search model = UI.column
     , labeled "Initiative" <| int_row model.combo Combo_Initiative model.initiative model.initiative_comparison (\a -> { model | initiative = a }) (\a -> { model | initiative_comparison = a })
     , Widgets.separator
     , labeled "Claim" <| int_row model.combo Combo_Claim model.claim model.claim_comparison (\a -> { model | claim = a }) (\a -> { model | claim_comparison = a })
+    , Widgets.separator
+    , labeled "Influence" <| int_row model.combo Combo_Influence model.influence model.influence_comparison (\a -> { model | influence = a }) (\a -> { model | influence_comparison = a })
     , Widgets.separator
     , labeled "Legality" <| legality_row model
     , Widgets.separator
@@ -379,6 +386,7 @@ make_advanced_search_query model =
             , int_part "income" model.income model.income_comparison
             , int_part "initiative" model.initiative model.initiative_comparison
             , int_part "claim" model.claim model.claim_comparison
+            , int_part "influence" model.influence model.influence_comparison
             , bools_part "legality" ":" [ (model.allowed, "a"), (model.restricted, "r"), (model.banned, "b") ]
             , bools_part "icon" ">=" [ (model.icon_military, "m"), (model.icon_intrigue, "i"), (model.icon_power, "p") ]
             , bools_part "crest" ">="

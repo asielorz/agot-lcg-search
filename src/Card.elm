@@ -39,6 +39,9 @@ type alias Card =
     , income : Maybe Int
     , initiative : Maybe Int
     , claim : Maybe Int
+
+    -- Others
+    , influence : Maybe Int
     }
 
 card_type_from_json : Json.Decode.Decoder CardType
@@ -168,6 +171,7 @@ card_from_json =
         |> maybe "income" Json.Decode.int
         |> maybe "initiative" Json.Decode.int
         |> maybe "claim" Json.Decode.int
+        |> maybe "influence" Json.Decode.int
 
 maybe_field : String -> (a -> Json.Encode.Value) -> Maybe a -> Maybe (String, Json.Encode.Value)
 maybe_field field_name encode optional_field =
@@ -198,6 +202,7 @@ card_to_json card =
             , maybe_field "income" Json.Encode.int card.income
             , maybe_field "initiative" Json.Encode.int card.initiative
             , maybe_field "claim" Json.Encode.int card.claim
+            , maybe_field "influence" Json.Encode.int card.influence
             ]
     in
         Json.Encode.object fields

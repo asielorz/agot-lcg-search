@@ -10,7 +10,7 @@ import List.Extra
 
 type CardType = CardType_Character | CardType_Event | CardType_Location | CardType_Attachment | CardType_Plot | CardType_Agenda
 type House = House_Stark | House_Lannister | House_Baratheon | House_Targaryen | House_Martell | House_Greyjoy | House_Neutral
-type Icon = Icon_Military | Icon_Intrigue | Icon_Power
+type Icon = Icon_Military { naval : Bool } | Icon_Intrigue { naval : Bool } | Icon_Power { naval : Bool }
 type Crest = Crest_Holy | Crest_Noble | Crest_War | Crest_Learned | Crest_Shadow
 type Legality = Legality_Legal | Legality_Banned | Legality_Restricted
 
@@ -106,17 +106,21 @@ house_to_string house = case house of
 icon_from_json : Json.Decode.Decoder Icon
 icon_from_json = Json.Decode.string
     |> Json.Decode.andThen (\s -> case s of
-        "Military" -> Json.Decode.succeed Icon_Military
-        "Intrigue" -> Json.Decode.succeed Icon_Intrigue
-        "Power" -> Json.Decode.succeed Icon_Power
+        "Military" -> Json.Decode.succeed (Icon_Military { naval = False })
+        "Intrigue" -> Json.Decode.succeed (Icon_Intrigue { naval = False })
+        "Power" -> Json.Decode.succeed (Icon_Power { naval = False })
+        "Military (Naval)" -> Json.Decode.succeed (Icon_Military { naval = True })
+        "Intrigue (Naval)" -> Json.Decode.succeed (Icon_Intrigue { naval = True })
+        "Power (Naval)" -> Json.Decode.succeed (Icon_Power { naval = True })
         _ -> Json.Decode.fail <| s ++ " is not an icon"
     )
 
 icon_to_string : Icon -> String
 icon_to_string icon = case icon of
-    Icon_Military -> "Military"
-    Icon_Intrigue -> "Intrigue"
-    Icon_Power -> "Power"
+    Icon_Military {naval} -> if naval then "Military (Naval)" else "Military" 
+    Icon_Intrigue {naval} -> if naval then "Intrigue (Naval)" else "Intrigue"
+    Icon_Power {naval} -> if naval then "Power (Naval)" else "Power"
+    
 
 crest_from_json : Json.Decode.Decoder Crest
 crest_from_json = Json.Decode.string
@@ -219,9 +223,9 @@ house_sort_order house = case house of
 
 icon_sort_order : Icon -> Int
 icon_sort_order icon = case icon of
-    Icon_Military -> 0
-    Icon_Intrigue -> 1
-    Icon_Power -> 2
+    Icon_Military { naval } -> if naval then 1 else 0
+    Icon_Intrigue { naval } -> if naval then 3 else 2
+    Icon_Power { naval } -> if naval then 5 else 4
 
 page_url : Card -> String
 page_url card = "/card/" ++ card.id

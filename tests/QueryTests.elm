@@ -9,7 +9,7 @@ import Test exposing (..)
 
 eddard : Card
 eddard = 
-    { image_url = "/images/cards/Core_5.jpg"
+    { id = "core_5"
     , name = "Eddard Stark"
     , card_type = CardType_Character
     , set = Set_Core
@@ -22,18 +22,19 @@ eddard =
     , rules_text = Just "Stalwart. Renown. Deadly.\nEddard Stark claims 1 power when he comes into play."
     , flavor_text = Just "\"Our way is the older way. The blood of the First Men still flows in the veins of the Starks, and we hold to the belief that the man who passes the sentence should swing the sword.\""
     , cost = Just 4
-    , icons = [ Icon_Military, Icon_Power ]
+    , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
     , crest = [ Crest_Noble ]
     , traits = [ "Lord" ]
     , strength = Just 3
     , income = Nothing
     , initiative = Nothing
     , claim = Nothing
+    , influence = Nothing
     }
 
 arrogant_contender : Card
 arrogant_contender = 
-    { image_url = "/images/cards/LotR_44.jpg"
+    { id = "lotr_44"
     , name = "Arrogant Contender"
     , card_type = CardType_Character
     , set = Set_LionsOfTheRock
@@ -46,13 +47,14 @@ arrogant_contender =
     , rules_text = Just "Melee.\nResponse: After you win a challenge in which Arrogant Contender attacked alone, it claims 1 power for each opposing character."
     , flavor_text = Just "Card designed by the 2010 World Melee Champion Brett Zeiler"
     , cost = Just 3
-    , icons = [  ]
+    , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
     , crest = [  ]
     , traits = [ "House Tyrell", "Knight", "Ally" ]
     , strength = Just 3
     , income = Nothing
     , initiative = Nothing
     , claim = Nothing
+    , influence = Nothing
     }
 
 type TestResult = Match | NoMatch | ParseError

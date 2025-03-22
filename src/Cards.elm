@@ -18,7 +18,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel 2 influence to raise the Claim value on your revealed plot card by 1 until the end of the phase. Use this ability only if you have lost 3 or more challenges this phase."
       , flavor_text = Just "Serve. Obey. Protect."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Captain" ]
       , strength = Just 3
@@ -62,7 +62,7 @@ all_cards =
       , rules_text = Just "Bringers of Law cannot be declared as an attacker.\nResponse: After an opponent initiates a challenge against you, stand Bringers of Law."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -128,7 +128,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Ambush.\nResponse: After Dragon Thief comes into play, choose and discard a non-unique attachment from play."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Mercenary" ]
       , strength = Just 2
@@ -150,7 +150,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel 8 influence and remove Drowned Prophet from the game (cannot be saved) to end the challenges phase."
       , flavor_text = Just "The first three men had offered their lives to the Drowned god fearlessly"
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ironborn" ]
       , strength = Just 3
@@ -326,7 +326,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nWhile there is no other card named King's Champion in play, it gains a Power icon and cannot be discarded from play."
       , flavor_text = Just "\"... name you a champion, and I shall do the same.\" - Ser Cortnay Penrose"
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 3
@@ -370,7 +370,7 @@ all_cards =
       , rules_text = Just "Response: Kneel 2 influence to save an Ironborn character from being killed. (Limit once per phase.)"
       , flavor_text = Just "\"If you were my salt wife, you'd do as I command\" - Theon Greyjoy"
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -436,7 +436,7 @@ all_cards =
       , rules_text = Just "No attachments except Siege.\nWhile Turncloak Mercenaries is attacking, players with revealed Military Battle or Power Struggle plot cards cannot declare defenders."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 4
@@ -458,7 +458,7 @@ all_cards =
       , rules_text = Just "Ambush. Intimidate."
       , flavor_text = Just "\"Our decks will stink of pigs and chickens on the voyage east, but we'll return with dragons.\" - Euron Crow's Eye"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn", "The East" ]
       , strength = Just 3
@@ -480,7 +480,7 @@ all_cards =
       , rules_text = Just "No attachments.\nWhile every character you control has the House Stark affiliation, Feral Pack gains: 'All Direwolf characters gain deadly, and all non-Direwolf characters lose deadly.'"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Direwolf" ]
       , strength = Just 3
@@ -502,7 +502,7 @@ all_cards =
       , rules_text = Just "Vigilant. No attachments except Boon."
       , flavor_text = Just "\"I know little and care less of gods, but the red priestess has power.\" - Stannis Baratheon"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Army", "Asshai" ]
       , strength = Just 2
@@ -524,7 +524,7 @@ all_cards =
       , rules_text = Just "Limited Response: After you win a Military or Power challenge in which First Mate is participating, put a Warship location from your hand or discard pile into play. (Limit 1 Limited Response per round.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Ironborn" ]
       , strength = Just 2
@@ -546,7 +546,7 @@ all_cards =
       , rules_text = Just "Response: After you play Herald of the East from your hand, search your deck for a House Targaryen character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Herald" ]
       , strength = Just 2
@@ -568,7 +568,7 @@ all_cards =
       , rules_text = Just "Response: After you play Herald of the Sea from your hand, search your deck for a House Greyjoy character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Herald" ]
       , strength = Just 2
@@ -590,7 +590,7 @@ all_cards =
       , rules_text = Just "Response: After you play Herald of the Stag from your hand, search your deck for a House Baratheon character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Herald" ]
       , strength = Just 2
@@ -612,7 +612,7 @@ all_cards =
       , rules_text = Just "Response: After you play Herald of the Sun from your hand, search your deck for a House Martell character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Herald" ]
       , strength = Just 2
@@ -634,7 +634,7 @@ all_cards =
       , rules_text = Just "Ambush. Stalwart. Intimidate. Infamy. Vigilant. Vengeful.\nJaqen H'ghar gets +1 STR for each power on him."
       , flavor_text = Just "\"A man sees. A man hears. A man knows.\""
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -656,7 +656,7 @@ all_cards =
       , rules_text = Just "Response: After you play Lion Herald from your hand, search your deck for a House Lannister character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Herald" ]
       , strength = Just 2
@@ -678,7 +678,7 @@ all_cards =
       , rules_text = Just "Stalwart. Vigilant."
       , flavor_text = Just "\"... there were always dangers when men were in their cups, and a king should never be unguarded...\" - Catelyn Stark"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -854,7 +854,7 @@ all_cards =
       , rules_text = Just "Infamy. Vengeful.\nVendor of Venoms cannot be discarded from play while it has 2 or more power on it."
       , flavor_text = Just "\"He is dying of the venom, but slowly, and in exquisite agony.\" - Qyburn"
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Merchant" ]
       , strength = Just 3
@@ -876,7 +876,7 @@ all_cards =
       , rules_text = Just "Response: After you play Wolf Herald from your hand, search your deck for a House Stark character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Herald" ]
       , strength = Just 2
@@ -898,7 +898,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which Apostle of The Drowned God participated, discard the top card of the losing opponent's deck. If that card is a location, Apostle of The Drowned God claims 1 power."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [  ]
+      , icons = [ Icon_Power { naval = True } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ironborn" ]
       , strength = Just 1
@@ -920,7 +920,7 @@ all_cards =
       , rules_text = Just "Vengeful.\nResponse: After you lose a challenge in which Areo Hotah participated in as the defender, discard the top 5 cards of your deck to choose and kill a participating character."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Captain", "Ally" ]
       , strength = Just 3
@@ -964,7 +964,7 @@ all_cards =
       , rules_text = Just "Infamy.\nWhile Blackwater Bay Veteran has 1 or more power on it, it gains a [Military] [Naval] enhancement."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "House Brax" ]
       , strength = Just 2
@@ -986,7 +986,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which Captain Groleo participated by 4 or more total STR, search your deck for an attachment and add it to your hand. Then, shuffle your deck."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [  ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Captain" ]
       , strength = Just 3
@@ -1030,7 +1030,7 @@ all_cards =
       , rules_text = Just "No attachments. Stealth.\nLower the cost to play Fleet from Lys by 3 if any opponent is running an agenda.\nResponse: After Fleet from Lys is declared as a [Naval] attacker, choose another attacking character you control. Stand and remove that character from the challenge."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = True } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Mercenary", "Smuggler" ]
       , strength = Just 7
@@ -1052,7 +1052,7 @@ all_cards =
       , rules_text = Just "No attachments. Deadly.\n\nLower the cost to play Fleet from Pyke by 3 if any opponent is running an agenda.\n\nResponse: After Fleet from Pyke is declared as a [Naval] attacker, choose another attacking character you control. Stand and remove that character from the challenge."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army" ]
       , strength = Just 7
@@ -1074,7 +1074,7 @@ all_cards =
       , rules_text = Just "No attachments. Deadly.\nLower the cost to play Fleet from The Arbor by 3 if any opponent is running an agenda.\nResponse: After Fleet from The Arbor is declared as a [Naval] attacker, choose another attacking character you control. Stand and remove that character from the challenge."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [  ]
+      , icons = [ Icon_Intrigue { naval = True }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "House Redwyne" ]
       , strength = Just 7
@@ -1096,7 +1096,7 @@ all_cards =
       , rules_text = Just "No attachments. Melee.\nLower the cost to play Fleet from Volantis by 3 if any opponent is running an agenda.\nResponse: After Fleet from Volantis is declared as a [Naval] attacker, choose another attacking character you control. Stand and remove that character from the challenge."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [  ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = True } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 7
@@ -1118,7 +1118,7 @@ all_cards =
       , rules_text = Just "No attachments. Renown.\nLower the cost to play Fleet from Wolf's Den by 3 if any opponent is running an agenda.\nResponse: After Fleet from Wolf's Den is declared as a [Naval] attacker, choose another attacking character you control. Stand and remove that character from the challenge."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "House Manderly" ]
       , strength = Just 7
@@ -1140,7 +1140,7 @@ all_cards =
       , rules_text = Just "No attachments. Stealth.\nLower the cost to play Lady Nym's Guard by 3 if any opponent is running an agenda.\nResponse: Discard a card from your hand to cancel a card effect just triggered that chooses 1 of your Sand Snake characters as the only target."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army" ]
       , strength = Just 7
@@ -1162,7 +1162,7 @@ all_cards =
       , rules_text = Just "Melee. Renown."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tyrell" ]
       , strength = Just 3
@@ -1184,7 +1184,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel Little Bird to choose a character. Until the end of the phase, that character gains (choose 1): an [Intrigue] icon, stealth, or infamy."
       , flavor_text = Just "\"He has informants everywhere. his little birds, he calls them.\" - Littlefinger"
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -1228,7 +1228,7 @@ all_cards =
       , rules_text = Just "While no opponent controls a Queen character, Missandei cannot be discarded from play.\n[+2 Influence]"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -1272,7 +1272,7 @@ all_cards =
       , rules_text = Just "Response: After Summer Sea Corsair comes out of Shadows, reveal 1 card from the top of your deck for each Smuggler character you control. Choose 1 revealed card and add it to your hand. Then, shuffle the rest back into your deck."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Ally", "Smuggler" ]
       , strength = Just 2
@@ -1294,7 +1294,7 @@ all_cards =
       , rules_text = Just "While Victarion Greyjoy is attacking, raise the claim value on your revealed plot card by 1 if you control more participating characters with [Naval] enhancements than the defending opponent."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Ironborn", "Lord", "Captain" ]
       , strength = Just 3
@@ -1316,9 +1316,9 @@ all_cards =
       , rules_text = Just "While Wyman Manderly is participating in a challenge, participating characters with STR 2 or lower do not count their STR."
       , flavor_text = Just "It was small wonder he could not sit a saddle; he looked as if he outweighed most horses. - A Clash of Kings"
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Intrigue { naval = True }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
-      , traits = [ "Lord", "Trator", "House Manderly" ]
+      , traits = [ "Lord", "Traitor", "House Manderly" ]
       , strength = Just 3
       , income = Nothing
       , initiative = Nothing
@@ -1360,7 +1360,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nResponse: After you win a challenge in which Depleted Host participated, search your deck for a Reinforcements event card, reveal it, and put it into your hand. Then, shuffle your deck."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 5
@@ -1382,7 +1382,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nResponse: After a Reinforcements event card is played, draw a card."
       , flavor_text = Just "Every additional man doubled the risk of betrayal."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 5
@@ -1404,7 +1404,7 @@ all_cards =
       , rules_text = Just "Response: After Desperate Looters enters play or leaves play, discard the top card of each opponent's deck."
       , flavor_text = Just "The looters had even made off with the Mother's costly robes..."
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -1426,7 +1426,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon or Boon.\nResponse: After a Reinforcements event card is played, choose an attachment controlled by an opponent. Take control of that attachment, and attach it to Destitute Horde, if able. Otherwise, discard it from play."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Dothraki" ]
       , strength = Just 5
@@ -1448,7 +1448,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nResponse: After a Reinforcements event card is played, stand Exhausted Horsemen."
       , flavor_text = Just "There was only the oncoming horseman and the longaxe in his hand."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 5
@@ -1470,7 +1470,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nLimited Response: After a Reinforcements event card is played, pay 2 gold to choose a character or location that does not have its owner's House affiliation. Take control of that card. (Limit 1 Limited Response per round.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 5
@@ -1514,7 +1514,7 @@ all_cards =
       , rules_text = Just "Deadly. No attachments except Siege.\nIf an opponent is running an agenda, Northern Cavalry Flank does not kneel to attack."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army" ]
       , strength = Just 5
@@ -1536,7 +1536,7 @@ all_cards =
       , rules_text = Just "Deadly. No attachments except Siege.\nIf no opponent is running an agenda, Northern Infantry does not kneel to defend."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army" ]
       , strength = Just 5
@@ -1558,7 +1558,7 @@ all_cards =
       , rules_text = Just "Intimidate. No attachments.\nX is the highest gold value on an opponent's revealed plot card."
       , flavor_text = Just "The north has nothing for us. Ice and war and pirates."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn", "Mercenary" ]
       , strength = Nothing
@@ -1624,7 +1624,7 @@ all_cards =
       , rules_text = Just "House Baratheon only. \nAfter you play Stormland Scavengers from your hand, choose a player with a House Baratheon or a House Targaryen House card. Discard a card at random from that player's hand."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Traitor" ]
       , strength = Just 3
@@ -1690,7 +1690,7 @@ all_cards =
       , rules_text = Just "If there is another King character in play, Tommen Baratheon cannot attack, defend, or trigger his character ability. Marshalling: Kneel Tommen Baratheon to draw a card."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "King" ]
       , strength = Just 1
@@ -1712,7 +1712,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nResponse: After a Reinforcements event card is played, choose and kneel a character without an Intrigue icon."
       , flavor_text = Just "A weary smile brushed his lips."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 5
@@ -1734,7 +1734,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nResponse: After a Reinforcements event card is played, put a Warship location into play from your discard pile."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 5
@@ -1800,7 +1800,7 @@ all_cards =
       , rules_text = Just "If you have won a single Military challenge as the attacker this phase, you may declare 1 additional Military challenge (to a maximum of 2) by declaring Blood-Crazed Screamer and any number of eligible Dothraki characters as attackers."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Ally" ]
       , strength = Just 1
@@ -1888,7 +1888,7 @@ all_cards =
       , rules_text = Just "Response: Kneel Island Smuggler to cancel an effect that would move a card out of a player's dead or discard pile."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Raider" ]
       , strength = Just 2
@@ -1932,7 +1932,7 @@ all_cards =
       , rules_text = Just "Renown.\nDominance: Put Lady Stoneheart into play from your dead pile. Then, discard all power from your House card."
       , flavor_text = Just "\"Lord Beric put his lips to hers, and the flame of his life passed from him to her. And... she rose. May the Lord of Light protect us. She rose.\""
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Brotherhood", "Ally" ]
       , strength = Just 3
@@ -1954,7 +1954,7 @@ all_cards =
       , rules_text = Just "Deadly.\nIf you have no power on your House card, Lem Lemoncloak gets +1 STR for each Brotherhood character you control."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Brotherhood" ]
       , strength = Just 2
@@ -1976,7 +1976,7 @@ all_cards =
       , rules_text = Just "After you play Lost Spearman from your hand, any opponent may kneel 1 influence to return him to your hand."
       , flavor_text = Just "\"...Renly has taken Dorne's allegiance for granted.\" - Tyrion Lannister"
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Refugee" ]
       , strength = Just 3
@@ -2020,7 +2020,7 @@ all_cards =
       , rules_text = Just "House Stark only. \nResponse: After you win an Intrigue challenge in which Reek participated as an attacker, give the defending player control of Reek to choose and take control of 1 character controlled by that player."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Bolton", "Ally" ]
       , strength = Just 1
@@ -2064,7 +2064,7 @@ all_cards =
       , rules_text = Just "Renown.\nWhile Ser Eldon Estermont is attacking, characters with fewer power than him cannot be declared as defenders."
       , flavor_text = Just "There were great lords and noble knights in that company too: sour old Lord Celtigar, the Red Crab; Ser Bonifer the Good; Lord Estermont, more ancient even than Celtigar..."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 3
@@ -2108,7 +2108,7 @@ all_cards =
       , rules_text = Just "Deadly.\nRaise your Claim value by 1 during any challenge in which The Burned Men is attacking if you have fewer cards in hand than the defending player."
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Clansman", "Army" ]
       , strength = Just 5
@@ -2130,7 +2130,7 @@ all_cards =
       , rules_text = Just "Renown.\nKnelt Clansman characters you control cannot be killed."
       , flavor_text = Just "And even the other Burned Men feared Timett..."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman" ]
       , strength = Just 3
@@ -2152,7 +2152,7 @@ all_cards =
       , rules_text = Just "If you have fewer cards in hand than each opponent, Tyrion's Enforcers can attack or defend Military challenges while knelt."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman", "Mercenary" ]
       , strength = Just 3
@@ -2218,7 +2218,7 @@ all_cards =
       , rules_text = Just "Prized 2.\nHouse Targaryen only.\nResponse: After you declare Daenerys Targaryen as an attacker, choose a character without attachments controlled by the defending player. If you win the challenge, kill that character."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady", "Queen" ]
       , strength = Just 4
@@ -2262,7 +2262,7 @@ all_cards =
       , rules_text = Just "Prized 2. Stealth.\nResponse: Kneel a prized character to cancel the effects of a character ability just triggered."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -2328,7 +2328,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nWhile Horselord is participating in a challenge, characters with more than 1 icon do not count their STR."
       , flavor_text = Just "Many were Dothraki horselords, big men with red-brown skin, their drooping mustachios bound in metal rings, their black hair oiled and braided and hung with bells."
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki" ]
       , strength = Just 2
@@ -2350,7 +2350,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nResponse: After Hoster Tully leaves play, search the top 5 cards of your deck for any number of House Tully cards, reveal them and add them to your hand. Shuffle the other cards back into your deck."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "House Tully" ]
       , strength = Just 2
@@ -2416,7 +2416,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nResponse: After you play Lyseni Captain, pay 2 gold to move all power from a character to Lyseni Captain."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Smuggler", "Captain" ]
       , strength = Just 3
@@ -2460,7 +2460,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nMarshalling: Kneel a Baratheon character to lower the cost of the next character you play this phase by X, where X is the number of prized cards you control. (Limit once per round.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -2504,7 +2504,7 @@ all_cards =
       , rules_text = Just "Prized 2. Renown.\nWhile The Blackfish is attacking, each character that dies for [Military] claim gains \"prized 1.\""
       , flavor_text = Just "\"He's not as black a fish as that.\"\n–Ser Jaime Lannister"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "Knight", "House Tully" ]
       , strength = Just 3
@@ -2570,7 +2570,7 @@ all_cards =
       , rules_text = Just "Prized 2. Stealth.\nIf you win a challenge in which Tyrion Lannister attacked alone, instead of\nthe normal claim effects, reveal a card from the losing opponent's hand at random. You may put that card into play under your control, if able. Otherwise, discard it."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -2724,7 +2724,7 @@ all_cards =
       , rules_text = Just "Renown. No attachments.\nLower the cost to play Army of the Faithful by 1 for each Asshai character you control."
       , flavor_text = Nothing
       , cost = Just 6
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Asshai" ]
       , strength = Just 6
@@ -2746,7 +2746,7 @@ all_cards =
       , rules_text = Just "Any phase: Kneel 1 influence to choose a character with stealth or renown. Until the end of the phase, that character loses those keywords, and Arya Stark gains any keyword that was lost in this way."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady" ]
       , strength = Just 2
@@ -2768,7 +2768,7 @@ all_cards =
       , rules_text = Just "Stealth. No attachments."
       , flavor_text = Just "What had John Arryn wanted with a king's bastard, and why was it worth his life?"
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard" ]
       , strength = Just 1
@@ -2790,7 +2790,7 @@ all_cards =
       , rules_text = Just "Stealth.\nAfter Benjen Stark is killed, all players must shuffle their dead piles back into their decks."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Night's Watch" ]
       , strength = Just 3
@@ -2944,7 +2944,7 @@ all_cards =
       , rules_text = Just "Renown. Immune to opponent's character abilities."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady", "Knight" ]
       , strength = Just 3
@@ -2966,7 +2966,7 @@ all_cards =
       , rules_text = Just "Deadly. No attachments.\nAny Phase: Pay 2 gold to choose a character. Until the end of the phase, if that character would be killed and Bronn is kneeling, stand Bronn instead of killing that character."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Mercenary" ]
       , strength = Just 3
@@ -2988,7 +2988,7 @@ all_cards =
       , rules_text = Nothing
       , flavor_text = Just "\"Well,\" said Brown Ben Plumm, \"there was some old Plumm in the Sunset Kingdoms who wed a dragon princess. My grandmama told me the tale. He lived in King Aegon's day.\"\n\"Which King Aegon?\" Dany asked. \"Five Aegon's have ruled in Westeros.\""
       , cost = Just 0
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Mercenary" ]
       , strength = Just 2
@@ -3076,7 +3076,7 @@ all_cards =
       , rules_text = Just "Response: After an opponent plays or reveals an attachment, claim 1 power for your House. (Limit 1 per phase.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Captain" ]
       , strength = Just 3
@@ -3098,7 +3098,7 @@ all_cards =
       , rules_text = Just "Response: After Catelyn Stark is declared as a defender, choose a participating character. For the duration of the challenge, that character does not count its STR."
       , flavor_text = Just "\"But if we are winning, why am I so afraid?\""
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady", "House Tully" ]
       , strength = Just 3
@@ -3120,7 +3120,7 @@ all_cards =
       , rules_text = Just "Dominance: Kneel Cersei Lannister and pay 2 gold to choose a character. Kneel that character if it is standing. That character does not stand during the standing phase this round."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady" ]
       , strength = Just 3
@@ -3142,7 +3142,7 @@ all_cards =
       , rules_text = Just "Response: After Cersei Lannister or Cersei's Attendant is killed, choose and kneel a character."
       , flavor_text = Just "Serving men cleared away the swan, hardly touched. Cersei beckoned for the sweet."
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -3164,7 +3164,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After you win a challenge in which at least 1 Clansman character participated, pay X gold to choose and return a location to its owner's hand, where X is the printed gold cost of that location."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman" ]
       , strength = Just 3
@@ -3252,7 +3252,7 @@ all_cards =
       , rules_text = Just "Deadly.\nAt the beginning of the dominance phase, discard 1 gold from any player's gold pool or discard Daario Naharis from play."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Mercenary" ]
       , strength = Just 3
@@ -3274,7 +3274,7 @@ all_cards =
       , rules_text = Just "Renown.\nIf you win a challenge in which Daenerys Targaryen attacked alone, move all gold tokens from the losing opponent's gold pool to your gold pool."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady", "Queen" ]
       , strength = Just 3
@@ -3318,7 +3318,7 @@ all_cards =
       , rules_text = Just "Response: After Daenerys Targaryen or Dany's Handmaiden is killed, choose and discard an attachment from play."
       , flavor_text = Just "The girl brushed her hair until it shone like molten silver, while the old woman annointed her with spiceflower perfume of the Dothraki plains."
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -3340,7 +3340,7 @@ all_cards =
       , rules_text = Just "While any character you control has 1 or more power, Devan Seaworth gains stealth."
       , flavor_text = Just "The boy wore a cream-colored doublet with a fiery heart sewn on the breast."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -3362,7 +3362,7 @@ all_cards =
       , rules_text = Just "House Stark only. No attachments."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Direwolf" ]
       , strength = Just 2
@@ -3428,7 +3428,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. No attachments.\nChallenges: You may put Dothraki Honor Guard into play from your hand, under the control of any opponent. After that opponent wins a challenge in which Dothraki Honor Guard participated, take control of Dothraki Honor Guard."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Dothraki" ]
       , strength = Just 4
@@ -3472,7 +3472,7 @@ all_cards =
       , rules_text = Just "Stealth. No attachments.\nAny Phase: Pay 2 gold to choose a character. Until the end of the phase, that character gets -1 STR and is killed if its STR is 0. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 4
@@ -3538,7 +3538,7 @@ all_cards =
       , rules_text = Just "Stalwart. Renown. Deadly.\nEddard Stark claims 1 power when he comes into play."
       , flavor_text = Just "\"Our way is the older way. The blood of the First Men still flows in the veins of the Starks, and we hold to the belief that the man who passes the sentence should swing the sword.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -3560,7 +3560,7 @@ all_cards =
       , rules_text = Just "Stealth.\nLimited Response: After you win a Power challenge as the attacker by 4 or more total STR, discard Edric Storm from play (cannot be saved) to initiate an additional Power challenge this phase. (Limit 1 Limited Response per round.)"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard" ]
       , strength = Just 2
@@ -3582,7 +3582,7 @@ all_cards =
       , rules_text = Just "Response: After you play Enemy Informer from your hand, choose and kneel a character."
       , flavor_text = Just "\"Is everyone someone's informer in this cursed city?\" - Eddard Stark"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tyrell" ]
       , strength = Just 2
@@ -3670,7 +3670,7 @@ all_cards =
       , rules_text = Just "Stealth.\nJon Snow is immune to events.\nResponse: Kneel Ghost to save a Night's Watch character from being killed or discarded from play."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Direwolf" ]
       , strength = Just 3
@@ -3780,7 +3780,7 @@ all_cards =
       , rules_text = Just "Response: After an opponent's effect reveals one or more cards, reveal the top card of your deck and put it into your hand (limit 3 per phase)."
       , flavor_text = Just "Pycelle is a toad. But better a Lannister toad than a Tyrell toad, no?"
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester" ]
       , strength = Just 2
@@ -3868,7 +3868,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel Greatjon Umber to have him participate in the current Military or Power challenge as either the attacker or as the defender."
       , flavor_text = Just "The Greatjon became Robb's right hand, his staunchest champion."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -3890,7 +3890,7 @@ all_cards =
       , rules_text = Just "Deadly. No attachments.\nIf Robb Stark is in play, lower the cost to play Grey Wind by 2."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Direwolf" ]
       , strength = Just 4
@@ -4022,7 +4022,7 @@ all_cards =
       , rules_text = Just "House Baratheon only. No attachments.\nChallenges: You may put Highgarden Honor Guard into play from your hand, under the control of any opponent. After that opponent wins a challenge in which Highgarden Honor Guard participated, take control of Highgarden Honor Guard."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "House Tyrell" ]
       , strength = Just 4
@@ -4044,7 +4044,7 @@ all_cards =
       , rules_text = Just "Deadly. No attachments.\nHodor cannot be declared as an attacker. Hodor cannot be bypassed with stealth."
       , flavor_text = Just "\"Hodor!\""
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 4
@@ -4088,7 +4088,7 @@ all_cards =
       , rules_text = Just "No attachments."
       , flavor_text = Just "The horse lines stretched out over leagues. A forest had surely been felled to make the tall staffs that held the banners."
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army" ]
       , strength = Just 6
@@ -4110,7 +4110,7 @@ all_cards =
       , rules_text = Just "Marshalling: Kneel to lower the cost of the next House Stark character you play this phase by 1."
       , flavor_text = Just "Family. Duty. Honor."
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "House Tully" ]
       , strength = Just 1
@@ -4132,7 +4132,7 @@ all_cards =
       , rules_text = Just "Response: After one of your House Baratheon characters is killed, put House Tyrell Guard into play from your hand."
       , flavor_text = Just "\"Tyrell swords will make me king.\" - Lord Renly Baratheon"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "House Tyrell" ]
       , strength = Just 1
@@ -4220,7 +4220,7 @@ all_cards =
       , rules_text = Just "Marshalling: Kneel Illyrio's Man to lower the cost of the next House Targaryen character you play this phase by 1."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Conscriptor" ]
       , strength = Just 1
@@ -4264,7 +4264,7 @@ all_cards =
       , rules_text = Just "Stealth.\nWhile Jhogo has a Weapon attachment, he gets +2 STR."
       , flavor_text = Just "...Jhogo's whip coiled around his neck and cut off his shout."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Queensguard" ]
       , strength = Just 3
@@ -4286,7 +4286,7 @@ all_cards =
       , rules_text = Just "Response: After a Lord or Lady character is killed, Joffrey Baratheon claims 1 power. (Limit 3 times per round.)"
       , flavor_text = Just "\"Fear is better than love.\""
       , cost = Just 3
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 2
@@ -4308,7 +4308,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nGhost is immune to events.\nResponse: After you win a challenge in which Jon Snow or Ghost participated, Jon Snow claims 1 power."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard", "Night's Watch" ]
       , strength = Just 3
@@ -4330,7 +4330,7 @@ all_cards =
       , rules_text = Just "Kennel Master gets +1 STR for each Direwolf in play.\nWhile you control 3 or more Direwolf cards, Kennel Master gains: \"Response: Save Kennel Master from being killed or discarded, and return him to his owner's hand.\""
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -4352,7 +4352,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Stealth.\nResponse: After you win a challenge, put Khal Drogo into play from your hand. At the end of the phase, return Khal Drogo to his owner's hand."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "Dothraki" ]
       , strength = Just 3
@@ -4440,7 +4440,7 @@ all_cards =
       , rules_text = Just "No attachments.\nAt the beginning of the dominance phase, Knight of Flowers claims 1 power if he is standing."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Kingsguard" ]
       , strength = Just 3
@@ -4462,7 +4462,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nKnight of the Rainwood cannot be discarded from play."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 2
@@ -4484,7 +4484,7 @@ all_cards =
       , rules_text = Nothing
       , flavor_text = Just "His breastplate was scratched and dented from battle, his blue-and-red cloak stained by blood and smoke."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Knight", "House Tully" ]
       , strength = Just 2
@@ -4506,7 +4506,7 @@ all_cards =
       , rules_text = Just "No attachments.\nSansa Stark gets +1 STR and gains renown.\nIf Sansa Stark is in play, lower the cost to play Lady by 2."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Direwolf" ]
       , strength = Just 2
@@ -4594,7 +4594,7 @@ all_cards =
       , rules_text = Just "House Lannister only. No attachments.\nChallenges: You may put Lannisport Honor Guard into play from your hand, under the control of any opponent. After that opponent wins a challenge in which Lannisport Honor Guard participated, take control of Lannisport Honor Guard."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 4
@@ -4616,7 +4616,7 @@ all_cards =
       , rules_text = Just "[+2 Income]"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -4638,7 +4638,7 @@ all_cards =
       , rules_text = Just "[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -4704,7 +4704,7 @@ all_cards =
       , rules_text = Just "Stealth.\nLittlefinger gets +1 STR for each gold token in your gold pool.\n[+2 Income]"
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Lord", "Ally" ]
       , strength = Just 3
@@ -4792,7 +4792,7 @@ all_cards =
       , rules_text = Just "Stealth. Deadly. No attachments."
       , flavor_text = Just "Arya looked at Vargo Hoat again. How many monsters does Lord Tywin have?"
       , cost = Just 6
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Clegane" ]
       , strength = Just 6
@@ -4858,7 +4858,7 @@ all_cards =
       , rules_text = Just "Marshalling: Kneel Maester Cressen to choose and discard a Condition attachment from play."
       , flavor_text = Just "When a maester donned his collar, he put aside the hope of children, yet Cressen had oft felt a father nontheless. Robert, Stannis, Renly: three sons he had raised after the angry sea claimed Lord Steffon."
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester" ]
       , strength = Just 2
@@ -4880,7 +4880,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel Magister Illyrio to choose an opponent and name a challenge type. That opponent must pay you 1 gold from his or her gold pool each time he or she initiates a challenge of this type."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -4902,7 +4902,7 @@ all_cards =
       , rules_text = Just "Renown.\nWhile Melisandre is standing, Asshai characters get +1 STR. Power on opponents' characters does not count towards their total power."
       , flavor_text = Just "It's as they say. This is his true queen, not the one he left at Eastwatch."
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Lady", "Asshai" ]
       , strength = Just 3
@@ -5144,7 +5144,7 @@ all_cards =
       , rules_text = Just "After Old Red Priest is killed, choose and kneel a standing location you control, if able."
       , flavor_text = Just "That can't be Thoros of Myr"
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Asshai" ]
       , strength = Just 1
@@ -5166,7 +5166,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge by 4 or more total STR, return Pentoshi Guildmaster from your discard pile to your hand. Then, you may pay 3 gold to put Pentoshi Guildmaster into play from your hand."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Mercenary", "Asshai" ]
       , strength = Just 2
@@ -5276,7 +5276,7 @@ all_cards =
       , rules_text = Just "Qartheen Fanatic gets +1 STR and a Military icon while there is a Dragon character in play."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Qartheen" ]
       , strength = Just 2
@@ -5298,7 +5298,7 @@ all_cards =
       , rules_text = Just "Opponents may not choose Quaithe of the Shadow as the target of an event card or character ability while she has at least 1 attachment."
       , flavor_text = Just "From her Dany recieved only a warning. \"Beware.\""
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Qartheen" ]
       , strength = Just 2
@@ -5342,7 +5342,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After you win an Intrigue challenge in which Qyburn's Informers participated, draw 2 cards."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -5364,7 +5364,7 @@ all_cards =
       , rules_text = Just "Any Phase: Pay 1 gold to look at the top card of an opponent's deck. Then put that card either on the top or bottom of his or her deck."
       , flavor_text = Just "The boy's mother started screaming and Raff the Sweetling killed her as well."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -5408,7 +5408,7 @@ all_cards =
       , rules_text = Just "Immune to opponent's character abilities.\nAny Phase: Kneel 1 influence to stand Renly Baratheon."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord" ]
       , strength = Just 2
@@ -5430,7 +5430,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel Renly's Courtier to choose a non-unique character. Until the end of the phase, treat that character as though its printed text box were blank (except for Traits)."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -5474,7 +5474,7 @@ all_cards =
       , rules_text = Just "Stealth. No attachments.\nAny Phase: Pay 1 gold to search your deck for a duplicate of Rhaegal and attach it to him. Then shuffle your deck."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 4
@@ -5496,7 +5496,7 @@ all_cards =
       , rules_text = Just "Response: after you win a Military challenge in which Robb Stark participates, choose and kill a character controlled by the losing player."
       , flavor_text = Just "\"I have won every battle, but I feel as though I am losing the war.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 2
@@ -5518,7 +5518,7 @@ all_cards =
       , rules_text = Just "Renown.\nWhen Robert Baratheon claims power for renown, he claims an additional power."
       , flavor_text = Just "\"Robert could piss in a cup and men would call it wine.\" - Lord Stannis Baratheon"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -5562,7 +5562,7 @@ all_cards =
       , rules_text = Just "House Stark only. \nResponse: After a player plays an attachment on Sansa Stark, that player may draw a card."
       , flavor_text = Just "\"Sansa was a lady at three, always so courteous and eager to please. She loved nothing so well as tales of knightly valor\" - Lady Catelyn Stark"
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady" ]
       , strength = Just 2
@@ -5606,7 +5606,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel 1 influence to choose a unique character. Until the end of the phase, that character gains an Intrigue icon."
       , flavor_text = Just "\"You'd have to be a fool to want to bed Selyse Florent.\" - Littlefinger"
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Lady", "House Florent" ]
       , strength = Just 2
@@ -5628,7 +5628,7 @@ all_cards =
       , rules_text = Just "Response: After you win a Power challenge by 4 or more total STR, stand Ser Axel Florent."
       , flavor_text = Just "The Florents of Brightwater Keep are sworn bannermen to Highgarden, and followed the Tyrells in declaring for King Renly."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 3
@@ -5650,7 +5650,7 @@ all_cards =
       , rules_text = Just "Renown. No attachments except Weapon.\nAfter Ser Barristan Selmy enters play, all players shuffle their discard piles back into their decks."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Kingsguard" ]
       , strength = Just 4
@@ -5672,7 +5672,7 @@ all_cards =
       , rules_text = Just "Response: Save Ser Davos Seaworth from being killed, then pay 1 gold or return him to his owner's hand."
       , flavor_text = Just "\"He makes me wish I had more smugglers in my service\" - Lord Stannis Baratheon"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 3
@@ -5694,7 +5694,7 @@ all_cards =
       , rules_text = Just "Marshalling: Kneel Ser Ilyn Payne to choose and kill a character with STR 2 or lower."
       , flavor_text = Just "Lords and knights moved aside as he stepped through, tall and fleshless, a skeleton in iron mail, the King's Justice."
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Ally" ]
       , strength = Just 2
@@ -5716,7 +5716,7 @@ all_cards =
       , rules_text = Just "Immune to character abilities.\nResponse: After Ser Jacelyn Bywater is killed, each opponent must choose and discard a card at random from his or her hand, if able."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 3
@@ -5738,7 +5738,7 @@ all_cards =
       , rules_text = Just "Infamy. Deadly.\nSer Jaime Lannister does not kneel to attack or defend during a Military challenge."
       , flavor_text = Just "\"Kingslayer,\" he pronounced carefully. \"And such a king he was! To Aerys Targaryen... and to the sword that opened his throat. A golden sword, don't you know. Those are the Lannister colors, red and gold.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 3
@@ -5760,7 +5760,7 @@ all_cards =
       , rules_text = Just "Ser Rodrik Cassel does not kneel to defend. Ser Rodrik Cassel gets +2 STR while defending."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 2
@@ -5826,7 +5826,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel Shae to choose and kneel a character controlled by a player with more power than you."
       , flavor_text = Just "\"My giant of Lannister.\""
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -5848,7 +5848,7 @@ all_cards =
       , rules_text = Just "Deadly. No attachments.\nWhile you control at least 1 House Stark Lord character, Shaggydog gets +3 STR and is immune to events."
       , flavor_text = Just "The darkness sprang at him, snarling."
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Direwolf" ]
       , strength = Just 1
@@ -5892,7 +5892,7 @@ all_cards =
       , rules_text = Just "Renown.\nWhile Stannis Baratheon is attacking and the defending player controls no Lord characters, that player cannot declare defenders."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -5914,7 +5914,7 @@ all_cards =
       , rules_text = Just "Deadly. No attachments.\nStannis's Northern Cavalry cannot be killed or discarded from play during a phase in which its STR has been raised or lowered."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 3
@@ -6024,7 +6024,7 @@ all_cards =
       , rules_text = Just "Response: Pay 2 gold to save a Noble character from being killed."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Queensguard" ]
       , strength = Just 3
@@ -6200,7 +6200,7 @@ all_cards =
       , rules_text = Just "If The Hound is killed, place him in your discard pile instead of your dead pile. At the beginning of the dominance phase, discard the top card from your deck or discard the Hound from play (cannot be saved)."
       , flavor_text = Just "\"I'm no knight. I spit on them and their vows.\""
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 4
@@ -6288,7 +6288,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. \nResponse: After a card is placed in your dead pile, put The Titan's Bastard into play from your hand.  Response: After a card is placed in an opponent's dead pile, return The Titan's Bastard to its owner's hand."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Bastard", "Mercenary" ]
       , strength = Just 2
@@ -6332,7 +6332,7 @@ all_cards =
       , rules_text = Just "Dominance: Return Trident Reinforcements from your dead pile to your hand. Use this ability if there are at least 3 characters in your dead pile."
       , flavor_text = Just "\"The red stallion was always a welcome sight in Riverrun.\" - Catelyn Stark"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tully" ]
       , strength = Just 3
@@ -6354,7 +6354,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After you win an Intrigue challenge or a challenge in which Tyrion Lannister participated, pay 1 gold to draw a card."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -6376,7 +6376,7 @@ all_cards =
       , rules_text = Just "At the beginning of the marshalling phase, take 2 gold from the treasury and place it on Tywin Lannister. You may spend gold tokens on Tywin Lannister as if they are in your gold pool."
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 4
@@ -6442,7 +6442,7 @@ all_cards =
       , rules_text = Just "Stealth.\nPlot: If you have more than one opponent, kneel Varys to choose an opponent. Until the end of the round, switch plot decks and used plot piles with that opponent."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Lord", "Ally" ]
       , strength = Just 3
@@ -6464,7 +6464,7 @@ all_cards =
       , rules_text = Just "Stealth. No attachments.\nDominance: Pay 4 gold to choose and kill a kneeling character. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 4
@@ -6486,7 +6486,7 @@ all_cards =
       , rules_text = Just "Response: Save Viserys Targaryen from being killed or discarded from play, then return him to his owner's hand."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord" ]
       , strength = Just 1
@@ -6508,7 +6508,7 @@ all_cards =
       , rules_text = Just "No attachments."
       , flavor_text = Just "Robb rode at the front of the column, beneath the flapping white banner of Winterfell. Each day he would ask one of his lords to join him, so they might confer as they marched..."
       , cost = Just 7
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army" ]
       , strength = Just 11
@@ -6530,7 +6530,7 @@ all_cards =
       , rules_text = Just "Deadly. Immune to character abilities."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Unsullied" ]
       , strength = Just 3
@@ -6662,7 +6662,7 @@ all_cards =
       , rules_text = Just "House Stark only. No attachments.\nChallenges: You may put Winterfell Honor Guard into play from your hand, under the control of any opponent. After that opponent wins a challenge in which Winterfell Honor Guard participated, take control of Winterfell Honor Guard."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 4
@@ -6706,7 +6706,7 @@ all_cards =
       , rules_text = Just "Response: After Winterfell Reserves is declared as a defender, pay 1 gold to put the top card of a player's discard pile on top of his or her deck."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 3
@@ -6728,7 +6728,7 @@ all_cards =
       , rules_text = Just "After you play Xaro Xoan Daxos from your hand, choose and return a character you control to its owner's hand."
       , flavor_text = Just "She hoped that Xaro Xoan Daxos was not an enemy..."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -6860,7 +6860,7 @@ all_cards =
       , rules_text = Just "If you lose a challenge in which Craster participated, the winning opponent draws 2 cards."
       , flavor_text = Just "Craster sat above the fire, the only man to enjoy his own chair."
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling", "Ally" ]
       , strength = Just 5
@@ -6882,7 +6882,7 @@ all_cards =
       , rules_text = Just "Response: After you win initiative, discard the top 2 cards of each opponent's deck."
       , flavor_text = Just "The first three men had offered their lives to the Drowned God fearlessly, but the fourth was weak in faith..."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ironborn" ]
       , strength = Just 2
@@ -6904,7 +6904,7 @@ all_cards =
       , rules_text = Just "Any Phase: Pay 1 gold to choose 1 Night's Watch character. Until the end of the phase, that character gains stealth."
       , flavor_text = Just "Lord Janos was red-faced and quivering."
       , cost = Just 3
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Night's Watch" ]
       , strength = Just 2
@@ -6926,7 +6926,7 @@ all_cards =
       , rules_text = Just "Renown.\nResponse: After you win a Power challenge in which Khal Drogo is participating, choose and kill 1 character with lower STR than Khal Drogo."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "Dothraki" ]
       , strength = Just 3
@@ -6948,7 +6948,7 @@ all_cards =
       , rules_text = Just "House Baratheon only. \nLoyal Guard can be played from your hand as a duplicate on a Noble character."
       , flavor_text = Just "\"King is only a word, but fealty, loyalty, service... those I must have.\" - Renly Baratheon"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -6970,7 +6970,7 @@ all_cards =
       , rules_text = Just "Response: After you play Palace Spy from your hand, search your deck for 1 influence-providing location, reveal that card, and add it to your hand. Then, shuffle your deck."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -7212,7 +7212,7 @@ all_cards =
       , rules_text = Just "Deadly. No attachments.\nReduce the cost to play Wolves of the North by 1 for each The North agenda you are running."
       , flavor_text = Just "When the snows fall and the white winds blow, the lone wolf dies, but the pack survives."
       , cost = Just 6
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Direwolf" ]
       , strength = Just 6
@@ -7234,7 +7234,7 @@ all_cards =
       , rules_text = Just "Stealth.\nIf Aeron Damphair would be killed, instead search your deck for a non-unique Holy character with cost 3 or lower, put it into play, shuffle your deck and put Aeron Damphair on the bottom of your deck."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Lord", "Ironborn" ]
       , strength = Just 3
@@ -7322,7 +7322,7 @@ all_cards =
       , rules_text = Just "Renown.Asha Greyjoy cannot be saved."
       , flavor_text = Just "...lean and long legged, with black hair cut short, wind chafed skin, strong sure hands, a dirk at her belt."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lady", "Ironborn" ]
       , strength = Just 3
@@ -7388,7 +7388,7 @@ all_cards =
       , rules_text = Just "Renown.If Balon Greyjoy is the only King character in play, characters with lower STR than his cannot be declared as defenders while he is attacking."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King", "Ironborn" ]
       , strength = Just 3
@@ -7476,7 +7476,7 @@ all_cards =
       , rules_text = Just "Deadly.\nEach Warship location you control counts as 2 STR during the dominance phase."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "Ironborn" ]
       , strength = Just 3
@@ -7498,7 +7498,7 @@ all_cards =
       , rules_text = Just "Stealth.\nIf Drowned Disciple would be killed, instead put it on the bottom of your deck. Then, each opponent discards the top 3 cards of his or her deck."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ironborn" ]
       , strength = Just 1
@@ -7520,7 +7520,7 @@ all_cards =
       , rules_text = Just "Challenges: During a challenge in which you are the attacker, kneel Drumbeater to have that challenge considered unopposed if you win by 4 or more total STR."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn" ]
       , strength = Just 1
@@ -7542,7 +7542,7 @@ all_cards =
       , rules_text = Just "Immune to events.\nWhile Euron Crow's Eye is standing, House Greyjoy characters you control gain stealth."
       , flavor_text = Just "Only one living kraken has never known defeat.\nOnly one has never bent his knee."
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Ironborn" ]
       , strength = Just 4
@@ -7586,7 +7586,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which Godswood Attendant participated, look at the top card of any player's deck. Then, you may discard that card or put it back on top of its owner's deck."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -7630,7 +7630,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel 1 influence to give Jack of All Trades (choose one) a War , a Noble , a Learned , or a Holy crest until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -7652,7 +7652,7 @@ all_cards =
       , rules_text = Just "If Joffrey Baratheon is the only King character in play, he gets +1 STR for each gold token on him.\nResponse: After an opponent pays gold to marshall a character, put that gold on Joffrey Baratheon. (Limit once per round.)"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "King" ]
       , strength = Just 1
@@ -7740,7 +7740,7 @@ all_cards =
       , rules_text = Just "Response: Kneel Maester Wendamyr to save a House Greyjoy character from being killed or discarded. Then, you may kneel 2 influence or kneel a Learned character to stand that character."
       , flavor_text = Just "\"Too long have the Ironborn listened to you chain-neck maesters.\" - Aeron Damphair"
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester" ]
       , strength = Just 1
@@ -7762,7 +7762,7 @@ all_cards =
       , rules_text = Just "If Myrcella Lannister is the only Queen character in play, she gains: \"Any Phase: Kneel Myrcella Lannister to choose a Knight character. Until the end of the phase, that character gains an Intrigue icon and stealth.\""
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady", "Queen" ]
       , strength = Just 1
@@ -7784,7 +7784,7 @@ all_cards =
       , rules_text = Just "Challenges: Discard the top card of your deck to give a Holy character +1 STR until the end of the phase. (Limit twice per phase.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ironborn" ]
       , strength = Just 3
@@ -7806,7 +7806,7 @@ all_cards =
       , rules_text = Just "War characters you control get +1 STR."
       , flavor_text = Just "\"It is customary to take a finger from a thief, but a man who steals from a sept is stealing from the gods.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "House Tarly" ]
       , strength = Just 3
@@ -7872,7 +7872,7 @@ all_cards =
       , rules_text = Just "Renown.\nIf Robb Stark is the only King character in play, he gains: \"Any Phase: Kneel Robb Stark to reduce the cost of the next House Stark army you play this phase to 0.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 3
@@ -7894,7 +7894,7 @@ all_cards =
       , rules_text = Just "Renown.\nIf Robert Baratheon is the only King character in play, he gains: \"Any Phase: Kneel Robert Baratheon to play an \"Any Phase\" event card from your discard pile as if you just played it from your hand. Then, shuffle that event card back into your deck.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 3
@@ -7938,7 +7938,7 @@ all_cards =
       , rules_text = Just "Response: After an opponent plays an attachment card, discard Scurvy Cutthroat from play (cannot be saved) to discard that attachment from play."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -7960,7 +7960,7 @@ all_cards =
       , rules_text = Just "Limited. No attachments."
       , flavor_text = Just "\"You are to harry the Stony Shore, raiding the fishing villages and sinking any ships you chance to meet.\" - Lord Balon Greyjoy"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Ironborn" ]
       , strength = Just 3
@@ -8026,7 +8026,7 @@ all_cards =
       , rules_text = Just "Stealth. No attachments."
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Creature" ]
       , strength = Just 2
@@ -8092,7 +8092,7 @@ all_cards =
       , rules_text = Just "Silent Sisters gets +1 STR for each character in your dead pile."
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -8136,7 +8136,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel Stowaway and discard the top card of your deck to choose an Ironborn character. Until the end of the phase, that character gains an Intrigue icon."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -8202,7 +8202,7 @@ all_cards =
       , rules_text = Just "House Greyjoy only. No attachments.\nChallenges: You may put Ten Towers Honor Guard into play from your hand, under the control of any opponent. After that opponent wins a challenge in which Ten Towers Honor Guard participated, take control of Ten Towers Honor Guard."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Ironborn" ]
       , strength = Just 4
@@ -8312,7 +8312,7 @@ all_cards =
       , rules_text = Just "Any Phase: Pay 1 gold to choose and kneel a location (limit once per round)."
       , flavor_text = Just "Theon vowed to himself, I must never go far from the sea again."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Ironborn" ]
       , strength = Just 2
@@ -8356,7 +8356,7 @@ all_cards =
       , rules_text = Just "Intimidate.\nResponse: After you reveal a plot card, Victarion Greyjoy claims 1 power if you control a Warship location. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "Ironborn" ]
       , strength = Just 3
@@ -8378,7 +8378,7 @@ all_cards =
       , rules_text = Just "If Viserys Targaryen is the only King character in play, he gains: \"Each attachment on Viserys Targaryen reduces the amount of power you need to win the game by 1.\""
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "King" ]
       , strength = Just 1
@@ -8400,7 +8400,7 @@ all_cards =
       , rules_text = Just "While Wex Pyke is attacking, characters without crests cannot be declared as defenders."
       , flavor_text = Just "Most squires have loose tongues, but Wex had been born dumb..."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Ironborn" ]
       , strength = Just 1
@@ -8466,7 +8466,7 @@ all_cards =
       , rules_text = Just "Any Phase: Discard the top 2 cards of your deck to choose 1 character in any dead pile. Move that character to its owner's discard pile. (Limit once per round.)"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Asshai" ]
       , strength = Just 2
@@ -8488,7 +8488,7 @@ all_cards =
       , rules_text = Nothing
       , flavor_text = Just "\"I shall go with you, Cousin,\" Ser Andrew assured him. \"There's nothing to be frightened of.\""
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Ally", "Bastard" ]
       , strength = Just 1
@@ -8620,7 +8620,7 @@ all_cards =
       , rules_text = Just "Fanatical Follower gets +1 STR for each Roseroad and each Searoad in play."
       , flavor_text = Just "\"Fire consumes. It consumes, and when it is done there is nothing left. Nothing.\" - Beric Dondarrion"
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Brotherhood" ]
       , strength = Just 1
@@ -8730,7 +8730,7 @@ all_cards =
       , rules_text = Nothing
       , flavor_text = Just "\"Other knights serve the lords who keep them, of from whom they hold their lands, but we serve where we will, for men whose causes we believe in.\" - Ser Arlan of Pennytree"
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Ally" ]
       , strength = Just 1
@@ -8752,7 +8752,7 @@ all_cards =
       , rules_text = Just "House Baratheon only. "
       , flavor_text = Just "\"Maester, perhaps you ought to get to your writing. We will need a great many letters, and soon.\" - Ser Davos Seaworth"
       , cost = Just 0
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -8862,7 +8862,7 @@ all_cards =
       , rules_text = Just "No attachments. Renown.\nResponse: After you play Knights of the Storm from your hand, you become the first player. (Players who have already marshalled cannot marshall again.)"
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Knight" ]
       , strength = Just 5
@@ -8906,7 +8906,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After you win a Power challenge by 4 or more total STR, return Lost Captain from your discard pile or dead pile to your hand."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -8928,7 +8928,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After you win an Intrigue challenge in which Maester Pylos attacked alone, discard (at random) 1 card in Shadows controlled by the losing opponent."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester" ]
       , strength = Just 2
@@ -8950,7 +8950,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel Marya Seaworth to choose and stand 1 character."
       , flavor_text = Just "\"Your wife has given you seven strong sons. Do you pray to her?\""
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady" ]
       , strength = Just 1
@@ -9082,7 +9082,7 @@ all_cards =
       , rules_text = Just "Renown.If Renly Baratheon is the only House Baratheon King character in play, he gains: \"Reduce the cost to play other House Baratheon characters by 1.\""
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 3
@@ -9104,7 +9104,7 @@ all_cards =
       , rules_text = Just "Renown.If Robert Baratheon is the only House Baratheon King character in play, he gains: \"You may initiate an additional Power challenge during the challenge phase.\""
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 3
@@ -9170,7 +9170,7 @@ all_cards =
       , rules_text = Just "Marshalling: Kneel Salladhor Saan to choose and discard 1 location from play."
       , flavor_text = Just "\"Salladhor Saan thinks only of gold!\" Stannis exploded. \"His head is full of dreams of the treasure he fancies lies under the Red Keep.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -9214,7 +9214,7 @@ all_cards =
       , rules_text = Just "During Power challenges, Ser Cortnay Penrose gets +2 STR and gains vigilant."
       , flavor_text = Just "\"What do you make of this Ser Cortnay Penrose?\"\n\"A stubborn man,\" said Davos carefully."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 3
@@ -9236,7 +9236,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\n House Baratheon Lord characters you control get +1 STR."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Rainbow Guard" ]
       , strength = Just 2
@@ -9258,7 +9258,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nHouse Baratheon Lord characters you control gain stealth."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Rainbow Guard" ]
       , strength = Just 3
@@ -9280,7 +9280,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nHouse Baratheon Lord characters you control gain: \"Response: Kneel 1 influence to save this character from being killed.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Rainbow Guard" ]
       , strength = Just 3
@@ -9302,7 +9302,7 @@ all_cards =
       , rules_text = Just "No attachments.Response: After you win dominance, each player must choose and discard all but 4 cards in his or her hand."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Kingsguard" ]
       , strength = Just 3
@@ -9324,7 +9324,7 @@ all_cards =
       , rules_text = Just "House Baratheon only. \nResponse: After Sister of Truth comes out of Shadows, choose 1 Shadow card in play. Return that card to Shadows."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Asshai", "Ally" ]
       , strength = Just 2
@@ -9368,7 +9368,7 @@ all_cards =
       , rules_text = Just "Renown.\nIf Stannis Baratheon is the only House Baratheon King character in play, he gains: \"Players cannot draw cards through card effects.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 3
@@ -9390,7 +9390,7 @@ all_cards =
       , rules_text = Just "Deadly. No attachments.\nWhile there is at least 1 Night's Watch character in play, Stannis's Cavalry gains renown."
       , flavor_text = Just "And yellow, so much yellow, yellow banners with a red device, whose arms were those?"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 4
@@ -9588,7 +9588,7 @@ all_cards =
       , rules_text = Just "[+1 Initiative]\n[+1 Influence]"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "House Florent" ]
       , strength = Just 2
@@ -9610,7 +9610,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nWhile Veteran Knight is attacking or defending, opponent's participating characters lose all War crests."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Knight" ]
       , strength = Just 2
@@ -9632,7 +9632,7 @@ all_cards =
       , rules_text = Just "House Martell only.\nResponse: After Arianne Martell comes out of shadows, choose and reveal a new plot card."
       , flavor_text = Just "\"I want Sunspear, and my father's seat. I want Dorne!\""
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Lady" ]
       , strength = Just 3
@@ -9654,7 +9654,7 @@ all_cards =
       , rules_text = Just "Discard Greydon Goodbrother from play (cannot be saved) if you control fewer locations than any opponent."
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "Lord" ]
       , strength = Just 2
@@ -9720,7 +9720,7 @@ all_cards =
       , rules_text = Just "Renown.\n[Holy] characters in your dead pile count their STR toward dominance.\nResponse: After you win dominance, choose a [Holy] character in your dead pile and put it into play."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Lady", "Asshai" ]
       , strength = Just 3
@@ -9786,7 +9786,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel 1 influence or discard 1 card from your hand to give Palestone Sword Guard +1 STR and an icon of your choice until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "House Dayne" ]
       , strength = Just 1
@@ -9808,7 +9808,7 @@ all_cards =
       , rules_text = Just "No attachments.\nResponse: After a card comes out of shadows, choose and stand 1 character you control. (Limit 3 times per phase.)"
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Kingsguard", "Knight" ]
       , strength = Just 3
@@ -9830,7 +9830,7 @@ all_cards =
       , rules_text = Just "No attachments. Renown.\nChallenges: Kneel 1 influence or pay 1 gold to bring a Kingsguard or Queensguard character out of shadows."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Kingsguard", "Queensguard", "Knight" ]
       , strength = Just 4
@@ -9852,7 +9852,7 @@ all_cards =
       , rules_text = Just "No attachments.\nResponse: After Ser Boros Blount comes out of shadows, each of your characters get +1 STR until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Kingsguard", "Knight" ]
       , strength = Just 2
@@ -9874,7 +9874,7 @@ all_cards =
       , rules_text = Just "No attachments. Renown.\nResponse: After a card comes out of shadows, draw 1 card. (Draw 3 cards instead if you control 3 or more Kingsguard characters.)"
       , flavor_text = Just "\"Believe what you will, I'm past caring what people say of me.\""
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Kingsguard", "Knight" ]
       , strength = Just 3
@@ -9896,7 +9896,7 @@ all_cards =
       , rules_text = Just "House Targaryen only.\nNo attachments except Weapon.\nIf Ser Jorah Mormont is discarded from your hand, put him into shadows instead. Then, draw 1 card."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Queensguard", "Knight" ]
       , strength = Just 3
@@ -9918,7 +9918,7 @@ all_cards =
       , rules_text = Just "No attachments. Deadly.\nIf you have more cards in shadows than each opponent, opponents' characters cannot be saved."
       , flavor_text = Just "...Ser Mandon flashed past him, death in snow-white silk."
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Kingsguard", "Knight" ]
       , strength = Just 3
@@ -9940,7 +9940,7 @@ all_cards =
       , rules_text = Just "No attachments. Stealth.\nResponse: After a card comes out of shadows, each opponent must choose and kneel 1 standing character or location he controls, if able."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Kingsguard", "Knight" ]
       , strength = Just 3
@@ -9962,7 +9962,7 @@ all_cards =
       , rules_text = Just "No attachments.\nAny Phase: Return a Kingsguard or Queensguard character you control to shadows. (Limit once per round.)"
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Kingsguard", "Knight" ]
       , strength = Just 2
@@ -9984,7 +9984,7 @@ all_cards =
       , rules_text = Just "House Baratheon only.\nStealth. Deadly.\nResponse: After Shadow Killer comes out of shadows, choose and kill a character controlled by a player with more cards at his or her command than you (cannot be saved)"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Mercenary" ]
       , strength = Just 1
@@ -10006,7 +10006,7 @@ all_cards =
       , rules_text = Just "House Lannister only.\nNo attachments except Weapon.\nThe Hound gets +1 STR for each card in shadows."
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Kingsguard" ]
       , strength = Just 4
@@ -10028,7 +10028,7 @@ all_cards =
       , rules_text = Just "Renown.\nTywin Lannister does not kneel to attack an opponent with more cards in hand than you."
       , flavor_text = Just "\"No man sheds Lannister blood with impunity.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord" ]
       , strength = Just 4
@@ -10050,7 +10050,7 @@ all_cards =
       , rules_text = Just "Any Phase: Discard Umber Champion from play (cannot be saved) to stand each defending character."
       , flavor_text = Just "All along the benches, his sons and brothers and sworn swords leapt to their feet, grabbing for their steel."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman" ]
       , strength = Just 2
@@ -10094,7 +10094,7 @@ all_cards =
       , rules_text = Just "Melee.\nResponse: After you win a challenge in which Arrogant Contender attacked alone, it claims 1 power for each opposing character."
       , flavor_text = Just "Card designed by the 2010 World Melee Champion Brett Zeiler"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tyrell", "Knight", "Ally" ]
       , strength = Just 3
@@ -10160,7 +10160,7 @@ all_cards =
       , rules_text = Just "Deadly.\nAfter a challenge in which Bronn participated as a defender resolves, if you control the most participating characters with deadly, the attacking player must choose and kill 1 participating character he or she controls."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Knight" ]
       , strength = Just 3
@@ -10182,7 +10182,7 @@ all_cards =
       , rules_text = Just "Deadly."
       , flavor_text = Just "\"Once they're dead, they don't come back.\" - Bronn"
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -10204,7 +10204,7 @@ all_cards =
       , rules_text = Just "Response: After Brothel Guard stands, choose and kneel an opponent's character unless its controller kneels 1 influence or pays you 1 gold. If he or she does, instead claim 1 power for your House."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -10248,7 +10248,7 @@ all_cards =
       , rules_text = Just "Cersei Lannister does not kneel to attack during Intrigue challenges.\nResponse: After you win an Intrigue challenge, Cersei Lannister claims 1 power. Then, Cersei Lannister gains your choice of stealth or deadly until the end of the phase."
       , flavor_text = Just "\"Tears are not a woman's only weapons.\""
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady", "Queen" ]
       , strength = Just 3
@@ -10292,7 +10292,7 @@ all_cards =
       , rules_text = Just "Marshalling: Kneel Crawn Son of Calor to choose 1 Clansman card in your discard pile. You may play that card as your next action as if it were in your hand."
       , flavor_text = Just "\"Last night, a Moon Brother stabbed a Stone Crow over a sausage.\" -Tyrion Lannister"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman", "Ally" ]
       , strength = Just 3
@@ -10358,7 +10358,7 @@ all_cards =
       , rules_text = Just "If Doubting Septa would be killed, instead put it on the bottom of your deck and draw 1 card."
       , flavor_text = Just "Are you priest or a greengrocer? - Cersei Lannister"
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Septon" ]
       , strength = Just 1
@@ -10402,7 +10402,7 @@ all_cards =
       , rules_text = Just "No attachments. Stealth.\n[+2 Initiative]"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman" ]
       , strength = Just 1
@@ -10468,7 +10468,7 @@ all_cards =
       , rules_text = Just "Immune to triggered effects.\nIf High Septon would be killed, instead put it on the bottom of your deck and claim 2 power for your House."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Septon" ]
       , strength = Just 3
@@ -10534,7 +10534,7 @@ all_cards =
       , rules_text = Just "While Joffrey Baratheon is the only King character in play he gains: \"Response: After you win dominance, non-unique characters do not stand during the standing phase this round.\""
       , flavor_text = Just "\"Take him away. I'll have him killed on the morrow, the fool.\""
       , cost = Just 3
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 2
@@ -10556,7 +10556,7 @@ all_cards =
       , rules_text = Just "[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -10600,7 +10600,7 @@ all_cards =
       , rules_text = Just "No attachments.\nLord Tyrion's Host gets +3 STR while you have more gold in your gold pool than each opponent."
       , flavor_text = Just "\"My savages will put your steel to excellent use, my lord.\" - Tyrion"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Clansman" ]
       , strength = Just 3
@@ -10622,7 +10622,7 @@ all_cards =
       , rules_text = Just "Challenges: Discard Myrcella Lannister from play (cannot be saved) to allow you to initiate an additional [Intrigue] challenge this phase, to a maximum of 3 [Intrigue] challenges in a phase."
       , flavor_text = Just "The girl never wept. Young as she was, Myrcella was a princess born."
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady" ]
       , strength = Just 2
@@ -10688,7 +10688,7 @@ all_cards =
       , rules_text = Just "No attachments.\nWhile you have more gold in your gold pool than each opponent, your in-House Army characters do not kneel to attack or defend."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Lord" ]
       , strength = Just 3
@@ -10710,7 +10710,7 @@ all_cards =
       , rules_text = Just "While Ser Amory Lorch is attacking, characters that have a Trait in common with Ser Amory Lorch cannot be declared as defenders.\nAny Phase: Pay 1 gold to give Ser Amory Lorch a Trait of your choice until the end of the phase (limit once per phase)."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Ally" ]
       , strength = Just 3
@@ -10732,7 +10732,7 @@ all_cards =
       , rules_text = Just "While you have more gold in your gold pool than each other opponent, Ser Amory's Poachers gains Stealth and Renown."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Army" ]
       , strength = Just 3
@@ -10754,7 +10754,7 @@ all_cards =
       , rules_text = Just "Renown.\nWhile Ser Gregor Clegane is kneeling, he gains: \"Any Phase: Kneel 2 influence to choose and kill a kneeling character with STR 2 or lower. Then, stand Ser Gregor Clegane.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Knight", "House Clegane" ]
       , strength = Just 4
@@ -10776,7 +10776,7 @@ all_cards =
       , rules_text = Just "No attachments.\nSer Gregor's Band gets +1 STR for each non-House card in play with 1 or more power on it."
       , flavor_text = Just "\"Dunsen, Polliver, Chiswyck, Raff the Sweetling.\" - Arya Stark"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "House Clegane" ]
       , strength = Just 3
@@ -10798,7 +10798,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nRenown.\nAt the beginning of each phase, stand Ser Jamie Lannister."
       , flavor_text = Just "The Kingslayer, alive and free, was as dangerous as any man in the realm."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 3
@@ -10820,7 +10820,7 @@ all_cards =
       , rules_text = Just "Ser Kevan Lannister gains a [Power] icon while you control at least 1 other Lord character."
       , flavor_text = Just "Ser Kevan seldom \"had a thought\" that Lord Tywin had not had first - Lord Tyrion Lannister"
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Knight", "Lord" ]
       , strength = Just 3
@@ -11150,7 +11150,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nTribes of the Vale gets -4 STR if you have more cards in hand than any opponent."
       , flavor_text = Just "The mountain clans were lawless birgands, descending from the heights to rob and kill..."
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Clansman", "Ally" ]
       , strength = Just 6
@@ -11172,7 +11172,7 @@ all_cards =
       , rules_text = Just "Stealth.\nWhile Tyrion Lannister is participating in a challenge, all knelt Clansman characters you control are also participating in that challenge.\nResponse: Kneel a Clansman character to save Tyrion Lannister from being killed."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -11194,7 +11194,7 @@ all_cards =
       , rules_text = Just "House Lannister only. Renown.\nResponse: After you win dominance, if you have 4 or more gold in your gold pool Tywin Lannister claims 3 power."
       , flavor_text = Just "\"We owe Lord Tywin some three million dragons at present, what mater another hundred thousand?\" - Littlefinger"
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 4
@@ -11238,7 +11238,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which Warrior's Sons attacked alone, choose 1 gold or influence providing location in your hand or discard pile and put it into play."
       , flavor_text = Just "\"The Faith Militant reborn...\" - High Septon"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Army" ]
       , strength = Just 3
@@ -11326,7 +11326,7 @@ all_cards =
       , rules_text = Just "House Stark only. No attachments except Direwolf.\nAfter you lose an Intrigue challenge, kill Bran Stark (cannot be saved).\nResponse: After you win an Intrigue challenge as the defender, Bran Stark claims 5 power."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord" ]
       , strength = Just 2
@@ -11370,7 +11370,7 @@ all_cards =
       , rules_text = Just "House Stark only.Challenges: Put Catelyn Stark into play from your hand, knelt as a defender during an Intrigue or Power challenge initiated against you. At the end of the phase, if Catelyn Stark is still in play, return her to your hand."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady", "House Tully" ]
       , strength = Just 3
@@ -11414,7 +11414,7 @@ all_cards =
       , rules_text = Just "Response: After Deepwood Mercenary is declared as an attacker or defender, choose and discard 1 attachment from any other participating character."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Glover", "Mercenary" ]
       , strength = Just 3
@@ -11458,7 +11458,7 @@ all_cards =
       , rules_text = Just "Renown.While Eddard Stark is defending, lower the attacking player's claim to 0."
       , flavor_text = Just "\"A ruler who hides behind paid executioners soon forgets what death is.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -11480,7 +11480,7 @@ all_cards =
       , rules_text = Just "No attachments. Immune to events.\nLower the cost to play Edmure's Host by 1 for each House Tully character you control."
       , flavor_text = Nothing
       , cost = Just 6
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tully", "Army" ]
       , strength = Just 6
@@ -11700,7 +11700,7 @@ all_cards =
       , rules_text = Just "Guard at Riverrun gets +1 STR while defending.  At the end of the challenge phase, if no opponent has won a Military challenge against you this round, draw a card."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tully" ]
       , strength = Just 2
@@ -11722,7 +11722,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nDiscard Host of the Bear from play at any time your total initiative is 2 or lower."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "House Mormont" ]
       , strength = Just 5
@@ -11744,7 +11744,7 @@ all_cards =
       , rules_text = Just "House Tully characters get +1 STR"
       , flavor_text = Just "\"Did you watch for me,\" he'd ask when he bent to hug her. \"Did you, little Cat?\""
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "House Tully" ]
       , strength = Just 0
@@ -11766,7 +11766,7 @@ all_cards =
       , rules_text = Just "House Tully Septon cannot attack, and does not kneel to defend."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Septon", "House Tully" ]
       , strength = Just 3
@@ -11788,7 +11788,7 @@ all_cards =
       , rules_text = Just "Marshalling: Kneel Jojen Reed and kneel 1 influence to name a card. Then, discard the top 3 cards of a player's deck. For each copy of the named card discarded, Jojen Reed claims 1 power."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "House Reed" ]
       , strength = Just 1
@@ -11810,7 +11810,7 @@ all_cards =
       , rules_text = Just "Renown. No attachments.\nDuring the marshalling phase, you may pay any amount of King Robb's Companions' cost by kneeling that amount of influence."
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 4
@@ -11832,7 +11832,7 @@ all_cards =
       , rules_text = Just "After you play Knight of the Red Fork from your hand, kneel all non-House Tully cards you control.  Knight of the Red Fork does not stand during the standing phase if you lost dominance this round."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Knight", "House Tully" ]
       , strength = Just 3
@@ -11876,7 +11876,7 @@ all_cards =
       , rules_text = Just "Deadly. No attachments."
       , flavor_text = Just "\"They'll come right at you, screaming in your face...\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Wildling", "Army" ]
       , strength = Just 6
@@ -12008,7 +12008,7 @@ all_cards =
       , rules_text = Just "Renown. No attachments.\nResponse: After you win a Military challenge by 4 or more total STR, choose and kill 1 non-unique character with printed STR 3 or less controlled by the losing opponent."
       , flavor_text = Just "Card designed by 2009 A Game of Thrones Melee Champion, Jonathan Benton."
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Night's Watch" ]
       , strength = Just 2
@@ -12074,7 +12074,7 @@ all_cards =
       , rules_text = Nothing
       , flavor_text = Just "\"There was a bird from Riverrun,\" Catelyn began, \"a letter from Edmure.\""
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tully" ]
       , strength = Just 2
@@ -12096,7 +12096,7 @@ all_cards =
       , rules_text = Just "Renown.Any Phase: Name a Trait. Until the end of the phase, each character you control that has that Trait gets +1 STR (+2 STR instead if it is Winter). Limit once per round."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 3
@@ -12118,7 +12118,7 @@ all_cards =
       , rules_text = Just "Stealth.\nRaise the Claim value on the attacking player's revealed plot card by 1 during the first challenge declared each round."
       , flavor_text = Just "He laughed through the hole in his face where his nose had been..."
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Mercenary" ]
       , strength = Just 3
@@ -12162,7 +12162,7 @@ all_cards =
       , rules_text = Just "Response: After a House Tully character you control is declared as a defender, remove all attacking characters with STR 1 or lower from the challenge."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "Knight", "House Tully" ]
       , strength = Just 3
@@ -12250,7 +12250,7 @@ all_cards =
       , rules_text = Just "No Attachments. Deadly.If you control Bran Stark, he gains: \"cannot be chosen as the target of an opponent's event card.\" If Bran Stark is in play, lower the cost to play Summer by 2."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Direwolf" ]
       , strength = Just 3
@@ -12294,7 +12294,7 @@ all_cards =
       , rules_text = Just "House Stark only. Renown.\nWhile The Blackfish has 3 or more power, your House Tully characters do not kneel to attack.\nResponse: After you win a Military challenge as the attacker, draw 1 card."
       , flavor_text = Just "Card designed by 2009 A Game of Thrones World Champion, Erick A. Butzlaff."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "Knight", "House Tully" ]
       , strength = Just 3
@@ -12448,7 +12448,7 @@ all_cards =
       , rules_text = Just "No attachments."
       , flavor_text = Just "The queen shuddered. \"There is something unnatural about those animals,\" she said. \"They are dangerous. I will not have any of them coming south with us.\""
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Direwolf" ]
       , strength = Just 3
@@ -12536,7 +12536,7 @@ all_cards =
       , rules_text = Just "Response: After you lose a challenge by 4 or more total STR, kneel Areo Hotah to choose and kill 1 character."
       , flavor_text = Just "\"I am sorry, little princess.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Ally" ]
       , strength = Just 4
@@ -12558,7 +12558,7 @@ all_cards =
       , rules_text = Just "Stealth.\nWhile Arianne Martell is attacking, raise the Claim value on your revealed plot card by 1."
       , flavor_text = Just "\"Martell brings some formidable companions, it would seem.\""
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady" ]
       , strength = Just 3
@@ -12646,7 +12646,7 @@ all_cards =
       , rules_text = Just "While Brienne of Tarth is participating in a challenge, opponents cannot trigger effects."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady" ]
       , strength = Just 3
@@ -12690,7 +12690,7 @@ all_cards =
       , rules_text = Just "House Martell only. Vengeful. Renown.\nIf Darkstar would be discarded from your hand or deck, put him into play instead."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "House Dayne" ]
       , strength = Just 3
@@ -12712,7 +12712,7 @@ all_cards =
       , rules_text = Just "No attachments.\nAny Phase: Kneel 1 influence to choose 1 Night's Watch character. Until the end of the phase, that character gets +1 STR."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Night's Watch" ]
       , strength = Just 3
@@ -12734,7 +12734,7 @@ all_cards =
       , rules_text = Just "If a player loses a challenge as the attacker, that player must fulfill the claim of that challenge, using the Claim value on the defending player's plot card."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 2
@@ -12800,7 +12800,7 @@ all_cards =
       , rules_text = Just "Vengeful.\nResponse: After you lose a challenge, move 1 power from any character to Ellaria Sand."
       , flavor_text = Just "\"And this is Ellaria Sand, mine own paramour.\" - Oberyn Martell"
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady" ]
       , strength = Just 3
@@ -12844,7 +12844,7 @@ all_cards =
       , rules_text = Just "Renown. Former Champion gets -2 STR for each power on him. \nWhile Former Champion has 3 or less STR, he gains a Power icon and deadly.\nWhile Former Champion has 1 or less STR, he gains an Intrigue icon and stealth."
       , flavor_text = Just "Card Designed by the 2008 AGoT Overall World Champion, Tzu-Mainn Chen."
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 5
@@ -12866,7 +12866,7 @@ all_cards =
       , rules_text = Just "Renown.\nWhile you have 7 or more cards in your hand, Harmen Uller does not kneel to attack."
       , flavor_text = Just "Half of the Ullers are half-mad, so the saying went, and the other half are worse."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Ally" ]
       , strength = Just 3
@@ -12910,7 +12910,7 @@ all_cards =
       , rules_text = Nothing
       , flavor_text = Just "\"They whispered of Ser Arthur Dayne, the Sword of the Morning, deadliest of the seven knights of Aery's Kingsguard."
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "House Dayne" ]
       , strength = Just 1
@@ -12932,7 +12932,7 @@ all_cards =
       , rules_text = Just "House Martell only. No attachments.\nIf House Dayne Reserves is discarded from your hand for the claim of an Intrigue challenge, put it into play instead of your discard pile.\nAny Phase: Kneel 1 influence to return House Dayne Reserves to its owner's hand."
       , flavor_text = Nothing
       , cost = Just 8
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "House Dayne" ]
       , strength = Just 6
@@ -12954,7 +12954,7 @@ all_cards =
       , rules_text = Just "No attachments.\nAny Phase: Kill House Dayne Skirmisher (cannot be saved) to draw 1 card. Then, each opponent chooses and discards 1 card from his or her hand."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Dayne" ]
       , strength = Just 2
@@ -12976,7 +12976,7 @@ all_cards =
       , rules_text = Just "After you play House Messenger from your hand, reveal the top 2 cards of your deck to all players. Then, put 1 of those cards into your hand, and the other on the bottom of your deck."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -12998,7 +12998,7 @@ all_cards =
       , rules_text = Just "Renown.\nResponse: After a Small Council event is played, kneel 3 influence or kneel 1 Noble character to choose and discard from play 1 character with 1 or more power on it."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord" ]
       , strength = Just 2
@@ -13020,7 +13020,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel Kingsguard Squire to choose and stand 1 Kingsguard character."
       , flavor_text = Just "On his feet at once, scrambling for his master's swordbelt..."
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -13108,7 +13108,7 @@ all_cards =
       , rules_text = Just "Stealth."
       , flavor_text = Just "The salty Dornishmen were lithe and dark, with smooth olive skin and long black hair streaming in the wind."
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "House Dayne" ]
       , strength = Just 2
@@ -13130,7 +13130,7 @@ all_cards =
       , rules_text = Just "Deadly.\nChallenges: Kneel 1 influence to choose 1 Wildling character. Until the end of the phase, that character gets +1 STR."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling" ]
       , strength = Just 4
@@ -13218,7 +13218,7 @@ all_cards =
       , rules_text = Just "[+1 Influence]"
       , flavor_text = Just "She is not truly beautiful, she thought, but something about her draws the eye."
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -13306,7 +13306,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After you lose a challenge in which Sarella Sand participated as an attacker, kneel 1 influence to choose and stand 1 participating character."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard", "Sand Snake" ]
       , strength = Just 3
@@ -13350,7 +13350,7 @@ all_cards =
       , rules_text = Just "Renown. No attachments except Weapon.\nResponse: After Ser Aerys Oakheart comes into play, choose and discard 1 Ally or Mercenary character from play."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Kingsguard" ]
       , strength = Just 3
@@ -13372,7 +13372,7 @@ all_cards =
       , rules_text = Just "Stealth.\nAfter Ser Jorah Mormont leaves play, all characters you control get -1 STR until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Traitor" ]
       , strength = Just 3
@@ -13504,7 +13504,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nAfter a character's STR is lowered, return The Hound to his owner's hand."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 4
@@ -13570,7 +13570,7 @@ all_cards =
       , rules_text = Just "Renown. Immune to events and character abilities.\nThe Red Viper does not kneel to attack an opponent who controls more characters than you."
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -13636,7 +13636,7 @@ all_cards =
       , rules_text = Just "Stealth. Deadly. No attachments.\nResponse: After The Viper's Bannermen comes into play or leaves play, reveal the top 2 cards of your deck, then put them into your hand."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 7
@@ -13658,7 +13658,7 @@ all_cards =
       , rules_text = Just "Stealth.\nAfter any player loses a challenge by 4 or more total STR, he or she names either \"character\" or \"location\", then chooses and discards from play (cannot be saved) 1 card of the named type he or she controls, if able."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Ironborn" ]
       , strength = Just 3
@@ -13812,7 +13812,7 @@ all_cards =
       , rules_text = Just "[+2 Influence]"
       , flavor_text = Just "\"A maester chained and sworn... \" - Samwell Tarley"
       , cost = Just 3
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester" ]
       , strength = Just 3
@@ -13900,7 +13900,7 @@ all_cards =
       , rules_text = Just "House Targaryen only.\nNo attachments. Deadly. \nIf you control Drogon, attach Black Hatchling and all of its duplicates to Drogon as duplicate."
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 1
@@ -13944,7 +13944,7 @@ all_cards =
       , rules_text = Just "Blue-Lipped Warlock does not kneel to attack.\nDominance: Return Blue-Lipped Warlock from your dead pile to your hand. Use this ability only if there are at least 3 characters in your dead pile."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Qartheen" ]
       , strength = Just 1
@@ -14010,7 +14010,7 @@ all_cards =
       , rules_text = Just "Renown.\nDragon characters you control do not kneel to attack."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady", "Queen" ]
       , strength = Just 3
@@ -14076,7 +14076,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. No attachments. Ambush. Stealth. \nResponse: After you win a challenge in which Drogon participated and all of your participating characters have the Dragon trait, choose and kill 1 character whose STR is equal to or less than the number of participating characters you control. (Limit once per phase)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 4
@@ -14208,7 +14208,7 @@ all_cards =
       , rules_text = Just "House Targaryen only.\nNo attachments. \nIf you control Rhaegal, attach Green Hatchling and all of its duplicates to Rhaegal as duplicates."
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 2
@@ -14230,7 +14230,7 @@ all_cards =
       , rules_text = Just "Response: after you win a challenge in which Grey Worm participated, take 1 gold token from the treasury and place it on Grey Worm. \nChallenges: During a challenge, discard 1 gold token from Grey Worm to choose 1 character. That character gets either -2 or +2 until the end of the challenge."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Unsullied" ]
       , strength = Just 3
@@ -14296,7 +14296,7 @@ all_cards =
       , rules_text = Nothing
       , flavor_text = Just "Yet among them moved bravos and sellswords from Pentos and Myr and Tyros..."
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 3
@@ -14318,7 +14318,7 @@ all_cards =
       , rules_text = Just "House Targaryen only.\nChallenges: During a Military challenge, kneel 1 influence to put Horseback Archers into play from your hand, knelt, as an attacker or defender. Then, at the end of the phase, if Horseback Archers is in play, return it to its owner's hand."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki" ]
       , strength = Just 3
@@ -14340,7 +14340,7 @@ all_cards =
       , rules_text = Just "Dominance: Kneel Initiate of the Citadel to choose a character. Return any number of attachments on that character to their owner's hands"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester" ]
       , strength = Just 1
@@ -14362,7 +14362,7 @@ all_cards =
       , rules_text = Just "No attachments.\nResponse: After you win a Power challenge, choose and discard an attachment from play."
       , flavor_text = Just "The Unsullied locked their shields, lowered their spears, and stood firm."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Unsullied" ]
       , strength = Just 4
@@ -14384,7 +14384,7 @@ all_cards =
       , rules_text = Just "Deadly.\nResponse: After Khal Drogo is killed, search your deck for X Dothraki characters, reveal them, and put them into your hand. Then shuffle your deck. X is Khal Drogo's STR."
       , flavor_text = Just "\"And pray that Khal Drogo does not hear of this...\" - Daenerys Targaryen"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "Dothraki" ]
       , strength = Just 3
@@ -14428,7 +14428,7 @@ all_cards =
       , rules_text = Just "Response: After a character's STR is reduced by a card effect, stand Killer of the Wounded. (Limit 3 times a round)"
       , flavor_text = Just "Wounded men moaned and prayed. jaqqa Rham moved among them, the mercy men with their heavy axes, taking a harvest of heads from the dead and dying alike."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki" ]
       , strength = Just 2
@@ -14604,7 +14604,7 @@ all_cards =
       , rules_text = Just "Limited Response: After you declare Pike Phalanx as an attacker with at least one other character with a War crest, raise the claim on your revealed plot card by 1 until the end of the phase."
       , flavor_text = Just "A crescent of enemy spearmen had formed ahead, a double hedgehog bristling with steel."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Unsullied" ]
       , strength = Just 2
@@ -14648,7 +14648,7 @@ all_cards =
       , rules_text = Just "If you win a challenge in which Pyat Pree attacked alone, instead of the normal claim effects, choose and kill 1 character controlled by the losing opponent."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally, Qartheen" ]
       , strength = Just 3
@@ -14692,7 +14692,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. No attachments. Ambush. Stealth. Response: After you win a challenge in which Rhaegal participated and all of your participating characters have the Dragon trait, each participating character you control claims 1 power. (Limit once per phase)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 4
@@ -14846,7 +14846,7 @@ all_cards =
       , rules_text = Just "No attachments. Renown.\nAfter Thundering Cavalry enters play, discard all characters with STR 1 or lower from play."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Dothraki" ]
       , strength = Just 6
@@ -14912,7 +14912,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. No attachments. Ambush. Stealth.\nResponse: After you win a challenge in which Viserion participated and all of your participating characters have the Dragon trait, choose and discard 1 location with a cost less than the number of participating characters you control. (Limit once per phase)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 4
@@ -14934,7 +14934,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Deadly.\nResponse: After Warlock of Qarth comes out of Shadows, choose 1 location with a printed cost equal to or lower than the number of cards in Shadows. Return that location to its owner's hand."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Ally", "Quartheen" ]
       , strength = Just 2
@@ -14978,7 +14978,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. \nNo Attachments. Stealth.\nIf you control Viserion, attach White Hatchling and all of its duplicates to Viserion as duplicates."
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 1
@@ -15022,7 +15022,7 @@ all_cards =
       , rules_text = Just "Limited Response: After you win a challenge in which Archmaester Ebrose participated, he claims 1 power for each Chain attachment he has. (Limit 1 limited response per round.)"
       , flavor_text = Just "... but Ebrose's sighs had somehow proved just as painful as Vaelyn's barbs."
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester" ]
       , strength = Just 4
@@ -15154,7 +15154,7 @@ all_cards =
       , rules_text = Just "Immune to opponents' events.\nWhile resolving any effect that would allow you to search your deck, you may instead search your discard pile."
       , flavor_text = Just "\"The ironmen have my castle and now the Lannisters have my brother...\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Glover" ]
       , strength = Just 3
@@ -15176,7 +15176,7 @@ all_cards =
       , rules_text = Just "Response: After an opponent kneels a location, choose and stand a location you control."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -15220,7 +15220,7 @@ all_cards =
       , rules_text = Just "Response: After you lose an Intrigue challenge as the attacker, you may initiate an additional Intrigue challenge this phase."
       , flavor_text = Just "\"Men are such thundering great fools. Even the sort who come along once in a thousand years.\""
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady" ]
       , strength = Just 2
@@ -15286,7 +15286,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel Maester Lomys and discard 1 power each from any number of characters you control to have each of those characters gain \"cannot be killed\" until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester", "House Tyrell" ]
       , strength = Just 3
@@ -15308,7 +15308,7 @@ all_cards =
       , rules_text = Just "During the marshalling phase, Maester Murenmure gains: \"Response: Kneel Maester Murenmure to cancel a triggered effect.\""
       , flavor_text = Just "\"It is not for you to say who must go and who remains. The maester stays.\" - Gorold Goodbrother"
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester", "House Goodbrother" ]
       , strength = Just 2
@@ -15330,7 +15330,7 @@ all_cards =
       , rules_text = Just "You may play attachments from opponents' discard piles as if they were in your hand."
       , flavor_text = Just "Magister Illyrio was a dealer in spices, gemstones, dragonbone, and other, less savory things."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -15374,7 +15374,7 @@ all_cards =
       , rules_text = Just "Reduce the cost to play The Conclave by 1 for each Maester character you control.\nResponse: After The Conclave is declared as an attacker or defender, until the end of the phase it gains (choose 1) Stealth, Renown, or Deadly."
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester", "Conclave" ]
       , strength = Just 5
@@ -15462,7 +15462,7 @@ all_cards =
       , rules_text = Just "Stealth.\nOpponents cannot play copies of event cards that are in their discard pile."
       , flavor_text = Just "\"Balon was mad, Aeron is madder, and Euron is maddest of them all.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Ironborn", "House Blacktyde" ]
       , strength = Just 3
@@ -15506,7 +15506,7 @@ all_cards =
       , rules_text = Just "House Stark only. No attachments. Deadly.\nChallenges: Pay the rest of Guardian Wolf's cost to bring it out of Shadows, knelt, as a participant on your side in any challenge in which you control at least 1 participating Lord or Lady character."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Creature", "Direwolf" ]
       , strength = Just 2
@@ -15528,7 +15528,7 @@ all_cards =
       , rules_text = Just "Response: After an opponent draws 1 or more cards outside the draw phase, kneel Informed Acolyte to draw that many cards."
       , flavor_text = Just "He had only been at the Citadel for a year, yet already he had forged three links of his maester's chain."
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester" ]
       , strength = Just 3
@@ -15550,7 +15550,7 @@ all_cards =
       , rules_text = Just "Linked Advisor gets +1 STR for each attachment it has."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester" ]
       , strength = Just 3
@@ -15616,7 +15616,7 @@ all_cards =
       , rules_text = Just "No attachments.\nMarshalling: Kneel Oldtown Raven to reduce the cost of the next Maester character or Chain attachment you play this phase by 1. Ignore all gold penalties while playing that card."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Raven" ]
       , strength = Just 1
@@ -15748,7 +15748,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel Stormlands Bastard to choose a unique Baratheon character. Until the end of the challenge, that character gains renown."
       , flavor_text = Just "Ned studied the shape of the jaw, the eyes like blue ice. Yes, he thought, I see it."
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Bastard", "Ally" ]
       , strength = Just 1
@@ -15836,7 +15836,7 @@ all_cards =
       , rules_text = Just "Response: After you win an Intrigue challenge in which The Regent's Spy participated, look at the top card of the losing opponent's deck."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -15924,7 +15924,7 @@ all_cards =
       , rules_text = Just "Limited Response: After you play a House Lannister character or location from your hand, choose and kneel a character without attachments. (Limit 1 Limited Response per round.)"
       , flavor_text = Just "Your service was required here."
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -15990,7 +15990,7 @@ all_cards =
       , rules_text = Just "Return Disgruntled Mercenary to its owner's hand at the end of the first challenge initiated each round."
       , flavor_text = Just "\"Our answer is no.\" - Prendahl na Ghezen"
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Mercenary" ]
       , strength = Just 1
@@ -16012,7 +16012,7 @@ all_cards =
       , rules_text = Just "Response: Discard Herald of the King from play to cancel a non-plot effect that would allow a player to search his or her deck."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Herald" ]
       , strength = Just 2
@@ -16034,7 +16034,7 @@ all_cards =
       , rules_text = Just "No attachments except Siege.\nWhen House Umber Berserkers comes into play, each player must choose a character he or she controls. Kill each chosen character."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "House Umber" ]
       , strength = Just 4
@@ -16122,7 +16122,7 @@ all_cards =
       , rules_text = Just "Stalwart.\nCharacters with stalwart get +1 STR."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -16188,7 +16188,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel Old Nan to choose a character. Until the end of the phase, that character gains or loses a Trait of your choice."
       , flavor_text = Just "\"She just told stories.\" - Bran stark"
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Storyteller" ]
       , strength = Just 2
@@ -16210,7 +16210,7 @@ all_cards =
       , rules_text = Just "[+4 Initiative]"
       , flavor_text = Just "\"There are a dozen scouts who won't be reporting back to Lord Tywin anytime soon. Or ever.\" - Theon Greyjoy"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -16232,7 +16232,7 @@ all_cards =
       , rules_text = Just "Response: After Rhaegar Targaryen is killed, end the current round. Proceed to the next plot phase. Any player can trigger this response."
       , flavor_text = Just "\"Rhaegar fought valiantly, Rhaegar fought nobly, Rhaegar fought honorably. And Rhaegar died.\" - Ser Jorah Mormont"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble, Crest_War ]
       , traits = [ "Lord", "King" ]
       , strength = Just 5
@@ -16342,7 +16342,7 @@ all_cards =
       , rules_text = Just "Dominance: Kneel Ascetic Follower to choose a Banner attachment. Unattach it, and put it into play under your control if it is a character. Otherwise, discard it."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Asshai" ]
       , strength = Just 1
@@ -16364,7 +16364,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. \nResponse: After a character with ambush enters play, attach Banner for the Dragon to that character, if able. (Counts as a Banner attachment with the text: 'Any phase: Discard Banner for the Dragon from play to return attached character to its owner's hand.')"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman" ]
       , strength = Just 2
@@ -16386,7 +16386,7 @@ all_cards =
       , rules_text = Just "Response: After you win a Military challenge, you may attach Banner for the Kraken (from play or from your hand) to a House Greyjoy character as a Banner attachment with the text: 'Attached character gains Intimidate.'"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman" ]
       , strength = Just 4
@@ -16408,7 +16408,7 @@ all_cards =
       , rules_text = Just "Response: After you win a Military challenge, you may attach Banner for the North (from play or from your hand) to a House Stark character as a Banner attachment with the text: 'Attached character gains stalwart.'"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman" ]
       , strength = Just 3
@@ -16430,7 +16430,7 @@ all_cards =
       , rules_text = Just "Response: After you win an Intrigue challenge, you may attach Banner for the South (from play or from your hand) to a House Martell character as a Banner attachment with the text: 'Attached character gains vengeful.'"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman" ]
       , strength = Just 3
@@ -16452,7 +16452,7 @@ all_cards =
       , rules_text = Just "Response: After you win a Power challenge, you may attach Banner for the Storm (from play or from your hand) to a House Baratheon character as a Banner attachment with the text: 'Attached character gains vigilant.'"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman" ]
       , strength = Just 3
@@ -16628,7 +16628,7 @@ all_cards =
       , rules_text = Just "House Greyjoy only. \nIf you do not control a Warship location, kneel Fishwhiskers."
       , flavor_text = Just "Fishwhiskers and his sons were quick to obey."
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Captain", "House Botley" ]
       , strength = Just 3
@@ -16694,7 +16694,7 @@ all_cards =
       , rules_text = Just "Marshalling: You may attach any House Stark character from your hand to Jory Cassel as a duplicate if he has no other duplicates attached."
       , flavor_text = Just "Suddenly Jory was back among them, a red rain flying from his sword."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Captain" ]
       , strength = Just 3
@@ -16716,7 +16716,7 @@ all_cards =
       , rules_text = Just "Response: After Practical Believer enters or leaves play, choose another Holy character. Stand or kneel that character."
       , flavor_text = Just "\"The sparrow is the humblest and most common of birds, as we are the humblest and most common of men.\""
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Septon" ]
       , strength = Just 2
@@ -16738,7 +16738,7 @@ all_cards =
       , rules_text = Just "While Ser Lancel Lannister is attacking, characters with printed cost lower than the number of attacking House Lannister characters cannot be declared as defenders."
       , flavor_text = Just "Lancel's hair had turned white and brittle, and he was thin as a stick."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 2
@@ -16760,7 +16760,7 @@ all_cards =
       , rules_text = Just "Dominance: Kneel Zealous Collector to choose and discard from play up to 2 non-Banner attachments. Use this ability only if you control at least 3 Kingdom locations."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Asshai" ]
       , strength = Just 1
@@ -16782,7 +16782,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. \nIf you control Ser Barristan Selmy, discard Arstan Whitebeard from play (cannot be saved).\nDuring the epic phase, Queen and Queensguard characters get +5 STR, and Arstan Whitebeard gains renown."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Queensguard" ]
       , strength = Just 4
@@ -16848,7 +16848,7 @@ all_cards =
       , rules_text = Just "While there is at least 1 Military Battle plot card revealed, Dacey Mormont gains an Intrigue icon and does not kneel to defend."
       , flavor_text = Just "\"I have fought alongside the Young Wolf in every battle.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady", "House Mormont" ]
       , strength = Just 3
@@ -16870,7 +16870,7 @@ all_cards =
       , rules_text = Just "No attachments except Siege."
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "House Tyrell" ]
       , strength = Just 5
@@ -16958,7 +16958,7 @@ all_cards =
       , rules_text = Just "Stealth.\nAt the end of the standing phase, the player who controls the most standing characters claims 2 power for his or her House."
       , flavor_text = Just "\"A good smuggler stays out of sight.\" - Davos Seaworth"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Captain" ]
       , strength = Just 3
@@ -16980,7 +16980,7 @@ all_cards =
       , rules_text = Just "No attachments except Siege.\nAfter you win a challenge in which Stormcrows is participating, shuffle all non-neutral characters in all discard piles back into their owner's decks."
       , flavor_text = Just "\"You would do well to take your rabble elsewhere.\" - Prendahl na Ghezen"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 4
@@ -17002,7 +17002,7 @@ all_cards =
       , rules_text = Just "Any phase: Kneel The Bastard of Godsgrace to give a House Martell character +2 STR until the end of the phase. If you trigger this effect during the epic phase, draw a card."
       , flavor_text = Just "\"Daemon, my spear!\" - The Red Viper"
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard" ]
       , strength = Just 2
@@ -17222,7 +17222,7 @@ all_cards =
       , rules_text = Just "No attachments except Siege.\nCancel the first effect triggered during the first challenge initiated each phase."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "House Dayne" ]
       , strength = Just 4
@@ -17288,7 +17288,7 @@ all_cards =
       , rules_text = Just "House Florent Scouts gains vigilant and renown during the first challenge initiated each round."
       , flavor_text = Just "They carried spears, and on their breasts they wore the fox-and-flowers sigil of House Florent."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Florent" ]
       , strength = Just 3
@@ -17332,7 +17332,7 @@ all_cards =
       , rules_text = Just "Opponent's characters cannot claim power for renown."
       , flavor_text = Just "Splendid as he looked in his bright feather cloak, he had only come to beg."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Ally" ]
       , strength = Just 3
@@ -17376,7 +17376,7 @@ all_cards =
       , rules_text = Just "No attachments except Siege.\nLower the cost to play King Balon's Host by 4 if you control a King or Queen character. \nWhile King Balon's Host is standing, opponent's characters lose all non-immunity keywords."
       , flavor_text = Nothing
       , cost = Just 8
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Ironborn" ]
       , strength = Just 8
@@ -17398,7 +17398,7 @@ all_cards =
       , rules_text = Just "No attachments except Siege.\nLower the cost to play King Joffrey's Guard by 4 if you control a King or Queen character. \nResponse: After King Joffrey's Guard comes into play, choose and kneel up to 2 non-Army characters."
       , flavor_text = Nothing
       , cost = Just 8
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army" ]
       , strength = Just 8
@@ -17420,7 +17420,7 @@ all_cards =
       , rules_text = Just "No attachments except Siege.\nLower the cost to play King Robb's Host by 4 if you control a King or Queen character. \nKing Robb's Host does not kneel to attack during Military challenges."
       , flavor_text = Nothing
       , cost = Just 8
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army" ]
       , strength = Just 8
@@ -17442,7 +17442,7 @@ all_cards =
       , rules_text = Just "No attachments except Siege.\nLower the cost to play King Robert's Host by 4 if you control a King or Queen character. \nWhile King Robert's Host is standing, opponents cannot initiate Power challenges against you."
       , flavor_text = Nothing
       , cost = Just 8
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army" ]
       , strength = Just 8
@@ -17486,7 +17486,7 @@ all_cards =
       , rules_text = Just "Each Maester character in play gains a Military icon."
       , flavor_text = Just "The different metals are each a different kind of learning, gold for the study of money and accounts, silver for healing, iron for warcraft."
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester" ]
       , strength = Just 2
@@ -17530,7 +17530,7 @@ all_cards =
       , rules_text = Just "No attachments except Siege.\nLower the cost to play Queen Daenerys's Horde by 4 if you control a King or Queen character. \nWhile Queen Daenerys's Horde is attacking alone, opponents who do not control a Queen character cannot declare defenders."
       , flavor_text = Nothing
       , cost = Just 8
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army" ]
       , strength = Just 8
@@ -17552,7 +17552,7 @@ all_cards =
       , rules_text = Just "Vengeful. No attachments except Siege.\nLower the cost to play Queen Myrcella's Guard by 4 if you control a King or Queen character."
       , flavor_text = Just "\"No one shall ever harm Myrcella whilst I live.\" - Ser Arys Oakheart"
       , cost = Just 8
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army" ]
       , strength = Just 8
@@ -17574,7 +17574,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Ambush.\nAfter a non-Knight character comes into play, return Queen's Knight to its owner's hand."
       , flavor_text = Just "\"A knight of my Queensguard ...and my true friend and good counselor.\" - Daenerys Targaryen"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 3
@@ -17596,7 +17596,7 @@ all_cards =
       , rules_text = Just "Intimidate. No attachments except Siege.\nResponse: After you win an unopposed challenge, choose and kneel a Kingdom card."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Ironborn" ]
       , strength = Just 3
@@ -17618,7 +17618,7 @@ all_cards =
       , rules_text = Just "No attachments except Siege.\nWhile The Fox's Teeth is attacking, knelt characters may be declared as defenders. While The Fox's Teeth is attacking, only knelt characters may be declared as defenders."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "House Florent" ]
       , strength = Just 3
@@ -17640,7 +17640,7 @@ all_cards =
       , rules_text = Just "Vanguard Scouts does not kneel to attack or defend during the first challenge initiated each phase."
       , flavor_text = Just "\"You shall lead the van against Moat Cailin.\" - Robb Stark"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Umber" ]
       , strength = Just 3
@@ -17816,7 +17816,7 @@ all_cards =
       , rules_text = Just "House Manderly Escort gets +1 STR for each House Manderly character you control."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Ally", "House Manderly" ]
       , strength = Just 1
@@ -17904,7 +17904,7 @@ all_cards =
       , rules_text = Just "Intimidate.\nResponse: After you declare Qarl the Maid as a [Naval] attacker, discard the top 2 cards of the defending player's deck. Until the end of the phase, Qarl the Maid gets +2 STR for each event card discarded in this way."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = True } ]
       , crest = [  ]
       , traits = [ "Ironborn", "Raider" ]
       , strength = Just 2
@@ -17926,7 +17926,7 @@ all_cards =
       , rules_text = Just "Melee.\nResponse: After you declare Randyll Tarly as an attacker, choose any number of House Tyrell characters to gain vigilant until the end of the challenge."
       , flavor_text = Just "\"Randyll tarly is the finest soldier in the realm.\" - Ser Kevan Lannister"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "Captain" ]
       , strength = Just 3
@@ -17970,7 +17970,7 @@ all_cards =
       , rules_text = Just "Melee."
       , flavor_text = Just "Their armor was heavily enameled and inlaid with burnished copper, shining silver, and soft red gold. - A Storm of Swords"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Dayne" ]
       , strength = Just 2
@@ -18036,7 +18036,7 @@ all_cards =
       , rules_text = Just "If The Tattered Prince would be killed, instead attach him to your House card as your only agenda with the text: \"Ignore all gold penalties when playing out-of-House Mercenary characters. Lower the cost of the first Mercenary character you play each round by 1.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Mercenary", "Traitor" ]
       , strength = Just 3
@@ -18058,7 +18058,7 @@ all_cards =
       , rules_text = Just "Melee."
       , flavor_text = Just "They found defenders; two guards at teh flap of the tent, leaning on tall spears with round leather shields strapped to their arms. - Storm of Swords"
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tully" ]
       , strength = Just 0
@@ -18080,7 +18080,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel 1 influence to attach Venomous Manticore to a character (counts as a Creature attachment with the text 'Attached character gets -1 STR. Any Phase: Kneel 1 influence to attach Venomous Manticore to another eligible character')."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature" ]
       , strength = Just 1
@@ -18102,7 +18102,7 @@ all_cards =
       , rules_text = Just "If you are running a character agenda or are not running an agenda, Blackcrown Knights gains: \"Response: After you win a [Power] challenge in which Blackcrown Knights participated, discard 1 card from your hand to have Blackcrown Knights claim 2 power.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Knight", "House Tyrell" ]
       , strength = Just 5
@@ -18168,7 +18168,7 @@ all_cards =
       , rules_text = Just "If you are running a character agenda or are not running an agenda, braided Screamers gain: \"Response: After you play a Dothraki character of cost 3 or more, search the top 5 cards of your deck for a Dothraki character, reveal it, and add it to your hand. Then, shuffle your deck.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Dothraki" ]
       , strength = Just 5
@@ -18190,7 +18190,7 @@ all_cards =
       , rules_text = Just "Joust.\nResponse: After Dale Seaworth enters play or leaves play, choose and return 1 [Baratheon] card from your discard pile to your hand."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Captain" ]
       , strength = Just 2
@@ -18234,7 +18234,7 @@ all_cards =
       , rules_text = Just "Stealth.\nDothraki Outrider gains renown during [Power] challenges."
       , flavor_text = Just "\"Dothraki have been seen north of Dagger Lake, outriders from old Motho's khalasar.\" - Haldon Halfmaester"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki" ]
       , strength = Just 3
@@ -18278,7 +18278,7 @@ all_cards =
       , rules_text = Just "If you are running a character agenda or are not running an agenda, Host of the Boneway gains: \"Response: After you win an [Intrigue] challenge, reveal the top card of your deck. If it is an event card add it to your hand, otherwise return it to the top of your deck.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "House Uller" ]
       , strength = Just 5
@@ -18300,7 +18300,7 @@ all_cards =
       , rules_text = Just "If you are running a character agenda or are not running an agenda, House Clegane Brigands gains: \"Response: After you win an [Intrigue] challenge, stand House Clegane Brigands.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "House Clegane" ]
       , strength = Just 5
@@ -18344,7 +18344,7 @@ all_cards =
       , rules_text = Just "While any opponent controls a Lady or Queen character, Margaery Tyrell gains melee.\nResponse: After Margaery Tyrell is knelt as an attacker, choose an dkneel a character controlled by the defending player. Then, that character is participating in this challenge as a defender. (Limit once per phase.)"
       , flavor_text = Just "Card designed by 2011 European Melee Champion Gregoire Lefebvre."
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady", "Queen", "House Tyrell" ]
       , strength = Just 3
@@ -18410,7 +18410,7 @@ all_cards =
       , rules_text = Just "If you are running a character agenda or are not running an agenda, Raiders of Orkmont gains: \"Response: After you win a [Military] challenge, look at the top 3 cards of the losing opponent's deck. Discard up to 2 of those cards. Put the remaining cards back on the top of the deck in any order.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Raider" ]
       , strength = Just 5
@@ -18432,7 +18432,7 @@ all_cards =
       , rules_text = Just "If you are running a character agenda or are not running an agenda, Riders of Karhold gains: \"Response: After you win a [Military] challenge, reveal the top card of your deck. If it is a character add it to your hand, otherwise return it to the top of your deck.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Traitor", "House Karstark" ]
       , strength = Just 5
@@ -18564,7 +18564,7 @@ all_cards =
       , rules_text = Just "Response: After you kneel a standing character using a card effect, add 2 gold to your gold pool from the treasury (Limit once per round)."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Redwyne" ]
       , strength = Just 3
@@ -18586,7 +18586,7 @@ all_cards =
       , rules_text = Just "If you have more than 1 opponent and Aurane Waters would be killed or discarded from play, instead Aurane Waters is added to the title pool (limit 1 per title pool). As a Title, Aurane Waters gains: \"Once per round name a challenge icon. Until the end of the phase, unique characters you control gain a [Naval] enhancement on that icon, if able.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Intrigue { naval = True }, Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Master of Ships" ]
       , strength = Just 2
@@ -18718,7 +18718,7 @@ all_cards =
       , rules_text = Just "Response: Discard Iron Islands Brigand from play to cancel the effects of a location card just triggered."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True } ]
       , crest = [  ]
       , traits = [ "Raider" ]
       , strength = Just 1
@@ -18762,7 +18762,7 @@ all_cards =
       , rules_text = Just "Smuggler characters gain stealth."
       , flavor_text = Just "His name was Khorane Sathmantes, a Lyseni like Salladhor Saan, whose ship this was. - A Storm of Swords"
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = True } ]
       , crest = [  ]
       , traits = [ "Smuggler", "Captain" ]
       , strength = Just 2
@@ -18784,7 +18784,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which Lyseni Pirate was declared as a [Naval] attacker or defender, it claims 1 power."
       , flavor_text = Just "\"The Lyseni was a smuggler himself, as well as a trader, a banker, and notorious pirate.\" - A Clash of Kings"
       , cost = Just 2
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True } ]
       , crest = [  ]
       , traits = [ "Smuggler" ]
       , strength = Just 2
@@ -18894,7 +18894,7 @@ all_cards =
       , rules_text = Just "Melee. Renown.\nIf you are running a non-character agenda, treat Ser Cletus Yronwood's printed text box as if it were blank.\nResponse: After Ser Cletus Yronwood is killed, draw 2 cards."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 2
@@ -18916,7 +18916,7 @@ all_cards =
       , rules_text = Just "While you control a Lord or Lady character, Ser Rolly Duckfield cannot be discarded from play."
       , flavor_text = Just "\"Any knight can make a night, and Griff made me.\" - A Dance With Dragons"
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Knight", "Kingsguard" ]
       , strength = Just 3
@@ -18960,7 +18960,7 @@ all_cards =
       , rules_text = Just "Stalwart.\nWhile Wylla Manderly is defending and there is at least 1 attacking Ally or Traitor character, she gets +3 STR."
       , flavor_text = Just "\"Not every woman can be as brave as my Wylla...\" - Wyman Manderly"
       , cost = Just 1
-      , icons = [  ]
+      , icons = [ Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Lady", "House Manderly" ]
       , strength = Just 1
@@ -19070,7 +19070,7 @@ all_cards =
       , rules_text = Nothing
       , flavor_text = Just "We shall sweep over the green lands with fire and sword... - A Feast for Crows"
       , cost = Just 2
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn", "Raider" ]
       , strength = Just 2
@@ -19180,7 +19180,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which Northern Sailor participated by 4 or more total STR, discard it to choose an opponent. That opponent must choose and kill a character he or she controls, if able."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True } ]
       , crest = [  ]
       , traits = [ "Ally", "House Manderly" ]
       , strength = Just 1
@@ -19202,7 +19202,7 @@ all_cards =
       , rules_text = Just "Response: After you win initiative, add 2 gold tokens from the treasury to your gold pool."
       , flavor_text = Just "\"Paxter Redwyne would be a better choice. He commands the largest fleet in Westeros.\" - Jaime Lannister"
       , cost = Just 4
-      , icons = [  ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = True } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "Captain", "House Redwyne" ]
       , strength = Just 3
@@ -19224,7 +19224,7 @@ all_cards =
       , rules_text = Just "Response: After Pentoshi Deckhand has been declared as a [Naval] attacker lower the cost of the next character you put into play using ambush this phase by 1."
       , flavor_text = Just "\"Wind!\" the sailors shouted. The great cog's sails rippled and belled. The Pentoshi were scrambling up the masts, those that were not cheering. - A Storm of Swords"
       , cost = Just 1
-      , icons = [  ]
+      , icons = [ Icon_Intrigue { naval = True } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -19246,7 +19246,7 @@ all_cards =
       , rules_text = Just "Response: After Quentyn Martell is killed, claim 2 power for your House."
       , flavor_text = Just "\"Your brother Quentyn has a harder road to walk.\" - Doran Martell"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 3
@@ -19268,7 +19268,7 @@ all_cards =
       , rules_text = Just "Vigilant.\nResponse: After River Runner stands for Vigilant it gains an [Intrigue] icon until the end of the phase."
       , flavor_text = Just "The passage was navigable only during high tide, and was never less than treacherous, but his smuggler's skills had not deserted him. - A Clash of Kings"
       , cost = Just 2
-      , icons = [  ]
+      , icons = [ Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Ally", "Smuggler" ]
       , strength = Just 2
@@ -19312,7 +19312,7 @@ all_cards =
       , rules_text = Just "Renown. Melee.\nKnelt Smuggler characters you control count their STR toward dominance."
       , flavor_text = Just "\"Tonight I am no knight. Tonight I am Davos the smuggler again.\" - A Clash of Kings"
       , cost = Just 4
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Smuggler", "Captain" ]
       , strength = Just 3
@@ -19334,7 +19334,7 @@ all_cards =
       , rules_text = Just "Response: After you win an unopposed challenge in which a unique [Greyjoy] character participated, choose one: draw 1 card or discard the top 3 cards of each opponent's deck. (Limit once per phase.)"
       , flavor_text = Just "Card designed by 2011 European Joust Champion Marti Foz Hernandez."
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Intrigue { naval = True }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Ironborn", "House Harlaw" ]
       , strength = Just 3
@@ -19378,7 +19378,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which White Harbor Captain participated by 4 or more total STR, claim 1 power for your House."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Captain", "House Manderly" ]
       , strength = Just 2
@@ -19422,7 +19422,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which Andrik the Unsmiling participated by 4 or more total STR, choose the topmost location in the losing player's discard pile and put it into play under your control."
       , flavor_text = Just "\"The singers call Andrik best now. Andrik the Unsmiling, they name him. A giant of a man.\" - Dagmer Cleftjaw"
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn", "Lord" ]
       , strength = Just 3
@@ -19532,7 +19532,7 @@ all_cards =
       , rules_text = Just "If you control 1 or more Dragon characters, House Targaryen Loyalist loses the Traitor trait and gains: \"House Targaryen Loyalist gains renown during [Power] challenges.\""
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Traitor" ]
       , strength = Just 2
@@ -19554,7 +19554,7 @@ all_cards =
       , rules_text = Just "While you control at least 1 Warship, Moreo Tumitis gains renown."
       , flavor_text = Just "He'd been playing the narrow sea for thirty years, he'd told her. The Storm Dancer was his fourth ship, and his fastest - A Game of Thrones"
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Intrigue { naval = True }, Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Captain", "Tyroshi", "Ally" ]
       , strength = Just 3
@@ -19642,7 +19642,7 @@ all_cards =
       , rules_text = Just "Response: After you play a Smuggler character, pay 2 gold to choose and discard from play 1 non-limited location with printed cost 3 or lower."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = True } ]
       , crest = [  ]
       , traits = [ "Smuggler", "Captain", "Traitor" ]
       , strength = Just 3
@@ -19664,7 +19664,7 @@ all_cards =
       , rules_text = Just "Ser Lancel Lannister gets +1 STR for each [Holy] Character in play."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 2
@@ -19928,7 +19928,7 @@ all_cards =
       , rules_text = Just "Stealth.\nIf you have more than one opponent, Dragonstone Convert gains Vigilant."
       , flavor_text = Just "\"I have seen it in the flames.\""
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "House Florent" ]
       , strength = Just 3
@@ -19950,7 +19950,7 @@ all_cards =
       , rules_text = Just "If you have more than 1 opponent Drowned Crewman gains: \n\"Marshalling: Kneel Drowned crewman to choose an opponent with more cards in his or her discard pile than you. Move 1 gold token from that player's gold pool to your own.\""
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -20016,7 +20016,7 @@ all_cards =
       , rules_text = Just "Infamy.\nHouse Clegane Outlaw does not count its STR during challenges unless it has 1 or more power on it."
       , flavor_text = Just "\"Oh, they were brigands, beyond a doubt. Lannister brigands.\" - Raymun Darry"
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Clegane" ]
       , strength = Just 2
@@ -20170,7 +20170,7 @@ all_cards =
       , rules_text = Just "Stalwart.\nResponse: After Ser Kyle Condon is killed or discarded from play, draw 1 card."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 2
@@ -20192,7 +20192,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Deadly.\nResponse: After an opponent's character enters play, kneel 2 influence to bring Sorrowful Man out of Shadows and into play. Then, that character's controller must either pay you 1 gold or kill that character."
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -20214,7 +20214,7 @@ all_cards =
       , rules_text = Just "Stealth. Renown.\nResponse: After you lose a challenge, place 1 gold token from the treasury on The Red Viper.\nChallenges: Discard 1 gold token from The Red Viper to stand him. Then, you may discard 1 additional gold token from him to raise the claim value on any player's revealed plot card by 1 until the end of the current challenge."
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -20236,7 +20236,7 @@ all_cards =
       , rules_text = Just "Melee.\nLower the income and initiative on each opponent's revealed plot card by 1."
       , flavor_text = Just "Aeron knew the Sparr, a hatched-faced old man with watery eyes whose quavery voice was law on this part of Great Wyk."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Ironborn", "Raider" ]
       , strength = Just 1
@@ -20302,7 +20302,7 @@ all_cards =
       , rules_text = Just "House Greyjoy only.\nResponse: Kneel Alannys Greyjoy to cancel an effect triggered by a player with 3 or more non-character cards in his or her discard pile."
       , flavor_text = Just "\"Maron? Rodrik, where are you? Theon, my baby, come to Mother.\""
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady", "Queen" ]
       , strength = Just 3
@@ -20434,7 +20434,7 @@ all_cards =
       , rules_text = Just "Renown. \nIf you lose dominance by 4 or more total STR, discard all power on Jalabhar Xho. At the beginning of the dominance phase, if no opponent has won a challenge against you this round, Jalabhar Xho claims 2 power."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -20478,7 +20478,7 @@ all_cards =
       , rules_text = Just "Renown. \nNon-unique characters get -1 STR while knelt. \nAfter Lyanna Stark is killed, stand all Lord characters in play. Those characters gain deadly until the end of the round."
       , flavor_text = Just "\"Promise me...\""
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady" ]
       , strength = Just 3
@@ -20500,7 +20500,7 @@ all_cards =
       , rules_text = Just "House Martell only. \nResponse: After you lose a challenge as the defender, choose a challenge icon. Then each opponent chooses 1 standing character he or she controls with that icon, if able. All chosen characters lose that icon until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Bastard", "Sand Snake" ]
       , strength = Just 3
@@ -20544,7 +20544,7 @@ all_cards =
       , rules_text = Just "If you have more than 1 opponent, Myrcella Lannister gains: \"Any Phase: Kneel Myrcella Lannister to choose an opponent. Exchange Titles with that player. This effect cannot be triggered during a challenge\""
       , flavor_text = Just "She had all of her mother's beauty, and none of her nature."
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady" ]
       , strength = Just 2
@@ -20610,7 +20610,7 @@ all_cards =
       , rules_text = Just "Response: After a character you control is killed, discard Shyla Errol from play to discard 1 power from the killed character. Then, move the remaining power from that character to another character you control."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady" ]
       , strength = Just 3
@@ -20808,7 +20808,7 @@ all_cards =
       , rules_text = Just "No attachments. Vengeful.\nResponse: After you lose a challenge as the defender, each opponent must choose and discard 1 card from his or her hand."
       , flavor_text = Just "\"Vengeance... Justice... Fire and blood.\""
       , cost = Just 5
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -20830,7 +20830,7 @@ all_cards =
       , rules_text = Just "Joust. Melee.\nIf you control no other House Bolton characters, discard Dreadfort Outrider from play."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Bolton" ]
       , strength = Just 1
@@ -20852,7 +20852,7 @@ all_cards =
       , rules_text = Just "Renown.\nResponse: After an opponent declares a challenge against you, discard the top card of each opponent's deck. Then, draw 1 card for each location discarded in this way."
       , flavor_text = Just "\"From Ib to Asshai, when men see my sails, they pray.\""
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "King", "Lord", "Ironborn", "Raider" ]
       , strength = Just 4
@@ -20918,7 +20918,7 @@ all_cards =
       , rules_text = Just "No attachments.\nIf you have more than 1 opponent, Khaleesi's Faithful gains: \"Limited Response: After Khaleesi's Faithful is declared as a defender, move 1 power from a card controlled by the attacking player to your House card. (Limit 1 Limited Response per round.)\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Army" ]
       , strength = Just 4
@@ -21006,7 +21006,7 @@ all_cards =
       , rules_text = Just "Melee. Renown.\nWhile Robert Baratheon is attacking alone in a Power challenge, each opponent you are not attacking may declare 1 eligible character as a defender. If you win the challenge, instead of the normal claim effects, each opponent must satisfy the claim effect of the challenge."
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "King", "Lord" ]
       , strength = Just 3
@@ -21050,7 +21050,7 @@ all_cards =
       , rules_text = Just "Melee. \nResponse: After The Smalljon is declared as an attacker against a player with a Title you oppose, raise the claim on your revealed plot card by 1 until the end of the challenge. (Limit once per challenge.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Umber" ]
       , strength = Just 3
@@ -21094,7 +21094,7 @@ all_cards =
       , rules_text = Just "Melee. Renown.\nIf you have more than 1 opponent Thoros of Myr gains: \"While Thoros of Myr is attacking, non-unique characters cannot defend alone.\""
       , flavor_text = Just "\"... it shan't be murder, only justice.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Asshai", "Brotherhood" ]
       , strength = Just 3
@@ -21116,7 +21116,7 @@ all_cards =
       , rules_text = Just "House Lannister only. Stealth.\nIf you have more than 1 opponent Varys gains: \"Response: After an opponent declares a challenge, put Varys into Shadows to redirect the challenge against an eligible opponent of your choice, ignoring any Title restrictions.\""
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Ally" ]
       , strength = Just 4
@@ -21204,7 +21204,7 @@ all_cards =
       , rules_text = Just "House Stark only. Joust.\nResponse: After you win a challenge in which Arya Stark attacked alone, each opponent with a Title that opposes your Title must also satisfy the claim of that challenge, if able."
       , flavor_text = Just "\"I don't wear gowns. You can't fight in a stupid gown.\""
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady" ]
       , strength = Just 2
@@ -21226,7 +21226,7 @@ all_cards =
       , rules_text = Just "Joust. Stealth.\nAfter Darkstar bypasses a character by using stealth, move 1 power from that character to Darkstar."
       , flavor_text = Just "\"Men call me Darkstar, and I am of the night.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Dayne", "Knight" ]
       , strength = Just 3
@@ -21248,7 +21248,7 @@ all_cards =
       , rules_text = Just "Response: After you lose a challenge as the defender, until the end of the phase Sand Snake characters you control gain: \"This character does not kneel to attack.\""
       , flavor_text = Just "\"Dorea stalks about knocking oranges off the trees with her morningstar, and Elia and Obella have become the terror of the pools.\" - Doran Martell"
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard", "Sand Snake" ]
       , strength = Just 1
@@ -21292,7 +21292,7 @@ all_cards =
       , rules_text = Just "Response: After Free Man leaves play, choose and stand 1 War Crest character"
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling", "Refugee" ]
       , strength = Just 1
@@ -21336,7 +21336,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel Highgarden Squire to choose 1 Knight character. That character gains joust until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tyrell" ]
       , strength = Just 1
@@ -21380,7 +21380,7 @@ all_cards =
       , rules_text = Just "Joust.\nResponse: After you win a challenge in which Knight of Flowers attacked or defended alone, he claims 2 power. (Limit once per phase.)"
       , flavor_text = Just "Ser Loras rode superbly, and handled a lance as if he'd been born holding one."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Knight", "Lord", "House Tyrell" ]
       , strength = Just 3
@@ -21402,7 +21402,7 @@ all_cards =
       , rules_text = Just "House Stark only. Stealth.\nResponse: After a Stark character leaves play, put Meera Reed into Shadows.\nResponse: After Meera Reed comes out of shadows, choose 1 non-plot card (2 instead if it is Winter) and treat its printed text box as if it were blank until the end of the phase."
       , flavor_text = Just "Card designed by 2010 Castle Stahleck Champion Andrea Gualdoni"
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Lady", "House Reed" ]
       , strength = Just 2
@@ -21424,7 +21424,7 @@ all_cards =
       , rules_text = Just "After you play Newly Made Lord from your hand, choose and discard from play 1 non-limited location with cost 3 or lower if able."
       , flavor_text = Just "Card designed by the 2003 A Game of Thrones World Champion Casey Galvan.\n\"Captains and kings, lift your cups to the Lords of the Four Shields!\""
       , cost = Just 3
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Raider" ]
       , strength = Just 3
@@ -21468,7 +21468,7 @@ all_cards =
       , rules_text = Just "Renown. \nChallenges: While Ser Barristan Selmy is participating in a challenge, discard a card form your hand to choose 1 participating character. Until the end of the phase, that character gets -2 STR and is killed if its STR is 0."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Queensguard" ]
       , strength = Just 3
@@ -21490,7 +21490,7 @@ all_cards =
       , rules_text = Just "Infamy.\nChallenges: Kneel Ser Jaime Lannister to choose and kneel 1 non-Army character controlled by an opponent. Then, if Ser Jaime Lannister has more power on him than that character has STR, discard that character from play. (Limit once per phase.)"
       , flavor_text = Just "\"There are no men like me. There's only me.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Kingsguard", "Knight" ]
       , strength = Just 3
@@ -21512,7 +21512,7 @@ all_cards =
       , rules_text = Just "Cards you control cannot gain Traits through card effects."
       , flavor_text = Just "He saw some of the men from the Shadow Tower, big bearded men with long axes and eight-foot spears."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Knight", "Night's Watch" ]
       , strength = Just 3
@@ -21556,7 +21556,7 @@ all_cards =
       , rules_text = Just "Joust.\nResponse: After you win an unopposed challenge, stand The Knight. Then, discard teh top card of each opponent's deck."
       , flavor_text = Just "\"He planted his standard beneath the castle and defied the Grimms to face him. One did, and then another, and another. He slew them all...\" - Hotho Harlaw"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Harlaw", "Knight" ]
       , strength = Just 3
@@ -21710,7 +21710,7 @@ all_cards =
       , rules_text = Just "No attachments. Intimidate. Melee.\nIf a Black Raven card is not in play, it is Winter."
       , flavor_text = Just "\"If you muck this up, I'm going to rip your liver out and eat it raw with onions.\""
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn", "Night's Watch" ]
       , strength = Just 3
@@ -21732,7 +21732,7 @@ all_cards =
       , rules_text = Just "Vengeful. Melee."
       , flavor_text = Just "\"The crowned skull of House Manwoody, bone and gold on black.\" - Podrick Payne"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "Bannerman" ]
       , strength = Just 1
@@ -21754,7 +21754,7 @@ all_cards =
       , rules_text = Just "If an opponent is running an agenda, Davos's Confidant gains: \"Immune to opponent's events.\""
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Ally" ]
       , strength = Just 2
@@ -21776,7 +21776,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Ambush.\nResponse: After Dragon Knight comes into play, choose 1 character to get -1 STR until the end of the phase (-2 STR instead if it is Summer)."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Knight" ]
       , strength = Just 2
@@ -21820,7 +21820,7 @@ all_cards =
       , rules_text = Just "Deadly.\nExiled Knight does not kneel to defend while it has at least 1 attachment."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Mercenary", "Knight" ]
       , strength = Just 2
@@ -21886,7 +21886,7 @@ all_cards =
       , rules_text = Just "House Stark only.\nIf a card would be discarded from your hand at random, you may choose the card to be discarded instead."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Ally" ]
       , strength = Just 2
@@ -21974,7 +21974,7 @@ all_cards =
       , rules_text = Just "After you trigger an effect that kneels an opponent's character, choose and kneel 1 character controlled by a different opponent."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Ally" ]
       , strength = Just 2
@@ -22084,7 +22084,7 @@ all_cards =
       , rules_text = Just "Melee.\nResponse: After an attachment or location is discarded from your hand as claim for an [Intrigue] challenge, choose and discard 1 card of the same type from play."
       , flavor_text = Just "\"One day the singers will make all of us immortal.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 2
@@ -22106,7 +22106,7 @@ all_cards =
       , rules_text = Just "Renown.\nHouse Greyjoy only.\nAsha Greyjoy does not kneel to attack an opponent with 3 or more non-character cards in his or her discard pile."
       , flavor_text = Just "\"I throw an axe as well as any man, but when the target is so small...\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady", "Ironborn" ]
       , strength = Just 3
@@ -22128,7 +22128,7 @@ all_cards =
       , rules_text = Just "Melee.\nAfter Daario Naharis comes into play, choose and discard 1 Knight or Traitor character from play."
       , flavor_text = Just "\"My sword is yours. My life is yours. My love is yours. My blood, my body, my songs, you own them all. I live and die at your command, fair queen.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Mercenary", "Traitor" ]
       , strength = Just 2
@@ -22172,7 +22172,7 @@ all_cards =
       , rules_text = Just "While you have no power on your House, Brotherhood characters get +1 STR.\nChallenges: Kneel Ghost of High Heart to look at a player's hand. Choose and discard 1 card from that hand. That player draws 1 card. (Limit once per round.)"
       , flavor_text = Just "Card designed by 2006 A Game of Thrones World Champion Matthew Ley."
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Ally", "Brotherhood" ]
       , strength = Just 1
@@ -22194,7 +22194,7 @@ all_cards =
       , rules_text = Just "Melee.\nChallenges: Kneel Greatjon Umber to have him participate in the current challenge as a defender. Then, if your Title supports the defending player's Title, Greatjon Umber claims 1 power."
       , flavor_text = Just "Greatjon became Robb's right hand, his staunchest champion."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "House Umber" ]
       , strength = Just 3
@@ -22260,7 +22260,7 @@ all_cards =
       , rules_text = Just "Deadly. Stealth.\nReduce the cost to play Quentyn's Guard by 1 for each opponent you have."
       , flavor_text = Just "\"Your brother went with Cletus Yronwood, Maester Kedry, and three of Lord Yronwood's best young knights...\" - Doran Martell"
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Knight" ]
       , strength = Just 3
@@ -22282,7 +22282,7 @@ all_cards =
       , rules_text = Just "Rickard Karstark does not kneel to attack during [Military] challenges.\nIf you are not running an agenda, Rickard Karstark gains: \"Response: After 1 or more of an opponent's characters are killed for [Military] claim, Rickard Karstark claims 1 power.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "House Karstark" ]
       , strength = Just 3
@@ -22304,7 +22304,7 @@ all_cards =
       , rules_text = Just "No attachments.\nMarshalling: Kneel a Night's Watch character to reveal the top card of each player's deck. Then (choose one): each player discards that card, draws that card, or returns it to the top of his or her deck."
       , flavor_text = Just "Satin, they called him, even in the wool and mail and boiled leather of the Night's Watch."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Night's Watch" ]
       , strength = Just 1
@@ -22326,7 +22326,7 @@ all_cards =
       , rules_text = Just "Response: After Ser Axell Florent enters play, choose and discard 1 duplicate from play."
       , flavor_text = Just "\"Let the false and the fickle feel your flames.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Knight", "House Florent" ]
       , strength = Just 3
@@ -22348,7 +22348,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After Ser Davos Seaworth enters play, attach the top card of your deck to him, face down, as a duplicate."
       , flavor_text = Just "\"Hear me for the sake of the onions I brought you, and the fingers you took.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Smuggler" ]
       , strength = Just 3
@@ -22370,7 +22370,7 @@ all_cards =
       , rules_text = Just "Joust.\nWhile Ser Gregor Clegane is attacking, characters cannot be saved."
       , flavor_text = Just "\"No one could ever withstand Gregor.\" - The Hound"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Knight", "House Clegane" ]
       , strength = Just 4
@@ -22392,7 +22392,7 @@ all_cards =
       , rules_text = Just "Joust.\nAfter Ser Jorah Mormont comes into play, choose and discard 1 Mercenary or Ally character from play."
       , flavor_text = Just "\"As you will, Khaleesi.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Knight", "Ally" ]
       , strength = Just 3
@@ -22414,7 +22414,7 @@ all_cards =
       , rules_text = Just "Melee.\nIf The Hound would be killed, instead shuffle him back into your deck."
       , flavor_text = Just "The Hound's eyes seemed to glitter through the steel of that hideous dog's-head helm. \"He ran.\" He looked at Ned's face and laughed. \"But not very fast.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Kingsguard", "House Clegane" ]
       , strength = Just 3
@@ -22436,7 +22436,7 @@ all_cards =
       , rules_text = Just "While Theon Greyjoy is in your dead pile, he gains: \"At the beginning of the dominance phase, discard the top card of each opponent's deck.\nResponse: After a unique character is discarded from the top of an opponent's deck, put Theon Greyjoy into play from your dead pile\""
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "Ironborn" ]
       , strength = Just 2
@@ -22634,7 +22634,7 @@ all_cards =
       , rules_text = Just "No attachments except Boon.\nResponse: If it is not Winter, kneel Maester Aemon to save a Night's Watch character from being killed."
       , flavor_text = Just "Stewarding for Maester Aemon had been as good a life as he'd ever known."
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester", "Night's Watch" ]
       , strength = Just 2
@@ -22678,7 +22678,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After you win a challenge in which Shadow Stalker attacked alone and it is Winter, choose and kill a character."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -22700,7 +22700,7 @@ all_cards =
       , rules_text = Just "House Martell only. \nAfter you play Southron Scavengers from your hand, choose a player with a House Martell or House Greyjoy House card. Discard a card at random from that player's hand."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Traitor" ]
       , strength = Just 3
@@ -22810,7 +22810,7 @@ all_cards =
       , rules_text = Just "If you are playing a House Stark House card, reduce the gold penalty to play Theon Greyjoy by 1. Response: After you win a challenge in which Theon Greyjoy participated, choose a House Stark or House Greyjoy character. If it is Summer, stand that character. If it is Winter, kill that character."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "Ward" ]
       , strength = Just 3
@@ -22920,7 +22920,7 @@ all_cards =
       , rules_text = Just "If it is Summer and you reveal a plot card, kneel Wintertime Marauders. Response: If it is Winter and you win a challenge in which Wintertime Marauders is participating, choose and discard a non-unique card from play."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Ironborn", "Army" ]
       , strength = Just 3
@@ -22986,7 +22986,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After you win a challenge in which Carrion Bird participated, shuffle any number of Raven cards from your discard pile,one card with the printed Raven trait from play, back into their owner's decks. (Cannot be canceled.)"
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Raven", "Creature" ]
       , strength = Just 1
@@ -23030,7 +23030,7 @@ all_cards =
       , rules_text = Just "If it is Summer, stand Fairweather Followers each time an event card is played. If it is Winter, kneel Fairweather Followers each time an event card is played."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 3
@@ -23074,7 +23074,7 @@ all_cards =
       , rules_text = Just "If there is another Queen character in play, Jeyne Westerling cannot attack, defend, or trigger her character ability. Any Phase: Kneel Jeyne Westerling to search your deck for a King character, reveal it, and put it into your hand. Then, shuffle your deck."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady", "Queen" ]
       , strength = Just 1
@@ -23118,7 +23118,7 @@ all_cards =
       , rules_text = Just "Knights of the Sun gets +1 STR for each gold token on it. Marshalling: If it is Summer, move any number of gold tokens from your gold pool to Knights of the Sun."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Army", "House Dayne" ]
       , strength = Just 3
@@ -23162,7 +23162,7 @@ all_cards =
       , rules_text = Just "Vengeful.\nResponse: If it is Summer, kneel Maester of the Sun and discard a card from your hand to save a House Martell character from being killed or discarded from play."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester" ]
       , strength = Just 2
@@ -23206,7 +23206,7 @@ all_cards =
       , rules_text = Just "If it is Summer, stand Priestess of the Pyre each time an event card is played. If it is Winter, kneel Priestess of the Pyre each time an event card is played."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Asshai" ]
       , strength = Just 3
@@ -23228,7 +23228,7 @@ all_cards =
       , rules_text = Just "If it is Winter and you reveal a plot card, kneel Red Warlock. Response: After Red Warlock enters play, if it is Summer, search your deck for an attachment and put it into your hand. Then, shuffle your deck."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Ally", "Asshai" ]
       , strength = Just 2
@@ -23250,7 +23250,7 @@ all_cards =
       , rules_text = Just "House Greyjoy only. \nAfter you play Scavengers of the Sea from your hand, choose a player with a House Greyjoy or a House Martell House card. Discard a card at random from that player's hand."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Traitor" ]
       , strength = Just 4
@@ -23272,7 +23272,7 @@ all_cards =
       , rules_text = Just "If there is another Queen character in play, Selyse Baratheon cannot attack, defend, or trigger her character ability. Dominance: If it is Summer, pay 1 gold to shuffle the top card of your discard pile back into your deck."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady", "Queen" ]
       , strength = Just 2
@@ -23294,7 +23294,7 @@ all_cards =
       , rules_text = Just "If it is not Winter, House Dayne characters get +1 STR."
       , flavor_text = Just "A quest that took us to Starfall, the Arbor, Oldtown, the Shield Islands, Crakehall, and finally Casterly Rock..."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "House Dayne" ]
       , strength = Just 1
@@ -23360,7 +23360,7 @@ all_cards =
       , rules_text = Just "If it is Summer, Summer's Champion gains renown. If it is Winter, Summer's Champion gets -2 STR and cannot be declared as an attacker or defender."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 4
@@ -23382,7 +23382,7 @@ all_cards =
       , rules_text = Just "If there is another Queen character in play, Alannys Greyjoy cannot attack, defend, or trigger her character ability. \nAny Phase: Kneel Alannys Greyjoy to choose an opponent. If that opponent does not kneel a character with higher STR than Alannys Greyjoy, discard a card at random from his or her hand."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Queen", "House Harlaw" ]
       , strength = Just 2
@@ -23404,7 +23404,7 @@ all_cards =
       , rules_text = Just "Vigilant.\nDuring Power challenges, Arena Knight gains renown."
       , flavor_text = Just "\"Your warhorse, now, he may not be the best one for the joust.\" - Hullen"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 3
@@ -23426,7 +23426,7 @@ all_cards =
       , rules_text = Just "If it is Summer, Bandit of Summer gains: 'After this card is played from your hand, discard a House Targaryen or House Martell location from play.'"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Traitor" ]
       , strength = Just 1
@@ -23448,7 +23448,7 @@ all_cards =
       , rules_text = Just "If it is Winter, Bandit of Winter gains: 'After this card is played from your hand, discard a House Stark or House Greyjoy location from play.'"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Traitor" ]
       , strength = Just 2
@@ -23470,7 +23470,7 @@ all_cards =
       , rules_text = Just "If you do not win dominance, pay 1 gold or discard Bolton Refugee from play."
       , flavor_text = Just "He is a wary man, and we made him warier on the Green Fork. He will be slow to give pursuit."
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Bolton", "Refugee" ]
       , strength = Just 2
@@ -23492,7 +23492,7 @@ all_cards =
       , rules_text = Just "No attachments except a single Weapon.\nImmune to opponent's card effects. \nIf you control Arya Stark, discard Cat o' the Canals from play."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -23514,7 +23514,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. \nAfter you play Dragonstone Scavenger from your hand, choose a player with a House Targaryen or a House Baratheon House card. Discard a card at random from that player's hand."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Traitor" ]
       , strength = Just 3
@@ -23536,7 +23536,7 @@ all_cards =
       , rules_text = Just "If it is Winter, discard Gilly from play. If it is Summer, Gilly gains +2 STR, a Power icon, and 'After you win a challenge in which Gilly participated, draw a card.'"
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling", "Refugee" ]
       , strength = Just 1
@@ -23580,7 +23580,7 @@ all_cards =
       , rules_text = Just "If you do not win dominance, pay 1 gold or discard Highgarden Refugee from play."
       , flavor_text = Just "\"So long as they keep to themselves we let them spin their little webs, but if they get underfoot we step on them.\" - The Queen of Thorns"
       , cost = Just 0
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tyrell", "Refugee" ]
       , strength = Just 2
@@ -23602,7 +23602,7 @@ all_cards =
       , rules_text = Just "If you do not win dominance, pay 1 gold or discard Island Refugee from play."
       , flavor_text = Just "Goosefleshed and dripping, he splashed back onto land, across cold wet sand and sea scoured pebbles."
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn", "Refugee" ]
       , strength = Just 2
@@ -23624,7 +23624,7 @@ all_cards =
       , rules_text = Just "If you do not win dominance, pay 1 gold or discard Mountain Refugee from play."
       , flavor_text = Just "The mountain clans were lawless brigands, descending from the heights to rob and kill and melting away like snow whenever the knights rode out from the Vale in search of them."
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman", "Refugee" ]
       , strength = Just 2
@@ -23668,7 +23668,7 @@ all_cards =
       , rules_text = Just "Deadly.\nResponse: After a challenge resolves in which Pit Viper attacked alone, discard Pit Viper from play (cannot be saved) to choose and kill another participating character."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature" ]
       , strength = Just 2
@@ -23690,7 +23690,7 @@ all_cards =
       , rules_text = Just "If you do not win dominance, pay 1 gold or discard Refugee of the Citadel from play."
       , flavor_text = Just "The world is wide... I do not need to go back to old Walgrave and the ravens."
       , cost = Just 0
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester", "Refugee" ]
       , strength = Just 2
@@ -23712,7 +23712,7 @@ all_cards =
       , rules_text = Just "If you do not win dominance, pay 1 gold or discard Refugee of the Plains from play."
       , flavor_text = Just "The man who does not ride was no man at all, the lowest of the low, without honor or pride."
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Refugee" ]
       , strength = Just 2
@@ -23734,7 +23734,7 @@ all_cards =
       , rules_text = Just "If it is not Summer or Winter, River Bandit gains: 'After this card is played from your hand, discard a House Baratheon or House Lannister location from play.'"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Traitor" ]
       , strength = Just 2
@@ -23778,7 +23778,7 @@ all_cards =
       , rules_text = Just "If you do not win dominance, pay 1 gold or discard Vale Refugee from play."
       , flavor_text = Just "\"No one can hurt me as long as I stay here.\""
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Arryn", "Refugee" ]
       , strength = Just 1
@@ -23932,7 +23932,7 @@ all_cards =
       , rules_text = Just "Limited Response: After Grand Maester Pycelle is killed in the challenge phase, return all of your used plots to your plot deck. (Limit 1 Limited Response per round.)"
       , flavor_text = Just "\"The game changed while I lay rotting in my bed.\""
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Maester" ]
       , strength = Just 2
@@ -23998,7 +23998,7 @@ all_cards =
       , rules_text = Just "Challenges: If it is Summer, choose an opponent's attachment in play. Pay that attachment's printed gold cost to take control of that attachment, and attach it to a card of your choice."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Mercenary" ]
       , strength = Just 3
@@ -24042,7 +24042,7 @@ all_cards =
       , rules_text = Just "House Stark only. \nAfter you play Northern Scavengers from your hand, choose a player with a House Stark or a House Lannister House card. Discard a card at random from that player's hand."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Traitor" ]
       , strength = Just 3
@@ -24086,7 +24086,7 @@ all_cards =
       , rules_text = Just "Renown.\nIf Renly Baratheon is the only King in play, he gains: 'After you win a Power challenge and there is at least 1 Power Struggle plot card revealed, draw a card.'"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 4
@@ -24262,7 +24262,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After you win a challenge in which Carrion Bird participated, shuffle any number of Raven cards from your discard pile, one card with the printed Raven trait from play, back into their owner's decks. (Cannot be canceled.)"
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Raven", "Creature" ]
       , strength = Just 1
@@ -24328,7 +24328,7 @@ all_cards =
       , rules_text = Just "No attachments.\nIf it is Winter, players must pay 1 gold to the treasury before triggering any effect with an influence cost."
       , flavor_text = Just "\"I need more men.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Night's Watch" ]
       , strength = Just 3
@@ -24372,7 +24372,7 @@ all_cards =
       , rules_text = Just "Response: If it is not Summer, kneel Maester Vyman to cancel a triggered effect that chooses a House Stark character as the only target."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tully", "Maester" ]
       , strength = Just 2
@@ -24394,7 +24394,7 @@ all_cards =
       , rules_text = Just "Power on Kingdom locations counts towards their controller's victory total. If it is Winter, Mance Rayder gains: 'Response: After you win a challenge in which Mance Rayder participated, take control of a Kingdom location controlled by the losing opponent. Then, that location claims 1 power.'"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling", "King" ]
       , strength = Just 3
@@ -24438,7 +24438,7 @@ all_cards =
       , rules_text = Just "Stealth.\nIf Obara Sand is in your hand after your first mulligan, before you place any setup cards you may remove her from the game and take an additional mulligan."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard", "Sand Snake" ]
       , strength = Just 3
@@ -24460,7 +24460,7 @@ all_cards =
       , rules_text = Just "If it is Winter, Ranger of Winter gains stealth, an Intrigue icon, and does not kneel to defend."
       , flavor_text = Just "\"Everyone talks about snows forty foot deep, and how the ice wind comes howling out of the north, but the real enemy is the cold.\" - Gared"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -24482,7 +24482,7 @@ all_cards =
       , rules_text = Just "House Lannister only. \nAfter you play Scavengers of King's Landing from your hand, choose a player with a House Lannister or a House Stark House card. Discard a card at random from that player's hand."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Traitor" ]
       , strength = Just 3
@@ -24504,7 +24504,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nIf you control fewer characters than the player who is attacking you, Ser Arthur Dayne cannot be bypassed by stealth and does not kneel to defend."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Kingsguard", "House Dayne" ]
       , strength = Just 5
@@ -24592,7 +24592,7 @@ all_cards =
       , rules_text = Just "While Underhanded Assassin is attacking, participating characters with a higher STR do not count their STR."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -24614,7 +24614,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. \nIf it is Winter and Valyrian Spirit is killed, shuffle any player's dead and discard piles back into his or her deck."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -24746,7 +24746,7 @@ all_cards =
       , rules_text = Just "Deadly.\nResponse: After a character is killed for deadly, draw 1 card."
       , flavor_text = Just "\"There will be no more of that, I promise. You prayed, and the gods sent us. You want to die...\" - Rowan"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Traitor" ]
       , strength = Just 1
@@ -24834,7 +24834,7 @@ all_cards =
       , rules_text = Just "If you are not running an Agenda, Maege Mormont gains: \"Response: After you win a challenge in which Maege Mormont participated, return her to her owner's hand to search your deck for a [Stark] location. Put that location into play knelt and shuffle your deck.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lady", "House Mormont" ]
       , strength = Just 3
@@ -24856,7 +24856,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel Maester Myles to choose a participating character with only 1 icon. Remove that character from the challenge."
       , flavor_text = Just "He watched the lords and ladies, the serving men, the old blind seneschal, and the young maester Myles, with his silky beard and servile smile."
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester" ]
       , strength = Just 1
@@ -24988,7 +24988,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel Rhoynar Emissary to choose a character. If that character is not declared as a participant in the next challenge this phase for which it is eligble, discard it from play. Any opponent may kneel 2 influence to cancel this effect."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -25010,7 +25010,7 @@ all_cards =
       , rules_text = Just "Renown. No attachments. Lower the cost to play The Golden Company by 1 for each unique [Targaryen] character you control.\nResponse: After you win a challenge in which The Golden Company participated as an attacker, return 1 random card from your discard pile to your hand."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 7
@@ -25054,7 +25054,7 @@ all_cards =
       , rules_text = Just "No attachments. Lower the cost to play The Windblown by 1 for each unique [Martell] character you control.\nWhile The Windblown is attacking, characters with fewer than 2 icons do not count their STR."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 7
@@ -25120,7 +25120,7 @@ all_cards =
       , rules_text = Just "Renown.\nResponse: After you win dominance, draw 1 card."
       , flavor_text = Just "It was Lady Melisandre and her followers at their nightfire. Every night at dusk the red woman led her followers in their twilight prayer, asking her red god to see them through the dark."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Asshai", "Knight" ]
       , strength = Just 2
@@ -25340,7 +25340,7 @@ all_cards =
       , rules_text = Just "You may spend gold tokens on [Martell] Characters you control as if they are in your gold pool.\n\nResponse: After you kneel Old Bill Bone as an attacker or defender, discard the top card of your deck. If that card is not a character place 1 gold token from the treasury on Old Bill Bone"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Mercenary" ]
       , strength = Just 2
@@ -25494,7 +25494,7 @@ all_cards =
       , rules_text = Just "No attachments. Lower the cost to play The Bastard's Boys by 1 for each House Bolton character you control.\nResponse: After The Bastard's Boys are knelt as an attacker and the defending player controls no House Bolton characters, raise the claim value on your revealed plot card by 1 (to a maximum of 3) until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "House Bolton" ]
       , strength = Just 7
@@ -25516,7 +25516,7 @@ all_cards =
       , rules_text = Just "Renown.\nResponse: After an opponent's character's STR is reduced to 0, The Brazen Beasts claim 1 power. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 3
@@ -25538,7 +25538,7 @@ all_cards =
       , rules_text = Just "Stealth.\nNo attachments. Lower the cost to play The Second Sons by 1 for each unique [Lannister] or [Targaryen] character you control.\nResponse: After a player draws a card through a card effect during the challenges phase, choose a character. That character gets -1 STR until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Mercenary", "Trator" ]
       , strength = Just 7
@@ -25604,7 +25604,7 @@ all_cards =
       , rules_text = Just "Melee.\nIf Able's Washerwoman is attacking and all of your participating characters have the Wildling trait, she gains: \"Response: After the defending player declares no defenders, claim 1 power for your House.\""
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Wildling" ]
       , strength = Just 0
@@ -25626,7 +25626,7 @@ all_cards =
       , rules_text = Just "Dominance: Kneel Archmaester Marwyn to choose 3 cards in your discard pile. The opponent to your left places one on the bottom of your deck, adds one to your hand, and returns the last to the top of your discard pile."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester" ]
       , strength = Just 3
@@ -25648,7 +25648,7 @@ all_cards =
       , rules_text = Just "Stalwart.\nCharacters with Stalwart gain stealth.\nResponse: After you play a character with the stalwart keyword from your hand, choose and stand a [Stark] character."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -25670,7 +25670,7 @@ all_cards =
       , rules_text = Just "If Follower of Two Gods would be killed, instead put it on the bottom of your deck.\nResponse: After you win an unopposed challenge, Follower of Two Gods gains a [Power] icon until the end of the phase."
       , flavor_text = Just "\"What need have we of quarter? We are ironborn, and two gods look over us.\" - Victarion Greyjoy"
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ironborn" ]
       , strength = Just 1
@@ -25692,7 +25692,7 @@ all_cards =
       , rules_text = Just "House Targaryen only.\n\nIf Griff would be killed, instead attach him to your House Card as your only agenda with the text: \"If you control fewer attachments than each opponent, unattach Griff and return him to play.\nResponse: After a [Targaryen] attachment you control is discarded from play, kneel 1 influence to return it to your hand.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Knight", "Lord" ]
       , strength = Just 3
@@ -25714,7 +25714,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After you win an unopposed challenge in which Iron Fleet Captain participated, it claims 1 power."
       , flavor_text = Just "\"Every man of you is worth twenty of them, for only we are made of iron.\" - Victarion Greyjoy"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn", "Raider" ]
       , strength = Just 3
@@ -25802,7 +25802,7 @@ all_cards =
       , rules_text = Just "Response: After an opponent pays gold outside of the marshalling phase, move that gold into your gold pool."
       , flavor_text = Just "He opened up his purse and stacked silver coins beside the board, one atop another until finally Qavo smiled."
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -25824,7 +25824,7 @@ all_cards =
       , rules_text = Just "Ambush. House Targaryen only.\nCharacters with the Ally or Refugee trait get -1 STR.\nChallenges: Discard an attachment from your hand to return Sellsword Deserter from your discard pile to your hand."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Refugee" ]
       , strength = Just 2
@@ -25846,7 +25846,7 @@ all_cards =
       , rules_text = Just "Deadly. Renown.\nIf you are running a non-character agenda, treat Ser Archibald Yronwood's printed text box as if it were blank.\nResponse: After Ser Archibald Yronwood is declared as a defender, choose and kneel a location."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 3
@@ -25868,7 +25868,7 @@ all_cards =
       , rules_text = Just "Stealth. Renown.\nIf you are running a non-character agenda, treat Ser Gerris Drinkwater's printed text box as if it were blank.\nResponse: After Ser Gerris Drinkwater is knelt as a defender, choose and stand another [Martell] character."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 3
@@ -25890,7 +25890,7 @@ all_cards =
       , rules_text = Just "No attachments. Lower the cost to play The Red Queen's Faithful by 1 for each unique [Baratheon] character you control.\nResponse: After you win a challenge in which The Red Queen's Faithful participated, choose a player. Move up to 3 power from his or her House card to a character he or she controls."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Asshai", "Army" ]
       , strength = Just 7
@@ -25912,7 +25912,7 @@ all_cards =
       , rules_text = Just "Dominance: Return Thrall from your dead pile to your hand. Use this ability only if there are at least 3 characters in your dead pile."
       , flavor_text = Just "Victarion put the slavers to the sword, then sent his men below to unchain the rowers. \"You row for me now. Row hard, and you shall prosper.\""
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Oarsman" ]
       , strength = Just 1
@@ -25934,7 +25934,7 @@ all_cards =
       , rules_text = Just "No attachments. Lower the cost to play Victarion's Reavers by 1 for each unique [Greyjoy] character you control.\n\nIf you win a challenge in which Victarion's Reavers attacked alone, instead of the normal claim effects, the losing player chooses and discards X locations he or she controls from play. X is the printed claim on your revealed plot card."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Raider" ]
       , strength = Just 7
@@ -25956,7 +25956,7 @@ all_cards =
       , rules_text = Just "Challenges: Kill Watchful Servant (cannot be saved) to choose a participating character with STR 3 or higher. Remove that character from the current challenge."
       , flavor_text = Just "As for my household, they love me well. None would betray me.\" - Illyrio Mopatis"
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -25978,7 +25978,7 @@ all_cards =
       , rules_text = Just "Challenges: Before any challenges are declared, discard a card from your hand to give a [Baratheon] or [Stark] character renown until the end of the phase. (Limit 3 times per round.)"
       , flavor_text = Just "He calls himself a bard. In truth he's more a pander."
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling", "Traitor" ]
       , strength = Just 3
@@ -26000,7 +26000,7 @@ all_cards =
       , rules_text = Just "Infamy.\nWhile Yezzan's Grotesquerie is participating in a challenge, characters with a [Military] icon do not count their STR."
       , flavor_text = Just "Count yourselves fortunate, for Yezzan is a kindly and benevolent master."
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "The East" ]
       , strength = Just 3
@@ -26022,7 +26022,7 @@ all_cards =
       , rules_text = Just "Deadly\nResponse: After a Unique [Stark] character is killed, discard Arya Stark from play (cannot be saved) to choose and kill a character with STR 3 or less."
       , flavor_text = Just "She coud feel the air currents on her skin now; She could find the kitchens by their smells, tell men from women by their scents."
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady" ]
       , strength = Just 2
@@ -26066,7 +26066,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Ambush.\nResponse: After Company of the Cat is put into play through a card effect, draw 1 card."
       , flavor_text = Just "Bloodbeard, the savage commander of the Cats, was a roaring giant with a ferocious appetite for slaughter..."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 4
@@ -26286,7 +26286,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Ambush.\nResponse: After a character comes into play, choose and stand a [Targaryen] character you control. (Limit once per phase.)"
       , flavor_text = Just "Eight hundred horse-riders sworn to Yunkai."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 3
@@ -26506,7 +26506,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel a Direwolf to stand Bran Stark. Then, Bran Stark gains (choose 1): a [Military] icon, stealth, or deadly until the end of the phase."
       , flavor_text = Just "\"I am him, and he is me. He feels what I feel.\""
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord" ]
       , strength = Just 2
@@ -26550,7 +26550,7 @@ all_cards =
       , rules_text = Just "Immune to events.\nWhile Damon Dance-For-Me is participating in a challenge against an opponent running an agenda, he gains deadly and stealth.\n\nIf you are not running an agenda, Damon Dance-For-Me gains renown"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Bolton" ]
       , strength = Just 3
@@ -26572,7 +26572,7 @@ all_cards =
       , rules_text = Just "Response: After you win dominance, Dragonstone Bannerman claims 1 power."
       , flavor_text = Just "He had not forgotten the courtesies he had learned on Dragonstone during his years of service."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "Ally" ]
       , strength = Just 3
@@ -26594,7 +26594,7 @@ all_cards =
       , rules_text = Just "Merchant's Widow gets +1 STR for each gold token on it.\nResponse: After an opponent returns gold to the treasury during the taxation phase, add 1 gold from the treasury to Merchant's Widow."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -26616,7 +26616,7 @@ all_cards =
       , rules_text = Just "Response: Kneel Moqorro to save a unique [Greyjoy] character from being killed or discarded. That character gets +2 STR and gains intimidate until the end of the phase."
       , flavor_text = Just "\"The captain commands and I obey.\""
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Asshai" ]
       , strength = Just 2
@@ -26682,7 +26682,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel Penny to choose a character without attachments. The controller of that character chooses to either kneel that character or choose and discard 1 card from his or her hand."
       , flavor_text = Just "Despite the horrors Penny had suffered, she remained somehow trusting."
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Fool" ]
       , strength = Just 1
@@ -26726,7 +26726,7 @@ all_cards =
       , rules_text = Just "House Martell only. Stealth.\nIf Quentyn Martell would be killed, instead attach Quentyn Martell to your House card as your only agenda with the text: \"Unique [Martell] characters you control gain vengeful. Response: After 1 or more characters stand for vengeful, draw one card.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 3
@@ -26770,7 +26770,7 @@ all_cards =
       , rules_text = Just "House Baratheon only.\nIf Shireen Baratheon would be killed, instead attach her to your House Card as your only agenda with the text: \"Response: After you win a [Power] challenge, choose a character you control with renown. Until the end of the phase, when that character claims power for renown, it claims 1 additional power.\""
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady" ]
       , strength = Just 1
@@ -26792,7 +26792,7 @@ all_cards =
       , rules_text = Just "Response: After you lose a challenge as the attacker, stand Spiteful Bastard.\nResponse: After you win a challenge as the defender, stand Spiteful Bastard."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard" ]
       , strength = Just 2
@@ -26814,7 +26814,7 @@ all_cards =
       , rules_text = Just "No attachments except Boon.\nStrong Belwas gets -1 STR for each gold token on him and is killed if his STR is 0.\nResponse: Place 1 gold token from the treasury on Strong Belwas to save another unique [Targaryen] character from being killed or discarded from play. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Queensguard" ]
       , strength = Just 3
@@ -26858,7 +26858,7 @@ all_cards =
       , rules_text = Just "Renown.\nVictarion Greyjoy gets +1 STR for each knelt warship location you control."
       , flavor_text = Just "Victarion Greyjoy turned back toward the prow, his gaze sweeping across his fleet. Longships filled the sea."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Lord", "Ironborn" ]
       , strength = Just 3
@@ -26880,7 +26880,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Stealth.\nResponse: After Young Griff comes out of Shadows, stand any number of characters you control. Then, you may immediately bring another card out of Shadows by paying the rest of its gold cost."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -26924,7 +26924,7 @@ all_cards =
       , rules_text = Just "House Greyjoy only. Stealth.\nIf Aeron Damphair would be killed, instead attach him to your House card as your only agenda with the text: \"Response: After a [Greyjoy] character is saved, draw 2 cards.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ironborn" ]
       , strength = Just 3
@@ -27012,7 +27012,7 @@ all_cards =
       , rules_text = Just "Discard Hugor Hill from play if you control Tyrion Lannister.\n\nIf you win a challenge in which Hugor Hill attacked alone, instead of the normal claim effects, choose a character in the losing opponent's discard pile with a cost of X or lower. Put that character into play under your control. X is the amount by which you won the challenge."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Traitor", "Fool" ]
       , strength = Just 3
@@ -27056,7 +27056,7 @@ all_cards =
       , rules_text = Just "Response: Kill Maester Kerwin (cannot be saved) to cancel any effect that chooses 1 of your Ironborn characters as its only target."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester" ]
       , strength = Just 1
@@ -27078,7 +27078,7 @@ all_cards =
       , rules_text = Just "Response: After a character enters play during the challenges phase, choose a non-unique character. Until the end of the phase, that character gets -1 STR and is killed if STR is 0"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Ally", "Lord" ]
       , strength = Just 3
@@ -27122,7 +27122,7 @@ all_cards =
       , rules_text = Just "House Lannister Only. Stealth.\n\nIf Ser Kevan Lannister would be killed, instead attach him to your House Card as your only agenda with the text: \"Response: After you win an intrigue challenge as the attacker, choose and kneel a character.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 3
@@ -27166,7 +27166,7 @@ all_cards =
       , rules_text = Just "Immune to location abilities.\nWhile Stannis Baratheon is the only King character in play, he gains vigilant, renown, and stealth."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "King", "Lord" ]
       , strength = Just 3
@@ -27188,7 +27188,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which The Bastard of Nightsong participated, move 1 power from the losing opponent's House card to The Bastard of Nightsong."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Bastard" ]
       , strength = Just 3
@@ -27210,7 +27210,7 @@ all_cards =
       , rules_text = Just "House Stark only. Deadly.\nIf The Kindly Man would be killed, instead attach him to your House card as your only agenda with the text: \n\"Response: After you win an [Intrigue] or [Power] challenge, choose a non-unique character in any dead or discard pile and put it into play under your control. At the end of the phase, discard that character if it is still in play. (Limit once per phase.)\""
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -27320,7 +27320,7 @@ all_cards =
       , rules_text = Just "While Willas Tyrell is participating in a challenge against an opponent running an agenda, he gains renown.\n\nWhile Willas Tyrell is participating in a challenge, participating Lannister and Martell characters do not count their STR."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "House Tyrell", "Lord", "Ally" ]
       , strength = Just 2
@@ -27342,7 +27342,7 @@ all_cards =
       , rules_text = Just "Any Phase: Return Cragorn to your hand to take 1 gold from an opponent's gold pool and add it to your own."
       , flavor_text = Just "It was one of Euron's mongrels winding the call, a monstrous man with a shaved head. Rings of gold and jade and jet glistened on his arms, and on his broad chest was tattooed some bird of prey, talons dropping blood."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Raider" ]
       , strength = Just 1
@@ -27364,7 +27364,7 @@ all_cards =
       , rules_text = Just "Renown.\nWhile Euron Crow's Eye is attacking, Raider characters gain stealth and your opponents cannot play events."
       , flavor_text = Just "\"The Crow's Eye worships naught but his own pride.\""
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "Ironborn", "Raider" ]
       , strength = Just 4
@@ -27386,7 +27386,7 @@ all_cards =
       , rules_text = Just "Limited Response: After a card is discarded from a player's deck, kneel Euron's Mongrel or kneel a Warship location to choose and discard 1 copy of that card from play. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Raider", "Ally", "Bastard" ]
       , strength = Just 2
@@ -27452,7 +27452,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Ambush.\nAfter you lose a Military challenge, return Horseback Hunters to your hand."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki" ]
       , strength = Just 3
@@ -27628,7 +27628,7 @@ all_cards =
       , rules_text = Just "Deadly.\nChallenges: Kneel Silent Assassin to stand and remove 1 of your attacking characters from the current challenge. Then, Silent Assassin is considered to be participating in the challenge as an attacker."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -27650,7 +27650,7 @@ all_cards =
       , rules_text = Just "Response: After a player plays the last card from his or her hand, kneel a Clansman character to have Son of the Mist claim 1 power."
       , flavor_text = Just "The mountain clans were lawless brigands, descending from the heights to rob and kill and melting away like snow."
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman" ]
       , strength = Just 2
@@ -27672,7 +27672,7 @@ all_cards =
       , rules_text = Just "No attachments.\nDuring the challenge phase, the active player gains control of Steelshanks' Reserves."
       , flavor_text = Just "Steelshanks's archers were winding there crossbows and reloading while the Bloody Mummers shouted curses and threats at them."
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "House Bolton" ]
       , strength = Just 4
@@ -27694,7 +27694,7 @@ all_cards =
       , rules_text = Just "House Baratheon only. Stealth. Immune to events."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Raider" ]
       , strength = Just 2
@@ -27716,7 +27716,7 @@ all_cards =
       , rules_text = Just "Stealth.\nIf you have no power on your House card, The Mad Huntsman does not kneel to attack or defend."
       , flavor_text = Just "Only then the Mad Huntsman appeared, shoving his captive down into the light, and she and Gendry were forgotten."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Brotherhood" ]
       , strength = Just 3
@@ -27782,7 +27782,7 @@ all_cards =
       , rules_text = Just "Deadly.\nIf you have no power on your House card, Anguy the Archer gains: \"Response: After an opponent's character is killed, Anguy the Archer claims 1 power (limit 3 per phase).\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Brotherhood" ]
       , strength = Just 3
@@ -27804,7 +27804,7 @@ all_cards =
       , rules_text = Just "No attachments.\nDiscard Black Hatchling from play any time you control Drogon. Black Hatchling cannot defend."
       , flavor_text = Just "The black-and-scarlet beast was draped across her shoulders, its long sinuous neck coiled under her chin."
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 2
@@ -27848,7 +27848,7 @@ all_cards =
       , rules_text = Just "After a player wins an Intrigue challenge against you, that player takes control of Bolton Loyalist."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Bolton" ]
       , strength = Just 3
@@ -27892,7 +27892,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel Dothraki Handmaiden to choose an attacking Dothraki character. Until the end of the challenge, that character gets +2 STR."
       , flavor_text = Just "Her brother Viserys gifted her with three hand-maids. Dany knew they had cost him nothing; Illyrio no doubt had provided the girls."
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Ally" ]
       , strength = Just 1
@@ -27914,7 +27914,7 @@ all_cards =
       , rules_text = Just "Intimidate. No attachments.\nEuron's Enforcers get +1 STR for each Raider character you control."
       , flavor_text = Just "Men black as tar stared out at him, and others squat and hairy as the apes of Sothoros. Monsters, Victarion thought."
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Raider", "Army" ]
       , strength = Just 3
@@ -27958,7 +27958,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nAny Phase: Kneel a Holy character to put Knight of Summerhall into play from your dead pile."
       , flavor_text = Just "Did we learn nothing from Summerhall?"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Brotherhood", "Knight" ]
       , strength = Just 3
@@ -28024,7 +28024,7 @@ all_cards =
       , rules_text = Just "Sand Snake characters you control gain a Power icon and vengeful."
       , flavor_text = Just "\"... Elia and Obella have become the terror of the pools.\" - Doran Martell"
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard", "Sand Snake" ]
       , strength = Just 1
@@ -28068,7 +28068,7 @@ all_cards =
       , rules_text = Just "Roose Bolton does not kneel to attack during Intrigue challenges. Response: After you win a challenge in which Roose Bolton participated, all players take control of each character they own currently in play."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "House Bolton" ]
       , strength = Just 3
@@ -28090,7 +28090,7 @@ all_cards =
       , rules_text = Just "Deadly.\nKnelt Clansman characters you control can be declared as defenders during Military challenges."
       , flavor_text = Just "Massive and slow and strong he seemed, dressed in all skins, with a club in his right hand and an axe in his left."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman" ]
       , strength = Just 3
@@ -28178,7 +28178,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nAfter a player wins a Power challenge against you, that player gains control of The Flayed Men."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "House Bolton" ]
       , strength = Just 5
@@ -28222,7 +28222,7 @@ all_cards =
       , rules_text = Just "Renown.\nIf you have no power on your House card, Beric Dondarrion cannot be killed or discarded from play."
       , flavor_text = Just "\"The lightning lord's not so easy to kill.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Brotherhood", "Knight" ]
       , strength = Just 3
@@ -28244,7 +28244,7 @@ all_cards =
       , rules_text = Just "During Military challenges, characters cannot be saved."
       , flavor_text = Just "\"It was wrong of them to burn my temple,\" the heavy, flat-nosed woman said placidly."
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Ally" ]
       , strength = Just 2
@@ -28288,7 +28288,7 @@ all_cards =
       , rules_text = Just "Deadly. No attachments except Weapon.\nReduce the cost to play Drogo's Horde by 1 for each Dothraki character you control."
       , flavor_text = Just "\"A hundred thousand men ride in his Khalasar.\""
       , cost = Just 6
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Dothraki" ]
       , strength = Just 6
@@ -28332,7 +28332,7 @@ all_cards =
       , rules_text = Just "If Edric Dayne is killed, choose and discard 1 influence providing location from play. Response: After an influence providing location enters play, kneel that location."
       , flavor_text = Just "\"I'm only twelve.\""
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "Brotherhood", "House Dayne" ]
       , strength = Just 3
@@ -28398,7 +28398,7 @@ all_cards =
       , rules_text = Just "Any effect that discards 1 or more cards from an opponent's deck discards an additional card."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Raider", "Ally" ]
       , strength = Just 1
@@ -28464,7 +28464,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel Painted Dogs to choose 1 character. That character gets +2 STR until the end of the phase (+4 STR instead if you have fewer cards in hand than each opponent)."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman", "Army" ]
       , strength = Just 2
@@ -28486,7 +28486,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nResponse: After you win a Military challenge in which every attacking character has the Dothraki trait, discard 1 card at random from the losing opponent's hand."
       , flavor_text = Just "\"As you say, I do, blood of my blood.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Dothraki", "Queensguard" ]
       , strength = Just 3
@@ -28530,7 +28530,7 @@ all_cards =
       , rules_text = Just "No attachments.\nRobert's Loyalists get +2 STR while attacking any opponent with a non-House Baratheon, non-neutral House card."
       , flavor_text = Just "\"We fight on as best we can, for Robert and the realm.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Brotherhood", "Army" ]
       , strength = Just 3
@@ -28574,7 +28574,7 @@ all_cards =
       , rules_text = Just "House Stark only. Deadly.\nResponse: After control of a character changes, put The Bastard of Bolton into play from your hand."
       , flavor_text = Just "\"Ser Rodrik had you five-to-one.\"\n\"Aye, but he thought us friends. A common mistake.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard", "House Bolton" ]
       , strength = Just 2
@@ -28684,7 +28684,7 @@ all_cards =
       , rules_text = Just "Response: After you lose a challenge, discard Bastard Daughter from play to put a unique Sand Snake character into play from your hand or discard pile."
       , flavor_text = Just "... it was said that he bedded men and women both, and had begotten bastard girls all over Dorne."
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Bastard", "Sand Snake" ]
       , strength = Just 2
@@ -28728,7 +28728,7 @@ all_cards =
       , rules_text = Just "Intimidate. Deadly.\nResponse: After you win an unopposed challenge in which Bloodthirsty Crew participated, discard the top 2 cards of the losing opponent's deck."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Raider" ]
       , strength = Just 2
@@ -28816,7 +28816,7 @@ all_cards =
       , rules_text = Just "If you have no power on your House card, Jack-be-Lucky gains: \"Dominance: Discard 1 card from your hand to draw 1 card.\""
       , flavor_text = Just "\"My father got himself good and hanged by Lord Piper's bailiff, my brother Wat got sent to the Wall, and the Lannisters killed my other brothers. An eye, that's nothing.\""
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Brotherhood", "Ally" ]
       , strength = Just 2
@@ -28838,7 +28838,7 @@ all_cards =
       , rules_text = Just "If he is attacking alone, Jhogo gains stealth. \nResponse: After you win a Military challenge in which Jhogo participated, draw 1 card for each attacking Dothraki character."
       , flavor_text = Just "\"I will deal with these scouts.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Queensguard" ]
       , strength = Just 3
@@ -28904,7 +28904,7 @@ all_cards =
       , rules_text = Just "Sand Snake characters you control gain a Military icon and Deadly."
       , flavor_text = Just "Lady Nym was no less deadly, though she kept her knives well hidden."
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard", "Sand Snake" ]
       , strength = Just 3
@@ -28926,7 +28926,7 @@ all_cards =
       , rules_text = Just "Response: After Orphaned Recruit enters play, move 1 power from any player's House card to Orphaned Recruit."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Brotherhood", "Ally" ]
       , strength = Just 2
@@ -28970,7 +28970,7 @@ all_cards =
       , rules_text = Just "If there is at least 1 card in Shadows, Asshai characters gain a Military icon and get +1 STR for each card in Shadows."
       , flavor_text = Just "Davos remembered too well the living shadow that had squirmed from out her womb."
       , cost = Just 3
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Asshai" ]
       , strength = Just 3
@@ -28992,7 +28992,7 @@ all_cards =
       , rules_text = Just "Deadly.\nDominance: If you won dominance this round, take control of Steelshanks Walton. (Any player may trigger this effect.)"
       , flavor_text = Just "Steelshanks Walton commanded Jaime's escort; blunt, brusque, brutal, at heart a simple soldier."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Bolton", "Ally" ]
       , strength = Just 3
@@ -29036,7 +29036,7 @@ all_cards =
       , rules_text = Just "Stealth.\nChallenges: Discard 1 card from your hand to give Tribeless Vagabond an icon of your choice until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman", "Mercenary" ]
       , strength = Just 2
@@ -29058,7 +29058,7 @@ all_cards =
       , rules_text = Just "Sand Snake characters you control gain an Intrigue icon and stealth."
       , flavor_text = Just "\"You think too much, Uncle.\""
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard", "Sand Snake" ]
       , strength = Just 2
@@ -29124,7 +29124,7 @@ all_cards =
       , rules_text = Just "Deadly.\nResponse: After you win a Military challenge in which every attacking character has the Dothraki trait, move 1 power from the losing opponent's House card to your own."
       , flavor_text = Just "\"It shall be done, Khaleesi,\" Aggo said."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Queensguard" ]
       , strength = Just 3
@@ -29190,7 +29190,7 @@ all_cards =
       , rules_text = Just "Marshalling: Kneel Ambitious Oarsman or kneel a Warship location to reduce the cost of the next Raider character you play this phase by 1."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Raider" ]
       , strength = Just 1
@@ -29212,7 +29212,7 @@ all_cards =
       , rules_text = Just "Campfire Mime gains the traits of all other characters you control."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -29278,7 +29278,7 @@ all_cards =
       , rules_text = Just "If you control at least 3 other Asshai characters, Intolerant Priest gains +1 STR, a Holy crest, and a Military icon."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Asshai" ]
       , strength = Just 2
@@ -29344,7 +29344,7 @@ all_cards =
       , rules_text = Just "Renown.\nResponse: After you win an I challenge in which Melisandre participated, move 1 power from any character controlled by the losing opponent to Melisandre. Then, if that was the last power on that character, kill it."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Lady", "Asshai" ]
       , strength = Just 3
@@ -29410,7 +29410,7 @@ all_cards =
       , rules_text = Just "After you kneel Starfall Merchant to pay an influence cost, discard it from play (cannot be saved).\n[+3 Influence]"
       , flavor_text = Just "\"Two honors! Two! Two!\" The merchant was panting heavily from the effort of running backward."
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Dayne" ]
       , strength = Just 2
@@ -29432,7 +29432,7 @@ all_cards =
       , rules_text = Just "After a player wins a Military challenge against you, that player takes control of The Bastard's Elite."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "House Bolton" ]
       , strength = Just 4
@@ -29476,7 +29476,7 @@ all_cards =
       , rules_text = Just "Renown.\nIf you have no power on your House card, Thoros of Myr gains: \"Response: Kneel Thoros of Myr and discard a power from a character you control to save a Brotherhood character from being killed.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Brotherhood" ]
       , strength = Just 2
@@ -29498,7 +29498,7 @@ all_cards =
       , rules_text = Just "If you have no power on your House card, Tom Sevenstrings gains: \"Response: Kneel Tom Sevenstrings to cancel the effects of an event card just played.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Brotherhood" ]
       , strength = Just 2
@@ -29520,7 +29520,7 @@ all_cards =
       , rules_text = Just "Response: After Wicked Seductress is knelt, choose and kneel 1 character without an Intrigue icon."
       , flavor_text = Just "\"What do you mean, he sees no one?\"\n\"No one but her,\" said Salladhor Saan"
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Asshai", "Ally" ]
       , strength = Just 2
@@ -29586,7 +29586,7 @@ all_cards =
       , rules_text = Just "Prized 2. No attachments.\nDeadly. Renown.\nBlackwood Elite must be chosen for [Military] claim, if able."
       , flavor_text = Just "“Small wonder Lord Tywin ran off to fight Stannis. He'd had his fill of northmen and rivermen both.” –Robb Stark"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tully", "Army" ]
       , strength = Just 6
@@ -29630,7 +29630,7 @@ all_cards =
       , rules_text = Just "If you control a [Greyjoy] character, Dragon Ambassador gains deadly.\nIf you control a [Martell] character, Dragon Ambassador gains an [Intrigue] icon."
       , flavor_text = Just "“Is that the way of it? The gift you bring me is your own sweet self.” –Daenerys Targaryen"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman" ]
       , strength = Just 2
@@ -29696,7 +29696,7 @@ all_cards =
       , rules_text = Just "Prized 1. Renown.\nMad King Aerys cannot be killed unless an opponent controls a [Noble] character or Ser Jaime Lannister.\nDominance: Kneel Mad King Aerys to choose and kill a [Noble] character.\n\nCard designed by 2012 A Game of Thrones World Joust Champion John M. Bruno"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 4
@@ -29718,7 +29718,7 @@ all_cards =
       , rules_text = Just "If you control a [Baratheon] character, Northern Clansman gains renown.\nIf you control a [Lannister] character, Northern Clansman gains stealth."
       , flavor_text = Just "“At Winterfell we called them lords, but their own folk don't.” –Bran Stark"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "Clansman" ]
       , strength = Just 2
@@ -29740,7 +29740,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nResponse: After you win a challenge in which Orkwood Captain participated as an attacker, kneel all locations controlled by the defending player."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True }, Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Ironborn", "Captain" ]
       , strength = Just 3
@@ -29762,7 +29762,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nWhile Raider from Orkwood\nis participating in a challenge, characters with more than 1 icon do not count their STR."
       , flavor_text = Just "All around the sea was full of ships. Some were burning, some were sinking, some had been smashed to splinters."
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Raider" ]
       , strength = Just 2
@@ -29784,7 +29784,7 @@ all_cards =
       , rules_text = Just "Prized 2. Renown.\nResponse: After you win a challenge in which a prized character participated, Robert Baratheon claims 1 power."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "King" ]
       , strength = Just 4
@@ -29828,7 +29828,7 @@ all_cards =
       , rules_text = Just "House Lannister only. No attachments.\nResponse: After Ser Balon Swann comes out of Shadows, each opponent with 4 or more cards in hand chooses and discards a card from his or her hand."
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Kingsguard", "Knight" ]
       , strength = Just 2
@@ -30092,7 +30092,7 @@ all_cards =
       , rules_text = Just "Marshalling: Kneel House Bannerman to ignore all gold penalties on the next card you play this phase."
       , flavor_text = Just "All of them were bannermen to the Tullys, their swords sworn to the service of Riverrun. Catelyn wondered if that would be enough, if it came to war."
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "Ally" ]
       , strength = Just 1
@@ -30158,7 +30158,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nWhile Knight of the North is participating in a challenge, characters with more than 1 icon do not count their STR."
       , flavor_text = Just "Kingâ€™s men in one corner and queenâ€™s men in another, Jon did not fail to note, but only a few. Itâ€™s too cold for most of them."
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 3
@@ -30202,7 +30202,7 @@ all_cards =
       , rules_text = Just "Prized 2.\nResponse: After an opponent plays a character from his or her hand, discard Orkmont Reaver from\nplay (cannot be saved) to kill that character."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Raider" ]
       , strength = Just 3
@@ -30224,7 +30224,7 @@ all_cards =
       , rules_text = Just "Prized 1. Stealth.\nTyrion Lannister gains a military icon.\nEach card discarded from an opponentâ€™s hand reduces his or her draw cap by 1 (to a minimum of 0) until the end of the round."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Payne", "Squire" ]
       , strength = Just 2
@@ -30246,7 +30246,7 @@ all_cards =
       , rules_text = Just "Prized 1. Stealth.\nResponse: After Septon Utt enters or leaves play, draw 1 card if you are running the Neutral Faction House card."
       , flavor_text = Just "“I have sinned,” the septon wailed. “I know, I know. Forgive me, Father. Oh, grievously have I sinned.”"
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Septon", "Mercenary" ]
       , strength = Just 2
@@ -30268,7 +30268,7 @@ all_cards =
       , rules_text = Just "Stealth.\nThe first event card played by an opponent each round gains \"prized 1\" if The Bastard of Godsgrace is standing."
       , flavor_text = Just "“...Daemon Sand and this Santagar girl were both close to Prince Doran's own daughter, Arianne, or so the Dornishmen would have us believe.” –Qyburn"
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Bastard" ]
       , strength = Just 2
@@ -30400,7 +30400,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nResponse: After you play Zollo, choose an opponent. Move all gold from that player's gold pool to yours."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Mercenary" ]
       , strength = Just 2
@@ -30422,7 +30422,7 @@ all_cards =
       , rules_text = Just "Prized 1. No attachments. \nIf you control Young Griff, discard Young Griff from play.\nNon-Dragon characters without attachments get â€“1 STR."
       , flavor_text = Just "\"I will claim the Iron Throne by myself, with your swords and your allegiance.\""
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Lord", "King" ]
       , strength = Just 2
@@ -30466,7 +30466,7 @@ all_cards =
       , rules_text = Just "Prized 2. \nImmune to character abilities. \nResponse: After Catelyn Stark leaves play, choose a non-Army [Stark] character in your dead pile and put that character into play."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady", "House Tully" ]
       , strength = Just 3
@@ -30554,7 +30554,7 @@ all_cards =
       , rules_text = Just "Prized 2. Stealth.\nWhen a prized card is discarded from an opponent's hand, claim power for your House equal to that card's prized value."
       , flavor_text = Just "\"Things can change quickly in the game of thrones.\""
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Lord" ]
       , strength = Just 4
@@ -30576,7 +30576,7 @@ all_cards =
       , rules_text = Just "Melee.\nIf you win a challenge in which Enraged Crewman participated by 4 or more STR as the attacker, the challenge is considered unopposed."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Raider" ]
       , strength = Just 3
@@ -30598,7 +30598,7 @@ all_cards =
       , rules_text = Just "No attachments.\nFrey Armsmen gets +2 STR during [Military] challenges for each House Frey character you control."
       , flavor_text = Just "More and more riders were emerging from the castle, a column four wide with no end to it, knights and squires and freeriders, torches and longaxes."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "House Frey" ]
       , strength = Just 2
@@ -30620,7 +30620,7 @@ all_cards =
       , rules_text = Just "Response: After an attachment enters play, choose a player. Look at that player's hand."
       , flavor_text = Just "The spymaster was new to Griff, a Lyseni named Lysono Maarâ€¦"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Mercenary" ]
       , strength = Just 3
@@ -30664,7 +30664,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nResponse: After you win a [Power] challenge in which Seasoned Smuggler participated, choose and stand a prized card."
       , flavor_text = Just "\"...I heard it said that you were a bolder sort of man, the sort who might risk anything for sufficient gold.\" â€“Ser Gerris Drinkwater"
       , cost = Just 1
-      , icons = [  ]
+      , icons = [ Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Smuggler", "Ally" ]
       , strength = Just 2
@@ -30730,7 +30730,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nWhile Spy from Starfall is participating in a challenge, characters with more than 1 icon do not count their STR."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Dayne" ]
       , strength = Just 2
@@ -30774,7 +30774,7 @@ all_cards =
       , rules_text = Just "Prized 2.\nAfter a player counts income, he or she must choose and kill a character he or she controls."
       , flavor_text = Just "Card designed by 2012 A Game of Thrones European Joust Champion Stefano Montanari"
       , cost = Just 2
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Lord", "Ironborn", "Traitor" ]
       , strength = Just 2
@@ -30818,7 +30818,7 @@ all_cards =
       , rules_text = Just "Prized 2. No attachments.\nResponse: After you count income, pay 1 gold to draw 1 card.\n[+1 Income]"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Braavos" ]
       , strength = Just 3
@@ -30928,7 +30928,7 @@ all_cards =
       , rules_text = Just "House Martell only. Prized 1.\nResponse: After you lose a challenge, put Desert Raider into play from your dead pile. Then, choose a character and either an [Intrigue] or a [Power] icon. Until the end of the phase, the chosen character loses that icon and Desert Raider gains it."
       , flavor_text = Just "Card designed by 2012 A Game of Thrones European Melee Champion Istvan Cserdi"
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "House Dayne", "Ally" ]
       , strength = Just 2
@@ -30972,7 +30972,7 @@ all_cards =
       , rules_text = Just "If you control a [Stark] character, Frey Emissary gets +1 STR.\nIf you control a [Baratheon] character, Frey Emissary gains renown."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "House Frey" ]
       , strength = Just 2
@@ -30994,7 +30994,7 @@ all_cards =
       , rules_text = Just "Joust.\nKnight of the Songs gets +1 STR for each prized character you control."
       , flavor_text = Just "\"Winter will never come for the likes of us. Should we die in battle, they will surely sing of us, and it's always summer in the songs.\" \nâ€“Brienne of Tarth"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 2
@@ -31038,7 +31038,7 @@ all_cards =
       , rules_text = Just "Prized 1. Melee."
       , flavor_text = Just "They drifted inexorably toward the bridge. Yandry stabbed out with his pole to keep them from smashing into a pier."
       , cost = Just 2
-      , icons = [  ]
+      , icons = [ Icon_Intrigue { naval = True }, Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "The East" ]
       , strength = Just 2
@@ -31060,7 +31060,7 @@ all_cards =
       , rules_text = Just "If you control a [Stark] character, Rider from Storm's End gets +1 STR.\nIf you control a [Lannister] character, Rider from Storm's End gains stealth."
       , flavor_text = Just "Down in the yard below, a rider in a winged helm urged his well-lathered horse under the spikes. \"Summon the king!\" he called."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman" ]
       , strength = Just 2
@@ -31082,7 +31082,7 @@ all_cards =
       , rules_text = Just "Deadly.\nAny Phase: Choose a card in any player's discard or dead pile. Shuffle that card back into its owner's deck. (Limit once per round.)"
       , flavor_text = Just "\"I held Riverrun, and I bloodied Lord Tywinâ€™s nose.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "House Tully", "Knight", "Lord" ]
       , strength = Just 3
@@ -31104,7 +31104,7 @@ all_cards =
       , rules_text = Just "House Lannister only.\nNo attachments.\nEach character with a printed cost that is less than the number of characters in its controller's dead pile comes into play knelt."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Kingsguard", "Knight" ]
       , strength = Just 3
@@ -31126,7 +31126,7 @@ all_cards =
       , rules_text = Just "Prized 1. Deadly.\nIf you are running the Neutral Faction House card, Shagwell gains, \"Response: After you play a Mercenary character, choose and kneel a non-Army character. (Limit once per round.)\""
       , flavor_text = Just "\"You mustnâ€™t hurt sweet Shagwell, Iâ€™m too droll to die.\""
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Fool", "Mercenary" ]
       , strength = Just 2
@@ -31148,7 +31148,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nResponse: After you lose a challenge as the defender, reveal the top 2 cards of your deck. Put all revealed prized cards into your hand. Return all non-prized cards to the top of your deck in any order."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [  ]
+      , icons = [ Icon_Intrigue { naval = True }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "House Dayne" ]
       , strength = Just 2
@@ -31236,7 +31236,7 @@ all_cards =
       , rules_text = Just "Prized 1. Renown.\nResponse: After Vargo Hoat enters play, choose and kneel any player's House card. You may discard a character agenda from that House card."
       , flavor_text = Just "\"Thee'th worth a bag of thapphireth!\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "Mercenary" ]
       , strength = Just 3
@@ -31258,7 +31258,7 @@ all_cards =
       , rules_text = Just "House Targaryen only.\nPrized 1. \nAny Phase: Kneel Viserys Targaryen to choose and discard an attachment from play."
       , flavor_text = Just "\"Keep your hands off me! No one touches the dragon without leave.\""
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 1
@@ -31280,7 +31280,7 @@ all_cards =
       , rules_text = Just "Prized 1. Stealth.\nResponse: After you win an unopposed challenge in which Wex Pyke participated, choose 1 prized card in your dead or discard pile, and return it to your hand."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Squire" ]
       , strength = Just 1
@@ -31302,7 +31302,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nWhile Ashemark Councilor is participating in a challenge, characters with more than 1 icon do not count their STR."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Marbrand" ]
       , strength = Just 2
@@ -31346,7 +31346,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nDefenders of the Wall may be declared as a defender during [Military] challenges initiated against you by players running an agenda even if it is already kneeling."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Nightâ€™s Watch", "Army" ]
       , strength = Just 3
@@ -31390,7 +31390,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nChallenges: Choose an opponent who controls more characters than you. You may declare an additional [Intrigue] challenge against that opponent this phase. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Sand Snake", "Bastard" ]
       , strength = Just 2
@@ -31500,7 +31500,7 @@ all_cards =
       , rules_text = Just "If you control a [Greyjoy] character, House Dayne Escort gains deadly.\nIf you control a [Lannister] character, House Dayne Escort gains \"immune to plot effects.\""
       , flavor_text = Just "He could see their banners flying as the riders emerged from the green of the living wood in a long dusty column."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "House Dayne" ]
       , strength = Just 2
@@ -31544,7 +31544,7 @@ all_cards =
       , rules_text = Just "If you control a [Martell] character, Lonely Light Envoy gains an [Intrigue] icon.\nIf you control a [Targaryen] character, Lonely Light Envoy gains \"immune to plot effects.\""
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman" ]
       , strength = Just 2
@@ -31588,7 +31588,7 @@ all_cards =
       , rules_text = Just "Prized 2.\nResponse: After 1 or more cards are discarded from an opponent's hand, reveal the top card of your deck and add it to your hand."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Marbrand", "Ally" ]
       , strength = Just 2
@@ -31610,7 +31610,7 @@ all_cards =
       , rules_text = Just "Prized 1.\nWhile Riverlands Hunter is participating in a challenge, characters with more than 1 icon do not count their STR."
       , flavor_text = Just "Between rains, floods, fire, and war, they had lost two harvests and a good part of a third. An early winter would mean famine all across the riverlands."
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tully" ]
       , strength = Just 2
@@ -31654,7 +31654,7 @@ all_cards =
       , rules_text = Just "Response: After Seneschal Ricasso leaves play, choose a prized character in your dead or discard pile and put it into play under your control."
       , flavor_text = Just "“Best send a rider to Ricasso, and have him open my apartments in the Tower of the Sun.”\n–Doran Martell"
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -31808,7 +31808,7 @@ all_cards =
       , rules_text = Just "No attachments.\nNoble characters you control are immune to opponent's events."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 3
@@ -31852,7 +31852,7 @@ all_cards =
       , rules_text = Just "Challenges: Stand Osha to remove her from the current challenge."
       , flavor_text = Just "\"Off the horse, and throw down the sword. We'll thank you kindly for the mount and for the venison, and you and your brother can be on your way.\""
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling" ]
       , strength = Just 2
@@ -31896,7 +31896,7 @@ all_cards =
       , rules_text = Just "No attachments.Response: After you play Raiding Fleet from your hand, discard the top 8 cards of each opponent's deck."
       , flavor_text = Nothing
       , cost = Just 8
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Ironborn", "Army" ]
       , strength = Just 8
@@ -31918,7 +31918,7 @@ all_cards =
       , rules_text = Just "Discard Rattleshirt's Raiders from play at the end of any challenge phase in which they did not attack."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling", "Army" ]
       , strength = Just 4
@@ -31984,7 +31984,7 @@ all_cards =
       , rules_text = Just "Renown.Night's Watch characters you control get +1 STR."
       , flavor_text = Just "\"I was trying to win the throne to save the kingdom, when I should have been trying to save the kingdom to win the throne.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 3
@@ -32094,7 +32094,7 @@ all_cards =
       , rules_text = Just "After you play Treacherous Watchman from your hand, choose and discard 1 Lannister character from play."
       , flavor_text = Just "Would you leave your brother surrounded by Lannisters?"
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Traitor" ]
       , strength = Just 1
@@ -32138,7 +32138,7 @@ all_cards =
       , rules_text = Just "Any Phase: Put 1 Creature character into play from your hand to return Varamyr Sixskins to your hand. At the end of the phase, if that Creature is still in play, discard it from play (cannot be saved)."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling", "Skinchanger" ]
       , strength = Just 2
@@ -32160,7 +32160,7 @@ all_cards =
       , rules_text = Just "No attachments. Stealth. Discard White Hatchling from play any time you control Viserion. White Hatchling gains a Power icon during Power challenges initiated against you."
       , flavor_text = Just "The cream-colored dragon sunk sharp black claws into the lion's mane and coiled its tail around her arm..."
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 1
@@ -32204,7 +32204,7 @@ all_cards =
       , rules_text = Just "No attachments.\nAny Phase: Kneel Builder of the Watch to return the top 2 cards of your discard pile to the bottom of your deck. Then, your opponent may shuffle your deck."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Night's Watch" ]
       , strength = Just 2
@@ -32226,7 +32226,7 @@ all_cards =
       , rules_text = Just "If you win an unopposed challenge in which Crow Killers participated, discard them from play."
       , flavor_text = Just "The wildlings crawled over them like flies, stripping them of saddles, bridles, packs, and armor, and hacking them apart with stone axes."
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling", "Army" ]
       , strength = Just 3
@@ -32292,7 +32292,7 @@ all_cards =
       , rules_text = Just "Any Phase: Pay 2 gold to put Greedy Councilor into play from your discard pile."
       , flavor_text = Just "\"We might be able to buy them for half that much, but I prefer not to take chances.\" - Littlefinger"
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -32314,7 +32314,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel House Dayne Squire to reduce the cost of the next House Dayne character you play this phase by 1."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "House Dayne", "Ally" ]
       , strength = Just 0
@@ -32336,7 +32336,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel 1 Night's Watch or 1 Wildling character to choose another Night's Watch or Wildling character. Until the end of the phase, that character gains a War crest."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Night's Watch", "Wildling" ]
       , strength = Just 3
@@ -32380,7 +32380,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel Margaery Tyrell to choose an opponent. That opponent must choose and reveal a new plot card. (Limit once per round.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady", "House Tyrell" ]
       , strength = Just 3
@@ -32424,7 +32424,7 @@ all_cards =
       , rules_text = Just "While Orell the Eagle is attacking, opponents must declare at least 2 defenders in order to defend the challenge."
       , flavor_text = Just "Jon had slain the wildling Orell, but some part of the man remained within the eagle."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling", "Skinchanger" ]
       , strength = Just 3
@@ -32468,7 +32468,7 @@ all_cards =
       , rules_text = Just "Response: After you play Salladhor's Crew from your hand, reduce the gold cost of the next House Baratheon card you play this phase by 3."
       , flavor_text = Just "Salladhor Saan was a resourceful old pirate, and his crews were born seamen, fearless in a fight."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Mercenary" ]
       , strength = Just 3
@@ -32490,7 +32490,7 @@ all_cards =
       , rules_text = Just "Noble characters you control cannot lose icons, have their STR reduced, or be knelt by card effects."
       , flavor_text = Just "They are the lockstep legions of Old Ghis come again, absolutely obedient, absolutely loyal, and utterly without fear. - Kraznys mo Nakloz"
       , cost = Just 4
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Unsullied" ]
       , strength = Just 4
@@ -32622,7 +32622,7 @@ all_cards =
       , rules_text = Just "Stealth. No attachments except Weapon.\nResponse: After Benjen Stark comes into play, choose and stand 1 Night's Watch character or choose and kneel 1 Wildling character."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Night's Watch" ]
       , strength = Just 3
@@ -32798,7 +32798,7 @@ all_cards =
       , rules_text = Just "While Lord Tywin's Man is attacking, House Lannister characters cannot defend."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -32820,7 +32820,7 @@ all_cards =
       , rules_text = Just "Response: After a character's STR is reduced to 0, draw 1 card."
       , flavor_text = Just "A maegi was a woman who lay with demons and practiced the blackest of sorceries, a vile thing, evil and soulless."
       , cost = Just 3
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -32842,7 +32842,7 @@ all_cards =
       , rules_text = Just "Response: After you play Maester of Lemonwood from your hand, choose and discard any number of Condition attachments from play."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Maester" ]
       , strength = Just 2
@@ -32864,7 +32864,7 @@ all_cards =
       , rules_text = Just "No attachments.\nAt the end of the challenge phase, return Mammoth Riders to your hand if it is still in play. After you play Mammoth Riders, you cannot play any further cards from your hand this round."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Wildling", "Army" ]
       , strength = Just 8
@@ -32908,7 +32908,7 @@ all_cards =
       , rules_text = Just "Intimidate.\nAny Phase: Discard 1 card from your hand to give Nute the Barber +1 STR until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Ally", "Ironborn" ]
       , strength = Just 3
@@ -33040,7 +33040,7 @@ all_cards =
       , rules_text = Just "Response: After you win dominance, kneel Zealot of the Light to discard 1 card at random from any 1 opponent's hand."
       , flavor_text = Just "It takes years of training to see the shapes beyond the flames, and more years still to learn to tell the shapes of what will be from what may be or what was."
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Asshai" ]
       , strength = Just 3
@@ -33062,7 +33062,7 @@ all_cards =
       , rules_text = Just "Renown. Deadly. No attachments.\nResponse: After you play Balerion the Black from your hand, kneel all non-Dragon characters and locations."
       , flavor_text = Nothing
       , cost = Just 10
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 10
@@ -33216,7 +33216,7 @@ all_cards =
       , rules_text = Just "[+1 Income]"
       , flavor_text = Just "The Lannisters never declined, graciously, or otherwise. The Lannisters took what was offered."
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -33260,7 +33260,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel Mance Rayder to choose 1 The North agenda or location. Until the end of the phase, treat that card as if its printed text box were blank."
       , flavor_text = Just "\"The Wall can stop an army, but not a man alone.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "King", "Wildling" ]
       , strength = Just 3
@@ -33282,7 +33282,7 @@ all_cards =
       , rules_text = Just "Renown.Claim 1 additional power when you win dominance, and when you win an unopposed Intrigue or Power challenge."
       , flavor_text = Just "\"R'hllor who gave us breath, we thank you, R'hllor who gave us day, we thank you.\""
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Lady", "Asshai" ]
       , strength = Just 3
@@ -33326,7 +33326,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.Response: Kill Old Bear Mormont (cannot be saved) to cancel the \"when revealed\" effects of a plot card that has just been played."
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Night's Watch" ]
       , strength = Just 4
@@ -33348,7 +33348,7 @@ all_cards =
       , rules_text = Just "No attachments. Stealth.Response: After Reed's Crannogmen leaves play, choose 1 character. Stand or kneel that character."
       , flavor_text = Just "\"If the Lannisters come up the Neck, the crannogmen will bleed them every step of the way...\" - Robb Stark"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 3
@@ -33370,7 +33370,7 @@ all_cards =
       , rules_text = Just "Response: Kneel Starfall Healer and discard 1 gold token from a House Dayne character to save that character from being killed."
       , flavor_text = Just "\"Maester, could I trouble you for some milk of the poppy?\" - Prince Doran Martell"
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester", "House Dayne" ]
       , strength = Just 2
@@ -33392,7 +33392,7 @@ all_cards =
       , rules_text = Just "If Tarle the Thrice-Drowned has 3 power on him, discard him from play.\nResponse: Save Tarle the Thrice-Drowned from being killed. Then, he claims 1 power."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ironborn" ]
       , strength = Just 3
@@ -33480,7 +33480,7 @@ all_cards =
       , rules_text = Just "Any Phase: Reveal and draw the top card of your deck. Play that card as your next response or action, if able. Otherwise, discard it."
       , flavor_text = Just "\"Gods,\" Val whispered, \"gods, why are they doing this?\""
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling" ]
       , strength = Just 1
@@ -33502,7 +33502,7 @@ all_cards =
       , rules_text = Just "Acolyte of the Flame gets +1 STR while it is standing."
       , flavor_text = Just "\"Praise the Lord of Light!\""
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Asshai", "Ally" ]
       , strength = Just 2
@@ -33612,7 +33612,7 @@ all_cards =
       , rules_text = Just "Stealth. No attachments.\nAny Phase: Return Ghost to his owner's hand."
       , flavor_text = Just "Atop the stones of the ringwall, Ghost hunched with white fur bristling. He made no sound, but his dark red eyes spoke blood."
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Direwolf" ]
       , strength = Just 3
@@ -33634,7 +33634,7 @@ all_cards =
       , rules_text = Just "No attachments.\nDiscard Green Hatchling from play any time you control Rhaegal. Green Hatchling gains an Intrigue icon during Intrigue challenges initiated against you."
       , flavor_text = Just "Rhaegal unfolded green wings to flap and flutter a half foot before thumping to the carpet."
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 2
@@ -33656,7 +33656,7 @@ all_cards =
       , rules_text = Just "Stealth.\nAt the beginning of the dominance phase, pay 2 gold or discard Mercenaries from Pyke from play."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn", "Mercenary" ]
       , strength = Just 4
@@ -33766,7 +33766,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nYou may declare Ser Balon Swann as the defender of an Intrigue challenge against you even if he is already kneeling."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Kingsguard" ]
       , strength = Just 3
@@ -33788,7 +33788,7 @@ all_cards =
       , rules_text = Just "Starfall Advisor comes into play with 2 gold tokens from the treasury on him. Response: Discard 1 gold token from Starfall Advisor to cancel 1 event card or character ability that chooses a House Dayne character as a target."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Dayne" ]
       , strength = Just 2
@@ -33876,7 +33876,7 @@ all_cards =
       , rules_text = Just "Deadly. No attachments.\nReduce the cost to play The Wildling Horde by 1 for each The North agenda you are running."
       , flavor_text = Nothing
       , cost = Just 7
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Wildling", "Army" ]
       , strength = Just 8
@@ -33920,7 +33920,7 @@ all_cards =
       , rules_text = Just "Response: Kneel Wildling Wisewoman to cancel 1 card effect that would allow an opponent to draw 1 or more cards."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Wildling" ]
       , strength = Just 2
@@ -33986,7 +33986,7 @@ all_cards =
       , rules_text = Just "House Greyjoy only. Renown.\nResponse: After a card with the Shadow crest is discarded from a player's deck, kneel 1 influence or kneel a Noble character to put that card into Shadows under your control. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "Ironborn" ]
       , strength = Just 3
@@ -34030,7 +34030,7 @@ all_cards =
       , rules_text = Just "If it is Winter and you have at least 1 card in Shadows, opponents cannot declare Intrigue challenges against you."
       , flavor_text = Just "She was no longer as young as she had been."
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady" ]
       , strength = Just 3
@@ -34052,7 +34052,7 @@ all_cards =
       , rules_text = Just "Response: After you win an Intrigue challenge in which Cersei Lannister participated, choose and kneel up to X non-Army characters. X is the number of cards you control in Shadows."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady", "Queen" ]
       , strength = Just 3
@@ -34118,7 +34118,7 @@ all_cards =
       , rules_text = Just "Response: After you play Flea Bottom Scavenger from your hand, draw 3 cards if you have no power on your House card."
       , flavor_text = Just "Amidst the tumbles of rock, she spied brightly colored cloth and bits of shiny metal."
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -34140,7 +34140,7 @@ all_cards =
       , rules_text = Just "House Lannister only. No attachments except Weapon.\nResponse: After Gold Cloaks comes out of Shadows, draw a card for each Mercenary character you control."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Ally", "Mercenary" ]
       , strength = Just 4
@@ -34184,7 +34184,7 @@ all_cards =
       , rules_text = Just "Plot: Discard Moon Boy from play to choose an opponent with at least 1 plot card in his or her used plot pile. The next time that opponent must choose a plot this phase, the selection must come from his or her used plot pile. (Limit once per game.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Fool" ]
       , strength = Just 2
@@ -34206,7 +34206,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel Septa Mordane to choose an attacking character. Until the end of the phase, that character gets -X STR, where X is the number of cards in Shadows."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Septon" ]
       , strength = Just 2
@@ -34250,7 +34250,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel Street Waif to choose an opponent. If you have more than 1 card in your discard pile, that opponent must choose a card in your discard pile. Return the card to your hand."
       , flavor_text = Just "He was in a black mood, and not just because a few street urchins wanted to pelt him with dung."
       , cost = Just 2
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -34316,7 +34316,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nResponse: After you play The Hound from your hand, kneel all Knight characters in play."
       , flavor_text = Just "\"We'll see how brave you are then.\""
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Kingsguard" ]
       , strength = Just 4
@@ -34382,7 +34382,7 @@ all_cards =
       , rules_text = Just "House Stark only. \nIf it is Winter, Arya Stark gains Stealth and Deadly. If Arya Stark is killed, put her into Shadows instead of your dead pile."
       , flavor_text = Just "\"He made me a ghost instead of a mouse.\""
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Lady" ]
       , strength = Just 2
@@ -34470,7 +34470,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nResponse: After you win a challenge in which City Watch is participating, choose an opponent. At the beginnig of the next phase, that player must randomly choose one of his or her cards in Shadows, and either bring it out of Shadows (paying any necessary costs) or discard it from play."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Ally" ]
       , strength = Just 4
@@ -34536,7 +34536,7 @@ all_cards =
       , rules_text = Just "After you pay 3 or more gold for a card or effect, kneel Hungry Mob."
       , flavor_text = Just "The mob surged around her, shrieking, a maddened beast with a thousand faces."
       , cost = Just 0
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -34602,7 +34602,7 @@ all_cards =
       , rules_text = Just "Response: After an opponent plays an event card, take 1 gold from the treasury and add it to your gold pold."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Merchant" ]
       , strength = Just 1
@@ -34624,7 +34624,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Renown. No attachments except Weapon.\nResponse: After Ser Barristan Selmy comes out of Shadows, look at one opponent's hand. Then, name a non-plot card. No player can play that card during this phase."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Knight", "Kingsguard" ]
       , strength = Just 4
@@ -34646,7 +34646,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nResponse: After you win a challenge as the defender, choose and stand a Kingsguard character."
       , flavor_text = Just "Ser Meryn Trant simply did not care."
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Kingsguard" ]
       , strength = Just 2
@@ -34778,7 +34778,7 @@ all_cards =
       , rules_text = Just "House Lannister only. Stealth.\nResponse: After a card comes out of Shadows, Tyrion Lannister gets +2 STR and gains your choice of Deadly, Renown, No attachments, or Immune to Events until the end of the phase."
       , flavor_text = Just "\"Sorry. Dwarfs don't have to be tactful.\""
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -34800,7 +34800,7 @@ all_cards =
       , rules_text = Just "House Greyjoy only. No attachments.\nWharf Rats cannot be killed. After Wharf Rats' controller wins a challenge, discard the top card of its controller's deck. Response: After Wharf Rats comes out of Shadows, choose an opponent. That opponent takes control of Wharf Rats."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Creature" ]
       , strength = Just 2
@@ -34844,7 +34844,7 @@ all_cards =
       , rules_text = Just "Ancient Mariner gets -3 STR during Military challenges."
       , flavor_text = Just "His own hair was snow white as well, and his huge beard covered him like a blanket from cheeks to thighs, so it was hard to tell where the beard ended and the pelt began."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn" ]
       , strength = Just 4
@@ -34954,7 +34954,7 @@ all_cards =
       , rules_text = Just "Response: After you win a Power challenge in which Dornish Diplomat participated, choose and stand a character controlled by an opponent. Then, choose and stand a character you control."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -34976,7 +34976,7 @@ all_cards =
       , rules_text = Just "Response: Discard Jeyne Poole from play to cancel the triggered effect of a card that just came out of Shadows."
       , flavor_text = Just "Jeyne was only a steward's daughter, after all..."
       , cost = Just 0
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 0
@@ -35020,7 +35020,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. \nResponse: After King's Landing Assassin comes out of Shadows, choose a character with no attachments. Until the end of the phase, that character gets -2 STR and is killed if its STR is 0."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -35042,7 +35042,7 @@ all_cards =
       , rules_text = Just "Renown.\nIf there are no cards in Shadows, Knight of Flowers does not kneel to attack or defend."
       , flavor_text = Just "This is what it does to you, to be too good too young."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight", "House Tyrell" ]
       , strength = Just 3
@@ -35064,7 +35064,7 @@ all_cards =
       , rules_text = Just "Stealth. No Condition attachments.\nLittlefinger does not kneel to attack. Reduce the cost to play Littlefinger by 1 for each card in Shadows."
       , flavor_text = Just "\"I do not trust him. Nor should you.\" - Tyrion Lannister"
       , cost = Just 5
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "Ally" ]
       , strength = Just 3
@@ -35086,7 +35086,7 @@ all_cards =
       , rules_text = Just "House Lannister only. Deadly.\nResponse: After Qyburn comes out of Shadows, choose a non-Army character in an opponent's dead pile. Put that character into play under your control. If that character is still in play at the end of the phase, return it to its owner's dead pile."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Maester" ]
       , strength = Just 2
@@ -35108,7 +35108,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nChallenges: Kneel Ser Osmund Kettleblack to choose a defending character. Until the end of the phase, that character gets +2 STR (+4 STR instead if that character has the Kingsguard trait)."
       , flavor_text = Just "\"Ser Osmund is as loyal as he is brave.\" - Cersei Lannister"
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Knight", "Kingsguard" ]
       , strength = Just 3
@@ -35130,7 +35130,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. \nResponse: After Shadow Prophet comes out of Shadows, you may look at 1 card in Shadows controlled by each opponent."
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Asshai" ]
       , strength = Just 3
@@ -35218,7 +35218,7 @@ all_cards =
       , rules_text = Just "Stealth.\nAfter Varys comes out of Shadows, choose and discard 1 Ally character from play."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Lord", "Ally" ]
       , strength = Just 3
@@ -35262,7 +35262,7 @@ all_cards =
       , rules_text = Just "House Greyjoy only. No attachments except Weapon.\nResponse: After Blackwater Raiders come out of Shadows, choose a location in an opponent's discard pile. Put that location into play under your control."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 2
@@ -35306,7 +35306,7 @@ all_cards =
       , rules_text = Just "Renown.\nHouse Targaryen characters you control gain a War crest."
       , flavor_text = Just "\"Traitors have always paid with their lives.\" - Ser Davos Seaworth"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard" ]
       , strength = Just 4
@@ -35328,7 +35328,7 @@ all_cards =
       , rules_text = Just "Distinguished Boatswain gets -2 STR for each card in Shadows."
       , flavor_text = Just "\"Lordsport has no lack of strong arms.\" - Theon Greyjoy"
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn" ]
       , strength = Just 4
@@ -35394,7 +35394,7 @@ all_cards =
       , rules_text = Just "Immune to triggered effects.\nResponse: After an opponent's character is knelt, pay 1 gold to stand Joffrey Baratheon. Then, he claims 1 power."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -35438,7 +35438,7 @@ all_cards =
       , rules_text = Just "Response: After a card comes out of Shadows, choose a non-Lady character. Until the end of the phase, treat that character as if its printed text box was blank."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "House Tyrell", "Lady" ]
       , strength = Just 3
@@ -35460,7 +35460,7 @@ all_cards =
       , rules_text = Just "If there are no cards in Shadows, Sansa Stark gets +2 STR, a Noble crest, and gains Renown."
       , flavor_text = Just "\"It's better than the songs.\""
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady" ]
       , strength = Just 2
@@ -35504,7 +35504,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nResponse: Stand Ser Dontos Hollard to save a Lady character from being killed or discarded from play."
       , flavor_text = Just "\"... all those years I was a knight, I was truly a fool, and now that I am a fool I think... I think I may find it in me to be a knight again...\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Fool" ]
       , strength = Just 1
@@ -35526,7 +35526,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After you win a challenge in which Syrio Forel participated, put him into Shadows."
       , flavor_text = Just "\"I am your dancing master.\""
       , cost = Just 0
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -35592,7 +35592,7 @@ all_cards =
       , rules_text = Just "House Baratheon only. \nResponse: After a card comes out of Shadows, The Queen of Thorns claims 1 power. (Limit once per phase.)"
       , flavor_text = Just "\"Here, Sansa, sit here next to me, I'm much less boring than these others.\""
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "House Tyrell", "Lady" ]
       , strength = Just 3
@@ -35636,7 +35636,7 @@ all_cards =
       , rules_text = Just "House Martell only. \nIf you are not running an Agenda, The Red Viper gains: \"Response: After The Red Viper is killed, kill all characters in play.\""
       , flavor_text = Just "\"It is me you must contend with now, not my patient, prudent, and gouty brother.\""
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 4
@@ -35812,7 +35812,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Renown. No attachments.\nResponse: After a character with STR 2 or lower is killed, stand Free Cities Mercenaries."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 6
@@ -35834,7 +35834,7 @@ all_cards =
       , rules_text = Just "House Greyjoy only. Renown. No attachments.\nResponse: After you win an unopposed challenge in which Island Mercenaries participated, they claim 1 power."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 6
@@ -35922,7 +35922,7 @@ all_cards =
       , rules_text = Just "Reduce the cost to play Weapon attachments on Peasant Defenders by 1.\nIf Peasant Defenders has a Weapon attachment, they get +3 STR and do not kneel to defend."
       , flavor_text = Just "Men would fight for the honor of protecting them."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -35944,7 +35944,7 @@ all_cards =
       , rules_text = Just "Response: After Pyromancer's Apprentice comes out of Shadows, choose a location controlled by an opponent. That location's controller must pay 1 gold to you or discard that location from play."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -36010,7 +36010,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: Kneel Ser Davos Seaworth to save an atttachment on a character from being discarded from play. Then, attach it to another eligible character, if able."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 3
@@ -36032,7 +36032,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nChallenges: Bring Ser Mandon Moore out of Shadows and into play by paying the rest of his gold cost.\nResponse: After you win a challenge in which Ser Mandon Moore participated as the defender, choose and kill a participating character."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Knight", "Kingsguard" ]
       , strength = Just 3
@@ -36054,7 +36054,7 @@ all_cards =
       , rules_text = Just "House Martell only. Renown. No attachments.\nResponse: After you win a challenge in which Southron Mercenaries participated, move 1 power from the losing opponent's House card to your own."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Army", "Mercenary" ]
       , strength = Just 6
@@ -36120,7 +36120,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nChallenges: Kneel Veteran Spearman to choose an opponent's character. Until the end of the phase, that character cannot be chosen to die as the result of Military challenge claim."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Mercenary" ]
       , strength = Just 2
@@ -36208,7 +36208,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which Dornish Paramour participated, discard it from play to draw 2 cards."
       , flavor_text = Just "She is not truly beautiful, but something about her draws the eye."
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -36230,7 +36230,7 @@ all_cards =
       , rules_text = Just "Renown.\nIf you have a House Baratheon House card, reduce the gold penalty to play Eddard Stark by 1.\nResponse: Cancel a triggered effect that chooses a Noble character as the only target. Then, draw a card. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -36252,7 +36252,7 @@ all_cards =
       , rules_text = Just "Response: After you win a Military challenge in which Harbor Thug participated, discard the top card of the losing opponent's deck. If that card is a character, Harbor Thug claims 1 power."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -36274,7 +36274,7 @@ all_cards =
       , rules_text = Just "Renown.\nJon Arryn cannot be saved. Response: After Jon Arryn is killed, put a Noble character into play from your hand or discard pile."
       , flavor_text = Just "The Lord of the Eyrie had raised his moon-and-falcon banners in revolt rather than give those he had pledged to protect."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "House Arryn" ]
       , strength = Just 4
@@ -36318,7 +36318,7 @@ all_cards =
       , rules_text = Just "Challenges: Kneel Merchant Spy and move 1 gold from your gold pool to an opponent's gold pool to look at that player's hand. Then, you may give that opponent an additional 1 gold to choose and discard an attachment card from his or her hand."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -36340,7 +36340,7 @@ all_cards =
       , rules_text = Just "Renown.\nAny phase: Stand Robert Baratheon. Use this ability only if there are no cards in Shadows. Limit 3 times per phase."
       , flavor_text = Just "\"I swear to you, sitting a throne is a thousand times harder than winning one.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 3
@@ -36362,7 +36362,7 @@ all_cards =
       , rules_text = Just "House Baratheon only. \nResponse: After you play a Lord or Lady character from your hand, put Royal Entourage into play from your hand or discard pile."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 3
@@ -36384,7 +36384,7 @@ all_cards =
       , rules_text = Just "Response: After you win an Intrigue challenge in which Seaside Urchin participated, discard the top card of the losing opponent's deck. If that card is an attachment or an event card, Seaside Urchin claims 1 power."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -36406,7 +36406,7 @@ all_cards =
       , rules_text = Just "Deadly.\nResponse: After you win a challenge in which Ser Jaime Lannister participated, choose and kneel a non-Army character."
       , flavor_text = Just "\"There are no men like me.\""
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 3
@@ -36428,7 +36428,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nResponse: After you win a challenge in which Ser Preston Greenfield participated as the defender, he claims 1 power."
       , flavor_text = Just "\"Your Grace, the sight of our white cloaks might enrage the mob.\" - Ser Boros Blount"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Kingsguard" ]
       , strength = Just 3
@@ -36560,7 +36560,7 @@ all_cards =
       , rules_text = Just "Renown.\nResponse: After you win a challenge in which Tywin Lannister participated, choose a card with the Shadow crest that is currently in play. That card returns to Shadows."
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord" ]
       , strength = Just 4
@@ -36582,7 +36582,7 @@ all_cards =
       , rules_text = Just "No attachments. \nIf you are not running an agenda, Alleras gains: \"Response: After an opponent running an agenda wins a challenge as the attacker against you, name a challenge type. That player cannot declare attackers or defenders during that challenge type until the end of the phase. (Limit once per phase.)\""
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Citadel" ]
       , strength = Just 2
@@ -36626,7 +36626,7 @@ all_cards =
       , rules_text = Just "Renown. \nNo attachments.\nViserion cannot be killed."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 4
@@ -36670,7 +36670,7 @@ all_cards =
       , rules_text = Just "If you control more locations than each opponent, Gran Goodbrother cannot be killed or discarded from play."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman" ]
       , strength = Just 2
@@ -36692,7 +36692,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which Grand Maester Pycelle participated, discard up to 2 cards at random from the losing opponent's hand. Then, that player adds that same number of cards from the top of his deck to his hand."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester" ]
       , strength = Just 3
@@ -36736,7 +36736,7 @@ all_cards =
       , rules_text = Just "Stealth. Immune to opponents' events.\nReduce the cost to bring Littlefinger out of shadows by a single opponent's (your choice) current power total.\nIncrease the claim value on your revealed plot card by 1 when attacking an opponent with more power than you."
       , flavor_text = Just "Card designed by the player community at Days of Ice and Fire 2012."
       , cost = Just 10
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Lord", "Ally" ]
       , strength = Just 3
@@ -36780,7 +36780,7 @@ all_cards =
       , rules_text = Just "Renown.\nIf it is not Summer, reduce the amount of power required for each player to win the game by 1 for each power on Mace Tyrell."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tyrell", "Lord" ]
       , strength = Just 3
@@ -36802,7 +36802,7 @@ all_cards =
       , rules_text = Just "House Baratheon only.\nResponse: After Maester Cressen comes out of shadows or after he is killed, return the topmost card of your discard pile to your hand."
       , flavor_text = Nothing
       , cost = Just 0
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Maester" ]
       , strength = Just 2
@@ -36824,7 +36824,7 @@ all_cards =
       , rules_text = Just "Deadly. \nNo attachments.\nDrogon cannot be killed."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 3
@@ -36890,7 +36890,7 @@ all_cards =
       , rules_text = Just "Response: After you play Sansa Stark from your hand, search your deck for a card. If you have the fewest cards at your command, add it to your hand. Otherwise, discard it. Shuffle your deck."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady" ]
       , strength = Just 2
@@ -36934,7 +36934,7 @@ all_cards =
       , rules_text = Just "Southron Heiress gains stealth and deadly when attacking a player who controls more characters than you."
       , flavor_text = Just "\"It would gladden my heart if I could assure you that the Sand Snakes were alone in wanting war, but I will not tell you lies, ser.\" \nâ€“Doran Martell"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Sand Snake", "Bastard", "Ally" ]
       , strength = Just 2
@@ -37000,7 +37000,7 @@ all_cards =
       , rules_text = Just "Stealth.\nNo attachments.\nRhaegal cannot be killed."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Creature", "Dragon" ]
       , strength = Just 3
@@ -37066,7 +37066,7 @@ all_cards =
       , rules_text = Just "House Greyjoy only.\nRenown.\nIf it is Winter, each of your characters gets +2 STR while you control more locations than each opponent."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "Ironborn" ]
       , strength = Just 3
@@ -37088,7 +37088,7 @@ all_cards =
       , rules_text = Just "If it is Winter, Bran Stark gains, \"Challenges: During a challenge, kneel Bran Stark to choose and kneel a standing, non-participating, non-Army character with higher STR than printed cost. That character is now participating in the current challenge on your side.\""
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Skinchanger", "Lord" ]
       , strength = Just 2
@@ -37110,7 +37110,7 @@ all_cards =
       , rules_text = Just "If you control more locations than each opponent, Damphair's Drowned gets +1 STR and gains an [Intrigue] icon with a [Naval] enhancement."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Ironborn" ]
       , strength = Just 1
@@ -37132,7 +37132,7 @@ all_cards =
       , rules_text = Just "Response: After you play Dothraki Vanguard from your hand, reveal the top 5 cards of your deck. You may put 1 revealed Dothraki character into play. Shuffle the other cards back into your deck."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "Dothraki" ]
       , strength = Just 2
@@ -37154,7 +37154,7 @@ all_cards =
       , rules_text = Just "House Martell only. Stealth.\nWhile it is Summer, Ellaria Sand gains: \"Response: After an opponent plays or puts a character into play, Ellaria Sand claims 2 power if that player controls more characters than you. (Limit 3 times per phase.)\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lady", "Bastard" ]
       , strength = Just 3
@@ -37198,7 +37198,7 @@ all_cards =
       , rules_text = Just "House Targaryen only. Renown.\nIf it is Summer, each of your characters gets +2 STR while you control more attachments than each opponent."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord", "Dothraki" ]
       , strength = Just 3
@@ -37220,7 +37220,7 @@ all_cards =
       , rules_text = Just "No attachments.\nResponse: After you win a [Military] challenge in which King's Landing Guard participated, discard 1 card at random from the losing player's hand."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 5
@@ -37264,7 +37264,7 @@ all_cards =
       , rules_text = Just "House Martell only.\nAny Phase: If it is Summer, discard Oberynâ€™s Shield Bearer (cannot be saved) to cancel the next 3 effects triggered by a single opponent (of your choice) this round."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "Ally" ]
       , strength = Just 2
@@ -37286,7 +37286,7 @@ all_cards =
       , rules_text = Just "Renown. Deadly.\nIf it is Summer, kneel Ser Garlan Tyrell and discard all power from him."
       , flavor_text = Just "\"That was ill done, Your Grace...\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Knight", "House Tyrell" ]
       , strength = Just 3
@@ -37308,7 +37308,7 @@ all_cards =
       , rules_text = Just "Ser Imry Florent cannot be returned to your hand.\nIf it is Summer or Winter, Ser Imry Florent gets +2 STR and gains deadly."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "Knight" ]
       , strength = Just 1
@@ -37418,7 +37418,7 @@ all_cards =
       , rules_text = Just "House Lannister only.\nAny Phase: If it is Summer, kneel Tommen Baratheon to look at the top 4 cards of your deck. Switch any 1 of those cards with a card in your hand, if able. Then, put the remaining cards on top of your deck in any order."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "King", "Lord" ]
       , strength = Just 1
@@ -37484,7 +37484,7 @@ all_cards =
       , rules_text = Just "Renown.\nIf any opponent has more power on his or her House card than you, Asha Greyjoy cannot be killed."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [  ]
+      , icons = [ Icon_Military { naval = True }, Icon_Intrigue { naval = True }, Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Lady", "Ironborn" ]
       , strength = Just 3
@@ -37506,7 +37506,7 @@ all_cards =
       , rules_text = Just "Any Phase: Discard a card from your hand to draw 1 card."
       , flavor_text = Just "\"Kevan, I want Ser Addam's outriders to screen our movements. Give him as many men as he requires, and send them out in groups of four.\" â€“Tywin Lannister"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "Knight" ]
       , strength = Just 2
@@ -37528,7 +37528,7 @@ all_cards =
       , rules_text = Just "Deadly. \nBrightwater Man-at-Arms does not kneel to attack or defend.\nAt the end of the dominance phase, discard Brightwater Man-at-Arms from play."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "House Florent" ]
       , strength = Just 4
@@ -37616,7 +37616,7 @@ all_cards =
       , rules_text = Just "While any opponent's House card has more power than your House card, Gendry gains, \"Response: After you win a challenge in which Gendry participated, move 1 power from the losing player's House card to Gendry.\""
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Brotherhood", "Ally", "Bastard" ]
       , strength = Just 1
@@ -37682,7 +37682,7 @@ all_cards =
       , rules_text = Just "While any opponent's House card has more power than your House card, Harwin gains, \"Response: After you win a [Military] challenge, search your deck for a card, shuffle your deck, and then put that card on top of your deck.\""
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Brotherhood" ]
       , strength = Just 2
@@ -37704,7 +37704,7 @@ all_cards =
       , rules_text = Just "Immune to events.\nWhile any opponent's House card has more power than your House card, Lady of the Leaves gains, \"Any Phase: Kneel Lady of the Leaves to choose a character. Until the end of the phase, treat that character as if its printed text box were blank.\""
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Brotherhood" ]
       , strength = Just 2
@@ -37726,7 +37726,7 @@ all_cards =
       , rules_text = Just "Obara Sand gets +2 STR and gains renown while she is attacking a player who controls more characters than you."
       , flavor_text = Just "\"Give me back my spear, Uncle. Cersei sent us a head. We should send her back a bag of them.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Sand Snake", "Bastard" ]
       , strength = Just 3
@@ -37814,7 +37814,7 @@ all_cards =
       , rules_text = Just "Renown.\nResponse: After you win a challenge in which Robb Stark participated, choose and kill a character \nwith a higher STR than its printed cost. (Cannot be saved.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -37836,7 +37836,7 @@ all_cards =
       , rules_text = Just "Response: After a card is discarded from any player's hand, Ser Gregor's Dog gets +1 STR until the end of the phase."
       , flavor_text = Just "Dogs, his father called them all, and he used them like dogs, to hound his prey and put fear in their hearts"
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Mercenary" ]
       , strength = Just 0
@@ -37902,7 +37902,7 @@ all_cards =
       , rules_text = Just "Any Phase: Discard a card from your hand to choose a character. Until the end of the phase, that character gets +3 STR during [Power] challenges for each Bannerman character you control."
       , flavor_text = Just "\"...in place of coin I have taken a handsome parchment, very crisp. It bears the name and seal of Lord Alester Florent, the Hand of the King.\" - Salladhor Saan"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Bannerman", "Lord" ]
       , strength = Just 3
@@ -38012,7 +38012,7 @@ all_cards =
       , rules_text = Just "Any Phase: Discard a card from your hand to choose a character. Until the end of the phase, that character gets +3 STR during [Intrigue] challenges for each Bannerman character you control."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "Lord" ]
       , strength = Just 3
@@ -38034,7 +38034,7 @@ all_cards =
       , rules_text = Just "Any Phase: Discard a card from your hand to choose X characters. Until the end of the phase, those characters gain, \"immune to events.\" X is the number of bannerman characters you control."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "House Dayne" ]
       , strength = Just 3
@@ -38056,7 +38056,7 @@ all_cards =
       , rules_text = Just "Any Phase: Discard a card from your hand to choose and kneel X locations. X is the number of Bannerman characters you control."
       , flavor_text = Just "\"I must send word to Pyke, and soon,\" said Gorold Goodbrother. \"Damphair, I would have your counsel. What shall it be, homage or defiance?\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "Lord" ]
       , strength = Just 3
@@ -38122,7 +38122,7 @@ all_cards =
       , rules_text = Just "Any Phase: Discard a card from your hand to choose a character. Until the end of the phase, that character gets +1 STR for each Bannerman character you control."
       , flavor_text = Just "\"Crow-food, they call him. A crow once took him for dead and pecked out his eye. He caught the bird in his fist and bit its head off.\" - Jon Snow"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "House Umber" ]
       , strength = Just 3
@@ -38254,7 +38254,7 @@ all_cards =
       , rules_text = Just "Any Phase: Discard a card from your hand to put an attachment of cost X or lower into play from your hand. X is the number of Bannerman characters you control."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "Knight" ]
       , strength = Just 3
@@ -38408,7 +38408,7 @@ all_cards =
       , rules_text = Just "Coldhands cannot be saved.\nResponse: After you play Coldhands from your hand, choose 1 non-Army character controlled by each player, if able,and remove those characters from the game. When Coldhands leaves play, return the removed cards to play under their owners' control."
       , flavor_text = Just "Card designed by 2011 AGoT LCG World Joust Champion Brett Zeiler."
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "The North" ]
       , strength = Just 3
@@ -38430,7 +38430,7 @@ all_cards =
       , rules_text = Just "House Martell only.\nResponse: After you lose a challenge, put Dayne Spearman into shadows to choose a character. That character loses a [Military], an [Intrigue], and a [Power] icon until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "House Dayne" ]
       , strength = Just 2
@@ -38474,7 +38474,7 @@ all_cards =
       , rules_text = Just "Stealth.\nWhen Eastwatch Envoy gains an icon, it also gains a [Naval] enhancement with that icon."
       , flavor_text = Just "Cotter Pyke had written from Eastwatch to report that the Storm Crow had sighted the wreckage of a galley along the coast of Skagos."
       , cost = Just 2
-      , icons = [  ]
+      , icons = [ Icon_Power { naval = True } ]
       , crest = [  ]
       , traits = [ "Night's Watch" ]
       , strength = Just 3
@@ -38496,7 +38496,7 @@ all_cards =
       , rules_text = Just "Response: Kneel Gormond Goodbrother to save a location you control from being discarded from play."
       , flavor_text = Just "\"Aye, and which are you?\" Aeron demanded. \n\"Gormond. Gormond Goodbrother, if it please my lord.\""
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bannerman", "Lord" ]
       , strength = Just 2
@@ -38518,7 +38518,7 @@ all_cards =
       , rules_text = Just "No attachments.\nWhile Hammerhorn Raiders is attacking, raise the claim value on your revealed plot card by 1 if you win the challenge by counting at least twice as much STR as the defending player."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army" ]
       , strength = Just 4
@@ -38540,7 +38540,7 @@ all_cards =
       , rules_text = Just "Response: After 1 or more cards are discarded from an opponent's hand, stand Janos Slynt to draw 1 card."
       , flavor_text = Just "\"I am Janos Slynt, Lord of Harrenhal, and commander here at Castle Black until such time as Bowen Marsh returns with his garrison.\""
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Night's Watch", "Ally" ]
       , strength = Just 2
@@ -38562,7 +38562,7 @@ all_cards =
       , rules_text = Just "Response: After you play Janos's Conspirator from your hand, choose and kneel a character if \nthere is a Wildling or another Night's Watch character in play."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Night's Watch" ]
       , strength = Just 2
@@ -38584,7 +38584,7 @@ all_cards =
       , rules_text = Just "Deadly.\nYour Wildling characters get +1 STR.\nYour Night's Watch characters gain \"immune to events.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard", "Night's Watch", "Wildling" ]
       , strength = Just 2
@@ -38694,7 +38694,7 @@ all_cards =
       , rules_text = Just "House Baratheon only.\nRenown.\nIf it is Winter, Stannis Baratheon gets +1 STR and gains, \"Response: After you play an event card, choose a character without any power on it. That character claims 1 power.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "King" ]
       , strength = Just 3
@@ -38716,7 +38716,7 @@ all_cards =
       , rules_text = Just "Ally characters cannot be declared as defenders while Viperâ€™s Paramour is attacking."
       , flavor_text = Just "\"Did you tire of your paramour on the road?\"\nâ€“Tyrion Lannister"
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -38738,7 +38738,7 @@ all_cards =
       , rules_text = Just "Response: After you play Ygritte from your hand, choose and take control of a neutral or Night's Watch character until Ygritte leaves play."
       , flavor_text = Just "\"You know nothing, Jon Snow.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Wildling" ]
       , strength = Just 2
@@ -38760,7 +38760,7 @@ all_cards =
       , rules_text = Just "If it is not Summer, Yoren can defend [Intrigue] challenges declared against you, even while kneeling."
       , flavor_text = Just "Yoren was stooped and sinister, his features hidden behind a beard as black as his clothing, but he seemed as tough as an old root and as hard as stone."
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Night's Watch", "Ally" ]
       , strength = Just 2
@@ -38782,7 +38782,7 @@ all_cards =
       , rules_text = Just "Deadly. \nChallenges: Discard 1 card from your hand to choose 1 character participating in the same challenge with Black Ears. If you have fewer cards in hand than each opponent, remove that character from the challenge.(Limit once per challenge)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Clansman" ]
       , strength = Just 4
@@ -38980,7 +38980,7 @@ all_cards =
       , rules_text = Just "Limited."
       , flavor_text = Just "Aeron Damphair stepped forward once more. \"I ask again. Who shall be king over us?\" \"Me!\" a deep voice boomed and once more the crowd parted."
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Ironborn", "Lord" ]
       , strength = Just 3
@@ -39002,7 +39002,7 @@ all_cards =
       , rules_text = Just "Response: After a player wins an Intrigue challenge, pay 1 gold to have Maester Creylen claim 1 power."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester" ]
       , strength = Just 3
@@ -39024,7 +39024,7 @@ all_cards =
       , rules_text = Just "[+2 Influence]"
       , flavor_text = Just "A maester traveled with them too, a maester skilled in tongues."
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester" ]
       , strength = Just 2
@@ -39046,7 +39046,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which Maester Luwin participated, search the top 5 cards of your deck for an event card, reveal it, and add it to your hand. Shuffle the other cards back into your deck."
       , flavor_text = Just "Listen, and it may be that you will learn something of what lordship is all about."
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester" ]
       , strength = Just 3
@@ -39068,7 +39068,7 @@ all_cards =
       , rules_text = Nothing
       , flavor_text = Just "\"Pray all you wish,\" the maester said. \"It does not change the law.\""
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Maester" ]
       , strength = Just 1
@@ -39134,7 +39134,7 @@ all_cards =
       , rules_text = Just "Immune to opponents' events.\nWhile Riders of the Red Fork is in your deck, it meets the criteria to be found by any search effect."
       , flavor_text = Just "The crossing was guarded by a mixed force of archers and pikemen wearing the eagle badge of the Mallisters."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "House Tully" ]
       , strength = Just 3
@@ -39156,7 +39156,7 @@ all_cards =
       , rules_text = Just "Response: After you win an Intrigue challenge in which Shadow Seer participated, put a card with the Shadow crest into Shadows from your hand."
       , flavor_text = Just "To go forward you must go back, and to touch the light you must pass beneath the shadow."
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Asshai", "Ally" ]
       , strength = Just 2
@@ -39178,7 +39178,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel Shireen Baratheon to choose a character. Until the end of the phase, that character cannot claim power."
       , flavor_text = Just "Shrieen was a summer child, and had never known true cold."
       , cost = Just 1
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Holy ]
       , traits = [ "Lady" ]
       , strength = Just 1
@@ -39310,7 +39310,7 @@ all_cards =
       , rules_text = Just "Renown.\nTargaryen characters you control get +1 STR."
       , flavor_text = Just "\"The blood of my enemies I will shed gladly. The blood of innocents is another matter.\""
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady", "Queen" ]
       , strength = Just 3
@@ -39332,7 +39332,7 @@ all_cards =
       , rules_text = Just "Infamy.\nResponse: After you win dominance by 4 or more total STR, pay X gold to claim X power for Daven Lannister. X is the number of power currently on Daven Lannister (Limit once per game.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 3
@@ -39398,7 +39398,7 @@ all_cards =
       , rules_text = Just "The cost to play non-Noble cards cannot be reduced."
       , flavor_text = Just "This would-be king was a tall spare lord with a melancholy visage, his lantern jaw shaved clean."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Ironborn", "Lord", "Ally" ]
       , strength = Just 3
@@ -39420,7 +39420,7 @@ all_cards =
       , rules_text = Just "No Attachments. Renown.\nLeyton Hightower cannot be saved.\n\nMaester characters you control gain: \"immune to opponents' events and attachments.\""
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "House Hightower" ]
       , strength = Just 3
@@ -39442,7 +39442,7 @@ all_cards =
       , rules_text = Just "Response: After Lucas Blackwood is killed, you may initiate a Military challenge against an opponent of your choice as your next player action this phase."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tully" ]
       , strength = Just 1
@@ -39486,7 +39486,7 @@ all_cards =
       , rules_text = Just "If Oldtown Advisor has at least 2 Chain attachments attached, it gains: \"Response: Kneel Oldtown Advisor to cancel the effects of an event card just played.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester", "House Hightower" ]
       , strength = Just 2
@@ -39574,7 +39574,7 @@ all_cards =
       , rules_text = Just "House Baratheon only. Deadly.\nWhile The Laughing Storm is standing, cards cannot be discarded from your hand."
       , flavor_text = Just "\"Ha ha ha! Ha ha ha ha ha!\"\nCard designed by 2010 A Game of Thrones World Joust Champion, Alec Irwin"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Knight" ]
       , strength = Just 3
@@ -39618,7 +39618,7 @@ all_cards =
       , rules_text = Just "[+1 Influence]"
       , flavor_text = Just "He was only a captain of guards, and still a stranger to this land and its seven-faced god, even after all these years."
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -39728,7 +39728,7 @@ all_cards =
       , rules_text = Just "Challenges: Corrupt Contender gets +10 STR until the end of the challenge. After the challenge resolves, discard Corrupt Contender from play (cannot be saved). Limit once per challenge."
       , flavor_text = Just "... however strong or fast or skilled a knight may be, there are others who can match him."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Ally" ]
       , strength = Just 2
@@ -39750,7 +39750,7 @@ all_cards =
       , rules_text = Just "If you control a War character, Faceless Man gets +2 STR.\nIf you control a Shadow character, Faceless Man gains Stealth.\nIf you control a Holy character, Faceless Man gains deadly.\nIf you control a Noble character, Faceless Man gains a Power icon."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -39772,7 +39772,7 @@ all_cards =
       , rules_text = Just "Any player who controls more characters than each other player counts 3 fewer gold during the marshalling phase."
       , flavor_text = Just "\"... my lord father once told me that hard places breed hard men, and hard men rule the world.\" - Theon Greyjoy"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn", "Ally" ]
       , strength = Just 2
@@ -39816,7 +39816,7 @@ all_cards =
       , rules_text = Just "Your Creature characters get +1 STR.\nIf it is Winter, Maester of Last Hearth gains: \"Response: Kneel Maester of Last Hearth to save a Creature from being killed or discarded from play.\""
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester", "House Umber" ]
       , strength = Just 3
@@ -39860,7 +39860,7 @@ all_cards =
       , rules_text = Just "Prolific Statesman gains the crests printed on every other character you control."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 2
@@ -39882,7 +39882,7 @@ all_cards =
       , rules_text = Just "House Baratheon only.\nEach player's draw cap is reduced from 3 additional cards per round to 2 additional cards per round."
       , flavor_text = Just "\"Their mothers were copper and honey, chestnut and butter; yet the babes were all black as ravens...\" - Varys"
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Bastard" ]
       , strength = Just 1
@@ -39970,7 +39970,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nRenown.\nResponse: Kneel a Kingsguard character to save a King or Queen character from being killed or discarded from play."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight", "Kingsguard" ]
       , strength = Just 4
@@ -39992,7 +39992,7 @@ all_cards =
       , rules_text = Just "Response: After a character's STR is reduced by X, Shadow Parasite gets +X STR until the end of the phase."
       , flavor_text = Just "Shadows whirled and danced inside a tent, boneless and terrible."
       , cost = Just 0
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Asshai", "Ally" ]
       , strength = Just 0
@@ -40036,7 +40036,7 @@ all_cards =
       , rules_text = Just "No attachments. Deadly.\nResponse: After you lose a challenge as the defender, kneel Spear Phalanx and kneel 3 influence to choose and discard 1 attacking character from play."
       , flavor_text = Just "The captain chose twenty spears to accompany it, out of the thirty who were posted at the Water Gardens."
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army" ]
       , strength = Just 4
@@ -40102,7 +40102,7 @@ all_cards =
       , rules_text = Just "Response: After Archmaester Marwyn is killed, resolve the \"when revealed\" effect of any plot card in any player's used pile."
       , flavor_text = Just "\"Only a man trained in teh Citadel of Oldtown wears such a chain, and such men do know much of healing.\" - Ser Jorah Mormont"
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "Maester" ]
       , strength = Just 4
@@ -40146,7 +40146,7 @@ all_cards =
       , rules_text = Just "House Targaryen only.\nResponse: Kneel 2 influence and put Bloodrider into play from your hand to cancel the effects of a character ability just triggered."
       , flavor_text = Just "They were the khal's brothers, his shadows, his fiercest friends. \"Blood of my blood,\" Drogo called them."
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Dothraki" ]
       , strength = Just 2
@@ -40234,7 +40234,7 @@ all_cards =
       , rules_text = Just "Deadly."
       , flavor_text = Just "\"I would say it is past time we summoned Ilyn Payne.\" - Cersei Lannister"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "House Payne" ]
       , strength = Just 2
@@ -40256,7 +40256,7 @@ all_cards =
       , rules_text = Just "No attachments.\nAny Phase: Discard the top card of your deck to give Iron Fleed Raiders -2 STR until the end of the phase. Only opponents can trigger this effect."
       , flavor_text = Just "The Drowned God had made them to reave and rape, to carve out kingdoms and write their names in fire and blood and song."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn", "Raider", "Ally" ]
       , strength = Just 5
@@ -40388,7 +40388,7 @@ all_cards =
       , rules_text = Just "Response: After an effect allows you to search your deck, kneel Rickon Stark to copy that effect. (Limit once per phase)"
       , flavor_text = Just "\"Tell him he can have all m y things while I'm away, he'll like that.\" - Jon Snow"
       , cost = Just 2
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord" ]
       , strength = Just 1
@@ -40410,7 +40410,7 @@ all_cards =
       , rules_text = Just "Renown\nMarshalling: Kneel Ser Jon Fossoway to take X gold from the treasury and add it to your gold pool. X is the number of power on Ser Jon Fossoway."
       , flavor_text = Just "\"I would gladly take this challenge myself, though I'm not half the swordsman Lord Caron is, or Ser Guyard.\""
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Knight" ]
       , strength = Just 2
@@ -40432,7 +40432,7 @@ all_cards =
       , rules_text = Just "No attachments. Renown.\nReduce the cost to play Starfall Cavalry by 1 for each House Dayne character you control."
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "House Dayne" ]
       , strength = Just 5
@@ -40476,7 +40476,7 @@ all_cards =
       , rules_text = Just "Deadly.\nResponse: After you play The Mad Mouse from your hand, choose an opponent's character. If that character dies before the end of the next challenge phase and The Mad Mouse is still in play. The Mad Mouse claims 3 power"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "Fugitive" ]
       , strength = Just 3
@@ -40586,7 +40586,7 @@ all_cards =
       , rules_text = Just "Brienne of Tarth is considered to have the Knight trait.\nLimited Response: After Brienne of Tarth kneels, each opponent may move 1 power to your House card from a card he or she controls. Any opponent who does not cannot play event cards this round. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Rainbow Guard", "Lady" ]
       , strength = Just 3
@@ -40630,7 +40630,7 @@ all_cards =
       , rules_text = Just "If Irri would be killed, you may instead attach her to a [Targaryen] character as a Handmaiden attachment with the text, “Attached character gains a [Power] icon, and does not kneel to attack during [Power] challenges.”"
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Handmaiden", "Ally" ]
       , strength = Just 1
@@ -40652,7 +40652,7 @@ all_cards =
       , rules_text = Just "Deadly.\nIf you win a challenge in which Khal Drogo attacked alone, instead of the normal claim effects, the losing player must choose and kill 1 character he or she controls, randomly discard 1 card from his or her hand, and move 1 power from his or her house card to yours."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Dothraki", "Lord" ]
       , strength = Just 3
@@ -40674,7 +40674,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nChallenges: Pay 1 gold to give each participating Clansman character you control +1 STR until the end of the challenge. (Limit once per challenge.)"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Clansman", "Army" ]
       , strength = Just 2
@@ -40696,7 +40696,7 @@ all_cards =
       , rules_text = Just "While there is at least 1 Castle plot card revealed, Mya Stone gains: “Opponent’s characters with printed cost 3 or lower cannot be declared alone as attackers.”"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Arryn", "Bastard" ]
       , strength = Just 2
@@ -40740,7 +40740,7 @@ all_cards =
       , rules_text = Just "No attachments. Stealth.\nEach House Tully character you control gains “immune to opponent’s triggered effects” while it is participating in a challenge."
       , flavor_text = Nothing
       , cost = Just 6
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "House Tully", "Army" ]
       , strength = Just 6
@@ -40872,7 +40872,7 @@ all_cards =
       , rules_text = Just "Response: After you lose a challenge as the defender, set the Claim value on your revealed plot card to 2 until the end of the phase. (While set, the value cannot be raised or lowered.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Sand Snake", "Bastard" ]
       , strength = Just 3
@@ -40894,7 +40894,7 @@ all_cards =
       , rules_text = Just "Stealth.\nImmune to opponent’s events.\nResponse: After you win a challenge as the defender, move 1 power from the attacker player’s House card to your own."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "House Tully", "Lord" ]
       , strength = Just 3
@@ -40916,7 +40916,7 @@ all_cards =
       , rules_text = Just "Any Phase: Discard a card from your hand to give Ulf Son of Umar any keyword or crest printed on another character in play until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman" ]
       , strength = Just 3
@@ -40960,7 +40960,7 @@ all_cards =
       , rules_text = Just "Deadly. Renown."
       , flavor_text = Just "\"Aye. I'll take my axe and stand on that drawbridge, and let them come try me. One at a time, two, three, it makes no matter. None will pass the moat while I still draw breath.\" -Lorren, CoK"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Ironborn" ]
       , strength = Just 2
@@ -41026,7 +41026,7 @@ all_cards =
       , rules_text = Just "Deadly.\nAny Phase: Attach a [Targaryen] or neutral Weapon attachment from your discard pile to a Dothraki character you control. (Limit once per round.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Queensguard" ]
       , strength = Just 3
@@ -41048,7 +41048,7 @@ all_cards =
       , rules_text = Just "House Stark only.\nIf you control Sansa Stark, discard Alayne Stone from play.\nResponse: After Alayne Stone enters play, choose a Castle plot card in your used pile. Reveal it as your new plot card."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Arryn", "Bastard" ]
       , strength = Just 2
@@ -41070,7 +41070,7 @@ all_cards =
       , rules_text = Just "Camp Follower gets +1 STR for each Knight character in play."
       , flavor_text = Just "The life of a soldier was not without certain compensations. Wherever you have a camp, you are certain to have camp followers. -GoT"
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -41092,7 +41092,7 @@ all_cards =
       , rules_text = Nothing
       , flavor_text = Just "“...and if truth be told, I think the clans will find us no matter what we do. Their eyes are all around us.” -Tyrion"
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman" ]
       , strength = Just 1
@@ -41158,7 +41158,7 @@ all_cards =
       , rules_text = Just "Response: After you win a challenge in which Iron Fleet Pillager participated, discard the top card of the losing opponent’s deck. If that card is a location or attachment, you may put it into play under your control."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Raider" ]
       , strength = Just 3
@@ -41180,7 +41180,7 @@ all_cards =
       , rules_text = Just "No attachments. Renown.\nReduce the cost to play Knights Declarant by 2 for each plot card in your used pile."
       , flavor_text = Just "“...every knight in the Vale will pledge his sword to win you back your birthright.” -Petyr Baelish"
       , cost = Just 12
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Knight", "House Arryn" ]
       , strength = Just 12
@@ -41202,7 +41202,7 @@ all_cards =
       , rules_text = Just "Challenges: Discard a card from your hand to give Lesser Ko deadly until the end of the phase."
       , flavor_text = Just "“Ko Pono left first, naming himself Khal Pono, and many followed him. Jhaqo was not long to do the same.” -Ser Jorah Mormont"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Bannerman" ]
       , strength = Just 2
@@ -41224,7 +41224,7 @@ all_cards =
       , rules_text = Just "Stealth.\nEach of your non-Army characters with printed cost 4 or higher gets +2 STR."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "House Arryn", "Knight" ]
       , strength = Just 2
@@ -41246,7 +41246,7 @@ all_cards =
       , rules_text = Just "Response: Kneel Lysa Arryn to cancel a triggered effect with any form of the word “plot” or “non-plot” in its text."
       , flavor_text = Just "“I will not be made mock of. You have had your little jape, Imp. I trust you enjoyed it.”"
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lady", "House Arryn", "House Tully" ]
       , strength = Just 2
@@ -41268,7 +41268,7 @@ all_cards =
       , rules_text = Just "House Martell only.\nResponse: After another Sand Snake character you control is killed, put Obella Sand into Shadows from your dead pile."
       , flavor_text = Nothing
       , cost = Nothing
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Sand Snake", "Bastard" ]
       , strength = Just 2
@@ -41290,7 +41290,7 @@ all_cards =
       , rules_text = Just "Stealth.\nIf you control Littlefinger, discard Petyr Baelish from play.\nLimited Response: Kneel Petyr Baelish to cancel the effects of an event card just played. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Arryn", "Lord" ]
       , strength = Just 3
@@ -41356,7 +41356,7 @@ all_cards =
       , rules_text = Just "During [Power] challenges in which you control at least 1 attacking Rainbow Guard character, raise the Claim value on your revealed plot card by 1."
       , flavor_text = Just "\"You'll die for this.\" -CoK"
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Rainbow Guard", "Knight" ]
       , strength = Just 2
@@ -41378,7 +41378,7 @@ all_cards =
       , rules_text = Just "No attachments.\nReduce the cost to play The Mountain Clan Horde by 1 for each Clansman character you control.\nAny Phase: Discard a card from hand to stand or kneel another Clansman character. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 8
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Clansman", "Army" ]
       , strength = Just 8
@@ -41444,7 +41444,7 @@ all_cards =
       , rules_text = Just "Response: After Braided Warrior comes into play, search your deck for an attachment and pay its printed gold cost to put it into play attached to a card you control. Then, shuffle your deck."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki" ]
       , strength = Just 2
@@ -41466,7 +41466,7 @@ all_cards =
       , rules_text = Just "Renown.\nResponse: After a Castle plot card is placed in your used pile, choose and discard 1 power from a character."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Arryn", "Lord" ]
       , strength = Just 3
@@ -41488,7 +41488,7 @@ all_cards =
       , rules_text = Just "Response: After a Sand Snake character you control is killed, Dorea Sand claims 1 power. (Limit 3 times per phase.)"
       , flavor_text = Just "“If you should die, must El and Obella seek vengeance for you, then Dorea and Loree for them?” -Ellaria Sand"
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Sand Snake", "Bastard" ]
       , strength = Just 1
@@ -41532,7 +41532,7 @@ all_cards =
       , rules_text = Just "If you control a unique House Tully character, House Tully Footman does not kneel to defend."
       , flavor_text = Just "They were all her father's bannermen, lords of the Trident. -CoK"
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tully" ]
       , strength = Just 1
@@ -41576,7 +41576,7 @@ all_cards =
       , rules_text = Just "If an effect would discard 1 or more cards from an opponent’s deck that has no cards remaining in it, that opponent must choose and discard 1 card at his or her command, instead."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Raider" ]
       , strength = Just 2
@@ -41598,7 +41598,7 @@ all_cards =
       , rules_text = Just "Limited Response: After you win a challenge in which Jhogo and at least 2 other Dothraki characters participated as attackers, discard Jhogo to claim X power for your House. X is the number of cards in the losing opponent’s hand. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Queensguard" ]
       , strength = Just 3
@@ -41686,7 +41686,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nStealth. \nResponse: After you win a challenge in which Milk Snakes participated, choose a Clansman card in your discard pile and return it to your hand."
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman", "Army" ]
       , strength = Just 3
@@ -41730,7 +41730,7 @@ all_cards =
       , rules_text = Just "Response: After a Castle plot card is moved to your used pile, Robert Arryn claims 2 power. (Limit once per round.)"
       , flavor_text = Just "“Let my porridge fly!”"
       , cost = Just 0
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "House Arryn", "Lord" ]
       , strength = Just 0
@@ -41752,7 +41752,7 @@ all_cards =
       , rules_text = Just "Immune to events.\nAt the beginning of the dominance phase, stand each Rainbow Guard character you control."
       , flavor_text = Just "\"My brother is young and strong, and he has a vast host around him, and these rainbow knights of his.\" - Stannis Baratheon"
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Rainbow Guard", "Knight" ]
       , strength = Just 3
@@ -41884,7 +41884,7 @@ all_cards =
       , rules_text = Just "Stealth. Deadly.\nImmune to opponent’s location effects."
       , flavor_text = Just "\"Braver to leave the man alive, with a chance to cleanse his shame by winning back his ear,\" explained Chella, a small dark woman whose grisly neckware was hung with no less than forty-six dried, wrinkled ears."
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Clansman" ]
       , strength = Just 4
@@ -41906,7 +41906,7 @@ all_cards =
       , rules_text = Just "Limited Response: After an attachment leaves play, stand 1 influence providing card to draw 1 card. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki" ]
       , strength = Just 2
@@ -41950,7 +41950,7 @@ all_cards =
       , rules_text = Just "House Martell only. \nResponse: After you reveal a plot card, each opponent must choose and discard 1 card from his or her hand, if able. Then, Ghost Hill Elite claims 1 power if any locations or attachments were discarded by this effect. (Limit once per round.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Army", "Knight" ]
       , strength = Just 3
@@ -41972,7 +41972,7 @@ all_cards =
       , rules_text = Just "No attachments. Stealth.\nResponse: Discard Greenseer’s Raven from your hand to cancel the ‘when revealed’ effects of a just revealed plot card with one or more Traits."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Raven", "Creature" ]
       , strength = Just 1
@@ -42016,7 +42016,7 @@ all_cards =
       , rules_text = Just "House Baratheon only. Renown.\nResponse: Discard a card at random from your hand and bring Knight of Flowers out of Shadows to save a unique character from being killed or discarded from play."
       , flavor_text = Nothing
       , cost = Nothing
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Shadow ]
       , traits = [ "Kingsguard", "Rainbow Guard", "Knight" ]
       , strength = Just 3
@@ -42060,7 +42060,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kill Prince’s Attendant (cannot be saved) to reveal the top 2 cards of your deck. Discard 1 and add the other to your hand."
       , flavor_text = Just "“Do you have a better way?” Quentyn asked him.\n“I do. It's just now come to me.”"
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally" ]
       , strength = Just 1
@@ -42082,7 +42082,7 @@ all_cards =
       , rules_text = Just "Challenges: If you control 1 or more Rainbow Guard characters, kneel all copies of Rainbow Guard Squire you control to draw 1 card."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Squire" ]
       , strength = Just 2
@@ -42148,7 +42148,7 @@ all_cards =
       , rules_text = Just "Deadly.\nDominance: Choose and kill a character with printed cost 3 or lower controlled by an opponent who has not declared a [Millitary] challenge against you this round. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "House Tully", "Knight" ]
       , strength = Just 4
@@ -42170,7 +42170,7 @@ all_cards =
       , rules_text = Just "Limited Response: After Ser Kevan Lannister enters or leaves play, choose a [Lannister] or neutral location in your discard pile and put it into play. (Limit 1 limited response per round.) [Naval on [Power].]\nCard designed by the 2012 AGoT LCG Chinese Champion, Bing Ouyang"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "Lord", "Knight" ]
       , strength = Just 2
@@ -42192,7 +42192,7 @@ all_cards =
       , rules_text = Just "While Ser Robar Royce is participating in a challenge, each Rainbow Guard character you control gains deadly."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Noble ]
       , traits = [ "House Arryn", "Rainbow Guard", "Knight" ]
       , strength = Just 3
@@ -42236,7 +42236,7 @@ all_cards =
       , rules_text = Just "Deadly.\nLimited Response: After you declare The Drumm as an attacker, choose a location controlled by the defending player. If you win the challenge by 4 or more total STR, discard that location. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Captain", "Raider" ]
       , strength = Just 3
@@ -42412,7 +42412,7 @@ all_cards =
       , rules_text = Just "While Iron Islands Shipwright is standing, cards cannot be moved out of opponents’ discard and dead piles."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ironborn" ]
       , strength = Just 1
@@ -42434,7 +42434,7 @@ all_cards =
       , rules_text = Just "No attachments except Weapon.\nIncrease the cost to play the first character played each round by 2."
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Army", "Raider" ]
       , strength = Just 3
@@ -42456,7 +42456,7 @@ all_cards =
       , rules_text = Just "Response: After a Sand Snake character you control is killed, draw 1 card."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Power ]
+      , icons = [ Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Sand Snake", "Bastard" ]
       , strength = Just 1
@@ -42478,7 +42478,7 @@ all_cards =
       , rules_text = Just "While there is at least 1 Castle plot card revealed, Lothor Brune does not kneel to attack or defend."
       , flavor_text = Just "Sober, he was a quiet man, but a strong one."
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "House Arryn" ]
       , strength = Just 3
@@ -42522,7 +42522,7 @@ all_cards =
       , rules_text = Just "You may spend gold on Mord as if it were in your gold pool.\nResponse: After you win dominance, choose a character with printed cost 3 or lower. Shuffle that character into its owner’s deck unless its controller moves 1 gold from his or her gold pool to Mord."
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "House Arryn", "Ally" ]
       , strength = Just 1
@@ -42544,7 +42544,7 @@ all_cards =
       , rules_text = Just "No attachments. Renown.\nLimited Response: After you win a [Power] challenge in which New Khalasar participated by 4 or more total STR, kill each participating character on the opposing side. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Army" ]
       , strength = Just 4
@@ -42566,7 +42566,7 @@ all_cards =
       , rules_text = Just "House Stark only. \nNorthern Patriarch is immune to opponent’s plot effects while it has 1 or more power on it. \nIf there are no other copies of Northern Patriarch in play, in order to play an event an opponent must move 1 power from a card he or she controls to Northern Patriarch. \nCard designed by 2012 AGoT LCG World Champion, Derek Shoemaker In Memory of Guy Gray"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Lord" ]
       , strength = Just 3
@@ -42654,7 +42654,7 @@ all_cards =
       , rules_text = Just "Stealth.\nResponse: After you win a challenge in which at least 1 Rainbow Guard character participated, stand Ser Guyard Morrigen. Then, Ser Guyard Morrigen gains a [Power] icon until the end of the phase. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Rainbow Guard", "Knight" ]
       , strength = Just 2
@@ -42786,7 +42786,7 @@ all_cards =
       , rules_text = Just "No attachments.\nRenown. Deadly.\nX is the number of House Tully characters you control. (X is initiative.)"
       , flavor_text = Nothing
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tully", "Army" ]
       , strength = Just 5
@@ -42808,7 +42808,7 @@ all_cards =
       , rules_text = Just "While Euron Crow’s Eye is attacking alone, opponents cannot declare defenders."
       , flavor_text = Just "Better to be scorned by Balon the Brave than beloved of Euron Crow's Eye."
       , cost = Just 5
-      , icons = [ Icon_Military, Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "King", "Raider", "Captain" ]
       , strength = Just 4
@@ -42830,7 +42830,7 @@ all_cards =
       , rules_text = Just "House Lannister only.\nLimited Response: After you win a challenge in which Gunthor Son of Gurn participated, draw cards, ignoring the draw cap, until the losing opponent does not have more cards in hand than you. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Clansman" ]
       , strength = Just 3
@@ -42874,7 +42874,7 @@ all_cards =
       , rules_text = Just "If Jhiqui would be killed, you may instead attach her to a [Targaryen] character as a Handmaiden attachment with the text, “Attached character gains an [Intrigue] icon and does not kneel to attack during [Intrigue] challenges.”"
       , flavor_text = Nothing
       , cost = Just 1
-      , icons = [ Icon_Intrigue ]
+      , icons = [ Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Dothraki", "Handmaiden", "Ally" ]
       , strength = Just 1
@@ -42896,7 +42896,7 @@ all_cards =
       , rules_text = Just "Limited Response: After you win a challenge in which at least 1 House Tully character participated, reveal the top card of your deck and add it to your hand. (Limit one limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_Learned ]
       , traits = [ "House Tully", "Maester" ]
       , strength = Just 2
@@ -42918,7 +42918,7 @@ all_cards =
       , rules_text = Just "Limited Response: After a Sand Snake character you control is killed, choose and kill a character with an equal or lower printed cost. (Limit 1 limited response per round.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Sand Snake", "Bastard" ]
       , strength = Just 3
@@ -42940,7 +42940,7 @@ all_cards =
       , rules_text = Just "Stealth.\nChallenges: Choose a Dothraki character. That character gains stealth until the end of the phase. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Dothraki", "Queensguard" ]
       , strength = Just 3
@@ -42984,7 +42984,7 @@ all_cards =
       , rules_text = Just "Joust.\nChallenges: Choose a Rainbow Guard character. That character gains renown until the end of the phase. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 3
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Rainbow Guard", "Knight" ]
       , strength = Just 3
@@ -43006,7 +43006,7 @@ all_cards =
       , rules_text = Just "Challenges: Choose a House Tully character. That character gains deadly until the end of the phase. (Limit once per phase.)"
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military ]
+      , icons = [ Icon_Military { naval = False } ]
       , crest = [  ]
       , traits = [ "House Tully", "Knight" ]
       , strength = Just 2
@@ -43028,7 +43028,7 @@ all_cards =
       , rules_text = Just "Dominance: Kneel Ser Ilyn Payne to choose and kill a kneeling character with printed cost 3 or lower."
       , flavor_text = Just "“He does so love his work...” -Varys"
       , cost = Just 4
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [ Crest_War ]
       , traits = [ "Knight", "House Payne" ]
       , strength = Just 3
@@ -43050,7 +43050,7 @@ all_cards =
       , rules_text = Just "Stealth.\nAt the end of any challenge phase in which Silence Crewman was not declared as an attacker, kill it and discard the top 2 cards of each opponent’s deck."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Intrigue ]
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
       , crest = [  ]
       , traits = [ "Raider" ]
       , strength = Just 2
@@ -43072,7 +43072,7 @@ all_cards =
       , rules_text = Just "Any Phase: Kneel 1 influence to stand Storm’s End Freerider."
       , flavor_text = Just "They belong to Stannis now, she realized, even if they do not know it themselves yet."
       , cost = Just 2
-      , icons = [ Icon_Military, Icon_Power ]
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "Bannerman" ]
       , strength = Just 2
@@ -43160,7 +43160,7 @@ all_cards =
       , rules_text = Just "Stealth.\nVale Informant gets +1 STR for each plot card in your used pile."
       , flavor_text = Nothing
       , cost = Just 2
-      , icons = [ Icon_Intrigue, Icon_Power ]
+      , icons = [ Icon_Intrigue { naval = False }, Icon_Power { naval = False } ]
       , crest = [  ]
       , traits = [ "Ally", "House Arryn" ]
       , strength = Just 1

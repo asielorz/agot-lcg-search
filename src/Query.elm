@@ -360,9 +360,9 @@ parse_houses = parse_until_end
     
 parse_icon : Char -> Result String Icon
 parse_icon name = case name of
-    'm' -> Ok Icon_Military
-    'i' -> Ok Icon_Intrigue
-    'p' -> Ok Icon_Power
+    'm' -> Ok <| Icon_Military { naval = False }
+    'i' -> Ok <| Icon_Intrigue { naval = False }
+    'p' -> Ok <| Icon_Power { naval = False }
     other -> Err <| "\"" ++ String.fromChar other ++ "\" is not an icon. Allowed icons are 'm', 'i' and 'p'."
 
 parse_icons : Parser (List Icon)

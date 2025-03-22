@@ -8,6 +8,7 @@ import Widgets.Combo
 
 import Browser.Navigation as Navigation
 import Element as UI exposing (px)
+import Element.Events as UI_Events
 import Element.Input as UI_Input
 import Card exposing (CardType)
 
@@ -22,6 +23,8 @@ type Combo
     | Combo_Initiative
     | Combo_Claim
     | Combo_Influence
+
+type SearchIcon = SearchIcon_None | SearchIcon_Regular | SearchIcon_Naval
 
 type alias Model = 
     { header_query : String
@@ -54,9 +57,9 @@ type alias Model =
     , allowed : Bool
     , restricted : Bool
     , banned : Bool
-    , icon_military : Bool
-    , icon_intrigue : Bool
-    , icon_power : Bool
+    , icon_military : SearchIcon
+    , icon_intrigue : SearchIcon
+    , icon_power : SearchIcon
     , crest_war : Bool
     , crest_noble : Bool
     , crest_holy : Bool
@@ -108,9 +111,9 @@ init =
     , allowed = True
     , restricted = True
     , banned = False
-    , icon_military = False
-    , icon_intrigue = False
-    , icon_power = False
+    , icon_military = SearchIcon_None
+    , icon_intrigue = SearchIcon_None
+    , icon_power = SearchIcon_None
     , crest_war = False
     , crest_noble = False
     , crest_holy = False
@@ -268,9 +271,9 @@ legality_row model = UI.row [ UI.spacing 30 ]
 
 icon_row : Model -> UI.Element Msg
 icon_row model = UI.row [ UI.spacing 30 ]
-    [ image_checkbox [] "/images/icon_military.png" model.icon_military (\b -> { model | icon_military = b })
-    , image_checkbox [] "/images/icon_intrigue.png" model.icon_intrigue (\b -> { model | icon_intrigue = b })
-    , image_checkbox [] "/images/icon_power.png" model.icon_power (\b -> { model | icon_power = b })
+    [ icon_checkbox "/images/icon_military.png" model.icon_military (\b -> { model | icon_military = b })
+    , icon_checkbox "/images/icon_intrigue.png" model.icon_intrigue (\b -> { model | icon_intrigue = b })
+    , icon_checkbox "/images/icon_power.png" model.icon_power (\b -> { model | icon_power = b })
     ]
 
 crest_row : Model -> UI.Element Msg
@@ -299,6 +302,37 @@ checkbox attrs label checked msg = UI_Input.checkbox attrs
 
 image_checkbox : List (UI.Attribute Msg) -> String -> Bool -> (Bool -> Model) -> UI.Element Msg
 image_checkbox attrs label checked msg = checkbox attrs (UI.image [ UI.height (px 30) ] { src = label, description = "" }) checked msg
+
+icon_checkbox : String -> SearchIcon -> (SearchIcon -> Model) -> UI.Element Msg
+icon_checkbox image state msg = UI.row [ UI.spacing 5 ]
+    [ UI.column [ UI.spacing 4 ]
+        [ UI_Input.checkbox []
+            { checked = state == SearchIcon_Regular
+            , onChange = \b -> Msg_ModelChanged <| msg <| if b then SearchIcon_Regular else SearchIcon_None
+            , icon = UI_Input.defaultCheckbox
+            , label = UI_Input.labelHidden "Regular"
+            }
+        , UI_Input.checkbox []
+            { checked = state == SearchIcon_Naval
+            , onChange = \b -> Msg_ModelChanged <| msg <| if b then SearchIcon_Naval else SearchIcon_None
+            , icon = \b -> if b 
+                then UI.el 
+                    [ UI.inFront <| UI.image [ UI.width UI.fill, UI.height UI.fill ] { src = "/images/naval.png", description = "" }  
+                    ] 
+                    (UI_Input.defaultCheckbox False)
+                else UI_Input.defaultCheckbox False 
+            , label = UI_Input.labelHidden "Naval"
+            }
+        ]
+    , UI.image 
+        [ UI.height (px 30)
+        , UI_Events.onClick <| Msg_ModelChanged <| msg <| case state of
+            SearchIcon_None -> SearchIcon_Regular
+            SearchIcon_Regular -> SearchIcon_Naval
+            SearchIcon_Naval -> SearchIcon_None
+        ] 
+        { src = image, description = "" }
+    ]
 
 text_checkbox : List (UI.Attribute Msg) -> String -> Bool -> (Bool -> Model) -> UI.Element Msg
 text_checkbox attrs label checked msg = checkbox attrs (UI.text label) checked msg
@@ -379,7 +413,7 @@ make_advanced_search_query model =
                 , (model.house_neutral, "n") 
                 ]
             , type_part
-            , string_part "traits" model.traits
+            , string_part "trait" model.traits
             , if model.unique then Just "unique:t" else Nothing
             , int_part "cost" model.cost model.cost_comparison
             , int_part "strength" model.strength model.strength_comparison
@@ -388,7 +422,7 @@ make_advanced_search_query model =
             , int_part "claim" model.claim model.claim_comparison
             , int_part "influence" model.influence model.influence_comparison
             , bools_part "legality" ":" [ (model.allowed, "a"), (model.restricted, "r"), (model.banned, "b") ]
-            , bools_part "icon" ">=" [ (model.icon_military, "m"), (model.icon_intrigue, "i"), (model.icon_power, "p") ]
+            , bools_part "icon" ">=" [ (model.icon_military == SearchIcon_Regular, "m"), (model.icon_intrigue == SearchIcon_Regular, "i"), (model.icon_power == SearchIcon_Regular, "p") ]
             , bools_part "crest" ">="
                 [ (model.crest_war, "w")
                 , (model.crest_noble, "n")

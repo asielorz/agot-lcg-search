@@ -27,6 +27,7 @@ type Combo
     | Combo_Claim
     | Combo_Influence
     | Combo_Set
+    | Combo_IconComparison
 
 type SearchIcon = SearchIcon_None | SearchIcon_Regular | SearchIcon_Naval
 
@@ -64,6 +65,7 @@ type alias Model =
     , icon_military : SearchIcon
     , icon_intrigue : SearchIcon
     , icon_power : SearchIcon
+    , icon_comparison : SearchComparison
     , crest_war : Bool
     , crest_noble : Bool
     , crest_holy : Bool
@@ -118,6 +120,7 @@ init =
     , icon_military = SearchIcon_None
     , icon_intrigue = SearchIcon_None
     , icon_power = SearchIcon_None
+    , icon_comparison = SearchComparison_AtLeast
     , crest_war = False
     , crest_noble = False
     , crest_holy = False
@@ -222,7 +225,7 @@ house_checkboxes model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
     , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
         { id = Combo_HouseComparison
         , curr = model.house_comparison
-        , view = \_ c -> c |> search_comparison_to_string |> UI.text
+        , view = \_ c -> c |> search_comparison_to_string "houses" |> UI.text
         , options = [ SearchComparison_Exact, SearchComparison_AtLeast, SearchComparison_AtMost ]
         , select = \opt m -> { m | house_comparison = opt }
         }
@@ -278,10 +281,20 @@ legality_row model = UI.row [ UI.spacing 30 ]
     ]
 
 icon_row : Model -> UI.Element Msg
-icon_row model = UI.row [ UI.spacing 30 ]
-    [ icon_checkbox "/images/icon_military.png" model.icon_military (\b -> { model | icon_military = b })
-    , icon_checkbox "/images/icon_intrigue.png" model.icon_intrigue (\b -> { model | icon_intrigue = b })
-    , icon_checkbox "/images/icon_power.png" model.icon_power (\b -> { model | icon_power = b })
+icon_row model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
+    [ UI.wrappedRow [ UI.spacing 30 ] 
+        [ icon_checkbox "/images/icon_military.png" model.icon_military (\b -> { model | icon_military = b })
+        , icon_checkbox "/images/icon_intrigue.png" model.icon_intrigue (\b -> { model | icon_intrigue = b })
+        , icon_checkbox "/images/icon_power.png" model.icon_power (\b -> { model | icon_power = b })
+        ]
+    , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
+        { id = Combo_IconComparison
+        , curr = model.icon_comparison
+        , view = \_ c -> c |> search_comparison_to_string "icons" |> UI.text
+        , options = [ SearchComparison_Exact, SearchComparison_AtLeast, SearchComparison_AtMost ]
+        , select = \opt m -> { m | icon_comparison = opt }
+        }
+        |> UI.map Msg_Combo
     ]
 
 crest_row : Model -> UI.Element Msg
@@ -375,11 +388,11 @@ icon_checkbox image state msg = UI.row [ UI.spacing 5 ]
 text_checkbox : List (UI.Attribute Msg) -> String -> Bool -> (Bool -> Model) -> UI.Element Msg
 text_checkbox attrs label checked msg = checkbox attrs (UI.text label) checked msg
 
-search_comparison_to_string : SearchComparison -> String
-search_comparison_to_string cmp = case cmp of
-    SearchComparison_Exact -> "Exactly these houses"
-    SearchComparison_AtLeast -> "At least these houses"
-    SearchComparison_AtMost -> "At most these houses"
+search_comparison_to_string : String -> SearchComparison -> String
+search_comparison_to_string name cmp = case cmp of
+    SearchComparison_Exact -> "Exactly these " ++ name
+    SearchComparison_AtLeast -> "At least these " ++ name
+    SearchComparison_AtMost -> "At most these " ++ name
 
 card_type_combo_view : Maybe CardType -> UI.Element msg
 card_type_combo_view t = 
@@ -410,7 +423,7 @@ make_advanced_search_query model =
         string_part name str = if str == "" 
             then Nothing 
             else str |> Query.split_words_quoted |> List.map (\s -> name ++ ":" ++ quote_token_with_spaces s) |> String.join " " |> Just
-        house_comparison_str = case model.house_comparison of
+        search_comparison_str cmp = case cmp of
             SearchComparison_Exact -> "="
             SearchComparison_AtLeast -> ">="
             SearchComparison_AtMost -> "<="
@@ -441,7 +454,7 @@ make_advanced_search_query model =
         parts =
             [ if model.name == "" then Nothing else Just model.name
             , string_part "text" model.text
-            , bools_part "house" house_comparison_str
+            , bools_part "house" (search_comparison_str model.house_comparison)
                 [ (model.house_stark, "s")
                 , (model.house_lannister, "l")
                 , (model.house_baratheon, "b")
@@ -461,7 +474,11 @@ make_advanced_search_query model =
             , int_part "claim" model.claim model.claim_comparison
             , int_part "influence" model.influence model.influence_comparison
             , bools_part "legality" ":" [ (model.allowed, "a"), (model.restricted, "r"), (model.banned, "b") ]
-            , bools_part "icon" ">=" [ (model.icon_military == SearchIcon_Regular, "m"), (model.icon_intrigue == SearchIcon_Regular, "i"), (model.icon_power == SearchIcon_Regular, "p") ]
+            , bools_part "icon" (search_comparison_str model.icon_comparison)
+                [ (model.icon_military == SearchIcon_Regular, "m")
+                , (model.icon_intrigue == SearchIcon_Regular, "i")
+                , (model.icon_power == SearchIcon_Regular, "p") 
+                ]
             , bools_part "crest" ">="
                 [ (model.crest_war, "w")
                 , (model.crest_noble, "n")

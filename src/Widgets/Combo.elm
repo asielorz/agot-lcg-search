@@ -41,7 +41,6 @@ view attrs current_id args =
                 , UI.htmlAttribute <| Html.Attributes.style "height" "auto"
                 , UI.htmlAttribute <| Html.Attributes.style "max-height" "400px"
                 , UI.htmlAttribute <| Html.Attributes.style "overflow-y" "auto"
-                , UI.clip
                 ]
                 <| List.map option_button args.options
             else UI.none

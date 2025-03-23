@@ -355,8 +355,8 @@ card_type_combo_view t =
             Just CardType_Event -> ("\u{f520}", "Event") -- fa-crow
             Just CardType_Plot -> ("\u{f5fd}", "Plot") -- fa-layer-group
             Just CardType_Agenda -> ("\u{f70e}", "Agenda") -- fa-scroll
-        in
-            UI.row [ UI.spacing 10 ] [ UI.el [UI.width (px 25)] <| Fontawesome.text [ UI.centerX ] icon, UI.text label ]
+    in
+        UI.row [ UI.spacing 10 ] [ UI.el [UI.width (px 25)] <| Fontawesome.text [ UI.centerX ] icon, UI.text label ]
 
 comparison_to_string : Comparison -> String
 comparison_to_string cmp = case cmp of
@@ -399,8 +399,8 @@ make_advanced_search_query model =
                     Comparison_GreaterThanOrEqual -> ">="
                     Comparison_LessThan -> "<"
                     Comparison_LessThanOrEqual -> "<="
-                in
-                    int |> Maybe.map (\i -> name ++ comparison_str ++ String.fromInt i)
+            in
+                int |> Maybe.map (\i -> name ++ comparison_str ++ String.fromInt i)
         parts =
             [ if model.name == "" then Nothing else Just model.name
             , string_part "text" model.text

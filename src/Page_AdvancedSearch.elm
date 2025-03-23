@@ -141,6 +141,7 @@ view model =
         [ UI.centerX
         , UI.spacing 20 
         , UI.width UI.fill
+        , UI_Events.onClick <| Msg_ModelChanged { model | combo = Nothing }
         ]
         [ Widgets.header model.header_query Msg_HeaderQueryChanged Msg_HeaderSearch
         , view_advanced_search model

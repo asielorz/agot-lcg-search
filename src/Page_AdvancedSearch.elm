@@ -1,6 +1,7 @@
 module Page_AdvancedSearch exposing (Model, Msg, init, update, view)
 
 import Card exposing (CardType(..))
+import CardSet exposing (SetOrCycle(..), Set(..), Cycle(..))
 import Fontawesome
 import Query exposing (Comparison(..))
 import Widgets
@@ -8,9 +9,11 @@ import Widgets.Combo
 
 import Browser.Navigation as Navigation
 import Element as UI exposing (px)
+import Element.Border as UI_Border
 import Element.Events as UI_Events
 import Element.Input as UI_Input
-import Card exposing (CardType)
+import Maybe.Extra
+import CardSet exposing (set_or_cycle_code_name)
 
 type SearchComparison = SearchComparison_Exact | SearchComparison_AtLeast | SearchComparison_AtMost
 
@@ -23,6 +26,7 @@ type Combo
     | Combo_Initiative
     | Combo_Claim
     | Combo_Influence
+    | Combo_Set
 
 type SearchIcon = SearchIcon_None | SearchIcon_Regular | SearchIcon_Naval
 
@@ -65,9 +69,9 @@ type alias Model =
     , crest_holy : Bool
     , crest_learned : Bool
     , crest_shadow : Bool
+    , set : Maybe SetOrCycle
     , flavor : String
     , illustrator : String
-    -- Set
 
     , combo : Maybe Combo
     }
@@ -119,6 +123,7 @@ init =
     , crest_holy = False
     , crest_learned = False
     , crest_shadow = False
+    , set = Nothing
     , flavor = ""
     , illustrator = ""
 
@@ -163,6 +168,8 @@ view_advanced_search model = UI.column
     , labeled "Type" <| card_type_combo model
     , Widgets.separator
     , labeled "Traits" <| traits_row model
+    , Widgets.separator
+    , labeled "Set" <| set_combo model
     , Widgets.separator
     , labeled "Cost" <| int_row model.combo Combo_Cost model.cost model.cost_comparison (\a -> { model | cost = a }) (\a -> { model | cost_comparison = a })
     , Widgets.separator
@@ -215,7 +222,7 @@ house_checkboxes model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
     , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
         { id = Combo_HouseComparison
         , curr = model.house_comparison
-        , view = search_comparison_to_string >> UI.text
+        , view = \_ c -> c |> search_comparison_to_string |> UI.text
         , options = [ SearchComparison_Exact, SearchComparison_AtLeast, SearchComparison_AtMost ]
         , select = \opt m -> { m | house_comparison = opt }
         }
@@ -226,7 +233,7 @@ card_type_combo : Model -> UI.Element Msg
 card_type_combo model = Widgets.Combo.view [ UI.width (px 200) ] model.combo
     { id = Combo_CardType
     , curr = model.card_type
-    , view = card_type_combo_view
+    , view = \_ t -> card_type_combo_view t
     , options = [ Nothing, Just CardType_Character, Just CardType_Location, Just CardType_Attachment, Just CardType_Event, Just CardType_Plot, Just CardType_Agenda ]
     , select = \opt m -> { m | card_type = opt }
     }
@@ -246,7 +253,7 @@ int_row curr_combo id value comparison value_change comparison_change = UI.row [
     [ Widgets.Combo.view [ UI.width (px 250) ] curr_combo 
         { id = id
         , curr = comparison
-        , view = comparison_to_string >> UI.text
+        , view = \_ c -> c |> comparison_to_string |> UI.text
         , options = [ Comparison_Equal, Comparison_NotEqual, Comparison_GreaterThan, Comparison_GreaterThanOrEqual, Comparison_LessThan, Comparison_LessThanOrEqual ]
         , select = \opt _ -> comparison_change opt
         }
@@ -285,6 +292,36 @@ crest_row model = UI.row [ UI.spacing 30 ]
     , image_checkbox [] "/images/crest_learned.png" model.crest_learned (\b -> { model | crest_learned = b })
     , image_checkbox [] "/images/crest_shadow.png" model.crest_shadow (\b -> { model | crest_shadow = b })
     ]
+
+
+is_set_in_cycle : SetOrCycle -> Bool
+is_set_in_cycle set_or_cycle = case set_or_cycle of
+    SetOrCycle_Cycle _ -> False
+    SetOrCycle_Set s -> Maybe.Extra.isJust (CardSet.data_of_set s).cycle
+
+
+set_combo : Model -> UI.Element Msg
+set_combo model = Widgets.Combo.view [ UI.width (px 400) ] model.combo
+    { id = Combo_Set
+    , curr = model.set
+    , view = \preview maybe -> case maybe of
+        Nothing -> UI.text "Any"
+        Just s -> UI.row [ UI.spacing <| if not preview && is_set_in_cycle s then 40 else 5 ]
+            [ UI.el [ UI.width (px 36) ]
+                <| UI.image 
+                    [ UI.height (px 20)
+                    , UI_Border.rounded 5
+                    , UI.clip
+                    , UI.centerX
+                    ]
+                    { src = CardSet.set_or_cycle_icon s, description = "" }
+            , UI.text <| CardSet.set_or_cycle_full_name s
+            ]
+    , options = Nothing :: List.map Just CardSet.all_sets_and_cycles_in_order
+    , select = \s m -> { m | set = s }
+    }
+    |> UI.map Msg_Combo
+
 
 search_button : UI.Element Msg
 search_button = UI_Input.button
@@ -416,6 +453,7 @@ make_advanced_search_query model =
             , type_part
             , string_part "trait" model.traits
             , if model.unique then Just "unique:t" else Nothing
+            , model.set |> Maybe.map (\s -> "set=" ++ set_or_cycle_code_name s)
             , int_part "cost" model.cost model.cost_comparison
             , int_part "strength" model.strength model.strength_comparison
             , int_part "income" model.income model.income_comparison

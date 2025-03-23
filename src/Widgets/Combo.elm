@@ -8,6 +8,7 @@ import Element.Border as UI_Border
 import Html.Events
 import Json.Decode
 import Widgets
+import Html.Attributes
 
 type Msg id model
     = Msg_Open id
@@ -20,7 +21,7 @@ update update_combo_state msg = case msg of
     Msg_Close ->  update_combo_state Nothing
     Msg_Select select -> update_combo_state Nothing |> select
 
-view : List (UI.Attribute (Msg id model)) -> Maybe id -> { id : id, curr : a, view : a -> UI.Element Never, options : List a, select : a -> model -> model } -> UI.Element (Msg id model)
+view : List (UI.Attribute (Msg id model)) -> Maybe id -> { id : id, curr : a, view : Bool -> a -> UI.Element Never, options : List a, select : a -> model -> model } -> UI.Element (Msg id model)
 view attrs current_id args = 
     let
         open = current_id == Just args.id
@@ -30,13 +31,17 @@ view attrs current_id args =
             , UI.paddingXY 5 3
             , UI.width UI.fill
             ]
-            <| UI.map (always Msg_Close) <| args.view opt
+            <| UI.map (always Msg_Close) <| args.view False opt
         options = if open
             then UI.column 
                 [ UI_Background.color Widgets.background_color
                 , UI_Border.color Widgets.border_color
                 , UI_Border.width 1
                 , UI.width UI.fill
+                , UI.htmlAttribute <| Html.Attributes.style "height" "auto"
+                , UI.htmlAttribute <| Html.Attributes.style "max-height" "400px"
+                , UI.htmlAttribute <| Html.Attributes.style "overflow-y" "auto"
+                , UI.clip
                 ]
                 <| List.map option_button args.options
             else UI.none
@@ -49,7 +54,7 @@ view attrs current_id args =
         UI.el
             (Widgets.button_style_attributes ++ button_attrs ++ attrs)
             <| UI.row [ UI.width UI.fill ]
-                [ UI.map (always Msg_Close) <| args.view args.curr
+                [ UI.map (always Msg_Close) <| args.view True args.curr
                 , Fontawesome.text [ UI.alignRight ] "\u{f0d7}"
                 ] 
 

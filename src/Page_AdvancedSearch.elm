@@ -59,7 +59,7 @@ type alias Model =
     , claim_comparison : Comparison
     , influence : Maybe Int
     , influence_comparison : Comparison
-    , allowed : Bool
+    , legal : Bool
     , restricted : Bool
     , banned : Bool
     , icon_military : SearchIcon
@@ -114,7 +114,7 @@ init =
     , claim_comparison = Query.Comparison_Equal
     , influence = Nothing
     , influence_comparison = Query.Comparison_Equal
-    , allowed = True
+    , legal = True
     , restricted = True
     , banned = False
     , icon_military = SearchIcon_None
@@ -275,7 +275,7 @@ int_row curr_combo id value comparison value_change comparison_change = UI.row [
 
 legality_row : Model -> UI.Element Msg
 legality_row model = UI.row [ UI.spacing 30 ]
-    [ text_checkbox [] "Allowed" model.allowed (\b -> { model | allowed = b })
+    [ text_checkbox [] "Legal" model.legal (\b -> { model | legal = b })
     , text_checkbox [] "Restricted" model.restricted (\b -> { model | restricted = b })
     , text_checkbox [] "Banned" model.banned (\b -> { model | banned = b })
     ]
@@ -434,12 +434,12 @@ make_advanced_search_query model =
             |> Maybe.map (\s -> name ++ comparison_str ++ s)
         type_part = case model.card_type of
             Nothing -> Nothing
-            Just CardType_Character -> Just "c"
-            Just CardType_Location -> Just "l"
-            Just CardType_Attachment -> Just "at"
-            Just CardType_Event -> Just "e"
-            Just CardType_Plot -> Just "p"
-            Just CardType_Agenda -> Just "ag"
+            Just CardType_Character -> Just "type:c"
+            Just CardType_Location -> Just "type:l"
+            Just CardType_Attachment -> Just "type:at"
+            Just CardType_Event -> Just "type:e"
+            Just CardType_Plot -> Just "type:p"
+            Just CardType_Agenda -> Just "type:ag"
         int_part name int c =
             let
                 comparison_str = case c of
@@ -473,7 +473,7 @@ make_advanced_search_query model =
             , int_part "initiative" model.initiative model.initiative_comparison
             , int_part "claim" model.claim model.claim_comparison
             , int_part "influence" model.influence model.influence_comparison
-            , bools_part "legality" ":" [ (model.allowed, "a"), (model.restricted, "r"), (model.banned, "b") ]
+            , bools_part "legality" ":" [ (model.legal, "l"), (model.restricted, "r"), (model.banned, "b") ]
             , bools_part "icon" (search_comparison_str model.icon_comparison)
                 [ (model.icon_military == SearchIcon_Regular, "m")
                 , (model.icon_intrigue == SearchIcon_Regular, "i")

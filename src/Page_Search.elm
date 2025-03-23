@@ -6,6 +6,7 @@ import Widgets
 
 import Browser.Navigation as Navigation
 import Element as UI exposing (px)
+import Element.Border as UI_Border
 import Element.Font as UI_Font
 import Query
 
@@ -99,6 +100,8 @@ view_card card =
             then UI.image 
                 [ UI.height (px 227)
                 , UI.width (px 325) 
+                , UI_Border.rounded 10
+                , UI.clip
                 ] 
                 { src = Card.image_url card
                 , description = card.name
@@ -106,6 +109,8 @@ view_card card =
             else UI.image 
                 [ UI.height (px 350)
                 , UI.width (px 245) 
+                , UI_Border.rounded 10
+                , UI.clip
                 ] 
                 { src = Card.image_url card
                 , description = card.name

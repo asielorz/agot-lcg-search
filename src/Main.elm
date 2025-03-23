@@ -1,6 +1,9 @@
 module Main exposing (main)
 
+import Card exposing (Card)
+import Cards
 import Page_AdvancedSearch
+import Page_Card
 import Page_Search
 import Page_Start
 import Page_404
@@ -9,8 +12,9 @@ import Widgets
 import Browser
 import Browser.Navigation as Navigation
 import Element as UI
+import List.Extra
 import Url exposing (Url)
-import Url.Parser
+import Url.Parser exposing ((</>))
 
 main : Program () Model Msg
 main =
@@ -27,6 +31,7 @@ type Msg
     = Msg_Start Page_Start.Msg
     | Msg_Search Page_Search.Msg
     | Msg_AdvancedSearch Page_AdvancedSearch.Msg
+    | Msg_Card Page_Card.Msg
     | Msg_404 Page_404.Msg
     | Msg_UrlRequest Browser.UrlRequest
     | Msg_UrlChange Url
@@ -35,6 +40,7 @@ type PageModel
     = Model_Start Page_Start.Model
     | Model_Search Page_Search.Model
     | Model_AdvancedSearch Page_AdvancedSearch.Model
+    | Model_Card Page_Card.Model
     | Model_404 Page_404.Model
 
 type alias Model = 
@@ -45,10 +51,15 @@ type alias Model =
 init : Url -> Navigation.Key -> Model
 init url key =
     let
+        card_page_model id = case card_with_id id of
+            Nothing -> Model_404 Page_404.init
+            Just card -> Model_Card <| Page_Card.init card
+
         parser = Url.Parser.oneOf
             [ Url.Parser.map (Model_Start Page_Start.init) Url.Parser.top
             , Url.Parser.map (Model_Search <| Page_Search.init url.query) (Url.Parser.s "search")
             , Url.Parser.map (Model_AdvancedSearch Page_AdvancedSearch.init) (Url.Parser.s "advanced")
+            , Url.Parser.map card_page_model (Url.Parser.s "card" </> Url.Parser.string)
             ]
         page = Url.Parser.parse parser url 
             |> Maybe.withDefault (Model_404 Page_404.init)
@@ -64,6 +75,8 @@ update msg model = case (msg, model.page) of
         |> map_update model Model_Search Msg_Search
     (Msg_AdvancedSearch page_msg, Model_AdvancedSearch page_model) -> Page_AdvancedSearch.update model.navigation_key page_msg page_model 
         |> map_update model Model_AdvancedSearch Msg_AdvancedSearch
+    (Msg_Card page_msg, Model_Card page_model) -> Page_Card.update model.navigation_key page_msg page_model 
+        |> map_update model Model_Card Msg_Card
     (Msg_404 page_msg, Model_404 page_model) -> Page_404.update model.navigation_key page_msg page_model 
         |> map_update model Model_404 Msg_404
     (Msg_UrlRequest request, _) -> case request of
@@ -80,7 +93,11 @@ view model = case model.page of
     Model_Start page_model -> Page_Start.view page_model |> map_view Msg_Start
     Model_Search page_model -> Page_Search.view page_model |> map_view Msg_Search
     Model_AdvancedSearch page_model -> Page_AdvancedSearch.view page_model |> map_view Msg_AdvancedSearch
+    Model_Card page_model -> Page_Card.view page_model |> map_view Msg_Card
     Model_404 page_model -> Page_404.view page_model |> map_view Msg_404
 
 map_view : (msg -> Msg) -> (String, UI.Element msg) -> (String, UI.Element Msg)
 map_view make_msg (title, content) = (title, content |> UI.map make_msg)
+
+card_with_id : String -> Maybe Card
+card_with_id id = List.Extra.find (\c -> c.id == id) Cards.all_cards

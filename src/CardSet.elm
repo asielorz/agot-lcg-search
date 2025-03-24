@@ -185,7 +185,7 @@ set_data =
     , { set = Set_SpoilsOfWar, index = 67, code_name = "sow", full_name = "Spoils of War", cycle = Just Cycle_ConquestAndDefiance }
     , { set = Set_TheChampionsPurse, index = 68, code_name = "tcp", full_name = "The Champion's Purse", cycle = Just Cycle_ConquestAndDefiance }
     , { set = Set_FireMadeFlesh, index = 69, code_name = "fmf", full_name = "Fire Made Flesh", cycle = Just Cycle_ConquestAndDefiance }
-    , { set = Set_AncestralHome, index = 79, code_name = "ah", full_name = "Ancestral Home", cycle = Just Cycle_ConquestAndDefiance }
+    , { set = Set_AncestralHome, index = 70, code_name = "ah", full_name = "Ancestral Home", cycle = Just Cycle_ConquestAndDefiance }
     , { set = Set_ThePrizeOfTheNorth, index = 71, code_name = "tpotn", full_name = "The Prize of the North", cycle = Just Cycle_ConquestAndDefiance }
     , { set = Set_ADireMessage, index = 72, code_name = "adm", full_name = "A Dire Message", cycle = Just Cycle_ConquestAndDefiance }
 

@@ -86,6 +86,16 @@ search_bar query msg_query_change msg_search = UI_Input.text
             , label =  UI_Input.labelHidden "Search"  
             }
 
+simple_button : String -> msg -> UI.Element msg
+simple_button label on_press = UI_Input.button 
+    (button_style_attributes ++
+    [ UI.padding 8
+    , UI_Font.size 16
+    ]) 
+    { label = UI.text label
+    , onPress = Just on_press 
+    }
+
 link_button : String -> String -> UI.Element msg
 link_button text url = UI.link
     (button_style_attributes ++

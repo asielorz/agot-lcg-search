@@ -5,6 +5,7 @@ import Cards
 import Page_AdvancedSearch
 import Page_Card
 import Page_Search
+import Page_Sets
 import Page_Start
 import Page_404
 import Widgets
@@ -32,6 +33,7 @@ type Msg
     | Msg_Search Page_Search.Msg
     | Msg_AdvancedSearch Page_AdvancedSearch.Msg
     | Msg_Card Page_Card.Msg
+    | Msg_Sets Page_Sets.Msg
     | Msg_404 Page_404.Msg
     | Msg_UrlRequest Browser.UrlRequest
     | Msg_UrlChange Url
@@ -41,6 +43,7 @@ type PageModel
     | Model_Search Page_Search.Model
     | Model_AdvancedSearch Page_AdvancedSearch.Model
     | Model_Card Page_Card.Model
+    | Model_Sets Page_Sets.Model
     | Model_404 Page_404.Model
 
 type alias Model = 
@@ -59,6 +62,7 @@ init url key =
             [ Url.Parser.map (Model_Start Page_Start.init) Url.Parser.top
             , Url.Parser.map (Model_Search <| Page_Search.init url.query) (Url.Parser.s "search")
             , Url.Parser.map (Model_AdvancedSearch Page_AdvancedSearch.init) (Url.Parser.s "advanced")
+            , Url.Parser.map (Model_Sets Page_Sets.init) (Url.Parser.s "sets")
             , Url.Parser.map card_page_model (Url.Parser.s "card" </> Url.Parser.string)
             ]
         page = Url.Parser.parse parser url 
@@ -77,6 +81,8 @@ update msg model = case (msg, model.page) of
         |> map_update model Model_AdvancedSearch Msg_AdvancedSearch
     (Msg_Card page_msg, Model_Card page_model) -> Page_Card.update model.navigation_key page_msg page_model 
         |> map_update model Model_Card Msg_Card
+    (Msg_Sets page_msg, Model_Sets page_model) -> Page_Sets.update model.navigation_key page_msg page_model 
+        |> map_update model Model_Sets Msg_Sets
     (Msg_404 page_msg, Model_404 page_model) -> Page_404.update model.navigation_key page_msg page_model 
         |> map_update model Model_404 Msg_404
     (Msg_UrlRequest request, _) -> case request of
@@ -94,6 +100,7 @@ view model = case model.page of
     Model_Search page_model -> Page_Search.view page_model |> map_view Msg_Search
     Model_AdvancedSearch page_model -> Page_AdvancedSearch.view page_model |> map_view Msg_AdvancedSearch
     Model_Card page_model -> Page_Card.view page_model |> map_view Msg_Card
+    Model_Sets page_model -> Page_Sets.view page_model |> map_view Msg_Sets
     Model_404 page_model -> Page_404.view page_model |> map_view Msg_404
 
 map_view : (msg -> Msg) -> (String, UI.Element msg) -> (String, UI.Element Msg)

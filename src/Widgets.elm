@@ -8,6 +8,10 @@ import Element.Input as UI_Input
 import Html.Events
 import Json.Decode
 import Browser
+import CardSet exposing (SetOrCycle)
+
+page_background_color : UI.Color
+page_background_color = rgb255 24 26 27
 
 border_color : UI.Color
 border_color = rgb255 168 160 149
@@ -126,7 +130,7 @@ layout (title, content) =
     { title = title
     , body = 
         [ UI.layout 
-            [ UI_Background.color <| UI.rgb255 24 26 27
+            [ UI_Background.color page_background_color
             , UI_Font.color <| UI.rgb255 211 207 201
             ] 
             content
@@ -160,3 +164,13 @@ header search_buffer query_change_msg search_msg =
 
 separator : UI.Element msg
 separator = UI.el [ UI.height (px 1), UI.width UI.fill, UI_Background.color separator_color ] UI.none
+
+set_icon : List (UI.Attribute msg) -> SetOrCycle -> UI.Element msg
+set_icon attrs s = UI.el (UI.width (px 36) :: attrs)
+    <| UI.image 
+        [ UI.height (px 20)
+        , UI_Border.rounded 5
+        , UI.clip
+        , UI.centerX
+        ]
+        { src = CardSet.set_or_cycle_icon s, description = "" }

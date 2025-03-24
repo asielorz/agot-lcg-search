@@ -9,7 +9,6 @@ import Widgets.Combo
 
 import Browser.Navigation as Navigation
 import Element as UI exposing (px)
-import Element.Border as UI_Border
 import Element.Events as UI_Events
 import Element.Input as UI_Input
 import Maybe.Extra
@@ -307,27 +306,14 @@ crest_row model = UI.row [ UI.spacing 30 ]
     ]
 
 
-is_set_in_cycle : SetOrCycle -> Bool
-is_set_in_cycle set_or_cycle = case set_or_cycle of
-    SetOrCycle_Cycle _ -> False
-    SetOrCycle_Set s -> Maybe.Extra.isJust (CardSet.data_of_set s).cycle
-
-
 set_combo : Model -> UI.Element Msg
 set_combo model = Widgets.Combo.view [ UI.width (px 400) ] model.combo
     { id = Combo_Set
     , curr = model.set
     , view = \preview maybe -> case maybe of
         Nothing -> UI.text "Any"
-        Just s -> UI.row [ UI.spacing <| if not preview && is_set_in_cycle s then 40 else 5 ]
-            [ UI.el [ UI.width (px 36) ]
-                <| UI.image 
-                    [ UI.height (px 20)
-                    , UI_Border.rounded 5
-                    , UI.clip
-                    , UI.centerX
-                    ]
-                    { src = CardSet.set_or_cycle_icon s, description = "" }
+        Just s -> UI.row [ UI.spacing <| if not preview && CardSet.is_set_in_cycle s then 40 else 5 ]
+            [ Widgets.set_icon [] s
             , UI.text <| CardSet.set_or_cycle_full_name s
             ]
     , options = Nothing :: List.map Just CardSet.all_sets_and_cycles_in_order

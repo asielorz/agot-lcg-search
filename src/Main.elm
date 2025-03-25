@@ -11,9 +11,11 @@ import Page_404
 import Widgets
 
 import Browser
+import Browser.Dom
 import Browser.Navigation as Navigation
 import Element as UI
 import List.Extra
+import Task
 import Url exposing (Url)
 import Url.Parser exposing ((</>))
 
@@ -29,7 +31,8 @@ main =
         }
 
 type Msg
-    = Msg_Start Page_Start.Msg
+    = Msg_Noop
+    | Msg_Start Page_Start.Msg
     | Msg_Search Page_Search.Msg
     | Msg_AdvancedSearch Page_AdvancedSearch.Msg
     | Msg_Card Page_Card.Msg
@@ -88,7 +91,7 @@ update msg model = case (msg, model.page) of
     (Msg_UrlRequest request, _) -> case request of
         Browser.Internal url -> (model, Navigation.pushUrl model.navigation_key (Url.toString url))
         Browser.External url -> (model, Navigation.load url)
-    (Msg_UrlChange new_url, _) -> (init new_url model.navigation_key, Cmd.none)
+    (Msg_UrlChange new_url, _) -> (init new_url model.navigation_key, Task.perform (always Msg_Noop) (Browser.Dom.setViewport 0 0))
     (_, _) -> (model, Cmd.none) -- Will never happen
 
 map_update : Model -> (model -> PageModel) -> (msg -> Msg) -> (model, Cmd msg) -> (Model, Cmd Msg)

@@ -71,7 +71,8 @@ view_set_table_row even set = UI.link
         [ padding_between_icon_and_name set
         , Widgets.set_icon [] set
         , UI.text <| CardSet.set_or_cycle_full_name set
-        , UI.el [ UI.alignRight ] <| UI.text <| (String.fromInt <| cards_in_set_or_cycle set) ++ " cards"
+        , UI.el [ UI.alignRight ] <| set_or_cycle_release_date_element set
+        , UI.el [ UI.alignRight, UI.width (px 100) ] <| UI.el [ UI.alignRight ] <| UI.text <| (String.fromInt <| cards_in_set_or_cycle set) ++ " cards"
         ]
     }
 
@@ -84,3 +85,23 @@ cards_in_set_or_cycle : SetOrCycle -> Int
 cards_in_set_or_cycle set_or_cycle = case set_or_cycle of
     SetOrCycle_Set set -> (CardSet.data_of_set set).cards
     SetOrCycle_Cycle _ -> 120
+
+set_or_cycle_release_date_element : SetOrCycle -> UI.Element msg
+set_or_cycle_release_date_element set_or_cycle = case set_or_cycle of
+    SetOrCycle_Cycle _ -> UI.none
+    SetOrCycle_Set set -> 
+        let
+            to_str x =
+                let
+                    str = String.fromInt x
+                in
+                    if String.length str < 2
+                        then "0" ++ str
+                        else str
+            date = (CardSet.data_of_set set).release_date
+            date_text = case (date.month, date.day) of
+                (Just month, Just day) -> to_str date.year ++ "-" ++ to_str month ++ "-" ++ to_str day
+                (Just month, Nothing) -> to_str date.year ++ "-" ++ to_str month
+                _ -> to_str date.year
+        in
+            UI.text date_text

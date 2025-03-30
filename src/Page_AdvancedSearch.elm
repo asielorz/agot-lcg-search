@@ -13,6 +13,7 @@ import Element.Events as UI_Events
 import Element.Input as UI_Input
 import Maybe.Extra
 import CardSet exposing (set_or_cycle_code_name)
+import List.Extra
 
 type SearchComparison = SearchComparison_Exact | SearchComparison_AtLeast | SearchComparison_AtMost
 
@@ -27,8 +28,27 @@ type Combo
     | Combo_Influence
     | Combo_Set
     | Combo_IconComparison
+    | Combo_SortOrder
 
 type SearchIcon = SearchIcon_None | SearchIcon_Regular | SearchIcon_Naval
+
+type SortOrder
+    = SortOrder_DateAsc
+    | SortOrder_DateDesc
+    | SortOrder_NameAsc
+    | SortOrder_NameDesc
+    | SortOrder_CostAsc
+    | SortOrder_CostDesc
+    | SortOrder_StrengthAsc
+    | SortOrder_StrengthDesc
+    | SortOrder_IncomeAsc
+    | SortOrder_IncomeDesc
+    | SortOrder_InitiativeAsc
+    | SortOrder_InitiativeDesc
+    | SortOrder_ClaimAsc
+    | SortOrder_ClaimDesc
+    | SortOrder_InfluenceAsc
+    | SortOrder_InfluenceDesc
 
 type alias Model = 
     { header_query : String
@@ -73,6 +93,7 @@ type alias Model =
     , set : Maybe SetOrCycle
     , flavor : String
     , illustrator : String
+    , sort_order : List SortOrder
 
     , combo : Maybe Combo
     }
@@ -128,6 +149,7 @@ init =
     , set = Nothing
     , flavor = ""
     , illustrator = ""
+    , sort_order = []
 
     , combo = Nothing
     }
@@ -138,7 +160,10 @@ update key msg model = case msg of
     Msg_HeaderQueryChanged new_query -> ({ model | header_query = new_query }, Cmd.none)
     Msg_HeaderSearch -> (model, Navigation.pushUrl key (Query.search_url { query = model.header_query, sort = [], page = 0 }))
     Msg_ModelChanged new_model -> (new_model, Cmd.none)
-    Msg_Search -> (model, Navigation.pushUrl key (Query.search_url { query = make_advanced_search_query model, sort = [], page = 0 }))
+    Msg_Search -> (model, Navigation.pushUrl key (Query.search_url 
+        { query = make_advanced_search_query model
+        , sort = List.map sort_order_to_query_string model.sort_order
+        , page = 0 }))
     Msg_Combo combo_msg -> (Widgets.Combo.update (\c -> { model | combo = c }) combo_msg, Cmd.none)
 
 view : Model -> (String, UI.Element Msg)
@@ -174,17 +199,17 @@ view_advanced_search model = UI.column
     , Widgets.separator
     , labeled "Set" <| set_combo model
     , Widgets.separator
-    , labeled "Cost" <| int_row model.combo Combo_Cost model.cost model.cost_comparison (\a -> { model | cost = a }) (\a -> { model | cost_comparison = a })
+    , labeled "Cost" <| int_row model.combo Combo_Cost model.cost model.cost_comparison (\a -> { model | cost = a }) (\a m -> { m | cost_comparison = a })
     , Widgets.separator
-    , labeled "Strength" <| int_row model.combo Combo_Strength model.strength model.strength_comparison (\a -> { model | strength = a }) (\a -> { model | strength_comparison = a })
+    , labeled "Strength" <| int_row model.combo Combo_Strength model.strength model.strength_comparison (\a -> { model | strength = a }) (\a m -> { m | strength_comparison = a })
     , Widgets.separator
-    , labeled "Income" <| int_row model.combo Combo_Income model.income model.income_comparison (\a -> { model | income = a }) (\a -> { model | income_comparison = a })
+    , labeled "Income" <| int_row model.combo Combo_Income model.income model.income_comparison (\a -> { model | income = a }) (\a m -> { m | income_comparison = a })
     , Widgets.separator
-    , labeled "Initiative" <| int_row model.combo Combo_Initiative model.initiative model.initiative_comparison (\a -> { model | initiative = a }) (\a -> { model | initiative_comparison = a })
+    , labeled "Initiative" <| int_row model.combo Combo_Initiative model.initiative model.initiative_comparison (\a -> { model | initiative = a }) (\a m -> { m | initiative_comparison = a })
     , Widgets.separator
-    , labeled "Claim" <| int_row model.combo Combo_Claim model.claim model.claim_comparison (\a -> { model | claim = a }) (\a -> { model | claim_comparison = a })
+    , labeled "Claim" <| int_row model.combo Combo_Claim model.claim model.claim_comparison (\a -> { model | claim = a }) (\a m -> { m | claim_comparison = a })
     , Widgets.separator
-    , labeled "Influence" <| int_row model.combo Combo_Influence model.influence model.influence_comparison (\a -> { model | influence = a }) (\a -> { model | influence_comparison = a })
+    , labeled "Influence" <| int_row model.combo Combo_Influence model.influence model.influence_comparison (\a -> { model | influence = a }) (\a m -> { m | influence_comparison = a })
     , Widgets.separator
     , labeled "Legality" <| legality_row model
     , Widgets.separator
@@ -195,6 +220,8 @@ view_advanced_search model = UI.column
     , labeled "Flavor text" <| Widgets.input_text [] model.flavor "Any words in the decorative flavor test, e.g. \"Card designed by\"" (\s -> Msg_ModelChanged { model | flavor = s }) Msg_Search
     , Widgets.separator
     , labeled "Illustrator" <| Widgets.input_text [] model.illustrator "An illustrator's name, e.g. \"Matson\"" (\s -> Msg_ModelChanged { model | illustrator = s }) Msg_Search
+    , Widgets.separator
+    , labeled "Order" <| sort_order_row model
     , Widgets.separator
     , labeled "" <| search_button
     ]
@@ -251,14 +278,14 @@ traits_row model = UI.row
     , text_checkbox [ UI.width UI.shrink ] "Unique" model.unique (\b -> { model | unique = b })
     ]
 
-int_row : Maybe Combo -> Combo -> Maybe Int -> Comparison -> (Maybe Int -> Model) -> (Comparison -> Model) -> UI.Element Msg
+int_row : Maybe Combo -> Combo -> Maybe Int -> Comparison -> (Maybe Int -> Model) -> (Comparison -> Model -> Model) -> UI.Element Msg
 int_row curr_combo id value comparison value_change comparison_change = UI.row [ UI.spacing 10 ]
     [ Widgets.Combo.view [ UI.width (px 250) ] curr_combo 
         { id = id
         , curr = comparison
         , view = \_ c -> c |> comparison_to_string |> UI.text
         , options = [ Comparison_Equal, Comparison_NotEqual, Comparison_GreaterThan, Comparison_GreaterThanOrEqual, Comparison_LessThan, Comparison_LessThanOrEqual ]
-        , select = \opt _ -> comparison_change opt
+        , select = \opt m -> comparison_change opt m
         }
         |> UI.map Msg_Combo
     , Widgets.input_text [ UI.width (px 250) ]
@@ -395,6 +422,36 @@ card_type_combo_view t =
     in
         UI.row [ UI.spacing 10 ] [ UI.el [UI.width (px 25)] <| Fontawesome.text [ UI.centerX ] icon, UI.text label ]
 
+sort_order_row : Model -> UI.Element Msg
+sort_order_row model = Widgets.Combo.multi_combo [] model.combo
+    { id = Combo_SortOrder
+    , curr = model.sort_order
+    , view = \_ a -> UI.text <| sort_order_to_ui_string a
+    , options =
+        [ SortOrder_DateAsc
+        , SortOrder_DateDesc
+        , SortOrder_NameAsc
+        , SortOrder_NameDesc
+        , SortOrder_CostAsc
+        , SortOrder_CostDesc
+        , SortOrder_StrengthAsc
+        , SortOrder_StrengthDesc
+        , SortOrder_IncomeAsc
+        , SortOrder_IncomeDesc
+        , SortOrder_InitiativeAsc
+        , SortOrder_InitiativeDesc
+        , SortOrder_ClaimAsc
+        , SortOrder_ClaimDesc
+        , SortOrder_InfluenceAsc
+        , SortOrder_InfluenceDesc
+        ]
+    , select = \a m -> { m | sort_order = List.Extra.unique (m.sort_order ++ [ a ]) }
+    , unselect = \i m -> { m | sort_order = List.Extra.removeAt i m.sort_order }
+    , location = Widgets.Combo.Location_Above
+    , width_override = Just (px 250)
+    }
+    |> UI.map Msg_Combo
+
 comparison_to_string : Comparison -> String
 comparison_to_string cmp = case cmp of
     Comparison_Equal -> "Equal to"
@@ -483,3 +540,41 @@ quote_token_with_spaces : String -> String
 quote_token_with_spaces token = if String.contains " " token
     then "\"" ++ token ++ "\""
     else token
+
+sort_order_to_query_string : SortOrder -> String
+sort_order_to_query_string order = case order of
+    SortOrder_DateAsc -> "date"
+    SortOrder_DateDesc -> "date>"
+    SortOrder_NameAsc -> "name"
+    SortOrder_NameDesc -> "name>"
+    SortOrder_CostAsc -> "cost"
+    SortOrder_CostDesc -> "cost>"
+    SortOrder_StrengthAsc -> "str"
+    SortOrder_StrengthDesc -> "str>"
+    SortOrder_IncomeAsc -> "inc"
+    SortOrder_IncomeDesc -> "inc>"
+    SortOrder_InitiativeAsc -> "init"
+    SortOrder_InitiativeDesc -> "int>"
+    SortOrder_ClaimAsc -> "claim"
+    SortOrder_ClaimDesc -> "claim>"
+    SortOrder_InfluenceAsc -> "inf"
+    SortOrder_InfluenceDesc -> "inf>"
+
+sort_order_to_ui_string : SortOrder -> String
+sort_order_to_ui_string order = case order of
+    SortOrder_DateAsc -> "Oldest to newest"
+    SortOrder_DateDesc -> "Newest to oldest"
+    SortOrder_NameAsc -> "Name A-Z"
+    SortOrder_NameDesc -> "Name Z-A"
+    SortOrder_CostAsc -> "Cost (ascending)"
+    SortOrder_CostDesc -> "Cost (descending)"
+    SortOrder_StrengthAsc -> "Strength (ascending)"
+    SortOrder_StrengthDesc -> "Strength (descending)"
+    SortOrder_IncomeAsc -> "Income (ascending)"
+    SortOrder_IncomeDesc -> "Income (descending)"
+    SortOrder_InitiativeAsc -> "Initiative (ascending)"
+    SortOrder_InitiativeDesc -> "Initiative (descending)"
+    SortOrder_ClaimAsc -> "Claim (ascending)"
+    SortOrder_ClaimDesc -> "Claim (descending)"
+    SortOrder_InfluenceAsc -> "Influence (ascending)"
+    SortOrder_InfluenceDesc -> "Influence (descending)"

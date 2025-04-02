@@ -78,9 +78,12 @@ type alias Model =
     , claim_comparison : Comparison
     , influence : Maybe Int
     , influence_comparison : Comparison
-    , legal : Bool
-    , restricted : Bool
-    , banned : Bool
+    , joust_legal : Bool
+    , joust_restricted : Bool
+    , joust_banned : Bool
+    , melee_legal : Bool
+    , melee_restricted : Bool
+    , melee_banned : Bool
     , icon_military : SearchIcon
     , icon_intrigue : SearchIcon
     , icon_power : SearchIcon
@@ -134,9 +137,12 @@ init =
     , claim_comparison = Query.Comparison_Equal
     , influence = Nothing
     , influence_comparison = Query.Comparison_Equal
-    , legal = True
-    , restricted = True
-    , banned = False
+    , joust_legal = False
+    , joust_restricted = False
+    , joust_banned = False
+    , melee_legal = False
+    , melee_restricted = False
+    , melee_banned = False
     , icon_military = SearchIcon_None
     , icon_intrigue = SearchIcon_None
     , icon_power = SearchIcon_None
@@ -211,7 +217,9 @@ view_advanced_search model = UI.column
     , Widgets.separator
     , labeled "Influence" <| int_row model.combo Combo_Influence model.influence model.influence_comparison (\a -> { model | influence = a }) (\a m -> { m | influence_comparison = a })
     , Widgets.separator
-    , labeled "Legality" <| legality_row model
+    , labeled "Legality (Joust)" <| legality_joust_row model
+    , Widgets.separator
+    , labeled "Legality (Melee)" <| legality_melee_row model
     , Widgets.separator
     , labeled "Icons" <| icon_row model
     , Widgets.separator
@@ -300,12 +308,20 @@ int_row curr_combo id value comparison value_change comparison_change = UI.row [
         Msg_Search
     ]
 
-legality_row : Model -> UI.Element Msg
-legality_row model = UI.row [ UI.spacing 30 ]
-    [ text_checkbox [] "Legal" model.legal (\b -> { model | legal = b })
-    , text_checkbox [] "Restricted" model.restricted (\b -> { model | restricted = b })
-    , text_checkbox [] "Banned" model.banned (\b -> { model | banned = b })
+legality_joust_row : Model -> UI.Element Msg
+legality_joust_row model = UI.row [ UI.spacing 30 ]
+    [ text_checkbox [] "Legal" model.joust_legal (\b -> { model | joust_legal = b })
+    , text_checkbox [] "Restricted" model.joust_restricted (\b -> { model | joust_restricted = b })
+    , text_checkbox [] "Banned" model.joust_banned (\b -> { model | joust_banned = b })
     ]
+
+legality_melee_row : Model -> UI.Element Msg
+legality_melee_row model = UI.row [ UI.spacing 30 ]
+    [ text_checkbox [] "Legal" model.melee_legal (\b -> { model | melee_legal = b })
+    , text_checkbox [] "Restricted" model.melee_restricted (\b -> { model | melee_restricted = b })
+    , text_checkbox [] "Banned" model.melee_banned (\b -> { model | melee_banned = b })
+    ]
+
 
 icon_row : Model -> UI.Element Msg
 icon_row model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
@@ -517,7 +533,8 @@ make_advanced_search_query model =
             , int_part "initiative" model.initiative model.initiative_comparison
             , int_part "claim" model.claim model.claim_comparison
             , int_part "influence" model.influence model.influence_comparison
-            , bools_part "legality" ":" [ (model.legal, "l"), (model.restricted, "r"), (model.banned, "b") ]
+            , bools_part "joust" ":" [ (model.joust_legal, "l"), (model.joust_restricted, "r"), (model.joust_banned, "b") ]
+            , bools_part "melee" ":" [ (model.melee_legal, "l"), (model.melee_restricted, "r"), (model.melee_banned, "b") ]
             , bools_part "icon" (search_comparison_str model.icon_comparison)
                 [ (model.icon_military == SearchIcon_Regular, "m")
                 , (model.icon_intrigue == SearchIcon_Regular, "i")

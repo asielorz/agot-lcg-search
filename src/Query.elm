@@ -97,8 +97,10 @@ type Predicate
     | Predicate_Illustrator String
     | Predicate_House Comparison (List House)
     | Predicate_Unique Bool
-    | Predicate_Legality Comparison Legality
-    | Predicate_LegalityOneOf (List Legality)
+    | Predicate_LegalityJoust Comparison Legality
+    | Predicate_LegalityMelee Comparison Legality
+    | Predicate_LegalityJoustOneOf (List Legality)
+    | Predicate_LegalityMeleeOneOf (List Legality)
     | Predicate_Traits String
     | Predicate_Icons Comparison (List Icon)
     | Predicate_Crest Crest
@@ -121,8 +123,10 @@ card_passes_predicate predicate card = case predicate of
     Predicate_Illustrator s -> string_contains_predicate s (Just card.illustrator)
     Predicate_House c h -> house_predicate h c card.house
     Predicate_Unique b -> card.unique == b
-    Predicate_Legality c l -> int_comparison_predicate (legality_order l) c (Just <| legality_order card.legality)
-    Predicate_LegalityOneOf ls -> List.member card.legality ls
+    Predicate_LegalityJoust c l -> int_comparison_predicate (legality_order l) c (Just <| legality_order card.legality_joust)
+    Predicate_LegalityMelee c l -> int_comparison_predicate (legality_order l) c (Just <| legality_order card.legality_melee)
+    Predicate_LegalityJoustOneOf ls -> List.member card.legality_joust ls
+    Predicate_LegalityMeleeOneOf ls -> List.member card.legality_melee ls
     Predicate_Traits t -> traits_predicate t card.traits
     Predicate_Icons c p -> icons_predicate p c card.icons card.card_type
     Predicate_Crest c -> List.member c card.crest
@@ -251,8 +255,10 @@ parse_predicate_from_token token =
             , Parser.succeed Predicate_Illustrator |. Parser.symbol "illustrator:" |= parse_until_end
             , Parser.succeed Predicate_House |. Parser.symbol "house" |= parse_comparison |= parse_houses
             , Parser.succeed Predicate_Unique |. Parser.symbol "unique:" |= parse_tf_bool |. Parser.end
-            , Parser.succeed Predicate_LegalityOneOf |. Parser.symbol "legality:" |= parse_legalities
-            , Parser.succeed Predicate_Legality |. Parser.symbol "legality" |= parse_comparison |= parse_legality
+            , Parser.succeed Predicate_LegalityJoustOneOf |. Parser.symbol "joust:" |= parse_legalities
+            , Parser.succeed Predicate_LegalityJoust |. Parser.symbol "joust" |= parse_comparison |= parse_legality
+            , Parser.succeed Predicate_LegalityMeleeOneOf |. Parser.symbol "melee:" |= parse_legalities
+            , Parser.succeed Predicate_LegalityMelee |. Parser.symbol "melee" |= parse_comparison |= parse_legality
             , Parser.succeed Predicate_Traits |. Parser.symbol "trait:" |= parse_until_end
             , Parser.succeed Predicate_Icons |. Parser.symbol "icon" |= parse_comparison |= parse_icons
             , Parser.succeed Predicate_Crest |. Parser.symbol "crest:" |= parse_crest

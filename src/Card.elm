@@ -4,7 +4,7 @@ import CardSet exposing (Set)
 
 import Json.Encode
 import Json.Decode
-import Json.Decode.Pipeline exposing (required, optional)
+import Json.Decode.Pipeline exposing (required, optional, hardcoded)
 import CardSet exposing (data_of_set)
 import List.Extra
 
@@ -21,12 +21,16 @@ type alias Card =
     , set : Set
     , number : Int
     , quantity : Int
-    , legality : Legality
+    , legality_joust : Legality
+    , legality_melee : Legality
     , illustrator : String
     , house : List House
     , unique : Bool
     , rules_text : Maybe String
     , flavor_text : Maybe String
+    , erratas : List Never
+    , faqs : List Never
+    , duplicate_id : Maybe String
 
     -- Character
     , cost : Maybe Int
@@ -161,12 +165,16 @@ card_from_json =
         |> required "set" set_from_json
         |> required "number" Json.Decode.int
         |> required "quantity" Json.Decode.int
-        |> required "legality" legality_from_json
+        |> required "legality_joust" legality_from_json
+        |> required "legality_melee" legality_from_json
         |> required "illustrator" Json.Decode.string
         |> required "house" (Json.Decode.list house_from_json)
         |> required "unique" Json.Decode.bool
         |> maybe "rules_text" Json.Decode.string
         |> maybe "flavor_text" Json.Decode.string
+        |> hardcoded []
+        |> hardcoded []
+        |> maybe "duplicate_id" Json.Decode.string
         |> maybe "cost" Json.Decode.int
         |> optional "icons" (Json.Decode.list icon_from_json) []
         |> optional "crest" (Json.Decode.list crest_from_json) []
@@ -192,7 +200,8 @@ card_to_json card =
             , Just ("set", card.set |> data_of_set |> .full_name |> Json.Encode.string )
             , Just ("number", Json.Encode.int card.number)
             , Just ("quantity", Json.Encode.int card.quantity)
-            , Just ("legality", Json.Encode.string <| legality_to_string card.legality)
+            , Just ("legality_joust", Json.Encode.string <| legality_to_string card.legality_joust)
+            , Just ("legality_melee", Json.Encode.string <| legality_to_string card.legality_melee)
             , Just ("illustrator", Json.Encode.string card.illustrator)
             , Just ("house", Json.Encode.list (Json.Encode.string << house_to_string) card.house)
             , Just ("unique", Json.Encode.bool card.unique)
@@ -201,6 +210,7 @@ card_to_json card =
             , Just ("traits", Json.Encode.list Json.Encode.string card.traits)
             , maybe_field "rules_text" Json.Encode.string card.rules_text
             , maybe_field "flavor_text" Json.Encode.string card.flavor_text
+            , maybe_field "duplicate_id" Json.Encode.string card.duplicate_id
             , maybe_field "cost" Json.Encode.int card.cost
             , maybe_field "strength" Json.Encode.int card.strength
             , maybe_field "income" Json.Encode.int card.income

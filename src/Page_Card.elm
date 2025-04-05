@@ -190,7 +190,7 @@ naval_icon = UI.inFront <| UI.image
 
 set_line : Card -> UI.Element msg
 set_line card = UI.row [ UI.spacing 10 ]
-    [ UI.image [ UI.height (px 20) ] { src = CardSet.set_icon card.set, description = "" }
+    [ Widgets.set_icon [] (SetOrCycle_Set card.set)
     , UI.text <| (CardSet.data_of_set card.set).full_name ++ " — #" ++ String.fromInt card.number ++ " — " ++ quantity_text card.quantity
     ]
 

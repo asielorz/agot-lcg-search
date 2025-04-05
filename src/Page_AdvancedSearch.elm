@@ -248,13 +248,13 @@ labeled label widget = UI.row [ UI.width UI.fill ]
 house_checkboxes : Model -> UI.Element Msg
 house_checkboxes model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
     [ UI.wrappedRow [ UI.spacing 30 ] 
-        [ image_checkbox [] "/images/house_stark.png" model.house_stark (\b -> { model | house_stark = b })
-        , image_checkbox [] "/images/house_lannister.png" model.house_lannister (\b -> { model | house_lannister = b })
-        , image_checkbox [] "/images/house_baratheon.png" model.house_baratheon (\b -> { model | house_baratheon = b })
-        , image_checkbox [] "/images/house_targaryen.png" model.house_targaryen (\b -> { model | house_targaryen = b })
-        , image_checkbox [] "/images/house_greyjoy.png" model.house_greyjoy (\b -> { model | house_greyjoy = b })
-        , image_checkbox [] "/images/house_martell.png" model.house_martell (\b -> { model | house_martell = b })
-        , image_checkbox [] "/images/house_neutral.png" model.house_neutral (\b -> { model | house_neutral = b })
+        [ image_checkbox [] "/images/houses/stark.png" model.house_stark (\b -> { model | house_stark = b })
+        , image_checkbox [] "/images/houses/lannister.png" model.house_lannister (\b -> { model | house_lannister = b })
+        , image_checkbox [] "/images/houses/baratheon.png" model.house_baratheon (\b -> { model | house_baratheon = b })
+        , image_checkbox [] "/images/houses/targaryen.png" model.house_targaryen (\b -> { model | house_targaryen = b })
+        , image_checkbox [] "/images/houses/greyjoy.png" model.house_greyjoy (\b -> { model | house_greyjoy = b })
+        , image_checkbox [] "/images/houses/martell.png" model.house_martell (\b -> { model | house_martell = b })
+        , image_checkbox [] "/images/houses/neutral.png" model.house_neutral (\b -> { model | house_neutral = b })
         ]
     , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
         { id = Combo_HouseComparison
@@ -323,9 +323,9 @@ legality_melee_row model = UI.row [ UI.spacing 30 ]
 icon_row : Model -> UI.Element Msg
 icon_row model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
     [ UI.wrappedRow [ UI.spacing 30 ]
-        [ icon_checkbox "/images/icon_military.png" model.icon_military (\b -> { model | icon_military = b })
-        , icon_checkbox "/images/icon_intrigue.png" model.icon_intrigue (\b -> { model | icon_intrigue = b })
-        , icon_checkbox "/images/icon_power.png" model.icon_power (\b -> { model | icon_power = b })
+        [ icon_checkbox "/images/icons/military.png" model.icon_military (\b -> { model | icon_military = b })
+        , icon_checkbox "/images/icons/intrigue.png" model.icon_intrigue (\b -> { model | icon_intrigue = b })
+        , icon_checkbox "/images/icons/power.png" model.icon_power (\b -> { model | icon_power = b })
         ]
     , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
         { id = Combo_IconComparison
@@ -340,11 +340,11 @@ icon_row model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
 crest_row : Model -> UI.Element Msg
 crest_row model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
     [ UI.wrappedRow [ UI.spacing 30 ]
-        [ image_checkbox [] "/images/crest_war.png" model.crest_war (\b -> { model | crest_war = b })
-        , image_checkbox [] "/images/crest_noble.png" model.crest_noble (\b -> { model | crest_noble = b })
-        , image_checkbox [] "/images/crest_holy.png" model.crest_holy (\b -> { model | crest_holy = b })
-        , image_checkbox [] "/images/crest_learned.png" model.crest_learned (\b -> { model | crest_learned = b })
-        , image_checkbox [] "/images/crest_shadow.png" model.crest_shadow (\b -> { model | crest_shadow = b })
+        [ image_checkbox [] "/images/crests/war.png" model.crest_war (\b -> { model | crest_war = b })
+        , image_checkbox [] "/images/crests/noble.png" model.crest_noble (\b -> { model | crest_noble = b })
+        , image_checkbox [] "/images/crests/holy.png" model.crest_holy (\b -> { model | crest_holy = b })
+        , image_checkbox [] "/images/crests/learned.png" model.crest_learned (\b -> { model | crest_learned = b })
+        , image_checkbox [] "/images/crests/shadow.png" model.crest_shadow (\b -> { model | crest_shadow = b })
         ]
     , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
         { id = Combo_CrestComparison

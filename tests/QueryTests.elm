@@ -10,52 +10,60 @@ import Test exposing (..)
 eddard : Card
 eddard = 
     { id = "core_5"
-    , name = "Eddard Stark"
-    , card_type = CardType_Character
-    , set = Set_Core
-    , number = 5
-    , quantity = 1
-    , legality = Legality_Legal
-    , illustrator = "John Matson"
-    , house = [ House_Stark ]
-    , unique = True
-    , rules_text = Just "Stalwart. Renown. Deadly.\nEddard Stark claims 1 power when he comes into play."
-    , flavor_text = Just "\"Our way is the older way. The blood of the First Men still flows in the veins of the Starks, and we hold to the belief that the man who passes the sentence should swing the sword.\""
-    , cost = Just 4
-    , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
-    , crest = [ Crest_Noble ]
-    , traits = [ "Lord" ]
-    , strength = Just 3
-    , income = Nothing
-    , initiative = Nothing
-    , claim = Nothing
-    , influence = Nothing
-    }
+      , name = "Eddard Stark"
+      , card_type = CardType_Character
+      , set = Set_Core
+      , number = 5
+      , quantity = 1
+      , legality_joust = Legality_Legal
+      , legality_melee = Legality_Legal
+      , illustrator = "John Matson"
+      , house = [ House_Stark ]
+      , unique = True
+      , rules_text = Just "Stalwart. Renown. Deadly.\nEddard Stark claims 1 power when he comes into play."
+      , flavor_text = Just "\"Our way is the older way. The blood of the First Men still flows in the veins of the Starks, and we hold to the belief that the man who passes the sentence should swing the sword.\""
+      , cost = Just 4
+      , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]
+      , crest = [ Crest_Noble ]
+      , traits = [ "Lord" ]
+      , strength = Just 3
+      , income = Nothing
+      , initiative = Nothing
+      , claim = Nothing
+      , influence = Nothing
+      , erratas = []
+      , faqs = []
+      , duplicate_id = Nothing
+      }
 
 arrogant_contender : Card
 arrogant_contender = 
     { id = "lotr_44"
-    , name = "Arrogant Contender"
-    , card_type = CardType_Character
-    , set = Set_LionsOfTheRock
-    , number = 44
-    , quantity = 3
-    , legality = Legality_Legal
-    , illustrator = "Tiziano Baracchi"
-    , house = [ House_Lannister, House_Baratheon ]
-    , unique = False
-    , rules_text = Just "Melee.\nResponse: After you win a challenge in which Arrogant Contender attacked alone, it claims 1 power for each opposing character."
-    , flavor_text = Just "Card designed by the 2010 World Melee Champion Brett Zeiler"
-    , cost = Just 3
-    , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
-    , crest = [  ]
-    , traits = [ "House Tyrell", "Knight", "Ally" ]
-    , strength = Just 3
-    , income = Nothing
-    , initiative = Nothing
-    , claim = Nothing
-    , influence = Nothing
-    }
+      , name = "Arrogant Contender"
+      , card_type = CardType_Character
+      , set = Set_LionsOfTheRock
+      , number = 44
+      , quantity = 3
+      , legality_joust = Legality_Legal
+      , legality_melee = Legality_Legal
+      , illustrator = "Tiziano Baracchi"
+      , house = [ House_Lannister, House_Baratheon ]
+      , unique = False
+      , rules_text = Just "Melee.\nResponse: After you win a challenge in which Arrogant Contender attacked alone, it claims 1 power for each opposing character."
+      , flavor_text = Just "Card designed by the 2010 World Melee Champion Brett Zeiler"
+      , cost = Just 3
+      , icons = [ Icon_Military { naval = False }, Icon_Intrigue { naval = False } ]
+      , crest = [  ]
+      , traits = [ "House Tyrell", "Knight", "Ally" ]
+      , strength = Just 3
+      , income = Nothing
+      , initiative = Nothing
+      , claim = Nothing
+      , influence = Nothing
+      , erratas = []
+      , faqs = []
+      , duplicate_id = Nothing
+      }
 
 type TestResult = Match | NoMatch | ParseError
 

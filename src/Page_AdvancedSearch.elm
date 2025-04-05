@@ -15,7 +15,7 @@ import Maybe.Extra
 import CardSet exposing (set_or_cycle_code_name)
 import List.Extra
 
-type SearchComparison = SearchComparison_Exact | SearchComparison_AtLeast | SearchComparison_AtMost
+type ListComparison = ListComparison_Exact | ListComparison_AtLeast | ListComparison_AtMost
 
 type Combo 
     = Combo_HouseComparison 
@@ -28,6 +28,7 @@ type Combo
     | Combo_Influence
     | Combo_Set
     | Combo_IconComparison
+    | Combo_CrestComparison
     | Combo_SortOrder
 
 type SearchIcon = SearchIcon_None | SearchIcon_Regular | SearchIcon_Naval
@@ -62,7 +63,7 @@ type alias Model =
     , house_greyjoy : Bool
     , house_martell : Bool
     , house_neutral : Bool
-    , house_comparison : SearchComparison
+    , house_comparison : ListComparison
     , card_type : Maybe CardType
     , traits : String
     , unique : Bool
@@ -80,19 +81,18 @@ type alias Model =
     , influence_comparison : Comparison
     , joust_legal : Bool
     , joust_restricted : Bool
-    , joust_banned : Bool
     , melee_legal : Bool
     , melee_restricted : Bool
-    , melee_banned : Bool
     , icon_military : SearchIcon
     , icon_intrigue : SearchIcon
     , icon_power : SearchIcon
-    , icon_comparison : SearchComparison
+    , icon_comparison : ListComparison
     , crest_war : Bool
     , crest_noble : Bool
     , crest_holy : Bool
     , crest_learned : Bool
     , crest_shadow : Bool
+    , crest_comparison : ListComparison
     , set : Maybe SetOrCycle
     , flavor : String
     , illustrator : String
@@ -121,7 +121,7 @@ init =
     , house_greyjoy = False
     , house_martell = False
     , house_neutral = False
-    , house_comparison = SearchComparison_AtLeast
+    , house_comparison = ListComparison_AtLeast
     , card_type = Nothing
     , traits = ""
     , unique = False
@@ -139,19 +139,18 @@ init =
     , influence_comparison = Query.Comparison_Equal
     , joust_legal = False
     , joust_restricted = False
-    , joust_banned = False
     , melee_legal = False
     , melee_restricted = False
-    , melee_banned = False
     , icon_military = SearchIcon_None
     , icon_intrigue = SearchIcon_None
     , icon_power = SearchIcon_None
-    , icon_comparison = SearchComparison_AtLeast
+    , icon_comparison = ListComparison_AtLeast
     , crest_war = False
     , crest_noble = False
     , crest_holy = False
     , crest_learned = False
     , crest_shadow = False
+    , crest_comparison = ListComparison_AtLeast
     , set = Nothing
     , flavor = ""
     , illustrator = ""
@@ -260,8 +259,8 @@ house_checkboxes model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
     , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
         { id = Combo_HouseComparison
         , curr = model.house_comparison
-        , view = \_ c -> c |> search_comparison_to_string "houses" |> UI.text
-        , options = [ SearchComparison_Exact, SearchComparison_AtLeast, SearchComparison_AtMost ]
+        , view = \_ c -> c |> list_comparison_to_string "houses" |> UI.text
+        , options = [ ListComparison_Exact, ListComparison_AtLeast, ListComparison_AtMost ]
         , select = \opt m -> { m | house_comparison = opt }
         }
         |> UI.map Msg_Combo
@@ -312,20 +311,18 @@ legality_joust_row : Model -> UI.Element Msg
 legality_joust_row model = UI.row [ UI.spacing 30 ]
     [ text_checkbox [] "Legal" model.joust_legal (\b -> { model | joust_legal = b })
     , text_checkbox [] "Restricted" model.joust_restricted (\b -> { model | joust_restricted = b })
-    , text_checkbox [] "Banned" model.joust_banned (\b -> { model | joust_banned = b })
     ]
 
 legality_melee_row : Model -> UI.Element Msg
 legality_melee_row model = UI.row [ UI.spacing 30 ]
     [ text_checkbox [] "Legal" model.melee_legal (\b -> { model | melee_legal = b })
     , text_checkbox [] "Restricted" model.melee_restricted (\b -> { model | melee_restricted = b })
-    , text_checkbox [] "Banned" model.melee_banned (\b -> { model | melee_banned = b })
     ]
 
 
 icon_row : Model -> UI.Element Msg
 icon_row model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
-    [ UI.wrappedRow [ UI.spacing 30 ] 
+    [ UI.wrappedRow [ UI.spacing 30 ]
         [ icon_checkbox "/images/icon_military.png" model.icon_military (\b -> { model | icon_military = b })
         , icon_checkbox "/images/icon_intrigue.png" model.icon_intrigue (\b -> { model | icon_intrigue = b })
         , icon_checkbox "/images/icon_power.png" model.icon_power (\b -> { model | icon_power = b })
@@ -333,22 +330,31 @@ icon_row model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
     , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
         { id = Combo_IconComparison
         , curr = model.icon_comparison
-        , view = \_ c -> c |> search_comparison_to_string "icons" |> UI.text
-        , options = [ SearchComparison_Exact, SearchComparison_AtLeast, SearchComparison_AtMost ]
+        , view = \_ c -> c |> list_comparison_to_string "icons" |> UI.text
+        , options = [ ListComparison_Exact, ListComparison_AtLeast, ListComparison_AtMost ]
         , select = \opt m -> { m | icon_comparison = opt }
         }
         |> UI.map Msg_Combo
     ]
 
 crest_row : Model -> UI.Element Msg
-crest_row model = UI.row [ UI.spacing 30 ]
-    [ image_checkbox [] "/images/crest_war.png" model.crest_war (\b -> { model | crest_war = b })
-    , image_checkbox [] "/images/crest_noble.png" model.crest_noble (\b -> { model | crest_noble = b })
-    , image_checkbox [] "/images/crest_holy.png" model.crest_holy (\b -> { model | crest_holy = b })
-    , image_checkbox [] "/images/crest_learned.png" model.crest_learned (\b -> { model | crest_learned = b })
-    , image_checkbox [] "/images/crest_shadow.png" model.crest_shadow (\b -> { model | crest_shadow = b })
+crest_row model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
+    [ UI.wrappedRow [ UI.spacing 30 ]
+        [ image_checkbox [] "/images/crest_war.png" model.crest_war (\b -> { model | crest_war = b })
+        , image_checkbox [] "/images/crest_noble.png" model.crest_noble (\b -> { model | crest_noble = b })
+        , image_checkbox [] "/images/crest_holy.png" model.crest_holy (\b -> { model | crest_holy = b })
+        , image_checkbox [] "/images/crest_learned.png" model.crest_learned (\b -> { model | crest_learned = b })
+        , image_checkbox [] "/images/crest_shadow.png" model.crest_shadow (\b -> { model | crest_shadow = b })
+        ]
+    , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
+        { id = Combo_CrestComparison
+        , curr = model.crest_comparison
+        , view = \_ c -> c |> list_comparison_to_string "crests" |> UI.text
+        , options = [ ListComparison_Exact, ListComparison_AtLeast, ListComparison_AtMost ]
+        , select = \opt m -> { m | crest_comparison = opt }
+        }
+        |> UI.map Msg_Combo
     ]
-
 
 set_combo : Model -> UI.Element Msg
 set_combo model = Widgets.Combo.view [ UI.width (px 400) ] model.combo
@@ -418,11 +424,11 @@ icon_checkbox image state msg = UI.row [ UI.spacing 5 ]
 text_checkbox : List (UI.Attribute Msg) -> String -> Bool -> (Bool -> Model) -> UI.Element Msg
 text_checkbox attrs label checked msg = checkbox attrs (UI.text label) checked msg
 
-search_comparison_to_string : String -> SearchComparison -> String
-search_comparison_to_string name cmp = case cmp of
-    SearchComparison_Exact -> "Exactly these " ++ name
-    SearchComparison_AtLeast -> "At least these " ++ name
-    SearchComparison_AtMost -> "At most these " ++ name
+list_comparison_to_string : String -> ListComparison -> String
+list_comparison_to_string name cmp = case cmp of
+    ListComparison_Exact -> "Exactly these " ++ name
+    ListComparison_AtLeast -> "At least these " ++ name
+    ListComparison_AtMost -> "At most these " ++ name
 
 card_type_combo_view : Maybe CardType -> UI.Element msg
 card_type_combo_view t = 
@@ -484,9 +490,9 @@ make_advanced_search_query model =
             then Nothing 
             else str |> Query.split_words_quoted |> List.map (\s -> name ++ ":" ++ quote_token_with_spaces s) |> String.join " " |> Just
         search_comparison_str cmp = case cmp of
-            SearchComparison_Exact -> "="
-            SearchComparison_AtLeast -> ">="
-            SearchComparison_AtMost -> "<="
+            ListComparison_Exact -> "="
+            ListComparison_AtLeast -> ">="
+            ListComparison_AtMost -> "<="
         bools_part name comparison_str bools = bools
             |> List.map (\(b, s) -> if b then s else "")
             |> String.join ""
@@ -533,14 +539,14 @@ make_advanced_search_query model =
             , int_part "initiative" model.initiative model.initiative_comparison
             , int_part "claim" model.claim model.claim_comparison
             , int_part "influence" model.influence model.influence_comparison
-            , bools_part "joust" ":" [ (model.joust_legal, "l"), (model.joust_restricted, "r"), (model.joust_banned, "b") ]
-            , bools_part "melee" ":" [ (model.melee_legal, "l"), (model.melee_restricted, "r"), (model.melee_banned, "b") ]
+            , bools_part "joust" ":" [ (model.joust_legal, "l"), (model.joust_restricted, "r") ]
+            , bools_part "melee" ":" [ (model.melee_legal, "l"), (model.melee_restricted, "r") ]
             , bools_part "icon" (search_comparison_str model.icon_comparison)
                 [ (model.icon_military == SearchIcon_Regular, "m")
                 , (model.icon_intrigue == SearchIcon_Regular, "i")
                 , (model.icon_power == SearchIcon_Regular, "p") 
                 ]
-            , bools_part "crest" ">="
+            , bools_part "crest" (search_comparison_str model.crest_comparison)
                 [ (model.crest_war, "w")
                 , (model.crest_noble, "n")
                 , (model.crest_holy, "h")

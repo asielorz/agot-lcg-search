@@ -12,7 +12,7 @@ type CardType = CardType_Character | CardType_Event | CardType_Location | CardTy
 type House = House_Stark | House_Lannister | House_Baratheon | House_Targaryen | House_Martell | House_Greyjoy | House_Neutral
 type Icon = Icon_Military { naval : Bool } | Icon_Intrigue { naval : Bool } | Icon_Power { naval : Bool }
 type Crest = Crest_Holy | Crest_Noble | Crest_War | Crest_Learned | Crest_Shadow
-type Legality = Legality_Legal | Legality_Banned | Legality_Restricted
+type Legality = Legality_Legal | Legality_Restricted
 
 type alias Card = 
     { id : String
@@ -74,7 +74,6 @@ legality_from_json = Json.Decode.string
     |> Json.Decode.andThen (\s -> case s of
         "Legal" -> Json.Decode.succeed Legality_Legal
         "Restricted" -> Json.Decode.succeed Legality_Restricted
-        "Banned" -> Json.Decode.succeed Legality_Banned
         _ -> Json.Decode.fail <| s ++ " is not a legality"
     )
 
@@ -82,7 +81,6 @@ legality_to_string : Legality -> String
 legality_to_string legality = case legality of
     Legality_Legal -> "Legal"
     Legality_Restricted -> "Restricted"
-    Legality_Banned -> "Banned"
 
 house_from_json : Json.Decode.Decoder House
 house_from_json = Json.Decode.string
@@ -236,6 +234,14 @@ icon_sort_order icon = case icon of
     Icon_Military { naval } -> if naval then 1 else 0
     Icon_Intrigue { naval } -> if naval then 3 else 2
     Icon_Power { naval } -> if naval then 5 else 4
+
+crest_sort_order : Crest -> Int
+crest_sort_order crest = case crest of
+    Crest_Holy -> 0
+    Crest_Noble -> 1
+    Crest_War -> 2
+    Crest_Learned -> 3
+    Crest_Shadow -> 4
 
 page_url : Card -> String
 page_url card = "/card/" ++ card.id

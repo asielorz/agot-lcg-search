@@ -29619,7 +29619,7 @@ all_cards =
       , faqs = []
       , duplicate_id = Nothing
       }
-    , { id = "soo_19"
+    , { id = "soo_18"
       , name = "Apprentice Collar"
       , card_type = CardType_Attachment
       , set = Set_GatesOfTheCitadel

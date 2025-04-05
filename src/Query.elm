@@ -97,13 +97,11 @@ type Predicate
     | Predicate_Illustrator String
     | Predicate_House Comparison (List House)
     | Predicate_Unique Bool
-    | Predicate_LegalityJoust Comparison Legality
-    | Predicate_LegalityMelee Comparison Legality
-    | Predicate_LegalityJoustOneOf (List Legality)
-    | Predicate_LegalityMeleeOneOf (List Legality)
+    | Predicate_LegalityJoust (List Legality)
+    | Predicate_LegalityMelee (List Legality)
     | Predicate_Traits String
     | Predicate_Icons Comparison (List Icon)
-    | Predicate_Crest Crest
+    | Predicate_Crest Comparison (List Crest)
 
 card_passes_predicate : Predicate -> Card -> Bool
 card_passes_predicate predicate card = case predicate of
@@ -123,20 +121,11 @@ card_passes_predicate predicate card = case predicate of
     Predicate_Illustrator s -> string_contains_predicate s (Just card.illustrator)
     Predicate_House c h -> house_predicate h c card.house
     Predicate_Unique b -> card.unique == b
-    Predicate_LegalityJoust c l -> int_comparison_predicate (legality_order l) c (Just <| legality_order card.legality_joust)
-    Predicate_LegalityMelee c l -> int_comparison_predicate (legality_order l) c (Just <| legality_order card.legality_melee)
-    Predicate_LegalityJoustOneOf ls -> List.member card.legality_joust ls
-    Predicate_LegalityMeleeOneOf ls -> List.member card.legality_melee ls
+    Predicate_LegalityJoust ls -> List.member card.legality_joust ls
+    Predicate_LegalityMelee ls -> List.member card.legality_melee ls
     Predicate_Traits t -> traits_predicate t card.traits
     Predicate_Icons c p -> icons_predicate p c card.icons card.card_type
-    Predicate_Crest c -> List.member c card.crest
-
-
-legality_order : Legality -> Int
-legality_order legality = case legality of
-    Legality_Banned -> 0
-    Legality_Restricted -> 1
-    Legality_Legal -> 2
+    Predicate_Crest c p -> crests_predicate p c card.crest card.card_type
 
 string_contains_predicate : String -> Maybe String -> Bool
 string_contains_predicate predicate value = case value of
@@ -207,6 +196,17 @@ icons_predicate predicate comparison icons card_type = if card_type /= CardType_
         Comparison_LessThan -> list_less_than icons predicate
         Comparison_LessThanOrEqual -> predicate == icons || list_less_than icons predicate
 
+crests_predicate : List Crest -> Comparison -> List Crest -> CardType -> Bool
+crests_predicate predicate comparison crests card_type = if card_type /= CardType_Character
+    then False
+    else case comparison of
+        Comparison_Equal -> predicate == crests
+        Comparison_NotEqual -> predicate /= crests
+        Comparison_GreaterThan -> list_less_than predicate crests
+        Comparison_GreaterThanOrEqual -> predicate == crests || list_less_than predicate crests
+        Comparison_LessThan -> list_less_than crests predicate
+        Comparison_LessThanOrEqual -> predicate == crests || list_less_than crests predicate
+
 card_passes_predicates : List Predicate -> Card -> Bool
 card_passes_predicates predicates card = List.all (\p -> card_passes_predicate p card) predicates
 
@@ -255,13 +255,11 @@ parse_predicate_from_token token =
             , Parser.succeed Predicate_Illustrator |. Parser.symbol "illustrator:" |= parse_until_end
             , Parser.succeed Predicate_House |. Parser.symbol "house" |= parse_comparison |= parse_houses
             , Parser.succeed Predicate_Unique |. Parser.symbol "unique:" |= parse_tf_bool |. Parser.end
-            , Parser.succeed Predicate_LegalityJoustOneOf |. Parser.symbol "joust:" |= parse_legalities
-            , Parser.succeed Predicate_LegalityJoust |. Parser.symbol "joust" |= parse_comparison |= parse_legality
-            , Parser.succeed Predicate_LegalityMeleeOneOf |. Parser.symbol "melee:" |= parse_legalities
-            , Parser.succeed Predicate_LegalityMelee |. Parser.symbol "melee" |= parse_comparison |= parse_legality
+            , Parser.succeed Predicate_LegalityJoust |. Parser.symbol "joust:" |= parse_legalities
+            , Parser.succeed Predicate_LegalityMelee |. Parser.symbol "melee:" |= parse_legalities
             , Parser.succeed Predicate_Traits |. Parser.symbol "trait:" |= parse_until_end
             , Parser.succeed Predicate_Icons |. Parser.symbol "icon" |= parse_comparison |= parse_icons
-            , Parser.succeed Predicate_Crest |. Parser.symbol "crest:" |= parse_crest
+            , Parser.succeed Predicate_Crest |. Parser.symbol "crest" |= parse_comparison |= parse_crests
             , Parser.succeed <| Predicate_Name token
             ]
     in
@@ -330,36 +328,19 @@ parse_legality_char : Char -> Result String Legality
 parse_legality_char c =  case c of
     'l' -> Ok Legality_Legal
     'r' -> Ok Legality_Restricted
-    'b' -> Ok Legality_Banned
     other -> Err <| "\"" ++ String.fromChar other ++ "\" is not a legality. Allowed legalities are 'l', 'r' and 'b'."
 
-parse_legality : Parser Legality
-parse_legality = parse_until_end
-    |> Parser.andThen (\s -> case s of 
-        "legal" -> Parser.succeed Legality_Legal
-        "l" -> Parser.succeed Legality_Legal
-        "restricted" -> Parser.succeed Legality_Restricted
-        "r" -> Parser.succeed Legality_Restricted
-        "banned" -> Parser.succeed Legality_Banned
-        "b" -> Parser.succeed Legality_Banned
-        other -> Parser.problem ("\"" ++ other ++ "\" is not a legality status")
-    )
+parse_crest : Char -> Result String Crest
+parse_crest name = case name of
+    'h' -> Ok Crest_Holy
+    'n' -> Ok Crest_Noble
+    'w' -> Ok Crest_War
+    'l' -> Ok Crest_Learned
+    's' -> Ok Crest_Shadow
+    other -> Err <| "\"" ++ String.fromChar other ++ "\" is not a crest. Allowed houses are 'h', 'n', 'w', 'l' and 's'."
 
-parse_crest : Parser Crest
-parse_crest = parse_until_end
-    |> Parser.andThen (\s -> case s of 
-        "holy" -> Parser.succeed Crest_Holy
-        "h" -> Parser.succeed Crest_Holy
-        "noble" -> Parser.succeed Crest_Noble
-        "n" -> Parser.succeed Crest_Noble
-        "war" -> Parser.succeed Crest_War
-        "w" -> Parser.succeed Crest_War
-        "learned" -> Parser.succeed Crest_Learned
-        "l" -> Parser.succeed Crest_Learned
-        "shadow" -> Parser.succeed Crest_Shadow
-        "s" -> Parser.succeed Crest_Shadow
-        other -> Parser.problem ("\"" ++ other ++ "\" is not a legality status")
-    )
+parse_crests : Parser (List Crest)
+parse_crests = parse_list parse_crest Card.crest_sort_order
 
 parse_house : Char -> Result String House
 parse_house name = case name of
@@ -394,12 +375,15 @@ parse_icon name = case name of
     other -> Err <| "\"" ++ String.fromChar other ++ "\" is not an icon. Allowed icons are 'm', 'i' and 'p'."
 
 parse_icons : Parser (List Icon)
-parse_icons = parse_until_end
+parse_icons = parse_list parse_icon Card.icon_sort_order
+
+parse_list : (Char -> Result String a) -> (a -> Int) -> Parser (List a)
+parse_list parse_single sort_order = parse_until_end
     |> Parser.andThen (\s -> s
         |> String.toList
-        |> List.map parse_icon
+        |> List.map parse_single
         |> Result.Extra.combine
-        |> Result.map (List.sortBy Card.icon_sort_order)
+        |> Result.map (List.sortBy sort_order)
         |> Result.map List.Extra.unique
         |> (\r -> case r of
             Ok houses -> Parser.succeed houses

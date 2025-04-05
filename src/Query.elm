@@ -373,7 +373,6 @@ parse_icons = Parser.loop []
         , Parser.succeed () |> Parser.map (\_ -> state
             |> List.sortBy Card.icon_sort_order
             |> List.Extra.unique
-            |> Debug.log "Icons"
             |> Parser.Done
         )
         ]

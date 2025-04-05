@@ -176,6 +176,11 @@ house_less_than a b =
             then True
             else list_less_than a b
 
+icons_less_than : List Icon -> List Icon -> Bool
+icons_less_than a b =  a /= b
+    && List.all (\i -> List.member i b || (not (Card.icon_is_naval i) && List.member (Card.icon_make_naval True i) b)) a
+    --&& List.all (\i -> List.member i b) a
+
 house_predicate : List House -> Comparison -> List House -> Bool
 house_predicate predicate comparison house = case comparison of
     Comparison_Equal -> predicate == house
@@ -191,10 +196,10 @@ icons_predicate predicate comparison icons card_type = if card_type /= CardType_
     else case comparison of
         Comparison_Equal -> predicate == icons
         Comparison_NotEqual -> predicate /= icons
-        Comparison_GreaterThan -> list_less_than predicate icons
-        Comparison_GreaterThanOrEqual -> predicate == icons || list_less_than predicate icons
-        Comparison_LessThan -> list_less_than icons predicate
-        Comparison_LessThanOrEqual -> predicate == icons || list_less_than icons predicate
+        Comparison_GreaterThan -> icons_less_than predicate icons
+        Comparison_GreaterThanOrEqual -> predicate == icons || icons_less_than predicate icons
+        Comparison_LessThan -> icons_less_than icons predicate
+        Comparison_LessThanOrEqual -> predicate == icons || icons_less_than icons predicate
 
 crests_predicate : List Crest -> Comparison -> List Crest -> CardType -> Bool
 crests_predicate predicate comparison crests card_type = if card_type /= CardType_Character
@@ -354,28 +359,25 @@ parse_house name = case name of
     other -> Err <| "\"" ++ String.fromChar other ++ "\" is not a house. Allowed houses are 's', 'l', 'b', 't', 'm', 'g' and 'n'."
 
 parse_houses : Parser (List House)
-parse_houses = parse_until_end
-    |> Parser.andThen (\s -> s
-        |> String.toList
-        |> List.map parse_house
-        |> Result.Extra.combine
-        |> Result.map (List.sortBy Card.house_sort_order)
-        |> Result.map List.Extra.unique
-        |> (\r -> case r of
-            Ok houses -> Parser.succeed houses
-            Err msg -> Parser.problem msg
-        )
-    )
+parse_houses = parse_list parse_house Card.house_sort_order
     
-parse_icon : Char -> Result String Icon
-parse_icon name = case name of
-    'm' -> Ok <| Icon_Military { naval = False }
-    'i' -> Ok <| Icon_Intrigue { naval = False }
-    'p' -> Ok <| Icon_Power { naval = False }
-    other -> Err <| "\"" ++ String.fromChar other ++ "\" is not an icon. Allowed icons are 'm', 'i' and 'p'."
-
 parse_icons : Parser (List Icon)
-parse_icons = parse_list parse_icon Card.icon_sort_order
+parse_icons = Parser.loop []
+    (\state -> Parser.oneOf
+        [ Parser.succeed (Parser.Loop (Icon_Military { naval = True } :: state)) |. Parser.symbol "mn"
+        , Parser.succeed (Parser.Loop (Icon_Military { naval = False } :: state)) |. Parser.symbol "m"
+        , Parser.succeed (Parser.Loop (Icon_Intrigue { naval = True } :: state)) |. Parser.symbol "in"
+        , Parser.succeed (Parser.Loop (Icon_Intrigue { naval = False } :: state)) |. Parser.symbol "i"
+        , Parser.succeed (Parser.Loop (Icon_Power { naval = True } :: state)) |. Parser.symbol "pn"
+        , Parser.succeed (Parser.Loop (Icon_Power { naval = False } :: state)) |. Parser.symbol "p"
+        , Parser.succeed () |> Parser.map (\_ -> state
+            |> List.sortBy Card.icon_sort_order
+            |> List.Extra.unique
+            |> Debug.log "Icons"
+            |> Parser.Done
+        )
+        ]
+    )
 
 parse_list : (Char -> Result String a) -> (a -> Int) -> Parser (List a)
 parse_list parse_single sort_order = parse_until_end

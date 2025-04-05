@@ -235,6 +235,18 @@ icon_sort_order icon = case icon of
     Icon_Intrigue { naval } -> if naval then 3 else 2
     Icon_Power { naval } -> if naval then 5 else 4
 
+icon_is_naval : Icon -> Bool
+icon_is_naval icon = case icon of
+    Icon_Military { naval } -> naval
+    Icon_Intrigue { naval } -> naval
+    Icon_Power { naval } -> naval
+
+icon_make_naval : Bool -> Icon -> Icon
+icon_make_naval  naval icon = case icon of
+    Icon_Military _ -> Icon_Military { naval = naval }
+    Icon_Intrigue _ -> Icon_Intrigue { naval = naval }
+    Icon_Power _ -> Icon_Power { naval = naval }
+
 crest_sort_order : Crest -> Int
 crest_sort_order crest = case crest of
     Crest_Holy -> 0

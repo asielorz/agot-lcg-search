@@ -543,8 +543,11 @@ make_advanced_search_query model =
             , bools_part "melee" ":" [ (model.melee_legal, "l"), (model.melee_restricted, "r") ]
             , bools_part "icon" (search_comparison_str model.icon_comparison)
                 [ (model.icon_military == SearchIcon_Regular, "m")
+                , (model.icon_military == SearchIcon_Naval, "mn")
                 , (model.icon_intrigue == SearchIcon_Regular, "i")
-                , (model.icon_power == SearchIcon_Regular, "p") 
+                , (model.icon_intrigue == SearchIcon_Naval, "in")
+                , (model.icon_power == SearchIcon_Regular, "p")
+                , (model.icon_power == SearchIcon_Naval, "pn")
                 ]
             , bools_part "crest" (search_comparison_str model.crest_comparison)
                 [ (model.crest_war, "w")

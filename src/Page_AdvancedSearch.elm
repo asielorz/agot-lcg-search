@@ -230,7 +230,7 @@ view_advanced_search model = UI.column
     , Widgets.separator
     , labeled "Order" <| sort_order_row model
     , Widgets.separator
-    , labeled "" <| search_button
+    , labeled "" <| search_button model
     ]
 
 labeled : String -> UI.Element Msg -> UI.Element Msg
@@ -372,10 +372,13 @@ set_combo model = Widgets.Combo.view [ UI.width (px 400) ] model.combo
     |> UI.map Msg_Combo
 
 
-search_button : UI.Element Msg
-search_button = UI_Input.button
+search_button : Model -> UI.Element Msg
+search_button model = UI.link
     Widgets.button_style_attributes
-    { onPress = Just Msg_Search
+    { url = Query.search_url 
+        { query = make_advanced_search_query model
+        , sort = List.map sort_order_to_query_string model.sort_order
+        , page = 0 }
     , label = UI.text "Search"
     }
 

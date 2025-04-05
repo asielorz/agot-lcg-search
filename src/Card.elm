@@ -14,6 +14,8 @@ type Icon = Icon_Military { naval : Bool } | Icon_Intrigue { naval : Bool } | Ic
 type Crest = Crest_Holy | Crest_Noble | Crest_War | Crest_Learned | Crest_Shadow
 type Legality = Legality_Legal | Legality_Restricted
 
+type alias Errata = (Int, Int)
+
 type alias Card = 
     { id : String
     , name : String
@@ -28,8 +30,8 @@ type alias Card =
     , unique : Bool
     , rules_text : Maybe String
     , flavor_text : Maybe String
-    , erratas : List Never
-    , faqs : List Never
+    , erratas : List Errata
+    , faqs : List String
     , duplicate_id : Maybe String
 
     -- Character

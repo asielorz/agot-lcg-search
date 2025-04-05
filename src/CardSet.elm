@@ -308,14 +308,16 @@ set_or_cycle_full_name set_or_cycle = case set_or_cycle of
 set_or_cycle_icon : SetOrCycle -> String
 set_or_cycle_icon set_or_cycle = case set_or_cycle of
     SetOrCycle_Cycle cycle -> "/images/sets/" ++ (data_of_cycle cycle).code_name ++ ".png"
-    SetOrCycle_Set set ->
-        let
-            data = data_of_set set
-        in
-            case data.cycle of
-                Nothing -> "/images/sets/" ++ data.code_name ++ ".png"
-                Just cycle -> "/images/sets/" ++ (data_of_cycle cycle).code_name ++ ".png"
+    SetOrCycle_Set set -> set_icon set
 
+set_icon : Set -> String
+set_icon set =
+    let
+        data = data_of_set set
+    in
+        case data.cycle of
+            Nothing -> "/images/sets/" ++ data.code_name ++ ".png"
+            Just cycle -> "/images/sets/" ++ (data_of_cycle cycle).code_name ++ ".png"
 
 is_set_in_cycle : SetOrCycle -> Bool
 is_set_in_cycle set_or_cycle = case set_or_cycle of

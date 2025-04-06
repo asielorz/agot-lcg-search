@@ -14,7 +14,11 @@ type Icon = Icon_Military { naval : Bool } | Icon_Intrigue { naval : Bool } | Ic
 type Crest = Crest_Holy | Crest_Noble | Crest_War | Crest_Learned | Crest_Shadow
 type Legality = Legality_Legal | Legality_Restricted
 
-type alias Errata = (Int, Int)
+type alias Errata = 
+    { line : Int
+    , start : Int
+    , end : Int
+    }
 
 type alias Card = 
     { id : String

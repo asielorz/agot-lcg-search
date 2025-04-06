@@ -64,7 +64,7 @@ view_card card =
                 , UI.width (px 420)
                 , UI.spacing 5
                 , UI_Background.color Widgets.background_color
-                ]
+                ] <|
                 [ UI.row [ UI.spacing 10 ]
                     [ cost_widget card.cost
                     , if card.unique then UI.image [ UI_Border.rounded 3, UI.clip, UI.width (px 20) ] { src = "/images/unique.png", description = "Unique" } else UI.none
@@ -73,9 +73,11 @@ view_card card =
                 , Widgets.separator
                 , UI.text <| type_and_traits_line card
                 , Widgets.separator
-                , maybe_text [] card.rules_text card.erratas
-                , maybe_text [ UI_Font.italic ] card.flavor_text []
-                , if card.card_type == CardType_Character then Widgets.separator else UI.none
+                ]
+                ++ maybe_text [] card.rules_text card.erratas
+                ++ maybe_text [ UI_Font.italic ] card.flavor_text []
+                ++
+                [ if card.card_type == CardType_Character then Widgets.separator else UI.none
                 , character_line card
                 , Widgets.separator
                 , UI.text <| "Illustrated by " ++ card.illustrator
@@ -101,24 +103,28 @@ type_and_traits_line card = if List.isEmpty card.traits
     then Card.card_type_to_string card.card_type
     else Card.card_type_to_string card.card_type ++ " — " ++ String.join ", " card.traits
 
-maybe_text : List (UI.Attribute msg) -> Maybe String -> List Errata -> UI.Element msg
+maybe_text : List (UI.Attribute msg) -> Maybe String -> List Errata -> List (UI.Element msg)
 maybe_text attrs text erratas = case text of
-    Nothing -> UI.none
-    Just actual_text -> UI.paragraph attrs <| apply_erratas 0 actual_text erratas
+    Nothing -> []
+    Just actual_text -> 
+        let
+            lines = String.split "\n" actual_text
+        in
+            lines |> List.indexedMap (\index line -> UI.paragraph attrs <| apply_erratas 0 line (List.filter (\e -> e.line == index) erratas))
 
 apply_erratas : Int -> String -> List Errata -> List (UI.Element msg)
 apply_erratas offset text erratas = case erratas of
     [] -> [ UI.text text ]
-    ((start, end)::rest) ->
+    (errata::rest) ->
         let
-            before_errata = String.slice 0 (start - offset) text
-            with_errata = String.slice (start - offset) (end - offset) text
-            after_errata = String.dropLeft (end - offset) text
+            before_errata = String.slice 0 (errata.start - offset) text
+            with_errata = String.slice (errata.start - offset) (errata.end - offset) text
+            after_errata = String.dropLeft (errata.end - offset) text
         in
             [ UI.text before_errata
             , UI.el [ UI_Font.color (rgb255 255 100 100) ] <| UI.text with_errata
             ]
-            ++ apply_erratas (offset + end) after_errata rest
+            ++ apply_erratas (offset + errata.end) after_errata rest
 
 image_with_number_inside : String -> Int -> UI.Element msg
 image_with_number_inside source number = UI.image 

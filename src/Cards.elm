@@ -2841,7 +2841,7 @@ all_cards =
       , faqs = []
       , duplicate_id = Just "core_109"
       }
-    , { id = "core_1109"
+    , { id = "core_110"
       , name = "Rhaegal"
       , card_type = CardType_Character
       , set = Set_Core

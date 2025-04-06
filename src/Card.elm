@@ -266,3 +266,6 @@ page_url card = "/card/" ++ card.id
 
 image_url : Card -> String
 image_url card = "/images/cards/" ++ card.id ++ ".jpg"
+
+duplicate_id : Card -> String
+duplicate_id card = Maybe.withDefault card.id card.duplicate_id

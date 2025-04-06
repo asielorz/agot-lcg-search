@@ -2,7 +2,7 @@ module QueryTests exposing (..)
 
 import Card exposing (Card, CardType(..), Legality(..), House(..), Icon(..), Crest(..))
 import CardSet exposing (Set(..))
-import Query
+import Query exposing (default_search_state)
 
 import Expect
 import Test exposing (..)
@@ -79,7 +79,7 @@ make_test card query expected =
             test_name
             (\_ -> Expect.equal
                 expected
-                ( case Query.search query [] [ card ] of
+                ( case Query.search { default_search_state | query = query } [ card ] of
                     Err _ -> ParseError
                     Ok [] -> NoMatch
                     Ok _ -> Match

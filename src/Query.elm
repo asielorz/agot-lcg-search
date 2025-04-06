@@ -1,4 +1,4 @@
-module Query exposing (parse, search_url, search_url_from, search, Comparison(..), split_words_quoted)
+module Query exposing (parse, search_url, search_url_from, search, Comparison(..), split_words_quoted, SearchState, default_search_state)
 
 import Card exposing(Card, CardType, House, Legality, Icon, Crest, Legality(..), CardType(..), Crest(..), House(..), Icon(..))
 import CardSet exposing (SetOrCycle(..), Set)
@@ -19,9 +19,9 @@ decode encoded_query = encoded_query
     |> Maybe.withDefault encoded_query
     |> String.replace "+" " "
 
-type alias SearchState = { query : String, sort : List String, page : Int }
+type alias SearchState = { query : String, sort : List String, page : Int, duplicates : Bool }
 default_search_state : SearchState
-default_search_state = { query = "", sort = [], page = 0 }
+default_search_state = { query = "", sort = [], page = 0, duplicates = False }
 
 parse : Maybe String -> SearchState
 parse query_line = 
@@ -36,10 +36,20 @@ parse query_line =
                     Nothing -> result
             else if String.startsWith "sort=" part then
                 { result | sort = part |> String.dropLeft 5 |> decode |> String.split "," }
+            else if String.startsWith "dup=" part && is_true_string_representation (String.dropLeft 4 part) then
+                { result | duplicates = True }
+            else if String.startsWith "dup=" part && is_false_string_representation (String.dropLeft 4 part) then
+                { result | duplicates = False }
             else
                 result
     in
         List.foldl parse_part default_search_state parts
+
+is_true_string_representation : String -> Bool
+is_true_string_representation str = String.toLower str == "t" || String.toLower str == "true" || str == "1"
+
+is_false_string_representation : String -> Bool
+is_false_string_representation str = String.toLower str == "f" || String.toLower str == "false" || str == "0"
 
 make_query : SearchState -> Maybe String
 make_query search_state = if search_state == default_search_state
@@ -48,8 +58,9 @@ make_query search_state = if search_state == default_search_state
             query = if search_state.query == "" then "" else "q=" ++ encode search_state.query
             page = if search_state.page == 0 then "" else "page=" ++ String.fromInt search_state.page
             sort = if search_state.sort == [] then "" else "sort=" ++ (search_state.sort |> String.join "," |> encode)
+            duplicates = if search_state.duplicates then "dup=t" else ""
         in
-            [query, page, sort] |> List.filter (not << String.isEmpty) |> String.join "&" |> Just
+            [query, page, sort, duplicates] |> List.filter (not << String.isEmpty) |> String.join "&" |> Just
 
 search_url : SearchState -> String
 search_url state = case make_query state of
@@ -59,16 +70,21 @@ search_url state = case make_query state of
 search_url_from : Url -> SearchState -> String
 search_url_from url query = Url.toString { url | query = make_query query }
 
-search : String -> List String -> List Card -> Result String (List Card)
-search query sort cards =
+search : { a | query : String, sort : List String, duplicates : Bool } -> List Card -> Result String (List Card)
+search args cards =
     let
-        tokens = split_words_quoted query
+        tokens = split_words_quoted args.query
         (predicates, query_errors) = List.map parse_predicate_from_token tokens |> Result.Extra.partition
-        (order, sort_errors) = parse_sort_orders sort
+        (order, sort_errors) = parse_sort_orders args.sort
         errors = query_errors ++ sort_errors
+        deduplicate = if args.duplicates then identity else List.Extra.uniqueBy Card.duplicate_id
     in
         if List.isEmpty errors
-            then cards |> List.filter (card_passes_predicates predicates) |> List.sortWith order |> Ok
+            then cards 
+                |> List.filter (card_passes_predicates predicates)
+                |> deduplicate
+                |> List.sortWith order 
+                |> Ok
             else errors |> String.join "\n" |> Err
 
 

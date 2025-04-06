@@ -2,7 +2,7 @@ module Page_Start exposing (Model, Msg, init, update, view)
 
 import Card
 import Cards
-import Query
+import Query exposing (default_search_state)
 import Widgets
 
 import Browser.Navigation as Navigation
@@ -25,7 +25,7 @@ init = { query = "" }
 update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
 update key msg model = case msg of
     Msg_QueryChanged new_query -> ({ model | query = new_query }, Cmd.none)
-    Msg_Search -> (model, Navigation.pushUrl key (Query.search_url { query = model.query, sort = [], page = 0 }))
+    Msg_Search -> (model, Navigation.pushUrl key (Query.search_url { default_search_state | query = model.query }))
     Msg_DownloadJson -> (model, download_json)
 
 download_json : Cmd msg

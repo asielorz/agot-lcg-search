@@ -3,7 +3,7 @@ module Page_Card exposing (Model, Msg, init, update, view)
 import Card exposing (Card, CardType(..), Crest(..), Icon(..), Legality(..), Errata)
 import Cards
 import CardSet exposing (SetOrCycle(..))
-import Query
+import Query exposing (default_search_state)
 import Widgets
 
 import Browser.Navigation as Navigation
@@ -30,7 +30,7 @@ init card =
 update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
 update key msg model = case msg of
     Msg_QueryChange new_query -> ({ model | header_query = new_query }, Cmd.none)
-    Msg_Search -> (model, Navigation.pushUrl key <| Query.search_url { query = model.header_query, sort = [], page = 0 })
+    Msg_Search -> (model, Navigation.pushUrl key <| Query.search_url { default_search_state | query = model.header_query })
 
 view : Model -> (String, UI.Element Msg)
 view model = 

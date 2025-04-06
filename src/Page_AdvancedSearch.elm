@@ -3,7 +3,7 @@ module Page_AdvancedSearch exposing (Model, Msg, init, update, view)
 import Card exposing (CardType(..))
 import CardSet exposing (SetOrCycle(..), Set(..), Cycle(..))
 import Fontawesome
-import Query exposing (Comparison(..))
+import Query exposing (Comparison(..), default_search_state)
 import Widgets
 import Widgets.Combo
 
@@ -97,6 +97,7 @@ type alias Model =
     , flavor : String
     , illustrator : String
     , sort_order : List SortOrder
+    , show_duplicates : Bool
 
     , combo : Maybe Combo
     }
@@ -155,6 +156,7 @@ init =
     , flavor = ""
     , illustrator = ""
     , sort_order = []
+    , show_duplicates = False
 
     , combo = Nothing
     }
@@ -163,12 +165,13 @@ update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
 update key msg model = case msg of
     Msg_Noop -> (model, Cmd.none)
     Msg_HeaderQueryChanged new_query -> ({ model | header_query = new_query }, Cmd.none)
-    Msg_HeaderSearch -> (model, Navigation.pushUrl key (Query.search_url { query = model.header_query, sort = [], page = 0 }))
+    Msg_HeaderSearch -> (model, Navigation.pushUrl key (Query.search_url { default_search_state | query = model.header_query }))
     Msg_ModelChanged new_model -> (new_model, Cmd.none)
     Msg_Search -> (model, Navigation.pushUrl key (Query.search_url 
         { query = make_advanced_search_query model
         , sort = List.map sort_order_to_query_string model.sort_order
-        , page = 0 }))
+        , page = 0
+        , duplicates = model.show_duplicates }))
     Msg_Combo combo_msg -> (Widgets.Combo.update (\c -> { model | combo = c }) combo_msg, Cmd.none)
 
 view : Model -> (String, UI.Element Msg)
@@ -229,6 +232,8 @@ view_advanced_search model = UI.column
     , labeled "Illustrator" <| Widgets.input_text [] model.illustrator "An illustrator's name, e.g. \"Matson\"" (\s -> Msg_ModelChanged { model | illustrator = s }) Msg_Search
     , Widgets.separator
     , labeled "Order" <| sort_order_row model
+    , Widgets.separator
+    , labeled "Duplicates" <| text_checkbox [] "Show duplicate cards" model.show_duplicates (\b -> { model | show_duplicates = b })
     , Widgets.separator
     , labeled "" <| search_button model
     ]
@@ -378,7 +383,9 @@ search_button model = UI.link
     { url = Query.search_url 
         { query = make_advanced_search_query model
         , sort = List.map sort_order_to_query_string model.sort_order
-        , page = 0 }
+        , page = 0
+        , duplicates = model.show_duplicates
+        }
     , label = UI.text "Search"
     }
 

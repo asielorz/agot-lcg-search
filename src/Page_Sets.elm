@@ -27,7 +27,7 @@ init  =
 update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
 update key msg model = case msg of
     Msg_QueryChange new_query -> ({ model | header_query = new_query }, Cmd.none)
-    Msg_Search -> (model, Navigation.pushUrl key <| Query.search_url { query = model.header_query, sort = [], page = 0 })
+    Msg_Search -> (model, Navigation.pushUrl key <| Query.search_url { query = model.header_query, sort = [], page = 0, duplicates = False })
 
 view : Model -> (String, UI.Element Msg)
 view model = 
@@ -63,7 +63,7 @@ view_set_table_row even set = UI.link
     , UI.padding 5
     , UI_Font.size 16
     ]
-    { url = "/search?q=set%3D" ++ CardSet.set_or_cycle_code_name set
+    { url = "/search?q=set%3D" ++ CardSet.set_or_cycle_code_name set ++ "&dup=t"
     , label = UI.row 
         [ UI.spacing 5
         , UI.width UI.fill

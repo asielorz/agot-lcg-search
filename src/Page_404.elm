@@ -1,6 +1,6 @@
 module Page_404 exposing (Model, Msg, init, update, view)
 
-import Query
+import Query exposing (default_search_state)
 import Widgets
 
 import Browser.Navigation as Navigation
@@ -23,7 +23,7 @@ init =
 update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
 update key msg model = case msg of
     Msg_HeaderQueryChanged new_query -> ({ model | header_query = new_query }, Cmd.none)
-    Msg_HeaderSearch -> (model, Navigation.pushUrl key (Query.search_url { query = model.header_query, sort = [], page = 0 }))
+    Msg_HeaderSearch -> (model, Navigation.pushUrl key (Query.search_url { default_search_state | query = model.header_query }))
 
 view : Model -> (String, UI.Element Msg)
 view model = 

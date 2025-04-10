@@ -276,7 +276,16 @@ card_type_combo model = Widgets.Combo.view [ UI.width (px 200) ] model.combo
     { id = Combo_CardType
     , curr = model.card_type
     , view = \_ t -> card_type_combo_view t
-    , options = [ Nothing, Just CardType_Character, Just CardType_Location, Just CardType_Attachment, Just CardType_Event, Just CardType_Plot, Just CardType_Agenda ]
+    , options = 
+        [ Nothing
+        , Just CardType_Character
+        , Just CardType_Location
+        , Just CardType_Attachment
+        , Just CardType_Event
+        , Just CardType_Plot
+        , Just CardType_Agenda
+        , Just CardType_House
+        ]
     , select = \opt m -> { m | card_type = opt }
     }
     |> UI.map Msg_Combo
@@ -445,12 +454,13 @@ card_type_combo_view t =
     let
         (icon, label) = case t of
             Nothing -> ("\u{002a}", "Any") -- fa-asterisk
-            Just CardType_Character -> ("\u{f132}", "Character") -- fa-shield
+            Just CardType_Character -> ("\u{f007}", "Character") -- fa-user
             Just CardType_Location -> ("\u{e52f}", "Location") -- fa-mountain-sun
             Just CardType_Attachment -> ("\u{f0c1}", "Attachment") -- fa-link
             Just CardType_Event -> ("\u{f520}", "Event") -- fa-crow
             Just CardType_Plot -> ("\u{f5fd}", "Plot") -- fa-layer-group
             Just CardType_Agenda -> ("\u{f70e}", "Agenda") -- fa-scroll
+            Just CardType_House -> ("\u{f132}", "House") -- fa-shield
     in
         UI.row [ UI.spacing 10 ] [ UI.el [UI.width (px 25)] <| Fontawesome.text [ UI.centerX ] icon, UI.text label ]
 
@@ -516,6 +526,7 @@ make_advanced_search_query model =
             Just CardType_Event -> Just "type:e"
             Just CardType_Plot -> Just "type:p"
             Just CardType_Agenda -> Just "type:ag"
+            Just CardType_House -> Just "type:h"
         int_part name int c =
             let
                 comparison_str = case c of

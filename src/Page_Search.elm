@@ -99,7 +99,7 @@ view_card card =
                 , UI_Border.rounded 10
                 , UI.clip
                 ] 
-                { src = Card.image_url card
+                { src = Card.preview_image_url card
                 , description = card.name
                 }
             else UI.image 
@@ -108,7 +108,7 @@ view_card card =
                 , UI_Border.rounded 10
                 , UI.clip
                 ] 
-                { src = Card.image_url card
+                { src = Card.preview_image_url card
                 , description = card.name
                 }
     in

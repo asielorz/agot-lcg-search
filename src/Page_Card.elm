@@ -95,7 +95,7 @@ view_card card =
                 , UI.alignTop
                 , UI.moveLeft 20
                 , UI.moveDown 20
-                ] { src = Card.image_url card, description = card.name }
+                ] { src = Card.full_image_url card, description = card.name }
             ]
 
 type_and_traits_line : Card -> String

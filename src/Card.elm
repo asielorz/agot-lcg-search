@@ -8,7 +8,7 @@ import Json.Decode.Pipeline exposing (required, optional, hardcoded)
 import CardSet exposing (data_of_set)
 import List.Extra
 
-type CardType = CardType_Character | CardType_Event | CardType_Location | CardType_Attachment | CardType_Plot | CardType_Agenda
+type CardType = CardType_Character | CardType_Event | CardType_Location | CardType_Attachment | CardType_Plot | CardType_Agenda | CardType_House
 type House = House_Stark | House_Lannister | House_Baratheon | House_Targaryen | House_Martell | House_Greyjoy | House_Neutral
 type Icon = Icon_Military { naval : Bool } | Icon_Intrigue { naval : Bool } | Icon_Power { naval : Bool }
 type Crest = Crest_Holy | Crest_Noble | Crest_War | Crest_Learned | Crest_Shadow
@@ -74,6 +74,7 @@ card_type_to_string card_type = case card_type of
     CardType_Attachment -> "Attachment"
     CardType_Plot -> "Plot"
     CardType_Agenda -> "Agenda"
+    CardType_House -> "House"
 
 legality_from_json : Json.Decode.Decoder Legality
 legality_from_json = Json.Decode.string
@@ -198,7 +199,8 @@ card_to_json card =
     let 
         fields = List.filterMap identity
             [ Just ("id", Json.Encode.string card.id)
-            , Just ("image_url", Json.Encode.string <| image_url card)
+            , Just ("full_image_url", Json.Encode.string <| full_image_url card)
+            , Just ("preview_image_url", Json.Encode.string <| preview_image_url card)
             , Just ("name", Json.Encode.string card.name)
             , Just ("card_type", Json.Encode.string <| card_type_to_string card.card_type)
             , Just ("set", card.set |> data_of_set |> .full_name |> Json.Encode.string )
@@ -264,8 +266,11 @@ crest_sort_order crest = case crest of
 page_url : Card -> String
 page_url card = "/card/" ++ card.id
 
-image_url : Card -> String
-image_url card = "/images/cards/" ++ card.id ++ ".jpg"
+full_image_url : Card -> String
+full_image_url card = "/images/cards/full/" ++ card.id ++ ".jpg"
+
+preview_image_url : Card -> String
+preview_image_url card = "/images/cards/preview/" ++ card.id ++ ".jpg"
 
 duplicate_id : Card -> String
 duplicate_id card = Maybe.withDefault card.id card.duplicate_id

@@ -31,6 +31,7 @@ disabled_color = rgb255 100 100 100
 separator_color : UI.Color
 separator_color = rgb255 56 56 56
 
+button_style_attributes : List (UI.Attribute msg)
 button_style_attributes = 
     [ UI_Background.color background_color
     , UI_Border.color border_color
@@ -141,11 +142,12 @@ header : String -> (String -> msg) -> msg -> UI.Element msg
 header search_buffer query_change_msg search_msg = 
     let
         search = search_bar search_buffer query_change_msg search_msg
-        logo = UI.link [] { url = "/", label = UI.image [ UI.height (px 50) ] { src = "/images/logo.png", description = "" } }
+        logo = UI.link [] { url = "/", label = UI.image [ UI.height (px 50) ] { src = "/images/logo_small.png", description = "" } }
         links = UI.row [ UI.alignRight, UI.spacing 5 ] 
             [ link_button "Advanced" "/advanced"
             , link_button "Syntax" "/syntax"
             , link_button "Sets" "/sets"
+            , link_button "Random" "/random"
             ]
     in
         UI.el 

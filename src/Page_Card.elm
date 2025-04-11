@@ -21,10 +21,10 @@ type Msg
     = Msg_QueryChange String
     | Msg_Search
 
-init : Card -> Model
-init card = 
+init : Card -> String -> Model
+init card query = 
     { card = card
-    , header_query = ""
+    , header_query = query
     }
 
 update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)

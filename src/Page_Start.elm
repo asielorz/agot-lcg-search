@@ -48,6 +48,7 @@ view model =
             [ Widgets.link_button "Advanced search" "/advanced"
             , Widgets.link_button "Syntax guide" "/syntax"
             , Widgets.link_button "All sets" "/sets"
+            , Widgets.link_button "Random card" "/random"
             , Widgets.simple_button "Download cards JSON" Msg_DownloadJson
             ]
         ]

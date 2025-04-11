@@ -14,15 +14,23 @@ import Browser
 import Browser.Dom
 import Browser.Navigation as Navigation
 import Element as UI
+import Json.Decode
 import List.Extra
+import Random
 import Task
 import Url exposing (Url)
 import Url.Parser exposing ((</>))
 
-main : Program () Model Msg
+main : Program Json.Decode.Value Model Msg
 main =
     Browser.application
-        { init = \() url key -> (init url key, Cmd.none)
+        { init = \args url key ->
+            let
+                seed = args
+                    |> Json.Decode.decodeValue Json.Decode.int
+                    |> Result.withDefault 42
+            in
+                init url key (Random.initialSeed seed)
         , view = view >> Widgets.layout
         , update = update
         , subscriptions = \_ -> Sub.none
@@ -52,27 +60,62 @@ type PageModel
 type alias Model = 
     { page : PageModel
     , navigation_key : Navigation.Key
+    , random_seed : Random.Seed
     }
 
-init : Url -> Navigation.Key -> Model
-init url key =
+type UrlChangeResult = UrlChangeResult_Page PageModel | UrlChangeResult_Redirect String
+change_url_impl : Url -> Int -> UrlChangeResult
+change_url_impl url random_card_index = 
     let
+        page_404 _ = UrlChangeResult_Page <| Model_404 Page_404.init
+
         card_page_model id = case card_with_id id of
-            Nothing -> Model_404 Page_404.init
-            Just card -> Model_Card <| Page_Card.init card
+            Nothing -> page_404 ()
+            Just card -> UrlChangeResult_Page <| Model_Card <| Page_Card.init card ""
+
+        search_page_model : Page_Search.Model -> UrlChangeResult
+        search_page_model inner = case inner.cards of
+            [ card ] -> UrlChangeResult_Redirect <| Card.page_url card
+            _ -> UrlChangeResult_Page <| Model_Search inner
+
+        random_card_page _ = Cards.all_cards
+            |> List.Extra.getAt random_card_index
+            |> Maybe.map (\card -> UrlChangeResult_Redirect <| Card.page_url card)
+            |> Maybe.withDefault (page_404 ())
 
         parser = Url.Parser.oneOf
-            [ Url.Parser.map (Model_Start Page_Start.init) Url.Parser.top
-            , Url.Parser.map (Model_Search <| Page_Search.init url.query) (Url.Parser.s "search")
-            , Url.Parser.map (Model_AdvancedSearch Page_AdvancedSearch.init) (Url.Parser.s "advanced")
-            , Url.Parser.map (Model_Sets Page_Sets.init) (Url.Parser.s "sets")
+            [ Url.Parser.map (UrlChangeResult_Page <| Model_Start Page_Start.init) Url.Parser.top
+            , Url.Parser.map (search_page_model <| Page_Search.init url.query) (Url.Parser.s "search")
+            , Url.Parser.map (UrlChangeResult_Page <| Model_AdvancedSearch Page_AdvancedSearch.init) (Url.Parser.s "advanced")
+            , Url.Parser.map (UrlChangeResult_Page <| Model_Sets Page_Sets.init) (Url.Parser.s "sets")
             , Url.Parser.map card_page_model (Url.Parser.s "card" </> Url.Parser.string)
+            , Url.Parser.map (random_card_page ()) (Url.Parser.s "random")
             ]
         page = Url.Parser.parse parser url 
-            |> Maybe.withDefault (Model_404 Page_404.init)
+            |> Maybe.withDefault (page_404 ())
     in
-        { page = page, navigation_key = key }
-        
+        page
+
+change_url : Url -> Model -> (Model, Cmd Msg)
+change_url url model =
+    let
+        (random_card_index, new_seed) = Random.step (Random.int 0 (List.length Cards.all_cards - 1)) model.random_seed
+    in
+        case change_url_impl url random_card_index of
+            UrlChangeResult_Page page -> ({ model | page = page, random_seed = new_seed }, Task.perform (always Msg_Noop) (Browser.Dom.setViewport 0 0))
+            UrlChangeResult_Redirect new_url -> (model, Navigation.replaceUrl model.navigation_key new_url)
+
+init : Url -> Navigation.Key -> Random.Seed -> (Model, Cmd Msg)
+init url key seed =
+    let
+        dummy_start_model =
+            { page = Model_Start Page_Start.init
+            , navigation_key = key
+            , random_seed = seed
+            }
+    in
+        change_url url dummy_start_model
+
 
 update : Msg -> Model -> (Model, Cmd Msg)
 update msg model = case (msg, model.page) of
@@ -91,7 +134,7 @@ update msg model = case (msg, model.page) of
     (Msg_UrlRequest request, _) -> case request of
         Browser.Internal url -> (model, Navigation.pushUrl model.navigation_key (Url.toString url))
         Browser.External url -> (model, Navigation.load url)
-    (Msg_UrlChange new_url, _) -> (init new_url model.navigation_key, Task.perform (always Msg_Noop) (Browser.Dom.setViewport 0 0))
+    (Msg_UrlChange new_url, _) -> init new_url model.navigation_key model.random_seed
     (_, _) -> (model, Cmd.none) -- Will never happen
 
 map_update : Model -> (model -> PageModel) -> (msg -> Msg) -> (model, Cmd msg) -> (Model, Cmd Msg)

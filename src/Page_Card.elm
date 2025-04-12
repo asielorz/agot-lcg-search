@@ -37,7 +37,7 @@ view model =
     ( model.card.name ++ " - A Game of Thrones LCG card search"
     , UI.column 
         [ UI.centerX
-        , UI.spacing 20 
+        , UI.spacing 20
         , UI.width UI.fill
         , UI_Font.size 15
         ]
@@ -45,6 +45,7 @@ view model =
         , view_card model.card
         , UI.text "" -- Dummy widget to add 20 padding more between.
         , view_card_faqs model.card.faqs
+        , UI.text "" -- Dummy widget to add 20 padding more at the end.
         ]
     )
 
@@ -286,6 +287,15 @@ view_card_faqs faqs = if List.isEmpty faqs
         , UI.padding 10
         , UI_Background.color Widgets.background_color
         ]
-        ( (UI.el [ UI_Font.bold, UI_Font.size 20 ] <| UI.text "FAQs and clarifications")
-        :: (faqs |> List.map (\f -> UI.paragraph [] [ UI.text f ]))
+        ( [ UI.el [ UI_Font.bold, UI_Font.size 20 ] <| UI.text "FAQs and clarifications"
+        , Widgets.separator
+        ]
+        ++ (faqs |> List.map view_single_card_faq |> List.intersperse [ Widgets.separator ] |> List.concat)
         )
+
+view_single_card_faq : String -> List (UI.Element msg)
+view_single_card_faq faq = faq
+    |> String.split "\n"
+    |> List.map (\text -> if String.endsWith "?" text 
+        then UI.paragraph [ UI_Font.italic ] [ UI.text text ]
+        else UI.paragraph [] [ UI.text text ] )

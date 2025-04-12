@@ -2840,7 +2840,7 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = [ rhaegal_riders_of_the_red_fork_faq ]
       , duplicate_id = Just "core_109"
       }
     , { id = "core_110"
@@ -2866,7 +2866,7 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = [ rhaegal_riders_of_the_red_fork_faq ]
       , duplicate_id = Just "core_109"
       }
     , { id = "core_111"
@@ -4714,7 +4714,9 @@ all_cards =
       , claim = Just 1
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = 
+        [ "When I reveal Summoning Season who chooses to search and reveal their character first?\nWhenever an effect requires multiple players to choose targets or reveal cards simultaneously the controller of the effect always resolves the entire effect first and the other players resolve the effect in a clockwise order."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "core_182"
@@ -7476,7 +7478,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = 
+        [ "How does Red Vengeance work during a power challenge?\nThe opponent chosen to satisfy the claim of a Power challenge moves power from his or her House card to the attacking player's House card. In some instances, this could amount to a single player moving power from his or her House card back to his or her House card."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "pots_26"
@@ -11066,7 +11070,7 @@ all_cards =
       , erratas = 
         [ { line = 0, start = 212, end = 234 }
         ]
-      , faqs = []
+      , faqs = [ summer_reserves_narrow_escape_faq ]
       , duplicate_id = Nothing
       }
     , { id = "kotst_49"
@@ -20335,7 +20339,7 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = [ summer_reserves_narrow_escape_faq ]
       , duplicate_id = Nothing
       }
     , { id = "ator_120"
@@ -23001,7 +23005,7 @@ all_cards =
       , illustrator = "Federico Piatti"
       , house = [ House_Stark ]
       , unique = False
-      , rules_text = Just "Northern Steel cannot be discarded from play while attached to a House Stark character. Any Phase: Kneel Northern Steel to give attached character either +3 STR or deadly until the end of the phase."
+      , rules_text = Just "Northern Steel cannot be discarded from play while attached to a House Stark character.\nAny Phase: Kneel Northern Steel to give attached character either +3 STR or deadly until the end of the phase."
       , flavor_text = Nothing
       , cost = Just 2
       , icons = []
@@ -25153,7 +25157,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = 
+        [ "If an opponent plays Misinformation, can I play a second copy in response to the first?\nYes. The first Misinformation cancels the game's standard determination of challenge winner, and creates its own. The second Misinformation would cancel this new determination, replacing it with its own."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "dotn_65"
@@ -26533,6 +26539,7 @@ all_cards =
       , erratas = []
       , faqs = 
         [ "A player who has reached his or her draw cap may not trigger Val's \"reveal and draw\" effect."
+        , "How does the timing on Val work?\nTriggering Val's ability is an \"Any Phase\" action. Within that action, you are going to have a Response opportunity. If you reveal/draw a Response effect (like an event) and do not play it during that very next opportunity, the card is discarded. Because it was revealed, your opponent will be able to monitor this. Similarly, if you reveal/draw a card that requires a standard action to play (a \"Phase\" event, or a character/attachment/location during your marshalling phase) and do not play it on your very next action opportunity (i.e., the next opportunity you have to play an action after triggering Val), the card is discarded. Note that if you can play the card you drew with Val on your next action, you must. You may not choose to discard it instead."
         ]
       , duplicate_id = Nothing
       }
@@ -30310,7 +30317,7 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = [ rhaegal_riders_of_the_red_fork_faq ]
       , duplicate_id = Nothing
       }
     , { id = "soo_23"
@@ -30648,7 +30655,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = 
+        [ "Do the self-referential abilities gained by Jaqen H'ghar from the character attached to him refer to Jaqen H'ghar or the character attached to him?\nJaqen H'ghar gains the text box, without alteration, of the character attached to him. Any ability that specifically names that attached character does not reference Jaqen H'ghar."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "soo_36"
@@ -51598,3 +51607,9 @@ all_cards =
       , duplicate_id = Nothing
       }
     ]
+
+rhaegal_riders_of_the_red_fork_faq : String
+rhaegal_riders_of_the_red_fork_faq = "If I search for Riders of the Red Fork with Rhaegal (Core Set T109) can I attach the Riders of the Red Fork to Rhaegal as a duplicate?\nYes. Rhaegal's ability allows for the search of a duplicate, and the Riders of the Red Fork's ability allows them to be searched for as that duplicate. When Rhaegal's ability resolves it attaches the Riders of the Red Fork to itself as a legal duplicate."
+
+summer_reserves_narrow_escape_faq : String
+summer_reserves_narrow_escape_faq = "If I have a Summer Reserves that has been killed and I play Narrow Escape will it come back into play?\nNo. Narrow Escape only puts into play character cards that have been killed or discarded. Event, attachment, or location cards that were characters when they were killed or discarded do not qualify"

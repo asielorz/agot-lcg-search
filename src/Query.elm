@@ -74,9 +74,9 @@ search : { a | query : String, sort : List String, duplicates : Bool } -> List C
 search args cards =
     let
         tokens = split_words_quoted args.query
-        (predicates, query_errors) = List.map parse_predicate_from_token tokens |> Result.Extra.partition
+        predicates = List.map parse_predicate_from_token tokens
         (order, sort_errors) = parse_sort_orders args.sort
-        errors = query_errors ++ sort_errors
+        errors = sort_errors
         deduplicate = if args.duplicates then identity else List.Extra.uniqueBy Card.duplicate_id
     in
         if List.isEmpty errors
@@ -118,6 +118,7 @@ type Predicate
     | Predicate_Traits String
     | Predicate_Icons Comparison (List Icon)
     | Predicate_Crest Comparison (List Crest)
+    | Predicate_Negate(Predicate)
 
 card_passes_predicate : Predicate -> Card -> Bool
 card_passes_predicate predicate card = case predicate of
@@ -142,6 +143,7 @@ card_passes_predicate predicate card = case predicate of
     Predicate_Traits t -> traits_predicate t card.traits
     Predicate_Icons c p -> icons_predicate p c card.icons card.card_type
     Predicate_Crest c p -> crests_predicate p c card.crest card.card_type
+    Predicate_Negate p -> not <| card_passes_predicate p card
 
 string_contains_predicate : String -> Maybe String -> Bool
 string_contains_predicate predicate value = case value of
@@ -257,35 +259,36 @@ split_words_quoted query =
             |> List.map String.toLower
             |> List.filter (String.isEmpty >> not)
 
-parse_predicate_from_token : String -> Result String Predicate
+parse_predicate_from_token : String -> Predicate
 parse_predicate_from_token token = 
-    let
-        parser = Parser.oneOf
-            [ Parser.succeed Predicate_Number |. Parser.symbol "number" |= parse_comparison |= Parser.int |. Parser.end
-            , Parser.succeed Predicate_Quantity |. Parser.symbol "quantity" |= parse_comparison |= Parser.int |. Parser.end
-            , Parser.succeed Predicate_Cost |. Parser.symbol "cost" |= parse_comparison |= Parser.int |. Parser.end
-            , Parser.succeed Predicate_Strength |. Parser.symbol "strength" |= parse_comparison |= Parser.int |. Parser.end
-            , Parser.succeed Predicate_Income |. Parser.symbol "income" |= parse_comparison |= Parser.int |. Parser.end
-            , Parser.succeed Predicate_Initiative |. Parser.symbol "initiative" |= parse_comparison |= Parser.int |. Parser.end
-            , Parser.succeed Predicate_Claim |. Parser.symbol "claim" |= parse_comparison |= Parser.int |. Parser.end
-            , Parser.succeed Predicate_Influence |. Parser.symbol "influence" |= parse_comparison |= Parser.int |. Parser.end
-            , Parser.succeed Predicate_Text |. Parser.symbol "text:" |= parse_until_end
-            , Parser.succeed Predicate_Flavor |. Parser.symbol "flavor:" |= parse_until_end
-            , Parser.succeed Predicate_Type |. Parser.symbol "type:" |= parse_type
-            , Parser.succeed Predicate_Set |. Parser.symbol "set" |= parse_comparison |= parse_set
-            , Parser.succeed Predicate_Illustrator |. Parser.symbol "illustrator:" |= parse_until_end
-            , Parser.succeed Predicate_House |. Parser.symbol "house" |= parse_comparison |= parse_houses
-            , Parser.succeed Predicate_Unique |. Parser.symbol "unique:" |= parse_tf_bool |. Parser.end
-            , Parser.succeed Predicate_LegalityJoust |. Parser.symbol "joust:" |= parse_legalities
-            , Parser.succeed Predicate_LegalityMelee |. Parser.symbol "melee:" |= parse_legalities
-            , Parser.succeed Predicate_Traits |. Parser.symbol "trait:" |= parse_until_end
-            , Parser.succeed Predicate_Icons |. Parser.symbol "icon" |= parse_comparison |= parse_icons
-            , Parser.succeed Predicate_Crest |. Parser.symbol "crest" |= parse_comparison |= parse_crests
-            , Parser.succeed <| Predicate_Name token
-            ]
-    in
-        Parser.run parser token
-            |> Result.mapError Parser.deadEndsToString
+    Parser.run (parse_predicate ()) token
+        |> Result.withDefault (Predicate_Name token)
+
+parse_predicate : () -> Parser Predicate
+parse_predicate _ = Parser.oneOf
+    [ Parser.succeed Predicate_Number |. Parser.symbol "number" |= parse_comparison |= Parser.int |. Parser.end
+    , Parser.succeed Predicate_Quantity |. Parser.symbol "quantity" |= parse_comparison |= Parser.int |. Parser.end
+    , Parser.succeed Predicate_Cost |. Parser.symbol "cost" |= parse_comparison |= Parser.int |. Parser.end
+    , Parser.succeed Predicate_Strength |. Parser.symbol "strength" |= parse_comparison |= Parser.int |. Parser.end
+    , Parser.succeed Predicate_Income |. Parser.symbol "income" |= parse_comparison |= Parser.int |. Parser.end
+    , Parser.succeed Predicate_Initiative |. Parser.symbol "initiative" |= parse_comparison |= Parser.int |. Parser.end
+    , Parser.succeed Predicate_Claim |. Parser.symbol "claim" |= parse_comparison |= Parser.int |. Parser.end
+    , Parser.succeed Predicate_Influence |. Parser.symbol "influence" |= parse_comparison |= Parser.int |. Parser.end
+    , Parser.succeed Predicate_Text |. Parser.symbol "text:" |= parse_until_end
+    , Parser.succeed Predicate_Flavor |. Parser.symbol "flavor:" |= parse_until_end
+    , Parser.succeed Predicate_Type |. Parser.symbol "type:" |= parse_type
+    , Parser.succeed Predicate_Set |. Parser.symbol "set" |= parse_comparison |= parse_set
+    , Parser.succeed Predicate_Illustrator |. Parser.symbol "illustrator:" |= parse_until_end
+    , Parser.succeed Predicate_House |. Parser.symbol "house" |= parse_comparison |= parse_houses
+    , Parser.succeed Predicate_Unique |. Parser.symbol "unique:" |= parse_tf_bool |. Parser.end
+    , Parser.succeed Predicate_LegalityJoust |. Parser.symbol "joust:" |= parse_legalities
+    , Parser.succeed Predicate_LegalityMelee |. Parser.symbol "melee:" |= parse_legalities
+    , Parser.succeed Predicate_Traits |. Parser.symbol "trait:" |= parse_until_end
+    , Parser.succeed Predicate_Icons |. Parser.symbol "icon" |= parse_comparison |= parse_icons
+    , Parser.succeed Predicate_Crest |. Parser.symbol "crest" |= parse_comparison |= parse_crests
+    , Parser.succeed Predicate_Negate |. Parser.symbol "!" |= (Parser.lazy parse_predicate)
+    , Parser.succeed Predicate_Name |= parse_until_end
+    ]
 
 parse_comparison : Parser Comparison
 parse_comparison = Parser.oneOf 

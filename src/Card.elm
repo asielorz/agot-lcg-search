@@ -197,6 +197,12 @@ maybe_field field_name encode optional_field =
 card_to_json : Card -> Json.Encode.Value
 card_to_json card = 
     let 
+        errata_to_json errata = Json.Encode.object
+            [ ("line", Json.Encode.int errata.line)
+            , ("start", Json.Encode.int errata.start)
+            , ("end", Json.Encode.int errata.end)
+            ]
+
         fields = List.filterMap identity
             [ Just ("id", Json.Encode.string card.id)
             , Just ("full_image_url", Json.Encode.string <| full_image_url card)
@@ -214,6 +220,8 @@ card_to_json card =
             , Just ("icons", Json.Encode.list (Json.Encode.string << icon_to_string) card.icons)
             , Just ("crest", Json.Encode.list (Json.Encode.string << crest_to_string) card.crest)
             , Just ("traits", Json.Encode.list Json.Encode.string card.traits)
+            , Just ("erratas", Json.Encode.list errata_to_json card.erratas) 
+            , Just ("faqs", Json.Encode.list Json.Encode.string card.faqs) 
             , maybe_field "rules_text" Json.Encode.string card.rules_text
             , maybe_field "flavor_text" Json.Encode.string card.flavor_text
             , maybe_field "duplicate_id" Json.Encode.string card.duplicate_id

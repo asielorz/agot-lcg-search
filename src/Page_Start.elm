@@ -42,9 +42,9 @@ view model =
         , UI.centerY
         , UI.spacing 20
         ]
-        [ UI.image [] { src = "/images/logo.png", description = "A Game of Thrones: the card game" }
+        [ UI.image [ UI.centerX ] { src = "/images/logo.png", description = "A Game of Thrones: the card game" }
         , Widgets.search_bar model.query Msg_QueryChanged Msg_Search
-        , UI.row [ UI.spacing 10, UI.centerX ] 
+        , UI.row [ UI.spacing 5, UI.centerX ] 
             [ Widgets.link_button "Advanced search" "/advanced"
             , Widgets.link_button "Syntax guide" "/syntax"
             , Widgets.link_button "All sets" "/sets"

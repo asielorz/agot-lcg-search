@@ -9914,7 +9914,7 @@ all_cards =
       , illustrator = "Jason Engle"
       , house = [ House_Baratheon ]
       , unique = True
-      , rules_text = Just "No attachments except Weapon.\n House Baratheon Lord characters you control get +1 STR."
+      , rules_text = Just "No attachments except Weapon.\nHouse Baratheon Lord characters you control get +1 STR."
       , flavor_text = Nothing
       , cost = Just 2
       , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]

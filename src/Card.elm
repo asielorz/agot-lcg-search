@@ -237,6 +237,16 @@ house_sort_order house = case house of
     House_Greyjoy -> 5
     House_Neutral -> 6
 
+house_icon : House -> String
+house_icon house = case house of
+    House_Stark -> "/images/houses/stark.png"
+    House_Lannister -> "/images/houses/lannister.png"
+    House_Baratheon -> "/images/houses/baratheon.png"
+    House_Targaryen -> "/images/houses/targaryen.png"
+    House_Greyjoy -> "/images/houses/greyjoy.png"
+    House_Martell -> "/images/houses/martell.png"
+    House_Neutral -> "/images/houses/neutral.png"
+
 icon_sort_order : Icon -> Int
 icon_sort_order icon = case icon of
     Icon_Military { naval } -> if naval then 1 else 0

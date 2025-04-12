@@ -66,7 +66,7 @@ view_card card =
                 , UI_Background.color Widgets.background_color
                 ] <|
                 [ UI.row [ UI.spacing 10 ]
-                    [ cost_widget card.cost
+                    [ cost_widget card.cost (List.member Crest_Shadow card.crest)
                     , if card.unique then UI.image [ UI_Border.rounded 3, UI.clip, UI.width (px 20) ] { src = "/images/unique.png", description = "Unique" } else UI.none
                     , UI.text card.name
                     ]
@@ -126,8 +126,8 @@ apply_erratas offset text erratas = case erratas of
             ]
             ++ apply_erratas (offset + errata.end) after_errata rest
 
-image_with_number_inside : String -> Int -> UI.Element msg
-image_with_number_inside source number = UI.image 
+image_with_text_inside : String -> String -> UI.Element msg
+image_with_text_inside source text = UI.image 
     [ UI.width (px 30)
     , UI.inFront <| UI.el
         [ UI.centerX
@@ -135,14 +135,17 @@ image_with_number_inside source number = UI.image
         , UI_Font.color (rgb 0 0 0)
         , UI_Font.size 20
         ]
-        (UI.text <| String.fromInt number)
+        (UI.text <| text)
     ]
     { src = source, description = "" }
 
-cost_widget : Maybe Int -> UI.Element msg
-cost_widget cost = case cost of
+image_with_number_inside : String -> Int -> UI.Element msg
+image_with_number_inside source number = image_with_text_inside source (String.fromInt number)
+
+cost_widget : Maybe Int -> Bool -> UI.Element msg
+cost_widget cost is_shadow = case cost of
     Nothing -> UI.none
-    Just actual_cost -> image_with_number_inside "/images/gold.png" actual_cost
+    Just actual_cost -> image_with_text_inside "/images/gold.png" <| String.fromInt actual_cost ++ if is_shadow then "s" else ""
 
 character_line : Card -> UI.Element msg
 character_line card = case card.strength of

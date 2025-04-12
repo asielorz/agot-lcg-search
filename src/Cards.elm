@@ -8494,7 +8494,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = 
+        [ "What happens if I play Frozen Solid on my opponent’s Pyromancer’s Cache?\nSince the text “Attach to a location you control” on Pyromancer’s Cache is now blank, Pyromancer’s Cache is now illegally attached to a location and is therefore discarded (see FAQ section 3.20)."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "low_5"
@@ -12526,7 +12528,9 @@ all_cards =
       , claim = Just 1
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs =
+        [ "Does Burning Bridges prevent a duplicate from being used to save a character?\nBurning Bridges reads, \"Players cannot trigger abilities on character, location, and attachment cards in play.\" It is referring to triggered abilities printed on the cards. Because the saves granted by duplicates is a \"gained\" ability rather than a printed one Burning Bridges does not have any effect on them"
+        ]
       , duplicate_id = Nothing
       }
     , { id = "qod_50"
@@ -14011,7 +14015,9 @@ all_cards =
       , claim = Just 1
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs =
+        [ "What happens if I reveal The Art of Seduction outside of the standard \"each player chooses and reveals plot cards\" framework action window?\nThe Art of Seduction can only choose an opponent who is revealing a plot that is not titled \"The Art of Seduction\" as part of the same framework action by which you are revealing The Art of Seduction. If no opponent meets this criteria, the \"when revealed\" effect on The Art of Seduction does nothing. Note that a when revealed plot effect that reveals a new plot card (such as Betrayal at the Wall) would still be considered a part of the same framework action window and works with The Art of Seduction. Any effect that reveals a new plot outside of this framework, however, would not work with The Art of Seduction."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "lotr_53"
@@ -15233,7 +15239,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = [ { line = 0, start = 0, end = 116 } ]
-      , faqs = []
+      , faqs =
+        [ "Which keywords may I select for Jaqen H'ghar to gain when using his ability?\nJaqen H'ghar's effect allows him to gain any unqualified keyword, that is, keywords that do not require additional text or qualifications beyond the name of the keyword in order to explain their full function. Unqualified keywords include, but are not limited to, keywords such as Stealth, Renown, Deadly, No Attachments, Stalwart, Vigilant, Joust, and Melee. Keywords such as \"Immune to X\" and \"No attachments except X\" are examples of qualified keywords outside the scope of Jaqen H'ghar's effect. Effects such as \"cannot be killed\" and \"cannot be discarded\" are not keywords.\nThis entry applies only to which keywords may be named and gained by Jaqen H'ghar's effect: specifically his controller cannot name any additional qualification(s) when gaining a keyword. Cards that copy or steal keywords from other cards in play may successfully interact with both qualified and unqualified keywords."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "acoa_44"
@@ -18725,7 +18733,10 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = 
+        [ "If my opponent plays Game of Cyvasse and I do not cancel its effect can I discard a duplicate to prevent my Ser Arthur Dayne from being returned to my hand?\nYes. The \"Then\" effect on Game of Cyvasse opens a window for you to save Ser Arthur Dayne."
+        , "Could I use Starfall Advisor to cancel Game of Cyvasse's effect that would discard Ser Arthur Dayne?\nNo. A cancel must cancel an entire effect not just part of an effect. Since Starfall Advisor would not be able to trigger its ability when the event card is first played, the ability is not able to be triggered at all."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "ator_58"
@@ -19427,7 +19438,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs =
+        [ "Is Cat o' the Canals immune to stealth?\nStealth resolves as a card effect that targets a character on the defending side. As she is immune to opponent's card effects, Cat o' the Canals cannot be chosen as a target of stealth."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "ator_85"
@@ -22419,7 +22432,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs =
+        [ "In order to \"successfully defend\" a challenge and use the effect of The White Book agenda, do you need to win the challenge?\nYes, you must win a challenge as the defending player in order to successfully defend it."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "kl_80"
@@ -23017,7 +23032,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = 
+        [ "If Northern Steel gets attached to a “No attachments” Stark character with Fortified Position revealed, what happens next turn?\nNorthern Steel remains attached. Cannot is an absolute, and \"Northern Steel cannot be discarded from play while attached to a House Stark character.\" trumps the Stark characters \"No attachments.\" keyword."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "kl_103"
@@ -29355,7 +29372,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = 
+        [ "Can I trigger The Dreadfort when I play a Bolton Refugee with a printed STR of 2, and have Winterfell Castle in play, which gives the Bolton Refugee +1 STR?\nQualifying characteristics of cards are checked at the time a Response effect is triggered. In this example, the Bolton character enters play and has its STR raised to 3 (by the constant effect on Winterfell Castle) when it enters play, which occurs before the Response effect is triggered. When the Response is triggered, the character’s STR is 3, and it has just been played, so you can use The Dreadfort to draw a card."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "bwb_106"
@@ -30813,7 +30832,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = 
+        [ "I have Maester Luwin and Galbart Glover out at the same time. If I win a challenge with Maester Luwin can I search the top 5 cards of my discard pile?No. Searching the top 5 cards of your deck does not count as searching your entire deck.\n"
+        ]
       , duplicate_id = Nothing
       }
     , { id = "soo_42"
@@ -32919,7 +32940,10 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = [ { line = 2, start = 0, end = 48 } ]
-      , faqs = []
+      , faqs = 
+        [ "If I bring Meera Reed out of Shadows as a duplicate for the version I already have in play, does her \"Response\" effect still blank a card?\nNo. Meera Reed leaves shadows and immediately becomes a duplicate. Duplicates have no text, titles, or traits."
+        , "If I bring Meera Reed out of Shadows, can she target The Red Viper to blank him?\nNo. Meera Reed is considered a character in play after she comes out of Shadows, and The Red Viper is immune to her ability"
+        ]
       , duplicate_id = Nothing
       }
     , { id = "atoc_3"
@@ -34089,7 +34113,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs =
+        [ "If a character enters play through an effect like Fiery Kiss that would cause that character to leave play at the end of the phase or round, but the character enters play as a duplicate (because the player already owns and controls another copy of that character), what happens at the end of the phase?\nThe check, \"if that character is still in play\" cannot be made, as the card entered play as a duplicate. The duplicate remains in play at the end of the phase."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "atoc_48"
@@ -35883,7 +35909,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = 
+        [ "Does Heavy Taxes affect the gold counted before or after Black Raven's effect has the players take 1 gold?\nThe players each count their plot gold and all the income bonuses they each have in play. If this number is greater than 4, the rest is disregarded because of Heavy Taxes. When the player takes the gold from the treasury Black Raven causes each player to take 1 additional gold token. The same is true of when White Raven is in play, all numbers above 4 are disregarded and then White Raven causes each player to take 1 less gold token from the treasury"
+        ]
       , duplicate_id = Nothing
       }
     , { id = "atoc_117"
@@ -37083,7 +37111,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = 
+        [ "When can Abel's Washerwoman trigger its response when the defending player controls Naval characters?\nAbel's Washerwoman can only trigger its response when no defenders are declared during the standard framework \"declare defenders\" step. The presence of eligible Naval characters that may defend after this step or have been declared prior to this step does not change the fact that \"no defenders\" were declared during the precise window of this response trigger."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "btns_43"
@@ -37841,7 +37871,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = [ { line = 0, start = 158, end = 166 } ]
-      , faqs = []
+      , faqs =
+        [ "When is the discard condition for a character that has been targeted by Rhoynar Emmisary checked?\nThis condition is checked only during the standard framework \"declare attackers\" and \"declare defenders\" steps of challenge resolution. The discard effect resolves passively at this time if the targeted character is eligible to be declared but is not declared."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "btns_72"
@@ -39063,7 +39095,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs = 
+        [ "Does Little and Less prevent me from triggering a Response on a character?\nLittle and Less only prevents playing response effects from hand. A character whose card text was a response that could be triggered from hand such as Khal Drogo (Core T107) would not be able to be triggered, but a character ability on a card in play would still be able to be triggered."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "btns_119"
@@ -39585,6 +39619,7 @@ all_cards =
       , erratas = []
       , faqs = 
         [ "The Hold is open information to its owner, but can only be looked at by opponents when a card effect specifically allows them to do so."
+        , "What is the proper pregame and deck cutting procedure for the Black Sails agenda?\nFirst, shuffle your deck, and then present it to your opponent for additional shuffling and/or a final cut. The opponent shuffles and cuts to his or her satisfaction to determine the final ordering of the cards in the deck.\nYou are then responsible for making one cut that splits the deck into two stacks. You may not re-order or count cards during this process. If, on a visual comparison of the two stacks, they are not to your liking, you may return the deck to its original composition (without altering the original order of the cards) and make an additional attempt at the cut. You may make up to three attempts at this cut without delaying the game. After a successful cut is made, present the two stacks to your opponent, who then chooses one stack as your deck and the other as your hold.\nOnce your deck is selected, proceed with drawing your initial hands. If you choose to mulligan, you only mulligan your deck -- your hold is locked in at this point."
         ]
       , duplicate_id = Nothing
       }
@@ -43826,7 +43861,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs =
+        [ "What happens if a unique card removed from the game via Coldhands attempts to re-enter the game, but another copy of that card is in its owner's dead pile?\nThe card cannot enter play, and remains removed from the game."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "kr_62"
@@ -44294,7 +44331,9 @@ all_cards =
       , claim = Just 1
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs =
+        [ "What happens if I reveal Betrayal at the Wall as my final plot card, and its \"when revealed\" effect attempts to resolve when I do not have a plot deck?\nYou are not able to choose and reveal a new plot card, so the \"when revealed\" effect fails to resolve."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "kr_80"
@@ -44970,7 +45009,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs =
+        [ "Does Longship Maiden's Bane lose the immunity granted by House of Dreams while Longship Maiden's Bane is functioning as a character?\nWhen a card changes type and becomes a character, it loses all other card types. As House of Dreams specifies that the immunity is granted to \"that location\", the immunity from the agenda is not present while Maiden's Bane is changed to a character. When Longship Maiden's Bane reverts back to its original state as a location, House of Dreams again provides its immunity. This is because the immunity granted by House of Dreams is being granted by a constant effect."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "kr_106"
@@ -45724,7 +45765,9 @@ all_cards =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
+      , faqs =
+        [ "What is the timing of a challenge initiated by Show of Force?\nThe challenge initiated by Show of Force bypasses the standard framework action window steps of choosing challenge type and declaring characters -- the event card performs each of these steps on its own. Following this, the remainder of the challenge resolves as would any other challenge that was initiated by conventional means. Note that the wording \"as your only attacking characters\" refers only to how the challenge is initiated: you cannot declare other characters via standard challenge declaration procedures, but other effects, such as a naval icon, may be used to add characters to the challenge."
+        ]
       , duplicate_id = Nothing
       }
     , { id = "cad_15"

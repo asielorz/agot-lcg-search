@@ -1,6 +1,6 @@
 module Page_Card exposing (Model, Msg, init, update, view)
 
-import Card exposing (Card, CardType(..), Crest(..), Icon(..), Legality(..), Errata)
+import Card exposing (Card, CardType(..), Crest(..), Icon(..), Legality(..), Errata, House)
 import Cards
 import CardSet exposing (SetOrCycle(..))
 import Query exposing (default_search_state)
@@ -65,10 +65,11 @@ view_card card =
                 , UI.spacing 5
                 , UI_Background.color Widgets.background_color
                 ] <|
-                [ UI.row [ UI.spacing 10 ]
+                [ UI.row [ UI.spacing 10, UI.width UI.fill ]
                     [ cost_widget card.cost (List.member Crest_Shadow card.crest)
                     , if card.unique then UI.image [ UI_Border.rounded 3, UI.clip, UI.width (px 20) ] { src = "/images/unique.png", description = "Unique" } else UI.none
                     , UI.text card.name
+                    , houses_widget card.house
                     ]
                 , Widgets.separator
                 , UI.text <| type_and_traits_line card
@@ -97,6 +98,15 @@ view_card card =
                 , UI.moveDown 20
                 ] { src = Card.full_image_url card, description = card.name }
             ]
+
+houses_widget : List House -> UI.Element msg
+houses_widget houses = houses
+    |> List.map (\house -> UI.image [ UI.height (px 30) ] 
+        { src = Card.house_icon house
+        , description = "House " ++ Card.house_to_string house 
+        })
+    |> UI.row [ UI.alignRight, UI.spacing 5 ]
+    
 
 type_and_traits_line : Card -> String
 type_and_traits_line card = if List.isEmpty card.traits

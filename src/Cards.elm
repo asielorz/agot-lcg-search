@@ -49013,7 +49013,7 @@ all_cards =
       , cost = Just 2
       , icons = [ Icon_Military { naval = False } ]
       , crest = [ Crest_War ]
-      , traits = [ "Rainbow Guard", "Lady" ]
+      , traits = [ "Rainbow Guard", "Lady", "Knight" ]
       , strength = Just 3
       , income = Nothing
       , initiative = Nothing

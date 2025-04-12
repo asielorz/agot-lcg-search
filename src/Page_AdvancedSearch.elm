@@ -1,6 +1,6 @@
 module Page_AdvancedSearch exposing (Model, Msg, init, update, view)
 
-import Card exposing (CardType(..))
+import Card exposing (CardType(..), House(..))
 import CardSet exposing (SetOrCycle(..), Set(..), Cycle(..))
 import Fontawesome
 import Query exposing (Comparison(..), default_search_state)
@@ -253,13 +253,13 @@ labeled label widget = UI.row [ UI.width UI.fill ]
 house_checkboxes : Model -> UI.Element Msg
 house_checkboxes model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
     [ UI.wrappedRow [ UI.spacing 30 ] 
-        [ image_checkbox [] "/images/houses/stark.png" model.house_stark (\b -> { model | house_stark = b })
-        , image_checkbox [] "/images/houses/lannister.png" model.house_lannister (\b -> { model | house_lannister = b })
-        , image_checkbox [] "/images/houses/baratheon.png" model.house_baratheon (\b -> { model | house_baratheon = b })
-        , image_checkbox [] "/images/houses/targaryen.png" model.house_targaryen (\b -> { model | house_targaryen = b })
-        , image_checkbox [] "/images/houses/greyjoy.png" model.house_greyjoy (\b -> { model | house_greyjoy = b })
-        , image_checkbox [] "/images/houses/martell.png" model.house_martell (\b -> { model | house_martell = b })
-        , image_checkbox [] "/images/houses/neutral.png" model.house_neutral (\b -> { model | house_neutral = b })
+        [ image_checkbox [] (Card.house_icon House_Stark) model.house_stark (\b -> { model | house_stark = b })
+        , image_checkbox [] (Card.house_icon House_Lannister) model.house_lannister (\b -> { model | house_lannister = b })
+        , image_checkbox [] (Card.house_icon House_Baratheon) model.house_baratheon (\b -> { model | house_baratheon = b })
+        , image_checkbox [] (Card.house_icon House_Targaryen) model.house_targaryen (\b -> { model | house_targaryen = b })
+        , image_checkbox [] (Card.house_icon House_Greyjoy) model.house_greyjoy (\b -> { model | house_greyjoy = b })
+        , image_checkbox [] (Card.house_icon House_Martell) model.house_martell (\b -> { model | house_martell = b })
+        , image_checkbox [] (Card.house_icon House_Neutral) model.house_neutral (\b -> { model | house_neutral = b })
         ]
     , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
         { id = Combo_HouseComparison

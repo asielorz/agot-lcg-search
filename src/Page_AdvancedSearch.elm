@@ -182,10 +182,11 @@ view model =
         , UI.spacing 20
         , UI.width UI.fill
         , UI_Events.onClick <| if Maybe.Extra.isJust model.combo then Msg_ModelChanged { model | combo = Nothing } else Msg_Noop
-        , UI.paddingEach { top = 0, bottom = 20, left = 20, right = 20 }
+        , UI.paddingXY 20 0
         ]
         [ Widgets.header model.header_query Msg_HeaderQueryChanged Msg_HeaderSearch
         , view_advanced_search model
+        , Widgets.footer
         ]
     )
 

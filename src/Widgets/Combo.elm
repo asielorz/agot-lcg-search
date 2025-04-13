@@ -1,5 +1,6 @@
 module Widgets.Combo exposing (..)
 
+import Colors
 import Fontawesome
 
 import Element as UI
@@ -31,7 +32,7 @@ view attrs current_id args =
     let
         open = current_id == Just args.id
         option_button opt = UI.el
-            [ UI.mouseOver [ UI_Background.color Widgets.background_color_hover ]
+            [ UI.mouseOver [ UI_Background.color Colors.background_hover ]
             , onClickStopPropagation <| Msg_Select <| args.select opt
             , UI.paddingXY 5 3
             , UI.width UI.fill
@@ -39,8 +40,8 @@ view attrs current_id args =
             <| UI.map (always Msg_Close) <| args.view False opt
         options = if open
             then UI.column 
-                [ UI_Background.color Widgets.background_color
-                , UI_Border.color Widgets.border_color
+                [ UI_Background.color Colors.background
+                , UI_Border.color Colors.border
                 , UI_Border.width 1
                 , UI.width UI.fill
                 , UI.htmlAttribute <| Html.Attributes.style "height" "auto"
@@ -80,7 +81,7 @@ multi_combo attrs current_id args =
     let
         open = current_id == Just args.id
         option_button opt = UI.el
-            [ UI.mouseOver [ UI_Background.color Widgets.background_color_hover ]
+            [ UI.mouseOver [ UI_Background.color Colors.background_hover ]
             , onClickStopPropagation <| Msg_Select <| args.select opt
             , UI.paddingXY 5 3
             , UI.width UI.fill
@@ -88,8 +89,8 @@ multi_combo attrs current_id args =
             <| UI.map (always Msg_Close) <| args.view False opt
         options = if open
             then UI.column 
-                [ UI_Background.color Widgets.background_color
-                , UI_Border.color Widgets.border_color
+                [ UI_Background.color Colors.background
+                , UI_Border.color Colors.border
                 , UI_Border.width 1
                 , UI.width <| Maybe.withDefault UI.fill args.width_override
                 , UI.htmlAttribute <| Html.Attributes.style "height" "auto"

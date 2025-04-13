@@ -3,6 +3,7 @@ module Page_Card exposing (Model, Msg, init, update, view)
 import Card exposing (Card, CardType(..), Crest(..), Icon(..), Legality(..), Errata, House)
 import Cards
 import CardSet exposing (SetOrCycle(..))
+import Colors
 import Query exposing (default_search_state)
 import Widgets
 
@@ -40,12 +41,13 @@ view model =
         , UI.spacing 20
         , UI.width UI.fill
         , UI_Font.size 15
+        , UI.height UI.fill
         ]
         [ Widgets.header model.header_query Msg_QueryChange Msg_Search
         , view_card model.card
         , UI.text "" -- Dummy widget to add 20 padding more between.
         , view_card_faqs model.card.faqs
-        , UI.text "" -- Dummy widget to add 20 padding more at the end.
+        , Widgets.footer
         ]
     )
 
@@ -59,12 +61,12 @@ view_card card =
                 [ UI.alignTop
                 , UI.paddingEach { left = 10, right = 20, top = 10, bottom = 10 }
                 , UI_Border.width 1
-                , UI_Border.color Widgets.border_color
+                , UI_Border.color Colors.border
                 , UI_Border.rounded 10
                 , UI.height UI.fill
                 , UI.width (px 420)
                 , UI.spacing 5
-                , UI_Background.color Widgets.background_color
+                , UI_Background.color Colors.background
                 ] <|
                 [ UI.row [ UI.spacing 10, UI.width UI.fill ]
                     [ cost_widget card.cost (List.member Crest_Shadow card.crest)
@@ -266,7 +268,7 @@ versions_widget cards current_id = if List.length cards <= 1
         |> UI.column 
             [ UI_Border.rounded 10
             , UI_Border.width 1
-            , UI_Border.color Widgets.border_color
+            , UI_Border.color Colors.border
             , UI.width UI.fill
             , UI.alignBottom
             ]
@@ -280,12 +282,12 @@ view_card_faqs faqs = if List.isEmpty faqs
     else UI.column
         [ UI_Border.rounded 10
         , UI_Border.width 1
-        , UI_Border.color Widgets.border_color
+        , UI_Border.color Colors.border
         , UI.centerX
         , UI.spacing 10
         , UI.width (px 600)
         , UI.padding 10
-        , UI_Background.color Widgets.background_color
+        , UI_Background.color Colors.background
         ]
         ( [ UI.el [ UI_Font.bold, UI_Font.size 20 ] <| UI.text "FAQs and clarifications"
         , Widgets.separator

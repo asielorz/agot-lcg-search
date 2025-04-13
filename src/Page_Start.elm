@@ -38,18 +38,25 @@ view : Model -> (String, UI.Element Msg)
 view model = 
     ( "A Game of Thrones LCG card search"
     , UI.column
-        [ UI.centerX
-        , UI.centerY
+        [ UI.width UI.fill
+        , UI.height UI.fill
         , UI.spacing 20
         ]
-        [ UI.image [ UI.centerX ] { src = "/images/logo.png", description = "A Game of Thrones: the card game" }
-        , Widgets.search_bar model.query Msg_QueryChanged Msg_Search
-        , UI.row [ UI.spacing 5, UI.centerX ] 
-            [ Widgets.link_button "Advanced search" "/advanced"
-            , Widgets.link_button "Syntax guide" "/syntax"
-            , Widgets.link_button "All sets" "/sets"
-            , Widgets.link_button "Random card" "/random"
-            , Widgets.simple_button "Download cards JSON" Msg_DownloadJson
+        [ UI.column 
+            [ UI.centerX
+            , UI.centerY
+           , UI.spacing 20
             ]
+            [ UI.image [ UI.centerX, UI.centerY ] { src = "/images/logo.png", description = "A Game of Thrones: the card game" }
+            , Widgets.search_bar model.query Msg_QueryChanged Msg_Search
+            , UI.row [ UI.spacing 5, UI.centerX ] 
+                [ Widgets.link_button "Advanced search" "/advanced"
+                , Widgets.link_button "Syntax guide" "/syntax"
+                , Widgets.link_button "All sets" "/sets"
+                , Widgets.link_button "Random card" "/random"
+                , Widgets.simple_button "Download cards JSON" Msg_DownloadJson
+                ]
+            ]
+        , Widgets.footer
         ]
     )

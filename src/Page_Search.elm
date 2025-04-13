@@ -50,7 +50,6 @@ view model =
             [ UI.centerX
             , UI.spacing 20 
             , UI.width UI.fill
-            , UI.paddingEach { top = 0, left = 0, right = 0, bottom = 20 }
             ]
             (List.filterMap identity 
                 [ Just <| Widgets.header model.new_query_buffer Msg_QueryChange Msg_Search
@@ -59,6 +58,7 @@ view model =
                 , view_results cards
                 , view_results plots
                 , Just <| navigation_buttons model
+                , Just Widgets.footer
                 ]
             )
         )

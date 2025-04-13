@@ -36,5 +36,6 @@ view model =
         ]
         [ Widgets.header model.header_query Msg_HeaderQueryChanged Msg_HeaderSearch
         , UI.image [ UI.centerX, UI.centerY, UI_Border.rounded 20, UI.clip ] { src = "/images/404.png", description = "404 Page not Found" }
+        , Widgets.footer
         ]
     )

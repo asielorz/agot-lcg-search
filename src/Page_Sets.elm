@@ -1,6 +1,7 @@
 module Page_Sets exposing (Model, Msg, init, update, view)
 
 import CardSet exposing (SetOrCycle)
+import Colors
 import Query
 import Widgets
 
@@ -36,10 +37,10 @@ view model =
         [ UI.centerX
         , UI.spacing 20 
         , UI.width UI.fill
-        , UI.paddingEach { left = 0, right = 0, top = 0, bottom = 20 }
         ]
         [ Widgets.header model.header_query Msg_QueryChange Msg_Search
         , view_sets_table
+        , Widgets.footer
         ]
     )
 
@@ -50,16 +51,16 @@ view_sets_table = CardSet.all_sets_and_cycles_in_order
         [ UI.centerX
         , UI.width <| UI.maximum 1000 UI.fill
         , UI_Border.widthEach { top = 0, left = 0, right = 0, bottom = 1 }
-        , UI_Border.color Widgets.separator_color
+        , UI_Border.color Colors.separator
         ]
 
 view_set_table_row : Bool -> SetOrCycle -> UI.Element msg
 view_set_table_row even set = UI.link 
     [ UI.width UI.fill
     , UI_Border.widthEach { top = 1, left = 1, right = 1, bottom = 0 }
-    , UI_Border.color Widgets.separator_color
-    , UI_Background.color <| if even then Widgets.page_background_color else Widgets.background_color
-    , UI.mouseOver [ UI_Background.color Widgets.background_color_hover ]
+    , UI_Border.color Colors.separator
+    , UI_Background.color <| if even then Colors.page_background else Colors.background
+    , UI.mouseOver [ UI_Background.color Colors.background_hover ]
     , UI.padding 5
     , UI_Font.size 16
     ]

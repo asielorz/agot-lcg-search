@@ -1,5 +1,7 @@
 module Widgets exposing (..)
 
+import Colors
+
 import Element as UI exposing (px, rgb255)
 import Element.Background as UI_Background
 import Element.Border as UI_Border
@@ -10,37 +12,16 @@ import Json.Decode
 import Browser
 import CardSet exposing (SetOrCycle)
 
-page_background_color : UI.Color
-page_background_color = rgb255 24 26 27
-
-border_color : UI.Color
-border_color = rgb255 168 160 149
-
-border_color_hover : UI.Color
-border_color_hover = rgb255 208 200 180
-
-background_color : UI.Color
-background_color = rgb255 34 36 38
-
-background_color_hover : UI.Color
-background_color_hover = rgb255 44 46 48
-
-disabled_color : UI.Color
-disabled_color = rgb255 100 100 100
-
-separator_color : UI.Color
-separator_color = rgb255 56 56 56
-
 button_style_attributes : List (UI.Attribute msg)
 button_style_attributes = 
-    [ UI_Background.color background_color
-    , UI_Border.color border_color
+    [ UI_Background.color Colors.background
+    , UI_Border.color Colors.border
     , UI_Border.width 1
     , UI_Border.rounded 10
     , UI.padding 5
     , UI.mouseOver 
-        [ UI_Background.color background_color_hover
-        , UI_Border.color border_color_hover
+        [ UI_Background.color Colors.background_hover
+        , UI_Border.color Colors.border_hover
         ]
     ]
 
@@ -62,8 +43,8 @@ on_enter msg =
 
 input_text : List (UI.Attribute msg) -> String -> String -> (String -> msg) -> msg -> UI.Element msg
 input_text attrs query hint msg_query_change msg_search = UI_Input.text 
-            ([ UI_Background.color background_color
-            , UI_Border.color border_color
+            ([ UI_Background.color Colors.background
+            , UI_Border.color Colors.border
             , UI_Border.rounded 10
             , on_enter msg_search
             , UI.centerX
@@ -78,8 +59,8 @@ input_text attrs query hint msg_query_change msg_search = UI_Input.text
 
 search_bar : String -> (String -> msg) -> msg -> UI.Element msg
 search_bar query msg_query_change msg_search = UI_Input.text 
-            [ UI_Background.color background_color
-            , UI_Border.color border_color
+            [ UI_Background.color Colors.background
+            , UI_Border.color Colors.border
             , UI_Border.rounded 20
             , on_enter msg_search
             , UI.centerX
@@ -115,9 +96,9 @@ conditional_link_button : Bool -> String -> String -> UI.Element msg
 conditional_link_button enable text url = if enable
     then link_button text url
     else UI.el
-        [ UI_Background.color background_color
-        , UI_Border.color disabled_color
-        , UI_Font.color disabled_color
+        [ UI_Background.color Colors.background
+        , UI_Border.color Colors.disabled
+        , UI_Font.color Colors.disabled
         , UI_Border.width 1
         , UI_Border.rounded 20
         , UI.padding 8
@@ -131,7 +112,7 @@ layout (title, content) =
     { title = title
     , body = 
         [ UI.layout 
-            [ UI_Background.color page_background_color
+            [ UI_Background.color Colors.page_background
             , UI_Font.color <| UI.rgb255 211 207 201
             ] 
             content
@@ -153,7 +134,7 @@ header search_buffer query_change_msg search_msg =
         UI.el 
             [ UI_Background.color (rgb255 32 32 32)
             , UI.width UI.fill
-            , UI_Border.color separator_color
+            , UI_Border.color Colors.separator
             , UI_Border.widthEach { bottom = 1, top = 0, left = 0, right = 0 }
             , UI.padding 5
             ]
@@ -164,8 +145,29 @@ header search_buffer query_change_msg search_msg =
                 ] 
                 [ logo, search, links ]
 
+footer : UI.Element msg
+footer = UI.el 
+    [ UI_Background.color (rgb255 32 32 32)
+    , UI.width UI.fill
+    , UI.height (px 50)
+    , UI_Border.color Colors.separator
+    , UI_Border.widthEach { bottom = 0, top = 1, left = 0, right = 0 }
+    , UI.padding 5
+    , UI.alignBottom
+    ]
+    <| UI.paragraph 
+        [ UI.spacing 5
+        , UI.width <| UI.maximum 800 UI.fill
+        , UI.centerX
+        , UI_Font.size 10
+        , UI_Font.color Colors.footer_text
+        , UI.centerY
+        ] 
+        [ UI.text "Portions of this page are unofficial Fan Content permitted under the Fantasy Flight Games IP Policy. The literal and graphical information presented on this site about A Game of Thrones: The Card Game, including card images and symbols, is copyright Asmodee North America, Inc. This page is not produced by or endorsed by Fantasy Flight Games."
+        ]
+
 separator : UI.Element msg
-separator = UI.el [ UI.height (px 1), UI.width UI.fill, UI_Background.color separator_color ] UI.none
+separator = UI.el [ UI.height (px 1), UI.width UI.fill, UI_Background.color Colors.separator ] UI.none
 
 set_icon : List (UI.Attribute msg) -> SetOrCycle -> UI.Element msg
 set_icon attrs s = UI.el (UI.width (px 36) :: attrs)
@@ -176,3 +178,7 @@ set_icon attrs s = UI.el (UI.width (px 36) :: attrs)
         , UI.centerX
         ]
         { src = CardSet.set_or_cycle_icon s, description = "" }
+
+link : List (UI.Attribute msg) -> { url : String, label : UI.Element msg } -> UI.Element msg
+link attributes args =
+    UI.link ([ UI_Font.color Colors.link, UI.mouseOver [ UI_Font.color Colors.link_hover ] ] ++ attributes) args

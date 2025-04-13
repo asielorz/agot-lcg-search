@@ -12,6 +12,7 @@ import Element as UI exposing (px, rgb, rgb255, rgba)
 import Element.Background as UI_Background
 import Element.Border as UI_Border
 import Element.Font as UI_Font
+import Html.Attributes
 
 type alias Model = 
     { card : Card
@@ -52,55 +53,73 @@ view model =
     )
 
 view_card : Card -> UI.Element Msg
-view_card card = 
-    let
-        (width, height) = if card.card_type == CardType_Plot then (600, 420) else (420, 600)
-    in
-        UI.row [ UI.centerX, UI.spacing 10 ]
-            [ UI.column 
-                [ UI.alignTop
-                , UI.paddingEach { left = 10, right = 20, top = 10, bottom = 10 }
-                , UI_Border.width 1
-                , UI_Border.color Colors.border
-                , UI_Border.rounded 10
-                , UI.height UI.fill
-                , UI.width (px 420)
-                , UI.spacing 5
-                , UI_Background.color Colors.background
-                ] <|
-                [ UI.row [ UI.spacing 10, UI.width UI.fill ]
-                    [ cost_widget card.cost (List.member Crest_Shadow card.crest)
-                    , if card.unique then UI.image [ UI_Border.rounded 3, UI.clip, UI.width (px 20) ] { src = "/images/unique.png", description = "Unique" } else UI.none
-                    , UI.text card.name
-                    , houses_widget card.house
-                    ]
-                , Widgets.separator
-                , UI.text <| type_and_traits_line card
-                , Widgets.separator
-                ]
-                ++ maybe_text [] card.rules_text card.erratas
-                ++ maybe_text [ UI_Font.italic ] card.flavor_text []
-                ++
-                [ if card.card_type == CardType_Character then Widgets.separator else UI.none
-                , character_line card
-                , Widgets.separator
-                , UI.text <| "Illustrated by " ++ card.illustrator
-                , Widgets.separator
-                , set_line card
-                , Widgets.separator
-                , legality_line card.legality_joust card.legality_melee
-                , versions_widget (all_cards_with_name card.name) card.id
-                ]
-            , UI.image 
-                [ UI_Border.rounded 10
-                , UI.clip
-                , UI.width (px width)
-                , UI.height (px height)
-                , UI.alignTop
-                , UI.moveLeft 20
-                , UI.moveDown 20
-                ] { src = Card.full_image_url card, description = card.name }
+view_card card = if card.card_type == CardType_Plot
+    then UI.column [ UI.centerX, UI.spacing 10 ]
+        [ view_card_image [ UI.htmlAttribute <| Html.Attributes.style "z-index" "2"  ] card 600 420
+        , view_card_description
+            [ UI.paddingEach { left = 10, right = 10, top = 20, bottom = 10 }
+            , UI.moveRight 20
+            , UI.moveUp 20
+            , UI.htmlAttribute <| Html.Attributes.style "z-index" "1"
             ]
+            card 600
+        ]
+    else UI.row [ UI.centerX, UI.spacing 10 ]
+        [ view_card_description 
+            [ UI.height UI.fill
+            , UI.paddingEach { left = 10, right = 20, top = 10, bottom = 10 }
+            ]
+            card 420
+        , view_card_image [ UI.moveLeft 20, UI.moveDown 20 ] card 420 600
+        ]
+
+view_card_description : List (UI.Attribute msg) -> Card -> Int -> UI.Element msg
+view_card_description attrs card width = UI.column 
+    ([ UI.alignTop
+    , UI_Border.width 1
+    , UI_Border.color Colors.border
+    , UI_Border.rounded 10
+    , UI.width (px width)
+    , UI.spacing 5
+    , UI_Background.color Colors.background
+    ] 
+    ++ attrs) <|
+    [ UI.row [ UI.spacing 10, UI.width UI.fill ]
+        [ cost_widget card.cost (List.member Crest_Shadow card.crest)
+        , if card.unique then UI.image [ UI_Border.rounded 3, UI.clip, UI.width (px 20) ] { src = "/images/unique.png", description = "Unique" } else UI.none
+        , UI.text card.name
+        , houses_widget card.house
+        ]
+    , Widgets.separator
+    , UI.text <| type_and_traits_line card
+    , Widgets.separator
+    ]
+    ++ maybe_text [] card.rules_text card.erratas
+    ++ maybe_text [ UI_Font.italic ] card.flavor_text []
+    ++
+    [ if card.card_type == CardType_Character || card.card_type == CardType_Plot then Widgets.separator else UI.none
+    , character_line card
+    , plot_line card
+    , Widgets.separator
+    , UI.text <| "Illustrated by " ++ card.illustrator
+    , Widgets.separator
+    , set_line card
+    , Widgets.separator
+    , legality_line card.legality_joust card.legality_melee
+    , versions_widget (all_cards_with_name card.name) card.id
+    ]
+
+view_card_image : List (UI.Attribute msg) -> Card -> Int -> Int -> UI.Element msg
+view_card_image attrs card width height = UI.image 
+    ([ UI_Border.rounded 10
+    , UI.clip
+    , UI.width (px width)
+    , UI.height (px height)
+    , UI.alignTop
+    ] ++ attrs)
+    { src = Card.full_image_url card
+    , description = card.name
+    }
 
 houses_widget : List House -> UI.Element msg
 houses_widget houses = houses
@@ -199,6 +218,15 @@ character_line card = case card.strength of
             then UI.image [ UI.width (px 30) ] { src = "/images/crests/shadow.png", description = "Shadow crest" }
             else UI.none
         ]
+
+plot_line : Card -> UI.Element msg
+plot_line card = case (card.income, card.initiative, card.claim) of
+    (Just income, Just initiative, Just claim) -> UI.row [ UI.spacing 10 ]
+        [ image_with_number_inside "/images/gold.png" income
+        , image_with_number_inside "/images/initiative.png" initiative
+        , image_with_number_inside "/images/claim.png" claim
+        ]
+    _ -> UI.none
 
 naval_icon : UI.Attribute msg
 naval_icon = UI.inFront <| UI.image 

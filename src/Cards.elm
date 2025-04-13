@@ -25710,7 +25710,7 @@ all_cards =
       , illustrator = "Allen Douglas"
       , house = [ House_Baratheon ]
       , unique = True
-      , rules_text = Just "Renown.Night's Watch characters you control get +1 STR."
+      , rules_text = Just "Renown.\nNight's Watch characters you control get +1 STR."
       , flavor_text = Just "\"I was trying to win the throne to save the kingdom, when I should have been trying to save the kingdom to win the throne.\""
       , cost = Just 4
       , icons = [ Icon_Military { naval = False }, Icon_Power { naval = False } ]

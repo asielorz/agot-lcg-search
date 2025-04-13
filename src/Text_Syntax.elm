@@ -174,4 +174,5 @@ For example, due to how trait search works, searching for all characters with th
 
 ### Examples:
 - Limited locations that don't give gold or influence: [`type:l text:limited. !income>0 !influence>0`](/search?q=type%3Al%2Btext%3Alimited.%2B!income>0%2B!influence>0)
+- Characters with the "Queen" trait: [`traits:queen !traits:queensguard`](/search?q=trait%3Aqueen%2B!trait%3Aqueensguard)
 """

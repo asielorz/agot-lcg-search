@@ -182,7 +182,6 @@ view model =
         , UI.spacing 20
         , UI.width UI.fill
         , UI_Events.onClick <| if Maybe.Extra.isJust model.combo then Msg_ModelChanged { model | combo = Nothing } else Msg_Noop
-        , UI.paddingXY 20 0
         ]
         [ Widgets.header model.header_query Msg_HeaderQueryChanged Msg_HeaderSearch
         , view_advanced_search model
@@ -195,6 +194,7 @@ view_advanced_search model = UI.column
     [ UI.centerX
     , UI.spacing 10
     , UI.width <| UI.maximum 1000 UI.fill
+    , UI.paddingXY 20 0
     ]
     [ labeled "Name" <| Widgets.input_text [] model.name "Any words in the name, e.g. \"winterfell\"" (\s -> Msg_ModelChanged { model | name = s }) Msg_Search
     , Widgets.separator

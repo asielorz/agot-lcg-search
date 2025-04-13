@@ -42,6 +42,7 @@ view model =
         [ UI.centerX
         , UI.spacing 20
         , UI.width UI.fill
+        , UI_Font.size 18
         ]
         [ Widgets.header model.header_query Msg_QueryChange Msg_Search
         , UI.column [ UI.centerX, UI.spacing 15, UI.width <| UI.maximum 750 UI.fill ] (model.content |> parse_markdown |> Result.withDefault [])
@@ -69,6 +70,7 @@ markdown_renderer =
         | link = \{ destination } body -> Widgets.link [] { url = destination, label = UI.paragraph [] body }
         , codeSpan = code_span
         , unorderedList = unordered_list
+        , paragraph = UI.paragraph [ UI_Font.justify ]
         }
 
 code_span : String -> UI.Element msg

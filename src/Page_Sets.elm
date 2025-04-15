@@ -40,14 +40,14 @@ view model window =
         , UI.width UI.fill
         ]
         [ Widgets.header model.header Msg_Header Msg_Search window.width
-        , view_sets_table
+        , view_sets_table window
         , Widgets.footer
         ]
     )
 
-view_sets_table : UI.Element msg
-view_sets_table = CardSet.all_sets_and_cycles_in_order
-    |> List.indexedMap (\i s -> view_set_table_row (modBy 2 i == 0) s)
+view_sets_table : Window -> UI.Element msg
+view_sets_table window = CardSet.all_sets_and_cycles_in_order
+    |> List.indexedMap (\i s -> view_set_table_row (modBy 2 i == 0) s window)
     |> UI.column 
         [ UI.centerX
         , UI.width <| UI.maximum 1000 UI.fill
@@ -55,8 +55,8 @@ view_sets_table = CardSet.all_sets_and_cycles_in_order
         , UI_Border.color Colors.separator
         ]
 
-view_set_table_row : Bool -> SetOrCycle -> UI.Element msg
-view_set_table_row even set = UI.link 
+view_set_table_row : Bool -> SetOrCycle -> Window -> UI.Element msg
+view_set_table_row even set window = UI.link 
     [ UI.width UI.fill
     , UI_Border.widthEach { top = 1, left = 1, right = 1, bottom = 0 }
     , UI_Border.color Colors.separator
@@ -73,8 +73,12 @@ view_set_table_row even set = UI.link
         [ padding_between_icon_and_name set
         , Widgets.set_icon [] set
         , UI.text <| CardSet.set_or_cycle_full_name set
-        , UI.el [ UI.alignRight ] <| set_or_cycle_release_date_element set
-        , UI.el [ UI.alignRight, UI.width (px 100) ] <| UI.el [ UI.alignRight ] <| UI.text <| (String.fromInt <| cards_in_set_or_cycle set) ++ " cards"
+        , if window.width >= 500
+            then UI.el [ UI.alignRight ] <| set_or_cycle_release_date_element set
+            else UI.none
+        , if window.width >= 400
+            then UI.el [ UI.alignRight, UI.width (px 100) ] <| UI.el [ UI.alignRight ] <| UI.text <| (String.fromInt <| cards_in_set_or_cycle set) ++ " cards"
+            else UI.none
         ]
     }
 

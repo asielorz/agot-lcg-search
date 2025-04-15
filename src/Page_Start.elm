@@ -45,16 +45,21 @@ view model =
         [ UI.column 
             [ UI.centerX
             , UI.centerY
-           , UI.spacing 20
+            , UI.spacing 20
+            , UI.paddingXY 5 0
             ]
-            [ UI.image [ UI.centerX, UI.centerY ] { src = "/images/logo.png", description = "A Game of Thrones: the card game" }
+            [ UI.image [ UI.centerX, UI.centerY, UI.width <| UI.maximum 600 UI.fill ] { src = "/images/logo.png", description = "A Game of Thrones: the card game" }
             , Widgets.search_bar model.query Msg_QueryChanged Msg_Search
-            , UI.row [ UI.spacing 5, UI.centerX ] 
-                [ Widgets.link_button "Advanced search" "/advanced"
-                , Widgets.link_button "Syntax guide" "/syntax"
-                , Widgets.link_button "All sets" "/sets"
-                , Widgets.link_button "Random card" "/random"
-                , Widgets.simple_button "Download cards JSON" Msg_DownloadJson
+            , UI.column [ UI.spacing 5, UI.centerX ]
+                [ UI.row [ UI.spacing 5, UI.centerX ] 
+                    [ Widgets.link_button "Advanced search" "/advanced"
+                    , Widgets.link_button "Syntax guide" "/syntax"
+                    , Widgets.link_button "All sets" "/sets"
+                    ]
+                , UI.row [ UI.spacing 5, UI.centerX ] 
+                    [ Widgets.link_button "Random card" "/random"
+                    , Widgets.simple_button "Download cards JSON" Msg_DownloadJson
+                    ]
                 ]
             ]
         , Widgets.footer

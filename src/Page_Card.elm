@@ -6,6 +6,7 @@ import CardSet exposing (SetOrCycle(..))
 import Colors
 import Query exposing (default_search_state)
 import Widgets
+import Window exposing (Window)
 
 import Browser.Navigation as Navigation
 import Element as UI exposing (px, rgb, rgb255, rgba)
@@ -16,26 +17,26 @@ import Html.Attributes
 
 type alias Model = 
     { card : Card
-    , header_query : String
+    , header : Widgets.HeaderModel
     }
 
 type Msg 
-    = Msg_QueryChange String
+    = Msg_Header Widgets.HeaderModel
     | Msg_Search
 
 init : Card -> String -> Model
 init card query = 
     { card = card
-    , header_query = query
+    , header = Widgets.header_init query
     }
 
 update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
 update key msg model = case msg of
-    Msg_QueryChange new_query -> ({ model | header_query = new_query }, Cmd.none)
-    Msg_Search -> (model, Navigation.pushUrl key <| Query.search_url { default_search_state | query = model.header_query })
+    Msg_Header new_header -> ({ model | header = new_header }, Cmd.none)
+    Msg_Search -> (model, Navigation.pushUrl key <| Query.search_url { default_search_state | query = model.header.search_buffer })
 
-view : Model -> (String, UI.Element Msg)
-view model = 
+view : Model -> Window -> (String, UI.Element Msg)
+view model window =
     ( model.card.name ++ " - A Game of Thrones LCG card search"
     , UI.column 
         [ UI.centerX
@@ -44,7 +45,7 @@ view model =
         , UI_Font.size 15
         , UI.height UI.fill
         ]
-        [ Widgets.header model.header_query Msg_QueryChange Msg_Search
+        [ Widgets.header model.header Msg_Header Msg_Search window.width
         , view_card model.card
         , UI.text "" -- Dummy widget to add 20 padding more between.
         , view_card_faqs model.card.faqs

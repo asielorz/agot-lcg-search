@@ -11,6 +11,8 @@ import Html.Events
 import Json.Decode
 import Browser
 import CardSet exposing (SetOrCycle)
+import Fontawesome
+import Html.Attributes
 
 button_style_attributes : List (UI.Attribute msg)
 button_style_attributes = 
@@ -83,13 +85,17 @@ simple_button label on_press = UI_Input.button
     }
 
 link_button : String -> String -> UI.Element msg
-link_button text url = UI.link
+link_button text url = link_button_ex [] [] text url
+
+link_button_ex : List (UI.Attribute msg) -> List (UI.Attribute msg) -> String -> String -> UI.Element msg
+link_button_ex attrs content_attrs text url = UI.link
     (button_style_attributes ++
     [ UI.padding 8
     , UI_Font.size 16
-    ])
+    ]
+    ++ attrs)
     { url = url
-    , label = UI.text text
+    , label = if List.isEmpty content_attrs then UI.text text else UI.el content_attrs <| UI.text text
     }
 
 conditional_link_button : Bool -> String -> String -> UI.Element msg
@@ -119,37 +125,83 @@ layout (title, content) =
         ]
     }
 
-header : String -> (String -> msg) -> msg -> UI.Element msg
-header search_buffer query_change_msg search_msg = 
-    let
-        search = search_bar search_buffer query_change_msg search_msg
-        logo = UI.link [] { url = "/", label = UI.image [ UI.height (px 50) ] { src = "/images/logo_small.png", description = "" } }
-        links = UI.row [ UI.alignRight, UI.spacing 5 ] 
-            [ link_button "Advanced" "/advanced"
-            , link_button "Syntax" "/syntax"
-            , link_button "Sets" "/sets"
-            , link_button "Random" "/random"
-            ]
-    in
-        UI.el 
-            [ UI_Background.color (rgb255 32 32 32)
-            , UI.width UI.fill
-            , UI_Border.color Colors.separator
-            , UI_Border.widthEach { bottom = 1, top = 0, left = 0, right = 0 }
-            , UI.padding 5
-            ]
-            <| UI.row 
-                [ UI.spacing 10
-                , UI.width <| UI.maximum 1000 UI.fill
-                , UI.centerX
-                ] 
-                [ logo, search, links ]
+type alias HeaderModel =
+    { search_buffer : String
+    , is_open : Bool
+    }
+
+header_init : String -> HeaderModel
+header_init initial_buffer = { search_buffer = initial_buffer, is_open = False }
+
+header : HeaderModel -> (HeaderModel -> msg) -> msg -> Int -> UI.Element msg
+header model make_msg search_msg window_width = 
+    if window_width >= 750 then
+        let
+            search = search_bar model.search_buffer (\s -> make_msg { model | search_buffer = s }) search_msg
+            logo = UI.link [] { url = "/", label = UI.image [ UI.height (px 50) ] { src = "/images/logo_small.png", description = "" } }
+            links = UI.row [ UI.alignRight, UI.spacing 5 ] 
+                [ link_button "Advanced" "/advanced"
+                , link_button "Syntax" "/syntax"
+                , link_button "Sets" "/sets"
+                , link_button "Random" "/random"
+                ]
+        in
+            UI.el 
+                [ UI_Background.color (rgb255 32 32 32)
+                , UI.width UI.fill
+                , UI_Border.color Colors.separator
+                , UI_Border.widthEach { bottom = 1, top = 0, left = 0, right = 0 }
+                , UI.padding 5
+                ]
+                <| UI.row 
+                    [ UI.spacing 10
+                    , UI.width <| UI.maximum 1000 UI.fill
+                    , UI.centerX
+                    ] 
+                    [ logo, search, links ]
+    else
+        let 
+            search = search_bar model.search_buffer (\s -> make_msg { model | search_buffer = s }) search_msg
+            logo = UI.link [] { url = "/", label = UI.image [ UI.height (px 50) ] { src = "/images/logo_small.png", description = "" } }
+            menu_toggle = UI_Input.button button_style_attributes
+                { onPress = Just <| make_msg { model | is_open = not model.is_open }
+                , label = Fontawesome.text [ UI.padding 5 ] "\u{f0c9}" -- fa-bars
+                }
+            button_attrs = [ UI.width UI.fill, UI.htmlAttribute <| Html.Attributes.style "flex-basis" "0" ]
+        in
+            UI.column 
+                [ UI_Background.color (rgb255 32 32 32)
+                , UI.width UI.fill
+                , UI_Border.color Colors.separator
+                , UI_Border.widthEach { bottom = 1, top = 0, left = 0, right = 0 }
+                , UI.padding 5
+                , UI.spacing 5
+                ]
+                [ UI.row 
+                    [ UI.spacing 10
+                    , UI.width UI.fill
+                    , UI.centerX
+                    ] 
+                    [ logo, search, menu_toggle ]
+                , if model.is_open
+                    then UI.row [ UI.spacing 5, UI.width UI.fill ]
+                        [ link_button_ex button_attrs [ UI.centerX ] "Advanced" "/advanced"
+                        , link_button_ex button_attrs [ UI.centerX ] "Syntax" "/syntax"
+                        ]
+                    else UI.none
+                , if model.is_open
+                    then UI.row [ UI.spacing 5, UI.width UI.fill ] 
+                        [ link_button_ex button_attrs [ UI.centerX ] "Sets" "/sets"
+                        , link_button_ex button_attrs [ UI.centerX ] "Random" "/random"
+                        ]
+                    else UI.none
+                ]
 
 footer : UI.Element msg
 footer = UI.el 
     [ UI_Background.color (rgb255 32 32 32)
     , UI.width UI.fill
-    , UI.height (px 50)
+    , UI.height <| UI.minimum 50 UI.shrink
     , UI_Border.color Colors.separator
     , UI_Border.widthEach { bottom = 0, top = 1, left = 0, right = 0 }
     , UI.padding 5

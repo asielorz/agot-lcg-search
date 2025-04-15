@@ -11,12 +11,15 @@ import Page_Start
 import Page_404
 import Text_Syntax
 import Widgets
+import Window exposing (Window)
 
 import Browser
 import Browser.Dom
+import Browser.Events
 import Browser.Navigation as Navigation
 import Element as UI
 import Json.Decode
+import Json.Decode.Pipeline
 import List.Extra
 import Random
 import Task
@@ -26,16 +29,10 @@ import Url.Parser exposing ((</>))
 main : Program Json.Decode.Value Model Msg
 main =
     Browser.application
-        { init = \args url key ->
-            let
-                seed = args
-                    |> Json.Decode.decodeValue Json.Decode.int
-                    |> Result.withDefault 42
-            in
-                init url key (Random.initialSeed seed)
+        { init = init
         , view = view >> Widgets.layout
         , update = update
-        , subscriptions = \_ -> Sub.none
+        , subscriptions = \_ -> Browser.Events.onResize Msg_WindowResize
         , onUrlRequest = Msg_UrlRequest
         , onUrlChange = Msg_UrlChange
         }
@@ -51,6 +48,7 @@ type Msg
     | Msg_404 Page_404.Msg
     | Msg_UrlRequest Browser.UrlRequest
     | Msg_UrlChange Url
+    | Msg_WindowResize Int Int
 
 type PageModel
     = Model_Start Page_Start.Model
@@ -65,6 +63,8 @@ type alias Model =
     { page : PageModel
     , navigation_key : Navigation.Key
     , random_seed : Random.Seed
+    , window_width : Int
+    , window_height : Int
     }
 
 type UrlChangeResult = UrlChangeResult_Page PageModel | UrlChangeResult_Redirect String
@@ -110,16 +110,24 @@ change_url url model =
             UrlChangeResult_Page page -> ({ model | page = page, random_seed = new_seed }, Task.perform (always Msg_Noop) (Browser.Dom.setViewport 0 0))
             UrlChangeResult_Redirect new_url -> (model, Navigation.replaceUrl model.navigation_key new_url)
 
-init : Url -> Navigation.Key -> Random.Seed -> (Model, Cmd Msg)
-init url key seed =
+init : Json.Decode.Value -> Url -> Navigation.Key -> (Model, Cmd Msg)
+init args url key =
     let
         dummy_start_model =
             { page = Model_Start Page_Start.init
             , navigation_key = key
-            , random_seed = seed
+            , random_seed = Random.initialSeed 42
+            , window_width = 0
+            , window_height = 0
             }
+        start_model = Json.Decode.succeed (Model (Model_Start Page_Start.init) key)
+            |> Json.Decode.Pipeline.required "seed" (Json.Decode.map Random.initialSeed Json.Decode.int)
+            |> Json.Decode.Pipeline.required "window_width" Json.Decode.int
+            |> Json.Decode.Pipeline.required "window_height" Json.Decode.int
+            |> (\decoder -> Json.Decode.decodeValue decoder args)
+            |> Result.withDefault dummy_start_model
     in
-        change_url url dummy_start_model
+        change_url url start_model
 
 
 update : Msg -> Model -> (Model, Cmd Msg)
@@ -141,7 +149,8 @@ update msg model = case (msg, model.page) of
     (Msg_UrlRequest request, _) -> case request of
         Browser.Internal url -> (model, Navigation.pushUrl model.navigation_key (Url.toString url))
         Browser.External url -> (model, Navigation.load url)
-    (Msg_UrlChange new_url, _) -> init new_url model.navigation_key model.random_seed
+    (Msg_UrlChange new_url, _) -> change_url new_url model
+    (Msg_WindowResize w h, _) -> ({ model | window_width = w, window_height = h }, Cmd.none)
     (_, _) -> (model, Cmd.none) -- Will never happen
 
 map_update : Model -> (model -> PageModel) -> (msg -> Msg) -> (model, Cmd msg) -> (Model, Cmd Msg)
@@ -150,15 +159,18 @@ map_update model make_model make_msg (page_model, cmd) = ({ model | page = make_
 view : Model -> (String, UI.Element Msg)
 view model = case model.page of
     Model_Start page_model -> Page_Start.view page_model |> map_view Msg_Start
-    Model_Search page_model -> Page_Search.view page_model |> map_view Msg_Search
-    Model_AdvancedSearch page_model -> Page_AdvancedSearch.view page_model |> map_view Msg_AdvancedSearch
-    Model_Card page_model -> Page_Card.view page_model |> map_view Msg_Card
-    Model_Sets page_model -> Page_Sets.view page_model |> map_view Msg_Sets
-    Model_Markdown page_model -> Page_Markdown.view page_model |> map_view Msg_Markdown
-    Model_404 page_model -> Page_404.view page_model |> map_view Msg_404
+    Model_Search page_model -> Page_Search.view page_model (window model) |> map_view Msg_Search
+    Model_AdvancedSearch page_model -> Page_AdvancedSearch.view page_model (window model) |> map_view Msg_AdvancedSearch
+    Model_Card page_model -> Page_Card.view page_model (window model) |> map_view Msg_Card
+    Model_Sets page_model -> Page_Sets.view page_model (window model) |> map_view Msg_Sets
+    Model_Markdown page_model -> Page_Markdown.view page_model (window model) |> map_view Msg_Markdown
+    Model_404 page_model -> Page_404.view page_model (window model) |> map_view Msg_404
 
 map_view : (msg -> Msg) -> (String, UI.Element msg) -> (String, UI.Element Msg)
 map_view make_msg (title, content) = (title, content |> UI.map make_msg)
 
 card_with_id : String -> Maybe Card
 card_with_id id = List.Extra.find (\c -> c.id == id) Cards.all_cards
+
+window : Model -> Window
+window model = { width = model.window_width, height = model.window_height }

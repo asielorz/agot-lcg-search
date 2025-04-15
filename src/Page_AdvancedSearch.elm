@@ -6,6 +6,7 @@ import Fontawesome
 import Query exposing (Comparison(..), default_search_state)
 import Widgets
 import Widgets.Combo
+import Window exposing (Window)
 
 import Browser.Navigation as Navigation
 import Element as UI exposing (px)
@@ -52,7 +53,7 @@ type SortOrder
     | SortOrder_InfluenceDesc
 
 type alias Model = 
-    { header_query : String
+    { header : Widgets.HeaderModel
 
     , name : String
     , text : String
@@ -104,7 +105,7 @@ type alias Model =
 
 type Msg 
     = Msg_Noop
-    | Msg_HeaderQueryChanged String
+    | Msg_Header Widgets.HeaderModel
     | Msg_HeaderSearch
     | Msg_ModelChanged Model
     | Msg_Search
@@ -112,7 +113,7 @@ type Msg
 
 init : Model
 init = 
-    { header_query = "" 
+    { header = Widgets.header_init "" 
     , name = ""
     , text = ""
     , house_stark = False
@@ -164,8 +165,8 @@ init =
 update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
 update key msg model = case msg of
     Msg_Noop -> (model, Cmd.none)
-    Msg_HeaderQueryChanged new_query -> ({ model | header_query = new_query }, Cmd.none)
-    Msg_HeaderSearch -> (model, Navigation.pushUrl key (Query.search_url { default_search_state | query = model.header_query }))
+    Msg_Header new_header -> ({ model | header = new_header }, Cmd.none)
+    Msg_HeaderSearch -> (model, Navigation.pushUrl key (Query.search_url { default_search_state | query = model.header.search_buffer }))
     Msg_ModelChanged new_model -> (new_model, Cmd.none)
     Msg_Search -> (model, Navigation.pushUrl key (Query.search_url 
         { query = make_advanced_search_query model
@@ -174,8 +175,8 @@ update key msg model = case msg of
         , duplicates = model.show_duplicates }))
     Msg_Combo combo_msg -> (Widgets.Combo.update (\c -> { model | combo = c }) combo_msg, Cmd.none)
 
-view : Model -> (String, UI.Element Msg)
-view model = 
+view : Model -> Window -> (String, UI.Element Msg)
+view model window =
     ( "Advanced search - A Game of Thrones LCG card search"
     , UI.column 
         [ UI.centerX
@@ -183,7 +184,7 @@ view model =
         , UI.width UI.fill
         , UI_Events.onClick <| if Maybe.Extra.isJust model.combo then Msg_ModelChanged { model | combo = Nothing } else Msg_Noop
         ]
-        [ Widgets.header model.header_query Msg_HeaderQueryChanged Msg_HeaderSearch
+        [ Widgets.header model.header Msg_Header Msg_HeaderSearch window.width
         , view_advanced_search model
         , Widgets.footer
         ]

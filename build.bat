@@ -1,1 +1,1 @@
-elm make %* ./src/Main.elm --output ./build/main.js
+elm make %* ./src/Main.elm --output ./build/page.js

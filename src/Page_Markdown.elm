@@ -3,6 +3,7 @@ module Page_Markdown exposing (Model, Msg, init, update, view)
 import Colors
 import Query exposing (default_search_state)
 import Widgets
+import Window exposing (Window)
 
 import Browser.Navigation as Navigation
 import Element as UI
@@ -16,27 +17,27 @@ import Markdown.Renderer.ElmUi
 type alias Model = 
     { title : String
     , content : String
-    , header_query : String
+    , header : Widgets.HeaderModel
     }
 
 type Msg 
-    = Msg_QueryChange String
+    = Msg_Header Widgets.HeaderModel
     | Msg_Search
 
 init : String -> String -> Model
 init title content = 
     { title = title
     , content = content
-    , header_query = ""
+    , header = Widgets.header_init ""
     }
 
 update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
 update key msg model = case msg of
-    Msg_QueryChange new_query -> ({ model | header_query = new_query }, Cmd.none)
-    Msg_Search -> (model, Navigation.pushUrl key <| Query.search_url { default_search_state | query = model.header_query })
+    Msg_Header new_header -> ({ model | header = new_header }, Cmd.none)
+    Msg_Search -> (model, Navigation.pushUrl key <| Query.search_url { default_search_state | query = model.header.search_buffer })
 
-view : Model -> (String, UI.Element Msg)
-view model = 
+view : Model -> Window -> (String, UI.Element Msg)
+view model window = 
     ( model.title ++ " - A Game of Thrones LCG card search"
     , UI.column 
         [ UI.centerX
@@ -44,8 +45,8 @@ view model =
         , UI.width UI.fill
         , UI_Font.size 18
         ]
-        [ Widgets.header model.header_query Msg_QueryChange Msg_Search
-        , UI.column [ UI.centerX, UI.spacing 15, UI.width <| UI.maximum 750 UI.fill ] (model.content |> parse_markdown |> Result.withDefault [])
+        [ Widgets.header model.header Msg_Header Msg_Search window.width
+        , UI.column [ UI.centerX, UI.spacing 15, UI.width <| UI.maximum 750 UI.fill, UI.paddingXY 5 0 ] (model.content |> parse_markdown |> Result.withDefault [])
         , Widgets.footer
         ]
     )

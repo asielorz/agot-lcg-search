@@ -2,8 +2,9 @@ module Page_Sets exposing (Model, Msg, init, update, view)
 
 import CardSet exposing (SetOrCycle)
 import Colors
-import Query
+import Query exposing (default_search_state)
 import Widgets
+import Window exposing (Window)
 
 import Browser.Navigation as Navigation
 import Element as UI exposing (px)
@@ -13,32 +14,32 @@ import Element.Font as UI_Font
 import CardSet exposing (SetOrCycle(..))
 
 type alias Model = 
-    { header_query : String
+    { header : Widgets.HeaderModel
     }
 
 type Msg 
-    = Msg_QueryChange String
+    = Msg_Header Widgets.HeaderModel
     | Msg_Search
 
 init : Model
 init  = 
-    { header_query = ""
+    { header = Widgets.header_init ""
     }
 
 update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
 update key msg model = case msg of
-    Msg_QueryChange new_query -> ({ model | header_query = new_query }, Cmd.none)
-    Msg_Search -> (model, Navigation.pushUrl key <| Query.search_url { query = model.header_query, sort = [], page = 0, duplicates = False })
+    Msg_Header new_header -> ({ model | header = new_header }, Cmd.none)
+    Msg_Search -> (model, Navigation.pushUrl key <| (Query.search_url { default_search_state | query = model.header.search_buffer }))
 
-view : Model -> (String, UI.Element Msg)
-view model = 
+view : Model -> Window -> (String, UI.Element Msg)
+view model window =
     ( "Sets - A Game of Thrones LCG card search"
     , UI.column 
         [ UI.centerX
         , UI.spacing 20 
         , UI.width UI.fill
         ]
-        [ Widgets.header model.header_query Msg_QueryChange Msg_Search
+        [ Widgets.header model.header Msg_Header Msg_Search window.width
         , view_sets_table
         , Widgets.footer
         ]

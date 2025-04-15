@@ -3,6 +3,7 @@ module Page_Search exposing (Model, Msg, init, update, view)
 import Card exposing (Card, CardType(..))
 import Cards exposing(all_cards)
 import Widgets
+import Window exposing (Window)
 
 import Browser.Navigation as Navigation
 import Element as UI exposing (px)
@@ -14,12 +15,12 @@ cards_per_page : Int
 cards_per_page = 60
 
 type Msg 
-    = Msg_QueryChange String
+    = Msg_Header Widgets.HeaderModel
     | Msg_Search
 
 type alias Model = 
     { last_searched_query : SearchState
-    , new_query_buffer : String
+    , header : Widgets.HeaderModel
     , cards : List Card
     }
 
@@ -31,17 +32,17 @@ init query =
         (plots, cards) = List.partition (\c -> c.card_type == CardType_Plot ) all_cards_found
     in
         { last_searched_query = parsed
-        , new_query_buffer = parsed.query
+        , header = Widgets.header_init parsed.query
         , cards = cards ++ plots -- Move all plots to the end
         }
 
 update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
 update key msg model = case msg of
-    Msg_QueryChange new_query -> ({ model | new_query_buffer = new_query }, Cmd.none)
-    Msg_Search -> (model, Navigation.pushUrl key <| Query.search_url { default_search_state | query = model.new_query_buffer })
+    Msg_Header new_header -> ({ model | header = new_header }, Cmd.none)
+    Msg_Search -> (model, Navigation.pushUrl key <| Query.search_url { default_search_state | query = model.header.search_buffer })
 
-view : Model -> (String, UI.Element Msg)
-view model =
+view : Model -> Window -> (String, UI.Element Msg)
+view model window =
     let
         (cards, plots) = cards_in_current_page model
     in
@@ -52,7 +53,7 @@ view model =
             , UI.width UI.fill
             ]
             (List.filterMap identity 
-                [ Just <| Widgets.header model.new_query_buffer Msg_QueryChange Msg_Search
+                [ Just <| Widgets.header model.header Msg_Header Msg_Search window.width
                 , Just <| number_of_results_line model
                 , Just <| navigation_buttons model
                 , view_results cards

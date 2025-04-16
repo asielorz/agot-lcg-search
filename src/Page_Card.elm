@@ -38,49 +38,75 @@ update key msg model = case msg of
 view : Model -> Window -> (String, UI.Element Msg)
 view model window =
     ( model.card.name ++ " - A Game of Thrones LCG card search"
-    , UI.column 
-        [ UI.centerX
-        , UI.spacing 20
-        , UI.width UI.fill
-        , UI_Font.size 15
-        , UI.height UI.fill
-        ]
-        [ Widgets.header model.header Msg_Header Msg_Search window.width
-        , view_card model.card
-        , UI.text "" -- Dummy widget to add 20 padding more between.
-        , view_card_faqs model.card.faqs
-        , Widgets.footer
-        ]
+    , if window.width >= 850 then view_pc model window else view_mobile model window
     )
+
+view_pc : Model -> Window -> UI.Element Msg
+view_pc model window = UI.column 
+    [ UI.centerX
+    , UI.spacing 20
+    , UI.width UI.fill
+    , UI_Font.size 15
+    , UI.height UI.fill
+    ]
+    [ Widgets.header model.header Msg_Header Msg_Search window.width
+    , view_card model.card
+    , UI.text "" -- Dummy widget to add 20 padding more between.
+    , view_card_faqs model.card.faqs
+    , Widgets.footer
+    ]
+
+view_mobile : Model -> Window -> UI.Element Msg
+view_mobile model window = 
+    let
+        max_width = if model.card.card_type == CardType_Plot then 600 else 420
+        with_side_padding content = if content == UI.none
+            then UI.none
+            else UI.el [ UI.width UI.fill, UI.paddingXY 10 0 ] content
+    in
+        UI.column 
+            [ UI.centerX
+            , UI.spacing 20
+            , UI.width UI.fill
+            , UI_Font.size 15
+            , UI.height UI.fill
+            ]
+            [ Widgets.header model.header Msg_Header Msg_Search window.width
+            , with_side_padding <| view_card_image [ UI.width <| UI.maximum max_width UI.fill ] model.card
+            , with_side_padding <| view_card_description [ UI.width UI.fill, UI.padding 10 ] model.card
+            , with_side_padding <| view_card_faqs model.card.faqs
+            , Widgets.footer
+            ]
 
 view_card : Card -> UI.Element Msg
 view_card card = if card.card_type == CardType_Plot
     then UI.column [ UI.centerX, UI.spacing 10 ]
-        [ view_card_image [ UI.htmlAttribute <| Html.Attributes.style "z-index" "2"  ] card 600 420
+        [ view_card_image [ UI.htmlAttribute <| Html.Attributes.style "z-index" "2", UI.width (px 600), UI.height (px 420) ] card
         , view_card_description
             [ UI.paddingEach { left = 10, right = 10, top = 20, bottom = 10 }
             , UI.moveRight 20
             , UI.moveUp 20
             , UI.htmlAttribute <| Html.Attributes.style "z-index" "1"
+            , UI.width (px 600)
             ]
-            card 600
+            card
         ]
     else UI.row [ UI.centerX, UI.spacing 10 ]
         [ view_card_description 
             [ UI.height UI.fill
+            , UI.width (px 420)
             , UI.paddingEach { left = 10, right = 20, top = 10, bottom = 10 }
             ]
-            card 420
-        , view_card_image [ UI.moveLeft 20, UI.moveDown 20 ] card 420 600
+            card
+        , view_card_image [ UI.moveLeft 20, UI.moveDown 20, UI.width (px 420), UI.height (px 600) ] card
         ]
 
-view_card_description : List (UI.Attribute msg) -> Card -> Int -> UI.Element msg
-view_card_description attrs card width = UI.column 
+view_card_description : List (UI.Attribute msg) -> Card -> UI.Element msg
+view_card_description attrs card = UI.column 
     ([ UI.alignTop
     , UI_Border.width 1
     , UI_Border.color Colors.border
     , UI_Border.rounded 10
-    , UI.width (px width)
     , UI.spacing 5
     , UI_Background.color Colors.background
     ] 
@@ -110,12 +136,10 @@ view_card_description attrs card width = UI.column
     , versions_widget (all_cards_with_name card.name) card.id
     ]
 
-view_card_image : List (UI.Attribute msg) -> Card -> Int -> Int -> UI.Element msg
-view_card_image attrs card width height = UI.image 
+view_card_image : List (UI.Attribute msg) -> Card -> UI.Element msg
+view_card_image attrs card = UI.image 
     ([ UI_Border.rounded 10
     , UI.clip
-    , UI.width (px width)
-    , UI.height (px height)
     , UI.alignTop
     ] ++ attrs)
     { src = Card.full_image_url card
@@ -314,7 +338,7 @@ view_card_faqs faqs = if List.isEmpty faqs
         , UI_Border.color Colors.border
         , UI.centerX
         , UI.spacing 10
-        , UI.width (px 600)
+        , UI.width <| UI.maximum 600 UI.fill
         , UI.padding 10
         , UI_Background.color Colors.background
         ]

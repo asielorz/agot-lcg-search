@@ -10,6 +10,7 @@ import Element as UI exposing (px)
 import Element.Border as UI_Border
 import Element.Font as UI_Font
 import Query exposing (SearchState, default_search_state)
+import List.Extra
 
 cards_per_page : Int
 cards_per_page = 60
@@ -52,16 +53,14 @@ view model window =
             , UI.spacing 20 
             , UI.width UI.fill
             ]
-            (List.filterMap identity 
-                [ Just <| Widgets.header model.header Msg_Header Msg_Search window.width
-                , Just <| number_of_results_line model
-                , Just <| navigation_buttons model
-                , view_results cards
-                , view_results plots
-                , Just <| navigation_buttons model
-                , Just Widgets.footer
-                ]
-            )
+            [ Widgets.header model.header Msg_Header Msg_Search window.width
+            , number_of_results_line model
+            , navigation_buttons model
+            , view_results cards min_vertical_card_width max_vertical_card_width window
+            , view_results plots min_horizontal_card_width max_horizontal_card_width window
+            , navigation_buttons model
+            , Widgets.footer
+            ]
         )
 
 number_of_results_line : Model -> UI.Element Msg
@@ -82,38 +81,59 @@ number_of_results_text model =
             then "No cards found"
             else String.fromInt first ++ " - " ++ String.fromInt last ++ " of " ++ String.fromInt total ++ " cards"
 
-view_results : List Card -> Maybe (UI.Element msg)
-view_results cards = Just <| UI.wrappedRow 
-    [ UI.spacingXY 6 9
-    , UI.width <| UI.maximum 1000 UI.fill
-    , UI.centerX
-    ] 
-    <| List.map view_card cards
-
-view_card : Card -> UI.Element msg
-view_card card = 
+view_results : List Card -> Int -> Int -> Window -> UI.Element msg
+view_results cards min_width max_width window = 
     let
-        image = if card.card_type == CardType_Plot
-            then UI.image 
-                [ UI.height (px 227)
-                , UI.width (px 325) 
-                , UI_Border.rounded 10
-                , UI.clip
-                ] 
-                { src = Card.preview_image_url card
-                , description = card.name
-                }
-            else UI.image 
-                [ UI.height (px 350)
-                , UI.width (px 245) 
-                , UI_Border.rounded 10
-                , UI.clip
-                ] 
-                { src = Card.preview_image_url card
-                , description = card.name
-                }
+        column_width = min (window.width - 20) 1000
+        column_count = column_count_for min_width column_width
+        cards_in_rows = List.Extra.greedyGroupsOf column_count cards
+        card_width = min max_width (card_width_for column_count column_width)
     in
-        UI.link [] { label = image, url = Card.page_url card }
+        cards_in_rows
+            |> List.map (List.map <| view_card card_width)
+            |> List.map (UI.el [ UI.width (px column_width), UI.centerX ] << UI.row [ UI.spacing 6, UI.centerX ])
+            |> UI.column [ UI.spacing 9, UI.width UI.fill ]
+
+view_card : Int -> Card -> UI.Element msg
+view_card width card = UI.link []
+    { label = UI.image 
+        [ UI.width (px width)
+        , UI_Border.rounded 10
+        , UI.clip
+        ] 
+        { src = Card.preview_image_url card
+        , description = card.name
+        }
+    , url = Card.page_url card
+    }
+
+card_padding : Int
+card_padding = 8
+max_vertical_card_width : Int
+max_vertical_card_width = 245
+min_vertical_card_width : Int
+min_vertical_card_width = 180
+max_horizontal_card_width : Int
+max_horizontal_card_width = 345
+min_horizontal_card_width : Int
+min_horizontal_card_width = 300
+
+column_width_for : Int -> Int -> Int
+column_width_for min_card_width card_count = min_card_width * card_count + card_padding * (card_count - 1)
+
+column_count_for : Int -> Int -> Int
+column_count_for min_card_width column_width = 
+    if column_width >= column_width_for min_card_width 4 then -- 815
+        4
+    else if column_width >= column_width_for min_card_width 3 then -- 610
+        3
+    else if column_width >= column_width_for min_card_width 2 then -- 405
+        2
+    else
+        1
+
+card_width_for : Int -> Int -> Int
+card_width_for column_count column_width = (column_width - (column_count - 1) * card_padding) // column_count
 
 navigation_buttons : Model -> UI.Element msg
 navigation_buttons model = 

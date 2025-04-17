@@ -72,7 +72,7 @@ view_mobile model window =
             , UI.height UI.fill
             ]
             [ Widgets.header model.header Msg_Header Msg_Search window.width
-            , with_side_padding <| view_card_image [ UI.width <| UI.maximum max_width UI.fill ] model.card
+            , with_side_padding <| view_card_image [ UI.width <| UI.maximum max_width UI.fill, UI.centerX ] model.card
             , with_side_padding <| view_card_description [ UI.width UI.fill, UI.padding 10 ] model.card
             , with_side_padding <| view_card_faqs model.card.faqs
             , Widgets.footer
@@ -118,7 +118,7 @@ view_card_description attrs card = UI.column
         , houses_widget card.house
         ]
     , Widgets.separator
-    , UI.text <| type_and_traits_line card
+    , UI.paragraph [] [ UI.text <| type_and_traits_line card ]
     , Widgets.separator
     ]
     ++ maybe_text [] card.rules_text card.erratas
@@ -128,7 +128,7 @@ view_card_description attrs card = UI.column
     , character_line card
     , plot_line card
     , Widgets.separator
-    , UI.text <| "Illustrated by " ++ card.illustrator
+    , UI.paragraph [] [ UI.text <| "Illustrated by " ++ card.illustrator ]
     , Widgets.separator
     , set_line card
     , Widgets.separator
@@ -140,7 +140,6 @@ view_card_image : List (UI.Attribute msg) -> Card -> UI.Element msg
 view_card_image attrs card = UI.image 
     ([ UI_Border.rounded 10
     , UI.clip
-    , UI.alignTop
     ] ++ attrs)
     { src = Card.full_image_url card
     , description = card.name
@@ -266,7 +265,7 @@ naval_icon = UI.inFront <| UI.image
 set_line : Card -> UI.Element msg
 set_line card = UI.row [ UI.spacing 10 ]
     [ Widgets.set_icon [] (SetOrCycle_Set card.set)
-    , UI.text <| (CardSet.data_of_set card.set).full_name ++ " — #" ++ String.fromInt card.number ++ " — " ++ quantity_text card.quantity
+    , UI.paragraph [] [ UI.text <| (CardSet.data_of_set card.set).full_name ++ " — #" ++ String.fromInt card.number ++ " — " ++ quantity_text card.quantity ]
     ]
 
 quantity_text : Int -> String
@@ -275,7 +274,7 @@ quantity_text quantity = if quantity == 1
     else String.fromInt quantity ++ " copies"
 
 legality_line : Legality -> Legality -> UI.Element msg
-legality_line joust melee = UI.row [ UI.spacing 50 ]
+legality_line joust melee = UI.wrappedRow [ UI.spacingXY 50 5 ]
     [ legality_widget "Joust" joust 
     , legality_widget "Melee" melee 
     ]
@@ -342,7 +341,7 @@ view_card_faqs faqs = if List.isEmpty faqs
         , UI.padding 10
         , UI_Background.color Colors.background
         ]
-        ( [ UI.el [ UI_Font.bold, UI_Font.size 20 ] <| UI.text "FAQs and clarifications"
+        ( [ UI.paragraph [ UI_Font.bold, UI_Font.size 20 ] [ UI.text "FAQs and clarifications" ]
         , Widgets.separator
         ]
         ++ (faqs |> List.map view_single_card_faq |> List.intersperse [ Widgets.separator ] |> List.concat)

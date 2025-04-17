@@ -49,9 +49,9 @@ view model window =
     in
         ( model.last_searched_query.query ++ " - A Game of Thrones LCG card search"
         , UI.column 
-            [ UI.centerX
-            , UI.spacing 20 
+            [ UI.spacing 20 
             , UI.width UI.fill
+            , UI.height UI.fill
             ]
             [ Widgets.header model.header Msg_Header Msg_Search window.width
             , number_of_results_line model
@@ -89,10 +89,21 @@ view_results cards min_width max_width window =
         cards_in_rows = List.Extra.greedyGroupsOf column_count cards
         card_width = min max_width (card_width_for column_count column_width)
     in
-        cards_in_rows
-            |> List.map (List.map <| view_card card_width)
-            |> List.map (UI.el [ UI.width (px column_width), UI.centerX ] << UI.row [ UI.spacing 6, UI.centerX ])
-            |> UI.column [ UI.spacing 9, UI.width UI.fill ]
+        if List.isEmpty cards
+            then UI.none
+            else cards_in_rows
+                |> List.map (view_card_row column_count card_width)
+                |> List.map (UI.el [ UI.width (px column_width), UI.centerX ] << UI.row [ UI.spacing 6, UI.centerX ])
+                |> UI.column [ UI.spacing 9, UI.width UI.fill ]
+
+view_card_row : Int -> Int -> List Card -> List (UI.Element msg)
+view_card_row column_count card_width cards = 
+    let
+        card_widgets = List.map (view_card card_width) cards
+        dummy = UI.el [ UI.width (px card_width) ] UI.none
+        dummies = List.repeat (column_count - List.length cards) dummy
+    in
+        card_widgets ++ dummies
 
 view_card : Int -> Card -> UI.Element msg
 view_card width card = UI.link []

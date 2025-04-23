@@ -153,7 +153,7 @@ navigation_buttons model =
         search = model.last_searched_query
         page = search.page
     in
-        UI.row 
+        UI.row
             [ UI.spacing 10
             , UI.centerX 
             ]
@@ -170,4 +170,4 @@ cards_in_current_page model = model.cards
     |> List.partition (\c -> c.card_type /= CardType_Plot)
 
 page_count : Model -> Int
-page_count model = List.length model.cards // cards_per_page + 1
+page_count model = ((List.length model.cards - 1) // cards_per_page) + 1

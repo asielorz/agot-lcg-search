@@ -106,7 +106,7 @@ conditional_link_button enable text url = if enable
         , UI_Border.color Colors.disabled
         , UI_Font.color Colors.disabled
         , UI_Border.width 1
-        , UI_Border.rounded 20
+        , UI_Border.rounded 10
         , UI.padding 8
         , UI_Font.size 16
         ]

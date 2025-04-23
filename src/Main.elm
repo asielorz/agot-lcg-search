@@ -2,6 +2,7 @@ module Main exposing (main)
 
 import Card exposing (Card)
 import Cards
+import Query
 import Page_AdvancedSearch
 import Page_Card
 import Page_Markdown
@@ -24,7 +25,8 @@ import List.Extra
 import Random
 import Task
 import Url exposing (Url)
-import Url.Parser exposing ((</>))
+import Url.Parser exposing ((</>), (<?>))
+import Url.Parser.Query
 
 main : Program Json.Decode.Value Model Msg
 main =
@@ -73,13 +75,17 @@ change_url_impl url random_card_index =
     let
         page_404 _ = UrlChangeResult_Page <| Model_404 Page_404.init
 
-        card_page_model id = case card_with_id id of
+        card_page_model id query = case card_with_id id of
             Nothing -> page_404 ()
-            Just card -> UrlChangeResult_Page <| Model_Card <| Page_Card.init card ""
+            Just card -> UrlChangeResult_Page <| Model_Card <| Page_Card.init card query
+
+        card_page_query_parser = Url.Parser.Query.string "q"
+            |> Url.Parser.Query.map (Maybe.withDefault "")
+            |> Url.Parser.Query.map Query.decode
 
         search_page_model : Page_Search.Model -> UrlChangeResult
         search_page_model inner = case inner.cards of
-            [ card ] -> UrlChangeResult_Redirect <| Card.page_url card
+            [ card ] -> UrlChangeResult_Redirect <| Card.page_url card ++ "?q=" ++ Query.encode inner.last_searched_query.query
             _ -> UrlChangeResult_Page <| Model_Search inner
 
         random_card_page _ = Cards.all_cards
@@ -92,7 +98,7 @@ change_url_impl url random_card_index =
             , Url.Parser.map (search_page_model <| Page_Search.init url.query) (Url.Parser.s "search")
             , Url.Parser.map (UrlChangeResult_Page <| Model_AdvancedSearch Page_AdvancedSearch.init) (Url.Parser.s "advanced")
             , Url.Parser.map (UrlChangeResult_Page <| Model_Sets Page_Sets.init) (Url.Parser.s "sets")
-            , Url.Parser.map card_page_model (Url.Parser.s "card" </> Url.Parser.string)
+            , Url.Parser.map card_page_model (Url.Parser.s "card" </> Url.Parser.string <?> card_page_query_parser)
             , Url.Parser.map (random_card_page ()) (Url.Parser.s "random")
             , Url.Parser.map (UrlChangeResult_Page <| Model_Markdown <| Page_Markdown.init "Syntax guide" Text_Syntax.text ) (Url.Parser.s "syntax")
             ]

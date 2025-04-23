@@ -1,4 +1,4 @@
-module Query exposing (parse, search_url, search_url_from, search, Comparison(..), split_words_quoted, SearchState, default_search_state)
+module Query exposing (parse, search_url, search_url_from, search, Comparison(..), split_words_quoted, SearchState, default_search_state, encode, decode)
 
 import Card exposing(Card, CardType, House, Legality, Icon, Crest, Legality(..), CardType(..), Crest(..), House(..), Icon(..))
 import CardSet exposing (SetOrCycle(..), Set)
@@ -142,7 +142,7 @@ card_passes_predicate predicate card = case predicate of
     Predicate_LegalityMelee ls -> List.member card.legality_melee ls
     Predicate_Traits t -> traits_predicate t card.traits
     Predicate_Icons c p -> icons_predicate p c card.icons card.card_type
-    Predicate_Crest c p -> crests_predicate p c card.crest card.card_type
+    Predicate_Crest c p -> crests_predicate p c card.crest
     Predicate_Negate p -> not <| card_passes_predicate p card
 
 string_contains_predicate : String -> Maybe String -> Bool
@@ -219,16 +219,14 @@ icons_predicate predicate comparison icons card_type = if card_type /= CardType_
         Comparison_LessThan -> icons_less_than icons predicate
         Comparison_LessThanOrEqual -> predicate == icons || icons_less_than icons predicate
 
-crests_predicate : List Crest -> Comparison -> List Crest -> CardType -> Bool
-crests_predicate predicate comparison crests card_type = if card_type /= CardType_Character
-    then False
-    else case comparison of
-        Comparison_Equal -> predicate == crests
-        Comparison_NotEqual -> predicate /= crests
-        Comparison_GreaterThan -> list_less_than predicate crests
-        Comparison_GreaterThanOrEqual -> predicate == crests || list_less_than predicate crests
-        Comparison_LessThan -> list_less_than crests predicate
-        Comparison_LessThanOrEqual -> predicate == crests || list_less_than crests predicate
+crests_predicate : List Crest -> Comparison -> List Crest -> Bool
+crests_predicate predicate comparison crests = case comparison of
+    Comparison_Equal -> predicate == crests
+    Comparison_NotEqual -> predicate /= crests
+    Comparison_GreaterThan -> list_less_than predicate crests
+    Comparison_GreaterThanOrEqual -> predicate == crests || list_less_than predicate crests
+    Comparison_LessThan -> list_less_than crests predicate
+    Comparison_LessThanOrEqual -> predicate == crests || list_less_than crests predicate
 
 card_passes_predicates : List Predicate -> Card -> Bool
 card_passes_predicates predicates card = List.all (\p -> card_passes_predicate p card) predicates

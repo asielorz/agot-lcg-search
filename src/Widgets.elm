@@ -146,12 +146,13 @@ header model make_msg search_msg window_width =
                 , link_button "Random" "/random"
                 ]
         in
-            UI.el 
+            UI.el
                 [ UI_Background.color (rgb255 32 32 32)
                 , UI.width UI.fill
                 , UI_Border.color Colors.separator
                 , UI_Border.widthEach { bottom = 1, top = 0, left = 0, right = 0 }
                 , UI.padding 5
+                , UI_Font.size 20
                 ]
                 <| UI.row 
                     [ UI.spacing 10
@@ -160,7 +161,7 @@ header model make_msg search_msg window_width =
                     ] 
                     [ logo, search, links ]
     else
-        let 
+        let
             search = search_bar model.search_buffer (\s -> make_msg { model | search_buffer = s }) search_msg
             logo = UI.link [] { url = "/", label = UI.image [ UI.height (px 50) ] { src = "/images/logo_small.png", description = "" } }
             menu_toggle = UI_Input.button button_style_attributes
@@ -176,6 +177,7 @@ header model make_msg search_msg window_width =
                 , UI_Border.widthEach { bottom = 1, top = 0, left = 0, right = 0 }
                 , UI.padding 5
                 , UI.spacing 5
+                , UI_Font.size 20
                 ]
                 [ UI.row 
                     [ UI.spacing 10
@@ -207,7 +209,7 @@ footer = UI.el
     , UI.padding 5
     , UI.alignBottom
     ]
-    <| UI.paragraph 
+    <| UI.paragraph
         [ UI.spacing 5
         , UI.width <| UI.maximum 800 UI.fill
         , UI.centerX

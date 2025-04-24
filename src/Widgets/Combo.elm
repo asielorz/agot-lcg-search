@@ -59,7 +59,7 @@ view attrs current_id args =
         UI.el
             (Widgets.button_style_attributes ++ button_attrs ++ attrs)
             <| UI.row [ UI.width UI.fill ]
-                [ UI.map (always Msg_Close) <| args.view True args.curr
+                [ UI.el [ UI.width UI.fill, UI.clip ] <| UI.map (always Msg_Close) <| args.view True args.curr
                 , Fontawesome.text [ UI.alignRight ] "\u{f0d7}"
                 ] 
 

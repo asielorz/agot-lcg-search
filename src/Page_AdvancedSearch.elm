@@ -185,72 +185,78 @@ view model window =
         , UI_Events.onClick <| if Maybe.Extra.isJust model.combo then Msg_ModelChanged { model | combo = Nothing } else Msg_Noop
         ]
         [ Widgets.header model.header Msg_Header Msg_HeaderSearch window.width
-        , view_advanced_search model
+        , view_advanced_search model window
         , Widgets.footer
         ]
     )
 
-view_advanced_search : Model -> UI.Element Msg
-view_advanced_search model = UI.column 
+view_advanced_search : Model -> Window -> UI.Element Msg
+view_advanced_search model window = UI.column 
     [ UI.centerX
     , UI.spacing 10
     , UI.width <| UI.maximum 1000 UI.fill
     , UI.paddingXY 20 0
     ]
-    [ labeled "Name" <| Widgets.input_text [] model.name "Any words in the name, e.g. \"winterfell\"" (\s -> Msg_ModelChanged { model | name = s }) Msg_Search
+    [ labeled window "Name" <| Widgets.input_text [] model.name "Any words in the name, e.g. \"winterfell\"" (\s -> Msg_ModelChanged { model | name = s }) Msg_Search
     , Widgets.separator
-    , labeled "Text" <| Widgets.input_text [] model.text "Card's rules text, e.g. \"draw a card\"" (\s -> Msg_ModelChanged { model | text = s }) Msg_Search
+    , labeled window "Text" <| Widgets.input_text [] model.text "Card's rules text, e.g. \"draw a card\"" (\s -> Msg_ModelChanged { model | text = s }) Msg_Search
     , Widgets.separator
-    , labeled "House" <| house_checkboxes model
+    , labeled window "House" <| house_checkboxes model
     , Widgets.separator
-    , labeled "Type" <| card_type_combo model
+    , labeled window "Type" <| card_type_combo model
     , Widgets.separator
-    , labeled "Traits" <| traits_row model
+    , labeled window "Traits" <| traits_row model
     , Widgets.separator
-    , labeled "Set" <| set_combo model
+    , labeled window "Set" <| set_combo model
     , Widgets.separator
-    , labeled "Cost" <| int_row model.combo Combo_Cost model.cost model.cost_comparison (\a -> { model | cost = a }) (\a m -> { m | cost_comparison = a })
+    , labeled window "Cost" <| int_row window model.combo Combo_Cost model.cost model.cost_comparison (\a -> { model | cost = a }) (\a m -> { m | cost_comparison = a })
     , Widgets.separator
-    , labeled "Strength" <| int_row model.combo Combo_Strength model.strength model.strength_comparison (\a -> { model | strength = a }) (\a m -> { m | strength_comparison = a })
+    , labeled window "Strength" <| int_row window model.combo Combo_Strength model.strength model.strength_comparison (\a -> { model | strength = a }) (\a m -> { m | strength_comparison = a })
     , Widgets.separator
-    , labeled "Income" <| int_row model.combo Combo_Income model.income model.income_comparison (\a -> { model | income = a }) (\a m -> { m | income_comparison = a })
+    , labeled window "Income" <| int_row window model.combo Combo_Income model.income model.income_comparison (\a -> { model | income = a }) (\a m -> { m | income_comparison = a })
     , Widgets.separator
-    , labeled "Initiative" <| int_row model.combo Combo_Initiative model.initiative model.initiative_comparison (\a -> { model | initiative = a }) (\a m -> { m | initiative_comparison = a })
+    , labeled window "Initiative" <| int_row window model.combo Combo_Initiative model.initiative model.initiative_comparison (\a -> { model | initiative = a }) (\a m -> { m | initiative_comparison = a })
     , Widgets.separator
-    , labeled "Claim" <| int_row model.combo Combo_Claim model.claim model.claim_comparison (\a -> { model | claim = a }) (\a m -> { m | claim_comparison = a })
+    , labeled window "Claim" <| int_row window model.combo Combo_Claim model.claim model.claim_comparison (\a -> { model | claim = a }) (\a m -> { m | claim_comparison = a })
     , Widgets.separator
-    , labeled "Influence" <| int_row model.combo Combo_Influence model.influence model.influence_comparison (\a -> { model | influence = a }) (\a m -> { m | influence_comparison = a })
+    , labeled window "Influence" <| int_row window model.combo Combo_Influence model.influence model.influence_comparison (\a -> { model | influence = a }) (\a m -> { m | influence_comparison = a })
     , Widgets.separator
-    , labeled "Legality (Joust)" <| legality_joust_row model
+    , labeled window "Legality (Joust)" <| legality_joust_row model
     , Widgets.separator
-    , labeled "Legality (Melee)" <| legality_melee_row model
+    , labeled window "Legality (Melee)" <| legality_melee_row model
     , Widgets.separator
-    , labeled "Icons" <| icon_row model
+    , labeled window "Icons" <| icon_row model
     , Widgets.separator
-    , labeled "Crests" <| crest_row model
+    , labeled window "Crests" <| crest_row model
     , Widgets.separator
-    , labeled "Flavor text" <| Widgets.input_text [] model.flavor "Any words in the decorative flavor test, e.g. \"Card designed by\"" (\s -> Msg_ModelChanged { model | flavor = s }) Msg_Search
+    , labeled window "Flavor text" <| Widgets.input_text [] model.flavor "Any words in the decorative flavor test, e.g. \"Card designed by\"" (\s -> Msg_ModelChanged { model | flavor = s }) Msg_Search
     , Widgets.separator
-    , labeled "Illustrator" <| Widgets.input_text [] model.illustrator "An illustrator's name, e.g. \"Matson\"" (\s -> Msg_ModelChanged { model | illustrator = s }) Msg_Search
+    , labeled window "Illustrator" <| Widgets.input_text [] model.illustrator "An illustrator's name, e.g. \"Matson\"" (\s -> Msg_ModelChanged { model | illustrator = s }) Msg_Search
     , Widgets.separator
-    , labeled "Order" <| sort_order_row model
+    , labeled window "Order" <| sort_order_row model
     , Widgets.separator
-    , labeled "Duplicates" <| text_checkbox [] "Show duplicate cards" model.show_duplicates (\b -> { model | show_duplicates = b })
+    , labeled window "Duplicates" <| text_checkbox [] "Show duplicate cards" model.show_duplicates (\b -> { model | show_duplicates = b })
     , Widgets.separator
-    , labeled "" <| search_button model
+    , labeled window "" <| search_button model
     ]
 
-labeled : String -> UI.Element Msg -> UI.Element Msg
-labeled label widget = UI.row [ UI.width UI.fill ]
-    [ UI.el 
-        [ UI.width (px 200)
-        , UI.alignTop
-        , UI.alignLeft
-        , UI.paddingEach { top = 5, left = 0, right = 0, bottom = 0 } 
-        ] 
-        (UI.text label)
-    , widget
-    ]
+labeled : Window -> String -> UI.Element Msg -> UI.Element Msg
+labeled window label widget = 
+    if window.width >= 750 then
+        UI.row [ UI.width UI.fill ]
+            [ UI.el 
+                [ UI.width (px 200)
+                , UI.alignTop
+                , UI.alignLeft
+                , UI.paddingEach { top = 5, left = 0, right = 0, bottom = 0 } 
+                ] 
+                (UI.text label)
+            , widget
+            ]
+    else if label == "" then
+        widget
+    else
+        UI.column [ UI.spacing 10, UI.width UI.fill ] [ UI.text label, widget ]
 
 house_checkboxes : Model -> UI.Element Msg
 house_checkboxes model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
@@ -263,7 +269,7 @@ house_checkboxes model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
         , image_checkbox [] (Card.house_icon House_Martell) model.house_martell (\b -> { model | house_martell = b })
         , image_checkbox [] (Card.house_icon House_Neutral) model.house_neutral (\b -> { model | house_neutral = b })
         ]
-    , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
+    , Widgets.Combo.view [ UI.width <| UI.maximum 250 UI.fill ] model.combo 
         { id = Combo_HouseComparison
         , curr = model.house_comparison
         , view = \_ c -> c |> list_comparison_to_string "houses" |> UI.text
@@ -301,27 +307,34 @@ traits_row model = UI.row
     , text_checkbox [ UI.width UI.shrink ] "Unique" model.unique (\b -> { model | unique = b })
     ]
 
-int_row : Maybe Combo -> Combo -> Maybe Int -> Comparison -> (Maybe Int -> Model) -> (Comparison -> Model -> Model) -> UI.Element Msg
-int_row curr_combo id value comparison value_change comparison_change = UI.row [ UI.spacing 10 ]
-    [ Widgets.Combo.view [ UI.width (px 250) ] curr_combo 
-        { id = id
-        , curr = comparison
-        , view = \_ c -> c |> comparison_to_string |> UI.text
-        , options = [ Comparison_Equal, Comparison_NotEqual, Comparison_GreaterThan, Comparison_GreaterThanOrEqual, Comparison_LessThan, Comparison_LessThanOrEqual ]
-        , select = \opt m -> comparison_change opt m
-        }
-        |> UI.map Msg_Combo
-    , Widgets.input_text [ UI.width (px 250) ]
-        (Maybe.map String.fromInt value |> Maybe.withDefault "") 
-        ""
-        (\text -> if text == ""
-            then Msg_ModelChanged <| value_change Nothing
-            else case String.toInt text of
-                Nothing -> Msg_Noop
-                Just x -> Msg_ModelChanged <| value_change <| Just x
-        )
-        Msg_Search
-    ]
+int_row : Window -> Maybe Combo -> Combo -> Maybe Int -> Comparison -> (Maybe Int -> Model) -> (Comparison -> Model -> Model) -> UI.Element Msg
+int_row window curr_combo id value comparison value_change comparison_change =
+    let
+        short = window.width < 750
+        cmp_to_str = if short then comparison_to_string_short else comparison_to_string
+        combo_width = if short then 50 else 250
+        text_width = if short then 100 else 250
+    in
+        UI.row [ UI.spacing 10 ]
+            [ Widgets.Combo.view [ UI.width (px combo_width) ] curr_combo 
+                { id = id
+                , curr = comparison
+                , view = \_ c -> c |> cmp_to_str |> UI.text
+                , options = [ Comparison_Equal, Comparison_NotEqual, Comparison_GreaterThan, Comparison_GreaterThanOrEqual, Comparison_LessThan, Comparison_LessThanOrEqual ]
+                , select = \opt m -> comparison_change opt m
+                }
+                |> UI.map Msg_Combo
+            , Widgets.input_text [ UI.width (px text_width) ]
+                (Maybe.map String.fromInt value |> Maybe.withDefault "") 
+                ""
+                (\text -> if text == ""
+                    then Msg_ModelChanged <| value_change Nothing
+                    else case String.toInt text of
+                        Nothing -> Msg_Noop
+                        Just x -> Msg_ModelChanged <| value_change <| Just x
+                )
+                Msg_Search
+            ]
 
 legality_joust_row : Model -> UI.Element Msg
 legality_joust_row model = UI.row [ UI.spacing 30 ]
@@ -343,7 +356,7 @@ icon_row model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
         , icon_checkbox "/images/icons/intrigue.png" model.icon_intrigue (\b -> { model | icon_intrigue = b })
         , icon_checkbox "/images/icons/power.png" model.icon_power (\b -> { model | icon_power = b })
         ]
-    , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
+    , Widgets.Combo.view [ UI.width <| UI.maximum 250 UI.fill ] model.combo 
         { id = Combo_IconComparison
         , curr = model.icon_comparison
         , view = \_ c -> c |> list_comparison_to_string "icons" |> UI.text
@@ -362,7 +375,7 @@ crest_row model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
         , image_checkbox [] "/images/crests/learned.png" model.crest_learned (\b -> { model | crest_learned = b })
         , image_checkbox [] "/images/crests/shadow.png" model.crest_shadow (\b -> { model | crest_shadow = b })
         ]
-    , Widgets.Combo.view [ UI.width (px 250) ] model.combo 
+    , Widgets.Combo.view [ UI.width <| UI.maximum 250 UI.fill ] model.combo 
         { id = Combo_CrestComparison
         , curr = model.crest_comparison
         , view = \_ c -> c |> list_comparison_to_string "crests" |> UI.text
@@ -373,7 +386,7 @@ crest_row model = UI.column [ UI.width UI.fill, UI.spacing 10 ]
     ]
 
 set_combo : Model -> UI.Element Msg
-set_combo model = Widgets.Combo.view [ UI.width (px 400) ] model.combo
+set_combo model = Widgets.Combo.view [ UI.width <| UI.maximum 400 UI.fill ] model.combo
     { id = Combo_Set
     , curr = model.set
     , view = \preview maybe -> case maybe of
@@ -504,6 +517,15 @@ comparison_to_string cmp = case cmp of
     Comparison_GreaterThanOrEqual -> "Greater than or equal to"
     Comparison_LessThan -> "Less than"
     Comparison_LessThanOrEqual -> "Less than or equal to"
+
+comparison_to_string_short : Comparison -> String
+comparison_to_string_short cmp = case cmp of
+    Comparison_Equal -> "="
+    Comparison_NotEqual -> "≠"
+    Comparison_GreaterThan -> ">"
+    Comparison_GreaterThanOrEqual -> "≥"
+    Comparison_LessThan -> "<"
+    Comparison_LessThanOrEqual -> "≤"
 
 make_advanced_search_query : Model -> String
 make_advanced_search_query model =

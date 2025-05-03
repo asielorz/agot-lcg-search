@@ -7,6 +7,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  deployments: write
 
 jobs:
   build:
@@ -42,3 +43,17 @@ jobs:
 
       - name: Create preview low resolution card images
         run: cargo +nightly -Zscript ./scripts/scale_images.rs ./images/cards/full ./build/images/cards/preview
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 81208e1c136d26e6fbf27f1c07ec0ce6
+          projectName: agot-lcg-search
+          directory: ./build/
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

@@ -4,10 +4,12 @@ name = "scale_images"
 version = "0.1.0"
 edition = "2024"
 [dependencies]
-image = { version = "0.25" }
+image = "0.25"
+rayon = "1.10"
 ---
 
 use image::imageops;
+use rayon::prelude::*;
 
 fn main() {
     let args = std::env::args().collect::<Vec<_>>();
@@ -24,7 +26,7 @@ fn main() {
         std::fs::create_dir_all(output_path).unwrap();
     }
 
-    for file in std::fs::read_dir(input_path).unwrap() {
+    std::fs::read_dir(input_path).unwrap().par_iter().for_each(|file| {
         let path = file.unwrap().path();
         let out_path = format!("{}/{}", output_path, path.file_name().unwrap().to_string_lossy());
 
@@ -36,5 +38,5 @@ fn main() {
             
             resized.save_with_format(out_path, image::ImageFormat::Jpeg).unwrap();
         }
-    }
+    });
 }

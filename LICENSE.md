@@ -1,4 +1,4 @@
-Images of cards and symbols, as well as the text and design of cards, are copyrighted and sole property of Asmodee North America, Inc and Fantasy Flight Games LLC, and distributed under the [Fantasy Flight Games IP Policy](https://images-cdn.fantasyflightgames.com/filer_public/51/c8/51c8035b-240e-4a12-8ab6-a7b34b97c819/ip_policy_2024_aug20.pdf). This includes all files under `/images`, as well as all text in `/cards.json` and `/src/Cards.elm`.
+Images of cards and symbols, as well as the text and design of cards, are copyrighted and sole property of Asmodee North America, Inc and Fantasy Flight Games LLC, and distributed under the [Fantasy Flight Games IP Policy](https://images-cdn.fantasyflightgames.com/filer_public/51/c8/51c8035b-240e-4a12-8ab6-a7b34b97c819/ip_policy_2024_aug20.pdf). This includes all files under `/images` and `./favicon.ico`, as well as all text in `/cards.json` and `/src/Cards.elm`.
 
 All files under `/fontawesome` are property of Fonticons, Inc and distributed under the [Fontawesome Free License](https://fontawesome.com/license/free).
 

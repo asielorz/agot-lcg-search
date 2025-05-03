@@ -44,11 +44,6 @@ jobs:
       - name: Create preview low resolution card images
         run: cargo +nightly -Zscript ./scripts/scale_images.rs ./images/cards/full ./build/images/cards/preview
 
-  publish:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@1
         with:

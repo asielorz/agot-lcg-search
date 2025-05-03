@@ -26,8 +26,9 @@ fn main() {
         std::fs::create_dir_all(output_path).unwrap();
     }
 
-    std::fs::read_dir(input_path).unwrap().par_iter().for_each(|file| {
-        let path = file.unwrap().path();
+    let full_res_image_paths = std::fs::read_dir(input_path).unwrap().map(|file| file.unwrap().path()).collect::<Vec<_>>();
+
+    full_res_image_paths.par_iter().for_each(|path| {
         let out_path = format!("{}/{}", output_path, path.file_name().unwrap().to_string_lossy());
 
         if !std::fs::exists(&out_path).unwrap() {

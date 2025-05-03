@@ -1,0 +1,43 @@
+name: build-page
+run-name: ${{ github.actor }} is building the static page from source
+
+on: [push, workflow_dispatch]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout repo"
+        uses: actions/checkout@v4
+
+      - name: Install Cargo
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: nightly
+
+      - name: Install Elm
+        uses: jorelali/setup-elm@v6
+        with:
+          elm-version: 0.19.1
+
+      - name: Generate HTML with tags for cards
+        run: cargo +nightly -Zscript ./scripts/genhtml.rs ./template.html ./cards.json ./build/card
+
+      - name: Build page
+        run: elm make --optimize ./src/Main.elm --output ./build/page.js
+
+      - name: Copy files to build directory
+        run: cp ./cards.json ./build/
+        run: cp ./favicon.ico ./build/
+        run: cp ./index.html ./build/
+        run: cp ./main.js ./build/
+        run: cp -a ./fontawesome ./build/fontawesome
+        run: cp -a ./images ./build/images
+
+      - name: Create preview low resolution card images
+        run: cargo +nightly -Zscript ./scripts/scale_images.rs ./images/cards/full ./build/images/cards/preview

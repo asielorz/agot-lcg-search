@@ -32,12 +32,13 @@ jobs:
         run: elm make --optimize ./src/Main.elm --output ./build/page.js
 
       - name: Copy files to build directory
-        run: cp ./cards.json ./build/
-        run: cp ./favicon.ico ./build/
-        run: cp ./index.html ./build/
-        run: cp ./main.js ./build/
-        run: cp -a ./fontawesome ./build/fontawesome
-        run: cp -a ./images ./build/images
+        run: |
+          cp ./cards.json ./build/
+          cp ./favicon.ico ./build/
+          cp ./index.html ./build/
+          cp ./main.js ./build/
+          cp -a ./fontawesome ./build/fontawesome
+          cp -a ./images ./build/images
 
       - name: Create preview low resolution card images
         run: cargo +nightly -Zscript ./scripts/scale_images.rs ./images/cards/full ./build/images/cards/preview

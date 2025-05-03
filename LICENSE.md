@@ -6,7 +6,7 @@ All other files, including all of the source code, are distributed under an MIT 
 
 MIT License
 
-Copyright (c) 2025 Asier
+Copyright (c) 2025 Asier Elorz Hernáez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

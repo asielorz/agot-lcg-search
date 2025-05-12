@@ -14096,6 +14096,38 @@
         "strength": 3
     },
     {
+        "id": "lotr_8",
+        "full_image_url": "/images/cards/full/lotr_8.jpg",
+        "preview_image_url": "/images/cards/preview/lotr_8.jpg",
+        "name": "Bronn",
+        "card_type": "Character",
+        "set": "Lions of the Rock",
+        "number": 80,
+        "quantity": 3,
+        "legality_joust": "Legal",
+        "legality_melee": "Legal",
+        "illustrator": "Mike Capprotti",
+        "house": [
+            "Lannister"
+        ],
+        "unique": true,
+        "icons": [
+            "Military",
+            "Intrigue",
+            "Power"
+        ],
+        "crest": [],
+        "traits": [
+            "Ally",
+            "Knight"
+        ],
+        "erratas": [],
+        "faqs": [],
+        "rules_text": "Deadly.\nAfter a challenge in which Bronn participated as a defender resolves, if you control the most participating characters with deadly, the attacking player must choose and kill 1 participating character he or she controls.",
+        "cost": 4,
+        "strength": 3
+    },
+    {
         "id": "lotr_9",
         "full_image_url": "/images/cards/full/lotr_9.jpg",
         "preview_image_url": "/images/cards/preview/lotr_9.jpg",
@@ -15438,38 +15470,6 @@
         "income": 3,
         "initiative": 0,
         "claim": 1
-    },
-    {
-        "id": "lotr_80",
-        "full_image_url": "/images/cards/full/lotr_80.jpg",
-        "preview_image_url": "/images/cards/preview/lotr_80.jpg",
-        "name": "Bronn",
-        "card_type": "Character",
-        "set": "Lions of the Rock",
-        "number": 80,
-        "quantity": 3,
-        "legality_joust": "Legal",
-        "legality_melee": "Legal",
-        "illustrator": "Mike Capprotti",
-        "house": [
-            "Lannister"
-        ],
-        "unique": true,
-        "icons": [
-            "Military",
-            "Intrigue",
-            "Power"
-        ],
-        "crest": [],
-        "traits": [
-            "Ally",
-            "Knight"
-        ],
-        "erratas": [],
-        "faqs": [],
-        "rules_text": "Deadly.\nAfter a challenge in which Bronn participated as a defender resolves, if you control the most participating characters with deadly, the attacking player must choose and kill 1 participating character he or she controls.",
-        "cost": 4,
-        "strength": 3
     },
     {
         "id": "acoa_1",

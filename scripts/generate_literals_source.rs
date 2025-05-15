@@ -78,6 +78,8 @@ fn main() {
     let faqs_json = std::fs::read_to_string(&args[2]).unwrap();
     let faqs: Vec<Faq> = serde_json::from_str(&faqs_json).unwrap();
 
+    std::fs::create_dir_all("./generated").unwrap();
+
     let cards_elm_source = print_cards_elm_file(&cards);
     std::fs::write(&args[3], &cards_elm_source).unwrap();
 

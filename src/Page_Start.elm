@@ -50,7 +50,7 @@ view model =
                     ]
                 , UI.row [ UI.spacing 5, UI.centerX ] 
                     [ Widgets.link_button "Random card" "/random"
-                    , Widgets.link_button "Download cards JSON" "/cards.json"
+                    , Widgets.new_tab_link_button "Download cards JSON" "/cards.json"
                     ]
                 ]
             ]

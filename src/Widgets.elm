@@ -87,8 +87,22 @@ simple_button label on_press = UI_Input.button
 link_button : String -> String -> UI.Element msg
 link_button text url = link_button_ex [] [] text url
 
+new_tab_link_button : String -> String -> UI.Element msg
+new_tab_link_button text url = new_tab_link_button_ex [] [] text url
+
 link_button_ex : List (UI.Attribute msg) -> List (UI.Attribute msg) -> String -> String -> UI.Element msg
 link_button_ex attrs content_attrs text url = UI.link
+    (button_style_attributes ++
+    [ UI.padding 8
+    , UI_Font.size 16
+    ]
+    ++ attrs)
+    { url = url
+    , label = if List.isEmpty content_attrs then UI.text text else UI.el content_attrs <| UI.text text
+    }
+
+new_tab_link_button_ex : List (UI.Attribute msg) -> List (UI.Attribute msg) -> String -> String -> UI.Element msg
+new_tab_link_button_ex attrs content_attrs text url = UI.newTabLink
     (button_style_attributes ++
     [ UI.padding 8
     , UI_Font.size 16

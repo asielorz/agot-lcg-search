@@ -15,10 +15,12 @@ eddard =
       , set = Set_Core
       , number = 5
       , quantity = 1
+      , limit = 3
       , legality_joust = Legality_Legal
       , legality_melee = Legality_Legal
       , illustrator = "John Matson"
       , house = [ House_Stark ]
+      , legal_in_houses = [ House_Stark, House_Lannister, House_Baratheon, House_Targaryen, House_Greyjoy, House_Martell, House_Neutral ]
       , unique = True
       , rules_text = Just "Stalwart. Renown. Deadly.\nEddard Stark claims 1 power when he comes into play."
       , flavor_text = Just "\"Our way is the older way. The blood of the First Men still flows in the veins of the Starks, and we hold to the belief that the man who passes the sentence should swing the sword.\""
@@ -32,7 +34,6 @@ eddard =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
       , duplicate_id = Nothing
       }
 
@@ -43,11 +44,13 @@ arrogant_contender =
       , card_type = CardType_Character
       , set = Set_LionsOfTheRock
       , number = 44
+      , limit = 3
       , quantity = 3
       , legality_joust = Legality_Legal
       , legality_melee = Legality_Legal
       , illustrator = "Tiziano Baracchi"
       , house = [ House_Lannister, House_Baratheon ]
+      , legal_in_houses = [ House_Stark, House_Lannister, House_Baratheon, House_Targaryen, House_Greyjoy, House_Martell, House_Neutral ]
       , unique = False
       , rules_text = Just "Melee.\nResponse: After you win a challenge in which Arrogant Contender attacked alone, it claims 1 power for each opposing character."
       , flavor_text = Just "Card designed by the 2010 World Melee Champion Brett Zeiler"
@@ -61,7 +64,6 @@ arrogant_contender =
       , claim = Nothing
       , influence = Nothing
       , erratas = []
-      , faqs = []
       , duplicate_id = Nothing
       }
 

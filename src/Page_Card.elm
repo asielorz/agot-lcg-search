@@ -1,9 +1,10 @@
 module Page_Card exposing (Model, Msg, init, update, view)
 
-import Card exposing (Card, CardType(..), Crest(..), Icon(..), Legality(..), Errata, House)
+import Card exposing (Card, CardType(..), Crest(..), Icon(..), Legality(..), Errata, House, Faq)
 import Cards
 import CardSet exposing (SetOrCycle(..))
 import Colors
+import Faqs
 import Query exposing (default_search_state)
 import Widgets
 import Window exposing (Window)
@@ -52,7 +53,7 @@ view_pc model window = UI.column
     [ Widgets.header model.header Msg_Header Msg_Search window.width
     , view_card model.card
     , UI.text "" -- Dummy widget to add 20 padding more between.
-    , view_card_faqs model.card.faqs
+    , view_card_faqs <| faqs_that_mention model.card
     , Widgets.footer
     ]
 
@@ -74,7 +75,7 @@ view_mobile model window =
             [ Widgets.header model.header Msg_Header Msg_Search window.width
             , with_side_padding <| view_card_image [ UI.width <| UI.maximum max_width UI.fill, UI.centerX ] model.card
             , with_side_padding <| view_card_description [ UI.width UI.fill, UI.padding 10 ] model.card
-            , with_side_padding <| view_card_faqs model.card.faqs
+            , with_side_padding <| view_card_faqs <| faqs_that_mention model.card
             , Widgets.footer
             ]
 
@@ -353,3 +354,8 @@ view_single_card_faq faq = faq
     |> List.map (\text -> if String.endsWith "?" text 
         then UI.paragraph [ UI_Font.italic ] [ UI.text text ]
         else UI.paragraph [] [ UI.text text ] )
+
+faqs_that_mention : Card -> List String
+faqs_that_mention card = Faqs.all_faqs 
+    |> List.filter (\f -> List.member card.id f.cards_mentioned)
+    |> List.map .text

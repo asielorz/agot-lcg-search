@@ -1,0 +1,265 @@
+[
+  {
+    "cards_mentioned": [
+      "core_109",
+      "core_110",
+      "soo_22"
+    ],
+    "text": "If I search for Riders of the Red Fork with Rhaegal (Core Set T109) can I attach the Riders of the Red Fork to Rhaegal as a duplicate?\nYes. Rhaegal's ability allows for the search of a duplicate, and the Riders of the Red Fork's ability allows them to be searched for as that duplicate. When Rhaegal's ability resolves it attaches the Riders of the Red Fork to itself as a legal duplicate."
+  },
+  {
+    "cards_mentioned": [
+      "pots_3"
+    ],
+    "text": "When an attacker is fulfilling the claim of a lost [Power] challenge because of Doran Martell's effect, the attacker must move the power from his or her House card to the defending player's House card."
+  },
+  {
+    "cards_mentioned": [
+      "core_45"
+    ],
+    "text": "Grand Maester Pycelle cannot trigger his effect in response to the effect of another copy of Grand Maester Pycelle."
+  },
+  {
+    "cards_mentioned": [
+      "kr_105"
+    ],
+    "text": "Does Longship Maiden's Bane lose the immunity granted by House of Dreams while Longship Maiden's Bane is functioning as a character?\nWhen a card changes type and becomes a character, it loses all other card types. As House of Dreams specifies that the immunity is granted to \"that location\", the immunity from the agenda is not present while Maiden's Bane is changed to a character. When Longship Maiden's Bane reverts back to its original state as a location, House of Dreams again provides its immunity. This is because the immunity granted by House of Dreams is being granted by a constant effect."
+  },
+  {
+    "cards_mentioned": [
+      "atoc_2"
+    ],
+    "text": "If I bring Meera Reed out of Shadows as a duplicate for the version I already have in play, does her \"Response\" effect still blank a card?\nNo. Meera Reed leaves shadows and immediately becomes a duplicate. Duplicates have no text, titles, or traits."
+  },
+  {
+    "cards_mentioned": [
+      "dotn_117"
+    ],
+    "text": "A player who has reached his or her draw cap may not trigger Val's \"reveal and draw\" effect."
+  },
+  {
+    "cards_mentioned": [
+      "cad_14"
+    ],
+    "text": "What is the timing of a challenge initiated by Show of Force?\nThe challenge initiated by Show of Force bypasses the standard framework action window steps of choosing challenge type and declaring characters -- the event card performs each of these steps on its own. Following this, the remainder of the challenge resolves as would any other challenge that was initiated by conventional means. Note that the wording \"as your only attacking characters\" refers only to how the challenge is initiated: you cannot declare other characters via standard challenge declaration procedures, but other effects, such as a naval icon, may be used to add characters to the challenge."
+  },
+  {
+    "cards_mentioned": [
+      "qod_49"
+    ],
+    "text": "Does Burning Bridges prevent a duplicate from being used to save a character?\nBurning Bridges reads, \"Players cannot trigger abilities on character, location, and attachment cards in play.\" It is referring to triggered abilities printed on the cards. Because the saves granted by duplicates is a \"gained\" ability rather than a printed one Burning Bridges does not have any effect on them"
+  },
+  {
+    "cards_mentioned": [
+      "soo_35"
+    ],
+    "text": "Do the self-referential abilities gained by Jaqen H'ghar from the character attached to him refer to Jaqen H'ghar or the character attached to him?\nJaqen H'ghar gains the text box, without alteration, of the character attached to him. Any ability that specifically names that attached character does not reference Jaqen H'ghar."
+  },
+  {
+    "cards_mentioned": [
+      "core_152"
+    ],
+    "text": "Magister Illyrio's effect expires at the end of the phase."
+  },
+  {
+    "cards_mentioned": [
+      "acoa_43"
+    ],
+    "text": "Which keywords may I select for Jaqen H'ghar to gain when using his ability?\nJaqen H'ghar's effect allows him to gain any unqualified keyword, that is, keywords that do not require additional text or qualifications beyond the name of the keyword in order to explain their full function. Unqualified keywords include, but are not limited to, keywords such as Stealth, Renown, Deadly, No Attachments, Stalwart, Vigilant, Joust, and Melee. Keywords such as \"Immune to X\" and \"No attachments except X\" are examples of qualified keywords outside the scope of Jaqen H'ghar's effect. Effects such as \"cannot be killed\" and \"cannot be discarded\" are not keywords.\nThis entry applies only to which keywords may be named and gained by Jaqen H'ghar's effect: specifically his controller cannot name any additional qualification(s) when gaining a keyword. Cards that copy or steal keywords from other cards in play may successfully interact with both qualified and unqualified keywords."
+  },
+  {
+    "cards_mentioned": [
+      "btns_118"
+    ],
+    "text": "Does Little and Less prevent me from triggering a Response on a character?\nLittle and Less only prevents playing response effects from hand. A character whose card text was a response that could be triggered from hand such as Khal Drogo (Core T107) would not be able to be triggered, but a character ability on a card in play would still be able to be triggered."
+  },
+  {
+    "cards_mentioned": [
+      "acoa_82"
+    ],
+    "text": "When the round is brought to an end by Rhaegar's ability, the current phase and all phases remaining in the round are also considered to end. If the round ends during a challenge, that challenge ends without resolution"
+  },
+  {
+    "cards_mentioned": [
+      "acoa_78",
+      "acoa_79",
+      "acoa_80"
+    ],
+    "text": "A card of the specified type must first be played at a reduced cost for the \"then\" effect to to occur."
+  },
+  {
+    "cards_mentioned": [
+      "low_4"
+    ],
+    "text": "What happens if I play Frozen Solid on my opponent’s Pyromancer’s Cache?\nSince the text “Attach to a location you control” on Pyromancer’s Cache is now blank, Pyromancer’s Cache is now illegally attached to a location and is therefore discarded (see FAQ section 3.20)."
+  },
+  {
+    "cards_mentioned": [
+      "kl_102"
+    ],
+    "text": "If Northern Steel gets attached to a “No attachments” Stark character with Fortified Position revealed, what happens next turn?\nNorthern Steel remains attached. Cannot is an absolute, and \"Northern Steel cannot be discarded from play while attached to a House Stark character.\" trumps the Stark characters \"No attachments.\" keyword."
+  },
+  {
+    "cards_mentioned": [
+      "soo_41"
+    ],
+    "text": "I have Maester Luwin and Galbart Glover out at the same time. If I win a challenge with Maester Luwin can I search the top 5 cards of my discard pile?No. Searching the top 5 cards of your deck does not count as searching your entire deck.\n"
+  },
+  {
+    "cards_mentioned": [
+      "kotst_48",
+      "ator_119"
+    ],
+    "text": "If I have a Summer Reserves that has been killed and I play Narrow Escape will it come back into play?\nNo. Narrow Escape only puts into play character cards that have been killed or discarded. Event, attachment, or location cards that were characters when they were killed or discarded do not qualify"
+  },
+  {
+    "cards_mentioned": [
+      "dotn_64"
+    ],
+    "text": "If an opponent plays Misinformation, can I play a second copy in response to the first?\nYes. The first Misinformation cancels the game's standard determination of challenge winner, and creates its own. The second Misinformation would cancel this new determination, replacing it with its own."
+  },
+  {
+    "cards_mentioned": [
+      "btns_40"
+    ],
+    "text": "\"When revealed, name a challenge type. In order to declare any characters to attack or defend during challenges of that type, a player must declare all of his or her eligible characters.\" is all considered part of the \"When revealed\" effect and is active while the plot is revealed or when the \"When revealed\" effect has been triggered by another River plot card."
+  },
+  {
+    "cards_mentioned": [
+      "asots_18"
+    ],
+    "text": "The Hold is open information to its owner, but can only be looked at by opponents when a card effect specifically allows them to do so."
+  },
+  {
+    "cards_mentioned": [
+      "pots_25"
+    ],
+    "text": "How does Red Vengeance work during a power challenge?\nThe opponent chosen to satisfy the claim of a Power challenge moves power from his or her House card to the attacking player's House card. In some instances, this could amount to a single player moving power from his or her House card back to his or her House card."
+  },
+  {
+    "cards_mentioned": [
+      "bwb_105"
+    ],
+    "text": "Can I trigger The Dreadfort when I play a Bolton Refugee with a printed STR of 2, and have Winterfell Castle in play, which gives the Bolton Refugee +1 STR?\nQualifying characteristics of cards are checked at the time a Response effect is triggered. In this example, the Bolton character enters play and has its STR raised to 3 (by the constant effect on Winterfell Castle) when it enters play, which occurs before the Response effect is triggered. When the Response is triggered, the character’s STR is 3, and it has just been played, so you can use The Dreadfort to draw a card."
+  },
+  {
+    "cards_mentioned": [
+      "atoc_47"
+    ],
+    "text": "If a character enters play through an effect like Fiery Kiss that would cause that character to leave play at the end of the phase or round, but the character enters play as a duplicate (because the player already owns and controls another copy of that character), what happens at the end of the phase?\nThe check, \"if that character is still in play\" cannot be made, as the card entered play as a duplicate. The duplicate remains in play at the end of the phase."
+  },
+  {
+    "cards_mentioned": [
+      "dotn_117"
+    ],
+    "text": "How does the timing on Val work?\nTriggering Val's ability is an \"Any Phase\" action. Within that action, you are going to have a Response opportunity. If you reveal/draw a Response effect (like an event) and do not play it during that very next opportunity, the card is discarded. Because it was revealed, your opponent will be able to monitor this. Similarly, if you reveal/draw a card that requires a standard action to play (a \"Phase\" event, or a character/attachment/location during your marshalling phase) and do not play it on your very next action opportunity (i.e., the next opportunity you have to play an action after triggering Val), the card is discarded. Note that if you can play the card you drew with Val on your next action, you must. You may not choose to discard it instead."
+  },
+  {
+    "cards_mentioned": [
+      "bwb_53"
+    ],
+    "text": "The Blood Crazed Screamer must be eligible to participate as an attacker to declare a second Military challenge using its card ability. Once this effect initiates when the Blood Crazed Screamer's controller wins his first Military challenge as an attacker, the \"to a maximum of 2\" card text applies to any additional Military challenge that player would initiate."
+  },
+  {
+    "cards_mentioned": [
+      "kr_79"
+    ],
+    "text": "What happens if I reveal Betrayal at the Wall as my final plot card, and its \"when revealed\" effect attempts to resolve when I do not have a plot deck?\nYou are not able to choose and reveal a new plot card, so the \"when revealed\" effect fails to resolve."
+  },
+  {
+    "cards_mentioned": [
+      "core_181"
+    ],
+    "text": "When I reveal Summoning Season who chooses to search and reveal their character first?\nWhenever an effect requires multiple players to choose targets or reveal cards simultaneously the controller of the effect always resolves the entire effect first and the other players resolve the effect in a clockwise order."
+  },
+  {
+    "cards_mentioned": [
+      "ator_57"
+    ],
+    "text": "Could I use Starfall Advisor to cancel Game of Cyvasse's effect that would discard Ser Arthur Dayne?\nNo. A cancel must cancel an entire effect not just part of an effect. Since Starfall Advisor would not be able to trigger its ability when the event card is first played, the ability is not able to be triggered at all."
+  },
+  {
+    "cards_mentioned": [
+      "kl_79"
+    ],
+    "text": "In order to \"successfully defend\" a challenge and use the effect of The White Book agenda, do you need to win the challenge?\nYes, you must win a challenge as the defending player in order to successfully defend it."
+  },
+  {
+    "cards_mentioned": [
+      "bwb_59"
+    ],
+    "text": "The \"Other cards you control do not provide a gold bonus\" text does not apply to the +2 gold gained by your House card from this agenda."
+  },
+  {
+    "cards_mentioned": [
+      "atoc_2"
+    ],
+    "text": "If I bring Meera Reed out of Shadows, can she target The Red Viper to blank him?\nNo. Meera Reed is considered a character in play after she comes out of Shadows, and The Red Viper is immune to her ability"
+  },
+  {
+    "cards_mentioned": [
+      "asots_18"
+    ],
+    "text": "What is the proper pregame and deck cutting procedure for the Black Sails agenda?\nFirst, shuffle your deck, and then present it to your opponent for additional shuffling and/or a final cut. The opponent shuffles and cuts to his or her satisfaction to determine the final ordering of the cards in the deck.\nYou are then responsible for making one cut that splits the deck into two stacks. You may not re-order or count cards during this process. If, on a visual comparison of the two stacks, they are not to your liking, you may return the deck to its original composition (without altering the original order of the cards) and make an additional attempt at the cut. You may make up to three attempts at this cut without delaying the game. After a successful cut is made, present the two stacks to your opponent, who then chooses one stack as your deck and the other as your hold.\nOnce your deck is selected, proceed with drawing your initial hands. If you choose to mulligan, you only mulligan your deck -- your hold is locked in at this point."
+  },
+  {
+    "cards_mentioned": [
+      "dotn_40"
+    ],
+    "text": "Playing or putting a card into Shadows from your hand does count against the limitation set by Fear of Winter. Bringing a card out of Shadows does not count against this card's limitation. Replacement effects that put a card into play from a player's hand (such as those on PotS Darkstar and PotS House Dayne Reserves) also count against the limitation set by this card."
+  },
+  {
+    "cards_mentioned": [
+      "lotr_52"
+    ],
+    "text": "What happens if I reveal The Art of Seduction outside of the standard \"each player chooses and reveals plot cards\" framework action window?\nThe Art of Seduction can only choose an opponent who is revealing a plot that is not titled \"The Art of Seduction\" as part of the same framework action by which you are revealing The Art of Seduction. If no opponent meets this criteria, the \"when revealed\" effect on The Art of Seduction does nothing. Note that a when revealed plot effect that reveals a new plot card (such as Betrayal at the Wall) would still be considered a part of the same framework action window and works with The Art of Seduction. Any effect that reveals a new plot outside of this framework, however, would not work with The Art of Seduction."
+  },
+  {
+    "cards_mentioned": [
+      "ator_114"
+    ],
+    "text": "If this event's conditions are met, affected characters are returned to the player's hand at the end of the challenge phase."
+  },
+  {
+    "cards_mentioned": [
+      "ator_57"
+    ],
+    "text": "If my opponent plays Game of Cyvasse and I do not cancel its effect can I discard a duplicate to prevent my Ser Arthur Dayne from being returned to my hand?\nYes. The \"Then\" effect on Game of Cyvasse opens a window for you to save Ser Arthur Dayne."
+  },
+  {
+    "cards_mentioned": [
+      "atoc_116"
+    ],
+    "text": "Does Heavy Taxes affect the gold counted before or after Black Raven's effect has the players take 1 gold?\nThe players each count their plot gold and all the income bonuses they each have in play. If this number is greater than 4, the rest is disregarded because of Heavy Taxes. When the player takes the gold from the treasury Black Raven causes each player to take 1 additional gold token. The same is true of when White Raven is in play, all numbers above 4 are disregarded and then White Raven causes each player to take 1 less gold token from the treasury"
+  },
+  {
+    "cards_mentioned": [
+      "ator_84"
+    ],
+    "text": "Is Cat o' the Canals immune to stealth?\nStealth resolves as a card effect that targets a character on the defending side. As she is immune to opponent's card effects, Cat o' the Canals cannot be chosen as a target of stealth."
+  },
+  {
+    "cards_mentioned": [
+      "btns_42"
+    ],
+    "text": "When can Abel's Washerwoman trigger its response when the defending player controls Naval characters?\nAbel's Washerwoman can only trigger its response when no defenders are declared during the standard framework \"declare defenders\" step. The presence of eligible Naval characters that may defend after this step or have been declared prior to this step does not change the fact that \"no defenders\" were declared during the precise window of this response trigger."
+  },
+  {
+    "cards_mentioned": [
+      "btns_23"
+    ],
+    "text": "The attached location does not gain immunity to Castle Battlements."
+  },
+  {
+    "cards_mentioned": [
+      "btns_71"
+    ],
+    "text": "When is the discard condition for a character that has been targeted by Rhoynar Emmisary checked?\nThis condition is checked only during the standard framework \"declare attackers\" and \"declare defenders\" steps of challenge resolution. The discard effect resolves passively at this time if the targeted character is eligible to be declared but is not declared."
+  },
+  {
+    "cards_mentioned": [
+      "kr_61"
+    ],
+    "text": "What happens if a unique card removed from the game via Coldhands attempts to re-enter the game, but another copy of that card is in its owner's dead pile?\nThe card cannot enter play, and remains removed from the game."
+  }
+]

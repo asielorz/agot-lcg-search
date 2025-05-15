@@ -26,6 +26,9 @@ jobs:
         with:
           elm-version: 0.19.1
 
+      - name: Generate code literals
+        run: cargo +nightly -Zscript ./scripts/generate_literals_source.rs ./cards.json ./faqs.json ./generated/Cards.elm ./generated/Faqs.elm
+
       - name: Generate HTML with tags for cards
         run: cargo +nightly -Zscript ./scripts/genhtml.rs ./template.html ./cards.json ./build/card
 

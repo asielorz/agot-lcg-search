@@ -17,7 +17,6 @@ type alias Model =
 type Msg 
     = Msg_QueryChanged String
     | Msg_Search
-    | Msg_DownloadJson
 
 init : Model
 init = { query = "" }
@@ -26,13 +25,6 @@ update : Navigation.Key -> Msg -> Model -> (Model, Cmd Msg)
 update key msg model = case msg of
     Msg_QueryChanged new_query -> ({ model | query = new_query }, Cmd.none)
     Msg_Search -> (model, Navigation.pushUrl key (Query.search_url { default_search_state | query = model.query }))
-    Msg_DownloadJson -> (model, download_json)
-
-download_json : Cmd msg
-download_json = Cards.all_cards
-    |> Json.Encode.list Card.card_to_json
-    |> Json.Encode.encode 4
-    |> File.Download.string "cards.json" "application/json"
 
 view : Model -> (String, UI.Element Msg)
 view model = 
@@ -58,7 +50,7 @@ view model =
                     ]
                 , UI.row [ UI.spacing 5, UI.centerX ] 
                     [ Widgets.link_button "Random card" "/random"
-                    , Widgets.simple_button "Download cards JSON" Msg_DownloadJson
+                    , Widgets.link_button "Download cards JSON" "/cards.json"
                     ]
                 ]
             ]

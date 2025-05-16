@@ -352,6 +352,7 @@ parse_legality_char : Char -> Result String Legality
 parse_legality_char c =  case c of
     'l' -> Ok Legality_Legal
     'r' -> Ok Legality_Restricted
+    'b' -> Ok Legality_Banned
     other -> Err <| "\"" ++ String.fromChar other ++ "\" is not a legality. Allowed legalities are 'l', 'r' and 'b'."
 
 parse_crest : Char -> Result String Crest

@@ -82,8 +82,10 @@ type alias Model =
     , influence_comparison : Comparison
     , joust_legal : Bool
     , joust_restricted : Bool
+    , joust_banned : Bool
     , melee_legal : Bool
     , melee_restricted : Bool
+    , melee_banned : Bool
     , icon_military : SearchIcon
     , icon_intrigue : SearchIcon
     , icon_power : SearchIcon
@@ -141,8 +143,10 @@ init =
     , influence_comparison = Query.Comparison_Equal
     , joust_legal = False
     , joust_restricted = False
+    , joust_banned = False
     , melee_legal = False
     , melee_restricted = False
+    , melee_banned = False
     , icon_military = SearchIcon_None
     , icon_intrigue = SearchIcon_None
     , icon_power = SearchIcon_None
@@ -337,15 +341,17 @@ int_row window curr_combo id value comparison value_change comparison_change =
             ]
 
 legality_joust_row : Model -> UI.Element Msg
-legality_joust_row model = UI.row [ UI.spacing 30 ]
-    [ text_checkbox [] "Legal" model.joust_legal (\b -> { model | joust_legal = b })
-    , text_checkbox [] "Restricted" model.joust_restricted (\b -> { model | joust_restricted = b })
+legality_joust_row model = UI.wrappedRow [ UI.spacing 30, UI.width UI.fill ]
+    [ text_checkbox [ UI.width UI.shrink ] "Legal" model.joust_legal (\b -> { model | joust_legal = b })
+    , text_checkbox [ UI.width UI.shrink ] "Restricted" model.joust_restricted (\b -> { model | joust_restricted = b })
+    , text_checkbox [ UI.width UI.shrink ] "Banned" model.joust_banned (\b -> { model | joust_banned = b })
     ]
 
 legality_melee_row : Model -> UI.Element Msg
-legality_melee_row model = UI.row [ UI.spacing 30 ]
-    [ text_checkbox [] "Legal" model.melee_legal (\b -> { model | melee_legal = b })
-    , text_checkbox [] "Restricted" model.melee_restricted (\b -> { model | melee_restricted = b })
+legality_melee_row model = UI.wrappedRow [ UI.spacing 30, UI.width UI.fill ]
+    [ text_checkbox [ UI.width UI.shrink ] "Legal" model.melee_legal (\b -> { model | melee_legal = b })
+    , text_checkbox [ UI.width UI.shrink ] "Restricted" model.melee_restricted (\b -> { model | melee_restricted = b })
+    , text_checkbox [ UI.width UI.shrink ] "Banned" model.melee_banned (\b -> { model | melee_banned = b })
     ]
 
 
@@ -584,8 +590,8 @@ make_advanced_search_query model =
             , int_part "initiative" model.initiative model.initiative_comparison
             , int_part "claim" model.claim model.claim_comparison
             , int_part "influence" model.influence model.influence_comparison
-            , bools_part "joust" ":" [ (model.joust_legal, "l"), (model.joust_restricted, "r") ]
-            , bools_part "melee" ":" [ (model.melee_legal, "l"), (model.melee_restricted, "r") ]
+            , bools_part "joust" ":" [ (model.joust_legal, "l"), (model.joust_restricted, "r"), (model.joust_banned, "b") ]
+            , bools_part "melee" ":" [ (model.melee_legal, "l"), (model.melee_restricted, "r"), (model.melee_banned, "b") ]
             , bools_part "icon" (search_comparison_str model.icon_comparison)
                 [ (model.icon_military == SearchIcon_Regular, "m")
                 , (model.icon_military == SearchIcon_Naval, "mn")

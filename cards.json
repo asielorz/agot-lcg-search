@@ -59681,7 +59681,7 @@
     "number": 97,
     "quantity": 3,
     "limit": 3,
-    "legality_joust": "Legal",
+    "legality_joust": "Banned",
     "legality_melee": "Legal",
     "illustrator": "Regis Moulun",
     "house": [
@@ -59718,7 +59718,7 @@
     "number": 98,
     "quantity": 3,
     "limit": 3,
-    "legality_joust": "Legal",
+    "legality_joust": "Banned",
     "legality_melee": "Legal",
     "illustrator": "Stacy Diana Clark",
     "house": [
@@ -59755,7 +59755,7 @@
     "number": 99,
     "quantity": 3,
     "limit": 3,
-    "legality_joust": "Legal",
+    "legality_joust": "Banned",
     "legality_melee": "Legal",
     "illustrator": "Carolina Eade",
     "house": [
@@ -75633,7 +75633,7 @@
     "quantity": 3,
     "limit": 1,
     "legality_joust": "Legal",
-    "legality_melee": "Legal",
+    "legality_melee": "Banned",
     "illustrator": "",
     "house": [
       "Greyjoy"
@@ -75642,7 +75642,7 @@
       "Greyjoy"
     ],
     "unique": false,
-    "rules_text": "House Greyjoy only.\nJoust format only.\nAfter a challenge resolves, the player who counted the lowest total STR must choose and kill a participating character he or she controls.",
+    "rules_text": "House Greyjoy only.\nAfter a challenge resolves, the player who counted the lowest total STR must choose and kill a participating character he or she controls.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],

@@ -286,6 +286,7 @@ legality_widget format legality =
         color = case legality of
             Legality_Legal -> rgb255 104 172 89
             Legality_Restricted -> rgb255 234 156 28
+            Legality_Banned -> rgb255 205 125 131
     in
         UI.row [ UI.spacing 10 ]
             [ UI.el 

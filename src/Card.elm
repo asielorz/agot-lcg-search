@@ -6,7 +6,7 @@ type CardType = CardType_Character | CardType_Event | CardType_Location | CardTy
 type House = House_Stark | House_Lannister | House_Baratheon | House_Targaryen | House_Martell | House_Greyjoy | House_Neutral
 type Icon = Icon_Military { naval : Bool } | Icon_Intrigue { naval : Bool } | Icon_Power { naval : Bool }
 type Crest = Crest_Holy | Crest_Noble | Crest_War | Crest_Learned | Crest_Shadow
-type Legality = Legality_Legal | Legality_Restricted
+type Legality = Legality_Legal | Legality_Restricted | Legality_Banned
 
 type alias Faq = 
     { cards_mentioned : List String
@@ -70,6 +70,7 @@ legality_to_string : Legality -> String
 legality_to_string legality = case legality of
     Legality_Legal -> "Legal"
     Legality_Restricted -> "Restricted"
+    Legality_Banned -> "Banned"
 
 
 house_to_string : House -> String

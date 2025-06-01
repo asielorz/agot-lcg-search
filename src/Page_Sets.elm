@@ -65,7 +65,7 @@ view_set_table_row even set window = UI.link
     , UI.padding 5
     , UI_Font.size 16
     ]
-    { url = "/search?q=set%3D" ++ CardSet.set_or_cycle_code_name set ++ "&dup=t"
+    { url = set |> CardSet.set_or_cycle_code_name |> CardSet.set_url
     , label = UI.row 
         [ UI.spacing 5
         , UI.width UI.fill

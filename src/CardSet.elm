@@ -319,6 +319,9 @@ set_icon set =
             Nothing -> "/images/sets/" ++ data.code_name ++ ".png"
             Just cycle -> "/images/sets/" ++ (data_of_cycle cycle).code_name ++ ".png"
 
+set_url : String -> String
+set_url code_name = "/search?q=set%3D" ++ code_name ++ "&dup=t"
+
 is_set_in_cycle : SetOrCycle -> Bool
 is_set_in_cycle set_or_cycle = case set_or_cycle of
     SetOrCycle_Cycle _ -> False

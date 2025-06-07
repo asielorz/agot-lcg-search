@@ -1,14 +1,10 @@
 module Page_Start exposing (Model, Msg, init, update, view)
 
-import Card
-import Cards
 import Query exposing (default_search_state)
 import Widgets
 
 import Browser.Navigation as Navigation
 import Element as UI
-import File.Download
-import Json.Encode
 
 type alias Model = 
     { query : String

@@ -150,7 +150,7 @@ page_url : Card -> String
 page_url card = "/card/" ++ card.id
 
 full_image_url : Card -> String
-full_image_url card = "/images/cards/full/" ++ card.id ++ ".jpg"
+full_image_url card = "/images/cards/full/" ++ card.id ++ ".webp"
 
 preview_image_url : Card -> String
 preview_image_url card = "/images/cards/preview/" ++ card.id ++ ".jpg"

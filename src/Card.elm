@@ -157,3 +157,6 @@ preview_image_url card = "/images/cards/preview/" ++ card.id ++ ".jpg"
 
 duplicate_id : Card -> String
 duplicate_id card = Maybe.withDefault card.id card.duplicate_id
+
+is_shadow : Card -> Bool
+is_shadow card = List.member Crest_Shadow card.crest

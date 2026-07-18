@@ -113,7 +113,7 @@ view_card_description attrs card = UI.column
     ] 
     ++ attrs) <|
     [ UI.row [ UI.spacing 10, UI.width UI.fill ]
-        [ cost_widget card.cost (List.member Crest_Shadow card.crest)
+        [ Widgets.cost_widget [] 30 card.cost (Card.is_shadow card)
         , if card.unique then UI.image [ UI_Border.rounded 3, UI.clip, UI.width (px 20) ] { src = "/images/unique.png", description = "Unique" } else UI.none
         , UI.text card.name
         , houses_widget card.house
@@ -183,32 +183,11 @@ apply_erratas offset text erratas = case erratas of
             ]
             ++ apply_erratas (offset + errata.end) after_errata rest
 
-image_with_text_inside : String -> String -> UI.Element msg
-image_with_text_inside source text = UI.image 
-    [ UI.width (px 30)
-    , UI.inFront <| UI.el
-        [ UI.centerX
-        , UI.centerY
-        , UI_Font.color (rgb 0 0 0)
-        , UI_Font.size 20
-        ]
-        (UI.text <| text)
-    ]
-    { src = source, description = "" }
-
-image_with_number_inside : String -> Int -> UI.Element msg
-image_with_number_inside source number = image_with_text_inside source (String.fromInt number)
-
-cost_widget : Maybe Int -> Bool -> UI.Element msg
-cost_widget cost is_shadow = case cost of
-    Nothing -> UI.none
-    Just actual_cost -> image_with_text_inside "/images/gold.png" <| String.fromInt actual_cost ++ if is_shadow then "s" else ""
-
 character_line : Card -> UI.Element msg
 character_line card = case card.strength of
     Nothing -> UI.none
     Just str -> UI.row [ UI.spacing 10 ]
-        [ image_with_number_inside "/images/strength.png" str
+        [ Widgets.image_with_number_inside "/images/strength.png" str
         , if List.member (Icon_Military { naval = False }) card.icons 
             then UI.image [ UI.width (px 30) ] { src = "/images/icons/military.png", description = "Military icon" }
             else UI.none
@@ -247,9 +226,9 @@ character_line card = case card.strength of
 plot_line : Card -> UI.Element msg
 plot_line card = case (card.income, card.initiative, card.claim) of
     (Just income, Just initiative, Just claim) -> UI.row [ UI.spacing 10 ]
-        [ image_with_number_inside "/images/gold.png" income
-        , image_with_number_inside "/images/initiative.png" initiative
-        , image_with_number_inside "/images/claim.png" claim
+        [ Widgets.image_with_number_inside "/images/gold.png" income
+        , Widgets.image_with_number_inside "/images/initiative.png" initiative
+        , Widgets.image_with_number_inside "/images/claim.png" claim
         ]
     _ -> UI.none
 

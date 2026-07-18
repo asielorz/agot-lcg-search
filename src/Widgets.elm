@@ -27,21 +27,28 @@ button_style_attributes =
         ]
     ]
 
-on_enter : msg -> UI.Attribute msg
-on_enter msg =
+on_key : String -> List (String, msg) -> UI.Attribute msg
+on_key event bindings =
     UI.htmlAttribute
-        (Html.Events.on "keyup"
+        (Html.Events.on event
             (Json.Decode.field "key" Json.Decode.string
                 |> Json.Decode.andThen
                     (\key ->
-                        if key == "Enter" then
-                            Json.Decode.succeed msg
-
-                        else
-                            Json.Decode.fail "Not the enter key"
+                        case bindings |> List.filter (\(key_name, _) -> key_name == key) |> List.head of
+                            Nothing -> Json.Decode.fail "Not one of the expected keys"
+                            Just (_, msg) -> Json.Decode.succeed msg
                     )
             )
         )
+
+on_key_up : List (String, msg) -> UI.Attribute msg
+on_key_up bindings = on_key "keyup" bindings
+
+on_key_down : List (String, msg) -> UI.Attribute msg
+on_key_down bindings = on_key "keydown" bindings
+
+on_enter : msg -> UI.Attribute msg
+on_enter msg = on_key_up [("Enter", msg)]
 
 input_text : List (UI.Attribute msg) -> String -> String -> (String -> msg) -> msg -> UI.Element msg
 input_text attrs query hint msg_query_change msg_search = UI_Input.text 
@@ -56,7 +63,7 @@ input_text attrs query hint msg_query_change msg_search = UI_Input.text
             { onChange = msg_query_change
             , text = query
             , placeholder = Just <| UI_Input.placeholder [] (UI.text hint)
-            , label =  UI_Input.labelHidden "Search"  
+            , label = UI_Input.labelHidden "Search"
             }
 
 search_bar : String -> (String -> msg) -> msg -> UI.Element msg
@@ -246,6 +253,28 @@ set_icon attrs s = UI.el (UI.width (px 36) :: attrs)
         , UI.centerX
         ]
         { src = CardSet.set_or_cycle_icon s, description = "" }
+
+image_with_text_inside : List (UI.Attribute msg) -> Int -> String -> String -> UI.Element msg
+image_with_text_inside attrs size source text = UI.image 
+    ([ UI.width (px size)
+     , UI.height (px size)
+    , UI.inFront <| UI.el
+        [ UI.centerX
+        , UI.centerY
+        , UI_Font.color (UI.rgb 0 0 0)
+        , UI_Font.size (size * 2 // 3)
+        ]
+        (UI.text <| text)
+    ] ++ attrs)
+    { src = source, description = "" }
+
+image_with_number_inside : String -> Int -> UI.Element msg
+image_with_number_inside source number = image_with_text_inside [] 30 source (String.fromInt number)
+
+cost_widget : List (UI.Attribute msg) -> Int -> Maybe Int -> Bool -> UI.Element msg
+cost_widget attrs size cost is_shadow = case cost of
+    Nothing -> UI.none
+    Just actual_cost -> image_with_text_inside attrs size "/images/gold.png" <| String.fromInt actual_cost ++ if is_shadow then "s" else ""
 
 link : List (UI.Attribute msg) -> { url : String, label : UI.Element msg } -> UI.Element msg
 link attributes args =

@@ -24,7 +24,7 @@ jobs:
       - name: Install Elm
         uses: jorelali/setup-elm@v6
         with:
-          elm-version: 0.19.1
+          elm-version: 0.19.2
 
       - name: Generate code literals
         run: cargo +nightly -Zscript ./scripts/generate_literals_source.rs ./cards.json ./faqs.json ./generated/Cards.elm ./generated/Faqs.elm

@@ -31,16 +31,14 @@ empty =
     }
 
 rename : String -> Deck -> Deck
-rename name deck = { deck | name = name }
+rename name deck = { deck | name = String.left 100 name }
 
 change_description : String -> Deck -> Deck
-change_description description deck = { deck | description = description }
+change_description description deck = { deck | description = String.left 5000 description }
 
 cards_of_type : CardType -> Deck -> List (Card, Int)
 cards_of_type card_type deck = case card_type of
-    CardType_House -> case deck.house of
-        Nothing -> []
-        Just card -> [(card, 1)]
+    CardType_House -> house_card_as_list deck
     CardType_Agenda -> deck.agendas
     CardType_Plot -> deck.plots
     CardType_Character -> deck.characters
@@ -66,8 +64,10 @@ add_card card deck =
         add_card_to_category : Card -> List (Card, Int) -> List (Card, Int)
         add_card_to_category = \c cards -> case List.Extra.findIndex (\(cc, _) -> cc.id == c.id) cards of
             Just index -> cards |> List.Extra.updateAt index (\(cc, amount) -> (cc, min (amount + 1) cc.limit))
-            Nothing -> (c, 1) :: cards |> List.sortBy (\(cc, _) -> (cc.cost |> Maybe.withDefault -1, CardSet.set_sort_order cc.set, cc.number))
-        cards_after = add_card_to_category card (cards_of_type card.card_type deck)
+            Nothing -> (c, 1) :: cards |> List.sortBy (\(cc, _) -> (Card.cost_sort_order cc, CardSet.set_sort_order cc.set, cc.number))
+        cards_after = if card.card_type == CardType_House
+            then [ (card, 1) ]
+            else add_card_to_category card (cards_of_type card.card_type deck)
     in
         set_cards_of_type card.card_type cards_after deck
 
@@ -87,4 +87,13 @@ remove_card card amount deck = if amount <= 0
                     |> \cards_after -> set_cards_of_type card.card_type cards_after deck
 
 number_of_cards_in_main_deck : Deck -> Int
-number_of_cards_in_main_deck deck = List.length deck.characters + List.length deck.attachments + List.length deck.events + List.length deck.locations
+number_of_cards_in_main_deck deck =
+    let
+        sum l = l |> List.map (\(_, n) -> n) |> List.sum
+    in
+        sum deck.characters + sum deck.attachments + sum deck.events + sum deck.locations
+
+house_card_as_list : Deck -> List (Card, Int)
+house_card_as_list deck = case deck.house of
+    Nothing -> []
+    Just card -> [(card, 1)]

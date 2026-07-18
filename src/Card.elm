@@ -146,6 +146,13 @@ crest_sort_order crest = case crest of
     Crest_Learned -> 3
     Crest_Shadow -> 4
 
+cost_sort_order : Card -> Int
+cost_sort_order card = case card.cost of
+    Nothing -> -1
+    Just cost -> if is_shadow card
+        then cost + 2
+        else cost
+
 page_url : Card -> String
 page_url card = "/card/" ++ card.id
 

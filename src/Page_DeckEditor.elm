@@ -56,6 +56,7 @@ type Msg
     | Msg_FocusSearch
     | Msg_UnfocusSearch
     | Msg_SearchSelectedScroll Int
+    | Msg_SearchSelect Int
     | Msg_AddCurrent
     | Msg_HoverCard String
     | Msg_StopHover
@@ -63,7 +64,7 @@ type Msg
     | Msg_RemoveCard Card Int
 
 update : Msg -> Model -> (Model, Cmd Msg)
-update msg model = case msg of
+update msg model = case Debug.log "update" msg of
     Msg_Noop -> (model, Cmd.none)
     Msg_ChangeName new_name -> ({ model | deck = Deck.rename new_name model.deck }, Cmd.none)
     Msg_ChangeDescription new_description -> ({ model | deck = Deck.change_description new_description model.deck }, Cmd.none)
@@ -71,6 +72,7 @@ update msg model = case msg of
     Msg_FocusSearch -> (update_search_state model.search_buffer model, Cmd.none)
     Msg_UnfocusSearch -> ({ model | search_state = Nothing }, Cmd.none)
     Msg_SearchSelectedScroll scroll -> ({ model | search_state = scroll_search_state scroll model.search_state }, Cmd.none)
+    Msg_SearchSelect index -> ({ model | search_state = set_search_state_index index model.search_state }, Cmd.none)
     Msg_AddCurrent -> (add_current model, Cmd.none)
     Msg_HoverCard card_id -> ({ model | hovered_card_id = card_id }, Cmd.none)
     Msg_StopHover -> ({ model | hovered_card_id = "" }, Cmd.none)
@@ -88,11 +90,18 @@ make_search_state query prev_state =
             Nothing -> Just { candidates = search_candidates query, index = 0 }
             Just state ->
                 let new_candidates = search_candidates query
-                in Just { candidates = new_candidates, index = min state.index (List.length new_candidates - 1) }
+                in Just { candidates = new_candidates, index = clamp_index new_candidates state.index }
+
+set_search_state_index : Int -> Maybe SearchState -> Maybe SearchState
+set_search_state_index new_index search_state = search_state |> Maybe.map
+    (\state -> {state | index = clamp_index state.candidates new_index})
 
 scroll_search_state : Int -> Maybe SearchState -> Maybe SearchState
 scroll_search_state scroll search_state = search_state |> Maybe.map
-    (\state -> {state | index = clamp 0 (List.length state.candidates - 1) (state.index + scroll)})
+    (\state -> {state | index = clamp_index state.candidates (state.index + scroll)})
+
+clamp_index : List Card -> Int -> Int
+clamp_index candidates index = clamp 0 (max 0 (List.length candidates - 1)) index
 
 search_candidates : String -> List Card
 search_candidates query = 
@@ -121,6 +130,7 @@ deck_editor : Model -> UI.Element Msg
 deck_editor model = UI.column 
     [ UI.width <| UI.maximum 800 UI.fill
     , UI.centerX
+    , UI_Font.size 16
     ]
     [ UI_Input.text
         [ UI_Background.color (UI.rgba 0 0 0 0)
@@ -151,23 +161,36 @@ deck_editor model = UI.column
         , Widgets.on_key_down [("ArrowUp", Msg_SearchSelectedScroll -1), ("ArrowDown", Msg_SearchSelectedScroll 1)]
         ]
         model.search_buffer "Search for a card..." Msg_ChangeSearch Msg_AddCurrent
-    , deck_category "Agenda" model.deck.agendas model.hovered_card_id Nothing
-    , deck_category "Plots" model.deck.plots model.hovered_card_id Nothing
-    , deck_category "Characters" model.deck.characters model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck model.deck)
-    , deck_category "Attachments" model.deck.attachments model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck model.deck)
-    , deck_category "Events" model.deck.events model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck model.deck)
-    , deck_category "Locations" model.deck.locations model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck model.deck)
+    , deck_view model
+    ]
+
+deck_view : Model -> UI.Element Msg
+deck_view model = UI.row [ UI.width UI.fill, UI.spacing 20 ]
+    [ UI.column [ UI.width UI.fill, UI.alignTop ]
+        [ deck_category "House" (Deck.house_card_as_list model.deck) model.hovered_card_id Nothing
+        , deck_category "Agenda" model.deck.agendas model.hovered_card_id Nothing
+        , deck_category "Plots" model.deck.plots model.hovered_card_id Nothing
+        , deck_category "Characters" model.deck.characters model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck model.deck)
+        ]
+    , UI.column [ UI.width UI.fill, UI.alignTop ]
+        [ deck_category "Attachments" model.deck.attachments model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck model.deck)
+        , deck_category "Events" model.deck.events model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck model.deck)
+        , deck_category "Locations" model.deck.locations model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck model.deck)
+        ]
     ]
 
 deck_category : String -> List (Card, Int) -> String -> Maybe Int -> UI.Element Msg
 deck_category name cards hovered_card_id total = UI.column [ UI.width UI.fill, UI.paddingEach { top = 20, bottom = 0, left = 0, right = 0 }, UI.spacing 5 ]
     <| (deck_category_heading name (List.length cards) total) :: (List.map (card_row hovered_card_id) cards)
 
+plural : Int -> String
+plural amount = if amount == 1 then "" else "s"
+
 deck_category_heading : String -> Int -> Maybe Int -> UI.Element msg
 deck_category_heading name card_amount total = UI.row [ UI.width UI.fill ]
     [ UI.el [ UI_Font.bold, UI_Font.size 15 ] (UI.text name)
     , UI.el [ UI_Font.size 12, UI.alignRight ] <| UI.text <| case total of
-        Nothing -> String.fromInt card_amount ++ " cards"
+        Nothing -> String.fromInt card_amount ++ " card" ++ plural card_amount
         Just t -> String.fromInt card_amount ++ "/" ++ String.fromInt t ++ " cards"
     ]
 
@@ -195,12 +218,12 @@ card_row hovered_card_id (card, amount) = UI.row
         ]
     , UI.text <| String.fromInt amount
     , Widgets.set_icon [] (SetOrCycle_Set card.set)
-    , UI.el [ UI.width (px 30), UI_Font.size 16 ] <| UI.text <| "#" ++ String.fromInt card.number
+    , UI.el [ UI.width (px 30), UI_Font.size 12 ] <| UI.text <| "#" ++ String.fromInt card.number
     , UI.text card.name
     , Widgets.cost_widget [ UI.alignRight ] 20 card.cost (Card.is_shadow card)
     ]
 
-candidate_list : Maybe SearchState -> UI.Element msg
+candidate_list : Maybe SearchState -> UI.Element Msg
 candidate_list search_state = case search_state of
     Nothing -> UI.none
     Just state -> if List.isEmpty state.candidates
@@ -213,16 +236,18 @@ candidate_list search_state = case search_state of
             , UI_Background.color Colors.background
             , UI.width UI.fill
             ] 
-            (List.indexedMap (\i c -> candidate c (i == state.index)) state.candidates)
+            (List.indexedMap (\i c -> candidate c i (i == state.index)) state.candidates)
 
-candidate : Card -> Bool -> UI.Element msg
-candidate card focused = UI.row 
+candidate : Card -> Int -> Bool -> UI.Element Msg
+candidate card index focused = UI.row 
     [ UI.spacing 10
     , UI_Background.color <| if focused then (UI.rgb255 54 122 177) else Colors.background
     , UI.width UI.fill
+    , UI_Events.onMouseEnter <| Msg_SearchSelect index
+    , UI_Events.onClick <| Msg_AddCurrent
     ]
     [ Widgets.set_icon [] (SetOrCycle_Set card.set)
-    , UI.el [ UI.width (px 30), UI_Font.size 16 ] <| UI.text <| "#" ++ String.fromInt card.number
+    , UI.el [ UI.width (px 30), UI_Font.size 12 ] <| UI.text <| "#" ++ String.fromInt card.number
     , UI.text card.name
     ]
 

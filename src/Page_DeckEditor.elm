@@ -3,6 +3,7 @@ module Page_DeckEditor exposing (main)
 import Card exposing (Card)
 import CardSet exposing (SetOrCycle(..))
 import Cards
+import ChangeStack exposing (ChangeStack)
 import Colors
 import Deck exposing (Deck)
 import DeckLegality
@@ -34,7 +35,7 @@ type alias SearchState =
     }
 
 type alias Model =
-    { deck : Deck
+    { deck : ChangeStack Deck
     , search_buffer : String
     , search_state : Maybe SearchState
     , hovered_card_id : String
@@ -42,7 +43,7 @@ type alias Model =
 
 init : () -> (Model, Cmd Msg)
 init = \_ -> 
-    (   { deck = Deck.empty
+    (   { deck = ChangeStack.new Deck.empty
         , search_buffer = ""
         , search_state = Nothing 
         , hovered_card_id = ""
@@ -51,7 +52,8 @@ init = \_ ->
     )
 
 type Msg 
-    = Msg_Noop
+    = Msg_Undo
+    | Msg_Redo
     | Msg_ChangeName String
     | Msg_ChangeDescription String
     | Msg_ChangeFormatJoust Bool
@@ -69,11 +71,12 @@ type Msg
 
 update : Msg -> Model -> (Model, Cmd Msg)
 update msg model = case msg of
-    Msg_Noop -> (model, Cmd.none)
-    Msg_ChangeName new_name -> ({ model | deck = Deck.rename new_name model.deck }, Cmd.none)
-    Msg_ChangeDescription new_description -> ({ model | deck = Deck.change_description new_description model.deck }, Cmd.none)
-    Msg_ChangeFormatJoust joust -> ({ model | deck = Deck.make_legal_in_joust joust model.deck }, Cmd.none)
-    Msg_ChangeFormatMelee melee -> ({ model | deck = Deck.make_legal_in_melee melee model.deck }, Cmd.none)
+    Msg_Undo -> ({ model | deck = ChangeStack.undo model.deck }, Cmd.none)
+    Msg_Redo -> ({ model | deck = ChangeStack.redo model.deck }, Cmd.none)
+    Msg_ChangeName new_name -> ({ model | deck = ChangeStack.update (Deck.rename new_name) model.deck }, Cmd.none)
+    Msg_ChangeDescription new_description -> ({ model | deck = ChangeStack.update (Deck.change_description new_description) model.deck }, Cmd.none)
+    Msg_ChangeFormatJoust joust -> ({ model | deck = ChangeStack.update (Deck.make_legal_in_joust joust) model.deck }, Cmd.none)
+    Msg_ChangeFormatMelee melee -> ({ model | deck = ChangeStack.update (Deck.make_legal_in_melee melee) model.deck }, Cmd.none)
     Msg_ChangeSearch new_buffer -> (update_search_state new_buffer model, Cmd.none)
     Msg_FocusSearch -> (update_search_state model.search_buffer model, Cmd.none)
     Msg_UnfocusSearch -> ({ model | search_state = Nothing }, Cmd.none)
@@ -82,11 +85,11 @@ update msg model = case msg of
     Msg_AddCurrent -> (add_current model, Cmd.none)
     Msg_HoverCard card_id -> ({ model | hovered_card_id = card_id }, Cmd.none)
     Msg_StopHover -> ({ model | hovered_card_id = "" }, Cmd.none)
-    Msg_AddCard card -> ({ model | deck = Deck.add_card card model.deck }, Cmd.none)
-    Msg_RemoveCard card amount -> ({ model | deck = Deck.remove_card card amount model.deck }, Cmd.none)
+    Msg_AddCard card -> ({ model | deck = ChangeStack.update (Deck.add_card card) model.deck }, Cmd.none)
+    Msg_RemoveCard card amount -> ({ model | deck = ChangeStack.update (Deck.remove_card card amount) model.deck }, Cmd.none)
 
 update_search_state : String -> Model -> Model
-update_search_state new_buffer model = { model | search_buffer = new_buffer, search_state = make_search_state new_buffer model.deck model.search_state }
+update_search_state new_buffer model = { model | search_buffer = new_buffer, search_state = make_search_state new_buffer (ChangeStack.current model.deck) model.search_state }
 
 make_search_state : String -> Deck -> Maybe SearchState -> Maybe SearchState
 make_search_state query deck prev_state =
@@ -125,7 +128,7 @@ add_current model = case model.search_state of
     Nothing -> model
     Just state -> case List.Extra.getAt state.index state.candidates of
         Nothing -> model
-        Just card -> { model | deck = Deck.add_card card model.deck } |> update_search_state ""
+        Just card -> { model | deck = ChangeStack.update (Deck.add_card card) model.deck } |> update_search_state ""
 
 view : Model -> Browser.Document Msg
 view model = Widgets.layout 
@@ -134,62 +137,70 @@ view model = Widgets.layout
     )
 
 deck_editor : Model -> UI.Element Msg
-deck_editor model = UI.column 
-    [ UI.width <| UI.maximum 800 UI.fill
-    , UI.centerX
-    , UI_Font.size 16
-    ]
-    [ UI_Input.text
-        [ UI_Background.color (UI.rgba 0 0 0 0)
-        , UI_Border.width 0
-        , UI_Font.size 20
-        ]
-        { text = model.deck.name
-        , onChange = Msg_ChangeName
-        , placeholder = Just <| UI_Input.placeholder [] (UI.text "Name your deck...")
-        , label = UI_Input.labelHidden "Name"
-        }
-    , UI_Input.multiline
-        [ UI_Background.color (UI.rgba 0 0 0 0)
-        , UI_Border.width 0
-        , UI_Font.size 15
-        ]
-        { text = model.deck.description
-        , onChange = Msg_ChangeDescription
-        , placeholder = Just <| UI_Input.placeholder [] (UI.text "Describe your deck...")
-        , label = UI_Input.labelHidden "Description"
-        , spellcheck = True
-        }
-    , UI.row [ UI.spacing 40, UI.padding 10 ]
-        [ UI.text "Format"
-        , UI_Input.checkbox [] { onChange = Msg_ChangeFormatJoust, checked = model.deck.joust, icon = UI_Input.defaultCheckbox, label = UI_Input.labelLeft [] (UI.text "Joust") }
-        , UI_Input.checkbox [] { onChange = Msg_ChangeFormatMelee, checked = model.deck.melee, icon = UI_Input.defaultCheckbox, label = UI_Input.labelLeft [] (UI.text "Melee") }
-        ]
-    , Widgets.input_text 
-        [ UI_Events.onFocus <| Msg_FocusSearch
-        , UI_Events.onLoseFocus <| Msg_UnfocusSearch
-        , UI.below <| candidate_list model.search_state
-        , UI.onRight <| candidate_preview model.search_state
-        , Widgets.on_key_down [("ArrowUp", Msg_SearchSelectedScroll -1), ("ArrowDown", Msg_SearchSelectedScroll 1)]
-        ]
-        model.search_buffer "Search for a card..." Msg_ChangeSearch Msg_AddCurrent
-    , deck_view model
-    , UI.el [ UI.height (px 30) ] UI.none
-    , deck_legality_diagnostics model.deck
-    ]
+deck_editor model = 
+    let
+        deck = ChangeStack.current model.deck
+    in
+        UI.column 
+            [ UI.width <| UI.maximum 800 UI.fill
+            , UI.centerX
+            , UI_Font.size 16
+            , Widgets.on_key_down 
+                [ ("z", Widgets.modifiers_ctrl, Msg_Undo)
+                , ("y", Widgets.modifiers_ctrl, Msg_Redo)
+                ]
+            ]
+            [ UI_Input.text
+                [ UI_Background.color (UI.rgba 0 0 0 0)
+                , UI_Border.width 0
+                , UI_Font.size 20
+                ]
+                { text = deck.name
+                , onChange = Msg_ChangeName
+                , placeholder = Just <| UI_Input.placeholder [] (UI.text "Name your deck...")
+                , label = UI_Input.labelHidden "Name"
+                }
+            , UI_Input.multiline
+                [ UI_Background.color (UI.rgba 0 0 0 0)
+                , UI_Border.width 0
+                , UI_Font.size 15
+                ]
+                { text = deck.description
+                , onChange = Msg_ChangeDescription
+                , placeholder = Just <| UI_Input.placeholder [] (UI.text "Describe your deck...")
+                , label = UI_Input.labelHidden "Description"
+                , spellcheck = True
+                }
+            , UI.row [ UI.spacing 40, UI.padding 10 ]
+                [ UI.text "Format"
+                , UI_Input.checkbox [] { onChange = Msg_ChangeFormatJoust, checked = deck.joust, icon = UI_Input.defaultCheckbox, label = UI_Input.labelLeft [] (UI.text "Joust") }
+                , UI_Input.checkbox [] { onChange = Msg_ChangeFormatMelee, checked = deck.melee, icon = UI_Input.defaultCheckbox, label = UI_Input.labelLeft [] (UI.text "Melee") }
+                ]
+            , Widgets.input_text 
+                [ UI_Events.onFocus <| Msg_FocusSearch
+                , UI_Events.onLoseFocus <| Msg_UnfocusSearch
+                , UI.below <| candidate_list model.search_state
+                , UI.onRight <| candidate_preview model.search_state
+                , Widgets.on_key_down [("ArrowUp", Widgets.no_modifiers, Msg_SearchSelectedScroll -1), ("ArrowDown", Widgets.no_modifiers, Msg_SearchSelectedScroll 1)]
+                ]
+                model.search_buffer "Search for a card..." Msg_ChangeSearch Msg_AddCurrent
+            , deck_view model deck
+            , UI.el [ UI.height (px 30) ] UI.none
+            , deck_legality_diagnostics deck
+            ]
 
-deck_view : Model -> UI.Element Msg
-deck_view model = UI.row [ UI.width UI.fill, UI.spacing 20 ]
+deck_view : Model -> Deck -> UI.Element Msg
+deck_view model deck = UI.row [ UI.width UI.fill, UI.spacing 20 ]
     [ UI.column [ UI.width UI.fill, UI.alignTop ]
-        [ deck_category "House" (Deck.house_card_as_list model.deck) model.hovered_card_id Nothing
-        , deck_category "Agenda" model.deck.agendas model.hovered_card_id Nothing
-        , deck_category "Plots" model.deck.plots model.hovered_card_id Nothing
-        , deck_category "Characters" model.deck.characters model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck model.deck)
+        [ deck_category "House" (Deck.house_card_as_list deck) model.hovered_card_id Nothing
+        , deck_category "Agenda" deck.agendas model.hovered_card_id Nothing
+        , deck_category "Plots" deck.plots model.hovered_card_id Nothing
+        , deck_category "Characters" deck.characters model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck)
         ]
     , UI.column [ UI.width UI.fill, UI.alignTop ]
-        [ deck_category "Attachments" model.deck.attachments model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck model.deck)
-        , deck_category "Events" model.deck.events model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck model.deck)
-        , deck_category "Locations" model.deck.locations model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck model.deck)
+        [ deck_category "Attachments" deck.attachments model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck)
+        , deck_category "Events" deck.events model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck)
+        , deck_category "Locations" deck.locations model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck)
         ]
     ]
 

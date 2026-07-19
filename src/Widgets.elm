@@ -27,13 +27,42 @@ button_style_attributes =
         ]
     ]
 
-on_key : String -> List (String, msg) -> UI.Attribute msg
+type alias Modifiers = { ctrl : Bool, alt : Bool, shift : Bool }
+no_modifiers : Modifiers
+no_modifiers = { ctrl = False, alt = False, shift = False }
+modifiers_ctrl : Modifiers
+modifiers_ctrl = { ctrl = True, alt = False, shift = False }
+modifiers_alt : Modifiers
+modifiers_alt = { ctrl = False, alt = True, shift = False }
+modifiers_shift : Modifiers
+modifiers_shift = { ctrl = False, alt = True, shift = True }
+
+on_key : String -> List (String, Modifiers, msg) -> UI.Attribute msg
 on_key event bindings =
     UI.htmlAttribute
         (Html.Events.on event
-            (Json.Decode.field "key" Json.Decode.string
+            (Json.Decode.map4
+                (\a b c d -> (a, Modifiers b c d))
+                (Json.Decode.field "key" Json.Decode.string)
+                (Json.Decode.field "ctrlKey" Json.Decode.bool)
+                (Json.Decode.field "altKey" Json.Decode.bool)
+                (Json.Decode.field "shiftKey" Json.Decode.bool)
                 |> Json.Decode.andThen
-                    (\key ->
+                    (\(key, { ctrl, alt, shift }) ->
+                        case bindings |> List.filter (\(key_name, mods, _) -> key_name == key && mods.ctrl == ctrl && mods.alt == alt && mods.shift == shift) |> List.head of
+                            Nothing -> Json.Decode.fail "Not one of the expected keys"
+                            Just (_, _, msg) -> Json.Decode.succeed msg
+                    )
+            )
+        )
+
+on_ctrl_key : String -> List (String, msg) -> UI.Attribute msg
+on_ctrl_key event bindings =
+    UI.htmlAttribute
+        (Html.Events.on event
+            (Json.Decode.map2 Tuple.pair (Json.Decode.field "key" Json.Decode.string) (Json.Decode.field "ctrlKey" Json.Decode.bool)
+                |> Json.Decode.andThen
+                    (\(key, ctrl) ->
                         case bindings |> List.filter (\(key_name, _) -> key_name == key) |> List.head of
                             Nothing -> Json.Decode.fail "Not one of the expected keys"
                             Just (_, msg) -> Json.Decode.succeed msg
@@ -41,14 +70,14 @@ on_key event bindings =
             )
         )
 
-on_key_up : List (String, msg) -> UI.Attribute msg
+on_key_up : List (String, Modifiers, msg) -> UI.Attribute msg
 on_key_up bindings = on_key "keyup" bindings
 
-on_key_down : List (String, msg) -> UI.Attribute msg
+on_key_down : List (String, Modifiers, msg) -> UI.Attribute msg
 on_key_down bindings = on_key "keydown" bindings
 
 on_enter : msg -> UI.Attribute msg
-on_enter msg = on_key_up [("Enter", msg)]
+on_enter msg = on_key_up [("Enter", no_modifiers, msg)]
 
 input_text : List (UI.Attribute msg) -> String -> String -> (String -> msg) -> msg -> UI.Element msg
 input_text attrs query hint msg_query_change msg_search = UI_Input.text 

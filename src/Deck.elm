@@ -4,10 +4,13 @@ import Card exposing (Card, CardType(..))
 import CardSet
 
 import List.Extra
+import Card exposing (House(..))
 
 type alias Deck = 
     { name : String
     , description : String
+    , joust : Bool
+    , melee : Bool
     , house : Maybe Card
     , agendas : List (Card, Int)
     , plots : List (Card, Int)
@@ -21,6 +24,8 @@ empty : Deck
 empty = 
     { name = ""
     , description = ""
+    , joust = False
+    , melee = False
     , house = Nothing
     , agendas = []
     , plots = []
@@ -35,6 +40,12 @@ rename name deck = { deck | name = String.left 100 name }
 
 change_description : String -> Deck -> Deck
 change_description description deck = { deck | description = String.left 5000 description }
+
+make_legal_in_joust : Bool -> Deck -> Deck
+make_legal_in_joust joust deck = { deck | joust = joust }
+
+make_legal_in_melee : Bool -> Deck -> Deck
+make_legal_in_melee melee deck = { deck | melee = melee }
 
 cards_of_type : CardType -> Deck -> List (Card, Int)
 cards_of_type card_type deck = case card_type of
@@ -86,14 +97,25 @@ remove_card card amount deck = if amount <= 0
                     |> List.filter (\(_, a) -> a > 0)
                     |> \cards_after -> set_cards_of_type card.card_type cards_after deck
 
+has_card : Card -> Deck -> Bool
+has_card card deck = cards_of_type card.card_type deck
+    |> List.any (\(c, _) -> c.id == card.id)
+
 number_of_cards_in_main_deck : Deck -> Int
 number_of_cards_in_main_deck deck =
-    let
-        sum l = l |> List.map (\(_, n) -> n) |> List.sum
-    in
-        sum deck.characters + sum deck.attachments + sum deck.events + sum deck.locations
+    count_cards deck.characters + count_cards deck.attachments + count_cards deck.events + count_cards deck.locations
 
 house_card_as_list : Deck -> List (Card, Int)
 house_card_as_list deck = case deck.house of
     Nothing -> []
     Just card -> [(card, 1)]
+
+count_cards : List (Card, Int) -> Int
+count_cards cards = cards |> List.map (\(_, n) -> n) |> List.sum
+
+all_cards : Deck -> List (Card, Int)
+all_cards deck = house_card_as_list deck ++ deck.agendas ++ deck.plots ++ deck.characters ++ deck.attachments ++ deck.events ++ deck.locations
+
+house : Deck -> Maybe House
+house deck = deck.house
+    |> Maybe.map (\card -> card.house |> List.head |> Maybe.withDefault House_Neutral)

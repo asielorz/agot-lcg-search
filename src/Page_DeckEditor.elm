@@ -180,7 +180,6 @@ deck_editor model =
                 [ UI_Events.onFocus <| Msg_FocusSearch
                 , UI_Events.onLoseFocus <| Msg_UnfocusSearch
                 , UI.below <| candidate_list model.search_state
-                , UI.onRight <| candidate_preview model.search_state
                 , Widgets.on_key_down [("ArrowUp", Widgets.no_modifiers, Msg_SearchSelectedScroll -1), ("ArrowDown", Widgets.no_modifiers, Msg_SearchSelectedScroll 1)]
                 ]
                 model.search_buffer "Search for a card..." Msg_ChangeSearch Msg_AddCurrent
@@ -192,21 +191,21 @@ deck_editor model =
 deck_view : Model -> Deck -> UI.Element Msg
 deck_view model deck = UI.row [ UI.width UI.fill, UI.spacing 20 ]
     [ UI.column [ UI.width UI.fill, UI.alignTop ]
-        [ deck_category "House" (Deck.house_card_as_list deck) model.hovered_card_id Nothing
-        , deck_category "Agenda" deck.agendas model.hovered_card_id Nothing
-        , deck_category "Plots" deck.plots model.hovered_card_id Nothing
-        , deck_category "Characters" deck.characters model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck)
+        [ deck_category "House" (Deck.house_card_as_list deck) model.hovered_card_id Nothing UI.onRight
+        , deck_category "Agenda" deck.agendas model.hovered_card_id Nothing UI.onRight
+        , deck_category "Plots" deck.plots model.hovered_card_id Nothing UI.onRight
+        , deck_category "Characters" deck.characters model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck) UI.onRight
         ]
     , UI.column [ UI.width UI.fill, UI.alignTop ]
-        [ deck_category "Attachments" deck.attachments model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck)
-        , deck_category "Events" deck.events model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck)
-        , deck_category "Locations" deck.locations model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck)
+        [ deck_category "Attachments" deck.attachments model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck) UI.onLeft
+        , deck_category "Events" deck.events model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck) UI.onLeft
+        , deck_category "Locations" deck.locations model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck) UI.onLeft
         ]
     ]
 
-deck_category : String -> List (Card, Int) -> String -> Maybe Int -> UI.Element Msg
-deck_category name cards hovered_card_id total = UI.column [ UI.width UI.fill, UI.paddingEach { top = 20, bottom = 0, left = 0, right = 0 }, UI.spacing 5 ]
-    <| (deck_category_heading name (Deck.count_cards cards) total) :: (List.map (card_row hovered_card_id) cards)
+deck_category : String -> List (Card, Int) -> String -> Maybe Int -> (UI.Element Msg -> UI.Attribute Msg) -> UI.Element Msg
+deck_category name cards hovered_card_id total preview_pos = UI.column [ UI.width UI.fill, UI.paddingEach { top = 20, bottom = 0, left = 0, right = 0 }, UI.spacing 5 ]
+    <| (deck_category_heading name (Deck.count_cards cards) total) :: (List.map (card_row hovered_card_id preview_pos) cards)
 
 deck_category_heading : String -> Int -> Maybe Int -> UI.Element msg
 deck_category_heading name card_amount total = UI.row [ UI.width UI.fill ]
@@ -226,13 +225,13 @@ card_amount_button_style_attributes =
     ]
 
 
-card_row : String -> (Card, Int) -> UI.Element Msg
-card_row hovered_card_id (card, amount) = UI.row
+card_row : String -> (UI.Element Msg -> UI.Attribute Msg) -> (Card, Int) -> UI.Element Msg
+card_row hovered_card_id preview_pos (card, amount) = UI.row
     [ UI.spacing 10
     , UI.width UI.fill
     , UI_Events.onMouseEnter <| Msg_HoverCard card.id
     , UI_Events.onMouseLeave <| Msg_StopHover
-    , UI.onRight <| if hovered_card_id == card.id then card_preview card else UI.none
+    , preview_pos <| if hovered_card_id == card.id then card_preview card else UI.none
     ]
     [ UI.column [ UI_Font.size 12 ]
         [ UI_Input.button card_amount_button_style_attributes { onPress = Just <| Msg_AddCard card, label = Fontawesome.text [ UI.centerX ] "\u{f0d8}" } -- fa-caret_up
@@ -250,15 +249,19 @@ candidate_list search_state = case search_state of
     Nothing -> UI.none
     Just state -> if List.isEmpty state.candidates
         then UI.none
-        else UI.column 
-            [ UI.padding 5
-            , UI.spacing 5
-            , UI_Border.width 1
-            , UI_Border.color Colors.border
-            , UI_Background.color Colors.background
-            , UI.width UI.fill
-            ] 
-            (List.indexedMap (\i c -> candidate c i (i == state.index)) state.candidates)
+        else UI.row [ UI.width UI.fill ]
+            [ UI.column 
+                [ UI.padding 5
+                , UI.spacing 5
+                , UI_Border.width 1
+                , UI_Border.color Colors.border
+                , UI_Background.color Colors.background
+                , UI.width UI.fill
+                , UI.alignTop
+                ] 
+                (List.indexedMap (\i c -> candidate c i (i == state.index)) state.candidates)
+            , candidate_preview search_state
+            ]
 
 candidate : Card -> Int -> Bool -> UI.Element Msg
 candidate card index focused = UI.row 

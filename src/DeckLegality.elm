@@ -137,7 +137,7 @@ rule_cards_belong_to_house deck =
             Just house -> Deck.all_cards deck
                 |> List.filterMap (\(card, _) -> if (card.legal_in_houses |> List.Extra.elemIndex house |> Maybe.Extra.isJust) || (city_of_shadows && Card.is_shadow card)
                     then Nothing
-                    else Just <| "Card " ++ card.name ++ " is only allowed in decks of house " ++ (card.legal_in_houses |> List.map Card.house_to_string |> Utils.join_human_readable) ++ " but your deck has house " ++ Card.house_to_string house ++ "."
+                    else Just <| "Card \"" ++ card.name ++ "\" is only allowed in decks of house " ++ (card.legal_in_houses |> List.map Card.house_to_string |> Utils.join_human_readable) ++ " but your deck has house " ++ Card.house_to_string house ++ "."
                 )
 
 rule_dark_wings_dark_words_event_limit : Deck -> List String

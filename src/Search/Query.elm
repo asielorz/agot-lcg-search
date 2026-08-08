@@ -1,4 +1,4 @@
-module Query exposing (parse, search_url, search_url_from, search, Comparison(..), split_words_quoted, SearchState, default_search_state, encode, decode)
+module Search.Query exposing (parse, search_url, search_url_from, search, Comparison(..), split_words_quoted, SearchState, default_search_state, encode, decode)
 
 import Card exposing(Card, CardType, House, Legality, Icon, Crest, Legality(..), CardType(..), Crest(..), House(..), Icon(..))
 import CardSet exposing (SetOrCycle(..), Set)

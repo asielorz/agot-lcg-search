@@ -1,6 +1,6 @@
-module Page_Start exposing (Model, Msg, init, update, view)
+module Search.Page_Start exposing (Model, Msg, init, update, view)
 
-import Query exposing (default_search_state)
+import Search.Query as Query exposing (default_search_state)
 import Widgets
 
 import Browser.Navigation as Navigation

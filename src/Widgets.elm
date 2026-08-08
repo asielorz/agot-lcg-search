@@ -56,20 +56,6 @@ on_key event bindings =
             )
         )
 
-on_ctrl_key : String -> List (String, msg) -> UI.Attribute msg
-on_ctrl_key event bindings =
-    UI.htmlAttribute
-        (Html.Events.on event
-            (Json.Decode.map2 Tuple.pair (Json.Decode.field "key" Json.Decode.string) (Json.Decode.field "ctrlKey" Json.Decode.bool)
-                |> Json.Decode.andThen
-                    (\(key, ctrl) ->
-                        case bindings |> List.filter (\(key_name, _) -> key_name == key) |> List.head of
-                            Nothing -> Json.Decode.fail "Not one of the expected keys"
-                            Just (_, msg) -> Json.Decode.succeed msg
-                    )
-            )
-        )
-
 on_key_up : List (String, Modifiers, msg) -> UI.Attribute msg
 on_key_up bindings = on_key "keyup" bindings
 

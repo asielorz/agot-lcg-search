@@ -1,4 +1,4 @@
-module Deck exposing (..)
+module Decks.Deck exposing (..)
 
 import Card exposing (Card, CardType(..))
 import CardSet

@@ -1,6 +1,6 @@
-module Page_404 exposing (Model, Msg, init, update, view)
+module Search.Page_404 exposing (Model, Msg, init, update, view)
 
-import Query exposing (default_search_state)
+import Search.Query as Query exposing (default_search_state)
 import Widgets
 import Window exposing (Window)
 

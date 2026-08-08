@@ -1,4 +1,4 @@
-module Text_Syntax exposing (text)
+module Search.Text_Syntax exposing (text)
 
 text : String
 text = """

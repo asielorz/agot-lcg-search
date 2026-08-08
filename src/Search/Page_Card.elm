@@ -1,11 +1,11 @@
-module Page_Card exposing (Model, Msg, init, update, view)
+module Search.Page_Card exposing (Model, Msg, init, update, view)
 
 import Card exposing (Card, CardType(..), Crest(..), Icon(..), Legality(..), Errata, House)
 import Cards
 import CardSet exposing (SetOrCycle(..))
 import Colors
 import Faqs
-import Query exposing (default_search_state)
+import Search.Query as Query exposing (default_search_state)
 import Widgets
 import Window exposing (Window)
 

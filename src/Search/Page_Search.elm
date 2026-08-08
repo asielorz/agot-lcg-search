@@ -1,4 +1,4 @@
-module Page_Search exposing (Model, Msg, init, update, view)
+module Search.Page_Search exposing (Model, Msg, init, update, view)
 
 import Card exposing (Card, CardType(..))
 import Cards exposing(all_cards)
@@ -9,7 +9,7 @@ import Browser.Navigation as Navigation
 import Element as UI exposing (px)
 import Element.Border as UI_Border
 import Element.Font as UI_Font
-import Query exposing (SearchState, default_search_state)
+import Search.Query as Query exposing (SearchState, default_search_state)
 import List.Extra
 
 cards_per_page : Int

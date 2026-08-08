@@ -1,7 +1,7 @@
-module Page_Markdown exposing (Model, Msg, init, update, view)
+module Search.Page_Markdown exposing (Model, Msg, init, update, view)
 
 import Colors
-import Query exposing (default_search_state)
+import Search.Query as Query exposing (default_search_state)
 import Widgets
 import Window exposing (Window)
 

@@ -1,9 +1,9 @@
-module Page_AdvancedSearch exposing (Model, Msg, init, update, view)
+module Search.Page_AdvancedSearch exposing (Model, Msg, init, update, view)
 
 import Card exposing (CardType(..), House(..))
 import CardSet exposing (SetOrCycle(..), Set(..), Cycle(..))
 import Fontawesome
-import Query exposing (Comparison(..), default_search_state)
+import Search.Query as Query exposing (Comparison(..), default_search_state)
 import Widgets
 import Widgets.Combo
 import Window exposing (Window)

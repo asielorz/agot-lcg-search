@@ -1,8 +1,8 @@
-module DeckLegality exposing (is_legal)
+module Decks.DeckLegality exposing (is_legal)
 
 import Card exposing (Card, CardType(..), Legality(..))
 import Cards
-import Deck exposing (Deck)
+import Decks.Deck as Deck exposing (Deck)
 import Utils
 
 import Maybe.Extra

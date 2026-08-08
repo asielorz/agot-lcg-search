@@ -1,16 +1,16 @@
-module Main exposing (main)
+module Search.Main exposing (main)
 
 import Card exposing (Card)
 import Cards
-import Query
-import Page_AdvancedSearch
-import Page_Card
-import Page_Markdown
-import Page_Search
-import Page_Sets
-import Page_Start
-import Page_404
-import Text_Syntax
+import Search.Query as Query
+import Search.Page_AdvancedSearch as Page_AdvancedSearch
+import Search.Page_Card as Page_Card
+import Search.Page_Search as Page_Search
+import Search.Page_Sets as Page_Sets
+import Search.Page_Start as Page_Start
+import Search.Text_Syntax as Text_Syntax
+import Search.Page_404 as Page_404
+import Search.Page_Markdown as Page_Markdown
 import Widgets
 import Window exposing (Window)
 

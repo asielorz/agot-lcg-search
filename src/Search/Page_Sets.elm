@@ -1,8 +1,8 @@
-module Page_Sets exposing (Model, Msg, init, update, view)
+module Search.Page_Sets exposing (Model, Msg, init, update, view)
 
 import CardSet exposing (SetOrCycle)
 import Colors
-import Query exposing (default_search_state)
+import Search.Query as Query exposing (default_search_state)
 import Widgets
 import Window exposing (Window)
 

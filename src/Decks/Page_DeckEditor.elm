@@ -1,13 +1,13 @@
-module Page_DeckEditor exposing (main)
+module Decks.Page_DeckEditor exposing (main)
 
 import Card exposing (Card)
 import CardSet exposing (SetOrCycle(..))
 import Cards
 import ChangeStack exposing (ChangeStack)
 import Colors
-import Deck exposing (Deck)
-import DeckLegality
-import Utils
+import Decks.Deck as Deck exposing (Deck)
+import Decks.DeckLegality as DeckLegality
+import Decks.DeckView as DeckView
 import Widgets
 
 import Browser
@@ -17,7 +17,6 @@ import Element.Border as UI_Border
 import Element.Events as UI_Events
 import Element.Input as UI_Input
 import Element.Font as UI_Font
-import Fontawesome
 import List.Extra
 import Url.Parser exposing (query)
 
@@ -183,66 +182,10 @@ deck_editor model =
                 , Widgets.on_key_down [("ArrowUp", Widgets.no_modifiers, Msg_SearchSelectedScroll -1), ("ArrowDown", Widgets.no_modifiers, Msg_SearchSelectedScroll 1)]
                 ]
                 model.search_buffer "Search for a card..." Msg_ChangeSearch Msg_AddCurrent
-            , deck_view model deck
+            , DeckView.deck_view model.hovered_card_id deck { hover_card = Msg_HoverCard, stop_hover = Msg_StopHover, add_card = Just Msg_AddCard, remove_card = Just (\c -> Msg_RemoveCard c 1) }
             , UI.el [ UI.height (px 30) ] UI.none
             , deck_legality_diagnostics deck
             ]
-
-deck_view : Model -> Deck -> UI.Element Msg
-deck_view model deck = UI.row [ UI.width UI.fill, UI.spacing 20 ]
-    [ UI.column [ UI.width UI.fill, UI.alignTop ]
-        [ deck_category "House" (Deck.house_card_as_list deck) model.hovered_card_id Nothing UI.onRight
-        , deck_category "Agenda" deck.agendas model.hovered_card_id Nothing UI.onRight
-        , deck_category "Plots" deck.plots model.hovered_card_id Nothing UI.onRight
-        , deck_category "Characters" deck.characters model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck) UI.onRight
-        ]
-    , UI.column [ UI.width UI.fill, UI.alignTop ]
-        [ deck_category "Attachments" deck.attachments model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck) UI.onLeft
-        , deck_category "Events" deck.events model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck) UI.onLeft
-        , deck_category "Locations" deck.locations model.hovered_card_id (Just <| Deck.number_of_cards_in_main_deck deck) UI.onLeft
-        ]
-    ]
-
-deck_category : String -> List (Card, Int) -> String -> Maybe Int -> (UI.Element Msg -> UI.Attribute Msg) -> UI.Element Msg
-deck_category name cards hovered_card_id total preview_pos = UI.column [ UI.width UI.fill, UI.paddingEach { top = 20, bottom = 0, left = 0, right = 0 }, UI.spacing 5 ]
-    <| (deck_category_heading name (Deck.count_cards cards) total) :: (List.map (card_row hovered_card_id preview_pos) cards)
-
-deck_category_heading : String -> Int -> Maybe Int -> UI.Element msg
-deck_category_heading name card_amount total = UI.row [ UI.width UI.fill ]
-    [ UI.el [ UI_Font.bold, UI_Font.size 15 ] (UI.text name)
-    , UI.el [ UI_Font.size 12, UI.alignRight ] <| UI.text <| case total of
-        Nothing -> String.fromInt card_amount ++ " card" ++ Utils.plural card_amount
-        Just t -> String.fromInt card_amount ++ "/" ++ String.fromInt t ++ " cards"
-    ]
-
-card_amount_button_style_attributes : List (UI.Attribute msg)
-card_amount_button_style_attributes = 
-    [ UI.width (px 20)
-    , UI.mouseOver 
-        [ UI_Background.color Colors.background_hover
-        , UI_Border.color Colors.border_hover
-        ]
-    ]
-
-
-card_row : String -> (UI.Element Msg -> UI.Attribute Msg) -> (Card, Int) -> UI.Element Msg
-card_row hovered_card_id preview_pos (card, amount) = UI.row
-    [ UI.spacing 10
-    , UI.width UI.fill
-    , UI_Events.onMouseEnter <| Msg_HoverCard card.id
-    , UI_Events.onMouseLeave <| Msg_StopHover
-    , preview_pos <| if hovered_card_id == card.id then card_preview card else UI.none
-    ]
-    [ UI.column [ UI_Font.size 12 ]
-        [ UI_Input.button card_amount_button_style_attributes { onPress = Just <| Msg_AddCard card, label = Fontawesome.text [ UI.centerX ] "\u{f0d8}" } -- fa-caret_up
-        , UI_Input.button card_amount_button_style_attributes { onPress = Just <| Msg_RemoveCard card 1, label = Fontawesome.text [ UI.centerX ] "\u{f0d7}" } -- fa-caret-down
-        ]
-    , UI.text <| String.fromInt amount
-    , Widgets.set_icon [] (SetOrCycle_Set card.set)
-    , UI.el [ UI.width (px 30), UI_Font.size 12 ] <| UI.text <| "#" ++ String.fromInt card.number
-    , UI.text card.name
-    , Widgets.cost_widget [ UI.alignRight ] 20 card.cost (Card.is_shadow card)
-    ]
 
 candidate_list : Maybe SearchState -> UI.Element Msg
 candidate_list search_state = case search_state of
@@ -281,10 +224,7 @@ candidate_preview search_state = case search_state of
     Nothing -> UI.none
     Just state -> case List.Extra.getAt state.index state.candidates of
         Nothing -> UI.none
-        Just card -> card_preview card
-
-card_preview : Card -> UI.Element msg
-card_preview card = UI.image [] { src = Card.preview_image_url card, description = card.name }
+        Just card -> DeckView.card_preview card
 
 deck_legality_diagnostics : Deck -> UI.Element msg
 deck_legality_diagnostics deck = case DeckLegality.is_legal deck of

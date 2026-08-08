@@ -6,7 +6,6 @@ import Cards
 import ChangeStack exposing (ChangeStack)
 import Colors
 import Decks.Deck as Deck exposing (Deck)
-import Decks.DeckLegality as DeckLegality
 import Decks.DeckView as DeckView
 import Widgets
 
@@ -184,7 +183,7 @@ deck_editor model =
                 model.search_buffer "Search for a card..." Msg_ChangeSearch Msg_AddCurrent
             , DeckView.deck_view model.hovered_card_id deck { hover_card = Msg_HoverCard, stop_hover = Msg_StopHover, add_card = Just Msg_AddCard, remove_card = Just (\c -> Msg_RemoveCard c 1) }
             , UI.el [ UI.height (px 30) ] UI.none
-            , deck_legality_diagnostics deck
+            , DeckView.deck_legality_diagnostics deck
             ]
 
 candidate_list : Maybe SearchState -> UI.Element Msg
@@ -225,32 +224,3 @@ candidate_preview search_state = case search_state of
     Just state -> case List.Extra.getAt state.index state.candidates of
         Nothing -> UI.none
         Just card -> DeckView.card_preview card
-
-deck_legality_diagnostics : Deck -> UI.Element msg
-deck_legality_diagnostics deck = case DeckLegality.is_legal deck of
-    [] -> UI.column
-        [ UI_Border.width 1
-        , UI_Border.color (UI.rgb255 31 163 70)
-        , UI_Border.rounded 25
-        , UI_Background.color (UI.rgb255 17 89 38)
-        , UI.width UI.fill
-        , UI.padding 20
-        ]
-        [ if deck.joust && deck.melee
-            then UI.paragraph [ UI_Font.justify ] [ UI.text "Your deck is legal in both joust and melee." ]
-            else if deck.joust
-                then UI.paragraph [ UI_Font.justify ] [ UI.text "Your deck is legal in joust." ]
-                else if deck.melee
-                    then UI.paragraph [ UI_Font.justify ] [ UI.text "Your deck is legal in melee." ]
-                    else UI.paragraph [ UI_Font.justify ] [ UI.text "Your deck is legal according to general legality rules, but you forgot to pick a format." ]
-        ]
-    errors -> UI.column
-        [ UI_Border.width 1
-        , UI_Border.color (UI.rgb255 150 0 0)
-        , UI_Border.rounded 25
-        , UI_Background.color (UI.rgb255 80 0 0)
-        , UI.width UI.fill
-        , UI.padding 20
-        , UI.spacing 20
-        ]
-        <| List.map (\err -> UI.paragraph [ UI_Font.justify ] [ UI.text err ]) errors

@@ -1,9 +1,10 @@
-module Decks.DeckView exposing (deck_view, card_preview)
+module Decks.DeckView exposing (deck_view, card_preview, deck_legality_diagnostics)
 
 import Card exposing (Card)
 import CardSet exposing (SetOrCycle(..))
 import Colors
 import Decks.Deck as Deck exposing (Deck)
+import Decks.DeckLegality as DeckLegality
 import Fontawesome
 import Utils
 import Widgets
@@ -85,3 +86,32 @@ add_remove_card_buttons card messages = case (messages.add_card, messages.remove
 
 card_preview : Card -> UI.Element msg
 card_preview card = UI.image [] { src = Card.preview_image_url card, description = card.name }
+
+deck_legality_diagnostics : Deck -> UI.Element msg
+deck_legality_diagnostics deck = case DeckLegality.is_legal deck of
+    [] -> UI.column
+        [ UI_Border.width 1
+        , UI_Border.color (UI.rgb255 31 163 70)
+        , UI_Border.rounded 25
+        , UI_Background.color (UI.rgb255 17 89 38)
+        , UI.width UI.fill
+        , UI.padding 20
+        ]
+        [ if deck.joust && deck.melee
+            then UI.paragraph [ UI_Font.justify ] [ UI.text "Your deck is legal in both joust and melee." ]
+            else if deck.joust
+                then UI.paragraph [ UI_Font.justify ] [ UI.text "Your deck is legal in joust." ]
+                else if deck.melee
+                    then UI.paragraph [ UI_Font.justify ] [ UI.text "Your deck is legal in melee." ]
+                    else UI.paragraph [ UI_Font.justify ] [ UI.text "Your deck is legal according to general legality rules, but you forgot to pick a format." ]
+        ]
+    errors -> UI.column
+        [ UI_Border.width 1
+        , UI_Border.color (UI.rgb255 150 0 0)
+        , UI_Border.rounded 25
+        , UI_Background.color (UI.rgb255 80 0 0)
+        , UI.width UI.fill
+        , UI.padding 20
+        , UI.spacing 20
+        ]
+        <| List.map (\err -> UI.paragraph [ UI_Font.justify ] [ UI.text err ]) errors

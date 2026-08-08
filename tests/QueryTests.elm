@@ -2,7 +2,7 @@ module QueryTests exposing (..)
 
 import Card exposing (Card, CardType(..), Legality(..), House(..), Icon(..), Crest(..))
 import CardSet exposing (Set(..))
-import Query exposing (default_search_state)
+import Search.Query as Query exposing (default_search_state)
 
 import Expect
 import Test exposing (..)

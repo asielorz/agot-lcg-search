@@ -1,6 +1,6 @@
 module Decks.DeckView exposing (deck_view, card_preview, deck_legality_diagnostics)
 
-import Card exposing (Card)
+import Card exposing (Card, CardId)
 import CardSet exposing (SetOrCycle(..))
 import Colors
 import Decks.Deck as Deck exposing (Deck)
@@ -17,13 +17,13 @@ import Element.Input as UI_Input
 import Element.Font as UI_Font
 
 type alias Messages msg =
-    { hover_card : String -> msg
+    { hover_card : CardId -> msg
     , stop_hover : msg
     , add_card : Maybe (Card -> msg)
     , remove_card : Maybe (Card -> msg)
     }
 
-deck_view : String -> Deck -> Messages msg -> UI.Element msg
+deck_view : CardId -> Deck -> Messages msg -> UI.Element msg
 deck_view hovered_card_id deck messages = UI.row [ UI.width UI.fill, UI.spacing 20 ]
     [ UI.column [ UI.width UI.fill, UI.alignTop ]
         [ deck_category "House" (Deck.house_card_as_list deck) hovered_card_id Nothing messages UI.onRight
@@ -38,7 +38,7 @@ deck_view hovered_card_id deck messages = UI.row [ UI.width UI.fill, UI.spacing 
         ]
     ]
 
-deck_category : String -> List (Card, Int) -> String -> Maybe Int -> Messages msg -> (UI.Element msg -> UI.Attribute msg) -> UI.Element msg
+deck_category : String -> List (Card, Int) -> CardId -> Maybe Int -> Messages msg -> (UI.Element msg -> UI.Attribute msg) -> UI.Element msg
 deck_category name cards hovered_card_id total messages preview_pos = UI.column [ UI.width UI.fill, UI.paddingEach { top = 20, bottom = 0, left = 0, right = 0 }, UI.spacing 5 ]
     <| (deck_category_heading name (Deck.count_cards cards) total) :: (List.map (card_row hovered_card_id messages preview_pos) cards)
 
@@ -60,7 +60,7 @@ card_amount_button_style_attributes =
     ]
 
 
-card_row : String -> Messages msg -> (UI.Element msg -> UI.Attribute msg) -> (Card, Int) -> UI.Element msg
+card_row : CardId -> Messages msg -> (UI.Element msg -> UI.Attribute msg) -> (Card, Int) -> UI.Element msg
 card_row hovered_card_id messages preview_pos (card, amount) = UI.row
     [ UI.spacing 10
     , UI.width UI.fill

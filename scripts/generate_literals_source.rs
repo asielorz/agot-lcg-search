@@ -202,7 +202,7 @@ fn print_cards_elm_file(cards: &[Card]) -> String {
     let mut separator = '[';
 
     for card in cards {
-        _ = writeln!(result, "  {} {{ id = \"{}\"", separator, card.id);
+        _ = writeln!(result, "  {} {{ id = CardId \"{}\"", separator, card.id);
         _ = writeln!(result, "    , name = {:?}", card.name);
         _ = writeln!(result, "    , card_type = CardType_{}", card.card_type);
         _ = writeln!(result, "    , set = {}", set_name_to_source.get(card.set.as_str()).unwrap());
@@ -227,7 +227,7 @@ fn print_cards_elm_file(cards: &[Card]) -> String {
         _ = writeln!(result, "    , claim = {}", option_to_elm_code(&card.claim));
         _ = writeln!(result, "    , influence = {}", option_to_elm_code(&card.influence));
         _ = writeln!(result, "    , erratas = {}", erratas_to_elm_code(&card.erratas));
-        _ = writeln!(result, "    , duplicate_id = {}", option_to_elm_code(&card.duplicate_id));
+        _ = writeln!(result, "    , duplicate_id = {}", card_id_option_to_elm_code(&card.duplicate_id));
         _ = writeln!(result, "    }}");
 
         separator = ',';
@@ -280,6 +280,14 @@ fn erratas_to_elm_code(erratas : &[Errata]) -> String {
     }
 }
 
+fn card_id_option_to_elm_code(opt: &Option<String>) -> String {
+    match opt {
+        Some(value) => format!("Just <| CardId {:?}", value),
+        None => "Nothing".to_string(),
+    }
+}
+
+
 fn print_faqs_elm_file(faqs : &[Faq]) -> String {
     let mut result = String::with_capacity(1024 * 16);
     result += "module Faqs exposing (all_faqs)\n\nimport Card exposing (..)\n\nall_faqs : List Faq\nall_faqs =\n";
@@ -292,7 +300,7 @@ fn print_faqs_elm_file(faqs : &[Faq]) -> String {
     let mut separator = '[';
 
     for faq in faqs {
-        _ = writeln!(result, "  {} {{ cards_mentioned = [ {} ]", separator, faq.cards_mentioned.iter().map(|t| format!("{:?}", t)).collect::<Vec<_>>().join(", "));
+        _ = writeln!(result, "  {} {{ cards_mentioned = [ {} ]", separator, faq.cards_mentioned.iter().map(|t| format!("CardId {:?}", t)).collect::<Vec<_>>().join(", "));
         _ = writeln!(result, "    , text = {:?}", faq.text);
         _ = writeln!(result, "    }}");
 

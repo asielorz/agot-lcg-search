@@ -1,7 +1,7 @@
 module Decks.DeckLegality exposing (is_legal)
 
-import Card exposing (Card, CardType(..), Legality(..))
-import Cards
+import Card exposing (Card, CardId(..), CardType(..), Legality(..))
+import CardExtra
 import Decks.Deck as Deck exposing (Deck)
 import Utils
 
@@ -30,14 +30,10 @@ is_legal deck =
             |> List.map (\p -> p deck)
             |> List.concat
 
-has_card : String -> Deck -> Bool
-has_card card_id deck = case card_with_id card_id of
+has_card : CardId -> Deck -> Bool
+has_card card_id deck = case CardExtra.card_with_id card_id of
     Nothing -> False
     Just card -> Deck.has_card card deck
-
-card_with_id : String -> Maybe Card
-card_with_id id = Cards.all_cards
-    |> List.Extra.find (\c -> c.id == id)
 
 extra_context : Bool -> String -> String -> String
 extra_context pred extra msg = if pred
@@ -59,8 +55,8 @@ rule_number_of_agendas deck =
                 else if non_north_agendas > 0
                     then [ "A deck cannot mix The North agendas with other kinds of agendas" ]
                     else let
-                            is_night_watch = has_card "dotn_19" deck || has_card "dotn_59" deck || has_card "dotn_99" deck
-                            is_wildling = has_card "dotn_39" deck || has_card "dotn_79" deck || has_card "dotn_119" deck
+                            is_night_watch = has_card (CardId "dotn_19") deck || has_card (CardId "dotn_59") deck || has_card (CardId "dotn_99") deck
+                            is_wildling = has_card (CardId "dotn_39") deck || has_card (CardId "dotn_79") deck || has_card (CardId "dotn_119") deck
                         in if is_night_watch && is_wildling
                             then [ "A deck cannot mix Night's Watch and Wildling agendas. When playing with The North agendas, you can either play Night's Watch agendas (The Rangers, The Builders, The Stewards) or Wildling agendas (The Free Folk, The Last Giants, Blood of the First Men), but you cannot mix them." ]
                             else []
@@ -68,8 +64,8 @@ rule_number_of_agendas deck =
 rule_number_of_plots : Deck -> List String
 rule_number_of_plots deck =
     let
-        defiance = if has_card "cad_2" deck then 3 else 0
-        betrayal_at_the_wall = if has_card "kr_79" deck then 1 else 0
+        defiance = if has_card (CardId "cad_2") deck then 3 else 0
+        betrayal_at_the_wall = if has_card (CardId "kr_79") deck then 1 else 0
         allowed_number_of_plots = 7 + defiance + betrayal_at_the_wall
         number_of_plots = Deck.count_cards <| Deck.cards_of_type CardType_Plot deck
     in if number_of_plots == allowed_number_of_plots
@@ -103,8 +99,8 @@ rule_card_copy_limit deck =
                     count = Deck.count_cards cards
                     limit = limit_of cards
                     format_one = \(card, amount) -> if amount == 1
-                        then "1 copy of \"" ++ card.name ++ "\" (" ++ card.id ++ ")"
-                        else String.fromInt amount ++ " copies of \"" ++ card.name ++ "\" (" ++ card.id ++ ")"
+                        then "1 copy of \"" ++ card.name ++ "\" (" ++ Card.card_id_to_string card.id ++ ")"
+                        else String.fromInt amount ++ " copies of \"" ++ card.name ++ "\" (" ++ Card.card_id_to_string card.id ++ ")"
                     format_human_readable = (\card_list -> card_list |> List.reverse |> List.map format_one |> Utils.join_human_readable)
                 in if count > limit
                     then "You have " ++ String.fromInt count ++ " cards named " ++ name ++ " but the limit is " ++ String.fromInt limit ++ "."
@@ -116,8 +112,8 @@ rule_card_copy_limit deck =
 rule_deck_size_limit : Deck -> List String
 rule_deck_size_limit deck =
     let
-        the_long_voyage = has_card "asots_60" deck
-        dark_wings_dark_words = has_card "cad_80" deck
+        the_long_voyage = has_card (CardId "asots_60") deck
+        dark_wings_dark_words = has_card (CardId "cad_80") deck
         deck_minimum_size = if the_long_voyage then 85 else if dark_wings_dark_words then 75 else 60
         deck_size = Deck.number_of_cards_in_main_deck deck
     in if deck_size >= deck_minimum_size
@@ -130,7 +126,7 @@ rule_deck_size_limit deck =
 rule_cards_belong_to_house : Deck -> List String
 rule_cards_belong_to_house deck = 
     let
-        city_of_shadows = has_card "kl_20" deck
+        city_of_shadows = has_card (CardId "kl_20") deck
     in
         case Deck.house deck of
             Nothing -> []
@@ -141,7 +137,7 @@ rule_cards_belong_to_house deck =
                 )
 
 rule_dark_wings_dark_words_event_limit : Deck -> List String
-rule_dark_wings_dark_words_event_limit deck = if not (has_card "cad_80" deck)
+rule_dark_wings_dark_words_event_limit deck = if not (has_card (CardId "cad_80") deck)
     then []
     else deck.events
         |> List.filter (\(_, amount) -> amount > 1)

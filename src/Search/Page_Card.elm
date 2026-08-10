@@ -1,6 +1,6 @@
 module Search.Page_Card exposing (Model, Msg, init, update, view)
 
-import Card exposing (Card, CardType(..), Crest(..), Icon(..), Legality(..), Errata, House)
+import Card exposing (Card, CardId, CardType(..), Crest(..), Icon(..), Legality(..), Errata, House)
 import Cards
 import CardSet exposing (SetOrCycle(..))
 import Colors
@@ -285,7 +285,7 @@ legality_widget format legality =
             , UI.text format
             ]
 
-versions_widget : List Card -> String -> UI.Element msg
+versions_widget : List Card -> CardId -> UI.Element msg
 versions_widget cards current_id = if List.length cards <= 1
     then UI.none
     else cards

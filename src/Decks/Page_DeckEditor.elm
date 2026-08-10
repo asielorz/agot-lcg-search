@@ -1,6 +1,6 @@
 module Decks.Page_DeckEditor exposing (main)
 
-import Card exposing (Card)
+import Card exposing (Card, CardId(..))
 import CardSet exposing (SetOrCycle(..))
 import Cards
 import ChangeStack exposing (ChangeStack)
@@ -36,7 +36,7 @@ type alias Model =
     { deck : ChangeStack Deck
     , search_buffer : String
     , search_state : Maybe SearchState
-    , hovered_card_id : String
+    , hovered_card_id : CardId
     }
 
 init : () -> (Model, Cmd Msg)
@@ -44,7 +44,7 @@ init = \_ ->
     (   { deck = ChangeStack.new Deck.empty
         , search_buffer = ""
         , search_state = Nothing 
-        , hovered_card_id = ""
+        , hovered_card_id = CardId ""
         }
     , Cmd.none
     )
@@ -62,7 +62,7 @@ type Msg
     | Msg_SearchSelectedScroll Int
     | Msg_SearchSelect Int
     | Msg_AddCurrent
-    | Msg_HoverCard String
+    | Msg_HoverCard CardId
     | Msg_StopHover
     | Msg_AddCard Card
     | Msg_RemoveCard Card Int
@@ -82,7 +82,7 @@ update msg model = case msg of
     Msg_SearchSelect index -> ({ model | search_state = set_search_state_index index model.search_state }, Cmd.none)
     Msg_AddCurrent -> (add_current model, Cmd.none)
     Msg_HoverCard card_id -> ({ model | hovered_card_id = card_id }, Cmd.none)
-    Msg_StopHover -> ({ model | hovered_card_id = "" }, Cmd.none)
+    Msg_StopHover -> ({ model | hovered_card_id = CardId "" }, Cmd.none)
     Msg_AddCard card -> ({ model | deck = ChangeStack.update (Deck.add_card card) model.deck }, Cmd.none)
     Msg_RemoveCard card amount -> ({ model | deck = ChangeStack.update (Deck.remove_card card amount) model.deck }, Cmd.none)
 

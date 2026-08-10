@@ -1,6 +1,7 @@
 module Search.Main exposing (main)
 
-import Card exposing (Card)
+import Card exposing (Card, CardId(..))
+import CardExtra
 import Cards
 import Search.Query as Query
 import Search.Page_AdvancedSearch as Page_AdvancedSearch
@@ -75,7 +76,7 @@ change_url_impl url random_card_index =
     let
         page_404 _ = UrlChangeResult_Page <| Model_404 Page_404.init
 
-        card_page_model id query = case card_with_id id of
+        card_page_model id query = case CardExtra.card_with_id id of
             Nothing -> page_404 ()
             Just card -> UrlChangeResult_Page <| Model_Card <| Page_Card.init card query
 
@@ -98,7 +99,7 @@ change_url_impl url random_card_index =
             , Url.Parser.map (search_page_model <| Page_Search.init url.query) (Url.Parser.s "search")
             , Url.Parser.map (UrlChangeResult_Page <| Model_AdvancedSearch Page_AdvancedSearch.init) (Url.Parser.s "advanced")
             , Url.Parser.map (UrlChangeResult_Page <| Model_Sets Page_Sets.init) (Url.Parser.s "sets")
-            , Url.Parser.map card_page_model (Url.Parser.s "card" </> Url.Parser.string <?> card_page_query_parser)
+            , Url.Parser.map card_page_model (Url.Parser.s "card" </> (Url.Parser.map CardId Url.Parser.string) <?> card_page_query_parser)
             , Url.Parser.map (random_card_page ()) (Url.Parser.s "random")
             , Url.Parser.map (UrlChangeResult_Page <| Model_Markdown <| Page_Markdown.init "Syntax guide" Text_Syntax.text ) (Url.Parser.s "syntax")
             ]
@@ -174,9 +175,6 @@ view model = case model.page of
 
 map_view : (msg -> Msg) -> (String, UI.Element msg) -> (String, UI.Element Msg)
 map_view make_msg (title, content) = (title, content |> UI.map make_msg)
-
-card_with_id : String -> Maybe Card
-card_with_id id = List.Extra.find (\c -> c.id == id) Cards.all_cards
 
 window : Model -> Window
 window model = { width = model.window_width, height = model.window_height }

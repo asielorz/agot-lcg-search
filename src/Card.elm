@@ -2,6 +2,7 @@ module Card exposing (..)
 
 import CardSet exposing (Set)
 
+type CardId = CardId String
 type CardType = CardType_Character | CardType_Event | CardType_Location | CardType_Attachment | CardType_Plot | CardType_Agenda | CardType_House
 type House = House_Stark | House_Lannister | House_Baratheon | House_Targaryen | House_Martell | House_Greyjoy | House_Neutral
 type Icon = Icon_Military { naval : Bool } | Icon_Intrigue { naval : Bool } | Icon_Power { naval : Bool }
@@ -9,7 +10,7 @@ type Crest = Crest_Holy | Crest_Noble | Crest_War | Crest_Learned | Crest_Shadow
 type Legality = Legality_Legal | Legality_Restricted | Legality_Banned
 
 type alias Faq = 
-    { cards_mentioned : List String
+    { cards_mentioned : List CardId
     , text : String
     }
 
@@ -20,7 +21,7 @@ type alias Errata =
     }
 
 type alias Card = 
-    { id : String
+    { id : CardId
     , name : String
     , card_type : CardType
     , set : Set
@@ -36,7 +37,7 @@ type alias Card =
     , rules_text : Maybe String
     , flavor_text : Maybe String
     , erratas : List Errata
-    , duplicate_id : Maybe String
+    , duplicate_id : Maybe CardId
 
     -- Character
     , cost : Maybe Int
@@ -54,6 +55,9 @@ type alias Card =
     , influence : Maybe Int
     }
 
+card_id_to_string : CardId -> String
+card_id_to_string id = case id of
+    CardId str -> str
 
 card_type_to_string : CardType -> String
 card_type_to_string card_type = case card_type of
@@ -154,15 +158,15 @@ cost_sort_order card = case card.cost of
         else cost
 
 page_url : Card -> String
-page_url card = "/card/" ++ card.id
+page_url card = "/card/" ++ card_id_to_string card.id
 
 full_image_url : Card -> String
-full_image_url card = "/images/cards/full/" ++ card.id ++ ".webp"
+full_image_url card = "/images/cards/full/" ++ card_id_to_string card.id ++ ".webp"
 
 preview_image_url : Card -> String
-preview_image_url card = "/images/cards/preview/" ++ card.id ++ ".jpg"
+preview_image_url card = "/images/cards/preview/" ++ card_id_to_string card.id ++ ".jpg"
 
-duplicate_id : Card -> String
+duplicate_id : Card -> CardId
 duplicate_id card = Maybe.withDefault card.id card.duplicate_id
 
 is_shadow : Card -> Bool

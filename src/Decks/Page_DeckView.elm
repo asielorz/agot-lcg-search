@@ -1,5 +1,6 @@
 module Decks.Page_DeckView exposing  (main)
 
+import Card exposing (CardId(..))
 import Decks.Deck as Deck exposing (Deck)
 import Decks.DeckView as DeckView
 import Widgets
@@ -19,27 +20,27 @@ main = Browser.document
 
 type alias Model =
     { deck : Deck
-    , hovered_card_id : String
+    , hovered_card_id : CardId
     }
 
 init : () -> (Model, Cmd Msg)
 init = \_ -> 
     (   { deck = Deck.test_deck
-        , hovered_card_id = ""
+        , hovered_card_id = CardId ""
         }
     , Cmd.none
     )
 
 type Msg
     = Msg_Noop
-    | Msg_HoverCard String
+    | Msg_HoverCard CardId
     | Msg_StopHover
 
 update : Msg -> Model -> (Model, Cmd Msg)
 update msg model = case msg of
     Msg_Noop -> (model, Cmd.none)
     Msg_HoverCard card_id -> ({ model | hovered_card_id = card_id }, Cmd.none)
-    Msg_StopHover -> ({ model | hovered_card_id = "" }, Cmd.none)
+    Msg_StopHover -> ({ model | hovered_card_id = CardId "" }, Cmd.none)
 
 view : Model -> Browser.Document Msg
 view model = Widgets.layout 
@@ -47,7 +48,7 @@ view model = Widgets.layout
     , deck_view model.deck model.hovered_card_id
     )
 
-deck_view : Deck -> String -> UI.Element Msg
+deck_view : Deck -> CardId -> UI.Element Msg
 deck_view deck hovered_card_id = 
     UI.column 
         [ UI.width <| UI.maximum 800 UI.fill

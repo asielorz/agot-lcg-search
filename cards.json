@@ -82676,7 +82676,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Castle. After this plot is placed in your used pile, search the top 10 cards of your deck for a non-Army character with printed cost 4 or higher, and put it into play. Then, shuffle your deck.",
+    "rules_text": "After this plot is placed in your used pile, search the top 10 cards of your deck for a non-Army character with printed cost 4 or higher, and put it into play. Then, shuffle your deck.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -82684,7 +82684,9 @@
     "cost": null,
     "icons": [],
     "crest": [],
-    "traits": [],
+    "traits": [
+      "Castle"
+    ],
     "strength": null,
     "income": 2,
     "initiative": 2,
@@ -83524,7 +83526,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Castle. After this plot is placed in your used pile, choose an opponent’s character with printed cost 3 or lower. Take control of that character until a new plot is placed in your used pile.",
+    "rules_text": "After this plot is placed in your used pile, choose an opponent’s character with printed cost 3 or lower. Take control of that character until a new plot is placed in your used pile.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -83532,7 +83534,9 @@
     "cost": null,
     "icons": [],
     "crest": [],
-    "traits": [],
+    "traits": [
+      "Castle"
+    ],
     "strength": null,
     "income": 3,
     "initiative": 0,
@@ -83565,7 +83569,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Castle. After this plot is placed in your used pile,choose 1 character you control, and return it to the bottom of its owner’s deck (cannot be saved).",
+    "rules_text": "After this plot is placed in your used pile,choose 1 character you control, and return it to the bottom of its owner’s deck (cannot be saved).",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -83573,7 +83577,9 @@
     "cost": null,
     "icons": [],
     "crest": [],
-    "traits": [],
+    "traits": [
+      "Castle"
+    ],
     "strength": null,
     "income": 4,
     "initiative": 6,
@@ -84411,7 +84417,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Castle. After this plot is placed in your used pile, put a card with printed cost 1 or lower into play from your hand.",
+    "rules_text": "After this plot is placed in your used pile, put a card with printed cost 1 or lower into play from your hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -86211,7 +86217,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Castle. After this plot is placed in your used pile, draw 1 card and discard 1 card at random from each opponent’s hand.",
+    "rules_text": "After this plot is placed in your used pile, draw 1 card and discard 1 card at random from each opponent’s hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -86219,7 +86225,9 @@
     "cost": null,
     "icons": [],
     "crest": [],
-    "traits": [],
+    "traits": [
+      "Castle"
+    ],
     "strength": null,
     "income": 4,
     "initiative": 3,

@@ -76,7 +76,7 @@ add_card card deck =
         add_card_to_category : Card -> List (Card, Int) -> List (Card, Int)
         add_card_to_category = \c cards -> case List.Extra.findIndex (\(cc, _) -> cc.id == c.id) cards of
             Just index -> cards |> List.Extra.updateAt index (\(cc, amount) -> (cc, min (amount + 1) cc.limit))
-            Nothing -> (c, 1) :: cards |> List.sortBy (\(cc, _) -> (Card.cost_sort_order cc, CardSet.set_sort_order cc.set, cc.number))
+            Nothing -> (c, 1) :: cards |> List.sortBy (\(cc, amount) -> (Card.cost_sort_order cc, -amount, Card.set_sort_order cc))
         cards_after = if card.card_type == CardType_House
             then [ (card, 1) ]
             else add_card_to_category card (cards_of_type card.card_type deck)

@@ -157,6 +157,10 @@ cost_sort_order card = case card.cost of
         then cost + 2
         else cost
 
+
+set_sort_order : Card -> Int
+set_sort_order card = CardSet.set_sort_order card.set * 300 + card.number
+
 page_url : Card -> String
 page_url card = "/card/" ++ card_id_to_string card.id
 

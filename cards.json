@@ -1691,7 +1691,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Stealth.\nResponse: After you win an Intrigue challenge or a challenge in which Tyrion Lannister participated, pay 1 gold to draw a card.",
+    "rules_text": "Stealth.\nResponse: After you win an [Intrigue] challenge or a challenge in which Tyrion Lannister participated, pay 1 gold to draw a card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -2206,7 +2206,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Stealth.\nResponse: After you win an Intrigue challenge in which Qyburn's Informers participated, draw 2 cards.",
+    "rules_text": "Stealth.\nResponse: After you win an [Intrigue] challenge in which Qyburn's Informers participated, draw 2 cards.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -2472,7 +2472,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: After you win an Intrigue challenge, pay 1 gold to claim 1 power for your House (limit once per challenge).",
+    "rules_text": "Response: After you win an [Intrigue] challenge, pay 1 gold to claim 1 power for your House (limit once per challenge).",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -3119,7 +3119,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Challenges: Kneel 1 influence to choose a unique character. Until the end of the phase, that character gains an Intrigue icon.",
+    "rules_text": "Challenges: Kneel 1 influence to choose a unique character. Until the end of the phase, that character gains an [Intrigue] icon.",
     "flavor_text": "\"You'd have to be a fool to want to bed Selyse Florent.\" - Littlefinger",
     "erratas": [],
     "faqs": [],
@@ -4576,7 +4576,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "While attached character has a Military icon, it gains +2 STR.\nWhile attached character has an Intrigue icon, it gains stealth.\nWhile attached character has a Power icon, it gains renown.",
+    "rules_text": "While attached character has a [Military] icon, it gains +2 STR.\nWhile attached character has an [Intrigue] icon, it gains stealth.\nWhile attached character has a [Power] icon, it gains renown.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -5075,7 +5075,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: Pay 2 gold to save a Noble character from being killed.",
+    "rules_text": "Response: Pay 2 gold to save a [Noble] character from being killed.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -6237,7 +6237,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limit 1 per deck.\nMarshalling: Kneel Street of Steel to lower the cost of the next character with a Military icon you play this phase by 1.",
+    "rules_text": "Limit 1 per deck.\nMarshalling: Kneel Street of Steel to lower the cost of the next character with a [Military] icon you play this phase by 1.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -6464,7 +6464,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limit 1 per deck.\nMarshalling: Kneel Shadowblack Lane to lower the cost of the next character with an Intrigue icon you play this phase by 1.",
+    "rules_text": "Limit 1 per deck.\nMarshalling: Kneel Shadowblack Lane to lower the cost of the next character with an [Intrigue] icon you play this phase by 1.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -6686,7 +6686,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limit 1 per deck.\nMarshalling: Kneel Street of Sisters to lower the cost of the next character with a Power icon you play this phase by 1.",
+    "rules_text": "Limit 1 per deck.\nMarshalling: Kneel Street of Sisters to lower the cost of the next character with a [Power] icon you play this phase by 1.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -7143,7 +7143,7 @@
       "Stark"
     ],
     "unique": false,
-    "rules_text": "House Stark only.\nDominance: Kneel 3 influence or kneel a Noble character to choose and kill a non-House Stark character.",
+    "rules_text": "House Stark only.\nDominance: Kneel 3 influence or kneel a [Noble] character to choose and kill a non-[Stark] character.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -7408,7 +7408,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nAny phase: Choose and kneel a non-Noble character. Then, that character claims 1 power.",
+    "rules_text": "House Lannister only.\nAny phase: Choose and kneel a non-[Noble] character. Then, that character claims 1 power.",
     "flavor_text": "The head he pulled out was grey-green, and covered with maggots.",
     "erratas": [],
     "faqs": [],
@@ -7521,7 +7521,7 @@
       "Baratheon"
     ],
     "unique": false,
-    "rules_text": "House Baratheon only.\nAny Phase: Kneel 3 influence or kneel a Noble character to force an opponent to reveal a new plot card. If the newly revealed plot card has a lower income than yours, claim 1 power for your House.",
+    "rules_text": "House Baratheon only.\nAny Phase: Kneel 3 influence or kneel a [Noble] character to force an opponent to reveal a new plot card. If the newly revealed plot card has a lower income than yours, claim 1 power for your House.",
     "flavor_text": "\"Grant us wind to fill our sails, and your king could sit upon his Iron Throne by evenfall on the morrow.\" - Salladhor Saan",
     "erratas": [],
     "faqs": [],
@@ -7802,7 +7802,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Any Phase: Choose and stand a Holy, Learned, Noble, or War character.",
+    "rules_text": "Any Phase: Choose and stand a [Holy], [Learned], [Noble], or [War] character.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -7888,7 +7888,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Any Phase: Choose and stand a Holy, Learned, Noble, or War character.",
+    "rules_text": "Any Phase: Choose and stand a [Holy], [Learned], [Noble], or [War] character.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -8310,7 +8310,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "When revealed, if you have more than one opponent, choose an opponent. You and that opponent cannot declare Intrigue challenges against one another this round.",
+    "rules_text": "When revealed, if you have more than one opponent, choose an opponent. You and that opponent cannot declare [Intrigue] challenges against one another this round.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -8427,7 +8427,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nCharacters without an Intrigue icon get -1 STR.",
+    "rules_text": "House Lannister only.\nCharacters without an [Intrigue] icon get -1 STR.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -9572,7 +9572,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Stealth.\nIf Aeron Damphair would be killed, instead search your deck for a non-unique Holy character with cost 3 or lower, put it into play, shuffle your deck and put Aeron Damphair on the bottom of your deck.",
+    "rules_text": "Stealth.\nIf Aeron Damphair would be killed, instead search your deck for a non-unique [Holy] character with cost 3 or lower, put it into play, shuffle your deck and put Aeron Damphair on the bottom of your deck.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -9620,7 +9620,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: Kneel Maester Wendamyr to save a House Greyjoy character from being killed or discarded. Then, you may kneel 2 influence or kneel a Learned character to stand that character.",
+    "rules_text": "Response: Kneel Maester Wendamyr to save a House Greyjoy character from being killed or discarded. Then, you may kneel 2 influence or kneel a [Learned] character to stand that character.",
     "flavor_text": "\"Too long have the Ironborn listened to you chain-neck maesters.\" - Aeron Damphair",
     "erratas": [],
     "faqs": [],
@@ -9759,7 +9759,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Kneel Stowaway and discard the top card of your deck to choose an Ironborn character. Until the end of the phase, that character gains an Intrigue icon.",
+    "rules_text": "Challenges: Kneel Stowaway and discard the top card of your deck to choose an Ironborn character. Until the end of the phase, that character gains an [Intrigue] icon.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -9804,7 +9804,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Discard the top card of your deck to give a Holy character +1 STR until the end of the phase. (Limit twice per phase.)",
+    "rules_text": "Challenges: Discard the top card of your deck to give a [Holy] character +1 STR until the end of the phase. (Limit twice per phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -10716,7 +10716,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After a player wins an Intrigue challenge, that player kneels all copies of Kingdom of Shadows to choose and stand a card with the S crest.\n[+1 Income]",
+    "rules_text": "After a player wins an [Intrigue] challenge, that player kneels all copies of Kingdom of Shadows to choose and stand a card with the [Shadow] crest.\n[+1 Income]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -10956,7 +10956,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "If Myrcella Lannister is the only Queen character in play, she gains: \"Any Phase: Kneel Myrcella Lannister to choose a Knight character. Until the end of the phase, that character gains an Intrigue icon and stealth.\"",
+    "rules_text": "If Myrcella Lannister is the only Queen character in play, she gains: \"Any Phase: Kneel Myrcella Lannister to choose a Knight character. Until the end of the phase, that character gains an [Intrigue] icon and stealth.\"",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -11003,7 +11003,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win a Military challenge in which you control at least 1 attacking War character, choose and discard from play up to 2 non-limited locations controlled by the losing opponent. (Limit 1 per round.)",
+    "rules_text": "Response: After you win a [Military] challenge in which you control at least 1 attacking [War] character, choose and discard from play up to 2 non-limited locations controlled by the losing opponent. (Limit 1 per round.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -11044,7 +11044,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Any Phase: Kneel 3 influence or kneel a Holy character to look at an opponent's hand. Then, discard 1 non-limited card from that hand.",
+    "rules_text": "Any Phase: Kneel 3 influence or kneel a [Holy] character to look at an opponent's hand. Then, discard 1 non-limited card from that hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -11301,7 +11301,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "War characters you control get +1 STR.",
+    "rules_text": "[War] characters you control get +1 STR.",
     "flavor_text": "\"It is customary to take a finger from a thief, but a man who steals from a sept is stealing from the gods.\"",
     "erratas": [],
     "faqs": [],
@@ -11350,7 +11350,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Any Phase: Kneel 1 influence to give Jack of All Trades (choose one) a War , a Noble , a Learned , or a Holy crest until the end of the phase.",
+    "rules_text": "Any Phase: Kneel 1 influence to give Jack of All Trades (choose one) a [War], a [Noble], a [Learned], or a [Holy] crest until the end of the phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -11488,7 +11488,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "You cannot declare Intrigue challenges.",
+    "rules_text": "You cannot declare [Intrigue] challenges.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -11531,7 +11531,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Each player may initiate an additional Intrigue challenge this round.",
+    "rules_text": "Each player may initiate an additional [Intrigue] challenge this round.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -11574,7 +11574,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After you win an Intrigue challenge, you may put all cards in your hand on the bottom of your deck and replace them with an equal number of cards from the top of your deck.",
+    "rules_text": "After you win an [Intrigue] challenge, you may put all cards in your hand on the bottom of your deck and replace them with an equal number of cards from the top of your deck.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -12391,7 +12391,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Any Phase: Discard Orphan of the Greenblood from play (cannot be saved) to choose 1 character. Until the end of the phase, that character loses a Military, an Intrigue, and a Power icon.",
+    "rules_text": "Any Phase: Discard Orphan of the Greenblood from play (cannot be saved) to choose 1 character. Until the end of the phase, that character loses a [Military], an [Intrigue], and a [Power] icon.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -12474,7 +12474,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only. No attachments.\nIf House Dayne Reserves is discarded from your hand for the claim of an Intrigue challenge, put it into play instead of your discard pile.\nAny Phase: Kneel 1 influence to return House Dayne Reserves to its owner's hand.",
+    "rules_text": "House Martell only. No attachments.\nIf House Dayne Reserves is discarded from your hand for the claim of an [Intrigue] challenge, put it into play instead of your discard pile.\nAny Phase: Kneel 1 influence to return House Dayne Reserves to its owner's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -12680,7 +12680,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nChallenges: Kneel 1 influence to choose 1 character. Until the end of the phase, that character loses a Military, an Intrigue, and a Power icon.",
+    "rules_text": "House Martell only.\nChallenges: Kneel 1 influence to choose 1 character. Until the end of the phase, that character loses a [Military], an [Intrigue], and a [Power] icon.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -12750,7 +12750,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nPlot: Kneel 5 influence or 2 Noble characters to choose and reveal a new plot card. (If it is Summer, you may play Scheming on the Sand during the Challenge phase.)",
+    "rules_text": "House Martell only.\nPlot: Kneel 5 influence or 2 [Noble] characters to choose and reveal a new plot card. (If it is Summer, you may play Scheming on the Sand during the Challenge phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -13087,7 +13087,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Characters without an Intrigue icon cannot declare stealth.",
+    "rules_text": "Characters without an [Intrigue] icon cannot declare stealth.",
     "flavor_text": "...the Old Palace and its shadow city were full of eyes.",
     "erratas": [],
     "faqs": [],
@@ -13130,7 +13130,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Characters without a Military icon get -1 STR.",
+    "rules_text": "Characters without a [Military] icon get -1 STR.",
     "flavor_text": "A hundred and a half feet tall and crowned with a spear of gilded steel...",
     "erratas": [],
     "faqs": [],
@@ -13263,7 +13263,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.\nResponse: After a Small Council event is played, kneel 3 influence or kneel 1 Noble character to choose and discard from play 1 character with 1 or more power on it.",
+    "rules_text": "Renown.\nResponse: After a Small Council event is played, kneel 3 influence or kneel 1 [Noble] character to choose and discard from play 1 character with 1 or more power on it.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -13493,7 +13493,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win an Intrigue challenge by 4 or more total STR, choose a challenge type. Until the end of the phase, the losing opponent cannot attack or defend during that challenge type. Limit 1 per phase.",
+    "rules_text": "Response: After you win an [Intrigue] challenge by 4 or more total STR, choose a challenge type. Until the end of the phase, the losing opponent cannot attack or defend during that challenge type. Limit 1 per phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -13967,7 +13967,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Renown. Former Champion gets -2 STR for each power on him.\nWhile Former Champion has 3 or less STR, he gains a Power icon and deadly.\nWhile Former Champion has 1 or less STR, he gains an Intrigue icon and stealth.",
+    "rules_text": "Renown. Former Champion gets -2 STR for each power on him.\nWhile Former Champion has 3 or less STR, he gains a [Power] icon and deadly.\nWhile Former Champion has 1 or less STR, he gains an [Intrigue] icon and stealth.",
     "flavor_text": "Card Designed by the 2008 AGoT Overall World Champion, Tzu-Mainn Chen.",
     "erratas": [],
     "faqs": [],
@@ -14101,7 +14101,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After you win an Intrigue challenge, choose and discard 1 attachment from play.",
+    "rules_text": "After you win an [Intrigue] challenge, choose and discard 1 attachment from play.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -14605,7 +14605,7 @@
       "Stark"
     ],
     "unique": true,
-    "rules_text": "House Stark only.Challenges: Put Catelyn Stark into play from your hand, knelt as a defender during an Intrigue or Power challenge initiated against you. At the end of the phase, if Catelyn Stark is still in play, return her to your hand.",
+    "rules_text": "House Stark only.Challenges: Put Catelyn Stark into play from your hand, knelt as a defender during an [Intrigue] or [Power] challenge initiated against you. At the end of the phase, if Catelyn Stark is still in play, return her to your hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -14743,7 +14743,7 @@
       "Stark"
     ],
     "unique": true,
-    "rules_text": "House Stark only. No attachments except Direwolf.\nAfter you lose an Intrigue challenge, kill Bran Stark (cannot be saved).\nResponse: After you win an Intrigue challenge as the defender, Bran Stark claims 5 power.",
+    "rules_text": "House Stark only. No attachments except Direwolf.\nAfter you lose an [Intrigue] challenge, kill Bran Stark (cannot be saved).\nResponse: After you win an [Intrigue] challenge as the defender, Bran Stark claims 5 power.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -16288,7 +16288,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limit 1 per deck. \nMarshalling: Kneel Street of Steel to lower the cost of the next character with a Military icon you play this phase by 1.",
+    "rules_text": "Limit 1 per deck. \nMarshalling: Kneel Street of Steel to lower the cost of the next character with a [Military] icon you play this phase by 1.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -17110,7 +17110,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Stealth.\nResponse: After you win an Intrigue challenge in which Maester Pylos attacked alone, discard (at random) 1 card in Shadows controlled by the losing opponent.",
+    "rules_text": "Stealth.\nResponse: After you win an [Intrigue] challenge in which Maester Pylos attacked alone, discard (at random) 1 card in Shadows controlled by the losing opponent.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -17200,7 +17200,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "No attachments except Weapon.\nWhile Veteran Knight is attacking or defending, opponent's participating characters lose all War crests.",
+    "rules_text": "No attachments except Weapon.\nWhile Veteran Knight is attacking or defending, opponent's participating characters lose all [War] crests.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -19221,7 +19221,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attached character gets +1 STR and gains a War crest.\nWhile attached character is attacking, defending characters are killed if their STR is 0.",
+    "rules_text": "Attached character gets +1 STR and gains a [War] crest.\nWhile attached character is attacking, defending characters are killed if their STR is 0.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -19264,7 +19264,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Targaryen character only. Attached character gains a Military, an Intrigue, and a Power icon.\nResponse: After you win a challenge in which attached character participated, look at the top 3 cards of your deck (5 if it is Summer), put 1 into your hand, then return the others to the top of your deck, in any order.",
+    "rules_text": "[Targaryen] character only. Attached character gains a [Military], an [Intrigue], and a [Power] icon.\nResponse: After you win a challenge in which attached character participated, look at the top 3 cards of your deck (5 if it is Summer), put 1 into your hand, then return the others to the top of your deck, in any order.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -19487,7 +19487,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited Response: After you declare Pike Phalanx as an attacker with at least one other character with a War crest, raise the claim on your revealed plot card by 1 until the end of the phase.",
+    "rules_text": "Limited Response: After you declare Pike Phalanx as an attacker with at least one other character with a [War] crest, raise the claim on your revealed plot card by 1 until the end of the phase.",
     "flavor_text": "A crescent of enemy spearmen had formed ahead, a double hedgehog bristling with steel.",
     "erratas": [],
     "faqs": [],
@@ -19730,7 +19730,7 @@
     ],
     "traits": [
       "Ally",
-      "Quartheen"
+      "Qartheen"
     ],
     "strength": 2,
     "income": null,
@@ -20251,7 +20251,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Challenges: Kneel Qarth to choose 1 Dragon character you control. For the duration of the phase, that character gains an Intrigue icon and Deadly.",
+    "rules_text": "Challenges: Kneel Qarth to choose 1 Dragon character you control. For the duration of the phase, that character gains an [Intrigue] icon and Deadly.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -21178,7 +21178,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nBefore drawing your setup hand, name Military or Intrigue challenge. You cannot initiate challenges of that type.\nYou may initiate 2 Power challenges each challenge phase.",
+    "rules_text": "House Targaryen only.\nBefore drawing your setup hand, name [Military] or [Intrigue] challenge. You cannot initiate challenges of that type.\nYou may initiate 2 [Power] challenges each challenge phase.",
     "flavor_text": null,
     "erratas": [
       {
@@ -21758,7 +21758,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Cersei Lannister does not kneel to attack during Intrigue challenges.\nResponse: After you win an Intrigue challenge, Cersei Lannister claims 1 power. Then, Cersei Lannister gains your choice of stealth or deadly until the end of the phase.",
+    "rules_text": "Cersei Lannister does not kneel to attack during [Intrigue] challenges.\nResponse: After you win an [Intrigue] challenge, Cersei Lannister claims 1 power. Then, Cersei Lannister gains your choice of stealth or deadly until the end of the phase.",
     "flavor_text": "\"Tears are not a woman's only weapons.\"",
     "erratas": [],
     "faqs": [],
@@ -23619,7 +23619,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nYou may initiate and additional Intrigue challenge during each challenges phase.\nWhen an opponent wins an Intrigue challenge against you as the attacker or defender, that player may choose to either draw 1 card or claim 1 power for his or her house.",
+    "rules_text": "House Lannister only.\nYou may initiate and additional [Intrigue] challenge during each challenges phase.\nWhen an opponent wins an [Intrigue] challenge against you as the attacker or defender, that player may choose to either draw 1 card or claim 1 power for his or her house.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -25026,7 +25026,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After you win a Military challenge against an opponent with a House Lannister or a House Greyjoy House card, choose and kill a character controlled by that opponent.",
+    "rules_text": "After you win a [Military] challenge against an opponent with a [Lannister] or a [Greyjoy] House card, choose and kill a character controlled by that opponent.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -25069,7 +25069,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After you win an Intrigue challenge against an opponent with a House Martell or a House Stark House card, choose and kneel a character controlled by that opponent. Discard all attachments and power on that character.",
+    "rules_text": "After you win an [Intrigue] challenge against an opponent with a [Martell] or a [Stark] House card, choose and kneel a character controlled by that opponent. Discard all attachments and power on that character.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -25112,7 +25112,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After you win a Power challenge against an opponent with a House Targaryen or a House Martell House card, choose a character controlled by that opponent. Take control of that character until the end of the phase.",
+    "rules_text": "After you win a [Power] challenge against an opponent with a [Targaryen] or a [Martell] House card, choose a character controlled by that opponent. Take control of that character until the end of the phase.",
     "flavor_text": null,
     "erratas": [
       {
@@ -25161,7 +25161,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After you win a Military challenge against an opponent with a House Stark or a House Targaryen House card, choose and discard from play a character controlled by that opponent.",
+    "rules_text": "After you win a [Military] challenge against an opponent with a [Stark] or a [Targaryen] House card, choose and discard from play a character controlled by that opponent.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -25204,7 +25204,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After you win a Power challenge against an opponent with a House Baratheon or a House Greyjoy House card, choose a character controlled by that opponent, and reduce its STR to 0 until the end of the round.",
+    "rules_text": "After you win a [Power] challenge against an opponent with a [Baratheon] or a [Greyjoy] House card, choose a character controlled by that opponent, and reduce its STR to 0 until the end of the round.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -25247,7 +25247,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After you win an Intrigue challenge against an opponent with a House Lannister or a House Baratheon House card, choose a character controlled by that opponent, and return it to its owner's hand.",
+    "rules_text": "After you win an [Intrigue] challenge against an opponent with a [Lannister] or a [Baratheon] House card, choose a character controlled by that opponent, and return it to its owner's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26102,7 +26102,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nPlay only if you have at least 1 Intrigue Gambit plot card in your used pile. Response: After you lose a challenge, stand a House Martell character you control to choose a character. Until the end of the phase, that character loses a Military , an Intrigue , and a Power icon.",
+    "rules_text": "House Martell only.\nPlay only if you have at least 1 Intrigue Gambit plot card in your used pile. Response: After you lose a challenge, stand a [Martell] character you control to choose a character. Until the end of the phase, that character loses a [Military], an [Intrigue], and a [Power] icon.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26605,7 +26605,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "While there is at least 1 Military Battle plot card revealed, Dacey Mormont gains an Intrigue icon and does not kneel to defend.",
+    "rules_text": "While there is at least 1 Military Battle plot card revealed, Dacey Mormont gains an [Intrigue] icon and does not kneel to defend.",
     "flavor_text": "\"I have fought alongside the Young Wolf in every battle.\"",
     "erratas": [],
     "faqs": [],
@@ -26779,7 +26779,7 @@
       "Stark"
     ],
     "unique": false,
-    "rules_text": "House Stark only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single Military challenge with normal claim. The winner of each challenge may choose and kill a character without a Military icon controlled by the losing opponent. (Place this card next to your plot deck until the end of this epic phase.)",
+    "rules_text": "House Stark only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single [Military] challenge with normal claim. The winner of each challenge may choose and kill a character without a [Military] icon controlled by the losing opponent. (Place this card next to your plot deck until the end of this epic phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26816,7 +26816,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single Intrigue challenge with normal claim. The winner of each challenge may put into play an in-House character or location from his or her hand. (Place this card next to your plot deck until the end of this epic phase.)",
+    "rules_text": "House Lannister only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single [Intrigue] challenge with normal claim. The winner of each challenge may put into play an in-House character or location from his or her hand. (Place this card next to your plot deck until the end of this epic phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26964,7 +26964,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single Intrigue challenge with normal claim. The winner of each challenge may choose to have all players skip the standing phase this round. (Place this card next to your plot deck until the end of this epic phase.)",
+    "rules_text": "House Martell only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single [Intrigue] challenge with normal claim. The winner of each challenge may choose to have all players skip the standing phase this round. (Place this card next to your plot deck until the end of this epic phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -27255,7 +27255,7 @@
       "Martell"
     ],
     "unique": true,
-    "rules_text": "House Martell only. No attachments.\nResponse: After you lose an Intrigue challenge as the defender, discard a card at random from the attacking player's hand. (Discard 2 cards at random from the attacking player's hand if you trigger this response during the epic phase.)",
+    "rules_text": "House Martell only. No attachments.\nResponse: After you lose an [Intrigue] challenge as the defender, discard a card at random from the attacking player's hand. (Discard 2 cards at random from the attacking player's hand if you trigger this response during the epic phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -28019,7 +28019,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attached character gains infamy, stealth, and an Intrigue icon. Attached character gets +1 STR for each power on it.",
+    "rules_text": "Attached character gains infamy, stealth, and an [Intrigue] icon. Attached character gets +1 STR for each power on it.",
     "flavor_text": "A false smile and a true one may look alike, but they are as different as dusk and dawn.",
     "erratas": [],
     "faqs": [],
@@ -28501,7 +28501,7 @@
       "Stark"
     ],
     "unique": false,
-    "rules_text": "House Stark only.\nChallenges: Each defending character gets +2 STR until the end of the challenge. Then, stand all House Stark characters with Banner attachments attached.",
+    "rules_text": "House Stark only.\nChallenges: Each defending character gets +2 STR until the end of the challenge. Then, stand all [Stark] characters with Banner attachments attached.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -28577,7 +28577,7 @@
       "Baratheon"
     ],
     "unique": false,
-    "rules_text": "House Baratheon only.\nChallenges: Choose one participating character on each side during an Intrigue or a Power challenge. Remove all other characters from the challenge. Then, stand all House Baratheon characters with Banner attachments attached.",
+    "rules_text": "House Baratheon only.\nChallenges: Choose one participating character on each side during an [Intrigue] or a [Power] challenge. Remove all other characters from the challenge. Then, stand all [Baratheon] characters with Banner attachments attached.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -28723,7 +28723,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win a Military challenge, you may attach Banner for the North (from play or from your hand) to a House Stark character as a Banner attachment with the text: 'Attached character gains stalwart.'",
+    "rules_text": "Response: After you win a [Military] challenge, you may attach Banner for the North (from play or from your hand) to a [Stark] character as a Banner attachment with the text: 'Attached character gains stalwart.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -28798,7 +28798,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Lannister"
     ],
@@ -28812,7 +28812,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After Practical Believer enters or leaves play, choose another Holy character. Stand or kneel that character.",
+    "rules_text": "Response: After Practical Believer enters or leaves play, choose another [Holy] character. Stand or kneel that character.",
     "flavor_text": "\"The sparrow is the humblest and most common of birds, as we are the humblest and most common of men.\"",
     "erratas": [],
     "faqs": [],
@@ -29081,7 +29081,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win an Intrigue challenge, you may attach Banner for the South (from play or from your hand) to a House Martell character as a Banner attachment with the text: 'Attached character gains vengeful.'",
+    "rules_text": "Response: After you win an [Intrigue] challenge, you may attach Banner for the South (from play or from your hand) to a [Martell] character as a Banner attachment with the text: 'Attached character gains vengeful.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -30243,7 +30243,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If it is Winter, Ranger of Winter gains stealth, an Intrigue icon, and does not kneel to defend.",
+    "rules_text": "If it is Winter, Ranger of Winter gains stealth, an [Intrigue] icon, and does not kneel to defend.",
     "flavor_text": "\"Everyone talks about snows forty foot deep, and how the ice wind comes howling out of the north, but the real enemy is the cold.\" - Gared",
     "erratas": [],
     "faqs": [],
@@ -31643,7 +31643,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nChallenges: Each player must choose and kneel a character with an Intrigue icon he or she controls, if able. Then, the player who knelt the character with the highest STR may choose and return a character to its owner's hand.",
+    "rules_text": "House Martell only.\nChallenges: Each player must choose and kneel a character with an [Intrigue] icon he or she controls, if able. Then, the player who knelt the character with the highest STR may choose and return a character to its owner's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [
@@ -32088,7 +32088,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited Response: After you reveal an Intrigue Gambit plot card, kneel a character with an Intrigue icon to kneel all characters with a Military icon. (Limit 1 Limited Response per round.)",
+    "rules_text": "Limited Response: After you reveal an Intrigue Gambit plot card, kneel a character with an [Intrigue] icon to kneel all characters with a [Military] icon. (Limit 1 Limited Response per round.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -32129,7 +32129,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited Response: After you reveal a Power Struggle plot card, kneel a character with a Power icon to kneel all characters with an Intrigue icon. (Limit 1 Limited Response per round.)",
+    "rules_text": "Limited Response: After you reveal a Power Struggle plot card, kneel a character with a [Power] icon to kneel all characters with an [Intrigue] icon. (Limit 1 Limited Response per round.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -32242,7 +32242,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nResponse: After an opponent wins an Intrigue challenge against you, kneel and discard Lannisport Rookery from play (cannot be saved) and pay 1 gold to reveal a new plot card.",
+    "rules_text": "House Lannister only.\nResponse: After an opponent wins an [Intrigue] challenge against you, kneel and discard Lannisport Rookery from play (cannot be saved) and pay 1 gold to reveal a new plot card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -32390,7 +32390,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nResponse: After you win an Intrigue challenge by 4 or more total STR, kneel and discard Rookery of Sunspear from play (cannot be saved) and pay 1 gold to reveal a new plot card.",
+    "rules_text": "House Martell only.\nResponse: After you win an [Intrigue] challenge by 4 or more total STR, kneel and discard Rookery of Sunspear from play (cannot be saved) and pay 1 gold to reveal a new plot card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -33765,7 +33765,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "No attachments except Weapon.\nResponse: After a Reinforcements event card is played, choose and kneel a character without an Intrigue icon.",
+    "rules_text": "No attachments except Weapon.\nResponse: After a Reinforcements event card is played, choose and kneel a character without an [Intrigue] icon.",
     "flavor_text": "A weary smile brushed his lips.",
     "erratas": [],
     "faqs": [],
@@ -34220,7 +34220,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Any phase: Play if you have lost a Military challenge this phase. Pay 1 gold to put Missing Recruit into play from your hand as a character with 3 STR, a Military icon, stealth, and renown.",
+    "rules_text": "Any phase: Play if you have lost a [Military] challenge this phase. Pay 1 gold to put Missing Recruit into play from your hand as a character with 3 STR, a [Military] icon, stealth, and renown.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -34263,7 +34263,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Any phase: Play if you have lost an Intrigue challenge this phase. Pay 1 gold to put Spy in Their Midst into play from your hand as a character with 3 STR, a Intrigue icon, stealth, and renown.",
+    "rules_text": "Any phase: Play if you have lost an [Intrigue] challenge this phase. Pay 1 gold to put Spy in Their Midst into play from your hand as a character with 3 STR, a [Intrigue] icon, stealth, and renown.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -34306,7 +34306,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Any phase: Play if you have lost a Power challenge this phase. Pay 1 gold to put Beguiled Bodyguard into play from your hand as a character with 3 STR, a Power icon, stealth, and renown.",
+    "rules_text": "Any phase: Play if you have lost a [Power] challenge this phase. Pay 1 gold to put Beguiled Bodyguard into play from your hand as a character with 3 STR, a [Power] icon, stealth, and renown.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -35208,7 +35208,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After Shadow Politics comes out of Shadows, choose a player. That player may initiate an additional Intrigue challenge against an opponent of his or her choice as a standard player action this phase.",
+    "rules_text": "Response: After Shadow Politics comes out of Shadows, choose a player. That player may initiate an additional [Intrigue] challenge against an opponent of his or her choice as a standard player action this phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -35253,7 +35253,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "When revealed, you may put up to 2 cards with the Shadow crest into Shadows from your hand without paying any costs.",
+    "rules_text": "When revealed, you may put up to 2 cards with the [Shadow] crest into Shadows from your hand without paying any costs.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -35296,7 +35296,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "You may ignore the \"House X only\" deckbuilding restriction on any card with the Shadow crest. Whenever you bring any card with a \"House X only\" restriction that does not match your House card out of Shadows, pay 1 additional gold. If you do not have any cards in Shadows, you cannot claim power for unopposed challenges.",
+    "rules_text": "You may ignore the \"House X only\" deckbuilding restriction on any card with the [Shadow] crest. Whenever you bring any card with a \"House X only\" restriction that does not match your House card out of Shadows, pay 1 additional gold. If you do not have any cards in Shadows, you cannot claim power for unopposed challenges.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -35337,7 +35337,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "If it is Winter and you have at least 1 card in Shadows, opponents cannot declare Intrigue challenges against you.",
+    "rules_text": "If it is Winter and you have at least 1 card in Shadows, opponents cannot declare [Intrigue] challenges against you.",
     "flavor_text": "She was no longer as young as she had been.",
     "erratas": [],
     "faqs": [],
@@ -35475,7 +35475,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: After you win an Intrigue challenge in which Cersei Lannister participated, choose and kneel up to X non-Army characters. X is the number of cards you control in Shadows.",
+    "rules_text": "Response: After you win an [Intrigue] challenge in which Cersei Lannister participated, choose and kneel up to X non-Army characters. X is the number of cards you control in Shadows.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -35725,7 +35725,7 @@
       "Greyjoy"
     ],
     "unique": true,
-    "rules_text": "House Greyjoy only. Renown.\nResponse: After a card with the Shadow crest is discarded from a player's deck, kneel 1 influence or kneel a Noble character to put that card into Shadows under your control. (Limit once per phase.)",
+    "rules_text": "House Greyjoy only. Renown.\nResponse: After a card with the [Shadow] crest is discarded from a player's deck, kneel 1 influence or kneel a [Noble] character to put that card into Shadows under your control. (Limit once per phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -35854,7 +35854,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attached character gains an Intrigue icon and Deadly. Response: After an opponent's character is killed during an Intrigue challenge, discard Tears of Lys to draw a card.",
+    "rules_text": "Attached character gains an [Intrigue] icon and Deadly. Response: After an opponent's character is killed during an [Intrigue] challenge, discard Tears of Lys to draw a card.",
     "flavor_text": "\"A rare and costly thing, clear and sweet as water, and it leaves no trace.\" - Varys",
     "erratas": [],
     "faqs": [],
@@ -36070,7 +36070,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win an Intrigue challenge, choose a location controlled by the losing opponent. If that location has the Shadow crest, return it to Shadows. Otherwise, discard it from play.",
+    "rules_text": "Response: After you win an [Intrigue] challenge, choose a location controlled by the losing opponent. If that location has the [Shadow] crest, return it to Shadows. Otherwise, discard it from play.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -36199,7 +36199,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.\nIf you have a House Baratheon House card, reduce the gold penalty to play Eddard Stark by 1.\nResponse: Cancel a triggered effect that chooses a Noble character as the only target. Then, draw a card. (Limit once per phase.)",
+    "rules_text": "Renown.\nIf you have a [Baratheon] House card, reduce the gold penalty to play Eddard Stark by 1.\nResponse: Cancel a triggered effect that chooses a [Noble] character as the only target. Then, draw a card. (Limit once per phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -36284,7 +36284,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.\nResponse: After you win a challenge in which Tywin Lannister participated, choose a card with the Shadow crest that is currently in play. That card returns to Shadows.",
+    "rules_text": "Renown.\nResponse: After you win a challenge in which Tywin Lannister participated, choose a card with the [Shadow] crest that is currently in play. That card returns to Shadows.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -36597,7 +36597,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win an Intrigue challenge in which Seaside Urchin participated, discard the top card of the losing opponent's deck. If that card is an attachment or an event card, Seaside Urchin claims 1 power.",
+    "rules_text": "Response: After you win an [Intrigue] challenge in which Seaside Urchin participated, discard the top card of the losing opponent's deck. If that card is an attachment or an event card, Seaside Urchin claims 1 power.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -36860,7 +36860,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win an Intrigue challenge, the losing opponent must choose and discard one card in Shadows that he or she controls.",
+    "rules_text": "Response: After you win an [Intrigue] challenge, the losing opponent must choose and discard one card in Shadows that he or she controls.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -36901,7 +36901,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.\nJon Arryn cannot be saved. Response: After Jon Arryn is killed, put a Noble character into play from your hand or discard pile.",
+    "rules_text": "Renown. Jon Arryn cannot be saved.\nResponse: After Jon Arryn is killed, put a [Noble] character into play from your hand or discard pile.",
     "flavor_text": "The Lord of the Eyrie had raised his moon-and-falcon banners in revolt rather than give those he had pledged to protect.",
     "erratas": [],
     "faqs": [],
@@ -37079,7 +37079,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "If there are no cards in Shadows, Sansa Stark gets +2 STR, a Noble crest, and gains Renown.",
+    "rules_text": "If there are no cards in Shadows, Sansa Stark gets +2 STR, a [Noble] crest, and gains Renown.",
     "flavor_text": "\"It's better than the songs.\"",
     "erratas": [],
     "faqs": [],
@@ -37166,7 +37166,7 @@
       "Stark"
     ],
     "unique": true,
-    "rules_text": "House Stark only.\nAttached character gains an Intrigue icon. Response: After Maester Malleon's Tome comes out of Shadows, attach it to a unique character. Then, if it is Winter, look at an opponent's unused plot deck, and move a plot card from that plot deck to that player's used plot pile.",
+    "rules_text": "House Stark only.\nAttached character gains an [Intrigue] icon. Response: After Maester Malleon's Tome comes out of Shadows, attach it to a unique character. Then, if it is Winter, look at an opponent's unused plot deck, and move a plot card from that plot deck to that player's used plot pile.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -37607,7 +37607,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.\nHouse Targaryen characters you control gain a War crest.",
+    "rules_text": "Renown.\nHouse Targaryen characters you control gain a [War] crest.",
     "flavor_text": "\"Traitors have always paid with their lives.\" - Ser Davos Seaworth",
     "erratas": [],
     "faqs": [],
@@ -37727,7 +37727,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nResponse: After you lose a challenge by 4 or more total STR as the defender, all characters controlled by the attacker lose a Military, an Intrigue, and a Power icon until the end of the phase.",
+    "rules_text": "House Martell only.\nResponse: After you lose a challenge by 4 or more total STR as the defender, all characters controlled by the attacker lose a [Military], an [Intrigue], and a [Power] icon until the end of the phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -38118,7 +38118,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nResponse: After a character triggers its character ability, kneel Ser Ilyn Payne or a Noble to kill that character.",
+    "rules_text": "House Lannister only.\nResponse: After a character triggers its character ability, kneel Ser Ilyn Payne or a [Noble] to kill that character.",
     "flavor_text": "There was only one service he might be needed for.",
     "erratas": [],
     "faqs": [],
@@ -38201,7 +38201,7 @@
       "Baratheon"
     ],
     "unique": true,
-    "rules_text": "House Baratheon only.\nAfter you win an Intrigue challenge, Small Council Chamber goes into Shadows. Response: After Small Council Chamber comes out of Shadows, return a Small Council event from your discard pile to your hand.",
+    "rules_text": "House Baratheon only.\nAfter you win an [Intrigue] challenge, Small Council Chamber goes into Shadows. Response: After Small Council Chamber comes out of Shadows, return a Small Council event from your discard pile to your hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -39066,7 +39066,7 @@
       "Baratheon"
     ],
     "unique": true,
-    "rules_text": "House Baratheon only.\nResponse: After you win a Power challenge, kneel Blackwater Bay to choose a card with the Shadow crest in your discard pile, and place that card in Shadows.",
+    "rules_text": "House Baratheon only.\nResponse: After you win a Power challenge, kneel Blackwater Bay to choose a card with the [Shadow] crest in your discard pile, and place that card in Shadows.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -39438,7 +39438,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nAny Phase: Choose a character. Until the end of the phase, that character gains a Military icon, a War crest, and +3 STR.",
+    "rules_text": "House Martell only.\nAny Phase: Choose a character. Until the end of the phase, that character gains a [Military] icon, a [War] crest, and +3 STR.",
     "flavor_text": "\"Obara would have me go to war.\" - Lord Doran Martell",
     "erratas": [],
     "faqs": [],
@@ -39795,7 +39795,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win an Intrigue challenge in which attached character participated, you may choose to take 1 gold from the defending player or the treasury and add it to your gold pool.",
+    "rules_text": "Response: After you win an [Intrigue] challenge in which attached character participated, you may choose to take 1 gold from the defending player or the treasury and add it to your gold pool.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -39832,7 +39832,7 @@
       "Baratheon"
     ],
     "unique": false,
-    "rules_text": "House Baratheon only.\nLoyal Guard can be played from your hand as a duplicate on a Noble character.",
+    "rules_text": "House Baratheon only.\nLoyal Guard can be played from your hand as a duplicate on a [Noble] character.",
     "flavor_text": "\"King is only a word, but fealty, loyalty, service... those I must have.\" - Renly Baratheon",
     "erratas": [],
     "faqs": [],
@@ -40054,7 +40054,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nAttached character gains the Noble crest and a Power icon.",
+    "rules_text": "House Targaryen only.\nAttached character gains the [Noble] crest and a [Power] icon.",
     "flavor_text": "Ours by blood right, taken from us by treachery, but ours still, ours forever. You do not steal from the dragon, oh, no. The dragon remembers.",
     "erratas": [],
     "faqs": [],
@@ -40845,7 +40845,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: After you win a challenge in which at least 1 Noble character participated, choose 1 of the following: claim 1 power for your House, add 2 gold from the treasury to your gold pool, or draw 1 card. (You may select each option once per round.)",
+    "rules_text": "Response: After you win a challenge in which at least 1 [Noble] character participated, choose 1 of the following: claim 1 power for your House, add 2 gold from the treasury to your gold pool, or draw 1 card. (You may select each option once per round.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -41422,7 +41422,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Any Phase: Kneel 1 Night's Watch or 1 Wildling character to choose another Night's Watch or Wildling character. Until the end of the phase, that character gains a War crest.",
+    "rules_text": "Any Phase: Kneel 1 Night's Watch or 1 Wildling character to choose another Night's Watch or Wildling character. Until the end of the phase, that character gains a [War] crest.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -41778,7 +41778,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Noble characters you control cannot lose icons, have their STR reduced, or be knelt by card effects.",
+    "rules_text": "[Noble] characters you control cannot lose icons, have their STR reduced, or be knelt by card effects.",
     "flavor_text": "They are the lockstep legions of Old Ghis come again, absolutely obedient, absolutely loyal, and utterly without fear. - Kraznys mo Nakloz",
     "erratas": [],
     "faqs": [],
@@ -42384,7 +42384,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments except Weapon.\nYou may declare Ser Balon Swann as the defender of an Intrigue challenge against you even if he is already kneeling.",
+    "rules_text": "No attachments except Weapon.\nYou may declare Ser Balon Swann as the defender of an [Intrigue] challenge against you even if he is already kneeling.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -42425,7 +42425,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nResponse: If an opponent would win an Intrigue challenge against you, cancel the determination of challenge winner. You automatically win the challenge.",
+    "rules_text": "House Lannister only.\nResponse: If an opponent would win an [Intrigue] challenge against you, cancel the determination of challenge winner. You automatically win the challenge.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [
@@ -42650,7 +42650,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments.\nDiscard Green Hatchling from play any time you control Rhaegal. Green Hatchling gains an Intrigue icon during Intrigue challenges initiated against you.",
+    "rules_text": "No attachments.\nDiscard Green Hatchling from play any time you control Rhaegal. Green Hatchling gains an [Intrigue] icon during [Intrigue] challenges initiated against you.",
     "flavor_text": "Rhaegal unfolded green wings to flap and flutter a half foot before thumping to the carpet.",
     "erratas": [],
     "faqs": [],
@@ -42771,7 +42771,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nAny Phase: Kneel 3 influence to choose 3 characters. Until the end of the phase, one of those characters loses a Military icon, the second loses an Intrigue icon, and the third loses a Power icon.",
+    "rules_text": "House Martell only.\nAny Phase: Kneel 3 influence to choose 3 characters. Until the end of the phase, one of those characters loses a [Military] icon, the second loses an [Intrigue] icon, and the third loses a [Power] icon.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -43617,7 +43617,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "No attachments.\nNoble characters you control are immune to opponent's events.",
+    "rules_text": "No attachments.\n[Noble] characters you control are immune to opponent's events.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -43657,7 +43657,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.Any Phase: Kneel 3 influence to choose 3 characters. Until the end of the phase, one of those characters gains a Military icon, the second gains an Intrigue icon, and the third gains a Power icon.",
+    "rules_text": "House Martell only.Any Phase: Kneel 3 influence to choose 3 characters. Until the end of the phase, one of those characters gains a [Military] icon, the second gains an [Intrigue] icon, and the third gains a [Power] icon.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -44189,7 +44189,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attach to a Noble character you control.Response: After attached character leaves play, take 3 gold from the treasury and add it to your gold pool.",
+    "rules_text": "Attach to a [Noble] character you control.Response: After attached character leaves play, take 3 gold from the treasury and add it to your gold pool.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -44232,7 +44232,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.Claim 1 additional power when you win dominance, and when you win an unopposed Intrigue or Power challenge.",
+    "rules_text": "Renown.\nClaim 1 additional power when you win dominance, and when you win an unopposed [Intrigue] or [Power] challenge.",
     "flavor_text": "\"R'hllor who gave us breath, we thank you, R'hllor who gave us day, we thank you.\"",
     "erratas": [],
     "faqs": [],
@@ -44281,7 +44281,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After an opponent draws 1 or more cards through a card effect, kneel 3 influence or kneel 1 Holy character to have each player choose and discard cards from his or her hand until only 4 cards remain in each player's hand.",
+    "rules_text": "Response: After an opponent draws 1 or more cards through a card effect, kneel 3 influence or kneel 1 [Holy] character to have each player choose and discard cards from his or her hand until only 4 cards remain in each player's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -45725,7 +45725,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Kneel a Maester or a Learned character to choose and discard 1 attachment from play. Then, if you have no power on your House, draw 1 card.",
+    "rules_text": "Challenges: Kneel a Maester or a [Learned] character to choose and discard 1 attachment from play. Then, if you have no power on your House, draw 1 card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -45809,7 +45809,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After a player wins a Military challenge against you, that player takes control of The Bastard's Elite.",
+    "rules_text": "After a player wins a [Military] challenge against you, that player takes control of The Bastard's Elite.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -46037,7 +46037,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After Wicked Seductress is knelt, choose and kneel 1 character without an Intrigue icon.",
+    "rules_text": "Response: After Wicked Seductress is knelt, choose and kneel 1 character without an [Intrigue] icon.",
     "flavor_text": "\"What do you mean, he sees no one?\"\n\"No one but her,\" said Salladhor Saan",
     "erratas": [],
     "faqs": [],
@@ -46084,7 +46084,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If you control at least 3 other Asshai characters, Intolerant Priest gains +1 STR, a Holy crest, and a Military icon.",
+    "rules_text": "If you control at least 3 other Asshai characters, Intolerant Priest gains +1 STR, a [Holy] crest, and a [Military] icon.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -46130,7 +46130,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attached character gains a Holy crest and the Asshai trait. If attached character has a printed Holy crest, it gets +1 STR and gains Vigilant.",
+    "rules_text": "Attached character gains a [Holy] crest and the Asshai trait. If attached character has a printed [Holy] crest, it gets +1 STR and gains Vigilant.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -46173,7 +46173,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win an Intrigue challenge in which at least 1 Holy character participated, kneel Altar of Fire to look at the losing opponent's hand. Choose and discard 1 card from that hand.",
+    "rules_text": "Response: After you win an [Intrigue] challenge in which at least 1 [Holy] character participated, kneel Altar of Fire to look at the losing opponent's hand. Choose and discard 1 card from that hand.",
     "flavor_text": "\"Any cat may stare into a fire and see red mice at play.\"",
     "erratas": [],
     "faqs": [],
@@ -46653,7 +46653,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "When revealed, put a Holy character into play from your dead pile.",
+    "rules_text": "When revealed, put a [Holy] character into play from your dead pile.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -46688,7 +46688,7 @@
       "Stark"
     ],
     "unique": true,
-    "rules_text": "House Stark only.\nResponse: After you win an Intrigue challenge in which Reek participated as an attacker, give the defending player control of Reek to choose and take control of 1 character controlled by that player.",
+    "rules_text": "House Stark only.\nResponse: After you win an [Intrigue] challenge in which Reek participated as an attacker, give the defending player control of Reek to choose and take control of 1 character controlled by that player.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -47184,7 +47184,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "House Greyjoy character only.\nAny Phase: Kneel Driftwood Crown to give attached character one of the following crest and icon pairs until the end of the phase: War and Military; Noble and Power; or Holy and Intrigue .",
+    "rules_text": "[Greyjoy] character only.\nAny Phase: Kneel Driftwood Crown to give attached character one of the following crest and icon pairs until the end of the phase: [War] and [Military]; [Noble] and [Power]; or [Holy] and [Intrigue].",
     "flavor_text": "\"He swore to win us back our freedoms, and Tarle the Thrice-Drowned placed a driftwood crown upon his head.\" - Aeron Damphair",
     "erratas": [],
     "faqs": [],
@@ -47270,7 +47270,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nPlay only if you have won an Intrigue and a Power challenge as the attacker this phase.\nChallenges: Kneel any number of standing Dothraki characters to have them each claim 1 power.",
+    "rules_text": "House Targaryen only.\nPlay only if you have won an [Intrigue] and a [Power] challenge as the attacker this phase.\nChallenges: Kneel any number of standing Dothraki characters to have them each claim 1 power.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -48884,7 +48884,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Sand Snake characters you control gain an Intrigue icon and stealth.",
+    "rules_text": "Sand Snake characters you control gain an [Intrigue] icon and stealth.",
     "flavor_text": "\"You think too much, Uncle.\"",
     "erratas": [],
     "faqs": [],
@@ -48930,7 +48930,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Sand Snake characters you control gain a Military icon and Deadly.",
+    "rules_text": "Sand Snake characters you control gain a [Military] icon and Deadly.",
     "flavor_text": "Lady Nym was no less deadly, though she kept her knives well hidden.",
     "erratas": [],
     "faqs": [],
@@ -49320,7 +49320,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Roose Bolton does not kneel to attack during Intrigue challenges. Response: After you win a challenge in which Roose Bolton participated, all players take control of each character they own currently in play.",
+    "rules_text": "Roose Bolton does not kneel to attack during [Intrigue] challenges. Response: After you win a challenge in which Roose Bolton participated, all players take control of each character they own currently in play.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -49418,7 +49418,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After a player wins an Intrigue challenge against you, that player takes control of Bolton Loyalist.",
+    "rules_text": "After a player wins an [Intrigue] challenge against you, that player takes control of Bolton Loyalist.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -49686,7 +49686,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "No attachments except Weapon.\nAny Phase: Kneel a Holy character to put Knight of Summerhall into play from your dead pile.",
+    "rules_text": "No attachments except Weapon.\nAny Phase: Kneel a [Holy] character to put Knight of Summerhall into play from your dead pile.",
     "flavor_text": "Did we learn nothing from Summerhall?",
     "erratas": [],
     "faqs": [],
@@ -50253,7 +50253,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: After you play a unique card from your hand, kneel Widow's Watch or kneel a Learned character to search your deck for a copy of that card, reveal it, and add it to your hand. Then, shuffle your deck.",
+    "rules_text": "Response: After you play a unique card from your hand, kneel Widow's Watch or kneel a [Learned] character to search your deck for a copy of that card, reveal it, and add it to your hand. Then, shuffle your deck.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -50472,7 +50472,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "The cost to play non-Noble cards cannot be reduced.",
+    "rules_text": "The cost to play non-[Noble] cards cannot be reduced.",
     "flavor_text": "This would-be king was a tall spare lord with a melancholy visage, his lantern jaw shaved clean.",
     "erratas": [],
     "faqs": [],
@@ -50694,7 +50694,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nResponse: Kneel a Learned character or 3 influence to cancel the effects of an event card just played. Then, you may kneel a second Learned character to attach that event to your House card. you may play that event as if it were in your hand.",
+    "rules_text": "House Martell only.\nResponse: Kneel a [Learned] character or 3 influence to cancel the effects of an event card just played. Then, you may kneel a second [Learned] character to attach that event to your House card. you may play that event as if it were in your hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -51244,7 +51244,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: After a player wins an Intrigue challenge, pay 1 gold to have Maester Creylen claim 1 power.",
+    "rules_text": "Response: After a player wins an [Intrigue] challenge, pay 1 gold to have Maester Creylen claim 1 power.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -51565,7 +51565,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win an Intrigue challenge in which Shadow Seer participated, put a card with the Shadow crest into Shadows from your hand.",
+    "rules_text": "Response: After you win an [Intrigue] challenge in which Shadow Seer participated, put a card with the [Shadow] crest into Shadows from your hand.",
     "flavor_text": "To go forward you must go back, and to touch the light you must pass beneath the shadow.",
     "erratas": [],
     "faqs": [],
@@ -52094,7 +52094,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: After you lose an Intrigue challenge as the attacker, you may initiate an additional Intrigue challenge this phase.",
+    "rules_text": "Response: After you lose an [Intrigue] challenge as the attacker, you may initiate an additional [Intrigue] challenge this phase.",
     "flavor_text": "\"Men are such thundering great fools. Even the sort who come along once in a thousand years.\"",
     "erratas": [],
     "faqs": [],
@@ -52133,7 +52133,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nResponse: After you win an Intrigue challenge reveal up to 3 random cards from the losing opponent's hand. You may discard those cards and replace them with an equal number of cards from the top of that player's deck.",
+    "rules_text": "House Lannister only.\nResponse: After you win an [Intrigue] challenge reveal up to 3 random cards from the losing opponent's hand. You may discard those cards and replace them with an equal number of cards from the top of that player's deck.",
     "flavor_text": "Shaving him was the cruelest thing Tyrion could have done, thought Jaime.",
     "erratas": [],
     "faqs": [],
@@ -52215,7 +52215,7 @@
       "Baratheon"
     ],
     "unique": false,
-    "rules_text": "House Baratheon only.\nPlay at the beginning of the challenges phase.\nChallenges: Kneel a Learned character to choose a player. Until the end of the phase, all players use the base claim value from that player's revealed plot card.",
+    "rules_text": "House Baratheon only.\nPlay at the beginning of the challenges phase.\nChallenges: Kneel a [Learned] character to choose a player. Until the end of the phase, all players use the base claim value from that player's revealed plot card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -52256,7 +52256,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After a character claims power for renown, kneel Tower library to give a Learned character you control renown until the end of the phase.",
+    "rules_text": "Response: After a character claims power for renown, kneel Tower library to give a [Learned] character you control renown until the end of the phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -52962,7 +52962,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win an Intrigue challenge in which The Regent's Spy participated, look at the top card of the losing opponent's deck.",
+    "rules_text": "Response: After you win an [Intrigue] challenge in which The Regent's Spy participated, look at the top card of the losing opponent's deck.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -53007,7 +53007,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attach to a character you control with an Intrigue and a Power icon.\nWhen you win a challenge in which attached character attacked alone, instead of the normal claim effects, look at the losing opponent's hand and choose and discard 1 card from that player's hand.",
+    "rules_text": "Attach to a character you control with an [Intrigue] and a [Power] icon.\nWhen you win a challenge in which attached character attacked alone, instead of the normal claim effects, look at the losing opponent's hand and choose and discard 1 card from that player's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -53097,7 +53097,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Any Phase: Until the end of the phase, each of your Asshai characters gets +1 STR and gains the Learned crest.",
+    "rules_text": "Any Phase: Until the end of the phase, each of your Asshai characters gets +1 STR and gains the [Learned] crest.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -53708,7 +53708,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: Kneel a Learned character to cancel the \"when revealed\" effects of a plot card just revealed.",
+    "rules_text": "Response: Kneel a [Learned] character to cancel the \"when revealed\" effects of a plot card just revealed.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -53878,7 +53878,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nPlay before any challenges have been initiated this phase.\nAny Phase: Kneel a Learned character to have each player choose up to 3 characters. Characters not chosen cannot participate in challenges this phase.",
+    "rules_text": "House Lannister only.\nPlay before any challenges have been initiated this phase.\nAny Phase: Kneel a [Learned] character to have each player choose up to 3 characters. Characters not chosen cannot participate in challenges this phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -54131,7 +54131,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After a character's STR is lowered by a card effect, kneel a Learned character to give that character -1 STR until the end of the phase.",
+    "rules_text": "Response: After a character's STR is lowered by a card effect, kneel a [Learned] character to give that character -1 STR until the end of the phase.",
     "flavor_text": "\"There is a saying in Qarth. A warlock's house is built of bones and lies.\" -Xaro Xhoan Daxos",
     "erratas": [],
     "faqs": [],
@@ -54530,7 +54530,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Setup. Maester character only.\nResponse: After attached character kneels, choose 1 character. Until the end of the phase, that character either gains or loses an Intrigue icon. (Limit once per phase.)",
+    "rules_text": "Setup. Maester character only.\nResponse: After attached character kneels, choose 1 character. Until the end of the phase, that character either gains or loses an [Intrigue] icon. (Limit once per phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -54836,7 +54836,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: Kneel a Learned character to copy a triggered effect that returns a character from your discard or dead pile to your hand, deck, shadows area, or play.",
+    "rules_text": "Response: Kneel a [Learned] character to copy a triggered effect that returns a character from your discard or dead pile to your hand, deck, shadows area, or play.",
     "flavor_text": "The maester stood on the windswept balcony outside his chambers. It was here the ravens came, after long flight.",
     "erratas": [],
     "faqs": [],
@@ -55099,7 +55099,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Any Phase: Kneel a Learned character to stand Advisor's Chambers.\n[+2 Influence]",
+    "rules_text": "Any Phase: Kneel a [Learned] character to stand Advisor's Chambers.\n[+2 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -55140,7 +55140,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If you control a War character, Faceless Man gets +2 STR.\nIf you control a Shadow character, Faceless Man gains Stealth.\nIf you control a Holy character, Faceless Man gains deadly.\nIf you control a Noble character, Faceless Man gains a Power icon.",
+    "rules_text": "If you control a [War] character, Faceless Man gets +2 STR.\nIf you control a [Shadow] character, Faceless Man gains Stealth.\nIf you control a [Holy] character, Faceless Man gains deadly.\nIf you control a [Noble] character, Faceless Man gains a [Power] icon.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -55281,7 +55281,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Kneel a Maester character to choose a player. That player may initiate an additional Intrigue challenge this phase. (Limit 1 per phase.)",
+    "rules_text": "Challenges: Kneel a Maester character to choose a player. That player may initiate an additional [Intrigue] challenge this phase. (Limit 1 per phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -55412,7 +55412,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Learned characters you control do not kneel to attack or defend during Intrigue challenges. Raise your claim value by 1 during Intrigue challenges you initiate.",
+    "rules_text": "[Learned] characters you control do not kneel to attack or defend during [Intrigue] challenges. Raise your claim value by 1 during [Intrigue] challenges you initiate.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -55857,7 +55857,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Attached character gains a War crest.\nResponse: After a challenge in which attached character participated resolves, choose and kill 1 non-unique participating character.",
+    "rules_text": "Attached character gains a [War] crest.\nResponse: After a challenge in which attached character participated resolves, choose and kill 1 non-unique participating character.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -56257,7 +56257,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After Free Man leaves play, choose and stand 1 War Crest character",
+    "rules_text": "Response: After Free Man leaves play, choose and stand 1 [War] character",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -56566,7 +56566,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attach to an opponent's House card.\nIf you have more than 1 oppponent, after a player wins an Intrigue challenge against the owner of attached House card, kneel Whisper Campaign. Then, the winner of the challenge draws 1 card for each card discarded for claim.",
+    "rules_text": "Attach to an opponent's House card.\nIf you have more than 1 oppponent, after a player wins an [Intrigue] challenge against the owner of attached House card, kneel Whisper Campaign. Then, the winner of the challenge draws 1 card for each card discarded for claim.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -57092,7 +57092,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments.\nNight's Watch characters you control without a printed Military icon gain a War Crest.\nNight's Watch characters you control without a printed Intrigue icon cannot be bypassed by stealth.\nNight's Watch characters you control without a printed Power icon get +1 STR.",
+    "rules_text": "No attachments.\nNight's Watch characters you control without a printed [Military] icon gain a [War].\nNight's Watch characters you control without a printed [Intrigue] icon cannot be bypassed by stealth.\nNight's Watch characters you control without a printed [Power] icon get +1 STR.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -57385,7 +57385,7 @@
       "Lannister"
     ],
     "unique": true,
-    "rules_text": "House Lannister only.\nResponse: After you win an Intrigue challenge, kneel Lannisport Tourney Grounds to choose and kneel 1 character. Then, if you control more unique characters than each opponent, discard all power on that character.",
+    "rules_text": "House Lannister only.\nResponse: After you win an [Intrigue] challenge, kneel Lannisport Tourney Grounds to choose and kneel 1 character. Then, if you control more unique characters than each opponent, discard all power on that character.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -57834,7 +57834,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Any Phase: Kneel The Scourge to choose 1 character. That character loses a Military, an Intrigue, and a Power icon until the end of the phase.\nResponse: After a character loses an icon from The Scourge, choose and discard 1 card from your hand to have that character gain that icon until the end of the phase. Any player may trigger this effect.",
+    "rules_text": "Any Phase: Kneel The Scourge to choose 1 character. That character loses a [Military], an [Intrigue], and a [Power] icon until the end of the phase.\nResponse: After a character loses an icon from The Scourge, choose and discard 1 card from your hand to have that character gain that icon until the end of the phase. Any player may trigger this effect.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -60823,7 +60823,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Stark or House Targaryen only.\nResponse: After you win a military challenge, choose a character of STR 2 or less controlled by the losing player. Attach Ward to the chosen character as a Condition attachment with the text: \"Take control of attached character. If the owner of attached character wins an Intrigue or Power challenge against you, discard Ward.\"",
+    "rules_text": "House Stark or House Targaryen only.\nResponse: After you win a [Military] challenge, choose a character of STR 2 or less controlled by the losing player. Attach Ward to the chosen character as a Condition attachment with the text: \"Take control of attached character. If the owner of attached character wins an [Intrigue] or [Power] challenge against you, discard Ward.\"",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -60913,7 +60913,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "House Lannister Only. Stealth.\nIf Ser Kevan Lannister would be killed, instead attach him to your House Card as your only agenda with the text: \"Response: After you win an intrigue challenge as the attacker, choose and kneel a character.\"",
+    "rules_text": "House Lannister Only. Stealth.\nIf Ser Kevan Lannister would be killed, instead attach him to your House Card as your only agenda with the text: \"Response: After you win an [Intrigue] challenge as the attacker, choose and kneel a character.\"",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],

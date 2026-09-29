@@ -436,7 +436,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Challenges: Kneel Greatjon Umber to have him participate in the current Military or Power challenge as either the attacker or as the defender.",
+    "rules_text": "Challenges: Kneel Greatjon Umber to have him participate in the current [Military] or [Power] challenge as either the attacker or as the defender.",
     "flavor_text": "The Greatjon became Robb's right hand, his staunchest champion.",
     "erratas": [],
     "faqs": [],
@@ -2946,7 +2946,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attached character gets +2 STR while it has a Power icon.\nAttached character gets -2 STR while it does not have a Power icon.",
+    "rules_text": "Attached character gets +2 STR while it has a [Power] icon.\nAttached character gets -2 STR while it does not have a [Power] icon.",
     "flavor_text": "\"Half my knights are afraid to even say her name, did you know?\" - Lord Stannis Baratheon",
     "erratas": [],
     "faqs": [],
@@ -3498,7 +3498,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: After you win a Power challenge by 4 or more total STR, stand Ser Axell Florent.",
+    "rules_text": "Response: After you win a [Power] challenge by 4 or more total STR, stand Ser Axell Florent.",
     "flavor_text": "The Florents of Brightwater Keep are sworn bannermen to Highgarden, and followed the Tyrells in declaring for King Renly.",
     "erratas": [],
     "faqs": [],
@@ -3544,7 +3544,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Stealth.\nLimited Response: After you win a Power challenge as the attacker by 4 or more total STR, discard Edric Storm from play (cannot be saved) to initiate an additional Power challenge this phase. (Limit 1 Limited Response per round.)",
+    "rules_text": "Stealth.\nLimited Response: After you win a [Power] challenge as the attacker by 4 or more total STR, discard Edric Storm from play (cannot be saved) to initiate an additional [Power] challenge this phase. (Limit 1 Limited Response per round.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -6280,7 +6280,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attached character gains the Lord trait and a Power icon.\nDuring the dominance phase, attached character gets +4 STR.\nLimit 1 per character.",
+    "rules_text": "Attached character gains the Lord trait and a [Power] icon.\nDuring the dominance phase, attached character gets +4 STR.\nLimit 1 per character.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -7603,7 +7603,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win a Power challenge, choose any gold or influence producing location controlled by an opponent, and take control of that location.",
+    "rules_text": "Response: After you win a [Power] challenge, choose any gold or influence producing location controlled by an opponent, and take control of that location.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -7720,7 +7720,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win a Power challenge by 4 or more total STR, choose a non-unique character controlled by the losing opponent. Take control of that character.\nLimit 1 per phase.",
+    "rules_text": "Response: After you win a [Power] challenge by 4 or more total STR, choose a non-unique character controlled by the losing opponent. Take control of that character.\nLimit 1 per phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -8015,7 +8015,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "When revealed, if you have more than one opponent, choose an opponent. You and that opponent cannot declare Power challenges against one another this round.",
+    "rules_text": "When revealed, if you have more than one opponent, choose an opponent. You and that opponent cannot declare [Power] challenges against one another this round.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -8255,7 +8255,7 @@
     "limit": 1,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Neutral"
     ],
@@ -11660,7 +11660,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Each player may initiate an additional Power challenge this round.",
+    "rules_text": "Each player may initiate an additional [Power] challenge this round.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -13173,7 +13173,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Characters without a Power icon cannot claim power for renown.",
+    "rules_text": "Characters without a [Power] icon cannot claim power for renown.",
     "flavor_text": "The last light of the afternoon was slanting down through the windows of many colored glass to dapple the pale marble with diamonds of half a hundred colors.",
     "erratas": [],
     "faqs": [],
@@ -16729,7 +16729,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.If Robert Baratheon is the only House Baratheon King character in play, he gains: \"You may initiate an additional Power challenge during the challenge phase.\"",
+    "rules_text": "Renown.\nIf Robert Baratheon is the only [Baratheon] King character in play, he gains: \"You may initiate an additional [Power] challenge during the challenge phase.\"",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -17063,7 +17063,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "During Power challenges, Ser Cortnay Penrose gets +2 STR and gains vigilant.",
+    "rules_text": "During [Power] challenges, Ser Cortnay Penrose gets +2 STR and gains vigilant.",
     "flavor_text": "\"What do you make of this Ser Cortnay Penrose?\"\n\"A stubborn man,\" said Davos carefully.",
     "erratas": [],
     "faqs": [],
@@ -17473,7 +17473,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Stealth.\nResponse: After you win a Power challenge by 4 or more total STR, return Lost Captain from your discard pile or dead pile to your hand.",
+    "rules_text": "Stealth.\nResponse: After you win a [Power] challenge by 4 or more total STR, return Lost Captain from your discard pile or dead pile to your hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -17782,7 +17782,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Your revealed plot card gains the Power Struggle trait. If it has the printed Power Struggle trait, raise your claim value by 1 during Power challenges.",
+    "rules_text": "Your revealed plot card gains the Power Struggle trait. If it has the printed Power Struggle trait, raise your claim value by 1 during [Power] challenges.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -18084,7 +18084,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: During a Power challenge, kneel Smuggler's Cove to choose 1 participating character. Until the end of the phase, that character gets +2 STR and gains stealth.",
+    "rules_text": "Challenges: During a [Power] challenge, kneel Smuggler's Cove to choose 1 participating character. Until the end of the phase, that character gets +2 STR and gains stealth.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -18283,7 +18283,7 @@
       "Baratheon"
     ],
     "unique": false,
-    "rules_text": "House Stark or House Baratheon only.\nChallenges: Choose 1 character with a Military and a Power icon that is attacking alone. For the duration of the challenge, that character gets +2 STR. If you win the challenge, instead of the normal claim effects, choose a non-unique location controlled by the losing opponent. Take control of that location.",
+    "rules_text": "House Stark or House Baratheon only.\nChallenges: Choose 1 character with a [Military] and a [Power] icon that is attacking alone. For the duration of the challenge, that character gets +2 STR. If you win the challenge, instead of the normal claim effects, choose a non-unique location controlled by the losing opponent. Take control of that location.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -18318,7 +18318,7 @@
       "Baratheon"
     ],
     "unique": false,
-    "rules_text": "House Baratheon only.\nResponse: After you win dominance or after you win a Power challenge, reveal the top 5 cards of an opponent's deck, discard 1 of the cards, and put the rest on the top of the deck in any order.",
+    "rules_text": "House Baratheon only.\nResponse: After you win dominance or after you win a [Power] challenge, reveal the top 5 cards of an opponent's deck, discard 1 of the cards, and put the rest on the top of the deck in any order.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -18746,7 +18746,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win a Power challenge by 4 or more total STR, claim 2 power for your House. Limit 1 per challenge.",
+    "rules_text": "Response: After you win a [Power] challenge by 4 or more total STR, claim 2 power for your House. Limit 1 per challenge.",
     "flavor_text": "\"These great lords love Joffrey, or Renly, or Robb Stark. I am their rightful king, but they will deny me if they can.\" - Lord Stannis Baratheon",
     "erratas": [],
     "faqs": [],
@@ -19086,7 +19086,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "A player cannot initiate a Military challenge unless he or she has won a Power challenge that phase.",
+    "rules_text": "A player cannot initiate a [Military] challenge unless he or she has won a [Power] challenge that phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -19579,7 +19579,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "No attachments.\nResponse: After you win a Power challenge, choose and discard an attachment from play.",
+    "rules_text": "No attachments.\nResponse: After you win a [Power] challenge, choose and discard an attachment from play.",
     "flavor_text": "The Unsullied locked their shields, lowered their spears, and stood firm.",
     "erratas": [],
     "faqs": [],
@@ -24086,7 +24086,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments except Siege.\nLower the cost to play King Robert's Host by 4 if you control a King or Queen character.\nWhile King Robert's Host is standing, opponents cannot initiate Power challenges against you.",
+    "rules_text": "No attachments except Siege.\nLower the cost to play King Robert's Host by 4 if you control a King or Queen character.\nWhile King Robert's Host is standing, opponents cannot initiate [Power] challenges against you.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -24619,7 +24619,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Greyjoy"
     ],
@@ -24752,7 +24752,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Martell"
     ],
@@ -25424,7 +25424,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "No attachments except Weapon.\nWhile there is no other card named King's Champion in play, it gains a Power icon and cannot be discarded from play.",
+    "rules_text": "No attachments except Weapon.\nWhile there is no other card named King's Champion in play, it gains a [Power] icon and cannot be discarded from play.",
     "flavor_text": "\"... name you a champion, and I shall do the same.\" - Ser Cortnay Penrose",
     "erratas": [],
     "faqs": [],
@@ -25782,7 +25782,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited Response: After you win a Military or Power challenge in which First Mate is participating, put a Warship location from your hand or discard pile into play. (Limit 1 Limited Response per round.)",
+    "rules_text": "Limited Response: After you win a [Military] or [Power] challenge in which First Mate is participating, put a Warship location from your hand or discard pile into play. (Limit 1 Limited Response per round.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26853,7 +26853,7 @@
       "Baratheon"
     ],
     "unique": false,
-    "rules_text": "House Baratheon only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single Power challenge with normal claim. The winner of each challenge may draw three cards. (Place this card next to your plot deck until the end of this epic phase.)",
+    "rules_text": "House Baratheon only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single [Power] challenge with normal claim. The winner of each challenge may draw three cards. (Place this card next to your plot deck until the end of this epic phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26927,7 +26927,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single Power challenge with normal claim. The winner of each challenge may choose and discard any number of attachments from play. (Place this card next to your plot deck until the end of this epic phase.)",
+    "rules_text": "House Targaryen only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single [Power] challenge with normal claim. The winner of each challenge may choose and discard any number of attachments from play. (Place this card next to your plot deck until the end of this epic phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26956,7 +26956,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Martell"
     ],
@@ -27161,7 +27161,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Targaryen"
     ],
@@ -27653,7 +27653,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Neutral"
     ],
@@ -28148,7 +28148,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attach to an opponent's location. Kneel that location. Limited Response: After you win a Power challenge by 4 or more total STR, kneel Martial Law to claim 2 power for your House. (Limit 1 Limited Response per round.)",
+    "rules_text": "Attach to an opponent's location. Kneel that location. Limited Response: After you win a[ Power] challenge by 4 or more total STR, kneel Martial Law to claim 2 power for your House. (Limit 1 Limited Response per round.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -28569,7 +28569,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Baratheon"
     ],
@@ -28860,7 +28860,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win a Power challenge, you may attach Banner for the Storm (from play or from your hand) to a House Baratheon character as a Banner attachment with the text: 'Attached character gains vigilant.'",
+    "rules_text": "Response: After you win a [Power] challenge, you may attach Banner for the Storm (from play or from your hand) to a [Baratheon] character as a Banner attachment with the text: 'Attached character gains vigilant.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -29238,7 +29238,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Lannister"
     ],
@@ -29590,7 +29590,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Targaryen"
     ],
@@ -30422,7 +30422,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If it is Winter, Ice Fisherman gains a Power icon and: 'Marshalling: Kneel Ice Fisherman to take 1 gold token from any opponent's gold pool, and add it to your gold pool.'",
+    "rules_text": "If it is Winter, Ice Fisherman gains a [Power] icon and: 'Marshalling: Kneel Ice Fisherman to take 1 gold token from any opponent's gold pool, and add it to your gold pool.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -31553,7 +31553,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Neutral"
     ],
@@ -31943,7 +31943,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.\nIf Renly Baratheon is the only King in play, he gains: 'After you win a Power challenge and there is at least 1 Power Struggle plot card revealed, draw a card.'",
+    "rules_text": "Renown.\nIf Renly Baratheon is the only King in play, he gains: 'After you win a [Power] challenge and there is at least 1 Power Struggle plot card revealed, draw a card.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -32170,7 +32170,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited Response: After you reveal a Military Battle plot card, kneel a character with a Military icon to kneel all characters with a Power icon. (Limit 1 Limited Response per round.)",
+    "rules_text": "Limited Response: After you reveal a Military Battle plot card, kneel a character with a [Military] icon to kneel all characters with a [Power] icon. (Limit 1 Limited Response per round.)",
     "flavor_text": "\"A rounded point, and dull, but it will go through your eye all the same.\" - Ser Jaime Lannister",
     "erratas": [],
     "faqs": [],
@@ -32279,7 +32279,7 @@
       "Baratheon"
     ],
     "unique": false,
-    "rules_text": "House Baratheon only.\nResponse: After an opponent wins a Power challenge against you, kneel and discard Dragonstone Rookery from play (cannot be saved) and pay 1 gold to reveal a new plot card.",
+    "rules_text": "House Baratheon only.\nResponse: After an opponent wins a [Power] challenge against you, kneel and discard Dragonstone Rookery from play (cannot be saved) and pay 1 gold to reveal a new plot card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -32353,7 +32353,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nResponse: After you win a Power challenge by 4 or more total STR, kneel and discard Qartheen Rookery from play (cannot be saved) and pay 1 gold to reveal a new plot card.",
+    "rules_text": "House Targaryen only.\nResponse: After you win a [Power] challenge by 4 or more total STR, kneel and discard Qartheen Rookery from play (cannot be saved) and pay 1 gold to reveal a new plot card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -32924,7 +32924,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Vigilant.\nDuring Power challenges, Arena Knight gains renown.",
+    "rules_text": "Vigilant.\nDuring [Power] challenges, Arena Knight gains renown.",
     "flavor_text": "\"Your warhorse, now, he may not be the best one for the joust.\" - Hullen",
     "erratas": [],
     "faqs": [],
@@ -33143,7 +33143,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Martell"
     ],
@@ -33331,7 +33331,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Targaryen",
       "Martell"
@@ -33442,7 +33442,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "If it is Winter, discard Gilly from play. If it is Summer, Gilly gains +2 STR, a Power icon, and 'After you win a challenge in which Gilly participated, draw a card.'",
+    "rules_text": "If it is Winter, discard Gilly from play. If it is Summer, Gilly gains +2 STR, a [Power] icon, and 'After you win a challenge in which Gilly participated, draw a card.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -34780,7 +34780,7 @@
       "Baratheon"
     ],
     "unique": false,
-    "rules_text": "House Baratheon only.\nResponse: After you declare attackers during a Power challenge, put Kingswood Trail into Shadows to choose and kneel a character with a Power icon controlled by the defending player.",
+    "rules_text": "House Baratheon only.\nResponse: After you declare attackers during a [Power] challenge, put Kingswood Trail into Shadows to choose and kneel a character with a [Power] icon controlled by the defending player.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -36514,7 +36514,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Knight character only.\nAttached character gains Renown. Challenges: Unattach Jousting Steed. Then, it becomes a STR 2 character with a Military and a Power icon and \"while Jousting Steed is attacking alone, no more than 1 character can be declared as a defender.\" At the end of the phase, return Jousting Steed to its owner's hand if it is still in play.",
+    "rules_text": "Knight character only.\nAttached character gains Renown. Challenges: Unattach Jousting Steed. Then, it becomes a STR 2 character with a [Military] and a [Power] icon and \"while Jousting Steed is attacking alone, no more than 1 character can be declared as a defender.\" At the end of the phase, return Jousting Steed to its owner's hand if it is still in play.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -38488,7 +38488,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win a Power challenge in which Dornish Diplomat participated, choose and stand a character controlled by an opponent. Then, choose and stand a character you control.",
+    "rules_text": "Response: After you win a [Power] challenge in which Dornish Diplomat participated, choose and stand a character controlled by an opponent. Then, choose and stand a character you control.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -39066,7 +39066,7 @@
       "Baratheon"
     ],
     "unique": true,
-    "rules_text": "House Baratheon only.\nResponse: After you win a Power challenge, kneel Blackwater Bay to choose a card with the [Shadow] crest in your discard pile, and place that card in Shadows.",
+    "rules_text": "House Baratheon only.\nResponse: After you win a [Power] challenge, kneel Blackwater Bay to choose a card with the [Shadow] crest in your discard pile, and place that card in Shadows.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -40011,7 +40011,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.\nResponse: After you win a Power challenge in which Khal Drogo is participating, choose and kill 1 character with lower STR than Khal Drogo.",
+    "rules_text": "Renown.\nResponse: After you win a [Power] challenge in which Khal Drogo is participating, choose and kill 1 character with lower STR than Khal Drogo.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -43536,7 +43536,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments. Stealth. Discard White Hatchling from play any time you control Viserion. White Hatchling gains a Power icon during Power challenges initiated against you.",
+    "rules_text": "No attachments. Stealth. Discard White Hatchling from play any time you control Viserion. White Hatchling gains a [Power] icon during [Power] challenges initiated against you.",
     "flavor_text": "The cream-colored dragon sunk sharp black claws into the lion's mane and coiled its tail around her arm...",
     "erratas": [],
     "faqs": [],
@@ -43576,7 +43576,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.Response: If an opponent would win a Power challenge against you, cancel the determination of challenge winner. You automatically win the challenge.",
+    "rules_text": "House Targaryen only.\nResponse: If an opponent would win a [Power] challenge against you, cancel the determination of challenge winner. You automatically win the challenge.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -45711,7 +45711,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "RÃ©gis Moulun",
+    "illustrator": "Régis Moulun",
     "house": [
       "Neutral"
     ],
@@ -46612,7 +46612,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If you would claim or move power to your House, you must place it on a Brotherhood character you control instead. Opponents may choose and take power from your Brotherhood characters to fulfill the claim of Power challenges initiated against you.",
+    "rules_text": "If you would claim or move power to your House, you must place it on a Brotherhood character you control instead. Opponents may choose and take power from your Brotherhood characters to fulfill the claim of [Power] challenges initiated against you.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -49369,7 +49369,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "No attachments except Weapon.\nAfter a player wins a Power challenge against you, that player gains control of The Flayed Men.",
+    "rules_text": "No attachments except Weapon.\nAfter a player wins a [Power] challenge against you, that player gains control of The Flayed Men.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -49819,7 +49819,7 @@
       "Greyjoy"
     ],
     "unique": false,
-    "rules_text": "House Greyjoy only.\nLimited Response: After you win a Power challenge in which at least 1 Raider character participated, discard the top X cards of the losing opponent's deck. X is the amount by which you won the challenge. (Limit 1 limited response per round.)",
+    "rules_text": "House Greyjoy only.\nLimited Response: After you win a [Power] challenge in which at least 1 Raider character participated, discard the top X cards of the losing opponent's deck. X is the amount by which you won the challenge. (Limit 1 limited response per round.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -49954,7 +49954,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Sand Snake characters you control gain a Power icon and vengeful.",
+    "rules_text": "Sand Snake characters you control gain a [Power] icon and vengeful.",
     "flavor_text": "\"... Elia and Obella have become the terror of the pools.\" - Doran Martell",
     "erratas": [],
     "faqs": [],
@@ -50428,7 +50428,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "House Baratheon character only.\nResponse: After you win a Power challenge in which attached character participated, kneel Lucky Bones and discard the top 2 cards of your deck to draw 1 card. (Draw 2 cards instead if attached character is Ser Davos Seaworth.)",
+    "rules_text": "[Baratheon] character only.\nResponse: After you win a [Power] challenge in which attached character participated, kneel Lucky Bones and discard the top 2 cards of your deck to draw 1 card. (Draw 2 cards instead if attached character is Ser Davos Seaworth.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -52664,7 +52664,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Kneel a Maester character to choose a player. That player may initiate an additional Power challenge this phase.",
+    "rules_text": "Challenges: Kneel a Maester character to choose a player. That player may initiate an additional [Power] challenge this phase.",
     "flavor_text": "The night before an acolyte takes his vows, he must stand a vigil in the vault. - Armen the Acolyte",
     "erratas": [],
     "faqs": [],
@@ -53315,7 +53315,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nChallenges: Choose a unique Targaryen character. Until the end of the phase, that character does not kneel to attack or defend during Power challenges.",
+    "rules_text": "House Targaryen only.\nChallenges: Choose a unique [Targaryen] character. Until the end of the phase, that character does not kneel to attack or defend during [Power] challenges.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -56644,7 +56644,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Melee. Renown.\nWhile Robert Baratheon is attacking alone in a Power challenge, each opponent you are not attacking may declare 1 eligible character as a defender. If you win the challenge, instead of the normal claim effects, each opponent must satisfy the claim effect of the challenge.",
+    "rules_text": "Melee. Renown.\nWhile Robert Baratheon is attacking alone in a [Power] challenge, each opponent you are not attacking may declare 1 eligible character as a defender. If you win the challenge, instead of the normal claim effects, each opponent must satisfy the claim effect of the challenge.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -56693,7 +56693,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win a Power challenge in which attached character participated, choose and discard from play 1 participating character with 1 or more power on it.",
+    "rules_text": "Response: After you win a [Power] challenge in which attached character participated, choose and discard from play 1 participating character with 1 or more power on it.",
     "flavor_text": "A monstrous thing it was, its haft wrapped in old leather, its head a brick of steel as large as a loaf of bread.",
     "erratas": [],
     "faqs": [],
@@ -57473,7 +57473,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attach to an opponent's House card.\nIf you have more than 1 opponent, after a player wins a Power challenge against the owner of attached House card, kneel Enemy to the Crown. Then, the winner of the challenge stands 1 character for each power moved for claim.",
+    "rules_text": "Attach to an opponent's House card.\nIf you have more than 1 opponent, after a player wins a [Power] challenge against the owner of attached House card, kneel Enemy to the Crown. Then, the winner of the challenge stands 1 character for each power moved for claim.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -57713,7 +57713,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nChallenges: Choose an attacking Dothraki or Knight character. That character gains renown until the end of the challenge.\nResponse: After you win a Power challenge by 4 or more total STR, return Ride Them Down from your discard pile to your hand.",
+    "rules_text": "House Targaryen only.\nChallenges: Choose an attacking Dothraki or Knight character. That character gains renown until the end of the challenge.\nResponse: After you win a [Power] challenge by 4 or more total STR, return Ride Them Down from your discard pile to your hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -72187,7 +72187,7 @@
     "limit": 1,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Ãlvaro Calvo Escudero",
+    "illustrator": "Álvaro Calvo Escudero",
     "house": [
       "Neutral"
     ],
@@ -72453,7 +72453,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Antonio MaÃ­nez",
+    "illustrator": "Antonio Maínez",
     "house": [
       "Greyjoy"
     ],
@@ -78487,7 +78487,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Discard a card from your hand to turn Iron Islands Marines into an Army character with 3 STR, deadly, a military icon, and a power icon until the end of the phase.",
+    "rules_text": "Challenges: Discard a card from your hand to turn Iron Islands Marines into an Army character with 3 STR, deadly, a [Military] icon, and a [Power] icon until the end of the phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -79920,7 +79920,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Prized 2.\nAttach to your House card.\nResponse: After you play a prized card, kneel attached House card to choose a character. That character gains deadly and “Does not kneel to attack or defend during Power challenges” until the end of the round.",
+    "rules_text": "Prized 2.\nAttach to your House card.\nResponse: After you play a prized card, kneel attached House card to choose a character. That character gains deadly and “Does not kneel to attack or defend during [Power] challenges” until the end of the round.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -83995,7 +83995,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Ignacio BazÃ¡n Lazcano",
+    "illustrator": "Ignacio Bazán Lazcano",
     "house": [
       "Martell"
     ],
@@ -84960,7 +84960,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Ignacio BazÃ¡n Lazcano",
+    "illustrator": "Ignacio Bazán Lazcano",
     "house": [
       "Stark"
     ],
@@ -85548,7 +85548,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Joshua CairÃ³s",
+    "illustrator": "Joshua Cairós",
     "house": [
       "Greyjoy"
     ],

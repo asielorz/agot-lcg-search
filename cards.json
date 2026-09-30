@@ -113,7 +113,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "House Stark character only.\nAttached character gets +2 STR and gains a Military icon. If attached character is Bran Stark, he gains stealth.",
+    "rules_text": "[Stark] character only.\nAttached character gets +2 STR and gains a [Military] icon. If attached character is Bran Stark, he gains stealth.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -346,7 +346,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: after you win a Military challenge in which Robb Stark participates, choose and kill a character controlled by the losing player.",
+    "rules_text": "Response: after you win a [Military] challenge in which Robb Stark participates, choose and kill a character controlled by the losing player.",
     "flavor_text": "\"I have won every battle, but I feel as though I am losing the war.\"",
     "erratas": [],
     "faqs": [],
@@ -5529,7 +5529,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Qartheen Fanatic gets +1 STR and a Military icon while there is a Dragon character in play.",
+    "rules_text": "Qartheen Fanatic gets +1 STR and a [Military] icon while there is a Dragon character in play.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -6950,7 +6950,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: Choose a character with a Military icon. Kneel that character.",
+    "rules_text": "Marshalling: Choose a character with a [Military] icon. Kneel that character.",
     "flavor_text": "\"The Blackfish led the van, cutting down our sentries and clearing away the palisades for the main assault. By the time our men knew what was happening, men were pouring over the ditch banks...\"",
     "erratas": [],
     "faqs": [],
@@ -7073,7 +7073,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: During a Military challenge, kneel 2 of your House Stark characters to kill all attacking characters.\nLimit 1 per challenge.",
+    "rules_text": "Challenges: During a [Military] challenge, kneel 2 of your [Stark] characters to kill all attacking characters.\nLimit 1 per challenge.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -8056,7 +8056,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "In order to initiate a Military challenge, an attacker must give the defender 2 gold tokens from his or her gold pool.",
+    "rules_text": "In order to initiate a [Military] challenge, an attacker must give the defender 2 gold tokens from his or her gold pool.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -8591,7 +8591,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "When revealed, if you have more than one opponent, choose an opponent. You and that opponent cannot declare Military challenges against one another this round.",
+    "rules_text": "When revealed, if you have more than one opponent, choose an opponent. You and that opponent cannot declare [Military] challenges against one another this round.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -11445,7 +11445,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Each player may initiate an additional Military challenge this round.",
+    "rules_text": "Each player may initiate an additional [Military] challenge this round.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -13746,7 +13746,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attached character gets +2 STR and gains a Military icon.\nAny Phase: Kneel 1 influence to attach Rusted Sword from your hand to a character you control.",
+    "rules_text": "Attached character gets +2 STR and gains a [Military] icon.\nAny Phase: Kneel 1 influence to attach Rusted Sword from your hand to a character you control.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -13926,7 +13926,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After a Military challenge resolves, kneel 1 influence to have the losing player choose 1 participating character and put that character on top of its owner's deck.",
+    "rules_text": "Response: After a [Military] challenge resolves, kneel 1 influence to have the losing player choose 1 participating character and put that character on top of its owner's deck.",
     "flavor_text": "When I woke, my hands were clean.\nCard designed by the 2008 AGoT Melee World Champion, Tzu-Mainn Chen.",
     "erratas": [],
     "faqs": [],
@@ -14058,7 +14058,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "At the end of the challenge phase, each player who has not won a Military challenge must choose and kill 1 character he or she controls.",
+    "rules_text": "At the end of the challenge phase, each player who has not won a [Military] challenge must choose and kill 1 character he or she controls.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -15119,7 +15119,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Guard at Riverrun gets +1 STR while defending.\nAt the end of the challenge phase, if no opponent has won a Military challenge against you this round, draw a card.",
+    "rules_text": "Guard at Riverrun gets +1 STR while defending.\nAt the end of the challenge phase, if no opponent has won a [Military] challenge against you this round, draw a card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -15301,7 +15301,7 @@
       "Stark"
     ],
     "unique": true,
-    "rules_text": "House Stark only. Renown.\nWhile The Blackfish has 3 or more power, your House Tully characters do not kneel to attack.\nResponse: After you win a Military challenge as the attacker, draw 1 card.",
+    "rules_text": "House Stark only. Renown.\nWhile The Blackfish has 3 or more power, your House Tully characters do not kneel to attack.\nResponse: After you win a [Military] challenge as the attacker, draw 1 card.",
     "flavor_text": "Card designed by 2009 A Game of Thrones World Champion, Erick A. Butzlaff.",
     "erratas": [],
     "faqs": [],
@@ -15351,7 +15351,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments.\nResponse: After you win a challenge as the defender, claim 1 power for your House. (2 power instead if it was a Military challenge.)",
+    "rules_text": "No attachments.\nResponse: After you win a challenge as the defender, claim 1 power for your House. (2 power instead if it was a [Military] challenge.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -15937,7 +15937,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Choose 1 of your participating House Stark characters to get +2 STR until the end of the challenge.\nResponse: After you win a Military challenge by 4 or more total STR, return Endless Endurance from your discard pile to your hand.",
+    "rules_text": "Challenges: Choose 1 of your participating [Stark] characters to get +2 STR until the end of the challenge.\nResponse: After you win a [Military] challenge by 4 or more total STR, return Endless Endurance from your discard pile to your hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -16062,7 +16062,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown. No attachments.\nResponse: After you win a Military challenge by 4 or more total STR, choose and kill 1 non-unique character with printed STR 3 or less controlled by the losing opponent.",
+    "rules_text": "Renown. No attachments.\nResponse: After you win a [Military] challenge by 4 or more total STR, choose and kill 1 non-unique character with printed STR 3 or less controlled by the losing opponent.",
     "flavor_text": "Card designed by 2009 A Game of Thrones Melee Champion, Jonathan Benton.",
     "erratas": [],
     "faqs": [],
@@ -16245,7 +16245,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Your Army characters do not kneel to attack during Military challenges.",
+    "rules_text": "Your Army characters do not kneel to attack during [Military] challenges.",
     "flavor_text": "The courtyard rang to the song of swords.",
     "erratas": [],
     "faqs": [],
@@ -16612,7 +16612,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "You may initiate an additional Military challenge during the challenge phase.",
+    "rules_text": "You may initiate an additional [Military] challenge during the challenge phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -19178,7 +19178,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If there is at least 1 Dragon character in play, attached character must be chosen for Military claim if able.",
+    "rules_text": "If there is at least 1 Dragon character in play, attached character must be chosen for [Military] claim if able.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -19758,7 +19758,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nChallenges: During a Military challenge, kneel 1 influence to put Horseback Archers into play from your hand, knelt, as an attacker or defender. Then, at the end of the phase, if Horseback Archers is in play, return it to its owner's hand.",
+    "rules_text": "House Targaryen only.\nChallenges: During a [Military] challenge, kneel 1 influence to put Horseback Archers into play from your hand, knelt, as an attacker or defender. Then, at the end of the phase, if Horseback Archers is in play, return it to its owner's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -21438,7 +21438,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Players cannot initiate Military challenges unless they control an Army character.",
+    "rules_text": "Players cannot initiate [Military] challenges unless they control an Army character.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -23943,7 +23943,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments except Siege.\nLower the cost to play King Robb's Host by 4 if you control a King or Queen character.\nKing Robb's Host does not kneel to attack during Military challenges.",
+    "rules_text": "No attachments except Siege.\nLower the cost to play King Robb's Host by 4 if you control a King or Queen character.\nKing Robb's Host does not kneel to attack during [Military] challenges.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -24274,7 +24274,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Each Maester character in play gains a Military icon.",
+    "rules_text": "Each Maester character in play gains a [Military] icon.",
     "flavor_text": "The different metals are each a different kind of learning, gold for the study of money and accounts, silver for healing, iron for warcraft.",
     "erratas": [],
     "faqs": [],
@@ -24367,7 +24367,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited Response: After you reveal a Military Battle plot card, choose and kill a character without a Military icon. (Limit 1 Limited Response per round.)",
+    "rules_text": "Limited Response: After you reveal a Military Battle plot card, choose and kill a character without a [Military] icon. (Limit 1 Limited Response per round.)",
     "flavor_text": "\"One king,\" agreed Davos. \"One king means peace.\"",
     "erratas": [],
     "faqs": [],
@@ -26890,7 +26890,7 @@
       "Greyjoy"
     ],
     "unique": false,
-    "rules_text": "House Greyjoy only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single Military challenge with normal claim. The winner of each challenge may choose and discard from play a location controlled by the losing player. (Place this card next to your plot deck until the end of this epic phase.)",
+    "rules_text": "House Greyjoy only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single [Military] challenge with normal claim. The winner of each challenge may choose and discard from play a location controlled by the losing player. (Place this card next to your plot deck until the end of this epic phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -28769,7 +28769,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attach to an opponent's location. Kneel that location. Response: After you win a Military challenge, kneel Campfire Lights to search your deck for a Bannerman character, reveal it, and put it into your hand. Then shuffle your deck.",
+    "rules_text": "Attach to an opponent's location. Kneel that location. Response: After you win a [Military] challenge, kneel Campfire Lights to search your deck for a Bannerman character, reveal it, and put it into your hand. Then shuffle your deck.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -28951,7 +28951,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win a Military challenge, you may attach Banner for the Kraken (from play or from your hand) to a House Greyjoy character as a Banner attachment with the text: 'Attached character gains Intimidate.'",
+    "rules_text": "Response: After you win a [Military] challenge, you may attach Banner for the Kraken (from play or from your hand) to a [Greyjoy] character as a Banner attachment with the text: 'Attached character gains Intimidate.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -30156,7 +30156,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After you win a Military challenge in which attached character participated and it is Winter, choose and discard a location from play.",
+    "rules_text": "After you win a [Military] challenge in which attached character participated and it is Winter, choose and discard a location from play.",
     "flavor_text": "The sounds of drums and horns swirled up into the night.",
     "erratas": [],
     "faqs": [],
@@ -31485,7 +31485,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nAny Phase: If there is at least 1 Military Battle plot card revealed, pay 1 gold or kneel a War character to choose and kneel a character or location. Then, discard 1 power from the target.",
+    "rules_text": "House Lannister only.\nAny Phase: If there is at least 1 Military Battle plot card revealed, pay 1 gold or kneel a [War] character to choose and kneel a character or location. Then, discard 1 power from the target.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -32205,7 +32205,7 @@
       "Stark"
     ],
     "unique": false,
-    "rules_text": "House Stark only.\nResponse: After an opponent wins a Military challenge against you, kneel and discard Winterfell Rookery from play (cannot be saved) and pay 1 gold to reveal a new plot card.",
+    "rules_text": "House Stark only.\nResponse: After an opponent wins a [Military] challenge against you, kneel and discard Winterfell Rookery from play (cannot be saved) and pay 1 gold to reveal a new plot card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -32316,7 +32316,7 @@
       "Greyjoy"
     ],
     "unique": false,
-    "rules_text": "House Greyjoy only.\nResponse: After you win a Military challenge by 4 or more total STR, kneel and discard Island Rookery from play (cannot be saved) and pay 1 gold to reveal a new plot card.",
+    "rules_text": "House Greyjoy only.\nResponse: After you win a [Military] challenge by 4 or more total STR, kneel and discard Island Rookery from play (cannot be saved) and pay 1 gold to reveal a new plot card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -36642,7 +36642,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win a Military challenge in which Harbor Thug participated, discard the top card of the losing opponent's deck. If that card is a character, Harbor Thug claims 1 power.",
+    "rules_text": "Response: After you win a [Military] challenge in which Harbor Thug participated, discard the top card of the losing opponent's deck. If that card is a character, Harbor Thug claims 1 power.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -38246,7 +38246,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Ancient Mariner gets -3 STR during Military challenges.",
+    "rules_text": "Ancient Mariner gets -3 STR during [Military] challenges.",
     "flavor_text": "His own hair was snow white as well, and his huge beard covered him like a blanket from cheeks to thighs, so it was hard to tell where the beard ended and the pelt began.",
     "erratas": [],
     "faqs": [],
@@ -38533,7 +38533,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Any Phase: Kneel The Broken Spear to choose attached character. Until the end of the phase, that character either gains or loses a Military icon.",
+    "rules_text": "Any Phase: Kneel The Broken Spear to choose attached character. Until the end of the phase, that character either gains or loses a [Military] icon.",
     "flavor_text": "Only the fact that some had spears and others empty scabbards served to set them apart.",
     "erratas": [],
     "faqs": [],
@@ -38939,7 +38939,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Attach to a location. Kneel that location. If you lose a Military challenge, discard Tyrion's Chain from play. Response: After attached location is knelt, kneel all locations controlled by the attached location's controller.",
+    "rules_text": "Attach to a location. Kneel that location. If you lose a [Military] challenge, discard Tyrion's Chain from play. Response: After attached location is knelt, kneel all locations controlled by the attached location's controller.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -39230,7 +39230,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "War character only.\nIf you have at least 1 gold in your gold pool, attached character does not kneel to attack or defend during Military challenges.",
+    "rules_text": "[War] character only.\nIf you have at least 1 gold in your gold pool, attached character does not kneel to attack or defend during [Military] challenges.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -39359,7 +39359,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "No attachments except Weapon.\nChallenges: Kneel Veteran Spearman to choose an opponent's character. Until the end of the phase, that character cannot be chosen to die as the result of Military challenge claim.",
+    "rules_text": "No attachments except Weapon.\nChallenges: Kneel Veteran Spearman to choose an opponent's character. Until the end of the phase, that character cannot be chosen to die as the result of [Military] challenge claim.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -39574,7 +39574,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Plot: After the dominance phase this round, there is an epic phase during which each player may initiate a single Military challenge. In addition to the normal claim effect, the winner of each challenge chooses and returns a King's Landing location from his or her discard pile to his or her hand, if able. (Place this card next to your plot deck until the end of this epic phase, then discard it.)",
+    "rules_text": "Plot: After the dominance phase this round, there is an epic phase during which each player may initiate a single [Military] challenge. In addition to the normal claim effect, the winner of each challenge chooses and returns a King's Landing location from his or her discard pile to his or her hand, if able. (Place this card next to your plot deck until the end of this epic phase, then discard it.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -40177,7 +40177,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "No attachments except Weapon.\nDuring Military challenges, Ranger of the Watch gains stealth.",
+    "rules_text": "No attachments except Weapon.\nDuring [Military] challenges, Ranger of the Watch gains stealth.",
     "flavor_text": "He was dressed in black, as befitted a man of the Night's Watch.",
     "erratas": [],
     "faqs": [],
@@ -41463,7 +41463,7 @@
       "Stark"
     ],
     "unique": false,
-    "rules_text": "House Stark only.\nResponse: If an opponent would win a Military challenge against you, kneel 2 influence to cancel the determination of challenge winner. You automatically win the challenge.",
+    "rules_text": "House Stark only.\nResponse: If an opponent would win a [Military] challenge against you, kneel 2 influence to cancel the determination of challenge winner. You automatically win the challenge.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -41992,7 +41992,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win a Military challenge in which at least 1 Night's Watch character participated, draw 2 cards.",
+    "rules_text": "Response: After you win a [Military] challenge in which at least 1 Night's Watch character participated, draw 2 cards.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -42340,7 +42340,7 @@
       "Stark"
     ],
     "unique": false,
-    "rules_text": "House Stark only.\nResponse: Discard Borderland Keep from play (cannot be saved) to cancel 1 effect triggered during a Military challenge.",
+    "rules_text": "House Stark only.\nResponse: Discard Borderland Keep from play (cannot be saved) to cancel 1 effect triggered during a [Military] challenge.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -45282,7 +45282,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments except Weapon.\nResponse: After you win a Military challenge in which every attacking character has the Dothraki trait, discard 1 card at random from the losing opponent's hand.",
+    "rules_text": "No attachments except Weapon.\nResponse: After you win a [Military] challenge in which every attacking character has the Dothraki trait, discard 1 card at random from the losing opponent's hand.",
     "flavor_text": "\"As you say, I do, blood of my blood.\"",
     "erratas": [],
     "faqs": [],
@@ -45380,7 +45380,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "During Military challenges, characters cannot be saved.",
+    "rules_text": "During [Military] challenges, characters cannot be saved.",
     "flavor_text": "\"It was wrong of them to burn my temple,\" the heavy, flat-nosed woman said placidly.",
     "erratas": [],
     "faqs": [],
@@ -45465,7 +45465,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments.\nResponse: After you win a Military challenge in which at least 1 Dothraki character attacked, kneel Vaes Dothrak to (choose one): draw 1 card, discard 1 card at random from the losing opponent's hand, or move 1 power from the losing opponent's House to your own.",
+    "rules_text": "No attachments.\nResponse: After you win a [Military] challenge in which at least 1 Dothraki character attacked, kneel Vaes Dothrak to (choose one): draw 1 card, discard 1 card at random from the losing opponent's hand, or move 1 power from the losing opponent's House to your own.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -45508,7 +45508,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After an opponent's character is killed for Military claim, stand all Dothraki characters in play.",
+    "rules_text": "Response: After an opponent's character is killed for [Military] claim, stand all Dothraki characters in play.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -46345,7 +46345,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Deadly.\nResponse: After you win a Military challenge in which every attacking character has the Dothraki trait, move 1 power from the losing opponent's House card to your own.",
+    "rules_text": "Deadly.\nResponse: After you win a [Military] challenge in which every attacking character has the Dothraki trait, move 1 power from the losing opponent's House card to your own.",
     "flavor_text": "\"It shall be done, Khaleesi,\" Aggo said.",
     "erratas": [],
     "faqs": [],
@@ -46386,7 +46386,7 @@
       "Targaryen"
     ],
     "unique": true,
-    "rules_text": "House Targaryen only. Ambush.\nDothraki character only.\nChallenges: If attached character is attacking in a Military challenge, kneel Aggo's Bow to choose and kill 1 defending character. (Cannot be saved if attached character is Aggo.)",
+    "rules_text": "House Targaryen only. Ambush.\nDothraki character only.\nChallenges: If attached character is attacking in a [Military] challenge, kneel Aggo's Bow to choose and kill 1 defending character. (Cannot be saved if attached character is Aggo.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -46874,7 +46874,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If you have fewer cards in hand than each opponent, Tyrion's Enforcers can attack or defend Military challenges while knelt.",
+    "rules_text": "If you have fewer cards in hand than each opponent, Tyrion's Enforcers can attack or defend [Military] challenges while knelt.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -47007,7 +47007,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Until the end of the phase, knelt Clansman characters you control can be declared as attackers during Military challenges.",
+    "rules_text": "Challenges: Until the end of the phase, knelt Clansman characters you control can be declared as attackers during [Military] challenges.",
     "flavor_text": "\"Halfman!\" Shagga shouted. Other Stone Crows picked up the cry, and the Black Ears and Moon Brothers as well.",
     "erratas": [],
     "faqs": [],
@@ -47228,7 +47228,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If you have won a single Military challenge as the attacker this phase, you may declare 1 additional Military challenge (to a maximum of 2) by declaring Blood-Crazed Screamer and any number of eligible Dothraki characters as attackers.",
+    "rules_text": "If you have won a single [Military] challenge as the attacker this phase, you may declare 1 additional [Military] challenge (to a maximum of 2) by declaring Blood-Crazed Screamer and any number of eligible Dothraki characters as attackers.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [
@@ -48100,7 +48100,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only. Ambush.\nAfter you lose a Military challenge, return Horseback Hunters to your hand.",
+    "rules_text": "House Targaryen only. Ambush.\nAfter you lose a [Military] challenge, return Horseback Hunters to your hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -48634,7 +48634,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If there is at least 1 card in Shadows, Asshai characters gain a Military icon and get +1 STR for each card in Shadows.",
+    "rules_text": "If there is at least 1 card in Shadows, Asshai characters gain a [Military] icon and get +1 STR for each card in Shadows.",
     "flavor_text": "Davos remembered too well the living shadow that had squirmed from out her womb.",
     "erratas": [],
     "faqs": [],
@@ -48799,7 +48799,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "If he is attacking alone, Jhogo gains stealth.\nResponse: After you win a Military challenge in which Jhogo participated, draw 1 card for each attacking Dothraki character.",
+    "rules_text": "If he is attacking alone, Jhogo gains stealth.\nResponse: After you win a [Military] challenge in which Jhogo participated, draw 1 card for each attacking Dothraki character.",
     "flavor_text": "\"I will deal with these scouts.\"",
     "erratas": [],
     "faqs": [],
@@ -49597,7 +49597,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Deadly.\nKnelt Clansman characters you control can be declared as defenders during Military challenges.",
+    "rules_text": "Deadly.\nKnelt Clansman characters you control can be declared as defenders during [Military] challenges.",
     "flavor_text": "Massive and slow and strong he seemed, dressed in all skins, with a club in his right hand and an axe in his left.",
     "erratas": [],
     "faqs": [],
@@ -50208,7 +50208,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: After Lucas Blackwood is killed, you may initiate a Military challenge against an opponent of your choice as your next player action this phase.",
+    "rules_text": "Response: After Lucas Blackwood is killed, you may initiate a [Military] challenge against an opponent of your choice as your next player action this phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -54486,7 +54486,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Setup. Maester character only.\nResponse: After attached character kneels, choose 1 character. Until the end of the phase, that character gets +2 STR and gains a Military icon. (Limit once per phase.)",
+    "rules_text": "Setup. Maester character only.\nResponse: After attached character kneels, choose 1 character. Until the end of the phase, that character gets +2 STR and gains a [Military] icon. (Limit once per phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -55588,7 +55588,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Kneel The Last River to give each participating character without a Military icon -1 STR until the end of the challenge.",
+    "rules_text": "Challenges: Kneel The Last River to give each participating character without a [Military] icon -1 STR until the end of the challenge.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -56348,7 +56348,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "When revealed, each player may choose and kneel 1 non-Army character with a Military icon he or she controls. The character with the highest STR knelt in this way claims 2 power.",
+    "rules_text": "When revealed, each player may choose and kneel 1 non-Army character with a [Military] icon he or she controls. The character with the highest STR knelt in this way claims 2 power.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -56481,7 +56481,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attach to an opponent's House card.\nAttached House card gains: \"Characters you control get +2 STR during Military challenges.\"\nAfter the owner of attached House card wins a Military challenge, claim 1 power for your house if you have more than 1 opponent.",
+    "rules_text": "Attach to an opponent's House card.\nAttached House card gains: \"Characters you control get +2 STR during [Military] challenges.\"\nAfter the owner of attached House card wins a [Military] challenge, claim 1 power for your house if you have more than 1 opponent.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -57639,7 +57639,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attach to an opponent's House card.\nIf you have more than 1 opponent, after a player wins a Military challenge against the owner of attached House card, kneel The Iron Price. Then, the winner of the challenge claims 1 power for each character killed for claim",
+    "rules_text": "Attach to an opponent's House card.\nIf you have more than 1 opponent, after a player wins a [Military] challenge against the owner of attached House card, kneel The Iron Price. Then, the winner of the challenge claims 1 power for each character killed for claim",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -59042,7 +59042,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "House Stark.\nResponse: After you win a Military challenge in which you control at least 1 participating unique character, choose and kill 1 character controlled by the losing opponent. (Limit 1 per challenge.)",
+    "rules_text": "House Stark.\nResponse: After you win a [Military] challenge in which you control at least 1 participating unique character, choose and kill 1 character controlled by the losing opponent. (Limit 1 per challenge.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -78573,7 +78573,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Prized 1. Stealth.\nTyrion Lannister gains a military icon.\nEach card discarded from an opponent's hand reduces his or her draw cap by 1 (to a minimum of 0) until the end of the round.",
+    "rules_text": "Prized 1. Stealth.\nTyrion Lannister gains a [Military] icon.\nEach card discarded from an opponent's hand reduces his or her draw cap by 1 (to a minimum of 0) until the end of the round.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -78655,7 +78655,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nChallenges: Choose a character. Until the end of the phase, that character gains a military icon and does not kneel to attack or defend during military challenges.",
+    "rules_text": "House Lannister only.\nChallenges: Choose a character. Until the end of the phase, that character gains a [Military] icon and does not kneel to attack or defend during [Military] challenges.",
     "flavor_text": "“There's only me.” –Ser Jaime Lannister",
     "erratas": [],
     "faqs": [],

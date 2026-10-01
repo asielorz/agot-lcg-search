@@ -76,7 +76,7 @@ Icons in card text are written between brackets.
 - All cards that make a player draw a card: [`text:"draw a card"`](/search?q=text%3A"draw%2Ba%2Bcard")
 - All cards with stalwart: [`text:stalwart`](/search?q=text%3Astalwart)
 - All cards designed by the winner of a tournament: [`flavor:"designed by"`](/search?q=flavor%3A"designed%2Bby")
-- All cards that interact with the holy crest: [`text:[Holy]`](/search?q=text%3A%5Bholy%5D")
+- All cards that interact with the holy crest: [`text:[Holy]`](/search?q=text%3A%5Bholy%5D)
 
 ## Sets and cycles
 

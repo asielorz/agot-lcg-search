@@ -3032,7 +3032,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Vigilant. House Baratheon character only.\nResponse: Kneel Lightbringer to save attached character from being killed.",
+    "rules_text": "[Baratheon] character only. Vigilant.\nResponse: Kneel Lightbringer to save attached character from being killed.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -3953,7 +3953,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After one of your House Baratheon characters is killed, put House Tyrell Guard into play from your hand.",
+    "rules_text": "Response: After one of your [Baratheon] characters is killed, put House Tyrell Guard into play from your hand.",
     "flavor_text": "\"Tyrell swords will make me king.\" - Lord Renly Baratheon",
     "erratas": [],
     "faqs": [],
@@ -4145,7 +4145,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Stormlands Fiefdoms to lower the cost of the next House Baratheon card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Stormlands Fiefdoms to lower the cost of the next [Baratheon] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -4188,7 +4188,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Stormlands Fiefdoms to lower the cost of the next House Baratheon card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Stormlands Fiefdoms to lower the cost of the next [Baratheon] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -4403,7 +4403,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Great Hall to lower the cost of the next House Baratheon character you play this phase by 2.",
+    "rules_text": "Limited.\nMarshalling: Kneel Great Hall to lower the cost of the next [Baratheon] character you play this phase by 2.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -16778,7 +16778,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.If Renly Baratheon is the only House Baratheon King character in play, he gains: \"Reduce the cost to play other House Baratheon characters by 1.\"",
+    "rules_text": "Renown.If Renly Baratheon is the only [Baratheon] King character in play, he gains: \"Reduce the cost to play other [Baratheon] characters by 1.\"",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -16827,7 +16827,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.\nIf Stannis Baratheon is the only House Baratheon King character in play, he gains: \"Players cannot draw cards through card effects.\"",
+    "rules_text": "Renown.\nIf Stannis Baratheon is the only [Baratheon] King character in play, he gains: \"Players cannot draw cards through card effects.\"",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -16876,7 +16876,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments except Weapon.\nHouse Baratheon Lord characters you control get +1 STR.",
+    "rules_text": "No attachments except Weapon.\n[Baratheon] Lord characters you control get +1 STR.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -16923,7 +16923,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments except Weapon.\nHouse Baratheon Lord characters you control gain stealth.",
+    "rules_text": "No attachments except Weapon.\n[Baratheon] Lord characters you control gain stealth.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -16970,7 +16970,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments except Weapon.\nHouse Baratheon Lord characters you control gain: \"Response: Kneel 1 influence to save this character from being killed.\"",
+    "rules_text": "No attachments except Weapon.\n[Baratheon] Lord characters you control gain: \"Response: Kneel 1 influence to save this character from being killed.\"",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -17738,7 +17738,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Unique House Baratheon character only. Setup.\nIf Crown of Azor Ahai is standing and White Raven is not in play, it is Summer.\nIf Crown of Azor Ahai is knelt and Black Raven is not in play, it is Winter.\nAny Phase: Kneel Crown of Azor Ahai.",
+    "rules_text": "Unique [Baratheon] character only. Setup.\nIf Crown of Azor Ahai is standing and White Raven is not in play, it is Summer.\nIf Crown of Azor Ahai is knelt and Black Raven is not in play, it is Winter.\nAny Phase: Kneel Crown of Azor Ahai.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -17911,7 +17911,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Great Hall to lower the cost of the next House Baratheon character you play this phase by 2.",
+    "rules_text": "Limited.\nMarshalling: Kneel Great Hall to lower the cost of the next [Baratheon] character you play this phase by 2.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -17954,7 +17954,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Stormlands Fiefdoms to lower the cost of the next House Baratheon card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Stormlands Fiefdoms to lower the cost of the next [Baratheon] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -18127,7 +18127,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "If you win dominance, instead of claiming 1 power for House, you may claim 1 power each for 2 different House Baratheon characters.",
+    "rules_text": "If you win dominance, instead of claiming 1 power for House, you may claim 1 power each for 2 different [Baratheon] characters.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -18205,7 +18205,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Choose 1 participating House Baratheon character. That character gets +2 STR and gains renown until the end of the challenge.",
+    "rules_text": "Challenges: Choose 1 participating [Baratheon] character. That character gets +2 STR and gains renown until the end of the challenge.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -18246,7 +18246,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Return 1 House Baratheon character to your hand (cannot be saved) to put another House Baratheon character with the same cost (and different title) into play from your hand.",
+    "rules_text": "Challenges: Return 1 [Baratheon] character to your hand (cannot be saved) to put another [Baratheon] character with the same cost (and different title) into play from your hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26283,7 +26283,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you play Herald of the Stag from your hand, search your deck for a House Baratheon character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck.",
+    "rules_text": "Response: After you play Herald of the Stag from your hand, search your deck for a [Baratheon] character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -29945,7 +29945,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: If it is Summer, kneel Summer Port to reduce the cost of the next House Baratheon character you play this phase by 1.",
+    "rules_text": "Marshalling: If it is Summer, kneel Summer Port to reduce the cost of the next [Baratheon] character you play this phase by 1.",
     "flavor_text": "Strangers are not so strange in a port as they are in little villages.",
     "erratas": [],
     "faqs": [],
@@ -30789,7 +30789,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments.\nIf it is Winter, your House Baratheon characters gain the Night's Watch trait and do not kneel to defend.",
+    "rules_text": "No attachments.\nIf it is Winter, your [Baratheon] characters gain the Night's Watch trait and do not kneel to defend.",
     "flavor_text": "But if the Wall should fail, all the north will lie within the reach of raiders.",
     "erratas": [],
     "faqs": [],
@@ -31526,7 +31526,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Kneel 2 influence to choose a unique House Baratheon character. Until the end of the phase, that character gains vigilant.",
+    "rules_text": "Challenges: Kneel 2 influence to choose a unique [Baratheon] character. Until the end of the phase, that character gains vigilant.",
     "flavor_text": "The sentries passed the spear along from watch to watch.",
     "erratas": [],
     "faqs": [],
@@ -33111,7 +33111,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nAfter you play Dragonstone Scavenger from your hand, choose a player with a House Targaryen or a House Baratheon House card. Discard a card at random from that player's hand.",
+    "rules_text": "House Targaryen only.\nAfter you play Dragonstone Scavenger from your hand, choose a player with a [Targaryen] or a [Baratheon] House card. Discard a card at random from that player's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -33298,7 +33298,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If it is not Summer or Winter, River Bandit gains: 'After this card is played from your hand, discard a House Baratheon or House Lannister location from play.'",
+    "rules_text": "If it is not Summer or Winter, River Bandit gains: 'After this card is played from your hand, discard a [Baratheon] or [Lannister] location from play.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -33897,7 +33897,7 @@
       "Baratheon"
     ],
     "unique": false,
-    "rules_text": "House Baratheon only.\nAfter you play Stormland Scavengers from your hand, choose a player with a House Baratheon or a House Targaryen House card. Discard a card at random from that player's hand.",
+    "rules_text": "House Baratheon only.\nAfter you play Stormland Scavengers from your hand, choose a player with a [Baratheon] or a [Targaryen] House card. Discard a card at random from that player's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -39029,7 +39029,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "If it is Summer or Winter, kneel King Robert's Hammer. Any Phase: Kneel King Robert's Hammer to choose and stand a House Baratheon character.",
+    "rules_text": "If it is Summer or Winter, kneel King Robert's Hammer. Any Phase: Kneel King Robert's Hammer to choose and stand a [Baratheon] character.",
     "flavor_text": "She was the largest war galley in the royal fleet...",
     "erratas": [],
     "faqs": [],
@@ -39878,7 +39878,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Discard Seat of Power from play to reduce the cost of the next House Baratheon card you play this phase by 3.",
+    "rules_text": "Limited.\nMarshalling: Discard Seat of Power from play to reduce the cost of the next [Baratheon] card you play this phase by 3.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -41585,7 +41585,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you play Salladhor's Crew from your hand, reduce the gold cost of the next House Baratheon card you play this phase by 3.",
+    "rules_text": "Response: After you play Salladhor's Crew from your hand, reduce the gold cost of the next [Baratheon] card you play this phase by 3.",
     "flavor_text": "Salladhor Saan was a resourceful old pirate, and his crews were born seamen, fearless in a fight.",
     "erratas": [],
     "faqs": [],
@@ -45114,7 +45114,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "No attachments.\nRobert's Loyalists get +2 STR while attacking any opponent with a non-House Baratheon, non-neutral House card.",
+    "rules_text": "No attachments.\nRobert's Loyalists get +2 STR while attacking any opponent with a non-[Baratheon], non-neutral House card.",
     "flavor_text": "\"We fight on as best we can, for Robert and the realm.\"",
     "erratas": [],
     "faqs": [],
@@ -57510,7 +57510,7 @@
       "Baratheon"
     ],
     "unique": false,
-    "rules_text": "House Baratheon only.\nResponse: After Fiery Kiss comes out of Shadows, choose 1 non-Army Baratheon character in your dead pile and put it into play. That character gains vigilant until the end of the phase. At the end of the phase, discard the character if it is still in play.",
+    "rules_text": "House Baratheon only.\nResponse: After Fiery Kiss comes out of Shadows, choose 1 non-Army [Baratheon] character in your dead pile and put it into play. That character gains vigilant until the end of the phase. At the end of the phase, discard the character if it is still in play.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [

@@ -53050,7 +53050,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Kneel Stormlands Bastard to choose a unique Baratheon character. Until the end of the challenge, that character gains renown.",
+    "rules_text": "Challenges: Kneel Stormlands Bastard to choose a unique [Baratheon] character. Until the end of the challenge, that character gains renown.",
     "flavor_text": "Ned studied the shape of the jaw, the eyes like blue ice. Yes, he thought, I see it.",
     "erratas": [],
     "faqs": [],
@@ -79206,7 +79206,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Prized 1.\nMarshalling: Kneel a Baratheon character to lower the cost of the next character you play this phase by X, where X is the number of prized cards you control. (Limit once per round.)",
+    "rules_text": "Prized 1.\nMarshalling: Kneel a [Baratheon] character to lower the cost of the next character you play this phase by X, where X is the number of prized cards you control. (Limit once per round.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],

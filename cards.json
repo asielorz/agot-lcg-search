@@ -25,7 +25,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "House Stark character only.\nChallenges: While attached character is participating in a challenge, kneel and discard Ice from play (cannot be saved) to choose and kill another participating character.",
+    "rules_text": "[Stark] character only.\nChallenges: While attached character is participating in a challenge, kneel and discard Ice from play (cannot be saved) to choose and kill another participating character.",
     "flavor_text": "\"The man who passes the sentence should swing the sword.\" - Lord Eddard Stark",
     "erratas": [],
     "faqs": [],
@@ -69,7 +69,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "House Stark character only.\nResponse: Kneel Nymeria to save attached character from being killed.\nIf attached character is Arya Stark, she also gets +1 STR and gains stealth.",
+    "rules_text": "[Stark] character only.\nResponse: Kneel Nymeria to save attached character from being killed.\nIf attached character is Arya Stark, she also gets +1 STR and gains stealth.",
     "flavor_text": "Arya had named her after the warrior queen of Rhoyne...",
     "erratas": [],
     "faqs": [],
@@ -484,7 +484,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Deadly. No attachments.\nWhile you control at least 1 House Stark Lord character, Shaggydog gets +3 STR and is immune to events.",
+    "rules_text": "Deadly. No attachments.\nWhile you control at least 1 [Stark] Lord character, Shaggydog gets +3 STR and is immune to events.",
     "flavor_text": "The darkness sprang at him, snarling.",
     "erratas": [],
     "faqs": [],
@@ -938,7 +938,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: Kneel to lower the cost of the next House Stark character you play this phase by 1.",
+    "rules_text": "Marshalling: Kneel to lower the cost of the next [Stark] character you play this phase by 1.",
     "flavor_text": "Family. Duty. Honor.",
     "erratas": [],
     "faqs": [],
@@ -1119,7 +1119,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments.\nEach of your House Stark characters gets +1 STR.",
+    "rules_text": "No attachments.\nEach of your [Stark] characters gets +1 STR.",
     "flavor_text": "\"The winters are hard, but the Starks will endure. We always have.\" - Lord Eddard Stark",
     "erratas": [],
     "faqs": [],
@@ -1163,7 +1163,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Northern Fiefdoms to lower the cost of the next House Stark card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Northern Fiefdoms to lower the cost of the next [Stark] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -1206,7 +1206,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Northern Fiefdoms to lower the cost of the next House Stark card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Northern Fiefdoms to lower the cost of the next [Stark] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -1424,7 +1424,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Godswood to lower the cost of the next House Stark character you play this phase by 2.",
+    "rules_text": "Limited.\nMarshalling: Kneel Godswood to lower the cost of the next [Stark] character you play this phase by 2.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -1468,7 +1468,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: Discard Narrow Sea from play to reduce the cost of the next House Stark or House Baratheon character you play this phase by 2.\n[+1 Influence]",
+    "rules_text": "Marshalling: Discard Narrow Sea from play to reduce the cost of the next [Stark] or [Baratheon] character you play this phase by 2.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -4447,7 +4447,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: Discard Narrow Sea from play to reduce the cost of the next House Stark or House Baratheon character you play this phase by 2.\n[+1 Influence]",
+    "rules_text": "Marshalling: Discard Narrow Sea from play to reduce the cost of the next [Stark] or [Baratheon] character you play this phase by 2.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -6991,7 +6991,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Raise the Claim value on each House Stark player's revealed plot card by 1 for the duration of the challenge.\nLimit 1 per round.",
+    "rules_text": "Challenges: Raise the Claim value on each [Stark] player's revealed plot card by 1 for the duration of the challenge.\nLimit 1 per round.",
     "flavor_text": "\"The cold winds are rising. The Wall must be held.\" - Ser Allister Thorne",
     "erratas": [],
     "faqs": [],
@@ -7032,7 +7032,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: Play after you win dominance. Kneel 2 of your House Stark characters to have them claim 1 power each.",
+    "rules_text": "Response: Play after you win dominance. Kneel 2 of your [Stark] characters to have them claim 1 power each.",
     "flavor_text": "\"All sorts of people are calling themselves kings these days.\" - Lord Tyrion Lannister",
     "erratas": [],
     "faqs": [],
@@ -10759,7 +10759,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.\nIf Robb Stark is the only King character in play, he gains: \"Any Phase: Kneel Robb Stark to reduce the cost of the next House Stark army you play this phase to 0.\"",
+    "rules_text": "Renown.\nIf Robb Stark is the only King character in play, he gains: \"Any Phase: Kneel Robb Stark to reduce the cost of the next [Stark] army you play this phase to 0.\"",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -14433,7 +14433,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "House Stark Character only.After you win a challenge in which attached character participated, stand Shaggydog.Challenges: Kneel a Direwolf card to choose 1 attacking character. Until the end of the phase, that character gets -2 STR.",
+    "rules_text": "[Stark] Character only.\nAfter you win a challenge in which attached character participated, stand Shaggydog.Challenges: Kneel a Direwolf card to choose 1 attacking character. Until the end of the phase, that character gets -2 STR.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -15611,7 +15611,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Godswood to lower the cost of the next House Stark character you play this phase by 2.",
+    "rules_text": "Limited.\nMarshalling: Kneel Godswood to lower the cost of the next [Stark] character you play this phase by 2.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -15698,7 +15698,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Northern Fiefdoms to lower the cost of the next House Stark card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Northern Fiefdoms to lower the cost of the next [Stark] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -15742,7 +15742,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: Discard Narrow Sea from play to reduce the cost of the next House Stark or House Baratheon character you play this phase by 2.\n[+1 Influence]",
+    "rules_text": "Marshalling: Discard Narrow Sea from play to reduce the cost of the next [Stark] or [Baratheon] character you play this phase by 2.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -15814,7 +15814,7 @@
       "Stark"
     ],
     "unique": false,
-    "rules_text": "House Stark only.\nResponse: Save a location from being discarded. Then, attach They Shall Not Cross to a House Stark character (counts as a Boon attachment with the text \"Attached character gets +2 STR.\")",
+    "rules_text": "House Stark only.\nResponse: Save a location from being discarded. Then, attach They Shall Not Cross to a [Stark] character (counts as a Boon attachment with the text \"Attached character gets +2 STR.\")",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -15896,7 +15896,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: Cancel the effects of an event card just played if one of your House Stark characters is chosen as the only target.",
+    "rules_text": "Response: Cancel the effects of an event card just played if one of your [Stark] characters is chosen as the only target.",
     "flavor_text": "Bran thought about it. \"Can a man be brave if he's afraid?\"\n\"That is the only time a man can be brave,\" his father told him.",
     "erratas": [],
     "faqs": [],
@@ -16688,7 +16688,7 @@
       "Stark"
     ],
     "unique": false,
-    "rules_text": "House Stark only.\nLower the cost of the first House Stark character you play during the marshalling phase by 2.",
+    "rules_text": "House Stark only.\nLower the cost of the first [Stark] character you play during the marshalling phase by 2.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -17998,7 +17998,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: Discard Narrow Sea from play to reduce the cost of the next House Stark or House Baratheon character you play this phase by 2.\n[+1 Influence]",
+    "rules_text": "Marshalling: Discard Narrow Sea from play to reduce the cost of the next [Stark] or [Baratheon] character you play this phase by 2.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -24454,7 +24454,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "House Stark character only.\nLimited Response: After attached character leaves play, choose and kill a character without attachments. (Limit 1 Limited Response per round.)",
+    "rules_text": "[Stark] character only.\nLimited Response: After attached character leaves play, choose and kill a character without attachments. (Limit 1 Limited Response per round.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -25736,7 +25736,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "No attachments.\nWhile every character you control has the House Stark affiliation, Feral Pack gains: 'All Direwolf characters gain deadly, and all non-Direwolf characters lose deadly.'",
+    "rules_text": "No attachments.\nWhile every character you control has the [Stark] affiliation, Feral Pack gains: 'All Direwolf characters gain deadly, and all non-Direwolf characters lose deadly.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26143,7 +26143,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you play Wolf Herald from your hand, search your deck for a House Stark character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck.",
+    "rules_text": "Response: After you play Wolf Herald from your hand, search your deck for a [Stark] character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -28327,7 +28327,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Marshalling: You may attach any House Stark character from your hand to Jory Cassel as a duplicate if he has no other duplicates attached.",
+    "rules_text": "Marshalling: You may attach any [Stark] character from your hand to Jory Cassel as a duplicate if he has no other duplicates attached.",
     "flavor_text": "Suddenly Jory was back among them, a red rain flying from his sword.",
     "erratas": [],
     "faqs": [],
@@ -28375,7 +28375,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "No attachments.\nMarshalling: Kneel Gates of Winterfell to reveal the top card of your deck. If that card is a House Stark character, put it into play knelt. Otherwise, discard it.",
+    "rules_text": "No attachments.\nMarshalling: Kneel Gates of Winterfell to reveal the top card of your deck. If that card is a [Stark] character, put it into play knelt. Otherwise, discard it.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -30289,7 +30289,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: If it is not Summer, kneel Maester Vyman to cancel a triggered effect that chooses a House Stark character as the only target.",
+    "rules_text": "Response: If it is not Summer, kneel Maester Vyman to cancel a triggered effect that chooses a [Stark] character as the only target.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -30329,7 +30329,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nAfter you play Scavengers of King's Landing from your hand, choose a player with a House Lannister or a House Stark House card. Discard a card at random from that player's hand.",
+    "rules_text": "House Lannister only.\nAfter you play Scavengers of King's Landing from your hand, choose a player with a [Lannister] or a [Stark] House card. Discard a card at random from that player's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -31270,7 +31270,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "If you are playing a House Stark House card, reduce the gold penalty to play Theon Greyjoy by 1. Response: After you win a challenge in which Theon Greyjoy participated, choose a House Stark or House Greyjoy character. If it is Summer, stand that character. If it is Winter, kill that character.",
+    "rules_text": "If you are playing a [Stark] House card, reduce the gold penalty to play Theon Greyjoy by 1. Response: After you win a challenge in which Theon Greyjoy participated, choose a [Stark] or [Greyjoy] character. If it is Summer, stand that character. If it is Winter, kill that character.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -31850,7 +31850,7 @@
       "Stark"
     ],
     "unique": false,
-    "rules_text": "House Stark only.\nAfter you play Northern Scavengers from your hand, choose a player with a House Stark or a House Lannister House card. Discard a card at random from that player's hand.",
+    "rules_text": "House Stark only.\nAfter you play Northern Scavengers from your hand, choose a player with a [Stark] or a [Lannister] House card. Discard a card at random from that player's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -33250,7 +33250,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If it is Winter, Bandit of Winter gains: 'After this card is played from your hand, discard a House Stark or House Greyjoy location from play.'",
+    "rules_text": "If it is Winter, Bandit of Winter gains: 'After this card is played from your hand, discard a [Stark] or [Greyjoy] location from play.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -34610,7 +34610,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Choose a kneeling House Stark character. Until the end of the phase, that character is eligible, while kneeling, to be declared as a defender for any challenge in which it could normally participate.",
+    "rules_text": "Challenges: Choose a kneeling [Stark] character. Until the end of the phase, that character is eligible, while kneeling, to be declared as a defender for any challenge in which it could normally participate.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -38844,7 +38844,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Northern Steel cannot be discarded from play while attached to a House Stark character.\nAny Phase: Kneel Northern Steel to give attached character either +3 STR or deadly until the end of the phase.",
+    "rules_text": "Northern Steel cannot be discarded from play while attached to a [Stark] character.\nAny Phase: Kneel Northern Steel to give attached character either +3 STR or deadly until the end of the phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [
@@ -46735,7 +46735,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attached character gets +1 STR for every House affiliation other than House Stark among the cards you control.\nAny Phase: Kneel 1 influence to give attached character the House affiliation of your choice until the end of the phase.",
+    "rules_text": "Attached character gets +1 STR for every House affiliation other than [Stark] among the cards you control.\nAny Phase: Kneel 1 influence to give attached character the House affiliation of your choice until the end of the phase.",
     "flavor_text": "\"And the girl my father sent with Steelshanks was not Arya Stark.\" - Jaime Lannister",
     "erratas": [],
     "faqs": [],
@@ -55530,7 +55530,7 @@
       "Stark"
     ],
     "unique": true,
-    "rules_text": "House Stark only. Stealth.\nResponse: After a Stark character leaves play, put Meera Reed into Shadows.\nResponse: After Meera Reed comes out of shadows, choose 1 non-plot card (2 instead if it is Winter) and treat its printed text box as if it were blank until the end of the phase.",
+    "rules_text": "House Stark only. Stealth.\nResponse: After a [Stark] character leaves play, put Meera Reed into Shadows.\nResponse: After Meera Reed comes out of shadows, choose 1 non-plot card (2 instead if it is Winter) and treat its printed text box as if it were blank until the end of the phase.",
     "flavor_text": "Card designed by 2010 Castle Stahleck Champion Andrea Gualdoni",
     "erratas": [
       {

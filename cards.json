@@ -28148,7 +28148,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attach to an opponent's location. Kneel that location. Limited Response: After you win a[ Power] challenge by 4 or more total STR, kneel Martial Law to claim 2 power for your House. (Limit 1 Limited Response per round.)",
+    "rules_text": "Attach to an opponent's location. Kneel that location. Limited Response: After you win a [Power] challenge by 4 or more total STR, kneel Martial Law to claim 2 power for your House. (Limit 1 Limited Response per round.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -43263,7 +43263,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After you play Treacherous Watchman from your hand, choose and discard 1 Lannister character from play.",
+    "rules_text": "After you play Treacherous Watchman from your hand, choose and discard 1 [Lannister] character from play.",
     "flavor_text": "Would you leave your brother surrounded by Lannisters?",
     "erratas": [],
     "faqs": [],
@@ -60960,7 +60960,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: Discard 1 power from a Lannister character you control to cancel a triggered effect that chooses that character as its only target. Then, draw a card.",
+    "rules_text": "Response: Discard 1 power from a [Lannister] character you control to cancel a triggered effect that chooses that character as its only target. Then, draw a card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -61097,7 +61097,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "While Willas Tyrell is participating in a challenge against an opponent running an agenda, he gains renown.\nWhile Willas Tyrell is participating in a challenge, participating Lannister and Martell characters do not count their STR.",
+    "rules_text": "While Willas Tyrell is participating in a challenge against an opponent running an agenda, he gains renown.\nWhile Willas Tyrell is participating in a challenge, participating [Lannister] and [Martell] characters do not count their STR.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],

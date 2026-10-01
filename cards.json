@@ -11122,7 +11122,7 @@
       "Greyjoy"
     ],
     "unique": false,
-    "rules_text": "House Greyjoy only.\nResponse: After you win an unopposed challenge, kneel 4 influence or kneel a War character to claim 3 power for your House. (Limit 1 per phase.)",
+    "rules_text": "House Greyjoy only.\nResponse: After you win an unopposed challenge, kneel 4 influence or kneel a [War] character to claim 3 power for your House. (Limit 1 per phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -15481,7 +15481,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Kneel Frozen Outpost to choose and stand 1 defending character. Until the end of the challenge, that character gets +2 STR (+4 STR instead if it is a War character).",
+    "rules_text": "Challenges: Kneel Frozen Outpost to choose and stand 1 defending character. Until the end of the challenge, that character gets +2 STR (+4 STR instead if it is a [War] character).",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -17241,7 +17241,7 @@
       "Baratheon"
     ],
     "unique": false,
-    "rules_text": "House Baratheon only.\nResponse: After Sister of Truth comes out of Shadows, choose 1 Shadow card in play. Return that card to Shadows.",
+    "rules_text": "House Baratheon only.\nResponse: After Sister of Truth comes out of Shadows, choose 1 [Shadow] card in play. Return that card to Shadows.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],

@@ -19351,7 +19351,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Unique Targaryen character only.\nIf a White Raven card is not in play it is Summer.\nResponse: After you win a challenge in which attached character participated, choose an attachment. Take control of that attachment, and attach it to an eligible card of your choice.",
+    "rules_text": "Unique [Targaryen] character only.\nIf a White Raven card is not in play it is Summer.\nResponse: After you win a challenge in which attached character participated, choose an attachment. Take control of that attachment, and attach it to an eligible card of your choice.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -20460,7 +20460,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Any Phase: Kneel 1 influence to put Myrish Villa into play from your hand.\nMarshalling: Kneel Myrish Villa to lower the cost of the next Targaryen card you play this phase by 1 (by 2 instead if it is Summer).",
+    "rules_text": "Any Phase: Kneel 1 influence to put Myrish Villa into play from your hand.\nMarshalling: Kneel Myrish Villa to lower the cost of the next [Targaryen] card you play this phase by 1 (by 2 instead if it is Summer).",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -20676,7 +20676,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Put a Targaryen character into play from your hand or discard pile with printed cost lower than your total initiative. At the end of the phase, if that character is still in play, return that character to its owner's hand.",
+    "rules_text": "Challenges: Put a [Targaryen] character into play from your hand or discard pile with printed cost lower than your total initiative. At the end of the phase, if that character is still in play, return that character to its owner's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -20752,7 +20752,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Dominance: Kneel 1 influence to return a Targaryen character from your dead pile to your hand.",
+    "rules_text": "Dominance: Kneel 1 influence to return a [Targaryen] character from your dead pile to your hand.",
     "flavor_text": "Her song grew louder, shriller... then she gasped, again and again, and her song became a shuddering wail, thin and high and full of agony.",
     "erratas": [],
     "faqs": [],
@@ -50577,7 +50577,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.\nTargaryen characters you control get +1 STR.",
+    "rules_text": "Renown.\n[Targaryen] characters you control get +1 STR.",
     "flavor_text": "\"The blood of my enemies I will shed gladly. The blood of innocents is another matter.\"",
     "erratas": [],
     "faqs": [],

@@ -5622,7 +5622,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: Kneel Illyrio's Man to lower the cost of the next House Targaryen character you play this phase by 1.",
+    "rules_text": "Marshalling: Kneel Illyrio's Man to lower the cost of the next [Targaryen] character you play this phase by 1.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -5710,7 +5710,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Eastern Fiefdoms to lower the cost of the next House Targaryen card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Eastern Fiefdoms to lower the cost of the next [Targaryen] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -5753,7 +5753,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Eastern Fiefdoms to lower the cost of the next House Targaryen card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Eastern Fiefdoms to lower the cost of the next [Targaryen] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -5796,7 +5796,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Eastern Fiefdoms to lower the cost of the next House Targaryen card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Eastern Fiefdoms to lower the cost of the next [Targaryen] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -5968,7 +5968,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Great Pyramid to lower the cost of the next House Targaryen character you play this phase by 2.",
+    "rules_text": "Limited.\nMarshalling: Kneel Great Pyramid to lower the cost of the next [Targaryen] character you play this phase by 2.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -6012,7 +6012,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: Discard Summer Sea from play to reduce the cost of the next House Targaryen or House Martell character you play this phase by 2.\n[+1 Influence]",
+    "rules_text": "Marshalling: Discard Summer Sea from play to reduce the cost of the next [Targaryen] or [Martell] character you play this phase by 2.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -7929,7 +7929,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: After you play a House Targaryen character, return an attachment with printed cost equal to or lower than that character from your discard pile to your hand.",
+    "rules_text": "Response: After you play a [Targaryen] character, return an attachment with printed cost equal to or lower than that character from your discard pile to your hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -12915,7 +12915,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: Discard Summer Sea from play to reduce the cost of the next House Targaryen or House Martell character you play this phase by 2.\n[+1 Influence]",
+    "rules_text": "Marshalling: Discard Summer Sea from play to reduce the cost of the next [Targaryen] or [Martell] character you play this phase by 2.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -20417,7 +20417,7 @@
       "Targaryen"
     ],
     "unique": true,
-    "rules_text": "House Targaryen only.\nChallenges: Kneel Plaza of Pride to give an attacking Targaryen Army character you control either Stealth or Deadly until the end of the phase.",
+    "rules_text": "House Targaryen only.\nChallenges: Kneel Plaza of Pride to give an attacking [Targaryen] Army character you control either Stealth or Deadly until the end of the phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -20504,7 +20504,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: Discard Summer Sea from play to reduce the cost of the next Martell or Targaryen character you play this phase by 2.\n[+1 Influence]",
+    "rules_text": "Marshalling: Discard Summer Sea from play to reduce the cost of the next [Martell] or [Targaryen] character you play this phase by 2.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -20590,7 +20590,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited\nMarshalling: Kneel Eastern Fiefdoms to lower the cost of the next Targaryen card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited\nMarshalling: Kneel Eastern Fiefdoms to lower the cost of the next [Targaryen] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -20633,7 +20633,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited\nMarhalling: Kneel to lower the cost of the next Targaryen character you play this phase by 2.",
+    "rules_text": "Limited\nMarhalling: Kneel Great Pyramid to lower the cost of the next [Targaryen] character you play this phase by 2.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26026,7 +26026,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nPlay only if you have at least 1 Power Struggle plot card in your used pile. Challenges: Stand a House Targaryen character you control to put a House Targaryen character with a printed cost of 3 or lower into play from your dead pile.",
+    "rules_text": "House Targaryen only.\nPlay only if you have at least 1 Power Struggle plot card in your used pile. Challenges: Stand a [Targaryen] character you control to put a [Targaryen] character with a printed cost of 3 or lower into play from your dead pile.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26373,7 +26373,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you play Herald of the East from your hand, search your deck for a House Targaryen character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck.",
+    "rules_text": "Response: After you play Herald of the East from your hand, search your deck for a [Targaryen] character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -27218,7 +27218,7 @@
       "Targaryen"
     ],
     "unique": true,
-    "rules_text": "House Targaryen only. No attachments.\nResponse: Discard a House Targaryen attachment (cannot be saved) from a character you control to save that character from being killed or discarded from play. If you trigger this response during the epic phase, draw a card.",
+    "rules_text": "House Targaryen only. No attachments.\nResponse: Discard a [Targaryen] attachment (cannot be saved) from a character you control to save that character from being killed or discarded from play. If you trigger this response during the epic phase, draw a card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -28647,7 +28647,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nAny phase: Choose and stand or kneel an attachment. Then, stand all House Targaryen characters with Banner attachments attached.",
+    "rules_text": "House Targaryen only.\nAny phase: Choose and stand or kneel an attachment. Then, stand all [Targaryen] characters with Banner attachments attached.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -33346,7 +33346,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If it is Summer, Bandit of Summer gains: 'After this card is played from your hand, discard a House Targaryen or House Martell location from play.'",
+    "rules_text": "If it is Summer, Bandit of Summer gains: 'After this card is played from your hand, discard a [Targaryen] or [Martell] location from play.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -37607,7 +37607,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.\nHouse Targaryen characters you control gain a [War] crest.",
+    "rules_text": "Renown.\n[Targaryen] characters you control gain a [War] crest.",
     "flavor_text": "\"Traitors have always paid with their lives.\" - Ser Davos Seaworth",
     "erratas": [],
     "faqs": [],
@@ -40051,10 +40051,16 @@
       "Targaryen"
     ],
     "legal_in_houses": [
-      "Targaryen"
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nAttached character gains the [Noble] crest and a [Power] icon.",
+    "rules_text": "[Targaryen] character only.\nAttached character gains the [Noble] crest and a [Power] icon.",
     "flavor_text": "Ours by blood right, taken from us by treachery, but ours still, ours forever. You do not steal from the dragon, oh, no. The dragon remembers.",
     "erratas": [],
     "faqs": [],
@@ -61349,7 +61355,7 @@
       "Targaryen"
     ],
     "unique": false,
-    "rules_text": "House Targaryen only.\nChallenges: Kneel 1 influence to choose a character and name a Trait. Until the end of the phase, that character gets -X STR and is killed if its STR is 0. X is the number of Targaryen characters you control with the named Trait.",
+    "rules_text": "House Targaryen only.\nChallenges: Kneel 1 influence to choose a character and name a Trait. Until the end of the phase, that character gets -X STR and is killed if its STR is 0. X is the number of [Targaryen] characters you control with the named Trait.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],

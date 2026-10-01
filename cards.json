@@ -2601,7 +2601,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Western Fiefdoms to lower the cost of the next House Lannister card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Western Fiefdoms to lower the cost of the next [Lannister] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -2644,7 +2644,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Western Fiefdoms to lower the cost of the next House Lannister card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Western Fiefdoms to lower the cost of the next [Lannister] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -2859,7 +2859,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Hall of Heroes to lower the cost of the next House Lannister character you play this phase by 2.",
+    "rules_text": "Limited.\nMarshalling: Kneel Hall of Heroes to lower the cost of the next [Lannister] character you play this phase by 2.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -2903,7 +2903,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: Discard Sunset Sea from play to reduce the cost of the next House Lannister or House Greyjoy character you play this phase by 2.\n[+1 Influence]",
+    "rules_text": "Marshalling: Discard Sunset Sea from play to reduce the cost of the next [Lannister] or [Greyjoy] character you play this phase by 2.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -7186,7 +7186,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Pay X gold and kneel a House Lannister character to lower an opponent's claim by X (to a minimum of 0) for the duration of the challenge.",
+    "rules_text": "Challenges: Pay X gold and kneel a [Lannister] character to lower an opponent's claim by X (to a minimum of 0) for the duration of the challenge.",
     "flavor_text": "\"Whatever you may believe of me, Lady Stark, I promise you this - I never bet against my family.\" - Lord Tyrion Lannister",
     "erratas": [],
     "faqs": [],
@@ -7262,7 +7262,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Choose an attacking House Lannister character. Until the end of the phase, that character gets +2 STR. If you win the challenge, draw 2 cards.",
+    "rules_text": "Challenges: Choose an attacking [Lannister] character. Until the end of the phase, that character gets +2 STR. If you win the challenge, draw 2 cards.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -7332,7 +7332,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nChallenges: Choose a character. Until the end of the phase, that character gains deadly. Then, attach I'm You Writ Small to a House Lannister character (counts as a Boon attachment with the text \"Attached character gets +2 STR\").",
+    "rules_text": "House Lannister only.\nChallenges: Choose a character. Until the end of the phase, that character gains deadly. Then, attach I'm You Writ Small to a [Lannister] character (counts as a Boon attachment with the text \"Attached character gets +2 STR\").",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -7373,7 +7373,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you lose a challenge, kneel one of your House Lannister characters to choose and kill a participating character controlled by the winning opponent.",
+    "rules_text": "Response: After you lose a challenge, kneel one of your [Lannister] characters to choose and kill a participating character controlled by the winning opponent.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -10405,7 +10405,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Marshalling: Discard Sunset Sea from play to reduce the cost of the next House Lannister or House Greyjoy character you play this phase by 2.\n[+1 Influence]",
+    "rules_text": "Marshalling: Discard Sunset Sea from play to reduce the cost of the next [Lannister] or [Greyjoy] character you play this phase by 2.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26188,7 +26188,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you play Lion Herald from your hand, search your deck for a House Lannister character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck.",
+    "rules_text": "Response: After you play Lion Herald from your hand, search your deck for a [Lannister] character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -27973,7 +27973,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited Response: After you play a House Lannister character or location from your hand, choose and kneel a character without attachments. (Limit 1 Limited Response per round.)",
+    "rules_text": "Limited Response: After you play a [Lannister] character or location from your hand, choose and kneel a character without attachments. (Limit 1 Limited Response per round.)",
     "flavor_text": "Your service was required here.",
     "erratas": [],
     "faqs": [],
@@ -28419,7 +28419,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "While Ser Lancel Lannister is attacking, characters with printed cost lower than the number of attacking House Lannister characters cannot be declared as defenders.",
+    "rules_text": "While Ser Lancel Lannister is attacking, characters with printed cost lower than the number of attacking [Lannister] characters cannot be declared as defenders.",
     "flavor_text": "Lancel's hair had turned white and brittle, and he was thin as a stick.",
     "erratas": [],
     "faqs": [],
@@ -35604,7 +35604,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Any Phase: Pay 1 gold to choose a House Lannister character. Until the end of the phase, that character gets +1 STR.",
+    "rules_text": "Any Phase: Pay 1 gold to choose a [Lannister] character. Until the end of the phase, that character gets +1 STR.",
     "flavor_text": "\"A swift ship, and as strong as the queen she's named for.\" - Lord Waters",
     "erratas": [],
     "faqs": [],
@@ -40619,7 +40619,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "While Lord Tywin's Man is attacking, House Lannister characters cannot defend.",
+    "rules_text": "While Lord Tywin's Man is attacking, [Lannister] characters cannot defend.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -83884,7 +83884,7 @@
       "Lannister"
     ],
     "unique": false,
-    "rules_text": "House Lannister only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single [Combat] challenge with normal claim. During this epic phase, each unique Clansman and Mercenary character gains melee. (Place this card next to your plot deck until the end of this epic phase.)",
+    "rules_text": "House Lannister only.\nPlot: After the dominance phase this round, there is an epic phase during which each player may initiate a single [Military] challenge with normal claim. During this epic phase, each unique Clansman and Mercenary character gains melee. (Place this card next to your plot deck until the end of this epic phase.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -84284,7 +84284,7 @@
       "Targaryen"
     ],
     "unique": true,
-    "rules_text": "House Targaryen only. Limited.\nDuring [Combat] challenges, the Claim value on your revealed plot card is increased by 1.",
+    "rules_text": "House Targaryen only. Limited.\nDuring [Military] challenges, the Claim value on your revealed plot card is increased by 1.",
     "flavor_text": "\"This city is dead, Khaleesi. Nameless and godless we found it, the gates broken, only wind and flies moving through the streets.\" -Rakharo, CoK",
     "erratas": [],
     "faqs": [],
@@ -85902,7 +85902,7 @@
       "Stark"
     ],
     "unique": false,
-    "rules_text": "House Stark only.\nResponse: After you win a [Combat] challenge in which you control at least 1 participating unique character, choose and discard from play 1 location controlled by the losing opponent. (Limit 1 per challenge.)",
+    "rules_text": "House Stark only.\nResponse: After you win a [Military] challenge in which you control at least 1 participating unique character, choose and discard from play 1 location controlled by the losing opponent. (Limit 1 per challenge.)",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],

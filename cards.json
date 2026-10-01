@@ -14345,7 +14345,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Stark unique character only.Attached character gets +2 STR and is immune to opponent's events and character abilities. If the Black Raven card is not in play, it is Winter.",
+    "rules_text": "[Stark] unique character only.Attached character gets +2 STR and is immune to opponent's events and character abilities. If the Black Raven card is not in play, it is Winter.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -14389,7 +14389,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Stark character only.Any phase: Kneel Grey Wind to choose and kill 1 character with STR 1 or lower. (STR 2 or lower if attached character is Robb Stark.)",
+    "rules_text": "[Stark] character only.Any phase: Kneel Grey Wind to choose and kill 1 character with STR 1 or lower. (STR 2 or lower if attached character is Robb Stark.)",
     "flavor_text": "\"He's killed too many men to fear them now.\" - Robb Stark",
     "erratas": [],
     "faqs": [],
@@ -25284,7 +25284,7 @@
       "Stark"
     ],
     "unique": true,
-    "rules_text": "House Stark only.\nDominance: Kneel Bear Island to choose and kill a non-House Stark character without attachments. Use this ability only if every card you control has the House Stark affiliation.",
+    "rules_text": "House Stark only.\nDominance: Kneel Bear Island to choose and kill a non-[Stark] character without attachments. Use this ability only if every card you control has the [Stark] affiliation.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -78859,7 +78859,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Prized 2.\nUnique Stark character only.\nChallenges: While attached character is participating in a challenge, discard Ice to choose and kill up to X participating characters. X is the number of prized cards you control.",
+    "rules_text": "Prized 2.\nUnique [Stark] character only.\nChallenges: While attached character is participating in a challenge, discard Ice to choose and kill up to X participating characters. X is the number of prized cards you control.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],

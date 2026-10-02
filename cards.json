@@ -9475,7 +9475,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Immune to events.\nWhile Euron Crow's Eye is standing, House Greyjoy characters you control gain stealth.",
+    "rules_text": "Immune to events.\nWhile Euron Crow's Eye is standing, [Greyjoy] characters you control gain stealth.",
     "flavor_text": "Only one living kraken has never known defeat.\nOnly one has never bent his knee.",
     "erratas": [],
     "faqs": [],
@@ -9620,7 +9620,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Response: Kneel Maester Wendamyr to save a House Greyjoy character from being killed or discarded. Then, you may kneel 2 influence or kneel a [Learned] character to stand that character.",
+    "rules_text": "Response: Kneel Maester Wendamyr to save a [Greyjoy] character from being killed or discarded. Then, you may kneel 2 influence or kneel a [Learned] character to stand that character.",
     "flavor_text": "\"Too long have the Ironborn listened to you chain-neck maesters.\" - Aeron Damphair",
     "erratas": [],
     "faqs": [],
@@ -10114,7 +10114,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you win dominance, kneel 2 standing Ironborn characters to choose and stand a House Greyjoy Lord or Lady character. Then, that character claims 2 power and you draw 2 cards.",
+    "rules_text": "Response: After you win dominance, kneel 2 standing Ironborn characters to choose and stand a [Greyjoy] Lord or Lady character. Then, that character claims 2 power and you draw 2 cards.",
     "flavor_text": "\"It is time we returned to the Old Way.\" - Aeron Damphair",
     "erratas": [],
     "faqs": [],
@@ -10190,7 +10190,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: Save a House Greyjoy character from being killed. Then attach this card to the saved character (counts as a Condition attachment with the text 'Attached character gets +1 STR.')",
+    "rules_text": "Response: Save a [Greyjoy] character from being killed. Then attach this card to the saved character (counts as a Condition attachment with the text 'Attached character gets +1 STR.')",
     "flavor_text": "What is dead may never die, but rises again, harder and stronger. - Greyjoy proverb",
     "erratas": [],
     "faqs": [],
@@ -10231,7 +10231,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "House Greyjoy character only.\nAttached character gains stealth.\nResponse: After you win an unopposed challenge, stand attached character.",
+    "rules_text": "[Greyjoy] character only.\nAttached character gains stealth.\nResponse: After you win an unopposed challenge, stand attached character.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -10318,7 +10318,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Iron Island Fiefdoms to lower the cost of the next House Greyjoy card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Iron Island Fiefdoms to lower the cost of the next [Greyjoy] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -10448,7 +10448,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel to lower the cost of the next House Greyjoy character you play this phase by 2.",
+    "rules_text": "Limited.\nMarshalling: Kneel to lower the cost of the next [Greyjoy] character you play this phase by 2.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -10534,7 +10534,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "At the end of the Marshalling phase, kneel each Warship location you control if you do not control a House Greyjoy character.\nChallenges: Kneel Longship Iron Victory to choose a participating character. Until the end of the challenge, that character gets +2 STR. If you win the challenge, draw a card.",
+    "rules_text": "At the end of the Marshalling phase, kneel each Warship location you control if you do not control a [Greyjoy] character.\nChallenges: Kneel Longship Iron Victory to choose a participating character. Until the end of the challenge, that character gets +2 STR. If you win the challenge, draw a card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -12610,7 +12610,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After 1 of your House Martell characters is killed, choose and kill 1 character with equal or lower STR. (Limit 1 per phase.)",
+    "rules_text": "Response: After 1 of your [Martell] characters is killed, choose and kill 1 character with equal or lower STR. (Limit 1 per phase.)",
     "flavor_text": "\"You are going to fight that?\" Ellaria Sand said in a hushed voice.\n\"I am going to kill that.\" her lover replied...",
     "erratas": [],
     "faqs": [],
@@ -12645,7 +12645,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nResponse: Cancel the effects of a response without an influence cost. Then, attach He Calls It Thinking to a House Martell character (counts as a Boon attachment with the text \"Attached character gets +2 STR.\").",
+    "rules_text": "House Martell only.\nResponse: Cancel the effects of a response without an influence cost. Then, attach He Calls It Thinking to a [Martell] character (counts as a Boon attachment with the text \"Attached character gets +2 STR.\").",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -12828,7 +12828,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Dornish Fiefdoms to lower the cost of the next House Martell card you play this phase by 1.\n[+1 Influence]",
+    "rules_text": "Limited.\nMarshalling: Kneel Dornish Fiefdoms to lower the cost of the next [Martell] card you play this phase by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -12958,7 +12958,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Limited.\nMarshalling: Kneel Palace Fountains to reduce the cost of the next House Martell card you play this phase by 1.",
+    "rules_text": "Limited.\nMarshalling: Kneel Palace Fountains to reduce the cost of the next [Martell] card you play this phase by 1.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -24851,7 +24851,7 @@
       "Greyjoy"
     ],
     "unique": true,
-    "rules_text": "House Greyjoy only.\nWhile you control only House Greyjoy characters and locations, you may play the top card of one opponent's discard pile as though it were in your hand (Limit once per round).",
+    "rules_text": "House Greyjoy only.\nWhile you control only [Greyjoy] characters and locations, you may play the top card of one opponent's discard pile as though it were in your hand (Limit once per round).",
     "flavor_text": "\"One raven summons me to Pyke, another to Ten Towers. You Krakens have too many arms...\"",
     "erratas": [],
     "faqs": [],
@@ -26328,7 +26328,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you play Herald of the Sea from your hand, search your deck for a House Greyjoy character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck.",
+    "rules_text": "Response: After you play Herald of the Sea from your hand, search your deck for a [Greyjoy] character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26418,7 +26418,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After you play Herald of the Sun from your hand, search your deck for a House Martell character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck.",
+    "rules_text": "Response: After you play Herald of the Sun from your hand, search your deck for a [Martell] character, reveal it, and shuffle your deck. Then, put the revealed card on top of your deck.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -26740,7 +26740,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Any phase: Kneel The Bastard of Godsgrace to give a House Martell character +2 STR until the end of the phase. If you trigger this effect during the epic phase, draw a card.",
+    "rules_text": "Any phase: Kneel The Bastard of Godsgrace to give a [Martell] character +2 STR until the end of the phase. If you trigger this effect during the epic phase, draw a card.",
     "flavor_text": "\"Daemon, my spear!\" - The Red Viper",
     "erratas": [],
     "faqs": [],
@@ -28612,7 +28612,7 @@
       "Greyjoy"
     ],
     "unique": false,
-    "rules_text": "House Greyjoy only.\nAny phase: Choose and stand a non-unique location. Then, stand all House Greyjoy characters with Banner attachments attached.",
+    "rules_text": "House Greyjoy only.\nAny phase: Choose and stand a non-unique location. Then, stand all [Greyjoy] characters with Banner attachments attached.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -28682,7 +28682,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nChallenges: Choose a character. Until the end of the phase, that character loses an icon of your choice. Then, stand all House Martell characters with Banner attachments attached.",
+    "rules_text": "House Martell only.\nChallenges: Choose a character. Until the end of the phase, that character loses an icon of your choice. Then, stand all [Martell] characters with Banner attachments attached.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -29559,7 +29559,7 @@
       "Greyjoy"
     ],
     "unique": false,
-    "rules_text": "House Greyjoy only.\nAfter you play Scavengers of the Sea from your hand, choose a player with a House Greyjoy or a House Martell House card. Discard a card at random from that player's hand.",
+    "rules_text": "House Greyjoy only.\nAfter you play Scavengers of the Sea from your hand, choose a player with a [Greyjoy] or a [Martell] House card. Discard a card at random from that player's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -29750,7 +29750,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Vengeful.\nResponse: If it is Summer, kneel Maester of the Sun and discard a card from your hand to save a House Martell character from being killed or discarded from play.",
+    "rules_text": "Vengeful.\nResponse: If it is Summer, kneel Maester of the Sun and discard a card from your hand to save a [Martell] character from being killed or discarded from play.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -30875,7 +30875,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If you reveal a plot card and it is Summer, kneel all House Greyjoy Warship locations you control. Any Phase: If it is Winter, kneel Winter Armada to choose an attacking House Greyjoy character. Until the end of the phase, that character gets +4 STR and gains renown.",
+    "rules_text": "If you reveal a plot card and it is Summer, kneel all [Greyjoy] Warship locations you control.\nAny Phase: If it is Winter, kneel Winter Armada to choose an attacking [Greyjoy] character. Until the end of the phase, that character gets +4 STR and gains renown.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -31367,7 +31367,7 @@
       "Martell"
     ],
     "unique": false,
-    "rules_text": "House Martell only.\nAfter you play Southron Scavengers from your hand, choose a player with a House Martell or House Greyjoy House card. Discard a card at random from that player's hand.",
+    "rules_text": "House Martell only.\nAfter you play Southron Scavengers from your hand, choose a player with a [Martell] or [Greyjoy] House card. Discard a card at random from that player's hand.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -34909,7 +34909,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Ignore the out of House gold penalty on all House Greyjoy cards. Each opponent without a Treaty agenda needs 5 fewer power (to a minimum of 10) to win the game.",
+    "rules_text": "Ignore the out of House gold penalty on all [Greyjoy] cards. Each opponent without a Treaty agenda needs 5 fewer power (to a minimum of 10) to win the game.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -35080,7 +35080,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Ignore the out of House gold penalty on all House Martell cards. Each opponent without a Treaty agenda needs 5 fewer power (to a minimum of 10) to win the game.",
+    "rules_text": "Ignore the out of House gold penalty on all [Martell] cards. Each opponent without a Treaty agenda needs 5 fewer power (to a minimum of 10) to win the game.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -35768,7 +35768,7 @@
       "Greyjoy"
     ],
     "unique": false,
-    "rules_text": "House Greyjoy only.\nAny Phase: Kneel a House Greyjoy Lord character to choose and kneel X locations. X is the STR of the knelt character.",
+    "rules_text": "House Greyjoy only.\nAny Phase: Kneel a [Greyjoy] Lord character to choose and kneel X locations. X is the STR of the knelt character.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -35982,7 +35982,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Challenges: Kneel Lost Oasis to choose a House Martell character. Until the end of the phase, that character gains Stealth and \"after this character bypasses a character by using Stealth, kneel that character.\"",
+    "rules_text": "Challenges: Kneel Lost Oasis to choose a [Martell] character. Until the end of the phase, that character gains Stealth and \"after this character bypasses a character by using Stealth, kneel that character.\"",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -41028,7 +41028,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Attach to a House Martell character you control.\nResponse: After an opponent plays an event card, kill attached character to cancel the effects of that event. Then, if it is Summer, draw a card.",
+    "rules_text": "Attach to a [Martell] character you control.\nResponse: After an opponent plays an event card, kill attached character to cancel the effects of that event. Then, if it is Summer, draw a card.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -43501,7 +43501,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: Save 1 House Greyjoy location from being discarded from play. Then, if that location is unique, attach Return of the Kraken to it as a duplicate.",
+    "rules_text": "Response: Save 1 [Greyjoy] location from being discarded from play. Then, if that location is unique, attach Return of the Kraken to it as a duplicate.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -49030,7 +49030,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "House Martell character only.\nAttached character gains the Sand Snake trait and 'Sand Snake characters you control get +1 STR.'",
+    "rules_text": "[Martell] character only.\nAttached character gains the Sand Snake trait and 'Sand Snake characters you control get +1 STR.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -61450,7 +61450,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Lower the cost of the first out-of-House Greyjoy card you play each round by 1.\nLower the cost of the first Mercenary character you play each round by 1.\n[+1 Influence]",
+    "rules_text": "Lower the cost of the first out-of-House [Greyjoy] card you play each round by 1.\nLower the cost of the first Mercenary character you play each round by 1.\n[+1 Influence]",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],

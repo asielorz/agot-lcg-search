@@ -41730,7 +41730,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "If you do not control at least 1 House Greyjoy character, discard Naval Escort from play.\nAny Phase: Kneel Naval Escort and any number of unique Warship locations to choose X characters. Each of those characters gets +X STR until the end of the phase. X is the number of locations just knelt.",
+    "rules_text": "If you do not control at least 1 [Greyjoy] character, discard Naval Escort from play.\nAny Phase: Kneel Naval Escort and any number of unique Warship locations to choose X characters. Each of those characters gets +X STR until the end of the phase. X is the number of locations just knelt.",
     "flavor_text": "Behind came Hardhand, Iron Wind, Grey Ghost, Lord Quellon, Lord Vickon, Lord Dagon, and the rest...",
     "erratas": [
       {
@@ -53410,7 +53410,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After an opponent triggers a cost reducing effect, kneel Streets of Hellholt to reduce the cost of the next Martell card you play this phase by 1.",
+    "rules_text": "Response: After an opponent triggers a cost reducing effect, kneel Streets of Hellholt to reduce the cost of the next [Martell] card you play this phase by 1.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -54227,7 +54227,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Unique Martell character only.\nResponse: After you lose a challenge reveal the top card of your deck, then add it to your hand.",
+    "rules_text": "Unique [Martell] character only.\nResponse: After you lose a challenge reveal the top card of your deck, then add it to your hand.",
     "flavor_text": "\"... and even that was taken from him, when Prince Oberyn of Dorne stabbed Ser Gregor with a poisoned spear.\" - The Elder Brother",
     "erratas": [],
     "faqs": [],
@@ -54932,7 +54932,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "After The Iron Cliffs comes into play, place 2 gold tokens from the treasury on it.\nResponse: Discard 1 gold token from The Iron Cliffs to save a Greyjoy character from being killed.",
+    "rules_text": "After The Iron Cliffs comes into play, place 2 gold tokens from the treasury on it.\nResponse: Discard 1 gold token from The Iron Cliffs to save a [Greyjoy] character from being killed.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
@@ -56082,7 +56082,7 @@
       "Neutral"
     ],
     "unique": false,
-    "rules_text": "Response: After a Martell character is killed, unique Sand Snake characters you control gain renown until the end of the phase.",
+    "rules_text": "Response: After a [Martell] character is killed, unique Sand Snake characters you control gain renown until the end of the phase.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],

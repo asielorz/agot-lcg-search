@@ -1,4 +1,4 @@
-module Decks.DeckView exposing (deck_view, card_preview, deck_legality_diagnostics)
+module Decks.DeckView exposing (deck_view, card_preview, deck_legality_diagnostics, view_deck_as_card_images)
 
 import Card exposing (Card, CardId)
 import CardSet exposing (SetOrCycle(..))
@@ -8,6 +8,7 @@ import Decks.DeckLegality as DeckLegality
 import Fontawesome
 import Utils
 import Widgets
+import Window exposing (Window)
 
 import Element as UI exposing (px)
 import Element.Background as UI_Background
@@ -15,6 +16,7 @@ import Element.Border as UI_Border
 import Element.Events as UI_Events
 import Element.Input as UI_Input
 import Element.Font as UI_Font
+import List.Extra
 
 type alias Messages msg =
     { hover_card : CardId -> msg
@@ -22,6 +24,9 @@ type alias Messages msg =
     , add_card : Maybe (Card -> msg)
     , remove_card : Maybe (Card -> msg)
     }
+
+mock_window : Window
+mock_window = { width = 1920, height = 1080 }
 
 deck_view : CardId -> Deck -> Messages msg -> UI.Element msg
 deck_view hovered_card_id deck messages = UI.row [ UI.width UI.fill, UI.spacing 20 ]
@@ -85,7 +90,7 @@ add_remove_card_buttons card messages = case (messages.add_card, messages.remove
     _ -> UI.none
 
 card_preview : Card -> UI.Element msg
-card_preview card = UI.image [] { src = Card.preview_image_url card, description = card.name }
+card_preview card = UI.image [] { src = Card.preview_image_absolute_url card, description = card.name }
 
 deck_legality_diagnostics : Deck -> UI.Element msg
 deck_legality_diagnostics deck = case DeckLegality.is_legal deck of
@@ -115,3 +120,78 @@ deck_legality_diagnostics deck = case DeckLegality.is_legal deck of
         , UI.spacing 20
         ]
         <| List.map (\err -> UI.paragraph [ UI_Font.justify ] [ UI.text err ]) errors
+
+view_deck_as_card_images : Deck -> UI.Element msg
+view_deck_as_card_images deck = UI.column [ UI.spacing 20, UI.width UI.fill ]
+    [ view_card_images (Deck.expand (Deck.house_card_as_list deck ++ deck.agendas)) min_vertical_card_width max_vertical_card_width mock_window
+    , view_card_images (Deck.expand deck.plots) min_horizontal_card_width max_horizontal_card_width mock_window
+    , view_card_images (Deck.expand deck.characters) min_vertical_card_width max_vertical_card_width mock_window
+    , view_card_images (Deck.expand deck.attachments) min_vertical_card_width max_vertical_card_width mock_window
+    , view_card_images (Deck.expand deck.events) min_vertical_card_width max_vertical_card_width mock_window
+    , view_card_images (Deck.expand deck.locations) min_vertical_card_width max_vertical_card_width mock_window
+    ]
+
+view_card_images : List Card -> Int -> Int -> Window -> UI.Element msg
+view_card_images cards min_width max_width window = 
+    let
+        column_width = min (window.width - 20) 1000
+        column_count = column_count_for min_width column_width
+        cards_in_rows = List.Extra.greedyGroupsOf column_count cards
+        card_width = min max_width (card_width_for column_count column_width)
+    in
+        if List.isEmpty cards
+            then UI.none
+            else cards_in_rows
+                |> List.map (view_row_of_card_images column_count card_width)
+                |> List.map (UI.el [ UI.width (px column_width), UI.centerX ] << UI.row [ UI.spacing 6, UI.centerX ])
+                |> UI.column [ UI.spacing 9, UI.width UI.fill ]
+
+view_row_of_card_images : Int -> Int -> List Card -> List (UI.Element msg)
+view_row_of_card_images column_count card_width cards = 
+    let
+        card_widgets = List.map (view_card card_width) cards
+        dummy = UI.el [ UI.width (px card_width) ] UI.none
+        dummies = List.repeat (column_count - List.length cards) dummy
+    in
+        card_widgets ++ dummies
+
+view_card : Int -> Card -> UI.Element msg
+view_card width card = UI.link []
+    { label = UI.image 
+        [ UI.width (px width)
+        , UI_Border.rounded 10
+        , UI.clip
+        ] 
+        { src = Card.preview_image_absolute_url card
+        , description = card.name
+        }
+    , url = Card.page_absolute_url card
+    }
+
+card_padding : Int
+card_padding = 8
+max_vertical_card_width : Int
+max_vertical_card_width = 245
+min_vertical_card_width : Int
+min_vertical_card_width = 180
+max_horizontal_card_width : Int
+max_horizontal_card_width = 345
+min_horizontal_card_width : Int
+min_horizontal_card_width = 300
+
+column_width_for : Int -> Int -> Int
+column_width_for min_card_width card_count = min_card_width * card_count + card_padding * (card_count - 1)
+
+column_count_for : Int -> Int -> Int
+column_count_for min_card_width column_width = 
+    if column_width >= column_width_for min_card_width 4 then -- 815
+        4
+    else if column_width >= column_width_for min_card_width 3 then -- 610
+        3
+    else if column_width >= column_width_for min_card_width 2 then -- 405
+        2
+    else
+        1
+
+card_width_for : Int -> Int -> Int
+card_width_for column_count column_width = (column_width - (column_count - 1) * card_padding) // column_count

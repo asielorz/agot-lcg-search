@@ -3,6 +3,7 @@ module Decks.Page_DeckView exposing  (main)
 import Card exposing (CardId(..))
 import Decks.Deck as Deck exposing (Deck)
 import Decks.DeckView as DeckView
+import Decks.MockData as MockData
 import Widgets
 
 import Browser
@@ -25,7 +26,7 @@ type alias Model =
 
 init : () -> (Model, Cmd Msg)
 init = \_ -> 
-    (   { deck = Deck.test_deck
+    (   { deck = MockData.deck_bara_knights
         , hovered_card_id = CardId ""
         }
     , Cmd.none
@@ -77,4 +78,5 @@ deck_view deck hovered_card_id =
         , DeckView.deck_view hovered_card_id deck { hover_card = Msg_HoverCard, stop_hover = Msg_StopHover, add_card = Nothing, remove_card = Nothing }
         , UI.el [ UI.height (px 30) ] UI.none
         , DeckView.deck_legality_diagnostics deck
+        , DeckView.view_deck_as_card_images deck
         ]

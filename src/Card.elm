@@ -170,6 +170,15 @@ full_image_url card = "/images/cards/full/" ++ card_id_to_string card.id ++ ".we
 preview_image_url : Card -> String
 preview_image_url card = "/images/cards/preview/" ++ card_id_to_string card.id ++ ".jpg"
 
+page_absolute_url : Card -> String
+page_absolute_url card = "https://agot-lcg-search.pages.dev/card/" ++ card_id_to_string card.id
+
+full_image_absolute_url : Card -> String
+full_image_absolute_url card = "https://agot-lcg-search.pages.dev/images/cards/full/" ++ card_id_to_string card.id ++ ".webp"
+
+preview_image_absolute_url : Card -> String
+preview_image_absolute_url card = "https://agot-lcg-search.pages.dev/images/cards/preview/" ++ card_id_to_string card.id ++ ".jpg"
+
 duplicate_id : Card -> CardId
 duplicate_id card = Maybe.withDefault card.id card.duplicate_id
 

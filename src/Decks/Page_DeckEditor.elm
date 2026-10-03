@@ -184,6 +184,7 @@ deck_editor model =
             , DeckView.deck_view model.hovered_card_id deck { hover_card = Msg_HoverCard, stop_hover = Msg_StopHover, add_card = Just Msg_AddCard, remove_card = Just (\c -> Msg_RemoveCard c 1) }
             , UI.el [ UI.height (px 30) ] UI.none
             , DeckView.deck_legality_diagnostics deck
+            , DeckView.view_deck_as_card_images deck
             ]
 
 candidate_list : Maybe SearchState -> UI.Element Msg

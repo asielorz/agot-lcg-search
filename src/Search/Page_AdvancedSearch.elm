@@ -631,7 +631,7 @@ sort_order_to_query_string order = case order of
     SortOrder_IncomeAsc -> "inc"
     SortOrder_IncomeDesc -> "inc>"
     SortOrder_InitiativeAsc -> "init"
-    SortOrder_InitiativeDesc -> "int>"
+    SortOrder_InitiativeDesc -> "init>"
     SortOrder_ClaimAsc -> "claim"
     SortOrder_ClaimDesc -> "claim>"
     SortOrder_InfluenceAsc -> "inf"

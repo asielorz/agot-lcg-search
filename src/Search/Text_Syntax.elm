@@ -66,11 +66,17 @@ Use `text:` to search for cards with that word or words in their rules text. The
 
 `flavor:` can be used to search in the flavor text. The flavor text is the decorative text, usually in italic or bold, at the bottom of some cards, that does not affect gameplay.
 
+Icons in card text are written between brackets.
+- Crests are written as `[War]`, `[Noble]`, `[Holy]`, `[Learned]` and `[Shadow]`.
+- Challenge types are written as `[Military]`, `[Intrigue]` and `[Power]`.
+- Houses are written as `[Start]`, `[Lannister]`, `[Baratheon]`, `[Targaryen]`, `[Greyjoy]` and `[Martell]`.
+
 ### Examples:
 
 - All cards that make a player draw a card: [`text:"draw a card"`](/search?q=text%3A"draw%2Ba%2Bcard")
 - All cards with stalwart: [`text:stalwart`](/search?q=text%3Astalwart)
 - All cards designed by the winner of a tournament: [`flavor:"designed by"`](/search?q=flavor%3A"designed%2Bby")
+- All cards that interact with the holy crest: [`text:[Holy]`](/search?q=text%3A%5Bholy%5D)
 
 ## Sets and cycles
 

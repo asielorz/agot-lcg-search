@@ -52,10 +52,9 @@ jobs:
       #  run: cargo +nightly -Zscript ./scripts/scale_images.rs ./images/cards/full ./build/images/cards/preview
 
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@1
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 81208e1c136d26e6fbf27f1c07ec0ce6
-          projectName: agot-lcg-search
-          directory: ./build/
+          command: pages deploy ./build/ --project-name=agot-lcg-search
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}

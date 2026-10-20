@@ -1,7 +1,7 @@
 module Decks.Deck exposing (..)
 
 import Card exposing (Card, CardType(..), House(..))
-import Decks.User as User exposing (UserId(..))
+import Decks.User exposing (UserId(..))
 
 import List.Extra
 

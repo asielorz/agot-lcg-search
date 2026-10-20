@@ -1,7 +1,7 @@
 module Decks.MockData exposing (..)
 
 import Decks.Deck as Deck exposing (Deck, DeckId(..))
-import Decks.User as User exposing (User, UserId(..), Role(..))
+import Decks.User exposing (User, UserId(..), Role(..))
 import Card exposing (Card, CardId(..), CardType(..))
 import CardExtra
 import CardSet

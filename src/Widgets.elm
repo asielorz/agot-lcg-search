@@ -1,6 +1,7 @@
 module Widgets exposing (..)
 
 import Colors
+import Window exposing (Window)
 
 import Element as UI exposing (px, rgb255)
 import Element.Background as UI_Background
@@ -294,3 +295,21 @@ cost_widget attrs size cost is_shadow = case cost of
 link : List (UI.Attribute msg) -> { url : String, label : UI.Element msg } -> UI.Element msg
 link attributes args =
     UI.link ([ UI_Font.color Colors.link, UI.mouseOver [ UI_Font.color Colors.link_hover ] ] ++ attributes) args
+
+labeled : Window -> String -> UI.Element msg -> UI.Element msg
+labeled window label widget = 
+    if window.width >= 750 then
+        UI.row [ UI.width UI.fill ]
+            [ UI.el 
+                [ UI.width (px 200)
+                , UI.alignTop
+                , UI.alignLeft
+                , UI.paddingEach { top = 5, left = 0, right = 0, bottom = 0 } 
+                ] 
+                (UI.text label)
+            , widget
+            ]
+    else if label == "" then
+        widget
+    else
+        UI.column [ UI.spacing 10, UI.width UI.fill ] [ UI.text label, widget ]

@@ -201,66 +201,48 @@ view_advanced_search model window = UI.column
     , UI.width <| UI.maximum 1000 UI.fill
     , UI.paddingXY 20 0
     ]
-    [ labeled window "Name" <| Widgets.input_text [] model.name "Any words in the name, e.g. \"winterfell\"" (\s -> Msg_ModelChanged { model | name = s }) Msg_Search
+    [ Widgets.labeled window "Name" <| Widgets.input_text [] model.name "Any words in the name, e.g. \"winterfell\"" (\s -> Msg_ModelChanged { model | name = s }) Msg_Search
     , Widgets.separator
-    , labeled window "Text" <| Widgets.input_text [] model.text "Card's rules text, e.g. \"draw a card\"" (\s -> Msg_ModelChanged { model | text = s }) Msg_Search
+    , Widgets.labeled window "Text" <| Widgets.input_text [] model.text "Card's rules text, e.g. \"draw a card\"" (\s -> Msg_ModelChanged { model | text = s }) Msg_Search
     , Widgets.separator
-    , labeled window "House" <| house_checkboxes model
+    , Widgets.labeled window "House" <| house_checkboxes model
     , Widgets.separator
-    , labeled window "Type" <| card_type_combo model
+    , Widgets.labeled window "Type" <| card_type_combo model
     , Widgets.separator
-    , labeled window "Traits" <| traits_row model
+    , Widgets.labeled window "Traits" <| traits_row model
     , Widgets.separator
-    , labeled window "Set" <| set_combo model
+    , Widgets.labeled window "Set" <| set_combo model
     , Widgets.separator
-    , labeled window "Cost" <| int_row window model.combo Combo_Cost model.cost model.cost_comparison (\a -> { model | cost = a }) (\a m -> { m | cost_comparison = a })
+    , Widgets.labeled window "Cost" <| int_row window model.combo Combo_Cost model.cost model.cost_comparison (\a -> { model | cost = a }) (\a m -> { m | cost_comparison = a })
     , Widgets.separator
-    , labeled window "Strength" <| int_row window model.combo Combo_Strength model.strength model.strength_comparison (\a -> { model | strength = a }) (\a m -> { m | strength_comparison = a })
+    , Widgets.labeled window "Strength" <| int_row window model.combo Combo_Strength model.strength model.strength_comparison (\a -> { model | strength = a }) (\a m -> { m | strength_comparison = a })
     , Widgets.separator
-    , labeled window "Income" <| int_row window model.combo Combo_Income model.income model.income_comparison (\a -> { model | income = a }) (\a m -> { m | income_comparison = a })
+    , Widgets.labeled window "Income" <| int_row window model.combo Combo_Income model.income model.income_comparison (\a -> { model | income = a }) (\a m -> { m | income_comparison = a })
     , Widgets.separator
-    , labeled window "Initiative" <| int_row window model.combo Combo_Initiative model.initiative model.initiative_comparison (\a -> { model | initiative = a }) (\a m -> { m | initiative_comparison = a })
+    , Widgets.labeled window "Initiative" <| int_row window model.combo Combo_Initiative model.initiative model.initiative_comparison (\a -> { model | initiative = a }) (\a m -> { m | initiative_comparison = a })
     , Widgets.separator
-    , labeled window "Claim" <| int_row window model.combo Combo_Claim model.claim model.claim_comparison (\a -> { model | claim = a }) (\a m -> { m | claim_comparison = a })
+    , Widgets.labeled window "Claim" <| int_row window model.combo Combo_Claim model.claim model.claim_comparison (\a -> { model | claim = a }) (\a m -> { m | claim_comparison = a })
     , Widgets.separator
-    , labeled window "Influence" <| int_row window model.combo Combo_Influence model.influence model.influence_comparison (\a -> { model | influence = a }) (\a m -> { m | influence_comparison = a })
+    , Widgets.labeled window "Influence" <| int_row window model.combo Combo_Influence model.influence model.influence_comparison (\a -> { model | influence = a }) (\a m -> { m | influence_comparison = a })
     , Widgets.separator
-    , labeled window "Legality (Joust)" <| legality_joust_row model
+    , Widgets.labeled window "Legality (Joust)" <| legality_joust_row model
     , Widgets.separator
-    , labeled window "Legality (Melee)" <| legality_melee_row model
+    , Widgets.labeled window "Legality (Melee)" <| legality_melee_row model
     , Widgets.separator
-    , labeled window "Icons" <| icon_row model
+    , Widgets.labeled window "Icons" <| icon_row model
     , Widgets.separator
-    , labeled window "Crests" <| crest_row model
+    , Widgets.labeled window "Crests" <| crest_row model
     , Widgets.separator
-    , labeled window "Flavor text" <| Widgets.input_text [] model.flavor "Any words in the decorative flavor test, e.g. \"Card designed by\"" (\s -> Msg_ModelChanged { model | flavor = s }) Msg_Search
+    , Widgets.labeled window "Flavor text" <| Widgets.input_text [] model.flavor "Any words in the decorative flavor test, e.g. \"Card designed by\"" (\s -> Msg_ModelChanged { model | flavor = s }) Msg_Search
     , Widgets.separator
-    , labeled window "Illustrator" <| Widgets.input_text [] model.illustrator "An illustrator's name, e.g. \"Matson\"" (\s -> Msg_ModelChanged { model | illustrator = s }) Msg_Search
+    , Widgets.labeled window "Illustrator" <| Widgets.input_text [] model.illustrator "An illustrator's name, e.g. \"Matson\"" (\s -> Msg_ModelChanged { model | illustrator = s }) Msg_Search
     , Widgets.separator
-    , labeled window "Order" <| sort_order_row model
+    , Widgets.labeled window "Order" <| sort_order_row model
     , Widgets.separator
-    , labeled window "Duplicates" <| text_checkbox [] "Show duplicate cards" model.show_duplicates (\b -> { model | show_duplicates = b })
+    , Widgets.labeled window "Duplicates" <| text_checkbox [] "Show duplicate cards" model.show_duplicates (\b -> { model | show_duplicates = b })
     , Widgets.separator
-    , labeled window "" <| search_button model
+    , Widgets.labeled window "" <| search_button model
     ]
-
-labeled : Window -> String -> UI.Element Msg -> UI.Element Msg
-labeled window label widget = 
-    if window.width >= 750 then
-        UI.row [ UI.width UI.fill ]
-            [ UI.el 
-                [ UI.width (px 200)
-                , UI.alignTop
-                , UI.alignLeft
-                , UI.paddingEach { top = 5, left = 0, right = 0, bottom = 0 } 
-                ] 
-                (UI.text label)
-            , widget
-            ]
-    else if label == "" then
-        widget
-    else
-        UI.column [ UI.spacing 10, UI.width UI.fill ] [ UI.text label, widget ]
 
 house_checkboxes : Model -> UI.Element Msg
 house_checkboxes model = UI.column [ UI.width UI.fill, UI.spacing 10 ]

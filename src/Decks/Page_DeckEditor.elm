@@ -2,11 +2,11 @@ module Decks.Page_DeckEditor exposing (main)
 
 import Card exposing (Card, CardId(..))
 import CardSet exposing (SetOrCycle(..))
-import Cards
 import ChangeStack exposing (ChangeStack)
 import Colors
 import Decks.Deck as Deck exposing (Deck)
 import Decks.DeckView as DeckView
+import Decks.SearchState as SearchState exposing (SearchState)
 import Widgets
 
 import Browser
@@ -17,7 +17,6 @@ import Element.Events as UI_Events
 import Element.Input as UI_Input
 import Element.Font as UI_Font
 import List.Extra
-import Url.Parser exposing (query)
 
 main : Program () Model Msg
 main = Browser.document 
@@ -25,11 +24,6 @@ main = Browser.document
     , update = update
     , view = view
     , subscriptions = \_ -> Sub.none
-    }
-
-type alias SearchState =
-    { candidates : List Card
-    , index : Int
     }
 
 type alias Model =
@@ -78,8 +72,8 @@ update msg model = case msg of
     Msg_ChangeSearch new_buffer -> (update_search_state new_buffer model, Cmd.none)
     Msg_FocusSearch -> (update_search_state model.search_buffer model, Cmd.none)
     Msg_UnfocusSearch -> ({ model | search_state = Nothing }, Cmd.none)
-    Msg_SearchSelectedScroll scroll -> ({ model | search_state = scroll_search_state scroll model.search_state }, Cmd.none)
-    Msg_SearchSelect index -> ({ model | search_state = set_search_state_index index model.search_state }, Cmd.none)
+    Msg_SearchSelectedScroll scroll -> ({ model | search_state = SearchState.scroll scroll model.search_state }, Cmd.none)
+    Msg_SearchSelect index -> ({ model | search_state = SearchState.set_index index model.search_state }, Cmd.none)
     Msg_AddCurrent -> (add_current model, Cmd.none)
     Msg_HoverCard card_id -> ({ model | hovered_card_id = card_id }, Cmd.none)
     Msg_StopHover -> ({ model | hovered_card_id = CardId "" }, Cmd.none)
@@ -87,39 +81,7 @@ update msg model = case msg of
     Msg_RemoveCard card amount -> ({ model | deck = ChangeStack.update (Deck.remove_card card amount) model.deck }, Cmd.none)
 
 update_search_state : String -> Model -> Model
-update_search_state new_buffer model = { model | search_buffer = new_buffer, search_state = make_search_state new_buffer (ChangeStack.current model.deck) model.search_state }
-
-make_search_state : String -> Deck -> Maybe SearchState -> Maybe SearchState
-make_search_state query deck prev_state =
-    if String.isEmpty query
-        then Just { candidates = [], index = 0 }
-        else case prev_state of
-            Nothing -> Just { candidates = search_candidates query deck, index = 0 }
-            Just state ->
-                let new_candidates = search_candidates query deck
-                in Just { candidates = new_candidates, index = clamp_index new_candidates state.index }
-
-set_search_state_index : Int -> Maybe SearchState -> Maybe SearchState
-set_search_state_index new_index search_state = search_state |> Maybe.map
-    (\state -> {state | index = clamp_index state.candidates new_index})
-
-scroll_search_state : Int -> Maybe SearchState -> Maybe SearchState
-scroll_search_state scroll search_state = search_state |> Maybe.map
-    (\state -> {state | index = clamp_index state.candidates (state.index + scroll)})
-
-clamp_index : List Card -> Int -> Int
-clamp_index candidates index = clamp 0 (max 0 (List.length candidates - 1)) index
-
-search_candidates : String -> Deck -> List Card
-search_candidates query deck = 
-    let
-        query_lowercase = String.toLower query
-        deduplicated_cards = List.Extra.uniqueBy Card.duplicate_id Cards.all_cards
-    in
-        deduplicated_cards
-            |> List.filter (\card -> String.contains query_lowercase (String.toLower card.name))
-            |> List.filter (\card -> not <| Deck.has_card card deck)
-            |> List.take 10
+update_search_state new_buffer model = { model | search_buffer = new_buffer, search_state = SearchState.make new_buffer (ChangeStack.current model.deck) model.search_state }
 
 add_current : Model -> Model
 add_current model = case model.search_state of

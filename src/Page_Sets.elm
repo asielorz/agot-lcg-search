@@ -105,9 +105,6 @@ set_or_cycle_release_date_element set_or_cycle = case set_or_cycle of
                         then "0" ++ str
                         else str
             date = (CardSet.data_of_set set).release_date
-            date_text = case (date.month, date.day) of
-                (Just month, Just day) -> to_str date.year ++ "-" ++ to_str month ++ "-" ++ to_str day
-                (Just month, Nothing) -> to_str date.year ++ "-" ++ to_str month
-                _ -> to_str date.year
+            date_text = to_str date.year ++ "-" ++ to_str date.month ++ "-" ++ to_str date.day
         in
             UI.text date_text

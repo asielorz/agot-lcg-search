@@ -97,8 +97,8 @@ type Set
 
 type alias ReleaseDate =
     { year : Int
-    , month : Maybe Int
-    , day : Maybe Int
+    , month : Int
+    , day : Int
     }
 
 type alias SetData =
@@ -114,11 +114,9 @@ type alias SetData =
 set_data :  List SetData
 set_data =
     let
-        ymd y m d = { year = y, month = Just m, day = Just d }
-        ym y m = { year = y, month = Just m, day = Nothing }
-        year y = { year = y, month = Nothing, day = Nothing }
+        ymd y m d = { year = y, month = m, day = d }
     in
-    [ { set = Set_Core, index = 0, code_name = "core", full_name = "Core", cycle = Nothing, cards = 208, release_date = year 2008 }
+    [ { set = Set_Core, index = 0, code_name = "core", full_name = "Core", cycle = Nothing, cards = 208, release_date = ymd 2008 11 12 }
     , { set = Set_KingsOfTheSea, index = 1, code_name = "kotse", full_name = "Kings of the Sea", cycle = Nothing, cards = 54, release_date = ymd 2009 7 24 }
     , { set = Set_PrincesOfTheSun, index = 2, code_name = "pots", full_name = "Princes of the Sun", cycle = Nothing, cards = 60, release_date = ymd 2009 12 15 }
     , { set = Set_LordsOfWinter, index = 3, code_name = "low", full_name = "Lords of Winter", cycle = Nothing, cards = 55, release_date = ymd 2010 6 11 }
@@ -126,16 +124,16 @@ set_data =
     , { set = Set_QueenOfDragons, index = 5, code_name = "qod", full_name = "Queen of Dragons", cycle = Nothing, cards = 55, release_date = ymd 2011 4 27 }
     , { set = Set_LionsOfTheRock, index = 6, code_name = "lotr", full_name = "Lions of the Rock", cycle = Nothing, cards = 55, release_date = ymd 2012 1 6 }
 
-    , { set = Set_TheWarOfTheFiveKings, index = 7, code_name = "twofk",  full_name = "The War of Five Kings", cycle = Just Cycle_AClashOfArms, cards = 20, release_date = year 2008 }
-    , { set = Set_AncientEnemies, index = 8, code_name = "ae",  full_name = "Ancient Enemies", cycle = Just Cycle_AClashOfArms, cards = 20, release_date = year 2008 }
-    , { set = Set_SacredBonds, index = 9, code_name = "sb",  full_name = "Sacred Bonds", cycle = Just Cycle_AClashOfArms, cards = 20, release_date = year 2008 }
-    , { set = Set_EpicBattles, index = 10, code_name = "eb", full_name = "Epic Battles", cycle = Just Cycle_AClashOfArms, cards = 20, release_date = year 2008 }
-    , { set = Set_BattleOfRubyFord, index = 11, code_name = "borf", full_name = "Battle of Ruby Ford", cycle = Just Cycle_AClashOfArms, cards = 20, release_date = year 2008 }
-    , { set = Set_CallingTheBanners, index = 12, code_name = "ctb", full_name = "Calling the Banners", cycle = Just Cycle_AClashOfArms, cards = 20, release_date = year 2008 }
+    , { set = Set_TheWarOfTheFiveKings, index = 7, code_name = "twofk",  full_name = "The War of Five Kings", cycle = Just Cycle_AClashOfArms, cards = 20, release_date = ymd 2008 2 19 }
+    , { set = Set_AncientEnemies, index = 8, code_name = "ae",  full_name = "Ancient Enemies", cycle = Just Cycle_AClashOfArms, cards = 20, release_date = ymd 2008 3 20 }
+    , { set = Set_SacredBonds, index = 9, code_name = "sb",  full_name = "Sacred Bonds", cycle = Just Cycle_AClashOfArms, cards = 20, release_date = ymd 2008 4 20 }
+    , { set = Set_EpicBattles, index = 10, code_name = "eb", full_name = "Epic Battles", cycle = Just Cycle_AClashOfArms, cards = 20, release_date = ymd 2008 5 20 }
+    , { set = Set_BattleOfRubyFord, index = 11, code_name = "borf", full_name = "Battle of Ruby Ford", cycle = Just Cycle_AClashOfArms, cards = 20, release_date = ymd 2008 6 20 }
+    , { set = Set_CallingTheBanners, index = 12, code_name = "ctb", full_name = "Calling the Banners", cycle = Just Cycle_AClashOfArms, cards = 20, release_date = ymd 2008 7 20 }
 
-    , { set = Set_ASongOfSummer, index = 13, code_name = "asosu", full_name = "A Song of Summer", cycle = Just Cycle_ATimeOfRavens, cards = 20, release_date = year 2008 }
-    , { set = Set_TheWindsOfWinter, index = 14, code_name = "twow", full_name = "The Winds of Winter", cycle = Just Cycle_ATimeOfRavens, cards = 20, release_date = year 2008 }
-    , { set = Set_AChangeOfSeasons, index = 15, code_name = "acos", full_name = "A Change of Seasons", cycle = Just Cycle_ATimeOfRavens, cards = 20, release_date = ym 2008 12 }
+    , { set = Set_ASongOfSummer, index = 13, code_name = "asosu", full_name = "A Song of Summer", cycle = Just Cycle_ATimeOfRavens, cards = 20, release_date = ymd 2008 10 20 }
+    , { set = Set_TheWindsOfWinter, index = 14, code_name = "twow", full_name = "The Winds of Winter", cycle = Just Cycle_ATimeOfRavens, cards = 20, release_date = ymd 2008 11 20 }
+    , { set = Set_AChangeOfSeasons, index = 15, code_name = "acos", full_name = "A Change of Seasons", cycle = Just Cycle_ATimeOfRavens, cards = 20, release_date = ymd 2008 12 10 }
     , { set = Set_TheRavensSong, index = 16, code_name = "trs", full_name = "The Raven's Song", cycle = Just Cycle_ATimeOfRavens, cards = 20, release_date = ymd 2009 1 22 }
     , { set = Set_RefugeesOfWar, index = 17, code_name = "row", full_name = "Refugees of War", cycle = Just Cycle_ATimeOfRavens, cards = 20, release_date = ymd 2009 2 11 }
     , { set = Set_ScatteredArmies, index = 18, code_name = "sa", full_name = "Scattered Armies", cycle = Just Cycle_ATimeOfRavens, cards = 20, release_date = ymd 2009 3 16 }
@@ -221,7 +219,7 @@ data_of_set set = set_data
         , full_name = ""
         , cycle = Nothing
         , cards = 0
-        , release_date = { year = 2008, month = Nothing, day = Nothing } }
+        , release_date = { year = 2008, month = 11, day = 12 } }
 
 set_sort_order : Set -> Int
 set_sort_order set = (data_of_set set).index

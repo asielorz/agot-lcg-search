@@ -6816,7 +6816,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Challenges: Kneel Magister Illyrio to choose an opponent and name a challenge type. That opponent must pay you 1 gold from his or her gold pool each time he or she initiates a challenge of this type.",
+    "rules_text": "Challenges: Kneel Magister Illyrio to choose an opponent and name a challenge type. Until the end of the phase, that opponent must pay you 1 gold from his or her gold pool each time he or she initiates a challenge of this type.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [
@@ -51018,7 +51018,7 @@
       {
         "line": 2,
         "start": 72,
-        "end": 79
+        "end": 87
       }
     ],
     "faqs": [],
@@ -75902,13 +75902,13 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Challenges: During a challenge, kneel Longship Maiden's Bane to have it participate in the current challenge on your side as a character with \"cannot be killed\" and X STR. X is the number of unique Greyjoy Warship cards you control.",
+    "rules_text": "Challenges: During a challenge, kneel Longship Maiden's Bane to have it participate in the current challenge on your side as a character with \"cannot be killed\" and X STR. X is the number of unique [Greyjoy] Warship cards you control.",
     "flavor_text": null,
     "erratas": [
       {
         "line": 0,
         "start": 191,
-        "end": 205
+        "end": 207
       }
     ],
     "faqs": [

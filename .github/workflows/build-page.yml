@@ -27,22 +27,22 @@ jobs:
           elm-version: 0.19.1
 
       - name: Generate code literals
-        run: cargo +nightly -Zscript ./scripts/generate_literals_source.rs ./cards.json ./faqs.json ./generated/Cards.elm ./generated/Faqs.elm
+        run: cargo +nightly -Zscript ./scripts/generate_literals_source.rs ./resources/cards.json ./faqs.json ./generated/Cards.elm ./generated/Faqs.elm
 
       - name: Generate HTML with tags for cards
-        run: cargo +nightly -Zscript ./scripts/genhtml.rs ./template.html ./cards.json ./build/card
+        run: cargo +nightly -Zscript ./scripts/genhtml.rs ./template.html ./resources/cards.json ./build/card
 
       - name: Build page
         run: elm make --optimize ./src/Main.elm --output ./build/page.js
 
       - name: Copy files to build directory
         run: |
-          cp ./cards.json ./build/
           cp ./favicon.ico ./build/
           cp ./index.html ./build/
           cp ./main.js ./build/
           cp -a ./fontawesome ./build/fontawesome
           cp -a ./images ./build/images
+          cp -a ./resources ./build/resources
 
       #- name: Create preview low resolution card images
       #  run: cargo +nightly -Zscript ./scripts/scale_images.rs ./images/cards/full ./build/images/cards/preview

@@ -6,6 +6,7 @@ import Query
 import Page_AdvancedSearch
 import Page_Card
 import Page_Markdown
+import Page_Resources
 import Page_Search
 import Page_Sets
 import Page_Start
@@ -46,6 +47,7 @@ type Msg
     | Msg_AdvancedSearch Page_AdvancedSearch.Msg
     | Msg_Card Page_Card.Msg
     | Msg_Sets Page_Sets.Msg
+    | Msg_Resources Page_Resources.Msg
     | Msg_Markdown Page_Markdown.Msg
     | Msg_404 Page_404.Msg
     | Msg_UrlRequest Browser.UrlRequest
@@ -58,6 +60,7 @@ type PageModel
     | Model_AdvancedSearch Page_AdvancedSearch.Model
     | Model_Card Page_Card.Model
     | Model_Sets Page_Sets.Model
+    | Model_Resources Page_Resources.Model
     | Model_Markdown Page_Markdown.Model
     | Model_404 Page_404.Model
 
@@ -98,6 +101,7 @@ change_url_impl url random_card_index =
             , Url.Parser.map (search_page_model <| Page_Search.init url.query) (Url.Parser.s "search")
             , Url.Parser.map (UrlChangeResult_Page <| Model_AdvancedSearch Page_AdvancedSearch.init) (Url.Parser.s "advanced")
             , Url.Parser.map (UrlChangeResult_Page <| Model_Sets Page_Sets.init) (Url.Parser.s "sets")
+            , Url.Parser.map (UrlChangeResult_Page <| Model_Resources Page_Resources.init) (Url.Parser.s "resources")
             , Url.Parser.map card_page_model (Url.Parser.s "card" </> Url.Parser.string <?> card_page_query_parser)
             , Url.Parser.map (random_card_page ()) (Url.Parser.s "random")
             , Url.Parser.map (UrlChangeResult_Page <| Model_Markdown <| Page_Markdown.init "Syntax guide" Text_Syntax.text ) (Url.Parser.s "syntax")
@@ -148,6 +152,8 @@ update msg model = case (msg, model.page) of
         |> map_update model Model_Card Msg_Card
     (Msg_Sets page_msg, Model_Sets page_model) -> Page_Sets.update model.navigation_key page_msg page_model 
         |> map_update model Model_Sets Msg_Sets
+    (Msg_Resources page_msg, Model_Resources page_model) -> Page_Resources.update model.navigation_key page_msg page_model 
+        |> map_update model Model_Resources Msg_Resources
     (Msg_Markdown page_msg, Model_Markdown page_model) -> Page_Markdown.update model.navigation_key page_msg page_model 
         |> map_update model Model_Markdown Msg_Markdown
     (Msg_404 page_msg, Model_404 page_model) -> Page_404.update model.navigation_key page_msg page_model 
@@ -169,6 +175,7 @@ view model = case model.page of
     Model_AdvancedSearch page_model -> Page_AdvancedSearch.view page_model (window model) |> map_view Msg_AdvancedSearch
     Model_Card page_model -> Page_Card.view page_model (window model) |> map_view Msg_Card
     Model_Sets page_model -> Page_Sets.view page_model (window model) |> map_view Msg_Sets
+    Model_Resources page_model -> Page_Resources.view page_model (window model) |> map_view Msg_Resources
     Model_Markdown page_model -> Page_Markdown.view page_model (window model) |> map_view Msg_Markdown
     Model_404 page_model -> Page_404.view page_model (window model) |> map_view Msg_404
 

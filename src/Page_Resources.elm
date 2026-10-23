@@ -53,7 +53,7 @@ type alias Resource =
 resources : List Resource
 resources =
     [ Resource "Cards JSON" "/resources/cards.json"
-    , Resource "All card images" "/resources/card_images.zip"
+    --, Resource "All card images" "/resources/card_images.zip"
     , Resource "Core set rules" "/resources/rules-core-set.pdf"
     , Resource "FAQs and errata" "/resources/faq.pdf"
     , Resource "Shadows mechanic rules" "/resources/rules-shadows.pdf"

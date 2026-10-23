@@ -25117,8 +25117,8 @@
     "erratas": [
       {
         "line": 0,
-        "start": 185,
-        "end": 211
+        "start": 179,
+        "end": 205
       }
     ],
     "faqs": [],
@@ -81569,7 +81569,9 @@
     "legality_joust": "Legal",
     "legality_melee": "Legal",
     "illustrator": "Darek Zabrocki",
-    "house": [],
+    "house": [
+      "Neutral"
+    ],
     "legal_in_houses": [
       "Stark",
       "Lannister",
@@ -81610,7 +81612,9 @@
     "legality_joust": "Legal",
     "legality_melee": "Legal",
     "illustrator": "Dimitri Bielak",
-    "house": [],
+    "house": [
+      "Neutral"
+    ],
     "legal_in_houses": [
       "Stark",
       "Lannister",

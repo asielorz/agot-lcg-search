@@ -95,6 +95,8 @@ type Set
     | Set_HouseOfTalons
     | Set_TheBlueIsCalling
 
+    | Set_Promotional
+
 type alias ReleaseDate =
     { year : Int
     , month : Int
@@ -207,6 +209,8 @@ set_data =
     , { set = Set_ATimeForWolves, index = 76, code_name = "atow", full_name = "A Time for Wolves", cycle = Just Cycle_Wardens, cards = 20, release_date = ymd 2015 4 3 }
     , { set = Set_HouseOfTalons, index = 77, code_name = "hot", full_name = "House of Talons", cycle = Just Cycle_Wardens, cards = 20, release_date = ymd 2015 4 16 }
     , { set = Set_TheBlueIsCalling, index = 78, code_name = "tbic", full_name = "The Blue is Calling", cycle = Just Cycle_Wardens, cards = 20, release_date = ymd 2015 5 21 }
+
+    , { set = Set_Promotional, index = 78, code_name = "alt", full_name = "Promotional", cycle = Nothing, cards = 24, release_date = ymd 2008 1 1 }
     ]
 
 data_of_set : Set -> SetData

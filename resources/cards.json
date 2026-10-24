@@ -8396,7 +8396,7 @@
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "core_191",
     "cost": null,
     "icons": [],
     "crest": [],
@@ -8513,7 +8513,7 @@
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "core_194",
     "cost": null,
     "icons": [],
     "crest": [],
@@ -8554,7 +8554,7 @@
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "core_195",
     "cost": null,
     "icons": [],
     "crest": [],
@@ -8800,7 +8800,7 @@
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "core_201",
     "cost": null,
     "icons": [],
     "crest": [],
@@ -9328,11 +9328,11 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.If Balon Greyjoy is the only King character in play, characters with lower STR than his cannot be declared as defenders while he is attacking.",
+    "rules_text": "Renown.\nIf Balon Greyjoy is the only King character in play, characters with lower STR than his cannot be declared as defenders while he is attacking.",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "kotse_1",
     "cost": 4,
     "icons": [
       "Military",
@@ -9378,7 +9378,7 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "Renown.Asha Greyjoy cannot be saved.",
+    "rules_text": "Renown.\nAsha Greyjoy cannot be saved.",
     "flavor_text": "...lean and long legged, with black hair cut short, wind chafed skin, strong sure hands, a dirk at her belt.",
     "erratas": [],
     "faqs": [],
@@ -11664,7 +11664,7 @@
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "kotse_53",
     "cost": null,
     "icons": [],
     "crest": [],
@@ -14419,7 +14419,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Tiziano Barracchi",
+    "illustrator": "Tiziano Baracchi",
     "house": [
       "Stark"
     ],
@@ -14735,7 +14735,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Tiziano Barracchi",
+    "illustrator": "Tiziano Baracchi",
     "house": [
       "Stark"
     ],
@@ -18822,7 +18822,7 @@
     "limit": 1,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Thomasz Jedruszek",
+    "illustrator": "Tomasz Jedruszek",
     "house": [
       "Neutral"
     ],
@@ -20083,7 +20083,7 @@
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "qod_22",
     "cost": 4,
     "icons": [
       "Intrigue",
@@ -23904,7 +23904,7 @@
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "lotr_55",
     "cost": null,
     "icons": [],
     "crest": [],
@@ -24709,7 +24709,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Tiziano Barracchi",
+    "illustrator": "Tiziano Baracchi",
     "house": [
       "Targaryen"
     ],
@@ -27977,7 +27977,7 @@
     "flavor_text": "Your service was required here.",
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "acoa_93",
     "cost": 3,
     "icons": [
       "Intrigue",
@@ -28709,7 +28709,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Tiziano Barracchi",
+    "illustrator": "Tiziano Baracchi",
     "house": [
       "Stark"
     ],
@@ -29551,7 +29551,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Tiziano Barracchi",
+    "illustrator": "Tiziano Baracchi",
     "house": [
       "Greyjoy"
     ],
@@ -30275,7 +30275,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Tiziano Barracchi",
+    "illustrator": "Tiziano Baracchi",
     "house": [
       "Stark"
     ],
@@ -30922,7 +30922,7 @@
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "ator_40",
     "cost": null,
     "icons": [],
     "crest": [],
@@ -32590,7 +32590,7 @@
     "limit": 1,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Tiziano Barracchi",
+    "illustrator": "Tiziano Baracchi",
     "house": [
       "Neutral"
     ],
@@ -33442,11 +33442,11 @@
       "Neutral"
     ],
     "unique": true,
-    "rules_text": "If it is Winter, discard Gilly from play. If it is Summer, Gilly gains +2 STR, a [Power] icon, and 'After you win a challenge in which Gilly participated, draw a card.'",
+    "rules_text": "If it is Winter, discard Gilly from play.\nIf it is Summer, Gilly gains +2 STR, a [Power] icon, and 'After you win a challenge in which Gilly participated, draw a card.'",
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "ator_98",
     "cost": 0,
     "icons": [
       "Intrigue"
@@ -44242,7 +44242,7 @@
     "flavor_text": "\"R'hllor who gave us breath, we thank you, R'hllor who gave us day, we thank you.\"",
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "dotn_105",
     "cost": 4,
     "icons": [
       "Intrigue",
@@ -44729,7 +44729,7 @@
     "flavor_text": "\"The Wall can stop an army, but not a man alone.\"",
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "dotn_116",
     "cost": 3,
     "icons": [
       "Military",
@@ -45652,7 +45652,7 @@
     "flavor_text": "\"The lightning lord's not so easy to kill.\"",
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "bwb_17",
     "cost": 4,
     "icons": [
       "Military",
@@ -50378,7 +50378,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Tiziano Barracchi",
+    "illustrator": "Tiziano Baracchi",
     "house": [
       "Baratheon"
     ],
@@ -51069,7 +51069,7 @@
       }
     ],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "soo_20",
     "cost": null,
     "icons": [],
     "crest": [],
@@ -66945,7 +66945,7 @@
     "limit": 1,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "",
+    "illustrator": "Simon Dominic",
     "house": [
       "Neutral"
     ],
@@ -66963,7 +66963,7 @@
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "asots_20",
     "cost": null,
     "icons": [],
     "crest": [],
@@ -67327,7 +67327,7 @@
     "flavor_text": "\"Tonight I am no knight. Tonight I am Davos the smuggler again.\" - A Clash of Kings",
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "asots_28",
     "cost": 4,
     "icons": [
       "Military (Naval)",
@@ -69702,7 +69702,7 @@
     "limit": 3,
     "legality_joust": "Legal",
     "legality_melee": "Legal",
-    "illustrator": "Tomasz Jeduszek",
+    "illustrator": "Tomasz Jedruszek",
     "house": [
       "Greyjoy"
     ],
@@ -74537,7 +74537,7 @@
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "kr_73",
     "cost": 3,
     "icons": [
       "Military",
@@ -74808,7 +74808,7 @@
     "faqs": [
       "What happens if I reveal Betrayal at the Wall as my final plot card, and its \"when revealed\" effect attempts to resolve when I do not have a plot deck?\nYou are not able to choose and reveal a new plot card, so the \"when revealed\" effect fails to resolve."
     ],
-    "duplicate_id": null,
+    "duplicate_id": "kr_79",
     "cost": null,
     "icons": [],
     "crest": [],
@@ -76994,7 +76994,7 @@
     "flavor_text": "\"Things can change quickly in the game of thrones.\"",
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "cad_10",
     "cost": 3,
     "icons": [
       "Intrigue",
@@ -80987,7 +80987,7 @@
     "flavor_text": null,
     "erratas": [],
     "faqs": [],
-    "duplicate_id": null,
+    "duplicate_id": "cad_101",
     "cost": 4,
     "icons": [
       "Military",
@@ -87102,6 +87102,1087 @@
     "strength": null,
     "income": 4,
     "initiative": 5,
+    "claim": 1,
+    "influence": null
+  },
+  {
+    "id": "alt_1",
+    "full_image_url": "/images/cards/full/alt_1.webp",
+    "preview_image_url": "/images/cards/preview/alt_1.jpg",
+    "name": "Street of Steel",
+    "card_type": "Location",
+    "set": "Promotional",
+    "number": 1,
+    "quantity": 1,
+    "limit": 1,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Julian Kok",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "Limit 1 per deck.\nMarshalling: Kneel Street of Steel to lower the cost of the next character with a [Military] icon you play this phase by 1.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "core_139",
+    "cost": 0,
+    "icons": [],
+    "crest": [],
+    "traits": [
+      "King's Landing"
+    ],
+    "strength": null,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_2",
+    "full_image_url": "/images/cards/full/alt_2.webp",
+    "preview_image_url": "/images/cards/preview/alt_2.jpg",
+    "name": "Shadowblack Lane",
+    "card_type": "Location",
+    "set": "Promotional",
+    "number": 2,
+    "quantity": 1,
+    "limit": 1,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Christer Wibert",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "Limit 1 per deck.\nMarshalling: Kneel Shadowblack Lane to lower the cost of the next character with an [Intrigue] icon you play this phase by 1.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "core_144",
+    "cost": 0,
+    "icons": [],
+    "crest": [],
+    "traits": [
+      "Westeros"
+    ],
+    "strength": null,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_3",
+    "full_image_url": "/images/cards/full/alt_3.webp",
+    "preview_image_url": "/images/cards/preview/alt_3.jpg",
+    "name": "Street of Sisters",
+    "card_type": "Location",
+    "set": "Promotional",
+    "number": 3,
+    "quantity": 1,
+    "limit": 1,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Tomasz Jedruszek",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "Limit 1 per deck.\nMarshalling: Kneel Street of Sisters to lower the cost of the next character with a [Power] icon you play this phase by 1.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "core_149",
+    "cost": 0,
+    "icons": [],
+    "crest": [],
+    "traits": [
+      "Westeros"
+    ],
+    "strength": null,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_4",
+    "full_image_url": "/images/cards/full/alt_4.webp",
+    "preview_image_url": "/images/cards/preview/alt_4.jpg",
+    "name": "Balon Greyjoy",
+    "card_type": "Character",
+    "set": "Promotional",
+    "number": 4,
+    "quantity": 1,
+    "limit": 3,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Sidharth Chaturvedi",
+    "house": [
+      "Greyjoy"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": true,
+    "rules_text": "Renown.\nIf Balon Greyjoy is the only King character in play, characters with lower STR than his cannot be declared as defenders while he is attacking.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "kotse_1",
+    "cost": 4,
+    "icons": [
+      "Military",
+      "Power"
+    ],
+    "crest": [
+      "Noble"
+    ],
+    "traits": [
+      "Lord",
+      "King",
+      "Ironborn"
+    ],
+    "strength": 3,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_5",
+    "full_image_url": "/images/cards/full/alt_5.webp",
+    "preview_image_url": "/images/cards/preview/alt_5.jpg",
+    "name": "Daenerys Targaryen",
+    "card_type": "Character",
+    "set": "Promotional",
+    "number": 5,
+    "quantity": 1,
+    "limit": 3,
+    "legality_joust": "Legal",
+    "legality_melee": "Restricted",
+    "illustrator": "Magali Villeneuve",
+    "house": [
+      "Targaryen"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": true,
+    "rules_text": "Renown.\nDragon characters you control do not kneel to attack.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "qod_22",
+    "cost": 4,
+    "icons": [
+      "Intrigue",
+      "Power"
+    ],
+    "crest": [
+      "Noble"
+    ],
+    "traits": [
+      "Lady",
+      "Queen"
+    ],
+    "strength": 3,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_6",
+    "full_image_url": "/images/cards/full/alt_6.webp",
+    "preview_image_url": "/images/cards/preview/alt_6.jpg",
+    "name": "Castellan of the Rock",
+    "card_type": "Character",
+    "set": "Promotional",
+    "number": 6,
+    "quantity": 1,
+    "limit": 3,
+    "legality_joust": "Restricted",
+    "legality_melee": "Legal",
+    "illustrator": "Sebastian Giacobino",
+    "house": [
+      "Lannister"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "Limited Response: After you play a [Lannister] character or location from your hand, choose and kneel a character without attachments. (Limit 1 Limited Response per round.)",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "acoa_93",
+    "cost": 3,
+    "icons": [
+      "Intrigue",
+      "Power"
+    ],
+    "crest": [],
+    "traits": [
+      "Ally"
+    ],
+    "strength": 3,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_7",
+    "full_image_url": "/images/cards/full/alt_7.webp",
+    "preview_image_url": "/images/cards/preview/alt_7.jpg",
+    "name": "Gilly",
+    "card_type": "Character",
+    "set": "Promotional",
+    "number": 7,
+    "quantity": 1,
+    "limit": 3,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Jake Murray",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": true,
+    "rules_text": "If it is Winter, discard Gilly from play.\nIf it is Summer, Gilly gains +2 STR, a [Power] icon, and 'After you win a challenge in which Gilly participated, draw a card.'",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "ator_98",
+    "cost": 0,
+    "icons": [
+      "Intrigue"
+    ],
+    "crest": [],
+    "traits": [
+      "Wildling",
+      "Refugee"
+    ],
+    "strength": 1,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_8",
+    "full_image_url": "/images/cards/full/alt_8.webp",
+    "preview_image_url": "/images/cards/preview/alt_8.jpg",
+    "name": "Melisandre",
+    "card_type": "Character",
+    "set": "Promotional",
+    "number": 8,
+    "quantity": 1,
+    "limit": 3,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Alexandre Dainche",
+    "house": [
+      "Baratheon"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": true,
+    "rules_text": "Renown.\nClaim 1 additional power when you win dominance, and when you win an unopposed [Intrigue] or [Power] challenge.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "dotn_105",
+    "cost": 4,
+    "icons": [
+      "Intrigue",
+      "Power"
+    ],
+    "crest": [
+      "Holy"
+    ],
+    "traits": [
+      "Lady",
+      "Asshai"
+    ],
+    "strength": 3,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_9",
+    "full_image_url": "/images/cards/full/alt_9.webp",
+    "preview_image_url": "/images/cards/preview/alt_9.jpg",
+    "name": "Mance Rayder",
+    "card_type": "Character",
+    "set": "Promotional",
+    "number": 9,
+    "quantity": 1,
+    "limit": 3,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Diego Gisbert Llorens",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": true,
+    "rules_text": "Any Phase: Kneel Mance Rayder to choose 1 The North agenda or location. Until the end of the phase, treat that card as if its printed text box were blank.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "dotn_116",
+    "cost": 3,
+    "icons": [
+      "Military",
+      "Intrigue",
+      "Power"
+    ],
+    "crest": [],
+    "traits": [
+      "King",
+      "Wildling"
+    ],
+    "strength": 3,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_10",
+    "full_image_url": "/images/cards/full/alt_10.webp",
+    "preview_image_url": "/images/cards/preview/alt_10.jpg",
+    "name": "Beric Dondarrion",
+    "card_type": "Character",
+    "set": "Promotional",
+    "number": 10,
+    "quantity": 1,
+    "limit": 3,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Tiziano Baracchi",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": true,
+    "rules_text": "Renown.\nIf you have no power on your House card, Beric Dondarrion cannot be killed or discarded from play.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "bwb_17",
+    "cost": 4,
+    "icons": [
+      "Military",
+      "Intrigue",
+      "Power"
+    ],
+    "crest": [],
+    "traits": [
+      "Brotherhood",
+      "Knight"
+    ],
+    "strength": 3,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_11",
+    "full_image_url": "/images/cards/full/alt_11.webp",
+    "preview_image_url": "/images/cards/preview/alt_11.jpg",
+    "name": "Ser Davos Seaworth",
+    "card_type": "Character",
+    "set": "Promotional",
+    "number": 11,
+    "quantity": 1,
+    "limit": 3,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Rafal Hrynkiewicz",
+    "house": [
+      "Baratheon"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": true,
+    "rules_text": "Renown. Melee.\nKnelt Smuggler characters you control count their STR toward dominance.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "asots_28",
+    "cost": 4,
+    "icons": [
+      "Military (Naval)",
+      "Intrigue"
+    ],
+    "crest": [],
+    "traits": [
+      "Smuggler",
+      "Captain"
+    ],
+    "strength": 3,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_12",
+    "full_image_url": "/images/cards/full/alt_12.webp",
+    "preview_image_url": "/images/cards/preview/alt_12.jpg",
+    "name": "Jon Snow",
+    "card_type": "Character",
+    "set": "Promotional",
+    "number": 12,
+    "quantity": 1,
+    "limit": 3,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Tiziano Baracchi",
+    "house": [
+      "Stark"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": true,
+    "rules_text": "Deadly.\nYour Wildling characters get +1 STR.\nYour Night's Watch characters gain \"immune to events.\"",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "kr_73",
+    "cost": 3,
+    "icons": [
+      "Military",
+      "Power"
+    ],
+    "crest": [],
+    "traits": [
+      "Bastard",
+      "Night's Watch",
+      "Wildling"
+    ],
+    "strength": 2,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_13",
+    "full_image_url": "/images/cards/full/alt_13.webp",
+    "preview_image_url": "/images/cards/preview/alt_13.jpg",
+    "name": "Doran Martell",
+    "card_type": "Character",
+    "set": "Promotional",
+    "number": 13,
+    "quantity": 1,
+    "limit": 3,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "William Thomas Arnold",
+    "house": [
+      "Martell"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": true,
+    "rules_text": "Prized 2. Stealth.\nWhen a prized card is discarded from an opponent's hand, claim power for your House equal to that card's prized value.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "cad_10",
+    "cost": 3,
+    "icons": [
+      "Intrigue",
+      "Power"
+    ],
+    "crest": [
+      "Learned"
+    ],
+    "traits": [
+      "Lord"
+    ],
+    "strength": 4,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_14",
+    "full_image_url": "/images/cards/full/alt_14.webp",
+    "preview_image_url": "/images/cards/preview/alt_14.jpg",
+    "name": "Robert Baratheon",
+    "card_type": "Character",
+    "set": "Promotional",
+    "number": 14,
+    "quantity": 1,
+    "limit": 3,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Amelie Hutt",
+    "house": [
+      "Baratheon"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": true,
+    "rules_text": "Prized 2. Renown.\nResponse: After you win a challenge in which a prized character participated, Robert Baratheon claims 1 power.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "cad_101",
+    "cost": 4,
+    "icons": [
+      "Military",
+      "Power"
+    ],
+    "crest": [],
+    "traits": [
+      "Lord",
+      "King"
+    ],
+    "strength": 4,
+    "income": null,
+    "initiative": null,
+    "claim": null,
+    "influence": null
+  },
+  {
+    "id": "alt_15",
+    "full_image_url": "/images/cards/full/alt_15.webp",
+    "preview_image_url": "/images/cards/preview/alt_15.jpg",
+    "name": "Wildfire Assault",
+    "card_type": "Plot",
+    "set": "Promotional",
+    "number": 15,
+    "quantity": 1,
+    "limit": 1,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Tomasz Jedruszek",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "When revealed, each player chooses up to 3 of his or her characters. All characters not chosen are killed (cannot be saved).",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "core_191",
+    "cost": null,
+    "icons": [],
+    "crest": [],
+    "traits": [],
+    "strength": null,
+    "income": 3,
+    "initiative": 4,
+    "claim": 1,
+    "influence": null
+  },
+  {
+    "id": "alt_16",
+    "full_image_url": "/images/cards/full/alt_16.webp",
+    "preview_image_url": "/images/cards/preview/alt_16.jpg",
+    "name": "The Power of Blood",
+    "card_type": "Plot",
+    "set": "Promotional",
+    "number": 16,
+    "quantity": 1,
+    "limit": 2,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Sebastian Giacobino",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "You may have up to 2 copies of The Power of Blood in your plot deck.\n[Noble] characters cannot be killed.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "core_194",
+    "cost": null,
+    "icons": [],
+    "crest": [],
+    "traits": [],
+    "strength": null,
+    "income": 4,
+    "initiative": 3,
+    "claim": 1,
+    "influence": null
+  },
+  {
+    "id": "alt_17",
+    "full_image_url": "/images/cards/full/alt_17.webp",
+    "preview_image_url": "/images/cards/preview/alt_17.jpg",
+    "name": "Building Season",
+    "card_type": "Plot",
+    "set": "Promotional",
+    "number": 17,
+    "quantity": 1,
+    "limit": 1,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Lino Drieghe",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "When revealed, choose an opponent. Then, you and that opponent must each search your decks for a location, reveal it, and put it into your hands. Then, shuffle your decks.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "core_195",
+    "cost": null,
+    "icons": [],
+    "crest": [],
+    "traits": [],
+    "strength": null,
+    "income": 4,
+    "initiative": 1,
+    "claim": 1,
+    "influence": null
+  },
+  {
+    "id": "alt_18",
+    "full_image_url": "/images/cards/full/alt_18.webp",
+    "preview_image_url": "/images/cards/preview/alt_18.jpg",
+    "name": "Valar Morghulis",
+    "card_type": "Plot",
+    "set": "Promotional",
+    "number": 18,
+    "quantity": 1,
+    "limit": 1,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Anna Christenson",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "Limit 1 per plot deck.\nWhen revealed, kill all characters in play.",
+    "flavor_text": "core_201",
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": null,
+    "cost": null,
+    "icons": [],
+    "crest": [],
+    "traits": [],
+    "strength": null,
+    "income": 2,
+    "initiative": 0,
+    "claim": 0,
+    "influence": null
+  },
+  {
+    "id": "alt_19",
+    "full_image_url": "/images/cards/full/alt_19.webp",
+    "preview_image_url": "/images/cards/preview/alt_19.jpg",
+    "name": "An Empty Throne",
+    "card_type": "Plot",
+    "set": "Promotional",
+    "number": 19,
+    "quantity": 1,
+    "limit": 1,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Julian Kok",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "Each player may initiate an additional [Power] challenge this round.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "kotse_53",
+    "cost": null,
+    "icons": [],
+    "crest": [],
+    "traits": [
+      "Power Struggle"
+    ],
+    "strength": null,
+    "income": 3,
+    "initiative": 5,
+    "claim": 1,
+    "influence": null
+  },
+  {
+    "id": "alt_20",
+    "full_image_url": "/images/cards/full/alt_20.webp",
+    "preview_image_url": "/images/cards/preview/alt_20.jpg",
+    "name": "Shadows and Spiders",
+    "card_type": "Plot",
+    "set": "Promotional",
+    "number": 20,
+    "quantity": 1,
+    "limit": 1,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Cassandre Bolan",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "A player cannot declare a [Military] or [Power] challenge unless he or she has won an [Intrigue] challenge that phase.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "lotr_55",
+    "cost": null,
+    "icons": [],
+    "crest": [],
+    "traits": [
+      "Intrigue Gambit"
+    ],
+    "strength": null,
+    "income": 3,
+    "initiative": 0,
+    "claim": 1,
+    "influence": null
+  },
+  {
+    "id": "alt_21",
+    "full_image_url": "/images/cards/full/alt_21.webp",
+    "preview_image_url": "/images/cards/preview/alt_21.jpg",
+    "name": "The Winds of Winter",
+    "card_type": "Plot",
+    "set": "Promotional",
+    "number": 21,
+    "quantity": 1,
+    "limit": 1,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Alyn Spiller",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "While it is Winter, opponent's characters get -1 STR.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "ator_40",
+    "cost": null,
+    "icons": [],
+    "crest": [],
+    "traits": [],
+    "strength": null,
+    "income": 3,
+    "initiative": 2,
+    "claim": 2,
+    "influence": null
+  },
+  {
+    "id": "alt_22",
+    "full_image_url": "/images/cards/full/alt_22.webp",
+    "preview_image_url": "/images/cards/preview/alt_22.jpg",
+    "name": "At the Gates",
+    "card_type": "Plot",
+    "set": "Promotional",
+    "number": 22,
+    "quantity": 1,
+    "limit": 1,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Juan Carlos Barquet",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "When revealed, if you have no City plot cards in your used pile, search your deck for a neutral or in-House Maester character of printed cost 3 or lower, and put it into play. Then, shuffle your deck.",
+    "flavor_text": null,
+    "erratas": [
+      {
+        "line": 0,
+        "start": 88,
+        "end": 107
+      }
+    ],
+    "faqs": [],
+    "duplicate_id": "soo_20",
+    "cost": null,
+    "icons": [],
+    "crest": [],
+    "traits": [
+      "City"
+    ],
+    "strength": null,
+    "income": 3,
+    "initiative": 1,
+    "claim": 1,
+    "influence": null
+  },
+  {
+    "id": "alt_23",
+    "full_image_url": "/images/cards/full/alt_23.webp",
+    "preview_image_url": "/images/cards/preview/alt_23.jpg",
+    "name": "Crossing the Ruby Ford",
+    "card_type": "Plot",
+    "set": "Promotional",
+    "number": 23,
+    "quantity": 1,
+    "limit": 1,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "Julian Kok",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "When revealed, each opponent must discard 1 power from a card he or she controls, if able. Then, if this your revealed plot card, trigger the \"when revealed\" effect on the top River plot card in your used pile.",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [],
+    "duplicate_id": "asots_20",
+    "cost": null,
+    "icons": [],
+    "crest": [],
+    "traits": [
+      "River"
+    ],
+    "strength": null,
+    "income": 5,
+    "initiative": 3,
+    "claim": 1,
+    "influence": null
+  },
+  {
+    "id": "alt_24",
+    "full_image_url": "/images/cards/full/alt_24.webp",
+    "preview_image_url": "/images/cards/preview/alt_24.jpg",
+    "name": "Betrayal at the Wall",
+    "card_type": "Plot",
+    "set": "Promotional",
+    "number": 24,
+    "quantity": 1,
+    "limit": 1,
+    "legality_joust": "Legal",
+    "legality_melee": "Legal",
+    "illustrator": "J.B. Casacop",
+    "house": [
+      "Neutral"
+    ],
+    "legal_in_houses": [
+      "Stark",
+      "Lannister",
+      "Baratheon",
+      "Targaryen",
+      "Greyjoy",
+      "Martell",
+      "Neutral"
+    ],
+    "unique": false,
+    "rules_text": "Increase the size of your plot deck by 1. (Limit 1 per plot deck.)\nWhen revealed, choose and reveal a new plot card if you control 2 or more Night's Watch or Wildling characters. (Cannot be canceled.)",
+    "flavor_text": null,
+    "erratas": [],
+    "faqs": [
+      "What happens if I reveal Betrayal at the Wall as my final plot card, and its \"when revealed\" effect attempts to resolve when I do not have a plot deck?\nYou are not able to choose and reveal a new plot card, so the \"when revealed\" effect fails to resolve."
+    ],
+    "duplicate_id": "kr_79",
+    "cost": null,
+    "icons": [],
+    "crest": [],
+    "traits": [],
+    "strength": null,
+    "income": 1,
+    "initiative": 11,
     "claim": 1,
     "influence": null
   }

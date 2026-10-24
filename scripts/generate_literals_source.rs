@@ -180,6 +180,8 @@ fn print_cards_elm_file(cards: &[Card]) -> String {
         ("A Time for Wolves", "Set_ATimeForWolves"),
         ("House of Talons", "Set_HouseOfTalons"),
         ("The Blue is Calling", "Set_TheBlueIsCalling"),
+
+        ("Promotional", "Set_Promotional"),
     ]);
 
     let icon_to_source : HashMap<&str, &str> = HashMap::from([

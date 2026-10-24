@@ -6,7 +6,7 @@ import Widgets
 import Window exposing (Window)
 
 import Browser.Navigation as Navigation
-import Element as UI exposing (px)
+import Element as UI
 import Element.Background as UI_Background
 import Element.Border as UI_Border
 import Element.Font as UI_Font

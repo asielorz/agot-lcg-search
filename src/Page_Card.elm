@@ -129,7 +129,7 @@ view_card_description attrs card = UI.column
     , character_line card
     , plot_line card
     , Widgets.separator
-    , UI.paragraph [] [ UI.text <| "Illustrated by " ++ card.illustrator ]
+    , illustrator_line card
     , Widgets.separator
     , set_line card
     , Widgets.separator
@@ -263,12 +263,22 @@ naval_icon = UI.inFront <| UI.image
     ]
     { src = "/images/naval.png", description = "Naval icon modifier" }
 
+illustrator_line : Card -> UI.Element msg
+illustrator_line card = UI.link 
+    [ UI_Border.rounded 5
+    , UI.mouseOver [ UI_Background.color (rgb255 100 100 100) ]
+    , UI.width UI.fill
+    ]
+    { url = "/search?q=illustrator:\"" ++ Query.encode card.illustrator ++ "\"&dup=t"
+    , label = UI.paragraph [] [ UI.text <| "Illustrated by " ++ card.illustrator ]
+    }
+
 set_line : Card -> UI.Element msg
 set_line card = UI.link 
     [ UI_Border.rounded 5
     , UI.mouseOver [ UI_Background.color (rgb255 100 100 100) ]
     , UI.width UI.fill
-    ] 
+    ]
     { url = CardSet.set_url (CardSet.data_of_set card.set).code_name
     , label = UI.row [ UI.spacing 10 ]
         [ Widgets.set_icon [] (SetOrCycle_Set card.set)

@@ -2,7 +2,7 @@ module Card exposing (..)
 
 import CardSet exposing (Set)
 
-type CardType = CardType_Character | CardType_Event | CardType_Location | CardType_Attachment | CardType_Plot | CardType_Agenda | CardType_House
+type CardType = CardType_Character | CardType_Event | CardType_Location | CardType_Attachment | CardType_Plot | CardType_Agenda | CardType_House | CardType_Title
 type House = House_Stark | House_Lannister | House_Baratheon | House_Targaryen | House_Martell | House_Greyjoy | House_Neutral
 type Icon = Icon_Military { naval : Bool } | Icon_Intrigue { naval : Bool } | Icon_Power { naval : Bool }
 type Crest = Crest_Holy | Crest_Noble | Crest_War | Crest_Learned | Crest_Shadow
@@ -64,6 +64,7 @@ card_type_to_string card_type = case card_type of
     CardType_Plot -> "Plot"
     CardType_Agenda -> "Agenda"
     CardType_House -> "House"
+    CardType_Title -> "Title"
 
 
 legality_to_string : Legality -> String

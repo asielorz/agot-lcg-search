@@ -297,6 +297,7 @@ card_type_combo model = Widgets.Combo.view [ UI.width (px 200) ] model.combo
         , Just CardType_Plot
         , Just CardType_Agenda
         , Just CardType_House
+        , Just CardType_Title
         ]
     , select = \opt m -> { m | card_type = opt }
     }
@@ -482,6 +483,7 @@ card_type_combo_view t =
             Just CardType_Plot -> ("\u{f5fd}", "Plot") -- fa-layer-group
             Just CardType_Agenda -> ("\u{f70e}", "Agenda") -- fa-scroll
             Just CardType_House -> ("\u{f132}", "House") -- fa-shield
+            Just CardType_Title -> ("\u{f521}", "Title") -- fa-crown
     in
         UI.row [ UI.spacing 10 ] [ UI.el [UI.width (px 25)] <| Fontawesome.text [ UI.centerX ] icon, UI.text label ]
 
@@ -557,6 +559,7 @@ make_advanced_search_query model =
             Just CardType_Plot -> Just "type:p"
             Just CardType_Agenda -> Just "type:ag"
             Just CardType_House -> Just "type:h"
+            Just CardType_Title -> Just "type:t"
         int_part name int c =
             let
                 comparison_str = case c of

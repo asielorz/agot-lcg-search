@@ -318,6 +318,8 @@ parse_type = parse_until_end
         "ag" -> Parser.succeed CardType_Agenda
         "house" -> Parser.succeed CardType_House
         "h" -> Parser.succeed CardType_House
+        "title" -> Parser.succeed CardType_Title
+        "t" -> Parser.succeed CardType_Title
         other -> Parser.problem ("\"" ++ other ++ "\" is not a card type")
     )
 

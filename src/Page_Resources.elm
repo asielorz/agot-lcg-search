@@ -45,26 +45,28 @@ view model window =
         ]
     )
 
-type alias Resource =
-    { display_text : String
-    , url : String
-    }
+type Line 
+    = Resource { display_text : String, url : String }
+    | Category { display_text : String }
 
-resources : List Resource
+resources : List Line
 resources =
-    [ Resource "Cards JSON" "/resources/cards.json"
+    [ Category { display_text = "Card data" }
+    , Resource { display_text = "Cards JSON", url = "/resources/cards.json" }
     --, Resource "All card images" "/resources/card_images.zip"
-    , Resource "Core set rules" "/resources/rules-core-set.pdf"
-    , Resource "FAQs and errata" "/resources/faq.pdf"
-    , Resource "Shadows mechanic rules" "/resources/rules-shadows.pdf"
-    , Resource "Joust and melee keyword rules" "/resources/rules-joust-melee.pdf"
-    , Resource "Hand of the king variant format" "/resources/rules-format-hand-of-the-king.pdf"
-    , Resource "Kingsmoot variant format" "/resources/rules-format-kingsmoot.pdf"
-    , Resource "Civil war variant format" "/resources/rules-format-civil-war.pdf"
-    , Resource "Tournament deck sheet" "/resources/deck-sheet.pdf"
-    , Resource "Joust tournament score sheet" "/resources/scoresheet-joust.pdf"
-    , Resource "Melee tournament score sheet" "/resources/scoresheet-melee.pdf"
-    , Resource "Game night signup sheet" "/resources/game-night-signup.pdf"
+    , Category { display_text = "Rulebooks" }
+    , Resource { display_text = "Core set rules", url = "/resources/rules-core-set.pdf" }
+    , Resource { display_text = "FAQs and errata", url = "/resources/faq.pdf" }
+    , Resource { display_text = "Shadows mechanic rules", url = "/resources/rules-shadows.pdf" }
+    , Resource { display_text = "Joust and melee keyword rules", url = "/resources/rules-joust-melee.pdf" }
+    , Resource { display_text = "Hand of the king variant format", url = "/resources/rules-format-hand-of-the-king.pdf" }
+    , Resource { display_text = "Kingsmoot variant format", url = "/resources/rules-format-kingsmoot.pdf" }
+    , Resource { display_text = "Civil war variant format", url = "/resources/rules-format-civil-war.pdf" }
+    , Category { display_text = "Tournament sheets" }
+    , Resource { display_text = "Tournament deck sheet", url = "/resources/deck-sheet.pdf" }
+    , Resource { display_text = "Joust tournament score sheet", url = "/resources/scoresheet-joust.pdf" }
+    , Resource { display_text = "Melee tournament score sheet", url = "/resources/scoresheet-melee.pdf" }
+    , Resource { display_text = "Game night signup sheet", url = "/resources/game-night-signup.pdf" }
     ]
 
 view_resources_table : UI.Element msg
@@ -77,16 +79,26 @@ view_resources_table = resources
         , UI_Border.color Colors.separator
         ]
 
-view_resource_table_row : Bool -> Resource -> UI.Element msg
-view_resource_table_row even resource = UI.newTabLink 
-    [ UI.width UI.fill
-    , UI_Border.widthEach { top = 1, left = 1, right = 1, bottom = 0 }
-    , UI_Border.color Colors.separator
-    , UI_Background.color <| if even then Colors.page_background else Colors.background
-    , UI.mouseOver [ UI_Background.color Colors.background_hover ]
-    , UI.padding 5
-    , UI_Font.size 16
-    ]
-    { url = resource.url
-    , label = UI.text resource.display_text
-    }
+view_resource_table_row : Bool -> Line -> UI.Element msg
+view_resource_table_row even line = case line of
+    Resource resource -> UI.newTabLink 
+        [ UI.width UI.fill
+        , UI_Border.widthEach { top = 1, left = 1, right = 1, bottom = 0 }
+        , UI_Border.color Colors.separator
+        , UI_Background.color <| if even then Colors.page_background else Colors.background
+        , UI.mouseOver [ UI_Background.color Colors.background_hover ]
+        , UI.paddingEach { top = 5, bottom = 5, right = 5, left = 40 }
+        , UI_Font.size 16
+        ]
+        { url = resource.url
+        , label = UI.text resource.display_text
+        }
+    Category category -> UI.el
+        [ UI.width UI.fill
+        , UI_Border.widthEach { top = 1, left = 1, right = 1, bottom = 0 }
+        , UI_Border.color Colors.separator
+        , UI_Background.color <| if even then Colors.page_background else Colors.background
+        , UI.padding 5
+        , UI_Font.size 16
+        ]
+        (UI.text category.display_text)

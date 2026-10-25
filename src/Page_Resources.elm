@@ -53,7 +53,7 @@ resources : List Line
 resources =
     [ Category { display_text = "Card data" }
     , Resource { display_text = "Cards JSON", url = "/resources/cards.json" }
-    --, Resource "All card images" "/resources/card_images.zip"
+    , Resource { display_text = "All card images at highest available resolution", url = "https://patrins.com/f/299c29a1c37d" }
     , Category { display_text = "Rulebooks" }
     , Resource { display_text = "Core set rules", url = "/resources/rules-core-set.pdf" }
     , Resource { display_text = "FAQs and errata", url = "/resources/faq.pdf" }

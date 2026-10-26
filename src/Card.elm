@@ -55,6 +55,11 @@ type alias Card =
     }
 
 
+total_cost : Card -> Maybe Int
+total_cost card = card.cost
+    |> Maybe.map (\cost -> if is_shadow card then cost + 2 else cost)
+
+
 card_type_to_string : CardType -> String
 card_type_to_string card_type = case card_type of
     CardType_Character -> "Character"
@@ -158,3 +163,6 @@ preview_image_url card = "/images/cards/preview/" ++ card.id ++ ".jpg"
 
 duplicate_id : Card -> String
 duplicate_id card = Maybe.withDefault card.id card.duplicate_id
+
+is_shadow : Card -> Bool
+is_shadow card = List.member Crest_Shadow card.crest

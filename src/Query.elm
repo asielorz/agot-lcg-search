@@ -125,7 +125,7 @@ card_passes_predicate predicate card = case predicate of
     Predicate_Name s -> string_contains_predicate s (Just card.name)
     Predicate_Number c n -> int_comparison_predicate n c (Just card.number)
     Predicate_Quantity c n -> int_comparison_predicate n c (Just card.quantity)
-    Predicate_Cost c n -> int_comparison_predicate n c card.cost
+    Predicate_Cost c n -> int_comparison_predicate n c (Card.total_cost card)
     Predicate_Strength c n -> int_comparison_predicate n c card.strength
     Predicate_Income c n -> int_comparison_predicate n c card.income
     Predicate_Initiative c n -> int_comparison_predicate n c card.initiative

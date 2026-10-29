@@ -211,6 +211,12 @@ header model make_msg search_msg window_width =
                         , link_button_ex button_attrs [ UI.centerX ] "Random" "/random"
                         ]
                     else UI.none
+                , if model.is_open
+                    then UI.row [ UI.spacing 5, UI.width UI.fill ] 
+                        [ link_button_ex button_attrs [ UI.centerX ] "Resources" "/resources"
+                        , link_button_ex button_attrs [ UI.centerX ] "About" "/about"
+                        ]
+                    else UI.none
                 ]
 
 footer : UI.Element msg

@@ -47,6 +47,7 @@ view model =
                 , UI.row [ UI.spacing 5, UI.centerX ] 
                     [ Widgets.link_button "Random card" "/random"
                     , Widgets.link_button "Resources" "/resources"
+                    , Widgets.link_button "About" "/about"
                     ]
                 ]
             ]

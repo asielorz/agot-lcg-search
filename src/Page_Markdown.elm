@@ -43,6 +43,7 @@ view model window =
         [ UI.centerX
         , UI.spacing 20
         , UI.width UI.fill
+        , UI.height UI.fill
         , UI_Font.size 18
         ]
         [ Widgets.header model.header Msg_Header Msg_Search window.width

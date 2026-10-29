@@ -11,6 +11,7 @@ import Page_Search
 import Page_Sets
 import Page_Start
 import Page_404
+import Text_About
 import Text_Syntax
 import Widgets
 import Window exposing (Window)
@@ -105,6 +106,7 @@ change_url_impl url random_card_index =
             , Url.Parser.map card_page_model (Url.Parser.s "card" </> Url.Parser.string <?> card_page_query_parser)
             , Url.Parser.map (random_card_page ()) (Url.Parser.s "random")
             , Url.Parser.map (UrlChangeResult_Page <| Model_Markdown <| Page_Markdown.init "Syntax guide" Text_Syntax.text ) (Url.Parser.s "syntax")
+            , Url.Parser.map (UrlChangeResult_Page <| Model_Markdown <| Page_Markdown.init "About" Text_About.text ) (Url.Parser.s "about")
             ]
         page = Url.Parser.parse parser url 
             |> Maybe.withDefault (page_404 ())
